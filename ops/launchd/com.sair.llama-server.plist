@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.sair.llama-server</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/bin/llama-server</string>
+		<string>-m</string>
+		<string>__WRITER__</string>
+		<string>--host</string>
+		<string>127.0.0.1</string>
+		<string>--port</string>
+		<string>8091</string>
+		<string>-c</string>
+		<string>4096</string>
+		<string>-ngl</string>
+		<string>99</string>
+		<string>-np</string>
+		<string>1</string>
+		<string>--log-disable</string>
+	</array>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HF_HUB_OFFLINE</key>
+		<string>1</string>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>__REPO__/logs/llama-server.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>__REPO__/logs/llama-server.err.log</string>
+</dict>
+</plist>

@@ -10,7 +10,7 @@ models:
 	bash scripts/models.sh
 
 install-agents:
-	@echo "TODO(P2): launchd plists live in ops/launchd/ (not created yet)."; exit 1
+	bash scripts/install_agents.sh
 
 up:
 	bash scripts/up.sh

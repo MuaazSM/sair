@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.sair.ntfy</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/bin/ntfy</string>
+		<string>serve</string>
+		<string>--listen-http</string>
+		<string>127.0.0.1:8090</string>
+		<string>--cache-file</string>
+		<string>__DATA__/ntfy/cache.db</string>
+	</array>
+	<key>StandardOutPath</key>
+	<string>__REPO__/logs/ntfy.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>__REPO__/logs/ntfy.err.log</string>
+</dict>
+</plist>

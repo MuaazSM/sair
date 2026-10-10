@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.sair.ollama</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/opt/homebrew/bin/ollama</string>
+		<string>serve</string>
+	</array>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>OLLAMA_HOST</key>
+		<string>127.0.0.1:11434</string>
+		<key>OLLAMA_DEBUG</key>
+		<string>0</string>
+		<key>OLLAMA_KEEP_ALIVE</key>
+		<string>30m</string>
+		<key>HF_HUB_OFFLINE</key>
+		<string>1</string>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>__REPO__/logs/ollama.out.log</string>
+	<key>StandardErrorPath</key>
+	<string>__REPO__/logs/ollama.err.log</string>
+</dict>
+</plist>
