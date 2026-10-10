@@ -50,7 +50,6 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from hub.grounding import (
-    AMBIGUOUS_WORD_ALIASES,
     check_entry,
     extract_details,
     lexicon_hash,
@@ -357,13 +356,19 @@ def _english_words() -> dict[str, tuple[str, tuple[str, ...]]]:
     return out
 
 
-# Aliases that are also common Hindi function words ("बस" = "that's all"); never glossed.
-_GLOSSARY_STOP = frozenset({"बस", "bas", "do", "the"})
+# Devanagari aliases never glossed: Hindi function words ("बस" = "that's all") and terms
+# whose lexicon id is one of several meanings (धूप: lexicon "incense", usually "sunshine").
+_GLOSSARY_STOP = frozenset({"बस", "धूप"})
+_DEVA_RE = re.compile(r"[\u0900-\u097F]")
 
 
 def teacher_glossary(transcript: str) -> str | None:
     """TEACHER-ONLY: code-built glossary (from the frozen lexicon) of the English word for
-    each non-English lexicon term in this transcript, e.g. "चील = kite". None if empty."""
+    each Devanagari lexicon term in this transcript, e.g. "चील = kite". None if empty.
+
+    Devanagari aliases only: romanised/English aliases are skipped because they are mostly
+    English inflections ("sunny" -> sun) or ambiguous ("dhoop" -> incense), so the glossary
+    is a no-op for English and Hinglish (Latin-script) transcripts."""
     found = extract_details(transcript, inclusive=True)
     t_norm = normalise(transcript)
     pairs: list[str] = []
@@ -373,16 +378,10 @@ def teacher_glossary(transcript: str) -> str | None:
         here = [
             a
             for a in others
-            if (normalise(a) in t_norm)
-            if not re.search(r"[A-Za-z]", a)
-            or re.search(rf"(?<![a-z]){re.escape(normalise(a))}(?![a-z])", t_norm)
-        ]
-        here = [
-            a
-            for a in here
-            if normalise(a) != normalise(english)
+            if _DEVA_RE.search(a)
+            and not re.search(r"[A-Za-z]", a)
+            and normalise(a) in t_norm
             and a not in _GLOSSARY_STOP
-            and normalise(a) not in AMBIGUOUS_WORD_ALIASES
         ]
         if here:
             pairs.append(f"{' / '.join(here[:3])} = {english}")

@@ -345,6 +345,9 @@ def test_teacher_glossary_is_code_built_and_teacher_only(tmp_path: Path) -> None
     assert g is not None and "चील = kite" in g and "बादल = cloud" in g
     assert "bus" not in g  # function-word alias never glossed
     assert teacher.teacher_glossary("we walked and talked") is None
+    # Latin-script aliases are never glossed (inflections / ambiguous romanisations)
+    assert teacher.teacher_glossary("it was sunny, lots of scooters, dhoop thi") is None
+    assert teacher.teacher_glossary("धूप थी, बस") is None
     item = {**make_item("a-00"), "transcript": t, "gold": {"facts": [], "mission_result":
             "not_mentioned", "mission_span": None}}  # fmt: skip
     msgs = teacher.teacher_messages(item, glossary=True)
