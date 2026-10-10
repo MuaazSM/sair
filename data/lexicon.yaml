@@ -150,7 +150,7 @@ entries:
     aliases: [jamun, jamun tree, जामुन का पेड़]
   - id: tamarind
     category: tree
-    aliases: [tamarind, imli tree, imli ka ped, इमली का पेड़]
+    aliases: [tamarind, tamarind tree, imli, imli tree, imli ka ped, इमली, इमली का पेड़]
   - id: banana_tree
     category: tree
     aliases: [banana tree, banana trees, kele ka ped, केले का पेड़]
@@ -178,9 +178,12 @@ entries:
   - id: neem_fruit
     category: tree
     aliases: [nimboli, निंबोली]
+  - id: amaltas
+    category: tree
+    aliases: [amaltas, golden shower tree, laburnum, indian laburnum, अमलतास]
   - id: almond_tree
     category: tree
-    aliases: [almond tree, badam tree, बादाम का पेड़]
+    aliases: [almond tree, almond, badam, badam tree, बादाम, बादाम का पेड़]
   - id: mahogany
     category: tree
     aliases: [mahogany]
