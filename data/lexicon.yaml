@@ -126,7 +126,7 @@ entries:
     aliases: [peepal, pipal, peepul, pipul, पीपल]
   - id: banyan
     category: tree
-    aliases: [banyan, banyan tree, bargad, vad, vat, बरगद, बड़]
+    aliases: [banyan, banyan tree, bargad, vad, vat, बरगद]
   - id: gulmohar
     category: tree
     aliases: [gulmohar, gul mohar, gulmohur, gulmohar tree, flame tree, गुलमोहर]
@@ -834,7 +834,7 @@ entries:
     aliases: [bell, bells, ghanti, ghantaa, घंटी, घंटा]   # review: ambiguous alias(es) (English word or other meaning) bell
   - id: horn
     category: sound
-    aliases: [horn, horns, honking, honk, hon, हॉर्न]   # review: ambiguous alias(es) (English word or other meaning) hon
+    aliases: [horn, horns, honking, honk, हॉर्न]
   - id: azaan
     category: sound
     aliases: [azaan, adhan, अज़ान, अजान]
