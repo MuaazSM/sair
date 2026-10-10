@@ -69,6 +69,7 @@ select = ["E", "F", "I", "UP", "B", "SIM"]
 
 [tool.ruff.lint.per-file-ignores]
 "spikes/*" = ["E501"]
+"eval/charts.py" = ["E501"]
 
 [tool.mypy]
 python_version = "3.12"
