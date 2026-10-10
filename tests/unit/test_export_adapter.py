@@ -544,8 +544,10 @@ def _write_snapshot(
     (snap / "chat_template.jinja").write_text("t")
 
 
-def test_merge_checkpoint_streams_shards_and_unties(tmp_path: Path) -> None:
+@pytest.mark.parametrize("dtype", ["f32", "f16", "bf16"])
+def test_merge_checkpoint_streams_shards_and_unties(tmp_path: Path, dtype: str) -> None:
     torch = pytest.importorskip("torch")
+    out_dt = {"f32": torch.float32, "f16": torch.float16, "bf16": torch.bfloat16}[dtype]
     from safetensors.torch import load_file, save_file
 
     g = torch.Generator().manual_seed(2)
@@ -564,7 +566,7 @@ def test_merge_checkpoint_streams_shards_and_unties(tmp_path: Path) -> None:
     lora = {k: torch.randn(*s, generator=g) for k, s in _shapes().items()}
     save_file(lora, str(adapter / "adapter_model.safetensors"))
     out = tmp_path / "merged"
-    plan = ea.merge_checkpoint(adapter, snap, out, shard_bytes=64)
+    plan = ea.merge_checkpoint(adapter, snap, out, shard_bytes=64, dtype=dtype)
 
     idx = json.loads((out / "model.safetensors.index.json").read_text())
     shards = sorted(p.name for p in out.glob("*.safetensors"))
@@ -597,8 +599,11 @@ def test_merge_checkpoint_streams_shards_and_unties(tmp_path: Path) -> None:
         "model.unembed_tokens"
     )
     for n, t in got.items():
-        assert t.dtype == torch.bfloat16
-        assert torch.equal(t, expect[n].to(torch.bfloat16)), n
+        if n in plan.tensors:  # merged in float32, written once in the requested dtype
+            assert t.dtype == out_dt, n
+            assert torch.equal(t, expect[n].to(out_dt)), n
+        else:
+            assert t.dtype == torch.bfloat16 and torch.equal(t, base[n]), n
     # untouched tensors are bit-identical, incl. the tied embeddings, mtp and vision
     for n in (
         "model.language_model.embed_tokens.weight",
@@ -614,6 +619,22 @@ def test_merge_checkpoint_streams_shards_and_unties(tmp_path: Path) -> None:
     )
     assert (out / "tokenizer.json").is_file() and (out / "chat_template.jinja").is_file()
     assert not list(out.glob("*.tmp"))
+
+
+def test_merge_dtype_is_part_of_the_stamp_and_validated(env: dict[str, Any]) -> None:
+    adapter = _adapter(env["tmp"])
+    out = env["tmp"] / "m"
+    kw = {"out": out, "impl": env["impl"], "snapshot": env["snapshot"], "check": env["check"]}
+    ea.merge(adapter, **kw)
+    assert ea.read_stamp(out)["inputs"]["dtype"] == ea.DEFAULT_MERGE_DTYPE == "f32"  # type: ignore[index]
+    ea.merge(adapter, **kw)
+    assert len(env["merges"]) == 1  # same dtype: skipped
+    ea.merge(adapter, dtype="f16", **kw)
+    assert len(env["merges"]) == 2  # dtype change: re-merged
+    with pytest.raises(ea.Refused, match="merge dtype"):
+        ea.merge(adapter, dtype="int8", **kw)
+    with pytest.raises(SystemExit):
+        ea.main(["merge", "--adapter", str(adapter), "--dtype", "fp8"])
 
 
 def test_merged_tiny_qwen35_matches_on_the_fly_lora(tmp_path: Path) -> None:

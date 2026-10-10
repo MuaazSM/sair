@@ -4,7 +4,7 @@
     (set -a; . ./.env.training; set +a; uv run python training/export_adapter.py download \\
         --from-run <run_id> --epoch <k>)
     uv run python training/export_adapter.py preflight          # servers stopped? free memory
-    uv run python training/export_adapter.py merge --adapter models/adapters/<dir>
+    uv run python training/export_adapter.py merge --adapter models/adapters/<dir> [--dtype f32]
     uv run python training/export_adapter.py convert
     uv run python training/export_adapter.py quantize
     uv run python training/export_adapter.py base               # baseline C, same path
@@ -26,7 +26,9 @@ Steps
   from transformers ``Qwen3_5GatedDeltaNet.forward``; see ``FUSED_PARTS``), and
   ``unembed_tokens`` goes into ``lm_head``. Any unmapped module, shape or rank mismatch,
   overlap, or unsupported option refuses the merge. ΔW = (alpha / r) · B @ A is added in
-  float32, then cast to bf16. If the adapter trains the unembedding while the base ties it to
+  float32; merged tensors are written as ``--dtype`` (default f32; f16 is equivalent for the
+  f16 GGUF at half the disk; bf16 rounds away ~17% of ΔW and is kept only for comparison).
+  If the adapter trains the unembedding while the base ties it to
   the embeddings, ``lm_head.weight`` is written as embeddings + ΔW and
   ``tie_word_embeddings`` is set to false (the input embeddings stay untouched). All other
   tensors (incl. ``mtp.*`` and the vision tower) are copied unchanged, like the ``base`` path.
@@ -81,6 +83,11 @@ CONVERT_PY = LLAMA_CPP / "convert_hf_to_gguf.py"
 CONVERT_PYTHON = LLAMA_CPP / ".venv" / "bin" / "python"
 DEFAULT_BASE_ID = "Qwen/Qwen3.5-4B"
 QUANT_TYPE = "Q4_K_M"
+# dtype of the MERGED tensors in the HF dir. f32 by default: a bf16 merge rounds away ~17% of
+# ΔW (relative Frobenius error, measured on the e2 adapter). The GGUF is f16 either way, so
+# f16 gives the same final weights at half the disk; bf16 only to reproduce old merges.
+MERGE_DTYPES = ("f32", "f16", "bf16")
+DEFAULT_MERGE_DTYPE = "f32"
 OUTTYPE = "f16"
 
 DEFAULT_PORTS: dict[int, str] = {
@@ -649,10 +656,13 @@ def merge(
     impl: Callable[[Path, Path, Path, str], None] | None = None,
     snapshot: Callable[[str], Path] = base_snapshot,
     check: Callable[[], Any] = preflight,
+    dtype: str = DEFAULT_MERGE_DTYPE,
 ) -> Path:
     if not adapter_complete(adapter):
         raise Refused("refusing: adapter dir is not a complete PEFT adapter (run download)")
-    inputs = {"adapter": fingerprint(adapter), "base": base_id}
+    if dtype not in MERGE_DTYPES:
+        raise Refused(f"refusing: merge dtype must be one of {MERGE_DTYPES}")
+    inputs = {"adapter": fingerprint(adapter), "base": base_id, "dtype": dtype}
     if not force and up_to_date(out, inputs):
         print("merge: skipped (up to date)")
         report("merged", out)
@@ -662,7 +672,10 @@ def merge(
     tmp = out.with_name(out.name + ".partial")
     if tmp.exists():
         shutil.rmtree(tmp)
-    (impl or _merge_impl)(adapter, snap, tmp, base_id)
+    if impl is None:
+        _merge_impl(adapter, snap, tmp, base_id, dtype=dtype)
+    else:
+        impl(adapter, snap, tmp, base_id)
     if out.exists():
         shutil.rmtree(out)
     tmp.rename(out)
@@ -685,9 +698,17 @@ def _base_headers(snap: Path) -> dict[str, tuple[str, dict[str, Any]]]:
 
 
 def merge_checkpoint(
-    adapter: Path, snap: Path, out: Path, *, shard_bytes: int = SHARD_BYTES
+    adapter: Path,
+    snap: Path,
+    out: Path,
+    *,
+    shard_bytes: int = SHARD_BYTES,
+    dtype: str = DEFAULT_MERGE_DTYPE,
 ) -> MergePlan:
-    """Stream the base checkpoint shard by shard, add every ΔW in float32, write bf16.
+    """Stream the base checkpoint shard by shard, add every ΔW in float32, write ``dtype``.
+
+    Only the merged tensors are written in ``dtype`` (f32 default: no ΔW is rounded away
+    before convert_hf_to_gguf rounds once to f16); untouched tensors keep their stored dtype.
 
     The base's tensors and names are kept as they are (same as the ``base`` path, so C and D
     convert identically); only the planned tensors change, plus ``lm_head.weight`` when the
@@ -697,6 +718,9 @@ def merge_checkpoint(
     from safetensors import safe_open
     from safetensors.torch import load_file, save_file
 
+    if dtype not in MERGE_DTYPES:
+        raise Refused(f"refusing: merge dtype must be one of {MERGE_DTYPES}")
+    out_dtype = {"f32": torch.float32, "f16": torch.float16, "bf16": torch.bfloat16}[dtype]
     acfg = json.loads((adapter / "adapter_config.json").read_text(encoding="utf-8"))
     cfg = json.loads((snap / "config.json").read_text(encoding="utf-8"))
     text_cfg = cfg.get("text_config", cfg)
@@ -716,7 +740,8 @@ def merge_checkpoint(
     fused = sum(1 for t in plan.targets if t.tensor.endswith(f".{FUSED_NAME}.weight"))
     print(
         f"merge: lora_modules={len(plan.targets)} base_tensors={len(plan.tensors)} "
-        f"fused_slices={fused} scale={plan.scale:g} untie_lm_head={plan.untie_lm_head}"
+        f"fused_slices={fused} scale={plan.scale:g} untie_lm_head={plan.untie_lm_head} "
+        f"dtype={dtype}"
     )
     by_tensor: dict[str, list[Target]] = {}
     for t in plan.targets:
@@ -743,7 +768,8 @@ def merge_checkpoint(
         if name in by_tensor:
             ts = by_tensor[name]
             t = apply_deltas(
-                t, [(x.row0, lora_delta(lora[x.a_key], lora[x.b_key], plan.scale)) for x in ts]
+                t.to(out_dtype),
+                [(x.row0, lora_delta(lora[x.a_key], lora[x.b_key], plan.scale)) for x in ts],
             )
             applied += len(ts)
         buf[name] = t.contiguous()
@@ -796,10 +822,12 @@ def merge_checkpoint(
     return plan
 
 
-def _merge_impl(adapter: Path, snap: Path, out: Path, base_id: str) -> None:  # pragma: no cover
+def _merge_impl(  # pragma: no cover
+    adapter: Path, snap: Path, out: Path, base_id: str, *, dtype: str = DEFAULT_MERGE_DTYPE
+) -> None:
     """The heavy part (streams shard by shard; all model servers stopped)."""
     os.environ.update(OFFLINE_ENV)
-    merge_checkpoint(adapter, snap, out)
+    merge_checkpoint(adapter, snap, out, dtype=dtype)
 
 
 # --------------------------------------------------------------------------- convert / quantize
@@ -908,10 +936,18 @@ def run_all(
     merged: Path = MERGED_DIR,
     f16: Path = WRITER_F16,
     q4: Path = WRITER_Q4,
+    dtype: str = DEFAULT_MERGE_DTYPE,
 ) -> Path:
     """merge -> convert -> quantize (each idempotent)."""
     merge(
-        adapter, base_id=base_id, out=merged, force=force, impl=impl, snapshot=snapshot, check=check
+        adapter,
+        base_id=base_id,
+        out=merged,
+        force=force,
+        impl=impl,
+        snapshot=snapshot,
+        check=check,
+        dtype=dtype,
     )
     convert(merged, f16, runner=runner, force=force, check=check)
     return quantize(f16, q4, runner=runner, force=force, check=check)
@@ -935,6 +971,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         m.add_argument("--adapter", type=Path, required=True)
         m.add_argument("--base-id", default=DEFAULT_BASE_ID)
         m.add_argument("--force", action="store_true")
+        m.add_argument("--dtype", choices=MERGE_DTYPES, default=DEFAULT_MERGE_DTYPE)
         m.add_argument("--min-free-gb", type=float, default=None)
     for name in ("convert", "quantize", "base"):
         c = sub.add_parser(name)
@@ -967,9 +1004,9 @@ def main(argv: Sequence[str] | None = None) -> int:
                 raise Refused("refusing: give a tinker:// path or --from-run/--epoch")
             print(f"download: adapter_dir={download(path, force=a.force).name}")
         elif a.cmd == "merge":
-            merge(a.adapter, base_id=a.base_id, force=a.force, check=check)
+            merge(a.adapter, base_id=a.base_id, force=a.force, check=check, dtype=a.dtype)
         elif a.cmd == "all":
-            run_all(a.adapter, base_id=a.base_id, force=a.force, check=check)
+            run_all(a.adapter, base_id=a.base_id, force=a.force, check=check, dtype=a.dtype)
         elif a.cmd == "convert":
             convert(MERGED_DIR, WRITER_F16, force=a.force, check=check)
         elif a.cmd == "quantize":
