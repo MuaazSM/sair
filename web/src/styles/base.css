@@ -1,0 +1,10 @@
+/* Base styles the design frames depend on, copied verbatim from the <helmet><style> blocks of the .dc.html files.
+   The canvas background (#E9ECE6) belongs to the design-review canvas, not the app; it is kept here only because the
+   design's body rule is the source for color/font/smoothing. The app overrides background through var(--bg) in the screen CSS.
+   Google Fonts <link> tags are replaced by local @font-face in fonts.css (UI-8). */
+body{margin:0;background:#E9ECE6;color:#1D2A22;font-family:'Atkinson Hyperlegible',system-ui,sans-serif;-webkit-font-smoothing:antialiased} /* source: After the Walk.dc.html:L15 (identical in Before the Walk, Family Diary, Hub Status, Blog Illustrations; Sair on iPhone and Sair Design System use background:#FAFAF6) */
+a{color:#2C4A34;text-underline-offset:4px} /* source: After the Walk.dc.html:L16 */
+a:hover{color:#1D2A22} /* source: After the Walk.dc.html:L17 */
+@keyframes sair-trace{0%{stroke-dashoffset:1}62%,100%{stroke-dashoffset:0}} /* source: After the Walk.dc.html:L18 */
+@keyframes sair-trace-fade{0%,80%{opacity:1}94%,100%{opacity:0}} /* source: After the Walk.dc.html:L19 */
+@keyframes sair-pulse{0%,100%{opacity:1}50%{opacity:.4}} /* source: After the Walk.dc.html:L20 */

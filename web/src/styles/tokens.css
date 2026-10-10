@@ -1,0 +1,112 @@
+/* Sair design tokens, copied verbatim from the Claude Design export (brand/Sair Design System/).
+   styles.css:L1-3 is only three @imports of the files below, in this order: typography, colors, shape-motion.
+   Light = :root; dusk (dark) = [data-theme="dusk"]. Do not edit values here; change the design first. */
+
+/* tokens/typography.css:L1 omitted: font @import replaced by local @font-face in fonts.css */
+
+:root {  /* source: tokens/typography.css:L3 */
+  --font-display: "Nunito", system-ui, sans-serif;     /* headings, wordmark, buttons */  /* source: tokens/typography.css:L4 */
+  --font-body: "Atkinson Hyperlegible", system-ui, sans-serif;  /* source: tokens/typography.css:L5 */
+  --font-deva: "Mukta", sans-serif;                     /* any Devanagari */  /* source: tokens/typography.css:L6 */
+
+  /* mobile scale, px / line-height */
+  --type-display: 800 40px/46px var(--font-display);  /* source: tokens/typography.css:L9 */
+  --type-title: 800 30px/36px var(--font-display);  /* source: tokens/typography.css:L10 */
+  --type-heading: 700 24px/30px var(--font-display);  /* source: tokens/typography.css:L11 */
+  --type-button: 700 24px/28px var(--font-display);  /* source: tokens/typography.css:L12 */
+  --type-body-lg: 400 22px/32px var(--font-body);  /* source: tokens/typography.css:L13 */
+  --type-body: 400 20px/30px var(--font-body);          /* minimum for parents' screens */  /* source: tokens/typography.css:L14 */
+  --type-meta: 400 17px/24px var(--font-body);          /* developer status page only */  /* source: tokens/typography.css:L15 */
+  --type-deva: 500 22px/34px var(--font-deva);  /* source: tokens/typography.css:L16 */
+}
+
+
+/* Sair colour tokens. Light = evening paper. Dusk = dark mode. */
+:root {  /* source: tokens/colors.css:L2 */
+  --sair-leaf: #3F6B4A;          /* primary */  /* source: tokens/colors.css:L3 */
+  --sair-leaf-deep: #2C4A34;     /* pressed, green text on light */  /* source: tokens/colors.css:L4 */
+  --sair-amber: #A5641A;         /* accent: sun, highlights. Sparingly. */  /* source: tokens/colors.css:L5 */
+  --sair-amber-text: #8A5214;    /* amber text on soft amber (AA) */  /* source: tokens/colors.css:L6 */
+  --sair-paper: #FAFAF6;         /* background */  /* source: tokens/colors.css:L7 */
+  --sair-surface: #FFFFFF;       /* cards */  /* source: tokens/colors.css:L8 */
+  --sair-ink: #1D2A22;           /* text */  /* source: tokens/colors.css:L9 */
+  --sair-muted: #5C6B60;         /* secondary text */  /* source: tokens/colors.css:L10 */
+  --sair-line: #D9E0D6;          /* borders, dividers, empty ring */  /* source: tokens/colors.css:L11 */
+  --sair-soft-green: #EEF3EC;    /* tinted surfaces */  /* source: tokens/colors.css:L12 */
+  --sair-soft-amber: #FBF3E6;  /* source: tokens/colors.css:L13 */
+  --sair-error: #A2453A;         /* quiet brick, not alarm red */  /* source: tokens/colors.css:L14 */
+  --sair-error-soft: #F8ECE8;  /* source: tokens/colors.css:L15 */
+  --sair-disabled-bg: #E4E9E1;  /* source: tokens/colors.css:L16 */
+
+  /* semantic */
+  --bg: var(--sair-paper);  /* source: tokens/colors.css:L19 */
+  --surface-card: var(--sair-surface);  /* source: tokens/colors.css:L20 */
+  --surface-tint: var(--sair-soft-green);  /* source: tokens/colors.css:L21 */
+  --surface-warm: var(--sair-soft-amber);  /* source: tokens/colors.css:L22 */
+  --text-body: var(--sair-ink);  /* source: tokens/colors.css:L23 */
+  --text-muted: var(--sair-muted);  /* source: tokens/colors.css:L24 */
+  --text-accent: var(--sair-leaf-deep);  /* source: tokens/colors.css:L25 */
+  --border: var(--sair-line);  /* source: tokens/colors.css:L26 */
+  --action-bg: var(--sair-leaf);  /* source: tokens/colors.css:L27 */
+  --action-bg-pressed: var(--sair-leaf-deep);  /* source: tokens/colors.css:L28 */
+  --action-fg: var(--sair-paper);  /* source: tokens/colors.css:L29 */
+  --focus-ring: var(--sair-amber);  /* source: tokens/colors.css:L30 */
+  --danger-fg: var(--sair-error);  /* source: tokens/colors.css:L31 */
+  --danger-bg: var(--sair-error-soft);  /* source: tokens/colors.css:L32 */
+  --dusk-tint: none;  /* source: tokens/colors.css:L33 */
+}
+
+/* Dusk — dark mode. Green-slate, warm paper text, never pure black. */
+[data-theme="dusk"] {  /* source: tokens/colors.css:L37 */
+  --sair-dusk-bg: #1C2624;  /* source: tokens/colors.css:L38 */
+  --sair-dusk-surface: #24302D;  /* source: tokens/colors.css:L39 */
+  --sair-dusk-raised: #2C3A36;  /* source: tokens/colors.css:L40 */
+  --sair-dusk-text: #EEEDE4;  /* source: tokens/colors.css:L41 */
+  --sair-dusk-muted: #A9B5AC;  /* source: tokens/colors.css:L42 */
+  --sair-dusk-line: #3A4944;  /* source: tokens/colors.css:L43 */
+  --sair-dusk-leaf: #8FBF9A;  /* source: tokens/colors.css:L44 */
+  --sair-dusk-leaf-pressed: #7AAA86;  /* source: tokens/colors.css:L45 */
+  --sair-dusk-amber: #E0A55A;  /* source: tokens/colors.css:L46 */
+  --sair-dusk-error: #E59A8C;  /* source: tokens/colors.css:L47 */
+  --sair-dusk-soft-green: #26382F;  /* source: tokens/colors.css:L48 */
+  --sair-dusk-soft-amber: #3A3124;  /* source: tokens/colors.css:L49 */
+  --sair-dusk-on-leaf: #142019;  /* source: tokens/colors.css:L50 */
+
+  --bg: var(--sair-dusk-bg);  /* source: tokens/colors.css:L52 */
+  --surface-card: var(--sair-dusk-surface);  /* source: tokens/colors.css:L53 */
+  --surface-tint: var(--sair-dusk-soft-green);  /* source: tokens/colors.css:L54 */
+  --surface-warm: var(--sair-dusk-soft-amber);  /* source: tokens/colors.css:L55 */
+  --text-body: var(--sair-dusk-text);  /* source: tokens/colors.css:L56 */
+  --text-muted: var(--sair-dusk-muted);  /* source: tokens/colors.css:L57 */
+  --text-accent: var(--sair-dusk-leaf);  /* source: tokens/colors.css:L58 */
+  --border: var(--sair-dusk-line);  /* source: tokens/colors.css:L59 */
+  --action-bg: var(--sair-dusk-leaf);  /* source: tokens/colors.css:L60 */
+  --action-bg-pressed: var(--sair-dusk-leaf-pressed);  /* source: tokens/colors.css:L61 */
+  --action-fg: var(--sair-dusk-on-leaf);  /* source: tokens/colors.css:L62 */
+  --focus-ring: var(--sair-dusk-amber);  /* source: tokens/colors.css:L63 */
+  --danger-fg: var(--sair-dusk-error);  /* source: tokens/colors.css:L64 */
+  --danger-bg: #3A2826;  /* source: tokens/colors.css:L65 */
+  --dusk-tint: linear-gradient(180deg, #2A2C27 0%, #1C2624 42%);  /* source: tokens/colors.css:L66 */
+}
+
+
+:root {  /* source: tokens/shape-motion.css:L1 */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;  /* source: tokens/shape-motion.css:L2 */
+  --space-5: 24px; --space-6: 32px; --space-7: 48px;  /* source: tokens/shape-motion.css:L3 */
+
+  --radius-sm: 16px;   /* inputs, banners inner */  /* source: tokens/shape-motion.css:L5 */
+  --radius-md: 20px;   /* buttons, banners */  /* source: tokens/shape-motion.css:L6 */
+  --radius-lg: 24px;   /* cards */  /* source: tokens/shape-motion.css:L7 */
+  --radius-pill: 999px;  /* source: tokens/shape-motion.css:L8 */
+
+  --shadow-soft: 0 1px 2px rgba(29,42,34,.06), 0 6px 20px rgba(29,42,34,.06);  /* source: tokens/shape-motion.css:L10 */
+  --shadow-dusk: 0 1px 2px rgba(0,0,0,.25), 0 6px 20px rgba(0,0,0,.18);  /* source: tokens/shape-motion.css:L11 */
+
+  --tap-min: 56px;  /* source: tokens/shape-motion.css:L13 */
+  --tap-primary: 72px;  /* source: tokens/shape-motion.css:L14 */
+
+  --ease-calm: cubic-bezier(.22,.61,.36,1);  /* source: tokens/shape-motion.css:L16 */
+  --dur-quick: 300ms;  /* source: tokens/shape-motion.css:L17 */
+  --dur-calm: 400ms;  /* source: tokens/shape-motion.css:L18 */
+  --dur-slow: 500ms;  /* source: tokens/shape-motion.css:L19 */
+}

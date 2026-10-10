@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "door",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1a\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:42",
+      "Saturday, 10 October",
+      "Ready for your sair?",
+      "Today's walk",
+      "Listen first. The words come after.",
+      "Hear today's walk",
+      "Back from your walk? Tell Sair"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Door",
+    "route": "/",
+    "state": "Door screen, normal walk (mission hidden behind soft lines)",
+    "visual_test": "visual/door",
+    "design_note": "Mission text is hidden behind soft lines so they hear it before reading it."
+  },
+  {
+    "id": "mission-playing",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1b\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:42",
+      "Today's walk",
+      "Three",
+      "walks",
+      "ago,",
+      "the",
+      "gulmohar",
+      "on",
+      "your",
+      "lane",
+      "had",
+      "no",
+      "flowers.",
+      "Look",
+      "at",
+      "it",
+      "again",
+      "today.",
+      "Playing again in 2 seconds"
+    ],
+    "aria_labels": [
+      "Sair",
+      "Pause"
+    ],
+    "component": "MissionPlaying",
+    "route": "/mission",
+    "state": "Mission audio playing; design default t=7.6 s (between the two plays, \"Playing again in 2 seconds\")",
+    "visual_test": "visual/mission-playing",
+    "design_note": "Words fade in as they're spoken. Plays twice with a 2-second pause, then moves on to 1C."
+  },
+  {
+    "id": "leave-phone",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1c\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:43",
+      "Enjoy your walk.",
+      "Leave me here. I'll be waiting when you're back.",
+      "Okay",
+      "Hear it once more",
+      "Tap to wake"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "LeavePhone",
+    "route": "/leave",
+    "state": "Leave the phone; \"Okay\" dims the screen",
+    "visual_test": "visual/leave-phone",
+    "design_note": "“Okay” fades the screen to near-black over 500ms. Illustration is built from simple shapes; swap via Tweaks for a real piece."
+  },
+  {
+    "id": "door-first-walk",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1d\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:42",
+      "Saturday, 10 October",
+      "Ready for your sair?",
+      "Your first walk",
+      "A gentle one to start.",
+      "Each walk, Sair will remember what you noticed.",
+      "Hear today's walk",
+      "Back from your walk? Tell Sair"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Door",
+    "route": "/ (first walk variant)",
+    "state": "First walk variant of the door screen",
+    "visual_test": "visual/door-first-walk",
+    "design_note": "Plays: “Find the quietest spot on your walk and stand there for ten breaths.” The leaf line shows once, on the first walk only."
+  },
+  {
+    "id": "door-dusk",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1a-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:42",
+      "Saturday, 10 October",
+      "Ready for your sair?",
+      "Today's walk",
+      "Listen first. The words come after.",
+      "Hear today's walk",
+      "Back from your walk? Tell Sair"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Door",
+    "route": "/",
+    "state": "Door screen, normal walk (mission hidden behind soft lines) (dusk)",
+    "visual_test": "visual/door-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "mission-playing-dusk",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1b-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:42",
+      "Today's walk",
+      "Three",
+      "walks",
+      "ago,",
+      "the",
+      "gulmohar",
+      "on",
+      "your",
+      "lane",
+      "had",
+      "no",
+      "flowers.",
+      "Look",
+      "at",
+      "it",
+      "again",
+      "today.",
+      "Playing again in 2 seconds"
+    ],
+    "aria_labels": [
+      "Sair",
+      "Pause"
+    ],
+    "component": "MissionPlaying",
+    "route": "/mission",
+    "state": "Mission audio playing; design default t=7.6 s (between the two plays, \"Playing again in 2 seconds\") (dusk)",
+    "visual_test": "visual/mission-playing-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "leave-phone-dusk",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1c-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:43",
+      "Enjoy your walk.",
+      "Leave me here. I'll be waiting when you're back.",
+      "Okay",
+      "Hear it once more",
+      "Tap to wake"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "LeavePhone",
+    "route": "/leave",
+    "state": "Leave the phone; \"Okay\" dims the screen (dusk)",
+    "visual_test": "visual/leave-phone-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "door-first-walk-dusk",
+    "file": "Before the Walk.dc.html",
+    "selector_or_index": "[id=\"1d-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:42",
+      "Saturday, 10 October",
+      "Ready for your sair?",
+      "Your first walk",
+      "A gentle one to start.",
+      "Each walk, Sair will remember what you noticed.",
+      "Hear today's walk",
+      "Back from your walk? Tell Sair"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Door",
+    "route": "/ (first walk variant)",
+    "state": "First walk variant of the door screen (dusk)",
+    "visual_test": "visual/door-first-walk-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "tell-sair",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2a\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:58",
+      "Saturday, 10 October",
+      "How was your walk?",
+      "Tell me what you noticed. Hindi, English, anything is fine.",
+      "Today: the gulmohar on your lane",
+      "Hold to talk",
+      "Up to a minute"
+    ],
+    "aria_labels": [
+      "Sair",
+      "Hold to talk"
+    ],
+    "component": "TellSair",
+    "route": "/tell",
+    "state": "Hold-to-talk idle",
+    "visual_test": "visual/tell-sair",
+    "design_note": "The mission sits right above the button, so they remember what to talk about."
+  },
+  {
+    "id": "recording",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2b\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:58",
+      "Listening",
+      "Today: the gulmohar on your lane",
+      "0:23",
+      "Let go when you're done."
+    ],
+    "aria_labels": [
+      "Sair",
+      "Hold to talk"
+    ],
+    "component": "Recording",
+    "route": "/tell (recording)",
+    "state": "Recording at 0:23",
+    "visual_test": "visual/recording",
+    "design_note": "Button grows a little (176 → 188px) and darkens. Amber ring fills over 60 seconds."
+  },
+  {
+    "id": "recording-warning",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2b50\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:59",
+      "Listening",
+      "Today: the gulmohar on your lane",
+      "0:50",
+      "10 seconds left",
+      "Let go when you're done."
+    ],
+    "aria_labels": [
+      "Sair",
+      "Hold to talk"
+    ],
+    "component": "Recording",
+    "route": "/tell (recording, warning)",
+    "state": "Recording at 0:50, \"10 seconds left\" countdown",
+    "visual_test": "visual/recording-warning",
+    "design_note": "From 0:50 the ring breathes slowly (2.4 s) and the countdown appears. Stops by itself at 1:00 and saves."
+  },
+  {
+    "id": "writing",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2c\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "6:59",
+      "Writing it down…",
+      "This takes about a minute. You can put the phone down."
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Writing",
+    "route": "/writing",
+    "state": "Saving / \"Writing it down...\" (logo trace animation)",
+    "visual_test": "visual/writing",
+    "design_note": "The logo’s path draws itself, holds, fades, repeats (5 s). No progress bar, no percentages."
+  },
+  {
+    "id": "saved",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2d\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "7:00",
+      "Got it. Saved.",
+      "Saturday, 10 October",
+      "Mom and Dad",
+      "Mom and Dad walked down the lane past the temple. The gulmohar had a few red flowers again. Dad thinks he heard a koel, maybe near the school.",
+      "gulmohar · red flowers",
+      "maybe",
+      "koel",
+      "Mission done",
+      "Read it to me",
+      "Done"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Saved",
+    "route": "/saved",
+    "state": "Entry ready with sure + maybe chips and \"Mission done\"",
+    "visual_test": "visual/saved",
+    "design_note": "Sure facts are solid chips; guesses are dotted and say “maybe”. One primary."
+  },
+  {
+    "id": "short-note",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2e\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "7:00",
+      "Got it. Saved.",
+      "Saturday, 10 October",
+      "Mom and Dad",
+      "Mom and Dad went for their evening walk.",
+      "From your note: “Nothing much, just walked.”",
+      "A quiet walk",
+      "Read it to me",
+      "Done"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Saved",
+    "route": "/saved (short note)",
+    "state": "Short-note entry, \"A quiet walk\" chip",
+    "visual_test": "visual/short-note",
+    "design_note": "A short note gets a short entry. No chips, no nudging for more. “A quiet walk” instead of a missed mission."
+  },
+  {
+    "id": "couldnt-hear",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2f\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "6:59",
+      "I couldn't hear that clearly.",
+      "Sometimes the fan or the traffic is loud. Let's try once more.",
+      "Try again",
+      "Skip for today"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "CouldntHear",
+    "route": "/tell (couldn't hear)",
+    "state": "Transcription failed, try again / skip",
+    "visual_test": "visual/couldnt-hear",
+    "design_note": "Blames the room, never the person. One button; skipping is allowed and quiet."
+  },
+  {
+    "id": "hub-sleeping",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2g\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "7:00",
+      "Sair's home computer is sleeping.",
+      "Your note will be saved when it wakes up.",
+      "Your note is safe on this phone",
+      "0:41 · it will send by itself",
+      "Okay"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "HubSleeping",
+    "route": "/saved (hub asleep)",
+    "state": "Computer asleep, note queued on phone",
+    "visual_test": "visual/hub-sleeping",
+    "design_note": "The note is queued on the phone and sends itself later. Nothing for them to do."
+  },
+  {
+    "id": "tell-sair-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2a-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:58",
+      "Saturday, 10 October",
+      "How was your walk?",
+      "Tell me what you noticed. Hindi, English, anything is fine.",
+      "Today: the gulmohar on your lane",
+      "Hold to talk",
+      "Up to a minute"
+    ],
+    "aria_labels": [
+      "Sair",
+      "Hold to talk"
+    ],
+    "component": "TellSair",
+    "route": "/tell",
+    "state": "Hold-to-talk idle (dusk)",
+    "visual_test": "visual/tell-sair-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "recording-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2b-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:58",
+      "Listening",
+      "Today: the gulmohar on your lane",
+      "0:23",
+      "Let go when you're done."
+    ],
+    "aria_labels": [
+      "Sair",
+      "Hold to talk"
+    ],
+    "component": "Recording",
+    "route": "/tell (recording)",
+    "state": "Recording at 0:23 (dusk)",
+    "visual_test": "visual/recording-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "recording-warning-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2b50-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:59",
+      "Listening",
+      "Today: the gulmohar on your lane",
+      "0:50",
+      "10 seconds left",
+      "Let go when you're done."
+    ],
+    "aria_labels": [
+      "Sair",
+      "Hold to talk"
+    ],
+    "component": "Recording",
+    "route": "/tell (recording, warning)",
+    "state": "Recording at 0:50, \"10 seconds left\" countdown (dusk)",
+    "visual_test": "visual/recording-warning-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "writing-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2c-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:59",
+      "Writing it down…",
+      "This takes about a minute. You can put the phone down."
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Writing",
+    "route": "/writing",
+    "state": "Saving / \"Writing it down...\" (logo trace animation) (dusk)",
+    "visual_test": "visual/writing-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "saved-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2d-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "7:00",
+      "Got it. Saved.",
+      "Saturday, 10 October",
+      "Mom and Dad",
+      "Mom and Dad walked down the lane past the temple. The gulmohar had a few red flowers again. Dad thinks he heard a koel, maybe near the school.",
+      "gulmohar · red flowers",
+      "maybe",
+      "koel",
+      "Mission done",
+      "Read it to me",
+      "Done"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Saved",
+    "route": "/saved",
+    "state": "Entry ready with sure + maybe chips and \"Mission done\" (dusk)",
+    "visual_test": "visual/saved-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "short-note-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2e-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "7:00",
+      "Got it. Saved.",
+      "Saturday, 10 October",
+      "Mom and Dad",
+      "Mom and Dad went for their evening walk.",
+      "From your note: “Nothing much, just walked.”",
+      "A quiet walk",
+      "Read it to me",
+      "Done"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "Saved",
+    "route": "/saved (short note)",
+    "state": "Short-note entry, \"A quiet walk\" chip (dusk)",
+    "visual_test": "visual/short-note-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "couldnt-hear-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2f-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "6:59",
+      "I couldn't hear that clearly.",
+      "Sometimes the fan or the traffic is loud. Let's try once more.",
+      "Try again",
+      "Skip for today"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "CouldntHear",
+    "route": "/tell (couldn't hear)",
+    "state": "Transcription failed, try again / skip (dusk)",
+    "visual_test": "visual/couldnt-hear-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "hub-sleeping-dusk",
+    "file": "After the Walk.dc.html",
+    "selector_or_index": "[id=\"2g-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "7:00",
+      "Sair's home computer is sleeping.",
+      "Your note will be saved when it wakes up.",
+      "Your note is safe on this phone",
+      "0:41 · it will send by itself",
+      "Okay"
+    ],
+    "aria_labels": [
+      "Sair"
+    ],
+    "component": "HubSleeping",
+    "route": "/saved (hub asleep)",
+    "state": "Computer asleep, note queued on phone (dusk)",
+    "visual_test": "visual/hub-sleeping-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "diary",
+    "file": "Family Diary.dc.html",
+    "selector_or_index": "[id=\"3a\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Must",
+    "theme": "light",
+    "strings": [
+      "8:15",
+      "Our walks",
+      "7 walks this month · 12 things noticed",
+      "All",
+      "Mom",
+      "Dad",
+      "Sat 10 Oct",
+      "Mom and Dad",
+      "Three walks ago, the gulmohar on your lane had no flowers. Look at it again today.",
+      "Mom and Dad walked down the lane past the temple. The gulmohar had a few red flowers again. Dad thinks he heard a koel, maybe near the school.",
+      "gulmohar · red flowers",
+      "maybe",
+      "koel near the school",
+      "Fri 9 Oct",
+      "Dad",
+      "Is the ginger cat still on the blue scooter? Look outside building 4.",
+      "Dad walked alone; Mom had her sister over. No cat on the scooter tonight. The chai stall has moved to the other side of the temple gate. Same chaiwala, same price.",
+      "chai stall moved",
+      "no cat tonight",
+      "Thu 8 Oct",
+      "Mom and Dad",
+      "Look up at the sky just before you turn back.",
+      "The sky was pink and clear, the first evening without monsoon clouds. A breeze came in from the sea at the end of the lane. Mom said it smelled of salt and someone frying bhajiyas.",
+      "clear pink sky",
+      "sea breeze",
+      "Wed 7 Oct",
+      "Mom",
+      "Notice one sound you usually don’t hear.",
+      "Mom went for a short walk.",
+      "Tue 6 Oct",
+      "Mom and Dad",
+      "Count the cats you see. Only the ones that look back.",
+      "The ginger cat was asleep on the blue scooter again, outside building 4. The crows were loud around the big peepal tree by the temple.",
+      "ginger cat on scooter",
+      "crows at the peepal",
+      "Asked about again on Fri 9 Oct",
+      "Sun 4 Oct",
+      "Mom and Dad",
+      "Look at the gulmohar on your lane. What colour is it right now?",
+      "The gulmohar near the temple is all green now, no flowers left. Dad says it will flower again before Diwali.",
+      "gulmohar · no flowers",
+      "Asked about again on Sat 10 Oct",
+      "That's everything from October so far."
+    ],
+    "aria_labels": [],
+    "component": "Diary",
+    "route": "/diary",
+    "state": "Diary list, mobile, filter = all",
+    "visual_test": "visual/diary",
+    "design_note": "Header scrolls away with the page. No counts per person, no streaks: one quiet summary line."
+  },
+  {
+    "id": "diary-empty",
+    "file": "Family Diary.dc.html",
+    "selector_or_index": "[id=\"3b\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "8:15",
+      "Our walks",
+      "Your first walk will appear here.",
+      "After each walk, Sair writes a few lines for the family."
+    ],
+    "aria_labels": [],
+    "component": "Diary",
+    "route": "/diary (empty)",
+    "state": "Empty first use",
+    "visual_test": "visual/diary-empty",
+    "design_note": "The bare logo path: nobody has walked it yet."
+  },
+  {
+    "id": "diary-desktop",
+    "file": "Family Diary.dc.html",
+    "selector_or_index": "[id=\"3c\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "Our walks",
+      "7 walks this month · 12 things noticed",
+      "All",
+      "Mom",
+      "Dad",
+      "Sat 10 Oct",
+      "Mom and Dad",
+      "Three walks ago, the gulmohar on your lane had no flowers. Look at it again today.",
+      "Mom and Dad walked down the lane past the temple. The gulmohar had a few red flowers again. Dad thinks he heard a koel, maybe near the school.",
+      "gulmohar · red flowers",
+      "maybe",
+      "koel near the school",
+      "Fri 9 Oct",
+      "Dad",
+      "Is the ginger cat still on the blue scooter? Look outside building 4.",
+      "Dad walked alone; Mom had her sister over. No cat on the scooter tonight. The chai stall has moved to the other side of the temple gate. Same chaiwala, same price.",
+      "chai stall moved",
+      "no cat tonight",
+      "Thu 8 Oct",
+      "Mom and Dad",
+      "Look up at the sky just before you turn back.",
+      "The sky was pink and clear, the first evening without monsoon clouds. A breeze came in from the sea at the end of the lane. Mom said it smelled of salt and someone frying bhajiyas.",
+      "clear pink sky",
+      "sea breeze",
+      "Wed 7 Oct",
+      "Mom",
+      "Notice one sound you usually don’t hear.",
+      "Mom went for a short walk.",
+      "Tue 6 Oct",
+      "Mom and Dad",
+      "Count the cats you see. Only the ones that look back.",
+      "The ginger cat was asleep on the blue scooter again, outside building 4. The crows were loud around the big peepal tree by the temple.",
+      "ginger cat on scooter",
+      "crows at the peepal",
+      "Asked about again on Fri 9 Oct",
+      "Sun 4 Oct",
+      "Mom and Dad",
+      "Look at the gulmohar on your lane. What colour is it right now?",
+      "The gulmohar near the temple is all green now, no flowers left. Dad says it will flower again before Diwali.",
+      "gulmohar · no flowers",
+      "Asked about again on Sat 10 Oct",
+      "That's everything from October so far."
+    ],
+    "aria_labels": [],
+    "component": "Diary",
+    "route": "/diary (desktop)",
+    "state": "Diary list, desktop 1280x800",
+    "visual_test": "visual/diary-desktop",
+    "design_note": "Dates sit in a left gutter like a journal; one reading column, max 960."
+  },
+  {
+    "id": "diary-dusk",
+    "file": "Family Diary.dc.html",
+    "selector_or_index": "[id=\"3a-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "8:15",
+      "Our walks",
+      "7 walks this month · 12 things noticed",
+      "All",
+      "Mom",
+      "Dad",
+      "Sat 10 Oct",
+      "Mom and Dad",
+      "Three walks ago, the gulmohar on your lane had no flowers. Look at it again today.",
+      "Mom and Dad walked down the lane past the temple. The gulmohar had a few red flowers again. Dad thinks he heard a koel, maybe near the school.",
+      "gulmohar · red flowers",
+      "maybe",
+      "koel near the school",
+      "Fri 9 Oct",
+      "Dad",
+      "Is the ginger cat still on the blue scooter? Look outside building 4.",
+      "Dad walked alone; Mom had her sister over. No cat on the scooter tonight. The chai stall has moved to the other side of the temple gate. Same chaiwala, same price.",
+      "chai stall moved",
+      "no cat tonight",
+      "Thu 8 Oct",
+      "Mom and Dad",
+      "Look up at the sky just before you turn back.",
+      "The sky was pink and clear, the first evening without monsoon clouds. A breeze came in from the sea at the end of the lane. Mom said it smelled of salt and someone frying bhajiyas.",
+      "clear pink sky",
+      "sea breeze",
+      "Wed 7 Oct",
+      "Mom",
+      "Notice one sound you usually don’t hear.",
+      "Mom went for a short walk.",
+      "Tue 6 Oct",
+      "Mom and Dad",
+      "Count the cats you see. Only the ones that look back.",
+      "The ginger cat was asleep on the blue scooter again, outside building 4. The crows were loud around the big peepal tree by the temple.",
+      "ginger cat on scooter",
+      "crows at the peepal",
+      "Asked about again on Fri 9 Oct",
+      "Sun 4 Oct",
+      "Mom and Dad",
+      "Look at the gulmohar on your lane. What colour is it right now?",
+      "The gulmohar near the temple is all green now, no flowers left. Dad says it will flower again before Diwali.",
+      "gulmohar · no flowers",
+      "Asked about again on Sat 10 Oct",
+      "That's everything from October so far."
+    ],
+    "aria_labels": [],
+    "component": "Diary",
+    "route": "/diary",
+    "state": "Diary list, mobile, filter = all (dusk)",
+    "visual_test": "visual/diary-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "diary-empty-dusk",
+    "file": "Family Diary.dc.html",
+    "selector_or_index": "[id=\"3b-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "8:15",
+      "Our walks",
+      "Your first walk will appear here.",
+      "After each walk, Sair writes a few lines for the family."
+    ],
+    "aria_labels": [],
+    "component": "Diary",
+    "route": "/diary (empty)",
+    "state": "Empty first use (dusk)",
+    "visual_test": "visual/diary-empty-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "diary-desktop-dusk",
+    "file": "Family Diary.dc.html",
+    "selector_or_index": "[id=\"3c-dusk\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "tier": "Could",
+    "theme": "dark",
+    "strings": [
+      "Our walks",
+      "7 walks this month · 12 things noticed",
+      "All",
+      "Mom",
+      "Dad",
+      "Sat 10 Oct",
+      "Mom and Dad",
+      "Three walks ago, the gulmohar on your lane had no flowers. Look at it again today.",
+      "Mom and Dad walked down the lane past the temple. The gulmohar had a few red flowers again. Dad thinks he heard a koel, maybe near the school.",
+      "gulmohar · red flowers",
+      "maybe",
+      "koel near the school",
+      "Fri 9 Oct",
+      "Dad",
+      "Is the ginger cat still on the blue scooter? Look outside building 4.",
+      "Dad walked alone; Mom had her sister over. No cat on the scooter tonight. The chai stall has moved to the other side of the temple gate. Same chaiwala, same price.",
+      "chai stall moved",
+      "no cat tonight",
+      "Thu 8 Oct",
+      "Mom and Dad",
+      "Look up at the sky just before you turn back.",
+      "The sky was pink and clear, the first evening without monsoon clouds. A breeze came in from the sea at the end of the lane. Mom said it smelled of salt and someone frying bhajiyas.",
+      "clear pink sky",
+      "sea breeze",
+      "Wed 7 Oct",
+      "Mom",
+      "Notice one sound you usually don’t hear.",
+      "Mom went for a short walk.",
+      "Tue 6 Oct",
+      "Mom and Dad",
+      "Count the cats you see. Only the ones that look back.",
+      "The ginger cat was asleep on the blue scooter again, outside building 4. The crows were loud around the big peepal tree by the temple.",
+      "ginger cat on scooter",
+      "crows at the peepal",
+      "Asked about again on Fri 9 Oct",
+      "Sun 4 Oct",
+      "Mom and Dad",
+      "Look at the gulmohar on your lane. What colour is it right now?",
+      "The gulmohar near the temple is all green now, no flowers left. Dad says it will flower again before Diwali.",
+      "gulmohar · no flowers",
+      "Asked about again on Sat 10 Oct",
+      "That's everything from October so far."
+    ],
+    "aria_labels": [],
+    "component": "Diary",
+    "route": "/diary (desktop)",
+    "state": "Diary list, desktop 1280x800 (dusk)",
+    "visual_test": "visual/diary-desktop-dusk",
+    "design_note": ""
+  },
+  {
+    "id": "shortcut-siri",
+    "file": "Sair on iPhone.dc.html",
+    "selector_or_index": "[id=\"4a\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "ILLUSTRATIVE · NOT REAL iOS UI",
+      "Saturday 10 October",
+      "6:41",
+      "Sair",
+      "Shortcut",
+      "Reading aloud",
+      "Today's walk",
+      "Three walks ago, the gulmohar on your lane had no flowers. Look at it again today."
+    ],
+    "aria_labels": [],
+    "component": "(Shortcuts mock, not routed)",
+    "route": "n/a",
+    "state": "Hey Siri, Sair",
+    "visual_test": "visual/shortcut-siri",
+    "design_note": "Siri reads the mission out loud and leaves it on screen. No app to open."
+  },
+  {
+    "id": "shortcut-bolo-talking",
+    "file": "Sair on iPhone.dc.html",
+    "selector_or_index": "[id=\"4b-1\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "ILLUSTRATIVE · NOT REAL iOS UI",
+      "Saturday 10 October",
+      "7:18",
+      "Sair Bolo",
+      "Tell Sair what you noticed",
+      "0:18",
+      "Tap to stop · up to a minute"
+    ],
+    "aria_labels": [
+      "Stop"
+    ],
+    "component": "(Shortcuts mock, not routed)",
+    "route": "n/a",
+    "state": "Sair Bolo: talking",
+    "visual_test": "visual/shortcut-bolo-talking",
+    "design_note": "The Shortcut's record step. One big stop button, timer above it."
+  },
+  {
+    "id": "shortcut-bolo-saved",
+    "file": "Sair on iPhone.dc.html",
+    "selector_or_index": "[id=\"4b-2\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "ILLUSTRATIVE · NOT REAL iOS UI",
+      "Saturday 10 October",
+      "7:19",
+      "Sair Bolo",
+      "Shortcut",
+      "Got it. Saved.",
+      "It's in the diary. Enjoy your evening."
+    ],
+    "aria_labels": [],
+    "component": "(Shortcuts mock, not routed)",
+    "route": "n/a",
+    "state": "Sair Bolo: saved",
+    "visual_test": "visual/shortcut-bolo-saved",
+    "design_note": "Siri also says it out loud. The diary entry is written later at home."
+  },
+  {
+    "id": "shortcut-notification",
+    "file": "Sair on iPhone.dc.html",
+    "selector_or_index": "[id=\"4c\"] > div:nth-child(2)",
+    "viewport": {
+      "width": 393,
+      "height": 852
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "ILLUSTRATIVE · GENERIC NOTIFICATION",
+      "Saturday 10 October",
+      "7:24",
+      "ntfy",
+      "now",
+      "Sair",
+      "Mom + Dad walked · 2 things noticed · mission done",
+      "1"
+    ],
+    "aria_labels": [],
+    "component": "(Shortcuts mock, not routed)",
+    "route": "n/a",
+    "state": "ntfy-style notification on the phone",
+    "visual_test": "visual/shortcut-notification",
+    "design_note": "1 No diary text ever leaves the house; only these counts."
+  },
+  {
+    "id": "status-page",
+    "file": "Hub Status.dc.html",
+    "selector_or_index": "[id=\"5a\"] + div",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "tier": "Should",
+    "theme": "light",
+    "strings": [
+      "Hub status",
+      "Running on MacBook · Wi-Fi off",
+      "SAMPLE DATA",
+      "Updated 7:42 pm",
+      "Gemma 4 E2B",
+      "transcribe + missions",
+      "Healthy",
+      "p50",
+      "1.6 s / 3 s",
+      "p95",
+      "2.9 s / 5 s",
+      "Last used 7:19 pm",
+      "Sair-Writer",
+      "Qwen3.5-4B + Tinker LoRA",
+      "Healthy",
+      "p50",
+      "4.2 s / 6 s",
+      "p95",
+      "7.1 s / 10 s",
+      "Last used 7:20 pm",
+      "Kokoro TTS",
+      "reads missions aloud",
+      "Slow p95",
+      "p50",
+      "0.9 s / 1 s",
+      "p95",
+      "2.4 s / 2 s",
+      "Last used 6:41 pm",
+      "Today",
+      "Walks recorded",
+      "Mom 1 · Dad 1",
+      "Missions generated",
+      "2",
+      "Grounding check",
+      "9 of 10 passed",
+      "Template fallbacks",
+      "0",
+      "Was this right?",
+      "4 waiting",
+      "Date",
+      "Walker",
+      "Facts",
+      "Check",
+      "Review",
+      "Sat 10 Oct",
+      "Mom + Dad",
+      "2 facts",
+      "Passed",
+      "Fri 9 Oct",
+      "Dad",
+      "2 facts",
+      "Passed",
+      "Thu 8 Oct",
+      "Mom + Dad",
+      "2 facts",
+      "1 fact flagged",
+      "Wed 7 Oct",
+      "Mom",
+      "0 facts",
+      "Template used",
+      "Privacy",
+      "Raw audio files on disk",
+      "0",
+      "Outbound hosts today",
+      "ntfy only",
+      "Last canary test",
+      "Passed",
+      "today, 6:00 am",
+      "This page never shows what anyone said."
+    ],
+    "aria_labels": [
+      "Sair",
+      "Right",
+      "Wrong",
+      "Right",
+      "Wrong",
+      "Right",
+      "Wrong",
+      "Right",
+      "Wrong"
+    ],
+    "component": "Status",
+    "route": "/status",
+    "state": "Owner status page, sample data",
+    "visual_test": "visual/status-page",
+    "design_note": ""
+  }
+]
