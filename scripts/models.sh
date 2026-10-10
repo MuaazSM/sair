@@ -83,8 +83,8 @@ fi
 
 # 6. Qwen3.5-4B HF bf16 snapshot (for the P6 merge); verify only when already cached
 HF_HOME_DIR="${HF_HOME:-$HOME/.cache/huggingface}"
-if ls "$HF_HOME_DIR"/hub/models--Qwen--Qwen3.5-4B/snapshots/*/config.json >/dev/null 2>&1; then
-  say "hf: Qwen/Qwen3.5-4B snapshot present in cache"
+if ls "$HF_HOME_DIR"/hub/models--Qwen--Qwen3.5-4B/snapshots/*/*.safetensors >/dev/null 2>&1; then
+  say "hf: Qwen/Qwen3.5-4B weights present in cache"
 else
   say "hf: downloading Qwen/Qwen3.5-4B (bf16)"
   hf_cli download Qwen/Qwen3.5-4B
