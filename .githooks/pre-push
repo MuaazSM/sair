@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Push only as MuaazSM, and never push commits carrying an attribution trail.
+# Push only as MuaazSM, and only commits whose messages pass the commit-msg rules.
 set -euo pipefail
 
 login="$(gh api user -q .login 2>/dev/null || true)"
@@ -12,13 +12,19 @@ zero="0000000000000000000000000000000000000000"
 while read -r _ local_sha _ remote_sha; do
   [ "$local_sha" = "$zero" ] && continue
   if [ "$remote_sha" = "$zero" ]; then
-    range="$local_sha"
-    msgs="$(git log --format=%B "$range" --not --remotes 2>/dev/null || git log --format=%B "$range")"
+    shas="$(git rev-list "$local_sha" --not --remotes)"
   else
-    msgs="$(git log --format=%B "$remote_sha..$local_sha")"
+    shas="$(git rev-list "$remote_sha..$local_sha")"
   fi
-  if printf '%s' "$msgs" | grep -Eiq 'co-authored-by|generated with|claude|anthropic|🤖'; then
-    echo "pre-push: a commit message contains a forbidden attribution pattern." >&2
-    exit 1
-  fi
+  hook_dir="$(cd "$(dirname "$0")" && pwd)"
+  tmp="$(mktemp)"
+  for sha in $shas; do
+    git log -1 --format=%B "$sha" > "$tmp"
+    if ! "$hook_dir/commit-msg" "$tmp" 2>/dev/null; then
+      echo "pre-push: commit ${sha:0:9} fails the commit-msg rules." >&2
+      rm -f "$tmp"
+      exit 1
+    fi
+  done
+  rm -f "$tmp"
 done

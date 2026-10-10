@@ -1,8 +1,22 @@
 #!/usr/bin/env bash
-# Reject messages carrying an attribution trail.
+# Reject attribution trails, non-conventional subjects and internal planning words.
 set -euo pipefail
 msg_file="$1"
-if grep -Eiq 'co-authored-by|generated with|claude|anthropic|🤖' "$msg_file"; then
+# Ignore comment lines git adds to the message template.
+# The [PM][0-9] check skips 'Refs:' footers, which carry requirement IDs such as NFR-P4.
+msg="$(grep -v '^#' "$msg_file" || true)"
+subject="$(printf '%s\n' "$msg" | sed -n '1p')"
+
+if printf '%s' "$msg" | grep -Eiq 'co-authored-by|generated with|claude|anthropic|🤖'; then
   echo "commit-msg: message contains a forbidden attribution pattern; remove it." >&2
+  exit 1
+fi
+if ! printf '%s\n' "$subject" | grep -Eq '^(feat|fix|test|refactor|perf|docs|build|ci|chore|style)(\([a-z0-9-]+\))?!?: .{1,72}$'; then
+  echo "commit-msg: subject must be 'type(scope): summary' (Conventional Commits, <= 72 chars)." >&2
+  exit 1
+fi
+if printf '%s' "$msg" | grep -Eiq '\b(phase|wave|mvp|overnight|orchestrat[a-z0-9_]*|subagent|spike)\b' \
+   || printf '%s\n' "$msg" | grep -v '^Refs:' | grep -Eq '\b[PM][0-9]\b'; then
+  echo "commit-msg: message mentions internal planning words; rephrase it." >&2
   exit 1
 fi
