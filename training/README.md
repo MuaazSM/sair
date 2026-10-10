@@ -73,16 +73,16 @@ llama-server -m models/qwen3.5-4b-base-q4_k_m.gguf --host 127.0.0.1 --port 8092 
   -c 4096 -ngl 99 -np 1 >/dev/null 2>&1 &
 uv run python training/gates.py c-dev                         # -> training/gates/c_dev.json
 
-# 10. Dev eval for G-ship: C+ and D+, one renderer per run
-EVAL_QWEN_BASE_ID=qwen3.5-4b-base-q4_k_m-fs<sha8> uv run python eval/run.py --systems C+ \
-  --items training/data/dev.jsonl --renderer training.renderer_runtime:few_shot_renderer \
-  --out eval/results/gship-c/
-uv run python eval/run.py --systems D+ --items training/data/dev.jsonl \
-  --renderer training.renderer_runtime:renderer --out eval/results/gship-d/
+# 10. Dev eval for G-ship: C+ and D+ (--set dev: cache under training/cache/gates/, never reported)
+uv run python eval/run.py --set dev --systems C+ \
+  --renderer-c training.renderer_runtime:few_shot_renderer --out training/cache/gates/eval/gship-c/
+uv run python eval/run.py --set dev --systems D+ \
+  --renderer-d training.renderer_runtime:renderer --out training/cache/gates/eval/gship-d/
 
 # 11. G-ship -> training/gates/g_ship.json + the recommended WRITER_BACKEND
 uv run python training/gates.py g-ship \
-  --records eval/results/gship-c/items.jsonl eval/results/gship-d/items.jsonl
+  --records training/cache/gates/eval/gship-c/items.jsonl \
+  training/cache/gates/eval/gship-d/items.jsonl
 
 # 12. Bring the normal stack back
 make up      # or: make install-agents

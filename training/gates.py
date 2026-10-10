@@ -3,8 +3,9 @@
     uv run python training/gates.py c-dev                         # base few-shot dev reference
     uv run python training/gates.py select --run <run_id>         # §12.3 epoch choice
     uv run python training/gates.py g-export --run <run_id> [--epoch k]
-    uv run python training/gates.py g-ship --records eval/results/gship-c/items.jsonl \\
-        eval/results/gship-d/items.jsonl
+    uv run python training/gates.py g-ship \\
+        --records training/cache/gates/eval/gship-c/items.jsonl \\
+        training/cache/gates/eval/gship-d/items.jsonl
 
 G-export (rule as implemented)
 ------------------------------
@@ -27,7 +28,8 @@ gate refuses (the scores would not be comparable).
 
 G-ship (rule as implemented)
 ----------------------------
-Inputs: eval records (``eval/run.py ... --items training/data/dev.jsonl``) for ``D+`` and ``C+``
+Inputs: eval records (``eval/run.py --set dev ... --out training/cache/gates/eval/<name>/``,
+cache under ``training/cache/gates/``; dev is never reported) for ``D+`` and ``C+``
 on the same dev items, metrics from ``eval.metrics`` (final entries, grammar on, 1 regen +
 template). A metric that is None for both systems (e.g. recall with no gold facts) is n/a,
 except unsupported_rate, which must exist. ``llama`` iff ALL of:
