@@ -6,7 +6,18 @@ Usage::
     uv run python eval/run.py --systems B+,C+,D+ --out eval/results/dev1/
     uv run python eval/run.py --cached --assert-baseline eval/baseline.json
     uv run python eval/run.py --no-grammar-pass                 # adds B/C/D without grammar
+    uv run python eval/run.py --set dev --systems C+,D+         # gates only, never reported
     uv run python eval/run.py --set real                        # OWNER ONLY, aggregates only
+
+Renderers: ``--renderer-c`` / ``--renderer-d`` (``module:attr``) pick the C / D prompt
+renderers (defaults: ``training.renderer_runtime:few_shot_renderer`` / ``:renderer``);
+``--renderer`` is the fallback for both. ``--cache-dir`` overrides the model-call cache
+(default ``eval/cache/synthetic/``; ``training/cache/gates/`` for ``--set dev``).
+
+Dev set (PRD §13.3, never reported): ``--set dev`` reads ``training/data/dev.jsonl``, caches
+under ``training/cache/gates/`` and writes ``training/cache/gates/eval/latest/`` (all
+gitignored); outputs are marked ``"set": "dev"``. It refuses an ``--out`` under
+``eval/results/`` and a ``--cache-dir`` under ``eval/cache/``.
 
 Exit codes: 0 ok · 1 run error (type name only) · 2 nothing to evaluate (no items or no
 cached results yet) · 3 real-set guard refused · 4 cache miss in ``--cached`` mode ·
@@ -57,12 +68,23 @@ from eval.metrics import (
 )
 from eval.systems import ALL_SYSTEMS, BASE_OF, ItemRecord, run_item
 
-__all__ = ["MSG_REAL_NOT_LOOPBACK", "MSG_REAL_OUT", "MSG_REAL_SENTRY", "main"]
+__all__ = [
+    "MSG_DEV_CACHE",
+    "MSG_DEV_OUT",
+    "MSG_REAL_CACHE",
+    "MSG_REAL_NOT_LOOPBACK",
+    "MSG_REAL_OUT",
+    "MSG_REAL_SENTRY",
+    "main",
+]
 
 ROOT = Path(__file__).resolve().parent.parent
 SYNTHETIC_ITEMS = ROOT / "eval" / "data" / "synthetic" / "test.jsonl"
 SYNTHETIC_CACHE = ROOT / "eval" / "cache" / "synthetic"
 RESULTS = ROOT / "eval" / "results"
+EVAL_CACHE = ROOT / "eval" / "cache"
+DEV_ITEMS = ROOT / "training" / "data" / "dev.jsonl"
+DEV_ROOT = ROOT / "training" / "cache" / "gates"  # gitignored; dev cache + outputs
 REAL_ROOT = ROOT / "eval" / "real"  # owner-only; never opened except by --set real
 REAL_RESULTS = ROOT / "eval" / "results" / "real"
 
@@ -71,6 +93,9 @@ MSG_REAL_NOT_LOOPBACK = (
 )
 MSG_REAL_SENTRY = "refusing --set real: a Sentry DSN is configured or Sentry is active"
 MSG_REAL_OUT = "refusing --set real: output must stay under eval/results/real/"
+MSG_REAL_CACHE = "refusing --set real: the cache must stay under eval/results/real/"
+MSG_DEV_OUT = "refusing --set dev: dev results are never reported; keep --out out of eval/results/"
+MSG_DEV_CACHE = "refusing --set dev: keep --cache-dir out of the committed eval/cache/"
 MSG_NO_CACHE = (
     "no cached results yet: run `make eval-live` (synthetic) to fill eval/cache/synthetic/"
 )
@@ -157,10 +182,11 @@ def _evaluate(
     resamples: int,
     seed: int,
     pairs: Sequence[tuple[str, str]],
+    set_name: str | None = None,
 ) -> dict[str, Any]:
     by_id = {it.id: it for it in items}
     out: dict[str, Any] = {
-        "set": "real" if real else "synthetic",
+        "set": set_name or ("real" if real else "synthetic"),
         "bootstrap": "plain" if real else "cluster-by-seed",
         "resamples": resamples,
         "rng_seed": seed,
@@ -346,7 +372,7 @@ def _assert_baseline(metrics: dict[str, Any], baseline_path: Path, tol: float) -
 
 def _parse(argv: Sequence[str] | None) -> argparse.Namespace:
     ap = argparse.ArgumentParser(prog="eval/run.py", description="Sair eval harness (PRD §13)")
-    ap.add_argument("--set", dest="set_", choices=("synthetic", "real"), default="synthetic")
+    ap.add_argument("--set", dest="set_", choices=("synthetic", "dev", "real"), default="synthetic")
     ap.add_argument("--systems", default=",".join(ALL_SYSTEMS))
     mode = ap.add_mutually_exclusive_group()
     mode.add_argument(
@@ -364,7 +390,17 @@ def _parse(argv: Sequence[str] | None) -> argparse.Namespace:
     ap.add_argument("--tolerance", type=float, default=1e-9)
     ap.add_argument("--resamples", type=int, default=DEFAULT_RESAMPLES)
     ap.add_argument("--rng-seed", type=int, default=DEFAULT_RNG_SEED)
-    ap.add_argument("--renderer", default=None, help="module:attr prompt renderer for C/D")
+    ap.add_argument(
+        "--renderer", default=None, help="module:attr renderer, fallback for both C and D"
+    )
+    ap.add_argument("--renderer-c", default=None, help="module:attr renderer for system C")
+    ap.add_argument("--renderer-d", default=None, help="module:attr renderer for system D")
+    ap.add_argument(
+        "--cache-dir",
+        type=Path,
+        default=None,
+        help="model-call cache (default eval/cache/synthetic/; dev: training/cache/gates/)",
+    )
     return ap.parse_args(argv)
 
 
@@ -373,6 +409,7 @@ def main(
 ) -> int:
     args = _parse(argv)
     real = args.set_ == "real"
+    dev = args.set_ == "dev"
     systems = [s.strip() for s in args.systems.split(",") if s.strip()]
     if not systems or any(s not in BASE_OF for s in systems):
         _err("unknown system (choose from " + ",".join(ALL_SYSTEMS) + ")")
@@ -382,15 +419,40 @@ def main(
         runs += [(f"{s}-nogrammar", s, False) for s in NO_GRAMMAR_SYSTEMS if s in systems]
     keys = sorted({BASE_OF[s] for _, s, _ in runs})
     mode = CacheMode.CACHED if args.cached else CacheMode.LIVE if args.live else CacheMode.RESUME
-    cache_dir = (REAL_RESULTS / "cache") if real else SYNTHETIC_CACHE
-    out_dir: Path = args.out or ((REAL_RESULTS / "latest") if real else (RESULTS / "latest"))
+    if real:
+        cache_dir: Path = args.cache_dir or (REAL_RESULTS / "cache")
+        out_dir: Path = args.out or (REAL_RESULTS / "latest")
+        # path-only checks, before any backend is built or anything is opened
+        if not _within(cache_dir, REAL_RESULTS):
+            _err(MSG_REAL_CACHE)
+            return 3
+        if not _within(out_dir, REAL_RESULTS):
+            _err(MSG_REAL_OUT)
+            return 3
+    elif dev:
+        cache_dir = args.cache_dir or DEV_ROOT
+        out_dir = args.out or (DEV_ROOT / "eval" / "latest")
+        if _within(out_dir, RESULTS):
+            _err(MSG_DEV_OUT)
+            return 2
+        if _within(cache_dir, EVAL_CACHE):
+            _err(MSG_DEV_CACHE)
+            return 2
+    else:
+        cache_dir = args.cache_dir or SYNTHETIC_CACHE
+        out_dir = args.out or (RESULTS / "latest")
 
     if writers is None:
         from eval.config import build_writers
 
         try:
             writers = build_writers(
-                keys, cache_dir=cache_dir, mode=mode, renderer_spec=args.renderer
+                keys,
+                cache_dir=cache_dir,
+                mode=mode,
+                renderer_spec=args.renderer,
+                renderer_c=args.renderer_c,
+                renderer_d=args.renderer_d,
             )
         except ConfigError as exc:
             _err(str(exc))
@@ -410,16 +472,18 @@ def main(
         if _sentry_configured():
             _err(MSG_REAL_SENTRY)
             return 3
-        if not _within(out_dir, REAL_RESULTS):
-            _err(MSG_REAL_OUT)
-            return 3
         items_path = REAL_ROOT / "items.jsonl"
+    elif dev:
+        items_path = args.items or DEV_ITEMS
     else:
         items_path = args.items or SYNTHETIC_ITEMS
 
     if not items_path.is_file():
         if real:
             _err("real set not found (owner: eval/real/items.jsonl)")
+            return 2
+        if dev:
+            _err("no dev set yet: expected training/data/dev.jsonl")
             return 2
         _err(MSG_NO_CACHE if args.cached else MSG_NO_ITEMS)
         return 2
@@ -453,6 +517,7 @@ def main(
             resamples=args.resamples,
             seed=args.rng_seed,
             pairs=DEFAULT_PAIRS,
+            set_name=args.set_,
         )
         _write_outputs(out_dir, metrics, records, real=real)
     except CacheMiss as miss:

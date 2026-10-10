@@ -10,8 +10,10 @@ Every backend exposes:
 The HTTP adapters import ``httpx`` lazily and are only constructed for live runs; the
 test-suite never touches them. :class:`CachedWriter` / :class:`CachedPlanner` wrap any
 backend and store each call under ``<cache_dir>/<sha>.json`` keyed by
-``(backend_id, grammar flag, prompt sha)``; writes are atomic so a killed run never
-leaves a half-written entry.
+``(backend_id, grammar flag, prompt sha)`` plus, for backends that render their own
+prompt string (C and D), the renderer fingerprint, so a changed renderer or few-shot block can
+never replay stale outputs (backends without a renderer keep the original key); writes are
+atomic so a killed run never leaves a half-written entry.
 """
 
 from __future__ import annotations
@@ -47,6 +49,7 @@ __all__ = [
     "TemplateWriter",
     "WriterBackend",
     "prompt_sha",
+    "renderer_fingerprint",
 ]
 
 DEFAULT_TIMEOUT_S = 120.0
@@ -83,6 +86,23 @@ class PromptRenderer(Protocol):
     """Renders chat messages to the raw prompt string used in training (P5 renderer)."""
 
     def render(self, messages: Sequence[ChatMessage]) -> str: ...
+
+
+def renderer_fingerprint(renderer: object) -> str:
+    """``renderer.fingerprint()`` when present, else a sha256 over the renderer's type and its
+    instance state (stable across processes; never an object address)."""
+    fp = getattr(renderer, "fingerprint", None)
+    if callable(fp):
+        return str(fp())
+    cls = type(renderer)
+    state = getattr(renderer, "__dict__", None)
+    blob = json.dumps(
+        {"type": f"{cls.__module__}.{cls.__qualname__}", "state": state},
+        sort_keys=True,
+        default=repr,
+        ensure_ascii=False,
+    )
+    return hashlib.sha256(blob.encode("utf-8")).hexdigest()
 
 
 def _as_dicts(messages: Sequence[ChatMessage]) -> list[dict[str, str]]:
@@ -351,9 +371,18 @@ class _Store:
     writes: int = 0
     _ensured: bool = field(default=False, repr=False)
 
-    def key(self, backend_id: str, messages: Sequence[ChatMessage], grammar: bool | None) -> str:
+    def key(
+        self,
+        backend_id: str,
+        messages: Sequence[ChatMessage],
+        grammar: bool | None,
+        renderer_fp: str | None = None,
+    ) -> str:
         inner = prompt_sha(messages, grammar=grammar)
-        return hashlib.sha256(f"{backend_id}\n{inner}".encode()).hexdigest()
+        material = f"{backend_id}\n{inner}"
+        if renderer_fp is not None:
+            material += f"\nrenderer={renderer_fp}"
+        return hashlib.sha256(material.encode()).hexdigest()
 
     def path(self, key: str) -> Path:
         return self.cache_dir / f"{key}.json"
@@ -389,8 +418,9 @@ def _call_cached(
     messages: list[ChatMessage],
     grammar: bool | None,
     call: Callable[[], tuple[str, CallStats | None]],
+    renderer_fp: str | None = None,
 ) -> tuple[str, CallStats]:
-    key = store.key(backend_id, messages, grammar)
+    key = store.key(backend_id, messages, grammar, renderer_fp)
     if store.mode in (CacheMode.RESUME, CacheMode.CACHED):
         hit = store.get(key)
         if hit is not None:
@@ -414,6 +444,7 @@ def _call_cached(
                 "backend_id": backend_id,
                 "grammar": grammar,
                 "prompt_sha": prompt_sha(messages, grammar=grammar),
+                "renderer_fingerprint": renderer_fp,
                 "output": out,
                 "latency_ms": stats.latency_ms,
                 "tokens_in": stats.tokens_in,
@@ -424,12 +455,15 @@ def _call_cached(
 
 
 class CachedWriter:
-    """Caching wrapper around any :class:`WriterBackend` (same id and base_url)."""
+    """Caching wrapper around any :class:`WriterBackend` (same id and base_url). A backend
+    with a ``renderer`` attribute (C/D) gets the renderer fingerprint in its cache key."""
 
     def __init__(self, inner: WriterBackend, cache_dir: Path, mode: CacheMode) -> None:
         self.inner = inner
         self.backend_id = inner.backend_id
         self.base_url = inner.base_url
+        renderer = getattr(inner, "renderer", None)
+        self.renderer_fp: str | None = None if renderer is None else renderer_fingerprint(renderer)
         self.store = _Store(cache_dir, mode)
         self.last_call: CallStats | None = None
 
@@ -438,7 +472,9 @@ class CachedWriter:
             out = self.inner.generate(messages, grammar=grammar)
             return out, self.inner.last_call
 
-        out, stats = _call_cached(self.store, self.backend_id, messages, grammar, call)
+        out, stats = _call_cached(
+            self.store, self.backend_id, messages, grammar, call, self.renderer_fp
+        )
         self.last_call = stats
         return out
 

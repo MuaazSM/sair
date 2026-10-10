@@ -640,7 +640,11 @@ def main(
     ap.add_argument("--cache-dir", type=Path, default=CACHE_DIR)
     ap.add_argument("--resume", action="store_true", help="skip finished runs, replay cached calls")
     ap.add_argument("--cached", action="store_true", help="replay cache only; fail on a miss")
-    ap.add_argument("--renderer", default=None, help="module:attr prompt renderer for C/D")
+    ap.add_argument(
+        "--renderer", default=None, help="module:attr renderer, fallback for both C and D"
+    )
+    ap.add_argument("--renderer-c", default=None, help="module:attr renderer for system C")
+    ap.add_argument("--renderer-d", default=None, help="module:attr renderer for system D")
     ap.add_argument("--resamples", type=int, default=10_000)
     ap.add_argument(
         "--stub",
@@ -676,6 +680,8 @@ def main(
             cache_dir=args.cache_dir,
             mode=mode,
             renderer_spec=args.renderer,
+            renderer_c=args.renderer_c,
+            renderer_d=args.renderer_d,
         )
         planner = planner or build_planner(cache_dir=args.cache_dir, mode=mode)
     try:
