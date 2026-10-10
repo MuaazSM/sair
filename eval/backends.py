@@ -157,6 +157,7 @@ class OllamaWriter:
             "model": self.model,
             "messages": _as_dicts(messages),
             "stream": False,
+            "think": False,  # as hub/models/ollama.py: Gemma 4 thinking would eat num_predict
             "options": {"temperature": 0, "num_predict": MAX_TOKENS},
         }
         if grammar:
