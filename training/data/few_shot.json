@@ -1,0 +1,20 @@
+{
+ "version": 1,
+ "source": {
+  "train": "train.jsonl",
+  "sft": null
+ },
+ "examples": [
+  {
+   "item_id": "s009-01",
+   "user": "Walkers: Mom\nToday's mission: Listen for birds in the park. Can you tell which one you hear?\nTranscript:\n<<<\nBack from the park now. sounded like Myna made a noise. We listened for birds. Nothing much today.\n>>>",
+   "assistant": "{\"facts\":[{\"span\":\"sounded like Myna made a noise.\",\"kind\":\"animal\",\"subject\":\"myna\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"We listened for birds.\",\"entry\":\"Mom went for a walk and did today's mission. They noticed maybe myna.\"}"
+  },
+  {
+   "item_id": "s010-00",
+   "user": "Walkers: Dad\nToday's mission: Count the cows you see along the lane. How many are there?\nTranscript:\n<<<\nWalk was nice today. Paanch gaay lane mein thi. Feeling good now.\n>>>",
+   "assistant": "{\"facts\":[{\"span\":\"Paanch gaay lane mein thi.\",\"kind\":\"animal\",\"subject\":\"cows\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed cows.\"}"
+  }
+ ],
+ "sha256": "261ea711bc2381a1322386f451a64a82becd003dfcf6a5a993fa8048b97c1fdf"
+}
