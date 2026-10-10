@@ -30,7 +30,7 @@ visual:
 
 eval:
 	@test -f eval/run.py || { echo "eval/run.py does not exist yet (P7)."; exit 1; }
-	uv run python eval/run.py --cached
+	uv run python eval/run.py --cached --no-grammar-pass --assert-baseline eval/baseline.json --out $${TMPDIR:-/tmp}/sair-eval
 
 eval-live:
 	@test -f eval/run.py || { echo "eval/run.py does not exist yet (P7)."; exit 1; }

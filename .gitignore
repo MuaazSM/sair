@@ -37,3 +37,6 @@ __pycache__/
 .coverage
 htmlcov/
 eval/results/real/
+
+# intermediate generation outputs (merged into items.jsonl)
+training/data/items.*.jsonl

@@ -1,6 +1,6 @@
 """Shortcut audit of the synthetic training data (PRD §12.2). Must pass before full training.
 
-    uv run python training/audit.py                      # items.jsonl (+ sft_*.jsonl if present)
+    uv run python training/audit.py                      # train.jsonl (+ sft_*.jsonl if present)
     uv run python training/audit.py --strict             # non-zero exit on any failure
     uv run python training/audit.py --items training/data/train.jsonl \
         --sft training/data/sft_train.jsonl
@@ -319,7 +319,7 @@ def print_table(rules: list[Rule]) -> None:
 
 def main(argv: Sequence[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="PRD §12.2 shortcut audit")
-    ap.add_argument("--items", type=Path, default=DATA_DIR / "items.jsonl")
+    ap.add_argument("--items", type=Path, default=DATA_DIR / "train.jsonl")
     ap.add_argument(
         "--sft",
         type=Path,

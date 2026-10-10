@@ -152,7 +152,7 @@ def build_writers(
             inner = LlamaServerWriter(
                 s.writer_url,
                 rend[key],
-                model_id=os.environ.get("EVAL_SAIR_WRITER_ID", "sair-writer-q4_k_m"),
+                model_id=os.environ.get("EVAL_SAIR_WRITER_ID", "sair-writer-q8_0-0fb977b8"),
             )
         else:
             raise ConfigError("unknown writer backend key")

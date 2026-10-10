@@ -1,0 +1,276 @@
+{
+  "source": "eval/results/synthetic/metrics.json",
+  "systems": {
+    "A": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.0
+        },
+        "fact_recall": {
+          "point": 0.0
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.36923076923076925
+        },
+        "template_fallback_rate": {
+          "point": 1.0
+        },
+        "unsupported_rate": {
+          "point": 0.0
+        }
+      }
+    },
+    "B": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.2923076923076923
+        },
+        "fact_precision": {
+          "point": 0.7509090909090909
+        },
+        "fact_recall": {
+          "point": 0.8640167364016736
+        },
+        "hedge_preservation": {
+          "point": 0.6410256410256411
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.36923076923076925
+        },
+        "template_fallback_rate": {
+          "point": 0.0
+        },
+        "unsupported_rate": {
+          "point": 0.2
+        }
+      }
+    },
+    "B+": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.0
+        },
+        "fact_precision": {
+          "point": 0.753199268738574
+        },
+        "fact_recall": {
+          "point": 0.8619246861924686
+        },
+        "hedge_preservation": {
+          "point": 0.8518518518518519
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.36923076923076925
+        },
+        "template_fallback_rate": {
+          "point": 0.5538461538461539
+        },
+        "unsupported_rate": {
+          "point": 0.0
+        }
+      }
+    },
+    "B-nogrammar": {
+      "metrics": {
+        "fact_recall": {
+          "point": 0.0
+        },
+        "invalid_rate": {
+          "point": 1.0
+        },
+        "mission_accuracy": {
+          "point": 0.0
+        },
+        "template_fallback_rate": {
+          "point": 0.0
+        },
+        "valid_json_no_grammar": {
+          "point": 0.0
+        }
+      }
+    },
+    "C": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.7230769230769231
+        },
+        "fact_precision": {
+          "point": 0.8333333333333334
+        },
+        "fact_recall": {
+          "point": 0.7426778242677824
+        },
+        "hedge_preservation": {
+          "point": 0.8490566037735849
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.6384615384615384
+        },
+        "template_fallback_rate": {
+          "point": 0.0
+        },
+        "unsupported_rate": {
+          "point": 0.4230769230769231
+        }
+      }
+    },
+    "C+": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.0
+        },
+        "fact_precision": {
+          "point": 0.8373205741626795
+        },
+        "fact_recall": {
+          "point": 0.7322175732217573
+        },
+        "hedge_preservation": {
+          "point": 0.9514563106796117
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.6153846153846154
+        },
+        "template_fallback_rate": {
+          "point": 0.24615384615384617
+        },
+        "unsupported_rate": {
+          "point": 0.0
+        }
+      }
+    },
+    "C-nogrammar": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.7142857142857143
+        },
+        "fact_precision": {
+          "point": 0.8392857142857143
+        },
+        "fact_recall": {
+          "point": 0.5899581589958159
+        },
+        "hedge_preservation": {
+          "point": 0.8651685393258427
+        },
+        "invalid_rate": {
+          "point": 0.19230769230769232
+        },
+        "mission_accuracy": {
+          "point": 0.5
+        },
+        "template_fallback_rate": {
+          "point": 0.0
+        },
+        "unsupported_rate": {
+          "point": 0.4380952380952381
+        },
+        "valid_json_no_grammar": {
+          "point": 0.8076923076923077
+        }
+      }
+    },
+    "D": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.06923076923076923
+        },
+        "fact_precision": {
+          "point": 0.9296066252587992
+        },
+        "fact_recall": {
+          "point": 0.9393305439330544
+        },
+        "hedge_preservation": {
+          "point": 0.9491525423728814
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.7076923076923077
+        },
+        "template_fallback_rate": {
+          "point": 0.0
+        },
+        "unsupported_rate": {
+          "point": 0.06153846153846154
+        }
+      }
+    },
+    "D+": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.0
+        },
+        "fact_precision": {
+          "point": 0.9294605809128631
+        },
+        "fact_recall": {
+          "point": 0.9372384937238494
+        },
+        "hedge_preservation": {
+          "point": 0.9745762711864406
+        },
+        "invalid_rate": {
+          "point": 0.0
+        },
+        "mission_accuracy": {
+          "point": 0.7076923076923077
+        },
+        "template_fallback_rate": {
+          "point": 0.06153846153846154
+        },
+        "unsupported_rate": {
+          "point": 0.0
+        }
+      }
+    },
+    "D-nogrammar": {
+      "metrics": {
+        "details_per_entry": {
+          "point": 0.072
+        },
+        "fact_precision": {
+          "point": 0.933920704845815
+        },
+        "fact_recall": {
+          "point": 0.8870292887029289
+        },
+        "hedge_preservation": {
+          "point": 0.9469026548672567
+        },
+        "invalid_rate": {
+          "point": 0.038461538461538464
+        },
+        "mission_accuracy": {
+          "point": 0.6923076923076923
+        },
+        "template_fallback_rate": {
+          "point": 0.0
+        },
+        "unsupported_rate": {
+          "point": 0.064
+        },
+        "valid_json_no_grammar": {
+          "point": 0.9615384615384616
+        }
+      }
+    }
+  }
+}
