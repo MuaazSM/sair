@@ -18,15 +18,24 @@ Rules, in the order their codes are reported
   from a *referenced* fact's subject/place, alias-aware via the lexicon (koel, koyal and
   कोयल are one entry). Concrete nouns are spaCy NOUN/PROPN tokens plus any lexicon alias
   (multi-word aware; colour and number entries are adjectives/quantities, not nouns, and
-  are exempt). ``REFERENCE_UNKNOWN`` for ids not among the supplied facts and
-  ``RETURN_WITHOUT_REFERENCE`` for a return mission with no references.
+  are exempt). ``REFERENCE_UNKNOWN`` for ids not among the supplied facts (or, when
+  ``group`` is given, facts of another walker group; those supply no nouns either) and
+  ``RETURN_WITHOUT_REFERENCE`` for a return mission with no references. ``facts_by_id`` is
+  the in-scope set: the last-7-walks window (FR-M3) is enforced by the query that builds it
+  (``hub.db.verified_facts_for_group``), not here.
 * FR-M5 ``UNSURE_NOT_QUESTION``: if any referenced fact is unsure, the mission ends with
   "?", the question sentence says "you", and every non-question sentence that mentions
   the unsure subject carries a hedge word ("You thought you heard...").
 * ``NOT_ADDRESSED_TO_GROUP``: the mission says "you"/"your" and never singles out one
   person (he/she, Mom/Dad/Papa...). PRD §3: Sair has no per-person attribution.
-* FR-M6b ``TIME_OF_DAY``: no time-of-day word (am/pm only after a digit or as a.m./p.m.),
-  and no clock time such as 5:30.
+* FR-M6b ``TIME_OF_DAY``: no time-of-day word or phrase from walk_words.yaml (am/pm only
+  after a digit or as a.m./p.m.; "gets dark", "sun goes down", ...), no clock time such as
+  5:30, and no bare clock hour after a time preposition (``_BARE_HOUR_RE``: at, around, by,
+  after, before, till, until, from + 1-12 as a digit or an English/Hinglish number word,
+  optionally "-ish"). The bare hour counts only at a clause edge (followed by punctuation,
+  the end, or one of on/in/at/and/or/to/today/tonight/sharp/baje/o'clock), so "by one
+  tree" and "after two gates" stay allowed while "around 6 on your path" and "again at 6?"
+  are rejected.
 * FR-M1/M6(d) ``MISSION_TOO_LONG`` (> 30 words) and ``MULTIPLE_TASKS``.
 * FR-M3 ``MISSION_REPEATED``: equal to, or a near-duplicate of, a recent mission.
 
@@ -171,6 +180,16 @@ _INDIVIDUAL_RE = re.compile(
     re.IGNORECASE,
 )
 _CLOCK_RE = re.compile(r"\b\d{1,2}[:.]\d{2}\b|\d\s*(?:am|pm)\b|\b[ap]\.\s?m\.", re.IGNORECASE)
+_HOUR_WORDS = (
+    "one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|"
+    "ek|do|teen|char|chaar|paanch|panch|chhe|chhah|chheh|che|saat|aath|nau|das|"
+    "gyarah|gyaarah|barah|baarah"
+)
+_BARE_HOUR_RE = (
+    r"\b(?:at|around|by|after|before|till|until|from|about)\s+"
+    rf"(?:(?:1[0-2]|0?[1-9])|(?:{_HOUR_WORDS}))(?:\s?ish)?\b"
+    r"(?=\s*(?:[.,;:!?)]|$)|\s+(?:on|in|at|and|or|to|today|tonight|sharp|baje|o'clock)\b)"
+)
 _SENT_SPLIT_RE = re.compile(r"(?<=[.?!])\s+")
 _TOKEN_RE = re.compile(r"[^\s.,!?;:\"()\[\]{}]+")
 _DEVANAGARI_RE = re.compile(r"[ऀ-ॿ]")
@@ -283,7 +302,7 @@ def _rules() -> _Rules:
         )
         blocklist.append((category, pats))
 
-    time_parts: list[str] = [_CLOCK_RE.pattern]
+    time_parts: list[str] = [_CLOCK_RE.pattern, _BARE_HOUR_RE]
     for raw in ww["time_of_day_words"]:
         word = _norm(str(raw)).lower()
         if word in ("am", "pm"):
@@ -572,6 +591,10 @@ def _is_repeat(text: str, recent: Sequence[str]) -> bool:
     return False
 
 
+def _group_key(group: str) -> str:
+    return " ".join(_norm(group).casefold().split())
+
+
 def _split_sentences(text: str) -> list[str]:
     return [s for s in _SENT_SPLIT_RE.split(text) if any(c.isalnum() for c in s)]
 
@@ -584,6 +607,7 @@ def _check(
     facts_by_id: Mapping[str, VerifiedFact],
     recent_missions: Sequence[str],
     provenance: bool,
+    group: str | None = None,
 ) -> SafetyResult:
     text = _norm(raw_text)
     codes: set[ReasonCode] = set()
@@ -596,7 +620,12 @@ def _check(
     if blocked:
         codes.add(ReasonCode.BLOCKLISTED)
 
-    known = [facts_by_id[r] for r in references if r in facts_by_id]
+    scope = _group_key(group) if group is not None else None
+    known = [
+        facts_by_id[r]
+        for r in references
+        if r in facts_by_id and (scope is None or _group_key(facts_by_id[r].group) == scope)
+    ]
     if len(known) != len(references):
         codes.add(ReasonCode.REFERENCE_UNKNOWN)
     if mission_type is MissionType.RETURN and not references:
@@ -630,12 +659,16 @@ def check_mission(
     *,
     recent_missions: Sequence[str] = (),
     provenance: bool = True,
+    group: str | None = None,
 ) -> SafetyResult:
     """Run every FR-M1/M4/M5/M6/M6b rule on a planner output.
 
-    ``facts_by_id`` holds the verified facts the planner was given; only those in
-    ``plan.references`` supply nouns. ``provenance=False`` is for PRD §13.4 headline
-    contamination runs only and is never passed in production.
+    ``facts_by_id`` holds the verified facts the planner was given (the in-scope set: the
+    group's facts from its last 7 walks, FR-M3, as returned by
+    ``hub.db.verified_facts_for_group``); only those in ``plan.references`` supply nouns.
+    When ``group`` is given, a referenced fact of another walker group is out of scope:
+    ``REFERENCE_UNKNOWN``, and it supplies no nouns (FR-M2). ``provenance=False`` is for
+    PRD §13.4 headline contamination runs only and is never passed in production.
     """
     return _check(
         plan.text,
@@ -644,6 +677,7 @@ def check_mission(
         facts_by_id=facts_by_id,
         recent_missions=recent_missions,
         provenance=provenance,
+        group=group,
     )
 
 

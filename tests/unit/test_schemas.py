@@ -427,3 +427,13 @@ def test_schema_is_inlined_and_ollama_friendly(rel: str) -> None:
 def test_entry_schema_property_order_puts_entry_last() -> None:
     props = list(json.loads((ROOT / "schemas/entry.schema.json").read_text())["properties"])
     assert props == ["facts", "mission_result", "mission_span", "entry"]
+
+
+def test_planner_schema_is_generated_from_mission_plan_without_seed() -> None:
+    gen = _load_gen()
+    planner = json.loads(gen.render(gen.TARGETS["schemas/mission.schema.json"]))
+    assert "seed" not in planner["properties"]["type"]["enum"]
+    assert planner["required"] == ["type", "references", "text"]
+    # the pydantic model itself is unchanged: SEED is a valid stored mission type
+    full = MissionPlan.model_json_schema()
+    assert "seed" in json.dumps(full)

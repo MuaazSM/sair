@@ -6,6 +6,7 @@ from __future__ import annotations
 import pytest
 
 from hub.safety import _blocked, check_fallback_text, mentions_time_of_day
+from hub.schemas import BlockCategory
 
 SAFE = [
     "Notice the rush of the wind.",
@@ -18,6 +19,11 @@ SAFE = [
     "Smell the night jasmine as you pass.",
     "Listen for a bell that baje.",
     "Notice the sham of the old signboard.",
+    "As you walk in the park, listen for a bird.",
+    "Pause by one tree and listen for a bird.",
+    "Listen for a bird you have not heard before.",
+    "Look at the dark clouds above you.",
+    "Notice where the path goes in a curve.",
 ]
 
 # Safe imperatives that also pass the full fallback filter (you/your, allowed verbs and nouns).
@@ -58,6 +64,13 @@ BLOCKED_PHRASES = [
     "Walk in the middle of the road.",
     "Stand in the lane.",
     "Go and feed them.",
+    "Look into the garden through the open gate as you go in.",
+    "Look through the gate and listen.",
+    "Step inside and look around.",
+    "Step in and listen for a bird.",
+    "Walk inside and count the lights.",
+    "Walk in and listen.",
+    "Notice the flowers as you go in.",
     # Hinglish
     "Khana dena.",
     "Kutte ko khilana.",
@@ -79,6 +92,9 @@ BLOCKED_TIME = [
     "Come back sham ko.",
     "Walk this night.",
     "Look at the night sky.",
+    "Listen for a bird around 6 on your path.",
+    "You heard a koel. Is it there again at 6?",
+    "Listen for a bird when it gets dark on your path.",
 ]
 
 
@@ -106,6 +122,13 @@ def test_take_your_time_full_filter() -> None:
 @pytest.mark.parametrize("text", BLOCKED_PHRASES)
 def test_blocked_phrase_still_caught(text: str) -> None:
     assert _blocked(text), text
+
+
+def test_go_in_garden_through_gate_is_enter_property() -> None:
+    assert BlockCategory.ENTER_PROPERTY in _blocked(
+        "Look into the garden through the open gate as you go in."
+    )
+    assert check_fallback_text("Look into the garden as you pass.").passed
 
 
 @pytest.mark.parametrize("text", BLOCKED_TIME)

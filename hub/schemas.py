@@ -203,6 +203,7 @@ class ReasonCode(StrEnum):
     GROUP_NOT_MENTIONED = "group_not_mentioned"  # check 6: walker group absent
     URL_IN_ENTRY = "url_in_entry"  # check 6
     QUESTION_IN_ENTRY = "question_in_entry"  # check 6
+    ENTRY_NOT_ENGLISH = "entry_not_english"  # check 6 / §9.1: > 20% of letters Devanagari
     MISSION_SPAN_MISSING = "mission_span_missing"  # check 7: coerced to not_mentioned
     MISSION_SPAN_NOT_IN_TRANSCRIPT = "mission_span_not_in_transcript"  # check 7: coerced
 
@@ -215,7 +216,7 @@ class ReasonCode(StrEnum):
     TIME_OF_DAY = "time_of_day"  # FR-M6b: mentions a time of day
     MISSION_TOO_LONG = "mission_too_long"  # FR-M1/M6(d): > 30 words
     MULTIPLE_TASKS = "multiple_tasks"  # FR-M1/M6(d): more than one task sentence
-    REFERENCE_UNKNOWN = "reference_unknown"  # references an id not among supplied facts
+    REFERENCE_UNKNOWN = "reference_unknown"  # id not among supplied facts, or another group's
     RETURN_WITHOUT_REFERENCE = "return_without_reference"  # type=return with no references
     MISSION_REPEATED = "mission_repeated"  # same as one of the last 5 missions (FR-M3)
 
@@ -259,6 +260,7 @@ GROUNDING_CODES: frozenset[ReasonCode] = frozenset(
         ReasonCode.GROUP_NOT_MENTIONED,
         ReasonCode.URL_IN_ENTRY,
         ReasonCode.QUESTION_IN_ENTRY,
+        ReasonCode.ENTRY_NOT_ENGLISH,
         ReasonCode.MISSION_SPAN_MISSING,
         ReasonCode.MISSION_SPAN_NOT_IN_TRANSCRIPT,
     }
@@ -303,6 +305,9 @@ _INSTRUCTIONS: dict[ReasonCode, str] = {
     ReasonCode.GROUP_NOT_MENTIONED: "Name the walkers in the entry.",
     ReasonCode.URL_IN_ENTRY: "Do not include links.",
     ReasonCode.QUESTION_IN_ENTRY: "Do not ask questions in the entry.",
+    ReasonCode.ENTRY_NOT_ENGLISH: (
+        "Write the entry in English; keep quoted spans in their original script."
+    ),
     ReasonCode.MISSION_SPAN_MISSING: "If the mission was done, copy the words that say so.",
     ReasonCode.MISSION_SPAN_NOT_IN_TRANSCRIPT: "Copy the mission span exactly from the note.",
     ReasonCode.VERB_NOT_ALLOWED: "Start the task with notice, look, listen, count or find.",

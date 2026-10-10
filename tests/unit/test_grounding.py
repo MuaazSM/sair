@@ -884,3 +884,111 @@ def test_template_ignores_blank_subjects() -> None:
     assert g.build_template_entry("Mom", [F("koel", "...")], False) == (
         "Mom went for their evening walk."
     )
+
+
+# ------------------------------------------- verifier follow-ups (§8.4, §8.5, §9.1, NFR-P4)
+
+
+def test_c5_sentence_initial_invented_name_fails() -> None:
+    t = "koel was calling near the temple, nice walk today"
+    entry = "Ramesh walked with Mom and Dad. They heard a koel near the temple."
+    r = run(entry, t, [F("koel was calling near the temple", "koel", place="near the temple")])
+    assert R.NEW_PERSON_NAME in r.reasons
+    assert not r.passed
+
+
+@pytest.mark.parametrize(
+    "entry",
+    [
+        "Ramesh walked with Mom and Dad.",
+        "Sharmaji waved at Mom and Dad on the way.",
+        "Mom and Dad walked slowly. Sharmaji's dog barked.",
+    ],
+)
+def test_c5_sentence_initial_names_are_flagged(entry: str) -> None:
+    r = run(entry, "nice walk", [])
+    assert R.NEW_PERSON_NAME in r.reasons and not r.passed
+
+
+@pytest.mark.parametrize(
+    "entry",
+    [
+        "Mom and Dad walked slowly. They felt calm.",
+        "Mom and Dad walked slowly. After that they rested.",
+        "Mom and Dad walked slowly. Both felt calm.",
+        "Mom and Dad walked slowly. Today felt calm.",
+        "Mom and Dad walked slowly. Near home they rested.",
+        "Mom and Dad walked slowly. Later they rested.",
+        "Mom and Dad walked slowly. A calm feeling stayed.",
+        "Mom and Dad walked slowly. Some stretches felt calm.",
+        "Mom and Dad walked slowly. Maybe they rested.",
+        "Walking slowly, Mom and Dad felt calm.",
+        "Together, Mom and Dad walked slowly.",
+        "Dad and Mom walked slowly.",
+    ],
+)
+def test_c5_common_sentence_starters_are_not_names(entry: str) -> None:
+    r = run(entry, "nice walk", [], group="Mom and Dad" if "Mom and Dad" in entry else "Mom")
+    assert R.NEW_PERSON_NAME not in r.reasons, entry
+
+
+def test_c5_sentence_initial_name_present_in_transcript_is_not_new() -> None:
+    r = run("Ramesh walked with Mom and Dad.", "ramesh bhi saath tha", [])
+    assert R.NEW_PERSON_NAME not in r.reasons
+
+
+def test_c4_invented_colour_is_unsupported() -> None:
+    t = "a flower near the gate"
+    r = run(
+        "Mom and Dad saw a red flower near the gate.", t, [F(t, "flower", place="near the gate")]
+    )
+    assert R.UNSUPPORTED_DETAIL in r.reasons and not r.passed
+    assert "red" in r.unsupported_details
+
+
+def test_c4_invented_weather_is_unsupported() -> None:
+    t = "koel was calling near the temple"
+    r = run("Mom and Dad heard a koel in the rain.", t, [F(t, "koel", place="near the temple")])
+    assert R.UNSUPPORTED_DETAIL in r.reasons and not r.passed
+    assert "rain" in r.unsupported_details
+
+
+def test_c6_entry_mostly_devanagari_is_not_english() -> None:
+    entry = "Mom and Dad ने मंदिर के पास कोयल की आवाज़ सुनी और धीरे धीरे घर लौटे।"
+    r = run(entry, "nice walk", [])
+    assert R.ENTRY_NOT_ENGLISH in r.reasons and not r.passed
+    tmpl = run(entry, "nice walk", [], origin=EntryOrigin.TEMPLATE)
+    assert R.ENTRY_NOT_ENGLISH not in tmpl.reasons
+
+
+def test_c6_english_entry_with_one_devanagari_word_is_english() -> None:
+    t = "मंदिर के पास कोयल बोल रही थी"
+    r = run(
+        "Mom and Dad heard a कोयल calling near the temple on their walk.",
+        t,
+        [F(t, "कोयल", place="मंदिर के पास", kind="sound")],
+    )
+    assert R.ENTRY_NOT_ENGLISH not in r.reasons
+    assert r.passed, r.reasons
+
+
+def test_entry_not_english_is_a_failing_grounding_code() -> None:
+    assert R.ENTRY_NOT_ENGLISH in g.FAILING_CODES
+    assert R.ENTRY_NOT_ENGLISH in GROUNDING_CODES
+
+
+def test_check_result_repr_carries_no_text() -> None:
+    t = "qqmarkspan koel was calling near the temple, zzmission done"
+    out = W(
+        "Mom and Dad met Xyzzyname uncle and heard a koel.",
+        [F("qqmarkspan koel was calling", "koel", kind="sound")],
+        mission_result=MissionResult.DONE,
+        mission_span="zzmission done",
+    )
+    r = g.check_entry(out, t, "Mom and Dad")
+    assert "Xyzzyname" in r.unsupported_details  # the field still holds it for local eval
+    assert r.mission_span == "zzmission done"
+    for text in (repr(r), str(r)):
+        for marker in ("Xyzzyname", "qqmarkspan", "zzmission", "koel"):
+            assert marker not in text, marker
+        assert "unsupported_detail" in text and "passed=False" in text

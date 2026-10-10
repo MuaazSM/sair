@@ -56,8 +56,18 @@ I11 Person names: a capitalised Latin token that is not sentence-initial, not a 
     word, not a counted lexicon alias, not a day/month, and not in SAFE_CAPITALISED
     (I, Mom, Dad) or NAME_STOPWORDS (The, They, ...). Every such proper noun is treated as a
     person name for NEW_PERSON_NAME (places cannot be told apart). Presence is a boundaried
-    case-insensitive match in the transcript; a possessive "'s" is stripped. A
-    sentence-initial name is not detected (known gap).
+    case-insensitive match in the transcript; a possessive "'s" is stripped.
+    Sentence-initial tokens (check_entry only): capitalisation carries no signal there, so a
+    sentence-initial token is a name candidate only if it is none of: a walker-group word,
+    SAFE_CAPITALISED, NAME_STOPWORDS, SENTENCE_STARTERS (a closed list of common English
+    sentence openers: After, Both, Today, Near, Later, Some, ...), any lexicon alias (counted
+    or not), a hedge cue or entry hedge word, a walk_words.yaml generic noun or allowlisted
+    verb (any simple inflection), a day/month, a number, or an "-ing" word of 5+ letters
+    ("Walking", "Heading"). A candidate that appears in the transcript (boundaried,
+    case-insensitive) is dropped, because a common word the transcript uses is far likelier
+    than a name; one that does not is NEW_PERSON_NAME + UNSUPPORTED_DETAIL ("Ramesh walked
+    with Mom and Dad."). ``extract_details`` does not report sentence-initial candidates, so
+    its keys (used by eval) are unchanged.
 I12 Walker-group words (each token of ``group`` except "and") are never details or names,
     anywhere in the entry.
 I13 Check 6 sentences: split after . ! ? … । ॥ when followed by whitespace, a closing quote or
@@ -65,14 +75,19 @@ I13 Check 6 sentences: split after . ! ? … । ॥ when followed by whitespace
     initial (not "I") does not end a sentence. Words = whitespace tokens containing a letter
     or digit. Group mention = the exact group string, case-insensitive, boundaried
     ("Mom and Dad" requires "mom and dad"). URL = http(s)://, www., or a dotted host with a
-    common TLD. Question = any "?" (also full-width).
+    common TLD. Question = any "?" (also full-width). English (§9.1 "entry: English"): the
+    entry fails ENTRY_NOT_ENGLISH when more than 20% of its letters (``str.isalpha``) are
+    Devanagari; quoted Devanagari words inside an English entry stay well below that.
 I14 Check 7: coercion to not_mentioned is recorded (MISSION_SPAN_MISSING /
     MISSION_SPAN_NOT_IN_TRANSCRIPT) but does not fail the entry. A span given with
     not_mentioned is discarded silently.
 I15 Templates: sure subjects joined "a", "a and b", "a, b and c"; each unsure subject is
     appended as ", maybe X" (or "maybe X" first if none is sure). Subjects are deduplicated
     by normalised text; a subject unsure in any fact is listed as unsure. The no-fact template
-    has no mission clause (PRD verbatim). Templates are exempt from check 6 only.
+    has no mission clause (PRD verbatim). Templates are exempt from check 6 only (incl. the
+    English check: a template may embed a Devanagari subject verbatim).
+I16 ``repr``/``str`` of a CheckResult show only passed, reason codes, counts and the mission
+    result: never fact text, the mission span or unsupported_details (NFR-P4 hardening).
 """
 
 from __future__ import annotations
@@ -81,7 +96,7 @@ import hashlib
 import re
 import unicodedata
 from collections.abc import Iterable, Mapping, Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from functools import lru_cache
 from pathlib import Path
 from typing import Any
@@ -105,6 +120,7 @@ __all__ = [
     "DEFAULT_LEXICON",
     "FAILING_CODES",
     "GroundingError",
+    "SENTENCE_STARTERS",
     "Lexicon",
     "build_template_entry",
     "check_entry",
@@ -118,6 +134,7 @@ __all__ = [
 _ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_LEXICON = _ROOT / "data" / "lexicon.yaml"
 DEFAULT_HEDGES = _ROOT / "data" / "hedges.yaml"
+DEFAULT_WALK_WORDS = _ROOT / "data" / "walk_words.yaml"
 
 R = ReasonCode
 
@@ -135,11 +152,13 @@ FAILING_CODES: frozenset[ReasonCode] = frozenset(
         R.GROUP_NOT_MENTIONED,
         R.URL_IN_ENTRY,
         R.QUESTION_IN_ENTRY,
+        R.ENTRY_NOT_ENGLISH,
     }
 )
 
 MIN_WORDS, MAX_WORDS = 5, 70
 MIN_SENTENCES, MAX_SENTENCES = 1, 4
+MAX_DEVANAGARI_LETTER_SHARE = 0.2
 
 AMBIGUOUS_NUMBER_ALIASES: frozenset[str] = frozenset(
     {
@@ -162,6 +181,29 @@ NAME_STOPWORDS: frozenset[str] = frozenset(
     {"the", "a", "an", "they", "he", "she", "it", "we", "you", "this", "that", "these",
      "those", "their", "his", "her", "our", "my", "and", "but", "or", "then", "am", "pm",
      "i'm", "i've", "i'd"}
+)  # fmt: skip
+SENTENCE_STARTERS: frozenset[str] = frozenset(
+    {"there", "here", "its", "it's", "there's", "that's", "they're", "we're", "let's",
+     "now", "today", "yesterday", "later", "earlier", "soon", "afterwards", "afterward",
+     "after", "before", "during", "while", "when", "whenever", "as", "once", "since",
+     "until", "till", "on", "in", "at", "by", "near", "nearby", "along", "across", "around",
+     "past", "beside", "behind", "under", "over", "above", "below", "beyond", "through",
+     "throughout", "from", "with", "without", "within", "outside", "inside", "into", "onto",
+     "towards", "toward", "up", "down", "out", "off", "among", "between", "about", "like",
+     "unlike", "despite", "back", "home", "both", "all", "each", "every", "everyone",
+     "everybody", "everything", "nothing", "nobody", "none", "someone", "somebody",
+     "something", "somewhere", "some", "many", "few", "most", "much", "more", "other",
+     "another", "such", "no", "not", "neither", "either", "also", "still", "even", "just",
+     "only", "so", "yet", "because", "though", "although", "if", "again", "overall",
+     "finally", "first", "next", "last", "together", "instead", "meanwhile", "suddenly",
+     "slowly", "quietly", "gently", "usually", "eventually", "luckily", "happily",
+     "actually", "really", "probably", "apparently", "sadly", "thankfully", "fortunately",
+     "unfortunately", "sometimes", "often", "always", "never", "what", "which", "who",
+     "whose", "where", "how", "why", "yes", "oh", "wow", "very", "quite", "almost",
+     "halfway", "nice", "quiet", "lovely", "beautiful", "warm", "cool", "cold", "fresh",
+     "little", "big", "small", "old", "new", "long", "short", "good", "great", "whole",
+     "evening", "walk", "walks", "walked", "went", "came", "saw", "heard", "felt", "noticed",
+     "spotted", "watched", "stopped", "paused", "returned", "headed", "passed"}
 )  # fmt: skip
 _GROUP_STOP = frozenset({"and", "&"})
 _DAYS = frozenset({"monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"})
@@ -369,6 +411,27 @@ def load_lexicon(path: Path = DEFAULT_LEXICON, hedges_path: Path = DEFAULT_HEDGE
     )
 
 
+def _inflected(word: str) -> set[str]:
+    forms = {word, word + "s", word + "es", word + "ed", word + "d", word + "ing"}
+    if word.endswith("e"):
+        forms.add(word[:-1] + "ing")
+    return forms
+
+
+@lru_cache(maxsize=4)
+def _common_words(path: Path = DEFAULT_WALK_WORDS) -> frozenset[str]:
+    """walk_words.yaml generic nouns + allowlisted verbs (simple inflections), lowercased."""
+    raw = _read_yaml(path)
+    if not isinstance(raw, dict):
+        raise GroundingError("grounding config file is malformed")
+    words: set[str] = set()
+    for w in _str_list(raw.get("generic_nouns")):
+        words.add(_low(w))
+    for v in _str_list(raw.get("verb_allowlist")):
+        words |= _inflected(_low(v))
+    return frozenset(words)
+
+
 def lexicon_hash(path: Path = DEFAULT_LEXICON) -> str:
     """sha256 hex digest of the lexicon file bytes (PRD §12.1.6)."""
     data = b""
@@ -389,7 +452,7 @@ def lexicon_hash(path: Path = DEFAULT_LEXICON) -> str:
 class _Detail:
     key: str  # canonical: lexicon id, "num:<n>", "time:...", "day:...", "month:...", "name:..."
     surface: str  # the entry words; local eval output only, never logged
-    kind: str  # "lex" | "num" | "time" | "name"
+    kind: str  # "lex" | "num" | "time" | "name" | "initial_name" (I11, check_entry only)
 
 
 def _num_key(value: str, lex: Lexicon) -> str:
@@ -444,7 +507,34 @@ def _time_details(nfc: str, lex: Lexicon, inclusive: bool) -> list[_Detail]:
     return out
 
 
-def _scan(text: str, lex: Lexicon, *, inclusive: bool, group: str | None = None) -> list[_Detail]:
+def _initial_candidate(raw: str, lw: str, lows: Sequence[str], idx: int, lex: Lexicon) -> bool:
+    """I11: is this sentence-initial token a possible person name?"""
+    base = lw[:-2] if lw.endswith("'s") else lw
+    return not (
+        not raw[0].isupper()
+        or base in SAFE_CAPITALISED
+        or base in NAME_STOPWORDS
+        or base in SENTENCE_STARTERS
+        or base in _DAYS
+        or base in _MONTHS
+        or any(c.isdigit() for c in base)
+        or lex.alias_at(lows, idx) is not None
+        or base in lex.latin
+        or base in lex.hedge_latin
+        or base in lex.entry_hedges
+        or base in _common_words()
+        or (len(base) >= 5 and base.endswith("ing"))
+    )
+
+
+def _scan(
+    text: str,
+    lex: Lexicon,
+    *,
+    inclusive: bool,
+    group: str | None = None,
+    initial_names: bool = False,
+) -> list[_Detail]:
     nfc = unicodedata.normalize("NFC", text)
     toks = _tokens(nfc)
     lows = [t[2] for t in toks]
@@ -522,6 +612,16 @@ def _scan(text: str, lex: Lexicon, *, inclusive: bool, group: str | None = None)
                 initial.add(idx)
                 break
     for idx, (_, raw, lw) in enumerate(toks):
+        if (
+            initial_names
+            and idx in initial
+            and not excluded[idx]
+            and not consumed[idx]
+            and _initial_candidate(raw, lw, lows, idx, lex)
+        ):
+            name = lw[:-2] if lw.endswith("'s") else lw
+            out.append(_Detail(f"name:{name}", raw, "initial_name"))
+            continue
         if (
             not raw[0].isupper()
             or idx in initial
@@ -618,16 +718,28 @@ def _dedupe[T](items: Iterable[T]) -> tuple[T, ...]:
 # --------------------------------------------------------------------------- check_entry
 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True, repr=False)
 class CheckResult:
     passed: bool
     reasons: tuple[ReasonCode, ...]  # enum codes only (deduped, stable order)
-    verified_facts: tuple[Fact, ...]  # facts passing checks 1-3 (only these enter memory)
+    # facts passing checks 1-3 (only these enter memory); text-bearing, kept out of repr
+    verified_facts: tuple[Fact, ...] = field(repr=False)
     dropped_facts: int
     mission_result: MissionResult  # possibly coerced to NOT_MENTIONED by check 7
-    mission_span: str | None
+    mission_span: str | None = field(repr=False)  # transcript words; kept out of repr
     # LOCAL EVAL OUTPUT ONLY. Entry words: never log, print, trace or send anywhere (NFR-P4).
-    unsupported_details: tuple[str, ...]
+    unsupported_details: tuple[str, ...] = field(repr=False)
+
+    def __repr__(self) -> str:
+        """Codes and counts only (I16): safe if a result is ever logged by mistake."""
+        return (
+            f"CheckResult(passed={self.passed}, "
+            f"reasons={tuple(str(c) for c in self.reasons)!r}, "
+            f"verified_facts={len(self.verified_facts)}, dropped_facts={self.dropped_facts}, "
+            f"mission_result={str(self.mission_result)!r}, "
+            f"mission_span={'set' if self.mission_span is not None else None!r}, "
+            f"unsupported_details={len(self.unsupported_details)})"
+        )
 
 
 def check_entry(
@@ -700,11 +812,17 @@ def check_entry(
                 break
 
     # ---- checks 4 and 5
-    details = _scan(entry, lex, inclusive=False, group=group)
+    details = _scan(entry, lex, inclusive=False, group=group, initial_names=True)
     t_keys = {d.key for d in _scan(transcript, lex, inclusive=True)}
     orphans: list[str] = []
     new_codes: list[ReasonCode] = []
     for d in details:
+        if d.kind == "initial_name":
+            if _find_bounded(t_norm, d.key.removeprefix("name:")):
+                continue  # I11: a word the transcript uses is not an invented name
+            orphans.append(d.surface)
+            new_codes.append(R.NEW_PERSON_NAME)
+            continue
         if d.kind == "name":
             name = d.key.removeprefix("name:")
             supported = any(_find_bounded(txt, name) for txt, _ in evidence)
@@ -739,6 +857,10 @@ def check_entry(
             reasons.append(R.URL_IN_ENTRY)
         if any(q in entry for q in _QUESTION_CHARS):
             reasons.append(R.QUESTION_IN_ENTRY)
+        letters = [c for c in entry if c.isalpha()]
+        deva = sum(1 for c in letters if _DEVA_RE.match(c))
+        if letters and deva / len(letters) > MAX_DEVANAGARI_LETTER_SHARE:
+            reasons.append(R.ENTRY_NOT_ENGLISH)
 
     # ---- check 7
     result = output.mission_result

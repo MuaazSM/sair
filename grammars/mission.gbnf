@@ -1,8 +1,9 @@
 # Mission planner output (PRD 9.2). Mirrors schemas/mission.schema.json.
-# Key order is fixed: type, references, text.
+# Key order is fixed: type, references, text. All three keys are required.
+# "seed" is deliberately absent: seed missions are hand-written, never planned (FR-M2).
 root ::= "{" ws "\"type\":" ws mtype "," ws "\"references\":" ws refs "," ws "\"text\":" ws text ws "}"
 
-mtype ::= "\"return\"" | "\"change\"" | "\"sense\"" | "\"count\"" | "\"seed\""
+mtype ::= "\"return\"" | "\"change\"" | "\"sense\"" | "\"count\""
 refs ::= "[" ws (ref ("," ws ref){0,5} ws)? "]"
 ref ::= "\"" char{1,64} "\""
 text ::= "\"" char{1,400} "\""

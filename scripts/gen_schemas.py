@@ -6,6 +6,13 @@ trailing newline. The one exception: the children of ``properties`` keep model f
 order (facts -> mission_result -> mission_span -> entry), because grammar-constrained
 decoding emits properties in schema order and the entry must come after the facts.
 
+``schemas/mission.schema.json`` is the *planner* schema (the Ollama ``format`` for the
+mission planner), derived from ``MissionPlan`` with two restrictions that mirror
+``grammars/mission.gbnf``: ``type`` excludes ``seed`` (seed missions are hand-written,
+never planned; FR-M2) and ``references`` is required. ``MissionPlan`` itself keeps
+``MissionType.SEED`` and the ``references=[]`` default, because the same model also
+validates stored and hand-written missions.
+
     uv run python scripts/gen_schemas.py          # write files
     uv run python scripts/gen_schemas.py --check  # exit 1 if files are stale
 """
@@ -14,19 +21,35 @@ from __future__ import annotations
 
 import json
 import sys
+from collections.abc import Callable
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 
 from pydantic import BaseModel
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from hub.schemas import MissionPlan, WriterOutput  # noqa: E402
+from hub.schemas import MissionPlan, MissionType, WriterOutput  # noqa: E402
 
-TARGETS: dict[str, type[BaseModel]] = {
-    "schemas/entry.schema.json": WriterOutput,
-    "schemas/mission.schema.json": MissionPlan,
+
+def _planner_only(schema: dict[str, Any]) -> dict[str, Any]:
+    """Restrict the MissionPlan schema to what the planner may emit (FR-M2, §9.2)."""
+    schema["properties"]["type"]["enum"] = [
+        t.value for t in MissionType if t is not MissionType.SEED
+    ]
+    schema["required"] = list(schema["properties"])
+    return schema
+
+
+class Target(NamedTuple):
+    model: type[BaseModel]
+    transform: Callable[[dict[str, Any]], dict[str, Any]] | None = None
+
+
+TARGETS: dict[str, Target] = {
+    "schemas/entry.schema.json": Target(WriterOutput),
+    "schemas/mission.schema.json": Target(MissionPlan, _planner_only),
 }
 
 
@@ -61,16 +84,21 @@ def _sorted(node: Any, keep_order: bool = False) -> Any:
     return node
 
 
-def render(model: type[BaseModel]) -> str:
-    return json.dumps(_sorted(build(model)), indent=2, ensure_ascii=False) + "\n"
+def render(target: Target | type[BaseModel]) -> str:
+    if not isinstance(target, Target):
+        target = Target(target)
+    schema = build(target.model)
+    if target.transform is not None:
+        schema = target.transform(schema)
+    return json.dumps(_sorted(schema), indent=2, ensure_ascii=False) + "\n"
 
 
 def main(argv: list[str]) -> int:
     check = "--check" in argv
     stale = []
-    for rel, model in TARGETS.items():
+    for rel, target in TARGETS.items():
         path = ROOT / rel
-        text = render(model)
+        text = render(target)
         if check:
             if not path.exists() or path.read_text(encoding="utf-8") != text:
                 stale.append(rel)

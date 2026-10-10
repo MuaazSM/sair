@@ -434,3 +434,76 @@ def test_spacy_loads_without_network() -> None:
     )
     assert out.returncode == 0, out.stderr[-500:]
     assert out.stdout.strip().endswith("ok")
+
+
+# ------------------------------------------------- verifier follow-ups (FR-M2/M3, FR-M6b)
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Listen for a bird around 6 on your path.",
+        "You heard a koel. Is it there again at 6?",
+        "Listen for a bird when it gets dark on your path.",
+        "Can you listen for a bird after seven on your walk?",
+        "Can you count the birds you see until 6ish?",
+        "Can you listen for birds from 5 to 6?",
+        "Listen for a bird when it is getting dark on your path.",
+        "Listen for a bird as the sun goes down on your path.",
+        "Listen for a bird when the street lights come on.",
+        "Can you listen for birds at saat?",
+    ],
+)
+def test_bare_clock_times_and_dusk_phrases_are_time_of_day(text: str) -> None:
+    assert safety.mentions_time_of_day(text), text
+    assert R.TIME_OF_DAY in check_fallback_text(text).reasons
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "Pause by one tree and listen for a bird.",
+        "Count the gates from one corner to the next.",
+        "Listen for a bird you have not heard before.",
+        "Can you count the birds after two gates?",
+        "Look at the dark clouds above you.",
+        "Notice which lights are on in the windows you pass.",
+        "Can you find the third gate after the corner?",
+    ],
+)
+def test_numbers_without_clock_sense_are_not_time_of_day(text: str) -> None:
+    assert not safety.mentions_time_of_day(text), text
+
+
+def _grouped(fid: str, group: str) -> VerifiedFact:
+    return VerifiedFact(
+        id=fid,
+        walk_id="w_2",
+        walk_date=dt.date(2026, 10, 6),
+        group=group,
+        kind=FactKind.SOUND,
+        subject="koel",
+        place="near the temple",
+        certainty=SURE,
+        span="koel near the temple",
+    )
+
+
+def test_reference_to_other_groups_fact_is_out_of_scope() -> None:
+    facts = {"f_nani": _grouped("f_nani", "Nani"), "f_md": _grouped("f_md", "Mom and Dad")}
+    text = "Can you hear the koel near the temple again?"
+    other = check_mission(plan(text, ["f_nani"]), facts, group="Mom and Dad")
+    assert R.REFERENCE_UNKNOWN in other.reasons and not other.passed
+    # an out-of-scope fact must not supply nouns either
+    assert R.NOUN_NOT_PROVENANCED in other.reasons
+    own = check_mission(plan(text, ["f_md"]), facts, group="Mom and Dad")
+    assert own.passed, own.reasons
+    spaced = check_mission(plan(text, ["f_md"]), facts, group="  mom and  dad ")
+    assert spaced.passed, spaced.reasons
+    # backward compatible: no group given, no group filter
+    assert check_mission(plan(text, ["f_nani"]), facts).passed
+
+
+def test_safety_result_repr_carries_no_text() -> None:
+    res = run("Can you hear the qqmarker koel near the temple tonight?", ["f_koel"])
+    assert "qqmarker" not in repr(res) and "koel" not in repr(res)

@@ -157,7 +157,6 @@ VALID_MISSIONS = {
     "no_refs": _dumps(_mission()),
     "six_refs": _dumps(_mission(type="change", references=[f"f_{i}" for i in range(6)])),
     "count": _dumps(_mission(type="count")),
-    "seed": _dumps(_mission(type="seed")),
     "devanagari": _dumps(_mission(text="कोयल फिर बोली? आप सुनिए।")),
     "escaped": _dumps(_mission(text='Say "hello" to one tree.')),
     "compact": json.dumps(_mission(references=["a", "b"]), separators=(",", ":")),
@@ -185,6 +184,8 @@ INVALID_MISSIONS = {
     "unterminated": '{"type": "sense", "references": [], "text": "abc',
     "not_json": "Listen for a bird.",
     "refs_not_strings": _dumps(_mission(references=[1])),
+    # FR-M2: seed missions are hand-written, never planner output.
+    "seed": _dumps(_mission(type="seed")),
 }
 
 
@@ -248,3 +249,24 @@ def test_recogniser_rejects_recursion_and_undefined() -> None:
         Grammar('root ::= "a" root')
     with pytest.raises(GbnfError):
         Grammar("root ::= missing")
+
+
+def test_planner_grammar_and_schema_exclude_seed() -> None:
+    """FR-M2: the planner never emits a seed mission. MissionType.SEED stays in hub.schemas
+    for stored/served missions; the planner grammar and planner schema both omit it."""
+    from hub.schemas import MissionType
+
+    planner_types = {t.value for t in MissionType} - {"seed"}
+    enums = _enums(_schema("mission"))
+    assert [sorted(e) for e in enums] == [sorted(planner_types)]
+    assert '"\\"seed\\""' not in MISSION.text
+    for v in planner_types:
+        assert f'"\\"{v}\\""' in MISSION.text
+    assert not MISSION.accepts(_dumps(_mission(type="seed")))
+    assert parse_mission_plan(_dumps(_mission(type="seed"))).ok  # model enum keeps SEED
+
+
+def test_mission_references_required_in_grammar_and_schema() -> None:
+    schema = _schema("mission")
+    assert set(schema["required"]) == {"type", "references", "text"}  # type: ignore[arg-type]
+    assert not MISSION.accepts(_dumps({"type": "sense", "text": "x"}))
