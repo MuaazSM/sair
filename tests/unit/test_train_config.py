@@ -92,7 +92,7 @@ def test_train_refuses_before_any_api_call(tmp_path: Path, monkeypatch: pytest.M
     def boom(*a: Any, **k: Any) -> None:
         raise AssertionError("no API client may be created when the lexicon is not frozen")
 
-    import tinker
+    tinker = pytest.importorskip("tinker")
 
     monkeypatch.setattr(tinker, "ServiceClient", boom)
     with pytest.raises(train.Refused):
