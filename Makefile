@@ -22,7 +22,8 @@ test:
 	uv run pytest tests/unit tests/integration tests/privacy -m "not gpu" || [ $$? -eq 5 ]
 
 canary:
-	@echo "TODO(P8): privacy canary not implemented yet."; exit 1
+	@rc=0; uv run pytest tests/privacy/test_canary.py -q -p no:cacheprovider || rc=1; \
+	./scripts/canary.sh || rc=1; exit $$rc
 
 visual:
 	cd web && npx playwright test
