@@ -1,0 +1,19 @@
+{
+ "renderer": "qwen3_5_no_think",
+ "tokenizer": "Qwen/Qwen3.5-4B",
+ "thinking": "off",
+ "bos": null,
+ "message_template": "<|im_start|>{role}\n{content_stripped}<|im_end|>\n",
+ "generation_prefix": "<|im_start|>assistant\n<think>\n\n</think>\n\n",
+ "assistant_suffix": "<|im_end|>",
+ "stop_strings": [
+  "<|im_end|>"
+ ],
+ "train_on": "last assistant message only (prompt and think block weight 0)",
+ "prompt_example": "<|im_start|>system\nSYSTEM<|im_end|>\n<|im_start|>user\nUSER<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+ "hf_equivalent": "tokenizer.apply_chat_template(messages, add_generation_prompt=True, enable_thinking=False)",
+ "stop_token_ids": [
+  248046
+ ],
+ "hf_chat_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+}
