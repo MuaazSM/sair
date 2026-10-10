@@ -1,4 +1,5 @@
 import { lazy, Suspense } from 'react';
+import { LiveApp } from './app/LiveApp.tsx';
 
 // Fixture frame host: only reachable in dev/test builds (`/?frame=<id>`); tree-shaken out of production builds.
 const FrameHost = import.meta.env.DEV ? lazy(() => import('./dev/FrameHost.tsx')) : null;
@@ -12,6 +13,5 @@ export function App() {
       </Suspense>
     );
   }
-  // Production routing arrives with the behaviour wiring.
-  return null;
+  return <LiveApp />;
 }

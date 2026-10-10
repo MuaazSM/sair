@@ -7,7 +7,7 @@ export function QuietButton({ children, href = '#', onClick }: Props) {
   return (
     <a
       href={href}
-      onClick={onClick}
+      onClick={onClick ? (e) => { e.preventDefault(); onClick(); } : undefined}
       style={{
         marginTop: 12,
         minHeight: 56,

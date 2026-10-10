@@ -7,7 +7,8 @@ export type SavedData = {
   /** Only on short notes: the walker's own words, quoted. */
   fromNote?: string;
   facts: { kind: 'sure' | 'maybe'; text: string }[];
-  outcome: { kind: 'done' | 'quiet'; label: string };
+  /** Absent only in the NOT-IN-DESIGN slow-entry state. */
+  outcome?: { kind: 'done' | 'quiet'; label: string };
   readLabel: string;
   doneLabel: string;
 };

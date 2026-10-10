@@ -1,8 +1,8 @@
-type Props = { labels: string[]; activeIndex: number };
+type Props = { labels: string[]; activeIndex: number; onSelect?: (index: number) => void };
 
 /** Diary filter chips (design 3A: All / Mom / Dad). Labels come from props (group names are config, not copy).
  *  Static for now: renders the pressed state, no filtering behaviour. */
-export function DiaryFilterChips({ labels, activeIndex }: Props) {
+export function DiaryFilterChips({ labels, activeIndex, onSelect }: Props) {
   return (
     <div style={{ display: 'flex', gap: 10 }}>
       {labels.map((label, i) => {
@@ -12,6 +12,7 @@ export function DiaryFilterChips({ labels, activeIndex }: Props) {
             key={label}
             type="button"
             aria-pressed={active}
+            onClick={onSelect ? () => onSelect(i) : undefined}
             style={{
               minHeight: 48,
               padding: '0 22px',

@@ -11,3 +11,4 @@ export { DiaryEntryCard, type DiaryEntry } from './DiaryEntryCard.tsx';
 export { DiaryFilterChips } from './DiaryFilterChips.tsx';
 export { DiarySummary } from './DiarySummary.tsx';
 export { HoldToRecord, MissionNote, type HoldToRecordMode } from './HoldToRecord.tsx';
+export { GapState } from './GapState.tsx';

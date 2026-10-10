@@ -9,6 +9,8 @@ type Props = {
   /** Breathing ring in warning mode (design keyframes sair-pulse, 2.4 s). Off for static frames. */
   animate?: boolean;
   label: string;
+  /** Pointer down, or Space/Enter down, on the button. Release is handled by the owner of the recording. */
+  onPressStart?: () => void;
 };
 
 const CIRCUMFERENCE = 666.0;
@@ -38,7 +40,7 @@ export function MissionNote({ text }: { text: string }) {
 }
 
 /** Hold-to-record ring + round button in its static design states: idle, recording, 10-second warning. */
-export function HoldToRecord({ mode, progress = 0, animate = true, label }: Props) {
+export function HoldToRecord({ mode, progress = 0, animate = true, label, onPressStart }: Props) {
   const active = mode !== 'idle';
   return (
     <div style={{ position: 'relative', width: 232, height: 232, flex: 'none' }}>
@@ -51,7 +53,13 @@ export function HoldToRecord({ mode, progress = 0, animate = true, label }: Prop
           <circle cx="116" cy="116" r="106" fill="none" stroke="#A5641A" strokeWidth="8" strokeLinecap="round" strokeDasharray={CIRCUMFERENCE} strokeDashoffset={WARNING_OFFSET} style={animate ? { animation: 'sair-pulse 2.4s ease-in-out infinite' } : undefined} />
         ) : null}
       </svg>
-      <button type="button" aria-label={label} style={{ ...BUTTON_BASE, inset: active ? 22 : 28, background: active ? '#2C4A34' : '#3F6B4A' }}>
+      <button
+        type="button"
+        aria-label={label}
+        onPointerDown={onPressStart ? (e) => { e.preventDefault(); onPressStart(); } : undefined}
+        onKeyDown={onPressStart ? (e) => { if ((e.key === ' ' || e.key === 'Enter') && !e.repeat) { e.preventDefault(); onPressStart(); } } : undefined}
+        onContextMenu={onPressStart ? (e) => e.preventDefault() : undefined}
+        style={{ ...BUTTON_BASE, inset: active ? 22 : 28, background: active ? '#2C4A34' : '#3F6B4A' }}>
         <Icon name="mic" size={64} />
       </button>
     </div>

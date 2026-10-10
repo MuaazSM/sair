@@ -32,10 +32,12 @@ export function DiaryEntryCard({ e }: { e: DiaryEntry }) {
         <h2 style={{ margin: 0, font: "800 26px/32px 'Nunito'" }}>{e.date}</h2>
         <div style={{ fontSize: 20, color: '#5C6B60' }}>{e.group}</div>
       </div>
+      {e.mission ? (
       <div style={{ display: 'flex', gap: 10, alignItems: 'flex-start', fontSize: 20, lineHeight: '28px', fontStyle: 'italic', color: '#5C6B60' }}>
         <Icon name="sun" size={20} stroke="#A5641A" style={{ flex: 'none', marginTop: 4 }} />
         <span>{e.mission}</span>
       </div>
+      ) : null}
       {e.entry === null ? (
         <div style={{ fontSize: 21, lineHeight: '31px', color: '#5C6B60' }}>{e.writingLabel}</div>
       ) : (

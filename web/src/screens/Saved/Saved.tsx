@@ -2,8 +2,8 @@ import { FactChip, Icon, Logo, PrimaryButton, Screen } from '../../components/in
 import type { SavedData } from '../../fixtures/saved.ts';
 
 /** Saved (design 2D) and, with no facts and a `fromNote`, the short-note variant (design 2E). */
-export function Saved({ data, onRead, onDone }: { data: SavedData; onRead?: () => void; onDone?: () => void }) {
-  const quiet = data.outcome.kind === 'quiet';
+export function Saved({ data, onRead, onDone, showRead = true }: { data: SavedData; onRead?: () => void; onDone?: () => void; showRead?: boolean }) {
+  const quiet = data.outcome?.kind === 'quiet';
   return (
     <Screen>
       <div style={{ height: 64, flex: 'none', display: 'flex', alignItems: 'center', gap: 14 }}>
@@ -26,7 +26,7 @@ export function Saved({ data, onRead, onDone }: { data: SavedData; onRead?: () =
       >
         <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           <div style={{ fontSize: 20, color: '#5C6B60' }}>{data.date}</div>
-          <div style={{ font: "700 24px/30px 'Nunito'" }}>{data.group}</div>
+          {data.group ? <div style={{ font: "700 24px/30px 'Nunito'" }}>{data.group}</div> : null}
         </div>
         <div style={{ fontSize: 21, lineHeight: '31px', textWrap: 'pretty' }}>{data.entry}</div>
         {data.fromNote ? <div style={{ fontSize: 20, lineHeight: '28px', color: '#5C6B60' }}>{data.fromNote}</div> : null}
@@ -38,6 +38,7 @@ export function Saved({ data, onRead, onDone }: { data: SavedData; onRead?: () =
           </div>
         ) : null}
       </div>
+      {data.outcome ? (
       <div style={{ marginTop: 14, display: 'flex' }}>
         <span
           style={{
@@ -58,7 +59,10 @@ export function Saved({ data, onRead, onDone }: { data: SavedData; onRead?: () =
           {data.outcome.label}
         </span>
       </div>
+      ) : null}
       <div style={{ flex: 1 }} />
+      {showRead ? (
+      <>
       <button
         type="button"
         onClick={onRead}
@@ -83,6 +87,8 @@ export function Saved({ data, onRead, onDone }: { data: SavedData; onRead?: () =
         {data.readLabel}
       </button>
       <div style={{ height: 12, flex: 'none' }} />
+      </>
+      ) : null}
       <div style={{ flex: 'none' }}>
         <PrimaryButton onClick={onDone}>{data.doneLabel}</PrimaryButton>
       </div>
