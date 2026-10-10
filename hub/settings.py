@@ -147,6 +147,12 @@ class Settings(BaseSettings):
     writer_grammar: Path = Path("grammars/entry.gbnf")
     writer_json_schema: Path = Path("schemas/entry.schema.json")
     writer_max_tokens: int = Field(default=400, ge=1)
+    # Timeouts/sampling read by hub/graphs (the model clients keep their own constants).
+    ollama_transcribe_timeout_s: float = Field(default=180, gt=0)
+    ollama_chat_timeout_s: float = Field(default=120, gt=0)
+    writer_timeout_s: float = Field(default=120, gt=0)
+    planner_temperature: float = Field(default=0.7, ge=0.0, le=2.0)
+    tts_timeout_s: float = Field(default=120, gt=0)
 
     tts_engine: Literal["kokoro", "piper"] = "kokoro"
     kokoro_model_dir: Path = Path("models/kokoro")
