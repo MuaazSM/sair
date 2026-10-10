@@ -1,0 +1,18 @@
+# DRAFT (P0 spike only) GBNF for the PRD 9.1 Sair-Writer output. The final grammar lives in grammars/.
+# Fixed key order; facts 0-6; kind/certainty/mission_result enums; place optional;
+# mission_span is a string or null (the "required unless not_mentioned" rule is enforced in code, PRD 8.7).
+
+root          ::= "{" ws "\"facts\":" ws facts "," ws "\"mission_result\":" ws mresult "," ws "\"mission_span\":" ws mspan "," ws "\"entry\":" ws entry ws "}"
+
+facts         ::= "[" ws "]" | "[" ws fact ( "," ws fact ){0,5} ws "]"
+fact          ::= "{" ws "\"span\":" ws str "," ws "\"kind\":" ws kind "," ws "\"subject\":" ws str "," ws "\"certainty\":" ws certainty ( "," ws "\"place\":" ws str )? ws "}"
+
+kind          ::= "\"sight\"" | "\"sound\"" | "\"smell\"" | "\"person\"" | "\"animal\"" | "\"plant\"" | "\"weather\"" | "\"other\""
+certainty     ::= "\"sure\"" | "\"unsure\""
+mresult       ::= "\"done\"" | "\"partly\"" | "\"not_done\"" | "\"not_mentioned\""
+mspan         ::= str | "null"
+entry         ::= "\"" char{1,600} "\""
+
+str           ::= "\"" char{1,240} "\""
+char          ::= [^"\\\x00-\x1f] | "\\" ( ["\\/bfnrt] | "u" [0-9a-fA-F]{4} )
+ws            ::= [ \t\n]{0,2}
