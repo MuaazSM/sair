@@ -18,7 +18,6 @@ const ALLOWED_URLS = new Set([
   'http://www.w3.org/2000/xmlns/',
   'https://react.dev/errors/',
   'https://reactjs.org/docs/error-decoder.html?invariant=', // react-dom production error text
-  'http://c2pa.org/manifest', // content-credentials label inside the logo SVG's metadata; inert
 ]);
 const ALLOWED_PREFIXES = ['https://react.dev/errors/'];
 const FORBIDDEN = ['navigator.geolocation', 'geolocation', 'sendBeacon', 'gtag', 'analytics', 'googletagmanager', 'sentry'];
