@@ -233,3 +233,21 @@ def test_phase_spend_sums_runs_and_dev_subset(tmp_path: Path) -> None:
     sub = train.dev_subset(items, 5)
     assert len(sub) == 5 and sub == train.dev_subset(items, 5)
     assert train.dev_subset(items, None) == items
+
+
+def test_epoch_constraints_and_shortcut_check() -> None:
+    c = {"fact_recall": 0.7, "fallback_rate": 0.5}
+    assert train.epoch_constraint_codes(
+        {"unsupported_rate": 0.1, "fact_recall": 0.8, "fallback_rate": 0.4}, c
+    ) == ["ELIGIBLE"]
+    assert train.epoch_constraint_codes(
+        {"unsupported_rate": 0.1, "fact_recall": 0.6, "fallback_rate": 0.6}, c
+    ) == ["RECALL_BELOW_C", "FALLBACK_ABOVE_C"]
+    assert train.epoch_constraint_codes(None, c) == ["NO_DEV_METRICS"]
+    copied = json.loads(GOLD)
+    copied["entry"] = "Mom and Dad heard a koel near the temple and saw a gulmohar."
+    item = {**ITEM, "transcript": "Aaj koel was calling near the temple. Walk done."}
+    item["gold"] = {**ITEM["gold"], "mission_result": "not_mentioned", "mission_span": None}  # type: ignore[dict-item]
+    sc = train.shortcut_check([item, item], [json.dumps(copied), "not json"])
+    assert sc["parsed"] == 1 and sc["copied_mission_noun_rate"] == 1.0
+    assert sc["pred_fact_count_dist"] == {1: 1}

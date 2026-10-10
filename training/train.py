@@ -48,6 +48,7 @@ from training.tinker_common import (
     DEFAULT_BASE_MODEL,
     LEXICON_HASH_PATH,
     RENDERER_JSON,
+    ROOT,
     RUNS_DIR,
     Usage,
     as_dicts,
@@ -362,6 +363,140 @@ def dev_subset(
     return [items[i] for i in idx]
 
 
+# --------------------------------------------------------------------------- selection
+
+
+def epoch_constraint_codes(dev: dict[str, Any] | None, c_ref: dict[str, Any]) -> list[str]:
+    """Why an epoch is (in)eligible under §12.3 vs the base few-shot (C) dev reference."""
+    eps = 1e-9
+    if not dev:
+        return ["NO_DEV_METRICS"]
+    codes: list[str] = []
+    u, r, f = dev.get("unsupported_rate"), dev.get("fact_recall"), dev.get("fallback_rate")
+    if u is None or r is None or f is None:
+        codes.append("METRIC_MISSING")
+    if r is not None and c_ref.get("fact_recall") is not None and r + eps < c_ref["fact_recall"]:
+        codes.append("RECALL_BELOW_C")
+    if (
+        f is not None
+        and c_ref.get("fallback_rate") is not None
+        and f - eps > c_ref["fallback_rate"]
+    ):
+        codes.append("FALLBACK_ABOVE_C")
+    return codes or ["ELIGIBLE"]
+
+
+def shortcut_check(items: Sequence[dict[str, Any]], raws: Sequence[str]) -> dict[str, Any]:
+    """P5 shortcut check on dev outputs: fixed fact counts, copied mission nouns, dropped hedges.
+
+    * fact counts: distribution of predicted (raw) fact counts, the modal share, and Spearman
+      rho between predicted and gold counts (a fixed-count shortcut gives a high modal share
+      and a low rho);
+    * copied mission nouns: share of parsed entries containing a lexicon detail that occurs in
+      the mission text but NOT in the transcript;
+    * dropped hedges: among gold-unsure facts matched by a predicted verified-or-dropped fact
+      (span Jaccard >= 0.5 + subject match), the share predicted as sure; plus the share of
+      parsed outputs with HEDGE_MISSING_IN_ENTRY / HEDGE_CERTAINTY_MISMATCH.
+    Counts and rates only (no text).
+    """
+    from eval.metrics import match_facts
+    from hub.grounding import extract_details
+    from training.audit import spearman
+
+    pred_n: list[int] = []
+    gold_n: list[int] = []
+    copied = parsed = hedge_miss = hedge_mm = 0
+    unsure_matched = unsure_sure = 0
+    for item, raw in zip(items, raws, strict=True):
+        p = parse_writer_output(raw.strip())
+        if p.value is None:
+            continue
+        parsed += 1
+        out = p.value
+        gold = [Fact.model_validate(f) for f in item["gold"].get("facts") or []]
+        pred_n.append(len(out.facts))
+        gold_n.append(len(gold))
+        mission = item.get("mission_text") or ""
+        if mission:
+            t_keys = extract_details(str(item["transcript"]), inclusive=True)
+            m_keys = {k for k in extract_details(mission, inclusive=True) if ":" not in k}
+            e_keys = extract_details(out.entry)
+            copied += int(bool((m_keys - t_keys) & e_keys))
+        chk = check_entry(
+            out, str(item["transcript"]), str(item["group"]), origin=EntryOrigin.MODEL
+        )
+        codes = {c.value for c in chk.reasons}
+        hedge_miss += int("hedge_missing_in_entry" in codes)
+        hedge_mm += int("hedge_certainty_mismatch" in codes)
+        gold_unsure = [g for g in gold if g.certainty.value == "unsure"]
+        for i, _j in match_facts(list(out.facts), gold_unsure):  # type: ignore[arg-type]
+            unsure_matched += 1
+            unsure_sure += int(out.facts[i].certainty.value == "sure")
+    dist: dict[int, int] = {}
+    for n in pred_n:
+        dist[n] = dist.get(n, 0) + 1
+    modal = max(dist.values()) / len(pred_n) if pred_n else None
+    rho = spearman(pred_n, gold_n)
+
+    def r(a: int, b: int) -> float | None:
+        return round(a / b, 4) if b else None
+
+    return {
+        "parsed": parsed,
+        "pred_fact_count_dist": dict(sorted(dist.items())),
+        "pred_fact_count_modal_share": None if modal is None else round(modal, 4),
+        "rho_pred_vs_gold_fact_count": None if rho is None else round(rho, 4),
+        "copied_mission_noun_rate": r(copied, parsed),
+        "gold_unsure_matched": unsure_matched,
+        "gold_unsure_predicted_sure_rate": r(unsure_sure, unsure_matched),
+        "hedge_missing_in_entry_rate": r(hedge_miss, parsed),
+        "hedge_certainty_mismatch_rate": r(hedge_mm, parsed),
+    }
+
+
+def select_run(run_id: str, c_ref_path: Path) -> dict[str, Any]:
+    """§12.3 selection vs C's dev numbers + shortcut check; written into the run file."""
+    from training.gates import select_epoch
+
+    path = RUNS_DIR / f"{run_id}.json"
+    meta: dict[str, Any] = json.loads(path.read_text(encoding="utf-8"))
+    c = json.loads(c_ref_path.read_text(encoding="utf-8"))
+    c_ref = c["dev"]
+    sel = select_epoch(meta["epochs"], c_ref)
+    meta["selection"] = {
+        "rule": "min dev unsupported_rate s.t. fact_recall >= C and fallback_rate <= C "
+        "(PRD §12.3; ties -> earlier epoch; training.gates.select_epoch)",
+        "c_ref": {
+            k: c_ref.get(k)
+            for k in ("unsupported_rate", "fact_recall", "fallback_rate", "valid_json_no_grammar")
+        },
+        "c_dev_n": c.get("dev_n"),
+        "per_epoch": {
+            str(ep["epoch"]): epoch_constraint_codes(ep.get("dev"), c_ref) for ep in meta["epochs"]
+        },
+    }
+    meta["selected_epoch"] = sel
+    meta["selection"]["reason"] = (
+        f"epoch {sel}: lowest unsupported_rate among eligible epochs"
+        if sel is not None
+        else "NO_EPOCH_ELIGIBLE (G-ship would fail: WRITER_BACKEND=gemma)"
+    )
+    dev_items = {
+        str(it["item_id"]): it for it in read_jsonl(Path(meta["config"]["dev_items_path"]))
+    }
+    sc: dict[str, Any] = {}
+    for ep in meta["epochs"]:
+        f = RUNS_DIR / f"{run_id}.dev_e{ep['epoch']}.jsonl"
+        if f.is_file():
+            rows = read_jsonl(f)
+            sc[str(ep["epoch"])] = shortcut_check(
+                [dev_items[str(r["item_id"])] for r in rows], [str(r["raw"]) for r in rows]
+            )
+    meta["shortcut_check"] = sc
+    atomic_write_json(path, meta)
+    return meta
+
+
 # --------------------------------------------------------------------------- train
 
 
@@ -551,10 +686,20 @@ def main(argv: Sequence[str] | None = None) -> int:
     ap.add_argument("--run-id", default=None)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--phase-budget-usd", type=float, default=2.50)
+    ap.add_argument("--select", metavar="RUN_ID", default=None, help="§12.3 selection + shortcuts")
+    ap.add_argument("--c-ref", type=Path, default=ROOT / "training" / "gates" / "c_dev.json")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--assume-train-items", type=int, default=None, help="dry run: scale plan")
     ap.add_argument("--assume-dev-items", type=int, default=None, help="dry run: scale plan")
     a = ap.parse_args(argv)
+    if a.select:
+        m = select_run(a.select, a.c_ref)
+        print(
+            json.dumps(
+                {k: m[k] for k in ("selected_epoch", "selection", "shortcut_check")}, indent=1
+            )
+        )
+        return 0
     cfg = TrainConfig(
         base_model=a.base_model,
         lr_mult=a.lr_mult,

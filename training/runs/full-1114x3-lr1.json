@@ -1,0 +1,170 @@
+{
+ "run_id": "full-1114x3-lr1",
+ "config": {
+  "base_model": "Qwen/Qwen3.5-4B",
+  "lr_mult": 1.0,
+  "epochs": 3,
+  "batch_size": 32,
+  "lora_rank": 32,
+  "max_length": 1024,
+  "limit": null,
+  "dev_limit": null,
+  "seed": 0,
+  "lr_schedule": "linear",
+  "eval_temperature": 0.0,
+  "eval_max_tokens": 400,
+  "train_path": "/Users/muaazshaikh/sair/training/data/sft_train.jsonl",
+  "dev_items_path": "/Users/muaazshaikh/sair/training/data/dev.jsonl",
+  "phase_budget_usd": 2.5
+ },
+ "lr": 0.0004905250962784578,
+ "base_lr": 0.0004905250962784578,
+ "lr_source": "get_lr formula (cookbook 0.1.0) with text_config.hidden_size=2560",
+ "lexicon_hash": "47fde4cb76c1d737ddc11b775715628e3f1af52a8bd926380aa2a957a60ab36d",
+ "prompt_fingerprint": "391e6c44a50fa51e8685cc83d291fe31e34a5c9181b012a85f56ad3f49ade4a1",
+ "renderer": {
+  "renderer": "qwen3_5_no_think",
+  "tokenizer": "Qwen/Qwen3.5-4B",
+  "thinking": "off",
+  "bos": null,
+  "message_template": "<|im_start|>{role}\n{content_stripped}<|im_end|>\n",
+  "generation_prefix": "<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "assistant_suffix": "<|im_end|>",
+  "stop_strings": [
+   "<|im_end|>"
+  ],
+  "train_on": "last assistant message only (prompt and think block weight 0)",
+  "prompt_example": "<|im_start|>system\nSYSTEM<|im_end|>\n<|im_start|>user\nUSER<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "hf_equivalent": "tokenizer.apply_chat_template(messages, add_generation_prompt=True, enable_thinking=False)",
+  "stop_token_ids": [
+   248046
+  ],
+  "hf_chat_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+ },
+ "examples": 1114,
+ "dropped_overlong": 0,
+ "epochs": [
+  {
+   "epoch": 1,
+   "state_path": "tinker://52d977d5-5e21-5fbc-9332-98acea2d7b47:train:0/weights/full-1114x3-lr1-e1",
+   "sampler_path": "tinker://52d977d5-5e21-5fbc-9332-98acea2d7b47:train:0/sampler_weights/full-1114x3-lr1-e1",
+   "train_nll_mean": 0.22857,
+   "dev": {
+    "unsupported_rate": 0.2016,
+    "fact_recall": 0.9895,
+    "fallback_rate": 0.2403,
+    "valid_json_no_grammar": 1.0
+   },
+   "dev_n": 129,
+   "dev_reasons": {
+    "unsupported_detail": 26,
+    "hedge_missing_in_entry": 11,
+    "hedge_certainty_mismatch": 10,
+    "new_number": 9,
+    "new_person_name": 4
+   }
+  },
+  {
+   "epoch": 2,
+   "state_path": "tinker://52d977d5-5e21-5fbc-9332-98acea2d7b47:train:0/weights/full-1114x3-lr1-e2",
+   "sampler_path": "tinker://52d977d5-5e21-5fbc-9332-98acea2d7b47:train:0/sampler_weights/full-1114x3-lr1-e2",
+   "train_nll_mean": 0.11163,
+   "dev": {
+    "unsupported_rate": 0.155,
+    "fact_recall": 0.9474,
+    "fallback_rate": 0.1705,
+    "valid_json_no_grammar": 1.0
+   },
+   "dev_n": 129,
+   "dev_reasons": {
+    "unsupported_detail": 20,
+    "hedge_missing_in_entry": 2,
+    "new_number": 6,
+    "hedge_certainty_mismatch": 2
+   }
+  }
+ ],
+ "phase_spend_before_usd": 0.175705,
+ "started": "2026-10-11T01:02:18",
+ "usage": {
+  "model": "Qwen/Qwen3.5-4B",
+  "requests": 258,
+  "prefill_tokens": 127182,
+  "prefill_cached_tokens": 0,
+  "sample_tokens": 23538,
+  "train_tokens": 1377318,
+  "rates_usd_per_mtok": {
+   "prefill": 0.33,
+   "prefill_cached": 0.066,
+   "sample": 1.005,
+   "train": 0.737
+  },
+  "rates_known": true,
+  "rates_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/ (fetched 2026-10-10)",
+  "estimated_cost_usd": 1.080709
+ },
+ "stopped": "BILLING_402_AT_EPOCH3_CHECKPOINT_SAVE",
+ "stopped_note": "epoch 3: all 105 steps ran; save_state failed with tinker.BillingError 402; epoch-3 weights not saved; no epoch-3 dev eval",
+ "epoch3_train_tokens_est": 688659,
+ "epoch3_cost_est_usd": 0.507542,
+ "estimated_cost_usd_incl_epoch3": 1.588251,
+ "phase_spend_after_usd": 1.763956,
+ "shortcut_check": {
+  "1": {
+   "parsed": 129,
+   "pred_fact_count_dist": {
+    "0": 37,
+    "1": 13,
+    "2": 29,
+    "3": 29,
+    "4": 14,
+    "5": 7
+   },
+   "pred_fact_count_modal_share": 0.2868,
+   "rho_pred_vs_gold_fact_count": 0.9027,
+   "copied_mission_noun_rate": 0.0388,
+   "gold_unsure_matched": 72,
+   "gold_unsure_predicted_sure_rate": 0.0,
+   "hedge_missing_in_entry_rate": 0.0853,
+   "hedge_certainty_mismatch_rate": 0.0775
+  },
+  "2": {
+   "parsed": 129,
+   "pred_fact_count_dist": {
+    "0": 42,
+    "1": 25,
+    "2": 27,
+    "3": 22,
+    "4": 10,
+    "5": 3
+   },
+   "pred_fact_count_modal_share": 0.3256,
+   "rho_pred_vs_gold_fact_count": 0.9511,
+   "copied_mission_noun_rate": 0.0698,
+   "gold_unsure_matched": 68,
+   "gold_unsure_predicted_sure_rate": 0.0,
+   "hedge_missing_in_entry_rate": 0.0155,
+   "hedge_certainty_mismatch_rate": 0.0155
+  }
+ },
+ "selection": {
+  "rule": "min dev unsupported_rate s.t. fact_recall >= C and fallback_rate <= C (PRD §12.3; ties -> earlier epoch; training.gates.select_epoch)",
+  "c_ref": {
+   "unsupported_rate": 0.3889,
+   "fact_recall": 0.6895,
+   "fallback_rate": 0.4186,
+   "valid_json_no_grammar": 0.9767
+  },
+  "c_dev_n": 129,
+  "per_epoch": {
+   "1": [
+    "ELIGIBLE"
+   ],
+   "2": [
+    "ELIGIBLE"
+   ]
+  },
+  "reason": "epoch 2: lowest unsupported_rate among eligible epochs"
+ },
+ "selected_epoch": 2
+}

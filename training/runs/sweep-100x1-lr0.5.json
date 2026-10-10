@@ -1,0 +1,90 @@
+{
+ "run_id": "sweep-100x1-lr0.5",
+ "config": {
+  "base_model": "Qwen/Qwen3.5-4B",
+  "lr_mult": 0.5,
+  "epochs": 1,
+  "batch_size": 32,
+  "lora_rank": 32,
+  "max_length": 1024,
+  "limit": 100,
+  "dev_limit": 50,
+  "seed": 0,
+  "lr_schedule": "linear",
+  "eval_temperature": 0.0,
+  "eval_max_tokens": 400,
+  "train_path": "/Users/muaazshaikh/sair/training/data/sft_train.jsonl",
+  "dev_items_path": "/Users/muaazshaikh/sair/training/data/dev.jsonl",
+  "phase_budget_usd": 2.5
+ },
+ "lr": 0.0002452625481392289,
+ "base_lr": 0.0004905250962784578,
+ "lr_source": "get_lr formula (cookbook 0.1.0) with text_config.hidden_size=2560",
+ "lexicon_hash": "47fde4cb76c1d737ddc11b775715628e3f1af52a8bd926380aa2a957a60ab36d",
+ "prompt_fingerprint": "391e6c44a50fa51e8685cc83d291fe31e34a5c9181b012a85f56ad3f49ade4a1",
+ "renderer": {
+  "renderer": "qwen3_5_no_think",
+  "tokenizer": "Qwen/Qwen3.5-4B",
+  "thinking": "off",
+  "bos": null,
+  "message_template": "<|im_start|>{role}\n{content_stripped}<|im_end|>\n",
+  "generation_prefix": "<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "assistant_suffix": "<|im_end|>",
+  "stop_strings": [
+   "<|im_end|>"
+  ],
+  "train_on": "last assistant message only (prompt and think block weight 0)",
+  "prompt_example": "<|im_start|>system\nSYSTEM<|im_end|>\n<|im_start|>user\nUSER<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "hf_equivalent": "tokenizer.apply_chat_template(messages, add_generation_prompt=True, enable_thinking=False)",
+  "stop_token_ids": [
+   248046
+  ],
+  "hf_chat_template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715"
+ },
+ "examples": 100,
+ "dropped_overlong": 0,
+ "epochs": [
+  {
+   "epoch": 1,
+   "state_path": "tinker://597c948e-bf2b-5aff-b6b6-277aecb2e3b4:train:0/weights/sweep-100x1-lr0.5-e1",
+   "sampler_path": "tinker://597c948e-bf2b-5aff-b6b6-277aecb2e3b4:train:0/sampler_weights/sweep-100x1-lr0.5-e1",
+   "train_nll_mean": 0.31911,
+   "dev": {
+    "unsupported_rate": 0.4,
+    "fact_recall": 0.7973,
+    "fallback_rate": 0.48,
+    "valid_json_no_grammar": 1.0
+   },
+   "dev_n": 50,
+   "dev_reasons": {
+    "unsupported_detail": 20,
+    "hedge_certainty_mismatch": 4,
+    "place_not_in_span": 4,
+    "hedge_missing_in_entry": 6,
+    "new_number": 5,
+    "subject_not_in_span": 2
+   }
+  }
+ ],
+ "phase_spend_before_usd": 0.059033,
+ "started": "2026-10-11T01:00:17",
+ "usage": {
+  "model": "Qwen/Qwen3.5-4B",
+  "requests": 50,
+  "prefill_tokens": 24603,
+  "prefill_cached_tokens": 0,
+  "sample_tokens": 4816,
+  "train_tokens": 61788,
+  "rates_usd_per_mtok": {
+   "prefill": 0.33,
+   "prefill_cached": 0.066,
+   "sample": 1.005,
+   "train": 0.737
+  },
+  "rates_known": true,
+  "rates_source": "https://tinker-docs.thinkingmachines.ai/tinker/models/ (fetched 2026-10-10)",
+  "estimated_cost_usd": 0.058497
+ },
+ "phase_spend_after_usd": 0.11753,
+ "finished": "2026-10-11T01:01:03"
+}
