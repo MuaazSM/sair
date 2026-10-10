@@ -1,0 +1,9 @@
+version: 1
+id: ex02
+group: "Dad"
+place_type: "the park"
+start_date: 2026-10-05
+first_mission: "Look at the colour of the sky above you."
+days:
+  - transcript: "the sky was orange and I think there was a koel somewhere"
+  - transcript: "koyal ki awaaz aayi phir se, near the bench"

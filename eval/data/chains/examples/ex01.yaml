@@ -1,0 +1,10 @@
+version: 1
+id: ex01
+group: "Mom and Dad"
+place_type: "a lane"
+start_date: 2026-10-05
+first_mission: "Listen for one bird you can hear from the path."
+days:
+  - transcript: "we heard a crow near the gate, bas itna hi"
+  - transcript: "aaj crow phir se tha gate ke paas, and the neem tree was shaking in the wind"
+  - transcript: "nothing much today, we just walked and talked"
