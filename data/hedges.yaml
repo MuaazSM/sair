@@ -1,0 +1,136 @@
+version: 1
+# Hedge cues for PRD §8 check 3. Matched case-insensitively on NFC-normalised, whitespace-collapsed text.
+# Latin cues match on word boundaries; Devanagari cues are substring matches (Python \b is unreliable with matras).
+# 'review' marks cues that may over-trigger; the grounding code decides whether to keep them.
+cues:
+  en:
+    - 'maybe'
+    - 'i think'
+    - 'i thought'
+    - 'some kind of'
+    - 'some sort of'
+    - 'probably'
+    - 'perhaps'
+    - 'might have'
+    - 'might be'
+    - 'not sure'
+    - 'i guess'
+    - 'sort of'   # review: noun phrase risk
+    - 'kind of'   # review: "kind of" can be a noun phrase ("a kind of tree")
+    - 'looked like'   # review: can be literal
+    - 'sounded like'   # review: can be literal
+    - 'seemed like'
+    - 'seemed to'
+    - 'i don''t know'
+    - 'i do not know'
+    - 'could be'
+    - 'could have been'
+    - 'possibly'
+    - 'i suppose'   # review
+    - 'not certain'
+    - 'if i remember'   # review
+    - 'i believe'   # review: can be firm belief
+    - 'or something'   # review: may attach to non-hedged lists
+    - 'something like'   # review: also approximates numbers
+    - 'i imagine'   # review
+    - 'i assume'   # review
+    - 'apparently'   # review: rare in walks
+    - 'supposedly'   # review
+    - 'seems like'
+    - 'looks like'   # review: present tense; entry words rarely use
+    - 'sounds like'   # review
+    - 'probably a'   # review: redundant with probably
+    - 'a bit like'   # review
+  hinglish:
+    - 'shayad'
+    - 'shayad kuch'
+    - 'lagta'   # review: stem of "lagta hai"; also "costs" (e.g. kitna lagta)
+    - 'lagta hai'
+    - 'lagta tha'
+    - 'lag raha tha'
+    - 'lag rahi thi'
+    - 'lag rha tha'
+    - 'kuch'   # review: also means "some"; bare "kuch" will over-trigger
+    - 'kuch toh'   # review: also an idiom "something at least"
+    - 'kuch na kuch'   # review
+    - 'pata nahi'
+    - 'pata nai'
+    - 'pata nahin'
+    - 'maloom nahi'
+    - 'ho sakta hai'
+    - 'ho sakta'
+    - 'ho sakti hai'
+    - 'jaisa'   # review: also means "like/as" in non-hedge comparisons
+    - 'jaise'   # review: also means "as/like"; very common
+    - 'jaisi'   # review: also means "like/as"
+    - 'aisa lag'   # review: prefix of aisa laga/lagta
+    - 'aisa lagta'
+    - 'aisa laga'
+    - 'shayad woh'
+    - 'yaad nahi'
+    - 'pakka nahi'
+    - 'pakka nahin'
+    - 'andaaza'   # review
+    - 'andaza'   # review
+    - 'agar sahi'
+    - 'kuch aisa'   # review
+    - 'kuch kuch'   # review
+    - 'ya kuch'   # review
+    - 'ya shayad'
+    - 'soch raha tha'   # review
+    - 'socha'   # review: also means "thought" non-hedged
+  devanagari:
+    - 'शायद'
+    - 'लगता'   # review: stem; also "costs/takes"
+    - 'लगता है'
+    - 'लगता था'
+    - 'लग रहा था'
+    - 'लग रही थी'
+    - 'कुछ'   # review: also means "some"
+    - 'कुछ तो'   # review
+    - 'पता नहीं'
+    - 'मालूम नहीं'
+    - 'हो सकता है'
+    - 'हो सकती है'
+    - 'जैसा'   # review: also means "as/like"
+    - 'जैसे'   # review: also means "as/like"; very common
+    - 'जैसी'
+    - 'ऐसा लगा'
+    - 'ऐसा लगता'
+    - 'पक्का नहीं'
+    - 'याद नहीं'
+    - 'अंदाज़ा'   # review
+    - 'अंदाजा'   # review
+    - 'शायद कोई'
+    - 'या कुछ'   # review
+# Words that count as a hedge inside an English ENTRY sentence (check 3: entry sentence must carry a hedge word).
+entry_hedge_words:
+  - 'maybe'
+  - 'perhaps'
+  - 'probably'
+  - 'might'   # review: modal, also "might" noun (rare)
+  - 'seemed'
+  - 'thought'   # review: "thought" can be a non-hedge (a thought about the day)
+  - 'unsure'
+  - 'possibly'
+  - 'not sure'
+  - 'some kind of'
+  - 'some sort of'
+  - 'kind of'   # review: noun phrase risk
+  - 'sort of'   # review
+  - 'apparently'
+  - 'supposedly'
+  - 'looked like'
+  - 'sounded like'
+  - 'seemed like'
+  - 'could be'
+  - 'could have been'
+  - 'uncertain'   # review
+  - 'unclear'   # review
+  - 'guess'   # review
+  - 'guessed'
+  - 'believed'   # review
+  - 'not certain'
+  - 'i think'   # review: first-person; entries are third-person so rarely used
+  - 'may have'
+  - 'may be'   # review: also "maybe" split

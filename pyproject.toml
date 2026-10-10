@@ -1,0 +1,84 @@
+[project]
+name = "sair"
+version = "0.1.0"
+description = "Sair: a screenless evening-walk companion, fully local."
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic>=2",
+    "pydantic-settings",
+    "langgraph",
+    "httpx",
+    "structlog",
+    "pyyaml",
+    "numpy",
+    "soundfile",
+    "python-multipart",
+    "sentry-sdk",
+]
+
+[project.optional-dependencies]
+tts = [
+    "kokoro",
+    "misaki[en]",
+    "soundfile",
+    "en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
+]
+training = [
+    "tinker",
+    "tinker-cookbook",
+    "transformers",
+    "peft",
+    "torch",
+    "accelerate",
+    "huggingface_hub",
+    "safetensors",
+]
+eval = ["matplotlib"]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+    "ruff",
+    "mypy",
+    "types-PyYAML",
+    "time-machine",
+    "pre-commit",
+    "respx",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["hub"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["vendor", "web", "brand", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["hub"]
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+markers = [
+    "gpu: needs local models (Ollama, llama-server, Kokoro)",
+    "integration: integration test across components",
+]
+
+[tool.hatch.metadata]
+allow-direct-references = true

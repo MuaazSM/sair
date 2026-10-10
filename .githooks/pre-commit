@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Only MuaazSM commits; nothing private or local-only is staged.
+set -euo pipefail
+
+author="$(git var GIT_AUTHOR_IDENT | sed -E 's/ <.*//')"
+if [ "$author" != "MuaazSM" ]; then
+  echo "pre-commit: author is '$author', must be 'MuaazSM'." >&2
+  exit 1
+fi
+
+bad=0
+while IFS= read -r -d '' f; do
+  case "$f" in
+    docs/*|eval/real/*|models/*|*.gguf) bad=1 ;;
+    .env.example|.env.*.example|*/.env.example|*/.env.*.example) ;;
+    .env|.env.*|*/.env|*/.env.*) bad=1 ;;
+  esac
+  [ "$bad" = 1 ] && { echo "pre-commit: forbidden staged path: $f" >&2; exit 1; }
+done < <(git diff --cached --name-only --diff-filter=ACMR -z)
+
+# Lint staged Python files, if tooling is present.
+py=()
+while IFS= read -r -d '' f; do py+=("$f"); done < <(git diff --cached --name-only --diff-filter=ACMR -z -- '*.py')
+if [ "${#py[@]}" -gt 0 ] && command -v uv >/dev/null 2>&1; then
+  uv run --no-sync ruff check "${py[@]}"
+  uv run --no-sync ruff format --check "${py[@]}"
+fi

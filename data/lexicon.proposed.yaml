@@ -1,0 +1,435 @@
+version: 1
+# PROPOSED additions, NOT part of the frozen lexicon. Least certain first. Review before merging into lexicon.yaml.
+entries:
+  - id: chidiya
+    category: bird
+    aliases: [chidiya, chidiyaa, chiriya, चिड़िया]
+    confidence: low
+  - id: kauwe
+    category: bird
+    aliases: [कौओं]
+    confidence: low
+  - id: pied_bushchat
+    category: bird
+    aliases: [bushchat, bush chat]
+    confidence: low
+  - id: coppersmith
+    category: bird
+    aliases: [coppersmith, coppersmith barbet, barbet, basantha, बसंत]
+    confidence: low
+  - id: pond_heron
+    category: bird
+    aliases: [pond heron, andha bagla, अंधा बगला]
+    confidence: low
+  - id: shikra
+    category: bird
+    aliases: [shikra, shikara, शिकरा]
+    confidence: low
+  - id: silk_cotton
+    category: tree
+    aliases: [semal, semul, silk cotton, सेमल]
+    confidence: low
+  - id: sheesham
+    category: tree
+    aliases: [sheesham, shisham, शीशम]   # review: ambiguous alias(es) (English word or other meaning) sheesham
+    confidence: low
+  - id: sal
+    category: tree
+    aliases: [sal tree, saal, साल]
+    confidence: low
+  - id: arjuna
+    category: tree
+    aliases: [arjun tree, arjuna tree, अर्जुन]
+    confidence: low
+  - id: tulip_tree
+    category: tree
+    aliases: [tulip tree]
+    confidence: low
+  - id: rubber_plant
+    category: plant
+    aliases: [rubber plant]
+    confidence: low
+  - id: rain_lily
+    category: flower
+    aliases: [rain lily]
+    confidence: low
+  - id: crossandra
+    category: flower
+    aliases: [crossandra, aboli, अबोली]
+    confidence: low
+  - id: bell_flower
+    category: flower
+    aliases: [ghantaphool]
+    confidence: low
+  - id: boar
+    category: animal
+    aliases: [boar, wild boar]
+    confidence: low
+  - id: bandicoot
+    category: animal
+    aliases: [bandicoot, bandicoots]
+    confidence: low
+  - id: cattle
+    category: animal
+    aliases: [cattle, bovine, pashu, पशु]
+    confidence: low
+  - id: bullfrog
+    category: animal
+    aliases: [bullfrog]
+    confidence: low
+  - id: leech
+    category: insect
+    aliases: [leech, leeches, jonk, जोंक]
+    confidence: low
+  - id: centipede
+    category: insect
+    aliases: [centipede, kankhajura, कनखजूरा]
+    confidence: low
+  - id: earthworm
+    category: insect
+    aliases: [earthworm, kenchua, केंचुआ]
+    confidence: low
+  - id: turquoise
+    category: colour
+    aliases: [turquoise, firozi, फ़िरोज़ी]
+    confidence: low
+  - id: violet
+    category: colour
+    aliases: [violet, jamuni-violet]
+    confidence: low
+  - id: mauve
+    category: colour
+    aliases: [mauve]
+    confidence: low
+  - id: chill
+    category: weather
+    aliases: [chill, chilly, sard, सर्द]   # review: ambiguous alias(es) (English word or other meaning) chill
+    confidence: low
+  - id: warm
+    category: weather
+    aliases: [warm, warmth, garam, गरम]   # review: ambiguous alias(es) (English word or other meaning) warm
+    confidence: low
+  - id: planet
+    category: sky
+    aliases: [planet, venus, shukra, शुक्र]
+    confidence: low
+  - id: contrail
+    category: sky
+    aliases: [contrail, contrails]
+    confidence: low
+  - id: steeple
+    category: landmark
+    aliases: [steeple, spire, kalash, कलश]
+    confidence: low
+  - id: chai_kettle
+    category: landmark
+    aliases: [kettle, kettles, kitli, केतली]
+    confidence: low
+  - id: cemetery
+    category: landmark
+    aliases: [cemetery, kabristan, कब्रिस्तान]
+    confidence: low
+  - id: crematorium
+    category: landmark
+    aliases: [shamshan, श्मशान]
+    confidence: low
+  - id: hand_pump
+    category: landmark
+    aliases: [hand pump, handpump, hand-pump, हैंडपंप]
+    confidence: low
+  - id: lift
+    category: landmark
+    aliases: [lift, elevator, लिफ़्ट]   # review: ambiguous alias(es) (English word or other meaning) lift
+    confidence: low
+  - id: cutting_chai
+    category: food
+    aliases: [cutting chai, cutting, कटिंग चाय]   # review: ambiguous alias(es) (English word or other meaning) cutting
+    confidence: low
+  - id: upma
+    category: food
+    aliases: [upma, उपमा]
+    confidence: low
+  - id: kachori
+    category: food
+    aliases: [kachori, कचौरी]
+    confidence: low
+  - id: bhutta
+    category: food
+    aliases: [roasted corn, roasted bhutta]
+    confidence: low
+  - id: chikki
+    category: food
+    aliases: [chikki, चिक्की]
+    confidence: low
+  - id: guava_slices
+    category: food
+    aliases: [guava slices]
+    confidence: low
+  - id: jamun_fruit
+    category: food
+    aliases: [jamun fruit, jamuns]
+    confidence: low
+  - id: chana
+    category: food
+    aliases: [chana, chickpea, chickpeas, चना]
+    confidence: low
+  - id: e_rickshaw
+    category: vehicle
+    aliases: [e-rickshaw, e rickshaw, toto, "ई-रिक्शा"]
+    confidence: low
+  - id: bike_taxi
+    category: vehicle
+    aliases: [bike taxi]
+    confidence: low
+  - id: cycle_rickshaw
+    category: vehicle
+    aliases: [cycle rickshaw, cycle-rickshaw]
+    confidence: low
+  - id: helicopter
+    category: vehicle
+    aliases: [helicopter, helicopters, helicoptor]
+    confidence: low
+  - id: scooter_horn
+    category: sound
+    aliases: [scooter horn]
+    confidence: low
+  - id: hawker_call
+    category: sound
+    aliases: [hawker, hawkers, feriwala, फेरीवाला]   # review: ambiguous alias(es) (English word or other meaning) hawker
+    confidence: low
+  - id: cooing
+    category: sound
+    aliases: [cooing, coo, gutargoo]
+    confidence: low
+  - id: flapping
+    category: sound
+    aliases: [flapping, wing flap, flapping wings]
+    confidence: low
+  - id: crunch
+    category: sound
+    aliases: [crunching, crunch, kadkad]
+    confidence: low
+  - id: mud_smell
+    category: smell
+    aliases: [mud smell, mitti smell]
+    confidence: low
+  - id: camphor
+    category: smell
+    aliases: [camphor, kapoor, कपूर]
+    confidence: low
+  - id: roasted
+    category: smell
+    aliases: [roasted, bhoona, bhuna, भुना]
+    confidence: low
+  - id: rotting
+    category: smell
+    aliases: [rotting, sadan, sada hua, सड़ा]
+    confidence: low
+  - id: flowers_smell
+    category: smell
+    aliases: [smell of flowers]
+    confidence: low
+  - id: rock_pigeon
+    category: bird
+    aliases: [rock pigeon, rock pigeons]
+    confidence: med
+  - id: purple_sunbird
+    category: bird
+    aliases: [purple sunbird]
+    confidence: med
+  - id: red_vented_bulbul
+    category: bird
+    aliases: [red-vented bulbul, red vented bulbul]
+    confidence: med
+  - id: jungle_babbler
+    category: bird
+    aliases: [jungle babbler]
+    confidence: med
+  - id: rose_ringed_parakeet
+    category: bird
+    aliases: [rose-ringed parakeet, rose ringed parakeet]
+    confidence: med
+  - id: spotted_dove
+    category: bird
+    aliases: [spotted dove]
+    confidence: med
+  - id: black_kite
+    category: bird
+    aliases: [black kite]
+    confidence: med
+  - id: jacaranda
+    category: tree
+    aliases: [jacaranda, jakaranda]
+    confidence: med
+  - id: indian_laburnum
+    category: tree
+    aliases: [amaltas, laburnum, golden shower, अमलतास]
+    confidence: med
+  - id: pomegranate
+    category: tree
+    aliases: [pomegranate tree, anar ka ped, अनार का पेड़]
+    confidence: med
+  - id: lemon_tree
+    category: tree
+    aliases: [lemon tree, nimbu ka ped, नींबू का पेड़]
+    confidence: med
+  - id: fern
+    category: plant
+    aliases: [fern, ferns]
+    confidence: med
+  - id: lantana
+    category: plant
+    aliases: [lantana]
+    confidence: med
+  - id: hibiscus_bush
+    category: plant
+    aliases: [hibiscus bush, hibiscus plant]
+    confidence: med
+  - id: lawn
+    category: plant
+    aliases: [lawn, lawns, hara maidan]
+    confidence: med
+  - id: stray_dog
+    category: animal
+    aliases: [stray dog, stray dogs, awara kutta, आवारा कुत्ता]
+    confidence: med
+  - id: street_cat
+    category: animal
+    aliases: [street cat, street cats]
+    confidence: med
+  - id: pig
+    category: animal
+    aliases: [pig, pigs, suar, सूअर]
+    confidence: med
+  - id: palm_squirrel
+    category: animal
+    aliases: [palm squirrel, striped squirrel]
+    confidence: med
+  - id: scorpion
+    category: insect
+    aliases: [scorpion, bichhu, बिच्छू]
+    confidence: med
+  - id: termite
+    category: insect
+    aliases: [termite, termites, deemak, दीमक]
+    confidence: med
+  - id: moth
+    category: insect
+    aliases: [moth, moths, patanga, पतंगा]
+    confidence: med
+  - id: beige
+    category: colour
+    aliases: [beige]
+    confidence: med
+  - id: hail
+    category: weather
+    aliases: [hail, hailstones, ola, ओले]
+    confidence: med
+  - id: heatwave
+    category: weather
+    aliases: [heatwave, loo, लू]
+    confidence: med
+  - id: overcast
+    category: weather
+    aliases: [overcast, ghata, घटा]
+    confidence: med
+  - id: monsoon
+    category: weather
+    aliases: [monsoon, monsoons, mausam, मानसून]
+    confidence: med
+  - id: mosque_dome
+    category: landmark
+    aliases: [dome, domes, gumbad, गुंबद]
+    confidence: med
+  - id: paan_shop
+    category: landmark
+    aliases: [paan shop, paan stall, paanwala, पान की दुकान, पानवाला]
+    confidence: med
+  - id: post_box
+    category: landmark
+    aliases: [post box, postbox, letter box, लेटर बॉक्स]
+    confidence: med
+  - id: clock_tower
+    category: landmark
+    aliases: [clock tower, ghantaghar, घंटाघर]
+    confidence: med
+  - id: petrol_pump
+    category: landmark
+    aliases: [petrol pump, petrol station, पेट्रोल पंप]
+    confidence: med
+  - id: atm
+    category: landmark
+    aliases: [atm, एटीएम]
+    confidence: med
+  - id: bus_shelter
+    category: landmark
+    aliases: [bus shelter]
+    confidence: med
+  - id: speed_breaker
+    category: landmark
+    aliases: [speed breaker, speed bump, speed breakers]
+    confidence: med
+  - id: dustbin
+    category: landmark
+    aliases: [dustbin, dustbins, garbage bin, कूड़ेदान]
+    confidence: med
+  - id: terrace
+    category: landmark
+    aliases: [terrace, chhat, chhath, छत]
+    confidence: med
+  - id: balcony
+    category: landmark
+    aliases: [balcony, balconies, baalcony, बालकनी]
+    confidence: med
+  - id: staircase
+    category: landmark
+    aliases: [staircase, stairs, seedhi, seedhiyan, सीढ़ी, सीढ़ियाँ]
+    confidence: med
+  - id: watchman
+    category: landmark
+    aliases: [watchman, chowkidar, gatekeeper, चौकीदार]
+    confidence: med
+  - id: dhaba
+    category: landmark
+    aliases: [dhaba, dhabas, ढाबा]
+    confidence: med
+  - id: vada
+    category: food
+    aliases: [vada, wada, वड़ा]
+    confidence: med
+  - id: poha
+    category: food
+    aliases: [poha, पोहा]
+    confidence: med
+  - id: watermelon
+    category: food
+    aliases: [watermelon, tarbooz, तरबूज़, तरबूज]
+    confidence: med
+  - id: cucumber
+    category: food
+    aliases: [cucumber, kheera, khira, खीरा]
+    confidence: med
+  - id: school_bus
+    category: vehicle
+    aliases: [school bus, school buses]
+    confidence: med
+  - id: metro
+    category: vehicle
+    aliases: [metro, मेट्रो]
+    confidence: med
+  - id: loudspeaker
+    category: sound
+    aliases: [loudspeaker, loudspeakers, speaker, लाउडस्पीकर]   # review: ambiguous alias(es) (English word or other meaning) speaker
+    confidence: med
+  - id: firecrackers
+    category: sound
+    aliases: [firecrackers, crackers, patakhe, पटाखे]
+    confidence: med
+  - id: temple_bell
+    category: sound
+    aliases: [temple bell, mandir ki ghanti, मंदिर की घंटी]
+    confidence: med
+  - id: sandalwood
+    category: smell
+    aliases: [sandalwood, chandan, चंदन]
+    confidence: med

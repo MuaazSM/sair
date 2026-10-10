@@ -1,0 +1,1209 @@
+version: 1
+seeds:
+- id: s001
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the park"
+  season: winter
+  mission: {type: change, text: "Look at the trees along the path. Can you notice what is different from last time?"}
+  mission_outcome: not_done
+  noticed: []
+  lures: ["any tree or bird name"]
+  language_mix: hinglish
+  style: [two_speakers, very_short, filler]
+  notes: "we just walked"
+- id: s002
+  draft: true
+  group: "Dad"
+  place_type: "a lane"
+  season: summer
+  mission: {type: count, text: "Count the parked scooters in the lane. How many can you see?"}
+  mission_outcome: not_done
+  noticed: []
+  lures: ["a count of scooters"]
+  language_mix: english
+  style: [very_short]
+  notes: "nothing much"
+- id: s003
+  draft: true
+  group: "Mom"
+  place_type: "the society compound"
+  season: monsoon
+  mission: {type: sense, text: "Stand still for a moment and listen. What sounds can you hear?"}
+  mission_outcome: not_mentioned
+  noticed: []
+  lures: []
+  language_mix: hinglish
+  style: [very_short, off_topic]
+  notes: "talked about family only"
+- id: s004
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the sea-face"
+  season: post-monsoon
+  mission: {type: return, text: "Last time you spotted a crab near the rocks. Is it there again?"}
+  mission_outcome: not_mentioned
+  noticed: []
+  lures: [crab, waves]
+  language_mix: mixed
+  style: [filler, off_topic, two_speakers]
+  notes: ""
+- id: s005
+  draft: true
+  group: "Dad"
+  place_type: "the tea stall"
+  season: winter
+  mission: {type: sense, text: "Smell the air near the tea stall. What do you notice?"}
+  mission_outcome: not_done
+  noticed: []
+  lures: ["chai smell"]
+  language_mix: devanagari_heavy
+  style: [very_short, filler]
+  notes: ""
+- id: s006
+  draft: true
+  group: "Mom"
+  place_type: "the market"
+  season: summer
+  mission: {type: count, text: "Count the shop shutters that are still closed. How many do you see?"}
+  mission_outcome: not_mentioned
+  noticed: []
+  lures: []
+  language_mix: hinglish
+  style: [off_topic, long]
+  notes: "long chat about a recipe, no sensory details"
+- id: s007
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a bus stop"
+  season: monsoon
+  mission: {type: change, text: "Watch the bus stop and the road around it. Can you spot anything new?"}
+  mission_outcome: not_done
+  noticed: []
+  lures: ["bus number", passengers]
+  language_mix: english
+  style: [very_short, request_detail]
+  notes: "asks the diary to say the walk was lovely"
+- id: s008
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the sea-face"
+  season: monsoon
+  mission: {type: return, text: "Last time you heard a koel near the temple. Do you hear it again?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: koel, kind: sound, certainty: sure, place: "near the temple"}
+  lures: []
+  language_mix: hinglish
+  style: [two_speakers, filler]
+  notes: ""
+- id: s009
+  draft: true
+  group: "Mom"
+  place_type: "the park"
+  season: summer
+  mission: {type: sense, text: "Listen for birds in the park. Can you tell which one you hear?"}
+  mission_outcome: done
+  noticed:
+  - {subject: myna, kind: animal, certainty: unsure, place: null}
+  lures: ["the myna's colour"]
+  language_mix: english
+  style: [hedges, very_short]
+  notes: ""
+- id: s010
+  draft: true
+  group: "Dad"
+  place_type: "a lane"
+  season: winter
+  mission: {type: count, text: "Count the cows you see along the lane. How many are there?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: cows, kind: animal, certainty: sure, place: null}
+  lures: []
+  language_mix: hinglish
+  style: [numbers]
+  notes: ""
+- id: s011
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the society compound"
+  season: post-monsoon
+  mission: {type: change, text: "Look at the flowering plants in the society compound. Can you notice anything new?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: hibiscus, kind: plant, certainty: sure, place: null}
+  lures: ["flower colour", "number of flowers"]
+  language_mix: mixed
+  style: [two_speakers, false_start]
+  notes: ""
+- id: s012
+  draft: true
+  group: "Mom"
+  place_type: "a temple"
+  season: summer
+  mission: {type: sense, text: "Smell the air near the temple. What can you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "incense smell", kind: smell, certainty: sure, place: "near the temple"}
+  lures: []
+  language_mix: devanagari_heavy
+  style: [filler]
+  notes: ""
+- id: s013
+  draft: true
+  group: "Dad"
+  place_type: "the market"
+  season: monsoon
+  mission: {type: return, text: "Last time you noticed a vendor selling bhutta. Is anyone there again?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: bhutta, kind: smell, certainty: sure, place: null}
+  lures: ["vendor's appearance"]
+  language_mix: hinglish
+  style: [very_short]
+  notes: ""
+- id: s014
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the school gate"
+  season: winter
+  mission: {type: seed, text: "Listen for the first bird you hear. Can you tell what it is?"}
+  mission_outcome: done
+  noticed:
+  - {subject: sparrow, kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: english
+  style: [two_speakers, hedges]
+  notes: ""
+- id: s015
+  draft: true
+  group: "Mom"
+  place_type: "a banyan tree at the corner"
+  season: summer
+  mission: {type: change, text: "Look at the banyan tree. Can you spot any birds in it today?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: parrot, kind: animal, certainty: sure, place: "in the banyan tree"}
+  lures: ["number of parrots"]
+  language_mix: hinglish
+  style: [request_detail]
+  notes: "asks to write that there were many parrots"
+- id: s016
+  draft: true
+  group: "Dad"
+  place_type: "a bus stop"
+  season: post-monsoon
+  mission: {type: count, text: "Count the people waiting at the bus stop. How many do you see?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: clouds, kind: weather, certainty: sure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [off_topic, very_short]
+  notes: ""
+- id: s017
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the tea stall"
+  season: monsoon
+  mission: {type: sense, text: "Pause near the tea stall and listen. What do you hear?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: rain, kind: weather, certainty: sure, place: null}
+  lures: ["rain intensity"]
+  language_mix: devanagari_heavy
+  style: [two_speakers, filler]
+  notes: ""
+- id: s018
+  draft: true
+  group: "Dad"
+  place_type: "the sea-face"
+  season: winter
+  mission: {type: count, text: "Count the fishing boats you can see from the sea-face. How many are there?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "fishing boats", kind: sight, certainty: sure, place: null}
+  - {subject: egret, kind: animal, certainty: unsure, place: "near the water"}
+  lures: ["boat colours"]
+  language_mix: english
+  style: [numbers, hedges]
+  notes: ""
+- id: s019
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the park"
+  season: summer
+  mission: {type: return, text: "Last time you saw gulmohar in bloom. Is it still flowering?"}
+  mission_outcome: done
+  noticed:
+  - {subject: gulmohar, kind: plant, certainty: sure, place: null}
+  - {subject: squirrel, kind: animal, certainty: unsure, place: null}
+  lures: ["flower colour"]
+  language_mix: hinglish
+  style: [two_speakers, filler, off_topic, hedges]
+  notes: ""
+- id: s020
+  draft: true
+  group: "Mom"
+  place_type: "a lane"
+  season: post-monsoon
+  mission: {type: sense, text: "Smell the lane. What scents do you notice?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: "wet earth smell", kind: smell, certainty: unsure, place: null}
+  - {subject: mogra, kind: smell, certainty: unsure, place: null}
+  lures: ["whose house the smell came from"]
+  language_mix: devanagari_heavy
+  style: [hedges]
+  notes: ""
+- id: s021
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the society compound"
+  season: monsoon
+  mission: {type: change, text: "Look at the trees in the society compound. Can you notice anything different?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: neem, kind: plant, certainty: unsure, place: null}
+  - {subject: puddles, kind: weather, certainty: sure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [two_speakers, false_start, hedges]
+  notes: ""
+- id: s022
+  draft: true
+  group: "Dad"
+  place_type: "a temple"
+  season: winter
+  mission: {type: seed, text: "Stand still and listen near the temple. Can you hear a bell?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "temple bell", kind: sound, certainty: sure, place: null}
+  - {subject: pigeon, kind: animal, certainty: unsure, place: "on the temple roof"}
+  lures: []
+  language_mix: hinglish
+  style: [filler, hedges]
+  notes: ""
+- id: s023
+  draft: true
+  group: "Mom"
+  place_type: "the market"
+  season: summer
+  mission: {type: count, text: "Count the fruit sellers you pass in the market. How many do you see?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: "fruit sellers", kind: person, certainty: sure, place: null}
+  - {subject: mango, kind: smell, certainty: sure, place: null}
+  lures: [prices]
+  language_mix: english
+  style: [numbers, request_detail]
+  notes: "asks to write the mangoes were the sweetest"
+- id: s024
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the school gate"
+  season: post-monsoon
+  mission: {type: return, text: "Last time you noticed kids near the school gate. Can you find out what they were doing?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "kids playing cricket", kind: person, certainty: sure, place: null}
+  - {subject: crow, kind: animal, certainty: unsure, place: null}
+  lures: ["kids' names"]
+  language_mix: hinglish
+  style: [two_speakers, long]
+  notes: ""
+- id: s025
+  draft: true
+  group: "Dad"
+  place_type: "a bus stop"
+  season: winter
+  mission: {type: sense, text: "Listen at the bus stop. What sounds can you pick out?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: auto-rickshaw, kind: sound, certainty: unsure, place: null}
+  - {subject: "dog barking", kind: sound, certainty: unsure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [off_topic, hedges]
+  notes: ""
+- id: s026
+  draft: true
+  group: "Mom"
+  place_type: "the tea stall"
+  season: summer
+  mission: {type: change, text: "Watch the tea stall. Can you spot anything that looks different?"}
+  mission_outcome: done
+  noticed:
+  - {subject: chai, kind: smell, certainty: unsure, place: null}
+  - {subject: cat, kind: animal, certainty: unsure, place: "near the stall"}
+  lures: ["cat's colour"]
+  language_mix: devanagari_heavy
+  style: [very_short, hedges]
+  notes: ""
+- id: s027
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a banyan tree at the corner"
+  season: monsoon
+  mission: {type: count, text: "Count the birds you see in the banyan tree. How many can you spot?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: myna, kind: animal, certainty: unsure, place: null}
+  - {subject: banyan, kind: plant, certainty: sure, place: null}
+  lures: ["exact bird count"]
+  language_mix: hinglish
+  style: [numbers, two_speakers, hedges]
+  notes: ""
+- id: s028
+  draft: true
+  group: "Dad"
+  place_type: "the sea-face"
+  season: post-monsoon
+  mission: {type: return, text: "Last time you saw clouds over the water. Can you see them again?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: clouds, kind: weather, certainty: sure, place: null}
+  - {subject: waves, kind: sight, certainty: unsure, place: null}
+  lures: ["cloud colours"]
+  language_mix: english
+  style: [filler]
+  notes: ""
+- id: s029
+  draft: true
+  group: "Mom"
+  place_type: "the park"
+  season: winter
+  mission: {type: sense, text: "Pause in the park and listen. What do you hear?"}
+  mission_outcome: done
+  noticed:
+  - {subject: crow, kind: animal, certainty: unsure, place: null}
+  - {subject: "kids laughing", kind: sound, certainty: sure, place: null}
+  lures: []
+  language_mix: hinglish
+  style: [false_start, hedges]
+  notes: ""
+- id: s030
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a lane"
+  season: summer
+  mission: {type: change, text: "Look along the lane. Can you notice what is new since last time?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: "mango tree", kind: plant, certainty: unsure, place: null}
+  - {subject: "stray dog", kind: animal, certainty: unsure, place: null}
+  lures: ["fruit on the tree"]
+  language_mix: mixed
+  style: [two_speakers, off_topic, hedges]
+  notes: ""
+- id: s031
+  draft: true
+  group: "Dad"
+  place_type: "the society compound"
+  season: post-monsoon
+  mission: {type: seed, text: "Look up at the sky. Can you notice what the clouds are doing?"}
+  mission_outcome: done
+  noticed:
+  - {subject: clouds, kind: weather, certainty: sure, place: null}
+  - {subject: kite, kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: devanagari_heavy
+  style: [very_short, hedges]
+  notes: ""
+- id: s032
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the sea-face"
+  season: monsoon
+  mission: {type: return, text: "Last time you noticed strong wind at the sea-face. Is it windy again?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: wind, kind: weather, certainty: sure, place: null}
+  - {subject: waves, kind: sight, certainty: unsure, place: null}
+  - {subject: rain, kind: weather, certainty: unsure, place: null}
+  lures: ["wind speed"]
+  language_mix: hinglish
+  style: [two_speakers, filler, hedges]
+  notes: ""
+- id: s033
+  draft: true
+  group: "Mom"
+  place_type: "the park"
+  season: winter
+  mission: {type: count, text: "Count the benches with someone sitting on them. How many do you see?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: benches, kind: sight, certainty: sure, place: null}
+  - {subject: bulbul, kind: animal, certainty: unsure, place: null}
+  - {subject: jasmine, kind: smell, certainty: unsure, place: null}
+  lures: ["people on the benches"]
+  language_mix: english
+  style: [numbers, hedges]
+  notes: ""
+- id: s034
+  draft: true
+  group: "Dad"
+  place_type: "a lane"
+  season: summer
+  mission: {type: sense, text: "Smell the lane. What scents can you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "frying smell", kind: smell, certainty: unsure, place: null}
+  - {subject: "cow dung smell", kind: smell, certainty: sure, place: null}
+  - {subject: neem, kind: plant, certainty: sure, place: null}
+  lures: []
+  language_mix: hinglish
+  style: [off_topic, hedges]
+  notes: ""
+- id: s035
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the society compound"
+  season: post-monsoon
+  mission: {type: change, text: "Look at the plants in the society compound. Can you notice what has changed?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: champa, kind: plant, certainty: unsure, place: null}
+  - {subject: butterfly, kind: animal, certainty: sure, place: null}
+  - {subject: hibiscus, kind: plant, certainty: unsure, place: null}
+  lures: ["flower colour"]
+  language_mix: mixed
+  style: [two_speakers, filler, hedges]
+  notes: ""
+- id: s036
+  draft: true
+  group: "Mom"
+  place_type: "a temple"
+  season: monsoon
+  mission: {type: return, text: "Last time you heard the temple bell. Do you hear it again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "temple bell", kind: sound, certainty: sure, place: null}
+  - {subject: "wet earth smell", kind: smell, certainty: unsure, place: null}
+  - {subject: frogs, kind: sound, certainty: unsure, place: null}
+  lures: []
+  language_mix: devanagari_heavy
+  style: [hedges, long]
+  notes: ""
+- id: s037
+  draft: true
+  group: "Dad"
+  place_type: "the market"
+  season: winter
+  mission: {type: count, text: "Count the stalls selling vegetables. How many can you see?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: "vegetable stalls", kind: sight, certainty: sure, place: null}
+  - {subject: pigeon, kind: animal, certainty: sure, place: null}
+  - {subject: tea, kind: smell, certainty: sure, place: null}
+  lures: [prices]
+  language_mix: hinglish
+  style: [numbers, request_detail]
+  notes: "asks to write the vegetables were fresh and cheap"
+- id: s038
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the school gate"
+  season: summer
+  mission: {type: sense, text: "Stand near the school gate and listen. What do you hear?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "school bell", kind: sound, certainty: sure, place: null}
+  - {subject: crow, kind: animal, certainty: unsure, place: null}
+  - {subject: scooter, kind: sound, certainty: unsure, place: null}
+  lures: ["kids' conversation"]
+  language_mix: english
+  style: [two_speakers, filler, hedges]
+  notes: ""
+- id: s039
+  draft: true
+  group: "Mom"
+  place_type: "a bus stop"
+  season: post-monsoon
+  mission: {type: change, text: "Watch the road near the bus stop. Can you spot anything different?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: "school bus", kind: sight, certainty: unsure, place: null}
+  - {subject: puddles, kind: weather, certainty: sure, place: null}
+  - {subject: parrot, kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: hinglish
+  style: [off_topic, filler, hedges]
+  notes: ""
+- id: s040
+  draft: true
+  group: "Dad"
+  place_type: "the tea stall"
+  season: monsoon
+  mission: {type: return, text: "Last time you noticed the smell of chai. Do you smell it again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: chai, kind: smell, certainty: sure, place: null}
+  - {subject: rain, kind: weather, certainty: unsure, place: null}
+  - {subject: bhutta, kind: smell, certainty: unsure, place: null}
+  lures: ["chai brand"]
+  language_mix: mixed
+  style: [hedges]
+  notes: ""
+- id: s041
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a banyan tree at the corner"
+  season: winter
+  mission: {type: sense, text: "Pause under the banyan tree and look up. What do you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: banyan, kind: plant, certainty: sure, place: null}
+  - {subject: squirrel, kind: animal, certainty: unsure, place: null}
+  - {subject: parrot, kind: animal, certainty: unsure, place: null}
+  lures: ["bird count"]
+  language_mix: hinglish
+  style: [two_speakers, false_start, hedges]
+  notes: ""
+- id: s042
+  draft: true
+  group: "Mom"
+  place_type: "the sea-face"
+  season: summer
+  mission: {type: count, text: "Count the people walking along the sea-face. How many do you see?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: joggers, kind: person, certainty: sure, place: null}
+  - {subject: kite, kind: animal, certainty: sure, place: null}
+  - {subject: moon, kind: sight, certainty: unsure, place: null}
+  lures: ["number of people"]
+  language_mix: english
+  style: [numbers, hedges]
+  notes: ""
+- id: s043
+  draft: true
+  group: "Dad"
+  place_type: "the park"
+  season: monsoon
+  mission: {type: change, text: "Look at the park. Can you notice anything that looks different after the rain?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: puddles, kind: weather, certainty: sure, place: null}
+  - {subject: peepal, kind: plant, certainty: sure, place: null}
+  - {subject: frogs, kind: sound, certainty: unsure, place: null}
+  lures: []
+  language_mix: devanagari_heavy
+  style: [filler, long]
+  notes: ""
+- id: s044
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a lane"
+  season: winter
+  mission: {type: return, text: "Last time you heard a dog in the lane. Is it around again?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: fog, kind: weather, certainty: sure, place: null}
+  - {subject: "stray dog", kind: animal, certainty: sure, place: null}
+  - {subject: "incense smell", kind: smell, certainty: unsure, place: null}
+  lures: ["the dog's colour"]
+  language_mix: hinglish
+  style: [two_speakers, off_topic]
+  notes: ""
+- id: s045
+  draft: true
+  group: "Mom"
+  place_type: "the society compound"
+  season: summer
+  mission: {type: sense, text: "Notice one thing that smells good. Can you tell what it is?"}
+  mission_outcome: done
+  noticed:
+  - {subject: jasmine, kind: smell, certainty: sure, place: null}
+  - {subject: tulsi, kind: plant, certainty: unsure, place: null}
+  - {subject: drongo, kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [hedges, very_short]
+  notes: ""
+- id: s046
+  draft: true
+  group: "Dad"
+  place_type: "a temple"
+  season: post-monsoon
+  mission: {type: sense, text: "Listen near the temple. What sounds can you pick out?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: azaan, kind: sound, certainty: sure, place: null}
+  - {subject: "temple bell", kind: sound, certainty: sure, place: null}
+  - {subject: marigold, kind: plant, certainty: sure, place: null}
+  lures: ["time of the azaan"]
+  language_mix: hinglish
+  style: [request_detail]
+  notes: "asks to write that it was peaceful"
+- id: s047
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the market"
+  season: monsoon
+  mission: {type: count, text: "Count the umbrellas you see in the market. How many are there?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: umbrellas, kind: sight, certainty: sure, place: null}
+  - {subject: "vada pav smell", kind: smell, certainty: sure, place: null}
+  - {subject: vendor, kind: person, certainty: sure, place: null}
+  lures: ["umbrella colours"]
+  language_mix: english
+  style: [numbers, two_speakers]
+  notes: ""
+- id: s048
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the sea-face"
+  season: winter
+  mission: {type: sense, text: "Listen at the sea-face. What sounds can you hear?"}
+  mission_outcome: done
+  noticed:
+  - {subject: waves, kind: sound, certainty: sure, place: null}
+  - {subject: gulls, kind: animal, certainty: sure, place: null}
+  - {subject: crows, kind: animal, certainty: unsure, place: null}
+  - {subject: "kids playing cricket", kind: person, certainty: sure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [two_speakers, filler, long]
+  notes: ""
+- id: s049
+  draft: true
+  group: "Mom"
+  place_type: "the park"
+  season: summer
+  mission: {type: return, text: "Last time you saw gulmohar in bloom. Is it still there?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: gulmohar, kind: plant, certainty: sure, place: null}
+  - {subject: koel, kind: sound, certainty: unsure, place: null}
+  - {subject: squirrel, kind: animal, certainty: sure, place: null}
+  - {subject: "ice-cream cart", kind: person, certainty: sure, place: null}
+  lures: ["flower colour"]
+  language_mix: hinglish
+  style: [hedges, off_topic]
+  notes: ""
+- id: s050
+  draft: true
+  group: "Dad"
+  place_type: "a lane"
+  season: post-monsoon
+  mission: {type: change, text: "Look at the lane. Can you notice what is different since last time?"}
+  mission_outcome: done
+  noticed:
+  - {subject: neem, kind: plant, certainty: sure, place: null}
+  - {subject: rainbow, kind: weather, certainty: sure, place: null}
+  - {subject: "stray dog", kind: animal, certainty: sure, place: null}
+  - {subject: cat, kind: animal, certainty: unsure, place: null}
+  lures: ["the rainbow's colours"]
+  language_mix: devanagari_heavy
+  style: [numbers, filler]
+  notes: ""
+- id: s051
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the society compound"
+  season: monsoon
+  mission: {type: count, text: "Count the colours you spot in the society compound. How many can you find?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "rain tree", kind: plant, certainty: sure, place: null}
+  - {subject: hibiscus, kind: plant, certainty: sure, place: null}
+  - {subject: frogs, kind: sound, certainty: sure, place: null}
+  - {subject: "wet earth smell", kind: smell, certainty: sure, place: null}
+  lures: ["colour names"]
+  language_mix: hinglish
+  style: [two_speakers, numbers]
+  notes: ""
+- id: s052
+  draft: true
+  group: "Mom"
+  place_type: "a temple"
+  season: winter
+  mission: {type: sense, text: "Stand still and smell the air near the temple. What do you notice?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: "incense smell", kind: smell, certainty: sure, place: null}
+  - {subject: marigold, kind: plant, certainty: sure, place: null}
+  - {subject: conch, kind: sound, certainty: sure, place: null}
+  - {subject: pigeon, kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: english
+  style: [long]
+  notes: ""
+- id: s053
+  draft: true
+  group: "Dad"
+  place_type: "the market"
+  season: summer
+  mission: {type: sense, text: "Smell the market as you walk. What scents can you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: mango, kind: smell, certainty: sure, place: null}
+  - {subject: "fish smell", kind: smell, certainty: sure, place: null}
+  - {subject: "jasmine garland", kind: smell, certainty: unsure, place: null}
+  - {subject: vendor, kind: person, certainty: sure, place: null}
+  lures: [prices, "vendor's name"]
+  language_mix: hinglish
+  style: [request_detail, filler]
+  notes: "asks to write that the market was bustling and colourful"
+- id: s054
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the school gate"
+  season: post-monsoon
+  mission: {type: return, text: "Last time you noticed kids at the school gate. Are there kids there again?"}
+  mission_outcome: not_mentioned
+  noticed:
+  - {subject: kids, kind: person, certainty: sure, place: null}
+  - {subject: tamarind, kind: plant, certainty: sure, place: null}
+  - {subject: crow, kind: animal, certainty: unsure, place: null}
+  - {subject: bicycle, kind: sight, certainty: sure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [two_speakers, off_topic]
+  notes: ""
+- id: s055
+  draft: true
+  group: "Mom"
+  place_type: "a bus stop"
+  season: winter
+  mission: {type: count, text: "Count the buses that pass the bus stop. How many do you see?"}
+  mission_outcome: done
+  noticed:
+  - {subject: buses, kind: sight, certainty: sure, place: null}
+  - {subject: mist, kind: weather, certainty: sure, place: null}
+  - {subject: sparrow, kind: animal, certainty: unsure, place: null}
+  - {subject: chai, kind: smell, certainty: sure, place: null}
+  lures: ["bus numbers"]
+  language_mix: hinglish
+  style: [numbers, hedges]
+  notes: ""
+- id: s056
+  draft: true
+  group: "Dad"
+  place_type: "the tea stall"
+  season: summer
+  mission: {type: change, text: "Watch the tea stall. Can you spot anything that looks new?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: "diesel smell", kind: smell, certainty: sure, place: null}
+  - {subject: "uncle with newspaper", kind: person, certainty: sure, place: null}
+  - {subject: bat, kind: animal, certainty: sure, place: null}
+  - {subject: cat, kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: english
+  style: [filler, false_start]
+  notes: ""
+- id: s057
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a banyan tree at the corner"
+  season: monsoon
+  mission: {type: return, text: "Last time you saw parrots in the banyan tree. Are they there again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: parrot, kind: animal, certainty: sure, place: null}
+  - {subject: banyan, kind: plant, certainty: sure, place: null}
+  - {subject: sunshine, kind: weather, certainty: sure, place: null}
+  - {subject: drongo, kind: animal, certainty: unsure, place: null}
+  lures: ["parrot count"]
+  language_mix: devanagari_heavy
+  style: [two_speakers, long]
+  notes: ""
+- id: s058
+  draft: true
+  group: "Mom"
+  place_type: "the sea-face"
+  season: post-monsoon
+  mission: {type: sense, text: "Pause at the sea-face and look at the sky. What do you notice?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: clouds, kind: weather, certainty: sure, place: null}
+  - {subject: "pink sky", kind: sight, certainty: unsure, place: null}
+  - {subject: kite, kind: animal, certainty: sure, place: null}
+  - {subject: wind, kind: weather, certainty: sure, place: null}
+  lures: ["sky colours"]
+  language_mix: hinglish
+  style: [hedges, request_detail]
+  notes: "asks to write that the sky was breathtaking"
+- id: s059
+  draft: true
+  group: "Dad"
+  place_type: "the park"
+  season: winter
+  mission: {type: count, text: "Count the people doing yoga in the park. How many can you see?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: "yoga group", kind: person, certainty: sure, place: null}
+  - {subject: dew, kind: weather, certainty: sure, place: null}
+  - {subject: butterfly, kind: animal, certainty: sure, place: null}
+  - {subject: koel, kind: sound, certainty: unsure, place: null}
+  lures: ["number of people"]
+  language_mix: mixed
+  style: [numbers, filler]
+  notes: ""
+- id: s060
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a lane"
+  season: summer
+  mission: {type: change, text: "Look at the lane. Can you notice anything that is different?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "mango tree", kind: plant, certainty: sure, place: null}
+  - {subject: scooter, kind: sight, certainty: sure, place: null}
+  - {subject: "kids playing cricket", kind: person, certainty: sure, place: null}
+  - {subject: "stray dog", kind: animal, certainty: unsure, place: null}
+  lures: []
+  language_mix: hinglish
+  style: [two_speakers, off_topic, long]
+  notes: ""
+- id: s061
+  draft: true
+  group: "Mom"
+  place_type: "the society compound"
+  season: winter
+  mission: {type: return, text: "Last time you smelled something sweet in the society compound. Do you smell it again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: champa, kind: plant, certainty: sure, place: null}
+  - {subject: sparrow, kind: animal, certainty: sure, place: null}
+  - {subject: fog, kind: weather, certainty: unsure, place: null}
+  - {subject: "garbage truck", kind: sound, certainty: sure, place: null}
+  lures: ["which flat it came from"]
+  language_mix: english
+  style: [hedges, false_start]
+  notes: ""
+- id: s062
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the sea-face"
+  season: monsoon
+  mission: {type: sense, text: "Pause at the sea-face and listen. What sounds can you hear?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: waves, kind: sound, certainty: sure, place: null}
+  - {subject: sunshine, kind: weather, certainty: sure, place: null}
+  - {subject: wind, kind: weather, certainty: sure, place: null}
+  - {subject: crows, kind: animal, certainty: unsure, place: null}
+  - {subject: "fishing boats", kind: sight, certainty: sure, place: null}
+  lures: ["wave height"]
+  language_mix: hinglish
+  style: [two_speakers, long, filler]
+  notes: ""
+- id: s063
+  draft: true
+  group: "Dad"
+  place_type: "the park"
+  season: post-monsoon
+  mission: {type: change, text: "Look at the park. Can you notice what has changed since the rains?"}
+  mission_outcome: done
+  noticed:
+  - {subject: peepal, kind: plant, certainty: sure, place: null}
+  - {subject: bougainvillea, kind: plant, certainty: sure, place: null}
+  - {subject: dragonflies, kind: animal, certainty: sure, place: null}
+  - {subject: koel, kind: sound, certainty: unsure, place: null}
+  - {subject: "wet earth smell", kind: smell, certainty: sure, place: null}
+  lures: ["flower colours"]
+  language_mix: devanagari_heavy
+  style: [long, numbers]
+  notes: ""
+- id: s064
+  draft: true
+  group: "Mom"
+  place_type: "the market"
+  season: winter
+  mission: {type: count, text: "Count the stalls with flowers. How many can you see?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "flower stalls", kind: sight, certainty: sure, place: null}
+  - {subject: marigold, kind: plant, certainty: sure, place: null}
+  - {subject: mogra, kind: smell, certainty: sure, place: null}
+  - {subject: tea, kind: smell, certainty: unsure, place: null}
+  - {subject: pigeon, kind: animal, certainty: sure, place: null}
+  lures: [prices]
+  language_mix: hinglish
+  style: [numbers, request_detail]
+  notes: "asks to write that the flowers were the best"
+- id: s065
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a temple"
+  season: summer
+  mission: {type: return, text: "Last time you heard the temple bell. Do you hear it again?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "temple bell", kind: sound, certainty: sure, place: null}
+  - {subject: banyan, kind: plant, certainty: sure, place: null}
+  - {subject: lizard, kind: animal, certainty: sure, place: null}
+  - {subject: "incense smell", kind: smell, certainty: sure, place: null}
+  - {subject: "coconut palm", kind: plant, certainty: unsure, place: null}
+  lures: []
+  language_mix: mixed
+  style: [two_speakers, filler]
+  notes: ""
+- id: s066
+  draft: true
+  group: "Dad"
+  place_type: "a lane"
+  season: monsoon
+  mission: {type: sense, text: "Smell the lane after rain. What scents do you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: "coffee smell", kind: smell, certainty: sure, place: null}
+  - {subject: "frying smell", kind: smell, certainty: sure, place: null}
+  - {subject: mogra, kind: smell, certainty: unsure, place: null}
+  - {subject: frogs, kind: sound, certainty: sure, place: null}
+  - {subject: puddles, kind: weather, certainty: sure, place: null}
+  lures: []
+  language_mix: english
+  style: [hedges, long]
+  notes: ""
+- id: s067
+  draft: true
+  group: "Mom"
+  place_type: "the school gate"
+  season: winter
+  mission: {type: change, text: "Look at the school gate. Can you spot anything that looks different?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "school bus", kind: sight, certainty: sure, place: null}
+  - {subject: kids, kind: person, certainty: sure, place: null}
+  - {subject: neem, kind: plant, certainty: sure, place: null}
+  - {subject: myna, kind: animal, certainty: unsure, place: null}
+  - {subject: dust, kind: weather, certainty: unsure, place: null}
+  lures: ["school name"]
+  language_mix: hinglish
+  style: [filler, false_start]
+  notes: ""
+- id: s068
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a bus stop"
+  season: summer
+  mission: {type: count, text: "Count the autos you see near the bus stop. How many are there?"}
+  mission_outcome: not_done
+  noticed:
+  - {subject: auto-rickshaws, kind: sight, certainty: sure, place: null}
+  - {subject: "almond tree", kind: plant, certainty: sure, place: null}
+  - {subject: goat, kind: animal, certainty: sure, place: null}
+  - {subject: cow, kind: animal, certainty: unsure, place: null}
+  - {subject: "shop shutters", kind: sight, certainty: sure, place: null}
+  lures: ["auto count"]
+  language_mix: hinglish
+  style: [two_speakers, numbers]
+  notes: ""
+- id: s069
+  draft: true
+  group: "Dad"
+  place_type: "the tea stall"
+  season: post-monsoon
+  mission: {type: return, text: "Last time you noticed chai at the tea stall. Do you smell it again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: chai, kind: smell, certainty: sure, place: null}
+  - {subject: bhutta, kind: smell, certainty: sure, place: null}
+  - {subject: dust, kind: weather, certainty: sure, place: null}
+  - {subject: sparrow, kind: animal, certainty: unsure, place: null}
+  - {subject: bicycle, kind: sight, certainty: sure, place: null}
+  lures: []
+  language_mix: devanagari_heavy
+  style: [long, off_topic]
+  notes: ""
+- id: s070
+  draft: true
+  group: "Mom"
+  place_type: "a banyan tree at the corner"
+  season: winter
+  mission: {type: sense, text: "Look at the banyan tree and listen. What do you notice?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "papaya tree", kind: plant, certainty: sure, place: null}
+  - {subject: butterfly, kind: animal, certainty: sure, place: null}
+  - {subject: squirrel, kind: animal, certainty: sure, place: null}
+  - {subject: moon, kind: sight, certainty: unsure, place: null}
+  - {subject: "cold breeze", kind: weather, certainty: sure, place: null}
+  lures: ["bird count"]
+  language_mix: mixed
+  style: [hedges, long]
+  notes: ""
+- id: s071
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the sea-face"
+  season: winter
+  mission: {type: count, text: "Count the different birds you spot at the sea-face. How many kinds can you find?"}
+  mission_outcome: done
+  noticed:
+  - {subject: gulls, kind: animal, certainty: sure, place: null}
+  - {subject: crows, kind: animal, certainty: sure, place: null}
+  - {subject: kite, kind: animal, certainty: sure, place: null}
+  - {subject: egret, kind: animal, certainty: unsure, place: null}
+  - {subject: "fishing boats", kind: sight, certainty: sure, place: null}
+  - {subject: "cold breeze", kind: weather, certainty: sure, place: null}
+  lures: ["bird kinds"]
+  language_mix: english
+  style: [two_speakers, numbers, long]
+  notes: ""
+- id: s072
+  draft: true
+  group: "Mom"
+  place_type: "the park"
+  season: monsoon
+  mission: {type: sense, text: "Look around the park. What do you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: mist, kind: weather, certainty: sure, place: null}
+  - {subject: gulmohar, kind: plant, certainty: sure, place: null}
+  - {subject: "papaya tree", kind: plant, certainty: sure, place: null}
+  - {subject: bhajan, kind: sound, certainty: sure, place: null}
+  - {subject: drums, kind: sound, certainty: unsure, place: null}
+  - {subject: "roasted peanuts smell", kind: smell, certainty: sure, place: null}
+  lures: ["mistfall amount"]
+  language_mix: hinglish
+  style: [filler, long, hedges]
+  notes: ""
+- id: s073
+  draft: true
+  group: "Dad"
+  place_type: "the market"
+  season: post-monsoon
+  mission: {type: change, text: "Look at the market. Can you spot what is different?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "vegetable stalls", kind: sight, certainty: sure, place: null}
+  - {subject: bhutta, kind: smell, certainty: sure, place: null}
+  - {subject: vendor, kind: person, certainty: sure, place: null}
+  - {subject: hen, kind: animal, certainty: sure, place: null}
+  - {subject: umbrellas, kind: sight, certainty: unsure, place: null}
+  - {subject: "shop shutters", kind: sight, certainty: sure, place: null}
+  lures: [prices]
+  language_mix: mixed
+  style: [long, request_detail]
+  notes: "asks to write that everyone was cheerful"
+- id: s074
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a temple"
+  season: post-monsoon
+  mission: {type: sense, text: "Stand near the temple and look around. What do you notice?"}
+  mission_outcome: done
+  noticed:
+  - {subject: hammering, kind: sound, certainty: sure, place: null}
+  - {subject: marigold, kind: plant, certainty: sure, place: null}
+  - {subject: peepal, kind: plant, certainty: sure, place: null}
+  - {subject: buffalo, kind: animal, certainty: sure, place: null}
+  - {subject: "fried snack smell", kind: smell, certainty: sure, place: null}
+  - {subject: rainbow, kind: weather, certainty: unsure, place: null}
+  lures: []
+  language_mix: devanagari_heavy
+  style: [two_speakers, long]
+  notes: ""
+- id: s075
+  draft: true
+  group: "Mom"
+  place_type: "a lane"
+  season: summer
+  mission: {type: count, text: "Count the trees along the lane. How many can you see?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "mango tree", kind: plant, certainty: sure, place: null}
+  - {subject: "papaya tree", kind: plant, certainty: sure, place: null}
+  - {subject: "coconut palm", kind: plant, certainty: sure, place: null}
+  - {subject: myna, kind: animal, certainty: sure, place: null}
+  - {subject: parakeet, kind: animal, certainty: unsure, place: null}
+  - {subject: "kids playing cricket", kind: person, certainty: sure, place: null}
+  lures: ["tree count"]
+  language_mix: hinglish
+  style: [numbers, filler]
+  notes: ""
+- id: s076
+  draft: true
+  group: "Dad"
+  place_type: "the society compound"
+  season: winter
+  mission: {type: return, text: "Last time you noticed jasmine in the society compound. Is it flowering again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: jasmine, kind: plant, certainty: sure, place: null}
+  - {subject: champa, kind: plant, certainty: sure, place: null}
+  - {subject: goat, kind: animal, certainty: sure, place: null}
+  - {subject: cat, kind: animal, certainty: sure, place: null}
+  - {subject: dew, kind: weather, certainty: unsure, place: null}
+  - {subject: "garbage truck", kind: sound, certainty: sure, place: null}
+  lures: ["flower counts"]
+  language_mix: english
+  style: [hedges, long, numbers]
+  notes: ""
+- id: s077
+  draft: true
+  group: "Mom and Dad"
+  place_type: "the school gate"
+  season: monsoon
+  mission: {type: sense, text: "Pause near the school gate and listen. What do you hear?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: "school bell", kind: sound, certainty: sure, place: null}
+  - {subject: dust, kind: weather, certainty: sure, place: null}
+  - {subject: kids, kind: person, certainty: sure, place: null}
+  - {subject: bee, kind: animal, certainty: unsure, place: null}
+  - {subject: "school bus", kind: sight, certainty: sure, place: null}
+  - {subject: tamarind, kind: plant, certainty: sure, place: null}
+  lures: ["kids' conversation"]
+  language_mix: hinglish
+  style: [two_speakers, long, filler]
+  notes: ""
+- id: s078
+  draft: true
+  group: "Dad"
+  place_type: "a bus stop"
+  season: winter
+  mission: {type: change, text: "Look at the bus stop. Can you spot anything new?"}
+  mission_outcome: partly
+  noticed:
+  - {subject: buses, kind: sight, certainty: sure, place: null}
+  - {subject: mist, kind: weather, certainty: sure, place: null}
+  - {subject: tea, kind: smell, certainty: sure, place: null}
+  - {subject: hen, kind: animal, certainty: sure, place: null}
+  - {subject: kingfisher, kind: animal, certainty: unsure, place: null}
+  - {subject: "uncle with newspaper", kind: person, certainty: sure, place: null}
+  lures: []
+  language_mix: hinglish
+  style: [off_topic, long]
+  notes: ""
+- id: s079
+  draft: true
+  group: "Mom"
+  place_type: "the tea stall"
+  season: monsoon
+  mission: {type: return, text: "Last time you heard rain near the tea stall. Is it raining again?"}
+  mission_outcome: done
+  noticed:
+  - {subject: rain, kind: weather, certainty: sure, place: null}
+  - {subject: "sea salt smell", kind: smell, certainty: sure, place: null}
+  - {subject: "agarbatti smell", kind: smell, certainty: sure, place: null}
+  - {subject: "vada pav smell", kind: smell, certainty: sure, place: null}
+  - {subject: thunder, kind: sound, certainty: unsure, place: null}
+  - {subject: cow, kind: animal, certainty: sure, place: null}
+  lures: ["rain amount"]
+  language_mix: devanagari_heavy
+  style: [long, hedges]
+  notes: ""
+- id: s080
+  draft: true
+  group: "Mom and Dad"
+  place_type: "a banyan tree at the corner"
+  season: summer
+  mission: {type: count, text: "Count the kinds of birds in the banyan tree. How many can you hear or see?"}
+  mission_outcome: done
+  noticed:
+  - {subject: cormorant, kind: animal, certainty: sure, place: null}
+  - {subject: buffalo, kind: animal, certainty: sure, place: null}
+  - {subject: "hawker call", kind: sound, certainty: sure, place: null}
+  - {subject: bee, kind: animal, certainty: unsure, place: null}
+  - {subject: grass, kind: plant, certainty: sure, place: null}
+  - {subject: monkey, kind: animal, certainty: sure, place: null}
+  lures: ["bird count"]
+  language_mix: mixed
+  style: [two_speakers, numbers, long]
+  notes: ""

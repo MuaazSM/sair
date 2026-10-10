@@ -1,0 +1,194 @@
+version: 1
+# FR-O4: a hit triggers only a private self-hosted ntfy 'Check in with Mom/Dad' (no text, no third party).
+# Sair is not a health monitor. Matching: case-insensitive on NFC text; Latin keywords on word boundaries, Devanagari as substrings.
+# Deliberately broad (false positives cost one extra ping; misses cost more). 'review' marks the noisiest.
+keywords:
+  en:
+    - 'pain'   # review: bare word; "pain" also in "paint"? (word-boundary only)
+    - 'pains'
+    - 'painful'
+    - 'chest pain'
+    - 'chest tightness'
+    - 'tight chest'
+    - 'heart pain'
+    - 'heart attack'
+    - 'dizzy'
+    - 'dizziness'
+    - 'giddy'   # review
+    - 'light-headed'
+    - 'lightheaded'
+    - 'fainted'
+    - 'fainting'
+    - 'faint'   # review: also "faint sound" (common walk detail)
+    - 'collapsed'
+    - 'fell'   # review: "rain fell", "leaves fell" (very common in walk notes)
+    - 'fell down'
+    - 'fall'   # review: also "the fall season" / "leaves fall"
+    - 'fallen'   # review: "fallen leaves" is a common walk detail
+    - 'tripped and fell'
+    - 'slipped'   # review
+    - 'breathless'
+    - 'breathlessness'
+    - 'short of breath'
+    - 'out of breath'
+    - 'can''t breathe'
+    - 'couldn''t breathe'
+    - 'difficulty breathing'
+    - 'wheezing'
+    - 'palpitations'
+    - 'knee'   # review: also "knee-deep puddle"; deliberately broad
+    - 'knees'   # review
+    - 'knee pain'
+    - 'tired a lot'
+    - 'so tired'
+    - 'very tired'
+    - 'exhausted'   # review
+    - 'fatigue'
+    - 'weak'   # review: "weak light/smell"
+    - 'weakness'
+    - 'nausea'
+    - 'nauseous'
+    - 'vomit'
+    - 'vomited'
+    - 'blood pressure'
+    - 'bp'   # review: 2-letter token
+    - 'sugar low'
+    - 'numb'   # review
+    - 'numbness'
+    - 'swelling'   # review
+    - 'swollen'   # review
+    - 'limp'   # review: also "limp flag"
+    - 'limping'
+    - 'sprain'
+    - 'sprained'
+    - 'injured'
+    - 'injury'
+    - 'hurt'   # review
+    - 'bleeding'
+    - 'ache'   # review
+    - 'aching'
+    - 'cramp'   # review
+    - 'cramps'   # review
+    - 'headache'
+    - 'blurred vision'
+    - 'could not walk'
+    - 'couldn''t walk'
+    - 'had to sit'
+  hinglish:
+    - 'chakkar'   # review: also "chakkar lagana" = to do a round/lap (common in walk talk)
+    - 'chakkar aaya'
+    - 'chakkar aa raha'
+    - 'chakkar aaye'
+    - 'dard'   # review: also in "dard-e-dil", figurative; broad on purpose
+    - 'dard hua'
+    - 'dard ho raha'
+    - 'dard hota'   # review
+    - 'seene mein dard'
+    - 'seene me dard'
+    - 'sine mein dard'
+    - 'chhati mein dard'
+    - 'chhati me dard'
+    - 'gir gaya'
+    - 'gir gayi'
+    - 'gir gaye'
+    - 'gir pada'
+    - 'gir padi'
+    - 'girna'   # review: also "leaves girna"; "patte girna" is common walk detail
+    - 'phisal gaya'
+    - 'phisal gayi'
+    - 'saans'   # review: also "saans lena" in relaxed contexts, e.g. deep breath
+    - 'saans phoolna'
+    - 'saans phool'
+    - 'saans nahi'
+    - 'saans lene mein'
+    - 'thakaan'   # review
+    - 'thakan'   # review
+    - 'thak gaya'
+    - 'thak gayi'
+    - 'thak gaye'
+    - 'bahut thaka'
+    - 'bahut thaki'
+    - 'kamzori'   # review
+    - 'ghutna'
+    - 'ghutne'
+    - 'ghutne mein dard'
+    - 'ghutno mein dard'
+    - 'bechaini'
+    - 'ghabrahat'
+    - 'ghabrahat hui'
+    - 'ulti'
+    - 'ji machla'
+    - 'ji michlana'
+    - 'behosh'
+    - 'behoshi'
+    - 'sujan'
+    - 'soojan'
+    - 'chot'   # review
+    - 'chot lagi'
+    - 'khoon'   # review: "khoon" figurative
+    - 'bp high'
+    - 'bp low'
+    - 'sugar low'
+    - 'sugar high'
+    - 'pair mein dard'
+    - 'kamar dard'
+    - 'sar dard'
+    - 'sir dard'
+    - 'sar mein dard'
+    - 'aankhon ke aage andhera'
+    - 'andhera chha'
+    - 'rukna pada'
+    - 'baithna pada'
+    - 'chal nahi paye'
+    - 'chal nahi paaye'
+  devanagari:
+    - 'चक्कर'   # review: also "चक्कर लगाना" = to do a round (walk lap!)
+    - 'चक्कर आया'
+    - 'चक्कर आ रहा'
+    - 'दर्द'   # review: broad
+    - 'दर्द हुआ'
+    - 'दर्द हो रहा'
+    - 'सीने में दर्द'
+    - 'छाती में दर्द'
+    - 'गिर'   # review: substring of गिरा/गिरना/गिरगिट(lizard); also "पत्ते गिर रहे" is a common walk detail
+    - 'गिर गया'
+    - 'गिर गई'
+    - 'गिर गयी'
+    - 'गिर गए'
+    - 'गिर पड़ा'
+    - 'फिसल गया'
+    - 'फिसल गई'
+    - 'साँस'   # review: substring
+    - 'सांस'   # review: substring
+    - 'साँस फूलना'
+    - 'साँस फूल'
+    - 'साँस नहीं'
+    - 'सांस नहीं'
+    - 'थकान'
+    - 'थक गया'
+    - 'थक गई'
+    - 'थक गए'
+    - 'बहुत थका'
+    - 'कमज़ोरी'
+    - 'कमजोरी'
+    - 'घुटना'
+    - 'घुटने'
+    - 'घुटने में दर्द'
+    - 'बेचैनी'
+    - 'घबराहट'
+    - 'उल्टी'
+    - 'जी मचलना'
+    - 'बेहोश'
+    - 'बेहोशी'
+    - 'सूजन'
+    - 'चोट'   # review
+    - 'चोट लगी'
+    - 'खून'   # review
+    - 'पैर में दर्द'
+    - 'कमर दर्द'
+    - 'सिर दर्द'
+    - 'सर दर्द'
+    - 'आँखों के आगे अंधेरा'
+    - 'आंखों के आगे अंधेरा'
+    - 'बैठना पड़ा'
+    - 'चल नहीं पाए'

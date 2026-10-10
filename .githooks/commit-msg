@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Reject messages carrying an attribution trail.
+set -euo pipefail
+msg_file="$1"
+if grep -Eiq 'co-authored-by|generated with|claude|anthropic|🤖' "$msg_file"; then
+  echo "commit-msg: message contains a forbidden attribution pattern; remove it." >&2
+  exit 1
+fi

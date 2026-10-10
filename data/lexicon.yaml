@@ -1,0 +1,1017 @@
+version: 1
+# Frozen before training (PRD §12.1.6). Changing it after the freeze invalidates training/LEXICON_HASH.
+entries:
+  - id: koel
+    category: bird
+    aliases: [koel, koels, koyal, koyel, कोयल]
+  - id: crow
+    category: bird
+    aliases: [crow, crows, kauwa, kaua, kawa, कौआ, कौवा, कौए, कौवे]
+  - id: house_crow
+    category: bird
+    aliases: [house crow, house crows, jungle crow]
+  - id: sparrow
+    category: bird
+    aliases: [sparrow, sparrows, gauraiya, goraiya, गौरैया]
+  - id: parrot
+    category: bird
+    aliases: [parrot, parrots, tota, tote, तोता, तोते]
+  - id: parakeet
+    category: bird
+    aliases: [parakeet, parakeets, ring-necked parakeet]
+  - id: myna
+    category: bird
+    aliases: [myna, mynas, maina, मैना]
+  - id: pigeon
+    category: bird
+    aliases: [pigeon, pigeons, kabootar, kabutar, कबूतर]
+  - id: dove
+    category: bird
+    aliases: [dove, doves, fakhta, फ़ाख्ता, फाख्ता]
+  - id: kite
+    category: bird
+    aliases: [kite, kites, cheel, chil, चील]   # review: ambiguous alias(es) (English word or other meaning) kite
+  - id: eagle
+    category: bird
+    aliases: [eagle, eagles, baaz, बाज़, बाज]
+  - id: owl
+    category: bird
+    aliases: [owl, owls, ullu, उल्लू]
+  - id: peacock
+    category: bird
+    aliases: [peacock, peacocks, peahen, peafowl, mor, मोर]   # review: ambiguous alias(es) (English word or other meaning) mor
+  - id: crane
+    category: bird
+    aliases: [crane, cranes, sarus, सारस]   # review: ambiguous alias(es) (English word or other meaning) crane
+  - id: heron
+    category: bird
+    aliases: [heron, herons, bagula, bagla, बगुला]
+  - id: egret
+    category: bird
+    aliases: [egret, egrets]
+  - id: kingfisher
+    category: bird
+    aliases: [kingfisher, kingfishers, machranga, मछरंगा]
+  - id: hoopoe
+    category: bird
+    aliases: [hoopoe, hoopoes, hudhud, हुदहुद]
+  - id: bulbul
+    category: bird
+    aliases: [bulbul, bulbuls, बुलबुल]
+  - id: sunbird
+    category: bird
+    aliases: [sunbird, sunbirds]
+  - id: tailorbird
+    category: bird
+    aliases: [tailorbird, tailorbirds, tailor bird, darzi, दर्ज़ी]
+  - id: magpie_robin
+    category: bird
+    aliases: [magpie robin, magpie-robin, dayal, दयाल]
+  - id: babbler
+    category: bird
+    aliases: [babbler, babblers, saat bhai, सात भाई]
+  - id: cuckoo
+    category: bird
+    aliases: [cuckoo, cuckoos]
+  - id: drongo
+    category: bird
+    aliases: [drongo, drongos, kotwal, कोतवाल]
+  - id: flamingo
+    category: bird
+    aliases: [flamingo, flamingos]
+  - id: duck
+    category: bird
+    aliases: [duck, ducks, battak, batakh, बत्तख]
+  - id: goose
+    category: bird
+    aliases: [goose, geese]
+  - id: hen
+    category: bird
+    aliases: [hen, hens, chicken, chickens, murgi, murga, rooster, मुर्गी, मुर्गा]
+  - id: seagull
+    category: bird
+    aliases: [seagull, seagulls, gull, gulls]
+  - id: cormorant
+    category: bird
+    aliases: [cormorant, cormorants, pankauwa]
+  - id: swallow
+    category: bird
+    aliases: [swallow, swallows, ababeel]
+  - id: swift
+    category: bird
+    aliases: [swift, swifts]
+  - id: bat
+    category: animal
+    aliases: [bat, bats, chamgadad, chamgidad, चमगादड़]   # review: ambiguous alias(es) (English word or other meaning) bat
+  - id: bee_eater
+    category: bird
+    aliases: [bee-eater, bee eater, bee-eaters]
+  - id: woodpecker
+    category: bird
+    aliases: [woodpecker, woodpeckers, kathphoda, कठफोड़वा]
+  - id: partridge
+    category: bird
+    aliases: [partridge, partridges, teetar, titar, तीतर]
+  - id: quail
+    category: bird
+    aliases: [quail, quails, bater, बटेर]
+  - id: lapwing
+    category: bird
+    aliases: [lapwing, lapwings, titihri, टिटहरी]
+  - id: neem
+    category: tree
+    aliases: [neem, nim, नीम]
+  - id: peepal
+    category: tree
+    aliases: [peepal, pipal, peepul, pipul, पीपल]
+  - id: banyan
+    category: tree
+    aliases: [banyan, banyan tree, bargad, vad, vat, बरगद, बड़]
+  - id: gulmohar
+    category: tree
+    aliases: [gulmohar, gul mohar, gulmohur, gulmohar tree, flame tree, गुलमोहर]
+  - id: mango_tree
+    category: tree
+    aliases: [mango tree, mango trees, aam ka ped, आम का पेड़]
+  - id: coconut_palm
+    category: tree
+    aliases: [coconut tree, coconut palm, coconut trees, nariyal ka ped, नारियल का पेड़]
+  - id: palm
+    category: tree
+    aliases: [palm, palms, palm tree, palm trees, taad, ताड़]
+  - id: ashoka
+    category: tree
+    aliases: [ashoka, ashok, ashoka tree, अशोक]
+  - id: amla
+    category: tree
+    aliases: [amla, amla tree, आँवला, आंवला]
+  - id: jamun
+    category: tree
+    aliases: [jamun, jamun tree, जामुन का पेड़]
+  - id: tamarind
+    category: tree
+    aliases: [tamarind, imli tree, imli ka ped, इमली का पेड़]
+  - id: banana_tree
+    category: tree
+    aliases: [banana tree, banana trees, kele ka ped, केले का पेड़]
+  - id: babul
+    category: tree
+    aliases: [babul, बबूल]
+  - id: eucalyptus
+    category: tree
+    aliases: [eucalyptus, nilgiri, नीलगिरी]
+  - id: rain_tree
+    category: tree
+    aliases: [rain tree, raintree, rain-tree]
+  - id: copper_pod
+    category: tree
+    aliases: [copperpod, copper pod, yellow flame tree]
+  - id: tulsi
+    category: plant
+    aliases: [tulsi, tulasi, तुलसी]
+  - id: mulberry
+    category: tree
+    aliases: [mulberry, shahtoot, शहतूत]
+  - id: guava_tree
+    category: tree
+    aliases: [guava tree, amrood ka ped, अमरूद का पेड़]
+  - id: neem_fruit
+    category: tree
+    aliases: [nimboli, निंबोली]
+  - id: almond_tree
+    category: tree
+    aliases: [almond tree, badam tree, बादाम का पेड़]
+  - id: mahogany
+    category: tree
+    aliases: [mahogany]
+  - id: champa
+    category: tree
+    aliases: [champa, frangipani, plumeria, चंपा]
+  - id: kadamba
+    category: tree
+    aliases: [kadamba, kadam, कदंब]
+  - id: bamboo
+    category: plant
+    aliases: [bamboo, bamboos, baans, बाँस, बांस]
+  - id: bougainvillea
+    category: plant
+    aliases: [bougainvillea, bougainvilla, bougainvilleas, bougainvillia, बोगनविलिया]
+  - id: creeper
+    category: plant
+    aliases: [creeper, creepers, vine, vines, bel, बेल]
+  - id: hedge
+    category: plant
+    aliases: [hedge, hedges]
+  - id: grass
+    category: plant
+    aliases: [grass, ghaas, घास]
+  - id: moss
+    category: plant
+    aliases: [moss]
+  - id: cactus
+    category: plant
+    aliases: [cactus, cacti]
+  - id: money_plant
+    category: plant
+    aliases: [money plant, money plants]
+  - id: aloe_vera
+    category: plant
+    aliases: [aloe vera, aloe, ghritkumari, घृतकुमारी]
+  - id: curry_leaf
+    category: plant
+    aliases: [curry leaf, curry leaves, kadi patta, kadipatta, कढ़ी पत्ता]
+  - id: mint
+    category: plant
+    aliases: [mint, pudina, पुदीना]   # review: ambiguous alias(es) (English word or other meaning) mint
+  - id: banana_plant
+    category: plant
+    aliases: [banana plant, banana plants, केले का पौधा]
+  - id: potted_plant
+    category: plant
+    aliases: [potted plant, potted plants, gamla, गमला]
+  - id: marigold
+    category: flower
+    aliases: [marigold, marigolds, genda, गेंदा]
+  - id: jasmine
+    category: flower
+    aliases: [jasmine, mogra, chameli, मोगरा, चमेली]
+  - id: rose
+    category: flower
+    aliases: [rose, roses, gulab, गुलाब]
+  - id: hibiscus
+    category: flower
+    aliases: [hibiscus, jaswand, gudhal, जासवंद, गुड़हल]
+  - id: lotus
+    category: flower
+    aliases: [lotus, kamal, कमल]
+  - id: sunflower
+    category: flower
+    aliases: [sunflower, sunflowers, surajmukhi, सूरजमुखी]
+  - id: night_jasmine
+    category: flower
+    aliases: [night jasmine, parijat, harsingar, पारिजात, हरसिंगार]
+  - id: tuberose
+    category: flower
+    aliases: [tuberose, rajnigandha, रजनीगंधा]
+  - id: oleander
+    category: flower
+    aliases: [oleander, kaner, कनेर]
+  - id: champak
+    category: flower
+    aliases: [champak]
+  - id: dahlia
+    category: flower
+    aliases: [dahlia, dahlias]
+  - id: petunia
+    category: flower
+    aliases: [petunia, petunias]
+  - id: zinnia
+    category: flower
+    aliases: [zinnia, zinnias]
+  - id: lily
+    category: flower
+    aliases: [lily, lilies]
+  - id: orchid
+    category: flower
+    aliases: [orchid, orchids]
+  - id: chrysanthemum
+    category: flower
+    aliases: [chrysanthemum, chrysanthemums, guldaudi, गुलदाउदी]
+  - id: garland
+    category: flower
+    aliases: [garland, garlands, phool mala, फूल माला]
+  - id: petals
+    category: flower
+    aliases: [petal, petals, pankhudi, पंखुड़ी]
+  - id: blossom
+    category: flower
+    aliases: [blossom, blossoms]
+  - id: dog
+    category: animal
+    aliases: [dog, dogs, kutta, kutte, kuttay, कुत्ता, कुत्ते]
+  - id: puppy
+    category: animal
+    aliases: [puppy, puppies, pup, pups, kutta ka bachcha, पिल्ला, पिल्ले]   # review: ambiguous alias(es) (English word or other meaning) pup
+  - id: cat
+    category: animal
+    aliases: [cat, cats, billi, billa, बिल्ली]
+  - id: kitten
+    category: animal
+    aliases: [kitten, kittens]
+  - id: cow
+    category: animal
+    aliases: [cow, cows, gaay, gai, गाय]
+  - id: bull
+    category: animal
+    aliases: [bull, bulls, bail, saand, बैल, साँड]   # review: ambiguous alias(es) (English word or other meaning) bull/bail
+  - id: buffalo
+    category: animal
+    aliases: [buffalo, buffaloes, bhains, भैंस]
+  - id: calf
+    category: animal
+    aliases: [calf, calves, bachda, बछड़ा]
+  - id: goat
+    category: animal
+    aliases: [goat, goats, bakri, bakra, बकरी, बकरा]
+  - id: sheep
+    category: animal
+    aliases: [sheep, bhed, भेड़]
+  - id: horse
+    category: animal
+    aliases: [horse, horses, ghoda, ghode, घोड़ा, घोड़े]
+  - id: donkey
+    category: animal
+    aliases: [donkey, donkeys, gadha, गधा]
+  - id: squirrel
+    category: animal
+    aliases: [squirrel, squirrels, gilahri, gilheri, गिलहरी]
+  - id: monkey
+    category: animal
+    aliases: [monkey, monkeys, bandar, banar, बंदर]
+  - id: langur
+    category: animal
+    aliases: [langur, langurs, लंगूर]
+  - id: mongoose
+    category: animal
+    aliases: [mongoose, nevla, newla, नेवला]
+  - id: rat
+    category: animal
+    aliases: [rat, rats, chuha, chooha, चूहा]
+  - id: mouse
+    category: animal
+    aliases: [mouse, mice]
+  - id: lizard
+    category: animal
+    aliases: [lizard, lizards, chhipkali, chipkali, छिपकली]
+  - id: gecko
+    category: animal
+    aliases: [gecko, geckos]
+  - id: snake
+    category: animal
+    aliases: [snake, snakes, saanp, sanp, साँप, सांप]
+  - id: frog
+    category: animal
+    aliases: [frog, frogs, medhak, mendhak, मेंढक]
+  - id: toad
+    category: animal
+    aliases: [toad, toads]
+  - id: tortoise
+    category: animal
+    aliases: [tortoise, tortoises, turtle, turtles, kachua, kachhua, कछुआ]
+  - id: fish
+    category: animal
+    aliases: [fish, fishes, machhli, machli, मछली]
+  - id: crab
+    category: animal
+    aliases: [crab, crabs, kekda, केकड़ा]
+  - id: elephant
+    category: animal
+    aliases: [elephant, elephants, haathi, hathi, हाथी]
+  - id: camel
+    category: animal
+    aliases: [camel, camels, oont, ऊँट]
+  - id: rabbit
+    category: animal
+    aliases: [rabbit, rabbits, khargosh, खरगोश]
+  - id: bullock_cart
+    category: vehicle
+    aliases: [bullock cart, bullock carts, bail gaadi, बैल गाड़ी]
+  - id: butterfly
+    category: insect
+    aliases: [butterfly, butterflies, titli, तितली]
+  - id: bee
+    category: insect
+    aliases: [bee, madhumakkhi, मधुमक्खी]
+  - id: honeybee
+    category: insect
+    aliases: [honeybee, honey bee]
+  - id: ant
+    category: insect
+    aliases: [ant, ants, cheenti, chinti, चींटी]
+  - id: mosquito
+    category: insect
+    aliases: [mosquito, mosquitoes, machhar, मच्छर]
+  - id: fly
+    category: insect
+    aliases: [housefly, houseflies, makkhi, मक्खी]
+  - id: dragonfly
+    category: insect
+    aliases: [dragonfly, dragonflies]
+  - id: firefly
+    category: insect
+    aliases: [firefly, fireflies, jugnu, जुगनू]
+  - id: cricket_insect
+    category: insect
+    aliases: [cricket insect, crickets, jhingur, झींगुर]
+  - id: caterpillar
+    category: insect
+    aliases: [caterpillar, caterpillars, illi, इल्ली]
+  - id: spider
+    category: insect
+    aliases: [spider, spiders, makdi, मकड़ी]
+  - id: cobweb
+    category: insect
+    aliases: [cobweb, cobwebs, spider web, web, जाला]   # review: ambiguous alias(es) (English word or other meaning) web
+  - id: snail
+    category: insect
+    aliases: [snail, snails, घोंघा]
+  - id: worm
+    category: insect
+    aliases: [worm, worms, kida, keeda, कीड़ा]
+  - id: wasp
+    category: insect
+    aliases: [wasp, wasps, bhanwra, bhawra, ततैया]
+  - id: beetle
+    category: insect
+    aliases: [beetle, beetles]
+  - id: grasshopper
+    category: insect
+    aliases: [grasshopper, grasshoppers, tiddi, टिड्डी]
+  - id: red
+    category: colour
+    aliases: [red, laal, lal, लाल]
+  - id: yellow
+    category: colour
+    aliases: [yellow, peela, pila, पीला]
+  - id: green
+    category: colour
+    aliases: [green, hara, hari, हरा, हरी]   # review: ambiguous alias(es) (English word or other meaning) hara
+  - id: blue
+    category: colour
+    aliases: [blue, neela, nila, नीला]
+  - id: orange
+    category: colour
+    aliases: [orange, narangi, नारंगी]   # review: ambiguous alias(es) (English word or other meaning) orange
+  - id: pink
+    category: colour
+    aliases: [pink, gulabi, गुलाबी]
+  - id: purple
+    category: colour
+    aliases: [purple, baingani, jamuni, बैंगनी, जामुनी]
+  - id: white
+    category: colour
+    aliases: [white, safed, safaid, सफ़ेद, सफेद]   # review: ambiguous alias(es) (English word or other meaning) safed
+  - id: black
+    category: colour
+    aliases: [black, kaala, kala, काला]
+  - id: brown
+    category: colour
+    aliases: [brown, bhura, bhoora, भूरा]
+  - id: grey
+    category: colour
+    aliases: [grey, gray, slaty, dhusar, स्लेटी]
+  - id: golden
+    category: colour
+    aliases: [golden, gold, sunehra, सुनहरा]   # review: ambiguous alias(es) (English word or other meaning) gold
+  - id: silver
+    category: colour
+    aliases: [silver, chandi, चाँदी, चांदी]
+  - id: saffron
+    category: colour
+    aliases: [saffron, kesari, केसरी]
+  - id: maroon
+    category: colour
+    aliases: [maroon]
+  - id: cream
+    category: colour
+    aliases: [cream-coloured, cream coloured]
+  - id: rain
+    category: weather
+    aliases: [rain, rains, rained, raining, baarish, barish, barsaat, बारिश, बरसात]
+  - id: drizzle
+    category: weather
+    aliases: [drizzle, drizzling, phuhar, फुहार]
+  - id: shower
+    category: weather
+    aliases: [shower, showers]   # review: ambiguous alias(es) (English word or other meaning) shower
+  - id: thunder
+    category: weather
+    aliases: [thunder, thundering, garaj, gadgadahat, गरज, बादल गरजना]
+  - id: lightning
+    category: weather
+    aliases: [lightning, bijli, बिजली]
+  - id: wind
+    category: weather
+    aliases: [wind, winds, windy, hawa, hava, हवा]
+  - id: breeze
+    category: weather
+    aliases: [breeze, breezy, thandi hawa, ठंडी हवा]
+  - id: storm
+    category: weather
+    aliases: [storm, storms, toofan, tufan, aandhi, तूफ़ान, तूफान, आँधी]   # review: ambiguous alias(es) (English word or other meaning) storm
+  - id: dust
+    category: weather
+    aliases: [dust, dusty, dhool, mitti ud, धूल]   # review: ambiguous alias(es) (English word or other meaning) dust
+  - id: fog
+    category: weather
+    aliases: [fog, foggy, mist, misty, kohra, कोहरा]   # review: ambiguous alias(es) (English word or other meaning) mist
+  - id: humid
+    category: weather
+    aliases: [humid, humidity, umas, उमस]
+  - id: hot
+    category: weather
+    aliases: [hot, garmi, गर्मी]   # review: ambiguous alias(es) (English word or other meaning) hot
+  - id: cool
+    category: weather
+    aliases: [cool weather, thand, thandi, ठंड, ठंडी]   # review: ambiguous alias(es) (English word or other meaning) cool weather
+  - id: dew
+    category: weather
+    aliases: [dew, os, ओस]   # review: ambiguous alias(es) (English word or other meaning) os
+  - id: puddle
+    category: weather
+    aliases: [puddle, puddles, gaddha paani, पानी भरा]
+  - id: mud
+    category: weather
+    aliases: [mud, muddy, keechad, कीचड़]
+  - id: cloud
+    category: sky
+    aliases: [cloud, clouds, cloudy, baadal, badal, बादल]
+  - id: sun
+    category: sky
+    aliases: [sun, sunny, suraj, surya, सूरज, सूर्य]   # review: ambiguous alias(es) (English word or other meaning) sun
+  - id: sunset
+    category: sky
+    aliases: [sunset, sunsets, suryast, सूर्यास्त]
+  - id: sunrise
+    category: sky
+    aliases: [sunrise, suryoday, सूर्योदय]
+  - id: moon
+    category: sky
+    aliases: [moon, moonlight, chand, chaand, चाँद, चांद]   # review: ambiguous alias(es) (English word or other meaning) chand
+  - id: crescent
+    category: sky
+    aliases: [crescent, crescent moon, dooj ka chand, दूज का चाँद]
+  - id: full_moon
+    category: sky
+    aliases: [full moon, poornima, purnima, पूर्णिमा]
+  - id: star
+    category: sky
+    aliases: [star, stars, taara, tara, taare, तारा, तारे]   # review: ambiguous alias(es) (English word or other meaning) star/tara
+  - id: rainbow
+    category: sky
+    aliases: [rainbow, rainbows, indradhanush, इंद्रधनुष]
+  - id: sky
+    category: sky
+    aliases: [sky, aasman, aasmaan, आसमान]
+  - id: twilight
+    category: sky
+    aliases: [twilight, dusk, godhuli, गोधूलि]
+  - id: shadow
+    category: sky
+    aliases: [shadow, shadows, parchhai, परछाई]
+  - id: airplane
+    category: sky
+    aliases: [airplane, aeroplane, plane, planes, jahaz, hawai jahaz, हवाई जहाज़]
+  - id: kite_flying
+    category: sky
+    aliases: [patang, patangs, पतंग]
+  - id: temple
+    category: landmark
+    aliases: [temple, temples, mandir, mandirs, मंदिर]
+  - id: mosque
+    category: landmark
+    aliases: [mosque, mosques, masjid, मस्जिद]
+  - id: church
+    category: landmark
+    aliases: [church, churches, girja, girjaghar, गिरजाघर]
+  - id: gurdwara
+    category: landmark
+    aliases: [gurdwara, gurudwara, गुरुद्वारा]
+  - id: shrine
+    category: landmark
+    aliases: [shrine, shrines, dargah, मज़ार, दरगाह]
+  - id: school
+    category: landmark
+    aliases: [school, schools, vidyalaya, स्कूल, विद्यालय]
+  - id: college
+    category: landmark
+    aliases: [college, कॉलेज]
+  - id: bus_stop
+    category: landmark
+    aliases: [bus stop, bus stops, bus-stop, bus stand, बस स्टॉप, बस स्टैंड]
+  - id: park
+    category: landmark
+    aliases: [park, parks, bagicha, udyan, पार्क, बगीचा]   # review: ambiguous alias(es) (English word or other meaning) park
+  - id: garden
+    category: landmark
+    aliases: [garden, gardens, baag, बाग]
+  - id: playground
+    category: landmark
+    aliases: [playground, playgrounds, maidan, मैदान]
+  - id: lake
+    category: landmark
+    aliases: [lake, lakes, taalab, talab, jheel, तालाब, झील]
+  - id: pond
+    category: landmark
+    aliases: [pond, ponds, पोखर]
+  - id: sea_face
+    category: landmark
+    aliases: [sea-face, sea face, seaface, promenade]
+  - id: sea
+    category: landmark
+    aliases: [sea, samundar, samandar, समुंदर, समंदर]
+  - id: beach
+    category: landmark
+    aliases: [beach, beaches, samudra kinara, समुद्र किनारा]
+  - id: river
+    category: landmark
+    aliases: [river, rivers, nadi, नदी]
+  - id: canal
+    category: landmark
+    aliases: [canal, nala, nullah, नाला]
+  - id: bridge
+    category: landmark
+    aliases: [bridge, bridges, pul, पुल]
+  - id: flyover
+    category: landmark
+    aliases: [flyover, flyovers]
+  - id: subway
+    category: landmark
+    aliases: [subway, underpass]
+  - id: signal
+    category: landmark
+    aliases: [traffic signal, traffic light, signal, signals, सिग्नल]   # review: ambiguous alias(es) (English word or other meaning) signal
+  - id: tea_stall
+    category: landmark
+    aliases: [tea stall, tea stalls, chai tapri, tapri, chai ki dukaan, चाय की टपरी, टपरी]
+  - id: shop
+    category: landmark
+    aliases: [shop, shops, dukaan, dukan, दुकान]   # review: ambiguous alias(es) (English word or other meaning) shop
+  - id: market
+    category: landmark
+    aliases: [market, markets, bazaar, bazar, mandi, बाज़ार, बाजार, मंडी]
+  - id: vegetable_cart
+    category: landmark
+    aliases: [vegetable cart, sabzi wala, sabziwala, sabzi vendor, सब्ज़ीवाला, सब्जीवाला]
+  - id: gate
+    category: landmark
+    aliases: [gate, gates, gateway, phatak, darwaza, फाटक, गेट]   # review: ambiguous alias(es) (English word or other meaning) gate
+  - id: compound
+    category: landmark
+    aliases: [compound, compounds, society, सोसाइटी]
+  - id: building
+    category: landmark
+    aliases: [building, buildings, imarat, इमारत]
+  - id: tower
+    category: landmark
+    aliases: [tower, towers, high-rise, highrise, मीनार]
+  - id: water_tank
+    category: landmark
+    aliases: [water tank, water tanks, tanki, टंकी]
+  - id: well
+    category: landmark
+    aliases: [well, wells, kuan, kuaan, कुआँ]   # review: ambiguous alias(es) (English word or other meaning) well
+  - id: banyan_chowk
+    category: landmark
+    aliases: [banyan chowk, chowk, chauraha, चौक, चौराहा]
+  - id: bench
+    category: landmark
+    aliases: [bench, benches, bench seat, बेंच]
+  - id: statue
+    category: landmark
+    aliases: [statue, statues, murti, मूर्ति]
+  - id: fountain
+    category: landmark
+    aliases: [fountain, fountains, favvara, फ़व्वारा, फव्वारा]
+  - id: fort
+    category: landmark
+    aliases: [fort, qila, kila, किला]
+  - id: ruins
+    category: landmark
+    aliases: [ruins, khandhar, खंडहर]
+  - id: footpath
+    category: landmark
+    aliases: [footpath, footpaths, pavement, pavements, patri, पटरी]
+  - id: lamp_post
+    category: landmark
+    aliases: [lamp post, lamp posts, street light, street lights, streetlight, streetlights, बिजली का खंभा]
+  - id: wall
+    category: landmark
+    aliases: [compound wall, boundary wall, chardiwari, चारदीवारी]
+  - id: hospital
+    category: landmark
+    aliases: [hospital, aspatal, अस्पताल]
+  - id: bakery
+    category: landmark
+    aliases: [bakery, bakeries]
+  - id: railway
+    category: landmark
+    aliases: [railway, railway station, station, rail, रेलवे स्टेशन]   # review: ambiguous alias(es) (English word or other meaning) station/rail
+  - id: mango
+    category: food
+    aliases: [mango, mangoes, mangos, aam, आम]
+  - id: banana
+    category: food
+    aliases: [banana, bananas, kela, kele, केला, केले]
+  - id: coconut
+    category: food
+    aliases: [coconut, coconuts, nariyal, नारियल]
+  - id: guava
+    category: food
+    aliases: [guava, guavas, amrood, अमरूद]
+  - id: papaya
+    category: food
+    aliases: [papaya, papaitha, पपीता]
+  - id: jackfruit
+    category: food
+    aliases: [jackfruit, kathal, कटहल]
+  - id: sugarcane
+    category: food
+    aliases: [sugarcane, ganna, gannay, गन्ना]
+  - id: corn
+    category: food
+    aliases: [corn, bhutta, भुट्टा]
+  - id: chai
+    category: food
+    aliases: [chai, tea, चाय]   # review: ambiguous alias(es) (English word or other meaning) tea
+  - id: samosa
+    category: food
+    aliases: [samosa, samosas, समोसा]
+  - id: vada_pav
+    category: food
+    aliases: [vada pav, vadapav, wada pav, वड़ा पाव]
+  - id: pav
+    category: food
+    aliases: [pav, pao, पाव]
+  - id: jalebi
+    category: food
+    aliases: [jalebi, jalebis, जलेबी]
+  - id: bhel
+    category: food
+    aliases: [bhel, bhelpuri, bhel puri, भेल]
+  - id: pani_puri
+    category: food
+    aliases: [pani puri, panipuri, golgappa, golgappe, पानी पूरी, गोलगप्पे]
+  - id: dosa
+    category: food
+    aliases: [dosa, dosas, डोसा]
+  - id: idli
+    category: food
+    aliases: [idli, idlis, इडली]
+  - id: roti
+    category: food
+    aliases: [roti, rotis, chapati, chapatis, रोटी]
+  - id: dal
+    category: food
+    aliases: [dal, daal, दाल]
+  - id: rice
+    category: food
+    aliases: [rice, chawal, चावल]
+  - id: biscuit
+    category: food
+    aliases: [biscuit, biscuits, बिस्कुट]
+  - id: sweets
+    category: food
+    aliases: [sweets, mithai, मिठाई]
+  - id: peanuts
+    category: food
+    aliases: [peanuts, groundnuts, moongfali, मूँगफली]
+  - id: lemon
+    category: food
+    aliases: [lemon, lemons, nimbu, nimboo, नींबू]
+  - id: tomato
+    category: food
+    aliases: [tomato, tomatoes, tamatar, टमाटर]
+  - id: onion
+    category: food
+    aliases: [onion, onions, pyaz, pyaaz, प्याज़, प्याज]
+  - id: ice_cream
+    category: food
+    aliases: [ice cream, ice-cream, kulfi, कुल्फ़ी, कुल्फी]
+  - id: coconut_water
+    category: food
+    aliases: [coconut water, nariyal paani, नारियल पानी]
+  - id: bicycle
+    category: vehicle
+    aliases: [bicycle, bicycles, cycle, cycles, bike, saikil, साइकिल]   # review: ambiguous alias(es) (English word or other meaning) bike
+  - id: scooter
+    category: vehicle
+    aliases: [scooter, scooters, scooty, स्कूटर]
+  - id: motorcycle
+    category: vehicle
+    aliases: [motorcycle, motorcycles, motorbike, motorbikes, bullet, मोटरसाइकिल]   # review: ambiguous alias(es) (English word or other meaning) bullet
+  - id: auto
+    category: vehicle
+    aliases: [auto, autos, auto-rickshaw, autorickshaw, rickshaw, rickshaws, ऑटो, रिक्शा]
+  - id: bus
+    category: vehicle
+    aliases: [bus, buses, बस]   # review: ambiguous alias(es) (English word or other meaning) bus
+  - id: car
+    category: vehicle
+    aliases: [car, cars, gaadi, gadi, कार, गाड़ी]
+  - id: taxi
+    category: vehicle
+    aliases: [taxi, taxis, cab, cabs, टैक्सी]   # review: ambiguous alias(es) (English word or other meaning) cab
+  - id: truck
+    category: vehicle
+    aliases: [truck, trucks, lorry, lorries, ट्रक]
+  - id: tempo
+    category: vehicle
+    aliases: [tempo, tempos, टेम्पो]
+  - id: train
+    category: vehicle
+    aliases: [train, trains, local train, रेलगाड़ी, ट्रेन]
+  - id: tractor
+    category: vehicle
+    aliases: [tractor, tractors, ट्रैक्टर]
+  - id: handcart
+    category: vehicle
+    aliases: [handcart, thela, thele, ठेला]
+  - id: ambulance
+    category: vehicle
+    aliases: [ambulance, ambulances, एम्बुलेंस]
+  - id: boat
+    category: vehicle
+    aliases: [boat, boats, naav, nauka, नाव]
+  - id: moped
+    category: vehicle
+    aliases: [moped, mopeds]
+  - id: fire_engine
+    category: vehicle
+    aliases: [fire engine, fire brigade]
+  - id: bell
+    category: sound
+    aliases: [bell, bells, ghanti, ghantaa, घंटी, घंटा]   # review: ambiguous alias(es) (English word or other meaning) bell
+  - id: horn
+    category: sound
+    aliases: [horn, horns, honking, honk, hon, हॉर्न]   # review: ambiguous alias(es) (English word or other meaning) hon
+  - id: azaan
+    category: sound
+    aliases: [azaan, adhan, अज़ान, अजान]
+  - id: aarti
+    category: sound
+    aliases: [aarti, arti, आरती]
+  - id: conch
+    category: sound
+    aliases: [conch, shankh, शंख]
+  - id: music
+    category: sound
+    aliases: [music, song, songs, gaana, gana, गाना, संगीत]
+  - id: drum
+    category: sound
+    aliases: [drum, drums, dhol, ढोल]
+  - id: chanting
+    category: sound
+    aliases: [chanting, bhajan, bhajans, भजन]
+  - id: laughter
+    category: sound
+    aliases: [laughter, laughing, hasi, हँसी]
+  - id: children_playing
+    category: sound
+    aliases: [children playing, kids playing, bachche khel, बच्चे खेल]
+  - id: barking
+    category: sound
+    aliases: [barking, barked, bhaunk, bhonk, भौंकना]
+  - id: cawing
+    category: sound
+    aliases: [cawing, kaw kaw, काँव]
+  - id: chirping
+    category: sound
+    aliases: [chirping, chirp, chirps, chahchahana, चहचहाना]
+  - id: buzzing
+    category: sound
+    aliases: [buzzing, buzz, bhinbhin, भिनभिन]
+  - id: siren
+    category: sound
+    aliases: [siren, sirens, सायरन]
+  - id: whistle
+    category: sound
+    aliases: [whistle, whistling, seeti, सीटी]
+  - id: rustling
+    category: sound
+    aliases: [rustling, rustle, sarsarahat, सरसराहट]
+  - id: jasmine_smell
+    category: smell
+    aliases: [smell of jasmine]
+  - id: incense
+    category: smell
+    aliases: [incense, agarbatti, dhoop, अगरबत्ती, धूप]
+  - id: wet_earth
+    category: smell
+    aliases: [wet earth, petrichor, soil smell, mitti ki khushboo, सौंधी, मिट्टी की खुशबू]
+  - id: smoke
+    category: smell
+    aliases: [smoke, smoky, dhuan, dhuaan, धुआँ, धुआं]   # review: ambiguous alias(es) (English word or other meaning) smoke
+  - id: frying
+    category: smell
+    aliases: [frying, fried, talne, तलने]
+  - id: fragrance
+    category: smell
+    aliases: [fragrance, fragrant, khushboo, खुशबू]
+  - id: perfume
+    category: smell
+    aliases: [perfume, itr, ittar, इत्र]
+  - id: cooking_smell
+    category: smell
+    aliases: [cooking smell, smell of cooking, tadka, तड़का]
+  - id: garbage
+    category: smell
+    aliases: [garbage, trash, kachra, कचरा, कूड़ा]
+  - id: sweet_smell
+    category: smell
+    aliases: [sweet smell, sweet scent, scent]   # review: ambiguous alias(es) (English word or other meaning) scent
+  - id: one
+    category: number
+    aliases: [one, ek, एक]
+  - id: two
+    category: number
+    aliases: [two, do, दो]   # review: collides with English verb "do"
+  - id: three
+    category: number
+    aliases: [three, teen, तीन]
+  - id: four
+    category: number
+    aliases: [four, chaar, char, चार]
+  - id: five
+    category: number
+    aliases: [five, paanch, panch, पाँच, पांच]
+  - id: six
+    category: number
+    aliases: [six, chhe, chhah, cheh, छह, छः, छे]
+  - id: seven
+    category: number
+    aliases: [seven, saat, सात]
+  - id: eight
+    category: number
+    aliases: [eight, aath, आठ]
+  - id: nine
+    category: number
+    aliases: [nine, nau, नौ]
+  - id: ten
+    category: number
+    aliases: [ten, das, दस]
+  - id: eleven
+    category: number
+    aliases: [eleven, gyarah, gyaraah, ग्यारह]
+  - id: twelve
+    category: number
+    aliases: [twelve, barah, baarah, बारह]
+  - id: thirteen
+    category: number
+    aliases: [thirteen, terah, तेरह]
+  - id: fourteen
+    category: number
+    aliases: [fourteen, chaudah, चौदह]
+  - id: fifteen
+    category: number
+    aliases: [fifteen, pandrah, पंद्रह]
+  - id: sixteen
+    category: number
+    aliases: [sixteen, solah, सोलह]
+  - id: seventeen
+    category: number
+    aliases: [seventeen, satrah, सत्रह]
+  - id: eighteen
+    category: number
+    aliases: [eighteen, atharah, अठारह]
+  - id: nineteen
+    category: number
+    aliases: [nineteen, unnis, unnees, उन्नीस]
+  - id: twenty
+    category: number
+    aliases: [twenty, बीस]
+  - id: twenty_five
+    category: number
+    aliases: [twenty five, twenty-five, pachees, pachchis, पच्चीस]
+  - id: thirty
+    category: number
+    aliases: [thirty, tees, तीस]
+  - id: forty
+    category: number
+    aliases: [forty, chalis, chalees, चालीस]
+  - id: fifty
+    category: number
+    aliases: [fifty, pachas, pachaas, पचास]
+  - id: hundred
+    category: number
+    aliases: [hundred, sau, सौ]
+  - id: dozen
+    category: number
+    aliases: [dozen, dozens, darjan, दर्जन]
+  - id: a_few
+    category: number
+    aliases: [a few, few, kuch ek, कुछ एक]   # review: bare "few" is common English; also "kuch ek"
+  - id: couple
+    category: number
+    aliases: [a couple, a couple of, couple of, do teen, दो तीन]   # review: "do teen" means two or three
+  - id: half
+    category: number
+    aliases: [half, aadha, adha, आधा]   # review: ambiguous alias(es) (English word or other meaning) half
+  - id: first
+    category: number
+    aliases: [first, pehla, pahla, पहला]   # review: ambiguous alias(es) (English word or other meaning) first
+  - id: second
+    category: number
+    aliases: [second one, doosra, dusra, दूसरा]   # review: "second" unit-of-time ambiguity so only "second one"
+  - id: third
+    category: number
+    aliases: [third, teesra, tisra, तीसरा]
+  - id: many
+    category: number
+    aliases: [many, bahut saare, bahut sare, बहुत सारे]   # review: ambiguous alias(es) (English word or other meaning) many
+  - id: pair
+    category: number
+    aliases: [pair, pairs, jodi, जोड़ी]   # review: ambiguous alias(es) (English word or other meaning) pair
+  - id: both
+    category: number
+    aliases: [both, dono, दोनों]   # review: ambiguous alias(es) (English word or other meaning) both

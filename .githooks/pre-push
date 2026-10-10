@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Push only as MuaazSM, and never push commits carrying an attribution trail.
+set -euo pipefail
+
+login="$(gh api user -q .login 2>/dev/null || true)"
+if [ "$login" != "MuaazSM" ]; then
+  echo "pre-push: authenticated GitHub account is '${login:-none}', must be 'MuaazSM'." >&2
+  exit 1
+fi
+
+zero="0000000000000000000000000000000000000000"
+while read -r _ local_sha _ remote_sha; do
+  [ "$local_sha" = "$zero" ] && continue
+  if [ "$remote_sha" = "$zero" ]; then
+    range="$local_sha"
+    msgs="$(git log --format=%B "$range" --not --remotes 2>/dev/null || git log --format=%B "$range")"
+  else
+    msgs="$(git log --format=%B "$remote_sha..$local_sha")"
+  fi
+  if printf '%s' "$msgs" | grep -Eiq 'co-authored-by|generated with|claude|anthropic|🤖'; then
+    echo "pre-push: a commit message contains a forbidden attribution pattern." >&2
+    exit 1
+  fi
+done

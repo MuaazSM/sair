@@ -1,0 +1,39 @@
+# local-only planning and docs
+docs/
+*.md
+!README.md
+!**/README.md
+# prompt templates are runtime code, keep them tracked
+!hub/prompts/**
+CLAUDE.md
+.claude/
+
+# secrets and env
+.env
+.env.*
+!.env*.example
+
+# data, models, private
+eval/real/
+docs/field-notes.private.md
+models/
+*.gguf
+training/cache/
+web/tests/visual/diff/
+
+# local-only design export (read-only), tooling and build output
+brand/Sair Design System/
+logs/
+.DS_Store
+.venv/
+node_modules/
+web/dist/
+spikes/out/
+vendor/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+eval/results/real/
