@@ -2753,6 +2753,7 @@ name = "sair"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "en-core-web-sm" },
     { name = "fastapi" },
     { name = "httpx" },
     { name = "langgraph" },
@@ -2763,6 +2764,7 @@ dependencies = [
     { name = "pyyaml" },
     { name = "sentry-sdk" },
     { name = "soundfile" },
+    { name = "spacy" },
     { name = "structlog" },
     { name = "uvicorn", extra = ["standard"] },
 ]
@@ -2782,7 +2784,6 @@ training = [
     { name = "transformers" },
 ]
 tts = [
-    { name = "en-core-web-sm" },
     { name = "kokoro" },
     { name = "misaki", extra = ["en"] },
     { name = "soundfile" },
@@ -2804,7 +2805,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "accelerate", marker = "extra == 'training'" },
-    { name = "en-core-web-sm", marker = "extra == 'tts'", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" },
+    { name = "en-core-web-sm", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" },
     { name = "fastapi" },
     { name = "httpx" },
     { name = "huggingface-hub", marker = "extra == 'training'" },
@@ -2822,6 +2823,7 @@ requires-dist = [
     { name = "sentry-sdk" },
     { name = "soundfile" },
     { name = "soundfile", marker = "extra == 'tts'" },
+    { name = "spacy", specifier = ">=3.8,<3.9" },
     { name = "structlog" },
     { name = "tinker", marker = "extra == 'training'" },
     { name = "tinker-cookbook", marker = "extra == 'training'" },
