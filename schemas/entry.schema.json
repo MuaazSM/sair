@@ -1,0 +1,106 @@
+{
+  "additionalProperties": false,
+  "description": "Raw writer output. Structural only; grounding drops facts and coerces mission_result.",
+  "properties": {
+    "facts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "span": {
+            "maxLength": 400,
+            "minLength": 1,
+            "title": "Span",
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "sight",
+              "sound",
+              "smell",
+              "person",
+              "animal",
+              "plant",
+              "weather",
+              "other"
+            ],
+            "title": "FactKind",
+            "type": "string"
+          },
+          "subject": {
+            "maxLength": 80,
+            "minLength": 1,
+            "title": "Subject",
+            "type": "string"
+          },
+          "certainty": {
+            "enum": [
+              "sure",
+              "unsure"
+            ],
+            "title": "Certainty",
+            "type": "string"
+          },
+          "place": {
+            "anyOf": [
+              {
+                "maxLength": 120,
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Place"
+          }
+        },
+        "required": [
+          "span",
+          "kind",
+          "subject",
+          "certainty"
+        ],
+        "title": "Fact",
+        "type": "object"
+      },
+      "maxItems": 6,
+      "title": "Facts",
+      "type": "array"
+    },
+    "mission_result": {
+      "enum": [
+        "done",
+        "partly",
+        "not_done",
+        "not_mentioned"
+      ],
+      "title": "MissionResult",
+      "type": "string"
+    },
+    "mission_span": {
+      "anyOf": [
+        {
+          "maxLength": 400,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Mission Span"
+    },
+    "entry": {
+      "maxLength": 1200,
+      "title": "Entry",
+      "type": "string"
+    }
+  },
+  "required": [
+    "facts",
+    "mission_result",
+    "entry"
+  ],
+  "title": "WriterOutput",
+  "type": "object"
+}

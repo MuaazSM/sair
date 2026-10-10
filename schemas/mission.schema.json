@@ -1,0 +1,39 @@
+{
+  "additionalProperties": false,
+  "description": "Raw planner output (§9.2). Safety rules live in hub/safety.py.",
+  "properties": {
+    "type": {
+      "enum": [
+        "return",
+        "change",
+        "sense",
+        "count",
+        "seed"
+      ],
+      "title": "MissionType",
+      "type": "string"
+    },
+    "references": {
+      "items": {
+        "maxLength": 64,
+        "minLength": 1,
+        "type": "string"
+      },
+      "maxItems": 6,
+      "title": "References",
+      "type": "array"
+    },
+    "text": {
+      "maxLength": 400,
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "text"
+  ],
+  "title": "MissionPlan",
+  "type": "object"
+}
