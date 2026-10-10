@@ -16,7 +16,7 @@ from typing import Any
 
 import structlog
 
-from hub import db
+from hub import db, tracing
 from hub.graphs.common import REPO_ROOT, Clock, TranscriberLike, TtsLike, WriterLike, utc_now
 from hub.graphs.journal import JournalDeps, Notifier
 from hub.graphs.mission import MissionDeps, plan_mission, post_walk_trigger
@@ -51,7 +51,12 @@ class AppDeps:
     settings: Settings
     journal: JournalDeps
     mission: MissionDeps
-    planner: ThreadPoolExecutor  # one worker: planning and TTS renders are serialised
+    planner: ThreadPoolExecutor  # one worker: planning runs are serialised
+    # One worker for API-requested mission-audio renders (NFR-L1, J1): never queued behind a
+    # slow planning run. Kokoro serialises synthesis in its own process.
+    renderer: ThreadPoolExecutor = field(
+        default_factory=lambda: ThreadPoolExecutor(max_workers=1, thread_name_prefix="sair-tts")
+    )
     health: dict[str, Callable[[], bool]] = field(default_factory=dict)
     closers: list[Callable[[], None]] = field(default_factory=list)
     static_dir: Path | None = None
@@ -81,6 +86,7 @@ class AppDeps:
 
     def close(self) -> None:
         self.planner.shutdown(wait=False, cancel_futures=True)
+        self.renderer.shutdown(wait=False, cancel_futures=True)
         for closer in self.closers:
             try:
                 closer()
@@ -135,7 +141,13 @@ def build_deps(
         )
 
     mission = MissionDeps(
-        settings=settings, connect=connect, ollama=ollama, tts=tts, scheduler=schedule, clock=now
+        settings=settings,
+        connect=connect,
+        ollama=ollama,
+        tts=tts,
+        scheduler=schedule,
+        clock=now,
+        span=tracing.node_span,  # no-op unless dev/eval tracing is on (NFR-P7)
     )
     trigger = post_walk_trigger(mission, lambda fn: submit_guarded(planner, fn, "plan_next"))
     journal = JournalDeps(
@@ -146,6 +158,7 @@ def build_deps(
         notifier=notifier,
         mission_trigger=trigger,
         clock=now,
+        span=tracing.node_span,
     )
     return AppDeps(
         settings=settings,

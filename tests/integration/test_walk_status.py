@@ -138,3 +138,27 @@ def test_writer_permanent_goes_to_template(tmp_path: Path) -> None:
     assert out.status is WalkStatus.DONE and out.writer == "template"
     assert out.reason is ReasonCode.WRITER_PERMANENT
     assert _entry(deps) == "Mom and Dad went for their evening walk."
+
+
+def test_unexpected_writer_error_goes_to_template_not_lost(tmp_path: Path) -> None:
+    """FR-J5/FR-J7: a writer bug after the transcript is stored is a permanent writer failure."""
+    deps = journal_deps(tmp_path, ollama=StubOllama(writer=[ValueError("boom")]))
+    out = _go(deps)
+    assert out.status is WalkStatus.DONE and out.writer == "template"
+    assert out.reason is ReasonCode.WRITER_PERMANENT
+    row = walk_row(deps, "w1")
+    assert (row["status"], row["reason"], row["writer"]) == (
+        "done", "writer_permanent", "template",
+    )  # fmt: skip
+    assert row["transcript"]
+    assert _entry(deps) == "Mom and Dad went for their evening walk."
+    assert files_in(deps.settings.tmp_dir) == []
+
+
+def test_unexpected_regen_error_keeps_first_checks_verified_facts(tmp_path: Path) -> None:
+    deps = journal_deps(tmp_path, ollama=StubOllama(writer=[BAD_ENTRY, ValueError("boom")]))
+    out = _go(deps)
+    assert out.status is WalkStatus.DONE and out.writer == "template"
+    assert out.reason is ReasonCode.WRITER_PERMANENT and out.facts == 1
+    assert _entry(deps) == "Mom and Dad went for a walk. They noticed koel."
+    assert _verified(deps) == [1]

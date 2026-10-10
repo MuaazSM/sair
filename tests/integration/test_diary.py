@@ -96,6 +96,31 @@ def test_order_chips_asked_again_and_summary(diary_env: Env) -> None:
     assert entries[2]["mission_result"] == "not_mentioned"
 
 
+def test_each_entry_carries_its_mission_text(make_env: Callable[..., Env]) -> None:
+    """FR-D1: every diary card shows the mission that was spoken at the door that day."""
+    env = make_env(ollama=StubOllama(transcripts=[EN_20S, T_MAYBE], writer=[_writer]))
+    heard: dict[str, str] = {}
+    for i, text in enumerate(("Count the doors you pass.", "Notice one new sound near you.")):
+        if i:
+            env.clock.advance(86400)
+        conn = db.connect(env.deps.settings.db_path)
+        try:
+            db.insert_mission(
+                conn,
+                Mission(id=f"{i}" * 32, date=env.deps.today(), group="Mom and Dad",
+                        type=MissionType.COUNT, text=text, source=MissionSource.FALLBACK),
+            )  # fmt: skip
+        finally:
+            conn.close()
+        served = env.client.get("/mission/today", headers=bearer("mom")).json()
+        assert served["text"] == text
+        heard[_walk(env, "mom")] = text
+    entries = env.client.get("/diary", headers=bearer("mom")).json()["entries"]
+    assert len(entries) == 2
+    for e in entries:
+        assert e["mission_text"] == heard[e["walk_id"]]
+
+
 def test_group_filter_and_summary_follow_it(diary_env: Env) -> None:
     dad = diary_env.client.get("/diary", params={"group": "Dad"}, headers=bearer("mom")).json()
     assert [e["group"] for e in dad["entries"]] == ["Dad"]

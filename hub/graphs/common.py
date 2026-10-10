@@ -23,12 +23,13 @@ from typing import Any, Protocol
 
 import structlog
 
-from hub import db
+from hub import db, tracing
 from hub.models._http import CallStats
 from hub.prompts.builders import ChatMessage
 from hub.schemas import WalkStatus
 
 __all__ = [
+    "graph_run",
     "REPO_ROOT",
     "Clock",
     "ConnectFn",
@@ -61,6 +62,22 @@ SpanFn = Callable[[str], AbstractContextManager[None]]
 
 def utc_now() -> dt.datetime:
     return dt.datetime.now(dt.UTC)
+
+
+def graph_run(
+    name: str, *, walk_id: str | None = None, mission_id: str | None = None
+) -> AbstractContextManager[None]:
+    """One tracing transaction per graph run (dev/eval only; a no-op in prod).
+
+    A caller that already opened a transaction (tests, eval harness) keeps it: no nesting.
+    """
+    if not tracing.is_enabled():
+        return contextlib.nullcontext()
+    import sentry_sdk  # only reached when dev/eval tracing is on
+
+    if sentry_sdk.get_current_scope().transaction is not None:
+        return contextlib.nullcontext()
+    return tracing.graph_transaction(name, walk_id=walk_id, mission_id=mission_id)
 
 
 def null_span(_name: str) -> AbstractContextManager[None]:

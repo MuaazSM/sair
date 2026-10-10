@@ -105,7 +105,7 @@ def make_env(tmp_path: Path) -> Iterator[Callable[..., Env]]:
         if before_start:
             before_start(deps)
         app = create_app(s, deps)
-        client = TestClient(app, raise_server_exceptions=False)
+        client = TestClient(app, base_url="http://127.0.0.1", raise_server_exceptions=False)
         if start:
             client.__enter__()
             clients.append(client)

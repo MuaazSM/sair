@@ -107,7 +107,7 @@ def healthz() -> Healthz:
 
 
 def _render_in_background(deps: AppDeps, mission_id: str) -> None:
-    """Re-render a cached mission's audio off the request path (single TTS worker)."""
+    """Render a mission's audio off the request path, on the TTS worker (not the planner's)."""
     with deps.render_lock:
         if mission_id in deps.rendering:
             return
@@ -127,7 +127,7 @@ def _render_in_background(deps: AppDeps, mission_id: str) -> None:
                 deps.rendering.discard(mission_id)
 
     try:
-        submit_guarded(deps.planner, job, "render_audio")
+        submit_guarded(deps.renderer, job, "render_audio")
     except RuntimeError:  # executor shut down
         with deps.render_lock:
             deps.rendering.discard(mission_id)
@@ -183,14 +183,20 @@ async def _run_walk(
     try:
         await asyncio.to_thread(run_journal, walk_id, path, group, mission_id, deps.journal)
     except Exception as exc:
-        # A graph bug must not strand the upload: hand it to the bounded retry worker.
+        # A graph bug must not strand the upload: hand it to the bounded retry worker. Once the
+        # transcript is stored the audio is gone, so the retry resumes at the writer (FR-J7).
         log.error("journal_failed", walk_id=walk_id, exc_type=type(exc).__name__)
         try:
             conn = deps.connect()
             try:
-                db.update_walk_status(
-                    conn, walk_id, WalkStatus.RECEIVED, ReasonCode.TRANSCRIBE_TRANSIENT
-                )
+                row = db.get_walk_row(conn, walk_id)
+                if row is not None and row["status"] == WalkStatus.RECEIVED.value:
+                    reason = (
+                        ReasonCode.WRITER_TRANSIENT
+                        if row["transcript"] is not None
+                        else ReasonCode.TRANSCRIBE_TRANSIENT
+                    )
+                    db.update_walk_status(conn, walk_id, WalkStatus.RECEIVED, reason)
             finally:
                 conn.close()
         except Exception as exc2:
@@ -252,8 +258,8 @@ def get_diary(deps: Deps, walker: Walker, group: str | None = None) -> DiaryResp
     conn = deps.connect()
     try:
         return DiaryResponse(
-            summary=db.diary_summary(conn, deps.today(), group),
-            entries=db.diary(conn, group),
+            summary=db.diary_summary(conn, deps.today(), group, deps.settings.tz),
+            entries=db.diary(conn, group, deps.settings.tz),
         )
     finally:
         conn.close()
@@ -271,8 +277,9 @@ def post_feedback(
     try:
         if not queries.walk_exists(conn, walk_id):
             raise ApiError(404, "not_found")
-        # the note is stored, never logged
-        db.insert_feedback(conn, walk_id, body.correct, body.note, deps.clock())
+        # PRD §11.1: content may live only in walks.transcript/facts/entries, so the optional
+        # note is accepted (API shape, §9.3) but never stored or logged; only the verdict is.
+        db.insert_feedback(conn, walk_id, body.correct, None, deps.clock())
     finally:
         conn.close()
     log.info("feedback_stored", walk_id=walk_id, correct=body.correct)

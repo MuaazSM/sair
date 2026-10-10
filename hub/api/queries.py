@@ -50,10 +50,7 @@ JOURNAL_TARGET_P95_MS = 30_000.0
 
 def local_date(stamp: str, tz: ZoneInfo) -> dt.date:
     """Calendar date of a stored UTC timestamp in the household time zone."""
-    parsed = dt.datetime.fromisoformat(stamp)
-    if parsed.tzinfo is None:
-        parsed = parsed.replace(tzinfo=dt.UTC)
-    return parsed.astimezone(tz).date()
+    return db.local_date(stamp, tz)
 
 
 def mission_group(conn: sqlite3.Connection, mission_id: str) -> str | None:

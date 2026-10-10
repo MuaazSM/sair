@@ -5,7 +5,6 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p logs
 
-HUB_PORT="${SAIR_PORT:-8787}"
 WRITER_MODEL="${WRITER_MODEL_PATH:-models/sair-writer-q4_k_m.gguf}"
 [ -f "$WRITER_MODEL" ] || WRITER_MODEL="models/qwen3.5-4b-q4_k_m.gguf"
 
@@ -37,4 +36,5 @@ else
   echo "ntfy: not installed, skipped"
 fi
 
-start hub uv run uvicorn hub.app:app --host 127.0.0.1 --port "$HUB_PORT"
+# Host and port come from hub.settings (loopback only, NFR-P2).
+start hub uv run python -m hub

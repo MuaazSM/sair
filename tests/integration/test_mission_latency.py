@@ -76,3 +76,41 @@ def test_cache_miss_serves_a_fallback_without_waiting_for_the_planner(
         assert r.json()["audio_path"] is None  # TTS render is queued behind, not awaited
     finally:
         release.set()
+
+
+def test_fallback_audio_renders_while_the_planner_is_busy(make_env: Callable[..., Env]) -> None:
+    """NFR-L1 / J1: the fallback's audio is not queued behind a slow planner (separate worker)."""
+    release = threading.Event()
+
+    def slow_planner(*_a: object) -> str:
+        release.wait(10)
+        return GOOD_PLAN_SENSE
+
+    env = make_env(ollama=StubOllama(planner=[slow_planner]))
+    conn = db.connect(env.deps.settings.db_path)
+    try:  # past the seed phase, so a miss means fallback now + planner later
+        for i in range(3):
+            db.insert_walk(conn, walk_id=f"w{i}", group=GROUP, recorded_at=env.clock())
+            db.update_walk_status(conn, f"w{i}", WalkStatus.DONE)
+    finally:
+        conn.close()
+    try:
+        t0 = time.perf_counter()
+        r = env.client.get("/mission/today", headers=bearer("mom"))
+        assert time.perf_counter() - t0 < 2.0
+        assert r.json()["audio_path"] is None  # first response never waits for TTS
+        mid = r.json()["mission_id"]
+        audio_path = None
+        end = time.monotonic() + 1.0
+        while time.monotonic() < end:
+            body = env.client.get("/mission/today", headers=bearer("mom")).json()
+            if body["audio_path"] is not None:
+                audio_path = body["audio_path"]
+                break
+            time.sleep(0.02)
+        assert audio_path == f"/audio/{mid}", "audio rendered within 1 s despite a busy planner"
+        assert not release.is_set()  # the planner was still running the whole time
+        a = env.client.get(audio_path, headers=bearer("mom"))
+        assert a.status_code == 200 and a.content == b"ID3fake"
+    finally:
+        release.set()

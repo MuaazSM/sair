@@ -24,10 +24,13 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 from starlette.responses import JSONResponse, Response
 from starlette.types import ASGIApp, Message, Receive, Scope, Send
 
+from hub.settings import LOOPBACK_HOSTS
+
 __all__ = [
     "SECURITY_HEADERS",
     "ApiError",
     "HubMiddleware",
+    "LoopbackGuard",
     "configure_logging",
     "install_handlers",
 ]
@@ -125,6 +128,51 @@ def configure_logging() -> None:
     access = logging.getLogger("uvicorn.access")
     access.handlers.clear()
     access.disabled = True
+
+
+class LoopbackGuard:
+    """NFR-P2, per request: serve only on a loopback server socket.
+
+    ``scope["server"]`` is the local address of the accepted socket. Anything that is not
+    loopback (a wildcard or LAN bind, or an unknown server) gets a fixed 503 code and the app
+    is never reached. One code-only error line is logged per process.
+    """
+
+    BODY = b'{"error":"non_loopback_bind"}'
+
+    def __init__(self, app: ASGIApp) -> None:
+        self.app = app
+        self._logged = False
+
+    @staticmethod
+    def is_loopback(server: object) -> bool:
+        if not isinstance(server, list | tuple) or not server:
+            return False
+        host = server[0]
+        return isinstance(host, str) and host in LOOPBACK_HOSTS
+
+    async def __call__(self, scope: Scope, receive: Receive, send: Send) -> None:
+        if scope["type"] not in ("http", "websocket") or self.is_loopback(scope.get("server")):
+            await self.app(scope, receive, send)
+            return
+        if not self._logged:
+            self._logged = True
+            log.error("non_loopback_bind")
+        if scope["type"] == "websocket":
+            await send({"type": "websocket.close", "code": 1008})
+            return
+        await send(
+            {
+                "type": "http.response.start",
+                "status": 503,
+                "headers": [
+                    (b"content-type", b"application/json"),
+                    (b"content-length", str(len(self.BODY)).encode()),
+                    *((k.encode(), v.encode()) for k, v in SECURITY_HEADERS.items()),
+                ],
+            }
+        )
+        await send({"type": "http.response.body", "body": self.BODY})
 
 
 class HubMiddleware:

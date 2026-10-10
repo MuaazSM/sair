@@ -56,7 +56,7 @@ import yaml
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.state import CompiledStateGraph
 
-from hub import db
+from hub import db, tracing
 from hub.graphs.common import (
     REPO_ROOT,
     Clock,
@@ -66,6 +66,7 @@ from hub.graphs.common import (
     WriterLike,
     delete_path,
     find_raw_audio,
+    graph_run,
     mission_text,
     null_span,
     open_conn,
@@ -314,9 +315,20 @@ def _call_writer(
         else:
             schema = json.loads(_read_text(str(repo_path(s.writer_json_schema))))
             raw, stats = deps.ollama.chat_json(messages, schema, role="writer")
+        tracing.llm_span(
+            "llama" if s.writer_backend is WriterBackend.LLAMA else "gemma",
+            tokens_in=stats.prompt_tokens,
+            tokens_out=stats.completion_tokens,
+            latency_ms=stats.latency_s * 1000.0,
+        )
     except Transient:
         return {"raw_output": None, "writer_error": "transient"}
     except Permanent:
+        return {"raw_output": None, "writer_error": "permanent"}
+    except Exception as exc:
+        # FR-J5/FR-J7: the transcript is stored and the audio is gone, so an unexpected writer
+        # error is handled like a permanent one (template entry), never as a lost walk.
+        log.warning("writer_unexpected", walk_id=state["walk_id"], exc_type=type(exc).__name__)
         return {"raw_output": None, "writer_error": "permanent"}
     return {
         "raw_output": raw,
@@ -389,6 +401,8 @@ def transcribe(state: JournalState, deps: JournalDeps) -> dict[str, Any]:
             raise Permanent(ReasonCode.AUDIO_UNDECODABLE, "audio")
         text, stats = deps.ollama.transcribe_with_stats(Path(wav))
         tokens = (stats.prompt_tokens, stats.completion_tokens)
+        tracing.llm_span("gemma", tokens_in=tokens[0], tokens_out=tokens[1],
+                         latency_ms=stats.latency_s * 1000.0)  # fmt: skip
         outcome = "ok"
     except Permanent as exc:
         outcome, code = "permanent", exc.code or ReasonCode.TRANSCRIBE_PERMANENT
@@ -675,7 +689,8 @@ def _outcome(walk_id: str, final: Mapping[str, Any]) -> JournalOutcome:
 def _invoke(deps: JournalDeps, state: JournalState) -> JournalOutcome:
     walk_id = state["walk_id"]
     graph = build_journal_graph(deps)
-    final = graph.invoke(state)
+    with graph_run("journal", walk_id=walk_id):  # dev/eval only; covers runs and retries
+        final = graph.invoke(state)
     return _outcome(walk_id, final)
 
 

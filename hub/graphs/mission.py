@@ -43,7 +43,7 @@ import yaml
 from langgraph.graph import END, START, StateGraph
 from langgraph.graph.state import CompiledStateGraph
 
-from hub import db
+from hub import db, tracing
 from hub.graphs.common import (
     REPO_ROOT,
     Clock,
@@ -52,6 +52,7 @@ from hub.graphs.common import (
     TranscriberLike,
     TtsLike,
     count_done_walks,
+    graph_run,
     null_span,
     open_conn,
     timed_node,
@@ -406,10 +407,13 @@ def plan_mission(
         with open_conn(deps.connect) as conn:
             if db.get_cached_mission(conn, group, date) is not None:
                 return None
-    final = build_mission_graph(deps).invoke(
-        {"group": group, "date": date, "regen_count": 0, "reasons": [], "latency_ms": {}}
-    )
-    mission: Mission = final["mission"]
+    with graph_run("mission"):  # dev/eval only; ids are set once known
+        final = build_mission_graph(deps).invoke(
+            {"group": group, "date": date, "regen_count": 0, "reasons": [], "latency_ms": {}}
+        )
+        mission: Mission = final["mission"]
+        tracing.set_attrs(mission_id=mission.id, mission_type=mission.type,
+                          origin=mission.source)  # fmt: skip
     return MissionOutcome(
         mission_id=mission.id,
         source=mission.source,

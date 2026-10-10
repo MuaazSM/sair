@@ -12,12 +12,9 @@
 	<integer>10</integer>
 	<key>ProgramArguments</key>
 	<array>
-		<string>__REPO__/.venv/bin/uvicorn</string>
-		<string>hub.app:app</string>
-		<string>--host</string>
-		<string>127.0.0.1</string>
-		<string>--port</string>
-		<string>8787</string>
+		<string>__REPO__/.venv/bin/python</string>
+		<string>-m</string>
+		<string>hub</string>
 	</array>
 	<key>WorkingDirectory</key>
 	<string>__REPO__</string>
@@ -25,6 +22,8 @@
 	<dict>
 		<key>SAIR_ENV</key>
 		<string>prod</string>
+		<key>SAIR_HOST</key>
+		<string>127.0.0.1</string>
 		<key>HF_HUB_OFFLINE</key>
 		<string>1</string>
 		<key>TRANSFORMERS_OFFLINE</key>

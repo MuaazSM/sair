@@ -65,6 +65,7 @@ __all__ = [
     "insert_mission",
     "insert_walk",
     "iso_to_date",
+    "local_date",
     "latency_percentiles",
     "latest_missions",
     "mission_audio_path",
@@ -246,6 +247,20 @@ def _iso(ts: dt.datetime | None) -> str:
 def iso_to_date(value: str) -> dt.date:
     """Date part of a stored ISO timestamp or date, as a ``date`` (never a ``datetime``)."""
     return dt.datetime.fromisoformat(value).date() if "T" in value else dt.date.fromisoformat(value)
+
+
+def local_date(value: str, tz: dt.tzinfo) -> dt.date:
+    """NFR-P5: the household's calendar date (``SAIR_TZ``) of a stored timestamp or date.
+
+    The one helper behind every API-facing date. A naive timestamp is read as UTC; a plain
+    date (missions are keyed by local date already) is returned as is.
+    """
+    if "T" not in value:
+        return dt.date.fromisoformat(value)
+    parsed = dt.datetime.fromisoformat(value)
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=dt.UTC)
+    return parsed.astimezone(tz).date()
 
 
 def new_id() -> str:
@@ -553,8 +568,13 @@ def verified_facts_for_group(
 # ----------------------------------------------------------------------- diary
 
 
-def diary(conn: sqlite3.Connection, group: str | None = None) -> list[DiaryEntry]:
-    """Finished walks, newest first, with verified facts and "asked again on" dates (FR-D2)."""
+def diary(
+    conn: sqlite3.Connection, group: str | None = None, tz: dt.tzinfo = dt.UTC
+) -> list[DiaryEntry]:
+    """Finished walks, newest first, with verified facts and "asked again on" dates (FR-D2).
+
+    Dates are local calendar dates in ``tz`` (the API passes ``SAIR_TZ``, NFR-P5).
+    """
     where = "w.status = 'done'" + (" AND w.group_name = ?" if group is not None else "")
     params: tuple[str, ...] = (group,) if group is not None else ()
     walks = conn.execute(
@@ -584,13 +604,13 @@ def diary(conn: sqlite3.Connection, group: str | None = None) -> list[DiaryEntry
                     kind=FactKind(f["kind"]),
                     certainty=Certainty(f["certainty"]),
                     place=f["place"],
-                    asked_again_on=[iso_to_date(a["date"]) for a in again],
+                    asked_again_on=[local_date(a["date"], tz) for a in again],
                 )
             )
         out.append(
             DiaryEntry(
                 walk_id=w["id"],
-                date=iso_to_date(w["recorded_at"]),
+                date=local_date(w["recorded_at"], tz),
                 group=w["group_name"],
                 mission_text=w["mission_text"],
                 entry=w["entry"],
@@ -602,23 +622,24 @@ def diary(conn: sqlite3.Connection, group: str | None = None) -> list[DiaryEntry
 
 
 def diary_summary(
-    conn: sqlite3.Connection, today: dt.date, group: str | None = None
+    conn: sqlite3.Connection, today: dt.date, group: str | None = None, tz: dt.tzinfo = dt.UTC
 ) -> DiarySummary:
-    """Walks and verified facts in ``today``'s calendar month."""
-    month = today.strftime("%Y-%m")
-    gsql = " AND group_name = ?" if group is not None else ""
+    """Walks and verified facts in ``today``'s calendar month, by local date in ``tz``."""
+    gsql = " AND w.group_name = ?" if group is not None else ""
     gparams: tuple[str, ...] = (group,) if group is not None else ()
-    walks = conn.execute(
-        f"SELECT COUNT(*) FROM walks WHERE status = 'done' AND substr(recorded_at,1,7) = ?{gsql}",
-        (month, *gparams),
-    ).fetchone()[0]
-    facts = conn.execute(
-        "SELECT COUNT(*) FROM facts f JOIN walks w ON w.id = f.walk_id "
-        "WHERE f.verified = 1 AND w.status = 'done' AND substr(w.recorded_at,1,7) = ?"
-        + gsql.replace("group_name", "w.group_name"),
-        (month, *gparams),
-    ).fetchone()[0]
-    return DiarySummary(walks_this_month=int(walks), things_noticed=int(facts))
+    rows = conn.execute(
+        "SELECT w.recorded_at, (SELECT COUNT(*) FROM facts f "
+        "  WHERE f.walk_id = w.id AND f.verified = 1) AS n "
+        f"FROM walks w WHERE w.status = 'done'{gsql}",
+        gparams,
+    ).fetchall()
+    walks = facts = 0
+    for r in rows:
+        d = local_date(r["recorded_at"], tz)
+        if (d.year, d.month) == (today.year, today.month):
+            walks += 1
+            facts += int(r["n"])
+    return DiarySummary(walks_this_month=walks, things_noticed=facts)
 
 
 # -------------------------------------------------------------------- feedback

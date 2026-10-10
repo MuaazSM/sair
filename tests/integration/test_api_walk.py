@@ -122,3 +122,55 @@ def test_upload_is_saved_under_walk_id_in_tmp_dir(make_env) -> None:  # type: ig
         gate.set()
     assert env.wait_walk(walk_id)["status"] == "done"
     assert files_in(env.tmp_dir) == []
+
+
+def test_unexpected_writer_error_is_done_with_template(make_env) -> None:  # type: ignore[no-untyped-def]
+    """FR-J5/FR-J7 via the API: never requeued as a transcription failure, never lost."""
+    from hub import db
+    from tests.unit._graphfix import StubOllama
+
+    env = make_env(ollama=StubOllama(writer=[ValueError("boom")]))
+    wid = env.post_walk().json()["walk_id"]
+    done = env.wait_walk(wid)
+    assert done["status"] == "done"
+    assert done["entry"] == "Mom and Dad went for their evening walk."
+    assert "reason" not in done  # reason is exposed only for lost walks
+    assert files_in(env.tmp_dir) == []
+    conn = db.connect(env.deps.settings.db_path)
+    try:
+        row = db.get_walk_row(conn, wid)
+    finally:
+        conn.close()
+    assert row["transcript"] and (row["status"], row["reason"]) == ("done", "writer_permanent")
+    assert env.ollama.transcribe_calls == 1
+
+
+def test_graph_crash_after_transcript_requeues_as_writer_transient(  # type: ignore[no-untyped-def]
+    make_env, monkeypatch
+) -> None:
+    """A crash with the transcript stored must resume at the writer, not re-transcribe."""
+    from hub import db
+    from hub.api import routes
+
+    def crash(walk_id, path, group, mission_id, deps):  # type: ignore[no-untyped-def]
+        conn = deps.connect()
+        try:
+            db.set_transcript(conn, walk_id, "A koel was calling near the temple.")
+        finally:
+            conn.close()
+        path.unlink()
+        raise RuntimeError("graph bug")
+
+    env = make_env()
+    monkeypatch.setattr(routes, "run_journal", crash)
+    wid = env.post_walk().json()["walk_id"]
+    for _ in range(200):
+        conn = db.connect(env.deps.settings.db_path)
+        try:
+            row = db.get_walk_row(conn, wid)
+        finally:
+            conn.close()
+        if row["reason"] is not None:
+            break
+        time.sleep(0.02)
+    assert (row["status"], row["reason"]) == ("received", "writer_transient")
