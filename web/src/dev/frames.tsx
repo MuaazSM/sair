@@ -13,6 +13,10 @@ import { Writing } from '../screens/Writing/index.ts';
 import { Saved } from '../screens/Saved/index.ts';
 import { ShortNote } from '../screens/ShortNote/index.ts';
 import { Diary } from '../screens/Diary/index.ts';
+import { couldntHear, hubSleeping, diaryEmpty } from '../fixtures/index.ts';
+import { CouldntHear } from '../screens/CouldntHear/index.ts';
+import { HubSleeping } from '../screens/HubSleeping/index.ts';
+import { DiaryEmpty } from '../screens/DiaryEmpty/index.ts';
 
 export const FRAMES: Record<string, () => ReactNode> = {
   door: () => <Door data={door} />,
@@ -26,4 +30,7 @@ export const FRAMES: Record<string, () => ReactNode> = {
   saved: () => <Saved data={saved} />,
   'short-note': () => <ShortNote data={shortNote} />,
   diary: () => <Diary data={diary} />,
+  'couldnt-hear': () => <CouldntHear data={couldntHear} />,
+  'hub-sleeping': () => <HubSleeping data={hubSleeping} />,
+  'diary-empty': () => <DiaryEmpty data={diaryEmpty} />,
 };

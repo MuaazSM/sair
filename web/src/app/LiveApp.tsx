@@ -3,9 +3,12 @@
 // Privacy: no console output, no analytics, no third-party requests. Mission/entry text lives in React state only.
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { GapState } from '../components/index.ts';
-import { door, doorFirstWalk, leavePhone, missionPlaying, recording, recordingWarning, saved as savedFixture, tellSair, writing } from '../fixtures/index.ts';
+import { couldntHear, diaryEmpty, hubSleeping, door, doorFirstWalk, leavePhone, missionPlaying, recording, recordingWarning, saved as savedFixture, tellSair, writing } from '../fixtures/index.ts';
 import type { DiaryData } from '../fixtures/diary.ts';
 import type { SavedData } from '../fixtures/saved.ts';
+import { CouldntHear } from '../screens/CouldntHear/index.ts';
+import { DiaryEmpty } from '../screens/DiaryEmpty/index.ts';
+import { HubSleeping } from '../screens/HubSleeping/index.ts';
 import { Diary } from '../screens/Diary/index.ts';
 import { Door } from '../screens/Door/index.ts';
 import { DoorFirstWalk } from '../screens/DoorFirstWalk/index.ts';
@@ -448,19 +451,12 @@ export function LiveApp() {
       screen = <Saved data={{ ...savedFixture, date: longDate(new Date()), group: '', entry: 'Your diary entry will be ready soon', facts: [], outcome: undefined }} showRead={false} onDone={toDoor} />;
       break;
     case 'sleeping':
-      // NOT IN DESIGN as a built screen: strings are the design's frame 2G (hub-sleeping), laid out with GapState.
-      screen = (
-        <GapState
-          heading="Sair's home computer is sleeping."
-          body="Your note will be saved when it wakes up."
-          note={['Your note is safe on this phone', `${clock(view.seconds)} · it will send by itself`]}
-          primary={{ label: 'Okay', onClick: toDoor }}
-        />
-      );
+      // Replicated screen (design 2G); only the queued-note clock is live.
+      screen = <HubSleeping data={{ ...hubSleeping, noteSub: `${clock(view.seconds)} · it will send by itself` }} onOkay={toDoor} />;
       break;
     case 'couldnt':
-      // NOT IN DESIGN as a built screen: strings are the design's frame 2F (couldn't hear).
-      screen = <GapState heading="I couldn't hear that clearly." body="Sometimes the fan or the traffic is loud. Let's try once more." primary={{ label: 'Try again', onClick: tell }} quiet={{ label: 'Skip for today', onClick: toDoor }} />;
+      // Replicated screen (design 2F).
+      screen = <CouldntHear data={couldntHear} onTry={tell} onSkip={toDoor} />;
       break;
     case 'lost':
       // NOT IN DESIGN, copy needs owner review (REVIEW M6).
@@ -477,11 +473,11 @@ export function LiveApp() {
     case 'diary': {
       const d = diary.data;
       screen = d ? (
-        <Diary
-          data={d}
-          onFilter={(i) => void loadDiary(i, diary.groups)}
-          empty={d.entries.length === 0 && diary.filter === 0 ? { heading: 'Your first walk will appear here.', body: 'After each walk, Sair writes a few lines for the family.' } : undefined}
-        />
+        d.entries.length === 0 && diary.filter === 0 ? (
+          <DiaryEmpty data={diaryEmpty} />
+        ) : (
+          <Diary data={d} onFilter={(i) => void loadDiary(i, diary.groups)} />
+        )
       ) : null;
       break;
     }

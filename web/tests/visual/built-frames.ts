@@ -16,4 +16,7 @@ export const BUILT_FRAMES: BuiltFrame[] = [
   { id: 'saved', textExclude: ['7:00'] },
   { id: 'short-note', textExclude: ['7:00'] },
   { id: 'diary', textExclude: ['8:15'] },
+  { id: 'couldnt-hear', textExclude: ['6:59'] },
+  { id: 'hub-sleeping', textExclude: ['7:00'] },
+  { id: 'diary-empty', textExclude: ['8:15'] },
 ];
