@@ -16,7 +16,7 @@ CLAUDE.md
 # data, models, private
 eval/real/
 docs/field-notes.private.md
-models/
+/models/
 *.gguf
 training/cache/
 web/tests/visual/diff/
