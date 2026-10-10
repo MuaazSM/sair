@@ -1,7 +1,7 @@
 version: 1
 # Walk-word lists for the mission safety filter (PRD FR-M4, FR-M6, FR-M6b).
 # generic_nouns: nouns a mission may use without referencing a fact (FR-M4). Everything else concrete must come from a referenced fact's subject/place.
-generic_nouns: [tree, trees, flower, flowers, bird, birds, sky, sound, sounds, smell, smells, colour, colours, color, colors, leaf, leaves, cloud, clouds, path, lane, road, wall, window, door, gate, building, light, lights, shadow, shadows, sign, signs, wind, breeze, way, walk, thing, things, something, one, kind, shape, shapes, plant, plants, person, people, animal, animals, home, corner, side, route, street, pavement, footpath, shade, sunlight, noise, noises, voice, voices, pattern, patterns, number, pair, group, detail, details, difference, changes, change, moment, minute, minutes, step, steps, distance, surface, ground, air, view, spot, place, places, edge, end, top, bottom, front, back, roof, roofs, fence, railing, pole, board, branch, branches, trunk, bark, grass, garden, park, neighbourhood, neighborhood, area, stretch, bend, turn, curve, crossing, bench, shop, shops, stall, stalls, wire, wires, rooftop, rooftops, hill, puddle, puddles, stone, stones, colourful, everything, anything]
+generic_nouns: [tree, trees, flower, flowers, bird, birds, sky, sound, sounds, smell, smells, colour, colours, color, colors, leaf, leaves, cloud, clouds, path, lane, road, wall, window, door, gate, building, light, lights, shadow, shadows, sign, signs, wind, breeze, way, walk, thing, things, something, one, kind, shape, shapes, plant, plants, person, people, animal, animals, home, corner, side, route, street, pavement, footpath, shade, sunlight, noise, noises, voice, voices, pattern, patterns, number, pair, group, detail, details, difference, changes, change, moment, minute, minutes, step, steps, distance, surface, ground, air, view, spot, place, places, edge, end, top, bottom, front, back, roof, roofs, fence, railing, pole, board, branch, branches, trunk, bark, grass, garden, park, neighbourhood, neighborhood, area, stretch, bend, turn, curve, crossing, bench, shop, shops, stall, stalls, wire, wires, rooftop, rooftops, hill, puddle, puddles, stone, stones, colourful, everything, anything, time, times, day, days, week, weeks, today, yesterday, start, lot, lots, bit, while, face]
 # verb_allowlist: base forms of the permitted main verbs (FR-M6a). The safety code handles inflections.
 verb_allowlist: [notice, look, see, listen, hear, count, smell, find, spot, compare, stand, pause, watch]
 # blocklist (FR-M6b): each item is {id, patterns}. Patterns are Python `re` regexes, applied with re.IGNORECASE
@@ -14,7 +14,8 @@ blocklist:
       - '\bcross(?:es|ed|ing)?\s+(?:over\s+)?(?:\w+\s+){0,3}?(?:roads?|streets?|lanes?|highways?|junctions?|intersections?|crossings?|zebra|traffic|signals?|flyovers?|tracks?|railway|rails?)\b'
       - '\bcross(?:es|ed|ing)?\s+(?:over|across|to the other side|to the opposite side)\b'
       - '\b(?:to|on|at)\s+the\s+(?:other|opposite|far)\s+side\s+of\s+the\s+(?:road|street|lane|highway)\b'
-      - '\b(?:stand|stop|pause|wait|stay|linger|stand still|rest|sit|walk|stroll|wander|loiter|halt|dawdle)(?:s|ing)?\s+(?:(?:right|just|there|here|still|and|for a moment|for a minute|for a bit)\s+)?(?:on|in|at|along|down|onto|into|across)\s+(?:the\s+|a\s+|that\s+|this\s+)?(?:middle of the\s+|centre of the\s+|center of the\s+|edge of the\s+)?(?:road|roads|street|streets|lane|lanes|highway|traffic|junction|crossing|carriageway)\b'
+      - '\b(?:stand|stop|pause|wait|stay|linger|stand still|rest|sit|halt)(?:s|ing)?\s+(?:(?:right|just|there|here|still|and|for a moment|for a minute|for a bit)\s+)?(?:on|in|at|along|down|onto|into|across)\s+(?:the\s+|a\s+|that\s+|this\s+)?(?:middle of the\s+|centre of the\s+|center of the\s+|edge of the\s+)?(?:road|roads|street|streets|lane|lanes|highway|traffic|junction|crossing|carriageway)\b'
+      - '\b(?:walk|stroll|wander|loiter|dawdle)(?:s|ing)?\s+(?:(?:right|just|there|here|still|and)\s+)?(?:on|in|at|along|down|onto|into|across)\s+(?:the\s+|a\s+|that\s+|this\s+)?(?:middle of the\s+|centre of the\s+|center of the\s+|edge of the\s+)?(?:road|roads|street|streets|highway|traffic|junction|crossing|carriageway)\b'
       - '\b(?:step|stepping|steps|stepped|go|going|walk|walking|move|moving|spill|wander|drift)\s+(?:out\s+)?(?:onto|on to|into|off(?: the)? (?:footpath|pavement|kerb|curb|sidewalk)|off to the road)\s+(?:the\s+|a\s+)?(?:road|roads|street|streets|lane|lanes|traffic|carriageway)\b'
       - '\bstep(?:s|ping|ped)?\s+(?:off|down from)\s+(?:the\s+)?(?:footpath|pavement|kerb|curb|sidewalk)\b'
       - '\b(?:through|into|between|among|dodge|dodging|weave|weaving)\s+(?:the\s+|moving\s+|passing\s+|oncoming\s+)?(?:traffic|vehicles|cars|buses|autos)\b'
@@ -34,7 +35,8 @@ blocklist:
       - 'छू(?:ना|ओ|एं|ए|ये)|सहला|गोद में उठा|पकड़ो|पकड़ना'
   - id: feed_animal   # feeding or giving food/water to animals
     patterns:
-      - '\b(?:feed|feeds|feeding|fed)\b'
+      - '\b(?:feed|feeds|feeding|fed)\s+(?:the|it|them|him|her|some|a|an|any|your|that|this|those|these|one|every|each|all|my|our|their)\b'
+      - '(?:^|[.!?]\s+|\b(?:you|to|and|then|try|please|just|keep)\s+)(?:feed|feeding)\b'
       - '\b(?:give|gives|giving|offer|offers|offering|toss|tossing|throw|throwing|put\s+out|pass|passing|hand|handing|leave|leaving|bring|bringing|share|sharing|pour|pouring|set\s+out|scatter|scattering|sprinkle|sprinkling)\s+(?:\w+\s+){0,3}?(?:dogs?|pupp(?:y|ies)|pups?|cats?|kittens?|cows?|calf|calves|bulls?|bullocks?|buffalo(?:es)?|goats?|kids? goats?|sheep|horses?|ponies|pony|donkeys?|mules?|camels?|monkeys?|langurs?|squirrels?|rats?|mice|mouse|snakes?|lizards?|geckos?|frogs?|cattle|animals?|strays?|pigs?|boars?|hens?|chickens?|roosters?|ducks?|geese|birds?|crows?|pigeons?|parrots?|sparrows?|mynas?|koels?|kites?|peacocks?|peahens?|owls?|bats?|butterfl(?:y|ies)|bees?|insects?|creatures?|wildlife|kutt[aeoi]n?|kutte|billi|billa|gaay|gai|gaayein|bail|bhains|bakri|bakra|ghoda|ghode|gadha|bandar|gilahri|chuha|saanp|chidiya|kauwa|kaua|tota|kabutar|kabootar|murgi|cheel)\s+(?:a\s+|an\s+|some\s+|the\s+|your\s+|little\s+|bit of\s+|piece of\s+)*(?:food|biscuits?|rotis?|chapatis?|breads?|pav|milk|water|treats?|snacks?|grains?|seeds?|dana|rice|bananas?|fruits?|scraps?|leftovers?|sweets?|chocolates?|toffees?|candy|candies|money|coins?|rupees?|cash|gifts?|flowers?|khana|paani|dudh|bisk(?:i|u)t)\b'
       - '\b(?:give|gives|giving|offer|offers|offering|toss|tossing|throw|throwing|put\s+out|pass|passing|hand|handing|leave|leaving|bring|bringing|share|sharing|pour|pouring|set\s+out|scatter|scattering|sprinkle|sprinkling)\s+(?:\w+\s+){0,4}?(?:food|biscuits?|rotis?|chapatis?|breads?|pav|milk|water|treats?|snacks?|grains?|seeds?|dana|rice|bananas?|fruits?|scraps?|leftovers?|sweets?|chocolates?|toffees?|candy|candies|money|coins?|rupees?|cash|gifts?|flowers?|khana|paani|dudh|bisk(?:i|u)t)\s+(?:\w+\s+){0,2}?(?:to|for|near)\s+(?:the\s+|a\s+|an\s+|that\s+|some\s+)?(?:\w+\s+){0,1}?(?:dogs?|pupp(?:y|ies)|pups?|cats?|kittens?|cows?|calf|calves|bulls?|bullocks?|buffalo(?:es)?|goats?|kids? goats?|sheep|horses?|ponies|pony|donkeys?|mules?|camels?|monkeys?|langurs?|squirrels?|rats?|mice|mouse|snakes?|lizards?|geckos?|frogs?|cattle|animals?|strays?|pigs?|boars?|hens?|chickens?|roosters?|ducks?|geese|birds?|crows?|pigeons?|parrots?|sparrows?|mynas?|koels?|kites?|peacocks?|peahens?|owls?|bats?|butterfl(?:y|ies)|bees?|insects?|creatures?|wildlife|kutt[aeoi]n?|kutte|billi|billa|gaay|gai|gaayein|bail|bhains|bakri|bakra|ghoda|ghode|gadha|bandar|gilahri|chuha|saanp|chidiya|kauwa|kaua|tota|kabutar|kabootar|murgi|cheel)\b'
       - '\b(?:water|watering)\s+(?:the\s+|a\s+)?(?:dogs?|pupp(?:y|ies)|pups?|cats?|kittens?|cows?|calf|calves|bulls?|bullocks?|buffalo(?:es)?|goats?|kids? goats?|sheep|horses?|ponies|pony|donkeys?|mules?|camels?|monkeys?|langurs?|squirrels?|rats?|mice|mouse|snakes?|lizards?|geckos?|frogs?|cattle|animals?|strays?|pigs?|boars?|hens?|chickens?|roosters?|ducks?|geese|birds?|crows?|pigeons?|parrots?|sparrows?|mynas?|koels?|kites?|peacocks?|peahens?|owls?|bats?|butterfl(?:y|ies)|bees?|insects?|creatures?|wildlife|kutt[aeoi]n?|kutte|billi|billa|gaay|gai|gaayein|bail|bhains|bakri|bakra|ghoda|ghode|gadha|bandar|gilahri|chuha|saanp|chidiya|kauwa|kaua|tota|kabutar|kabootar|murgi|cheel)\b'
@@ -71,7 +73,7 @@ blocklist:
   - id: enter_property   # entering/going into property, compounds, gardens, buildings
     patterns:
       - '\b(?:enter|enters|entered|entering|go\s+into|goes\s+into|going\s+into|go\s+in|going\s+in|go\s+inside|going\s+inside|walk\s+into|walks\s+into|walking\s+into|walk\s+in|walking\s+in|walk\s+inside|step\s+into|steps\s+into|stepping\s+into|step\s+inside|stepping\s+inside|step\s+in|stepping\s+in|duck\s+into|pop\s+into|pop\s+in|slip\s+into|slip\s+in|wander\s+into|wander\s+in|head\s+into|head\s+inside|come\s+into|come\s+inside|come\s+in|cross\s+into|sneak\s+into|sneak\s+in|slip\s+through|squeeze\s+into|squeeze\s+through|trespass|trespassing|peek\s+inside|peer\s+inside|visit|visiting|drop\s+(?:in|into|by)|stop\s+by|pass\s+through|cut\s+through|take\s+a\s+shortcut\s+through|shortcut\s+through|use\s+the\s+shortcut\s+through|jump\s+into|hop\s+into|push\s+open|unlatch|unlock)\s+(?:(?:right|straight|just|quietly|quickly|inside|in|through)\s+)?(?:\w+\s+){0,3}?(?:(?:propert(?:y|ies)|compounds?|gardens?|buildings?|houses?|homes?|societ(?:y|ies)|premises|yards?|courtyards?|gates?|flats?|apartments?|lobb(?:y|ies)|campus(?:es)?|bungalows?|plots?|farms?|colon(?:y|ies)|schools?|shops?|lifts?|elevators?|stairwells?|terraces?|rooftops?|roofs?|basements?|parking|garages?|sheds?|temples? (?:compound|premises|grounds)|grounds|private))\b'
-      - '\b(?:inside|into|within)\s+(?:the\s+|a\s+|someone''s\s+|somebody''s\s+|their\s+|any\s+)?(?:\w+\s+){0,1}?(?:compound|garden|property|yard|courtyard|building|house|home|premises|society|flat|apartment|lobby|campus|bungalow|farm|plot)\b'
+      - '(?<!\blook\s)(?<!\blooks\s)(?<!\blooking\s)(?<!\bpeer\s)(?<!\bpeering\s)\b(?:inside|into|within)\s+(?:the\s+|a\s+|someone''s\s+|somebody''s\s+|their\s+|any\s+)?(?:\w+\s+){0,1}?(?:compound|garden|property|yard|courtyard|building|house|home|premises|society|flat|apartment|lobby|campus|bungalow|farm|plot)\b'
       - '\b(?:over|through)\s+(?:the\s+|a\s+)?(?:gate|fence|wall|hedge)\s+(?:into|to|and\s+into)\b'
       - '\b(?:andar|ander|bheetar|bhitar)\s+(?:jaao|jao|jana|jaana|chalo|chalna|ghuso|ghusna|jaiye|aao|aana)\b'
       - '\b(?:ghus|ghuso|ghusna|ghusiye|ghus\s+jao)\b'
@@ -80,19 +82,21 @@ blocklist:
   - id: climb   # climbing, jumping, standing on ledges/benches
     patterns:
       - '\bclimb(?:s|ed|ing)?\b'
-      - '\b(?:scale|scaling|scramble|scrambling|clamber|clambering|hop\s+over|hopping\s+over|jump\s+over|jumping\s+over|jump\s+on|jumping\s+on|jump\s+off|jump\s+up|jump\s+down|jump|jumps|jumping|vault|vaulting|leap|leaping|leap\s+over|get\s+on\s+top|get\s+up\s+on|get\s+onto|hang\s+from|hanging\s+from|swing\s+from|swinging\s+from|lean\s+over|leaning\s+over|lean\s+out|leaning\s+out|sit\s+on\s+(?:the\s+|a\s+)?(?:wall|ledge|roof|fence|parapet|railing|gate|branch|rock|boulder)|go\s+up\s+(?:the\s+|a\s+)?(?:stairs|steps|tree|wall|roof|ladder|slope|hill|rocks?|terrace|building)|walk\s+up\s+(?:the\s+|a\s+)?(?:stairs|steps|tree|wall|roof|ladder|slope|hill|rocks?|terrace|building)|step\s+up\s+on|step\s+on\s+(?:the\s+|a\s+)?(?:wall|ledge|rock|boulder|fence|parapet|railing)|stand\s+on\s+(?:the\s+|a\s+|top\s+of\s+the\s+)?(?:wall|bench|rock|boulder|ledge|roof|fence|parapet|railing|stool|chair|platform|tree|branch|gate|step|steps|stairs|ledge|kerb|curb|table|box|crate|pile|stack|mound|hill|slope|rail))\b'
+      - '\b(?:scale|scaling|scramble|scrambling|clamber|clambering|hop\s+over|hopping\s+over|jump\s+over|jumping\s+over|jump\s+on|jumping\s+on|jump\s+off|jump\s+up|jump\s+down|(?:^|[.!?]\s+|\b(?:you|to|and|then|try|keep|start|just|please)\s+)jump(?:s|ing)?|vault|vaulting|leap|leaping|leap\s+over|get\s+on\s+top|get\s+up\s+on|get\s+onto|hang\s+from|hanging\s+from|swing\s+from|swinging\s+from|lean\s+over|leaning\s+over|lean\s+out|leaning\s+out|sit\s+on\s+(?:the\s+|a\s+)?(?:wall|ledge|roof|fence|parapet|railing|gate|branch|rock|boulder)|go\s+up\s+(?:the\s+|a\s+)?(?:stairs|steps|tree|wall|roof|ladder|slope|hill|rocks?|terrace|building)|walk\s+up\s+(?:the\s+|a\s+)?(?:stairs|steps|tree|wall|roof|ladder|slope|hill|rocks?|terrace|building)|step\s+up\s+on|step\s+on\s+(?:the\s+|a\s+)?(?:wall|ledge|rock|boulder|fence|parapet|railing)|stand\s+on\s+(?:the\s+|a\s+|top\s+of\s+the\s+)?(?:wall|bench|rock|boulder|ledge|roof|fence|parapet|railing|stool|chair|platform|tree|branch|gate|step|steps|stairs|ledge|kerb|curb|table|box|crate|pile|stack|mound|hill|slope|rail))\b'
       - '\b(?:chadh|chadho|chadhna|chadhiye|chadhke|chadhkar|chadh\s+jao|charh|charho|charhna|charhiye|uchhal|uchhalo|uchhalna|kood|koodo|koodna|laang|langho|langhna)\w*\b'
       - 'चढ़|चढ|कूद|उछल|लाँघ'
   - id: run   # running, jogging, racing, hurrying
     patterns:
-      - '\b(?:run|running|ran|jog|jogs|jogged|jogging|race|races|racing|raced|sprint|sprints|sprinting|sprinted|hurry|hurries|hurried|hurrying|rush|rushes|rushed|rushing|dash|dashes|dashed|dashing|hasten|hastening|gallop|galloping|scamper|scampering|bolt|bolting|speed\s+up|speeding\s+up|speed\s+walk|speed-walk|power\s+walk|power-walk|fast\s+walk|brisk\s+walk|walk\s+fast|walk\s+faster|walk\s+quickly|walk\s+briskly|move\s+fast|move\s+quickly|go\s+fast|go\s+faster|go\s+quickly|as\s+fast\s+as|as\s+quickly\s+as|as\s+soon\s+as\s+possible|in\s+a\s+hurry|before\s+it''s\s+gone|before\s+it\s+leaves|hurry\s+up|pick\s+up\s+the\s+pace|quicken|quickening|step\s+it\s+up|pace\s+yourselves?\s+up|race\s+to|chase)\b'
+      - '\b(?:run|running|ran|jog|jogs|jogged|jogging|race|races|racing|raced|sprint|sprints|sprinting|sprinted|hurry|hurries|hurried|hurrying|rushed|rushing|rush\s+(?:to|over|off|ahead|past|out|in|across)|dash|dashes|dashed|dashing|hasten|hastening|gallop|galloping|scamper|scampering|bolt|bolting|speed\s+up|speeding\s+up|speed\s+walk|speed-walk|power\s+walk|power-walk|fast\s+walk|brisk\s+walk|walk\s+fast|walk\s+faster|walk\s+quickly|walk\s+briskly|move\s+fast|move\s+quickly|go\s+fast|go\s+faster|go\s+quickly|as\s+fast\s+as|as\s+quickly\s+as|as\s+soon\s+as\s+possible|in\s+a\s+hurry|before\s+it''s\s+gone|before\s+it\s+leaves|hurry\s+up|pick\s+up\s+the\s+pace|quicken|quickening|step\s+it\s+up|pace\s+yourselves?\s+up|race\s+to|chase)\b'
       - '\b(?:daud|dauden|daudo|daudna|daudiye|daudke|daudkar|bhaag|bhaago|bhaagna|bhagna|bhagiye|bhaagiye|jaldi\s+(?:chalo|chal|karo|kijiye|jao|jaao|pahunch\w*)|tez\s+(?:chalo|chal|chalna|bhaago|bhaag|kadam)|tezi\s+se|fatafat|jhat\s+se|jhatpat)\b'
       - 'दौड़|दौड|भाग(?:ो|ना|िए)|जल्दी\s+(?:चलो|करो|जाओ)|तेज़\s+(?:चलो|भागो)|तेज\s+(?:चलो|भागो)'
   - id: phone_outside   # phone, camera, photo, video, recording, calls
     patterns:
       - '\b(?:phones?|mobiles?|smart\s*phones?|cell\s*phones?|iphones?|androids?|handsets?|cameras?|camcorders?|gopro|tablets?|ipads?|earphones?|earbuds?|headphones?|airpods?|selfie(?:s|\s+stick)?|whatsapp|insta(?:gram)?|snapchat|facebook|youtube|gps|google\s+maps|maps?\s+app)\b'
-      - '\b(?:take|takes|taking|took|click|clicks|clicking|snap|snaps|snapping|capture|captures|capturing|shoot|shoots|shooting|make|making|grab|grabbing|get|getting|use|using|try|trying|record|recording|film|filming|send|sending|share|sharing|post|posting|upload|uploading|save|saving|keep|keeping|check|checking|bring|bringing|carry|carrying|pull\s+out|take\s+out|whip\s+out)\s+(?:a\s+|an\s+|the\s+|some\s+|your\s+|few\s+|a\s+few\s+|that\s+|this\s+|any\s+|one\s+|two\s+|\w+\s+){0,2}(?:photos?|pictures?|pics?|photographs?|selfies?|videos?|clips?|snaps?|screenshots?|shots?|images?|recordings?|time|watch|clock|notifications?|messages?|texts?|emails?|calls?|reels?|stor(?:y|ies)|status|memories|notes?)\b'
-      - '\b(?:record|recording|records|recorded|livestream|live-?stream|stream|streaming|screenshot|screen-?record)\b'
+      - '\b(?:take|takes|taking|took|click|clicks|clicking|snap|snaps|snapping|capture|captures|capturing|shoot|shoots|shooting|make|making|grab|grabbing|get|getting|use|using|try|trying|record|recording|film|filming|send|sending|share|sharing|post|posting|upload|uploading|save|saving|keep|keeping|check|checking|bring|bringing|carry|carrying|pull\s+out|take\s+out|whip\s+out)\s+(?:a\s+|an\s+|the\s+|some\s+|your\s+|few\s+|a\s+few\s+|that\s+|this\s+|any\s+|one\s+|two\s+|\w+\s+){0,2}(?:photos?|pictures?|pics?|photographs?|selfies?|videos?|clips?|snaps?|screenshots?|shots?|images?|recordings?|watch|clock|notifications?|messages?|texts?|emails?|calls?|reels?|stor(?:y|ies)|status|memories|notes?)\b'
+      - '\b(?:record|recording|records|recorded|livestream|live-?stream|streaming|screenshot|screen-?record)\b'
+      - '\bstream(?:s|ed)?\s+(?:it|this|that|them|live|video|videos|online|on|to|with)\b'
+      - '\b(?:check|checking|checks|get|getting)\s+(?:\w+\s+){0,2}?time\b'
       - '\b(?:photograph|photographing|photographs|photograph\s+it|snap\s+it|capture\s+it|click\s+it|shoot\s+it)\b'
       - '\b(?:call|calls|calling|text|texts|texting|message|messages|messaging|ring|dial|dialling|dialing|ping|whatsapp)\s+(?:someone|anyone|your|home|mom|dad|mum|mummy|papa|the\s+family|family|a\s+friend|friends?|them|him|her|me|us|each\s+other|the\s+kids|the\s+children|grandchildren|your\s+\w+)\b'
       - '\b(?:photo|foto|photu|tasveer|tasvir|picture|pic|selfie|video|reel|clip|snap)\s+(?:le|lo|lena|leni|lijiye|le\s+lo|kheench\w*|khinch\w*|khichna|khicho|khichiye|nikalo|nikaalo|banao|banana|banaiye|bhejo|bhejna|daalo|dalo|utaro|utaarna|click\s+karo|karo|karna|kar\s+lo)\b'
@@ -106,7 +110,26 @@ time_of_day_words:
   - 'midday'
   - 'afternoon'
   - 'evening'
-  - 'night'   # review: also in "night jasmine" / compounds
+  - 'at night'   # bare 'night' is allowed (night jasmine); these literal cues stay banned
+  - 'this night'
+  - 'last night'
+  - 'tomorrow night'
+  - 'every night'
+  - 'each night'
+  - 'one night'
+  - 'by night'
+  - 'in the night'
+  - 'into the night'
+  - 'during the night'
+  - 'all night'
+  - 'night air'
+  - 'night sky'
+  - 'night breeze'
+  - 'night walk'
+  - 'night time'
+  - 'night-time'
+  - 'nighttime'
+  - 'overnight'
   - 'tonight'
   - 'today at'
   - 'sunset'   # review: KNOWN OVERLAP: also a lexicon sky detail (id sunset); in a mission it is a time-of-day cue, so rejected here
@@ -149,11 +172,38 @@ time_of_day_words:
   - 'dopehar'
   - 'dupahar'
   - 'shaam'
-  - 'sham'
+  - 'sham ko'   # bare 'sham' (English word) allowed; 'shaam' is listed above
   - 'raat'
   - 'sandhya'   # review: also a first name
   - 'tadke'
-  - 'baje'   # review: o'clock in Hinglish; also "baje" = rings (bell baje)
+  - '1 baje'   # bare 'baje' (bell baje = rings) allowed; only after a number or number word
+
+  - '2 baje'
+  - '3 baje'
+  - '4 baje'
+  - '5 baje'
+  - '6 baje'
+  - '7 baje'
+  - '8 baje'
+  - '9 baje'
+  - '10 baje'
+  - '11 baje'
+  - '12 baje'
+  - 'ek baje'
+  - 'do baje'
+  - 'teen baje'
+  - 'char baje'
+  - 'chaar baje'
+  - 'paanch baje'
+  - 'panch baje'
+  - 'chhe baje'
+  - 'chhah baje'
+  - 'saat baje'
+  - 'aath baje'
+  - 'nau baje'
+  - 'das baje'
+  - 'gyarah baje'
+  - 'barah baje'
   - 'aaj raat'
   - 'kal subah'
   - 'सुबह'
