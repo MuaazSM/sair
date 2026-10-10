@@ -1,8 +1,10 @@
 """llama.cpp ``llama-server`` client: raw ``/completion`` with an optional GBNF grammar.
 
 The prompt is rendered by us (not the server's chat endpoint) so inference matches training.
-``render_qwen_chat`` is the default :class:`Renderer`; the training renderer can be plugged in
-by passing ``renderer=`` (P6: "the same prompt renderer as training").
+The client's :class:`Renderer` is set at construction (``renderer=``); the hub passes the
+training renderer (``training/renderer_runtime.py`` over ``WRITER_RENDERER_PATH``, PRD §12.4,
+wired in ``hub/api/deps.py``). ``render_qwen_chat`` is only the fallback when none is given.
+A per-call ``renderer=`` on :meth:`LlamaServerClient.complete_chat` overrides both.
 """
 
 from __future__ import annotations
@@ -49,10 +51,15 @@ def render_qwen_chat(messages: Sequence[ChatMessage], *, thinking_off: bool = Tr
 
 class LlamaServerClient:
     def __init__(
-        self, settings: Settings | None = None, client: httpx.Client | None = None
+        self,
+        settings: Settings | None = None,
+        client: httpx.Client | None = None,
+        *,
+        renderer: Renderer | None = None,
     ) -> None:
         self._s = settings or get_settings()
         self._client = client or httpx.Client()
+        self.renderer: Renderer = renderer if renderer is not None else render_qwen_chat
 
     def complete(
         self, prompt: str, *, grammar: str | None = None, max_tokens: int | None = None
@@ -95,9 +102,10 @@ class LlamaServerClient:
         *,
         grammar: str | None = None,
         max_tokens: int | None = None,
-        renderer: Renderer = render_qwen_chat,
+        renderer: Renderer | None = None,
     ) -> tuple[str, CallStats]:
-        return self.complete(renderer(messages), grammar=grammar, max_tokens=max_tokens)
+        render = renderer if renderer is not None else self.renderer
+        return self.complete(render(messages), grammar=grammar, max_tokens=max_tokens)
 
     def health(self) -> bool:
         try:

@@ -2,6 +2,13 @@
 
 ``build_deps`` wires the real model clients (none of them connects or starts anything at
 construction time; Kokoro loads lazily in its own process). Tests pass stubs for every client.
+
+With ``WRITER_BACKEND=llama`` the writer prompt is rendered by the training renderer
+(``training.renderer_runtime.RuntimeRenderer`` over ``WRITER_RENDERER_PATH``, PRD §12.4).
+That module is light at import time (json/hashlib + ``hub.prompts.builders``; its heavy
+training imports are function-local), so it is imported lazily here, only for the llama
+backend. A missing or invalid renderer file refuses startup with
+:class:`WriterRendererError` (fixed code-only message).
 """
 
 from __future__ import annotations
@@ -17,21 +24,54 @@ from typing import Any
 import structlog
 
 from hub import db, tracing
-from hub.graphs.common import REPO_ROOT, Clock, TranscriberLike, TtsLike, WriterLike, utc_now
+from hub.graphs.common import (
+    REPO_ROOT,
+    Clock,
+    TranscriberLike,
+    TtsLike,
+    WriterLike,
+    repo_path,
+    utc_now,
+)
 from hub.graphs.journal import JournalDeps, Notifier
 from hub.graphs.mission import MissionDeps, plan_mission, post_walk_trigger
-from hub.models.llama_server import LlamaServerClient
+from hub.models.llama_server import LlamaServerClient, Renderer
 from hub.models.ollama import OllamaClient
 from hub.models.tts import TtsClient
 from hub.notify import NtfyNotifier, NullNotifier
 from hub.schemas import WriterBackend
 from hub.settings import Settings
 
-__all__ = ["MAX_UPLOAD_BYTES", "AppDeps", "build_deps", "submit_guarded"]
+__all__ = [
+    "MAX_UPLOAD_BYTES",
+    "AppDeps",
+    "WriterRendererError",
+    "build_deps",
+    "load_writer_renderer",
+    "submit_guarded",
+]
 
 log = structlog.get_logger("hub.api")
 
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # 90 s of any accepted format fits well below this
+
+
+class WriterRendererError(RuntimeError):
+    """The llama writer's training renderer could not be loaded. Message: a fixed code."""
+
+    def __init__(self) -> None:
+        super().__init__("writer_renderer_unavailable")
+
+
+def load_writer_renderer(settings: Settings) -> Renderer:
+    """The training prompt renderer for the llama writer (PRD §12.4)."""
+    try:
+        from training.renderer_runtime import RuntimeRenderer
+
+        return RuntimeRenderer(repo_path(settings.writer_renderer_path))
+    except Exception as exc:  # missing/invalid renderer.json or module: refuse to start
+        log.error("writer_renderer_unavailable", exc_type=type(exc).__name__)
+        raise WriterRendererError from None
 
 
 def submit_guarded(pool: ThreadPoolExecutor, fn: Callable[[], object], name: str) -> Future[None]:
@@ -116,11 +156,14 @@ def build_deps(
         ollama = real_ollama
         health["ollama"] = real_ollama.health
         closers.append(real_ollama.close)
-    if llama is None and settings.writer_backend is WriterBackend.LLAMA:
-        real_llama = LlamaServerClient(settings)
-        llama = real_llama
-        health["writer"] = real_llama.health
-        closers.append(real_llama.close)
+    if settings.writer_backend is WriterBackend.LLAMA:
+        # validated even when a client is injected: the hub never starts without it
+        writer_renderer = load_writer_renderer(settings)
+        if llama is None:
+            real_llama = LlamaServerClient(settings, renderer=writer_renderer)
+            llama = real_llama
+            health["writer"] = real_llama.health
+            closers.append(real_llama.close)
     if tts is None:
         real_tts = TtsClient(settings)
         tts = real_tts
