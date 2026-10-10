@@ -471,7 +471,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     ge = sub.add_parser("g-export")
     ge.add_argument("--run", required=True)
     ge.add_argument("--epoch", type=int, default=None)
-    ge.add_argument("--url", default=None, help="llama-server serving the Sair-Writer Q4_K_M")
+    ge.add_argument("--url", default=None, help="llama-server serving the Sair-Writer GGUF")
+    ge.add_argument(
+        "--gguf", type=Path, default=None, help="GGUF file being served (sha256 recorded)"
+    )
     se = sub.add_parser("select", help="§12.3 epoch choice vs training/gates/c_dev.json")
     se.add_argument("--run", required=True)
     cd = sub.add_parser("c-dev")
@@ -486,11 +489,20 @@ def main(argv: Sequence[str] | None = None) -> int:
     try:
         if a.cmd == "g-export":
             gguf_sha = None
-            from training.export_adapter import WRITER_Q4, read_stamp
+            if a.gguf is not None:
+                import hashlib
 
-            st = read_stamp(WRITER_Q4)
-            if st:
-                gguf_sha = st["output"]["sha256"]
+                h = hashlib.sha256()
+                with a.gguf.open("rb") as fh:
+                    for block in iter(lambda: fh.read(1 << 20), b""):
+                        h.update(block)
+                gguf_sha = h.hexdigest()
+            else:
+                from training.export_adapter import WRITER_Q4, read_stamp
+
+                st = read_stamp(WRITER_Q4)
+                if st:
+                    gguf_sha = st["output"]["sha256"]
             r = g_export(a.run, epoch=a.epoch, url=a.url, gguf_sha=gguf_sha)
             print(f"G-export run={r['run_id']} epoch={r['epoch']} dev_n={r['dev_n']}")
             for m, row in r["metrics"].items():
