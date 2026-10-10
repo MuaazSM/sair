@@ -1,0 +1,12 @@
+# Mission planner output (PRD 9.2). Mirrors schemas/mission.schema.json.
+# Key order is fixed: type, references, text.
+root ::= "{" ws "\"type\":" ws mtype "," ws "\"references\":" ws refs "," ws "\"text\":" ws text ws "}"
+
+mtype ::= "\"return\"" | "\"change\"" | "\"sense\"" | "\"count\"" | "\"seed\""
+refs ::= "[" ws (ref ("," ws ref){0,5} ws)? "]"
+ref ::= "\"" char{1,64} "\""
+text ::= "\"" char{1,400} "\""
+
+char ::= [^"\\\x00-\x1f] | "\\" (["\\/bfnrt] | "u" [0-9a-fA-F]{4})
+
+ws ::= [ \n]{0,2}

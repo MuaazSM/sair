@@ -1,0 +1,20 @@
+# Sair-Writer output (PRD 9.1). Mirrors schemas/entry.schema.json.
+# Key order is fixed: facts, mission_result, [mission_span], entry.
+# Bounds follow the schema maxLength values. Non-recursive on purpose.
+root ::= "{" ws "\"facts\":" ws facts "," ws "\"mission_result\":" ws result "," ws ("\"mission_span\":" ws (str400 | "null") "," ws)? "\"entry\":" ws str1200 ws "}"
+
+facts ::= "[" ws (fact ("," ws fact){0,5} ws)? "]"
+fact ::= "{" ws "\"span\":" ws str400 "," ws "\"kind\":" ws kind "," ws "\"subject\":" ws str80 "," ws "\"certainty\":" ws certainty ("," ws "\"place\":" ws (str120 | "null"))? ws "}"
+
+kind ::= "\"sight\"" | "\"sound\"" | "\"smell\"" | "\"person\"" | "\"animal\"" | "\"plant\"" | "\"weather\"" | "\"other\""
+certainty ::= "\"sure\"" | "\"unsure\""
+result ::= "\"done\"" | "\"partly\"" | "\"not_done\"" | "\"not_mentioned\""
+
+# Any UTF-8 code point except quote, backslash and control characters; JSON escapes allowed.
+char ::= [^"\\\x00-\x1f] | "\\" (["\\/bfnrt] | "u" [0-9a-fA-F]{4})
+str80 ::= "\"" char{1,80} "\""
+str120 ::= "\"" char{0,120} "\""
+str400 ::= "\"" char{1,400} "\""
+str1200 ::= "\"" char{0,1200} "\""
+
+ws ::= [ \n]{0,2}

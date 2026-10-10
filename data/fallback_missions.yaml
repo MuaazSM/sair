@@ -1,0 +1,85 @@
+version: 1
+# PRD §11.2: fixed fallback missions; owner review required (draft).
+# Rules (FR-M6, FR-M6b): one task, <= 30 words, main verb from the allowlist, addressed to "you",
+# no time of day, nothing from the blocklist, nouns only from walk_words.generic_nouns, no references.
+missions:
+  - id: fb01
+    type: sense
+    text: "Notice one tree with flowers on it along your way."
+    draft: true
+  - id: fb02
+    type: sense
+    text: "Listen for one bird you can hear from the path."
+    draft: true
+  - id: fb03
+    type: sense
+    text: "Look at the colour of the sky above you."
+    draft: true
+  - id: fb04
+    type: sense
+    text: "Notice any smell in the air near a garden as you walk."
+    draft: true
+  - id: fb05
+    type: sense
+    text: "Listen for the softest sound you can hear."
+    draft: true
+  - id: fb06
+    type: sense
+    text: "Look for a shadow that makes a pattern on the ground as you walk."
+    draft: true
+  - id: fb07
+    type: sense
+    text: "Notice the wind as it moves the leaves around you."
+    draft: true
+  - id: fb08
+    type: sense
+    text: "Find one leaf with a shape you like."
+    draft: true
+  - id: fb09
+    type: count
+    text: "Count the trees you pass along your way."
+    draft: true
+  - id: fb10
+    type: count
+    text: "Count how many different birds you can hear."
+    draft: true
+  - id: fb11
+    type: count
+    text: "Count the clouds you can see in the sky."
+    draft: true
+  - id: fb12
+    type: count
+    text: "Count your steps from one gate to the next."
+    draft: true
+  - id: fb13
+    type: count
+    text: "Count the shops you pass on your walk."
+    draft: true
+  - id: fb14
+    type: change
+    text: "Compare the sky now with the sky when you left home."
+    draft: true
+  - id: fb15
+    type: change
+    text: "Spot one thing on your street that you have never noticed before."
+    draft: true
+  - id: fb16
+    type: change
+    text: "Compare the colours of two leaves that you pass."
+    draft: true
+  - id: fb17
+    type: change
+    text: "Find a spot on your path where the light looks different."
+    draft: true
+  - id: fb18
+    type: change
+    text: "Notice one sound that changes as you walk."
+    draft: true
+  - id: fb19
+    type: change
+    text: "Pause for a moment at one spot you usually pass quickly."
+    draft: true
+  - id: fb20
+    type: sense
+    text: "Watch the clouds move across the sky above you."
+    draft: true

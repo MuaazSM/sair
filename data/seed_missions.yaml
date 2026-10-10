@@ -1,0 +1,16 @@
+version: 1
+# PRD §11.2: gentle first-walk missions, used before any verified facts exist; owner review required (draft).
+# Same rules as fallback_missions.yaml. No references; generic nouns only.
+missions:
+  - id: seed01
+    type: seed
+    text: "Notice one sound you like on your walk."
+    draft: true
+  - id: seed02
+    type: seed
+    text: "Look for one colour that you see again and again."
+    draft: true
+  - id: seed03
+    type: seed
+    text: "Listen for one bird as you walk."
+    draft: true
