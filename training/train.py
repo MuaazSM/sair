@@ -55,6 +55,7 @@ from training.tinker_common import (
     price_for,
     read_jsonl,
     renderer_config,
+    write_jsonl,
     writer_messages,
 )
 
@@ -89,6 +90,7 @@ class TrainConfig:
     eval_max_tokens: int = EVAL_MAX_TOKENS
     train_path: str = str(DATA_DIR / "sft_train.jsonl")
     dev_items_path: str = str(DATA_DIR / "dev.jsonl")
+    phase_budget_usd: float = 2.50  # cap for the WHOLE training phase (all runs in RUNS_DIR)
 
     def validate(self) -> None:
         if not 1 <= self.epochs <= MAX_EPOCHS:
@@ -254,7 +256,7 @@ def run_dev_eval(
     prompt_ids: Callable[[list[dict[str, str]]], list[int]],
     submit: Callable[[list[int]], Callable[[], tuple[str, int]]],
     usage: Usage,
-) -> DevMetrics:
+) -> tuple[DevMetrics, list[str]]:
     futs = []
     for it in items:
         ids = prompt_ids(as_dicts(writer_messages(it)))
@@ -264,7 +266,7 @@ def run_dev_eval(
         text, n_out = fin()
         usage.add_sample(n_prompt, 0, 1, n_out)
         raws.append(text)
-    return score_dev(items, raws)
+    return score_dev(items, raws), raws
 
 
 # --------------------------------------------------------------------------- plan / cost
@@ -331,6 +333,35 @@ def plan(
     }
 
 
+# --------------------------------------------------------------------------- budget
+
+
+def phase_spend(runs_dir: Path = RUNS_DIR, exclude: str | None = None) -> float:
+    """Estimated spend of every training run recorded in ``runs_dir`` (run metadata files)."""
+    total = 0.0
+    if not runs_dir.is_dir():
+        return 0.0
+    for p in sorted(runs_dir.glob("*.json")):
+        if p.name.startswith("_") or p.stem == exclude:
+            continue
+        try:
+            d = json.loads(p.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            continue
+        total += float((d.get("usage") or {}).get("estimated_cost_usd") or 0.0)
+    return total
+
+
+def dev_subset(
+    items: list[dict[str, Any]], limit: int | None, seed: int = 0
+) -> list[dict[str, Any]]:
+    """Deterministic random subset (file order is grouped by seed scenario)."""
+    if not limit or limit >= len(items):
+        return items
+    idx = sorted(random.Random(seed).sample(range(len(items)), limit))
+    return [items[i] for i in idx]
+
+
 # --------------------------------------------------------------------------- train
 
 
@@ -345,15 +376,11 @@ def train(cfg: TrainConfig, run_id: str) -> dict[str, Any]:  # pragma: no cover 
     tok = load_tokenizer(cfg.base_model)
     rend = make_renderer(tok)
     rcfg = write_renderer_config(tok, cfg.base_model)
-    rows = (
-        read_jsonl(Path(cfg.train_path))[: cfg.limit]
-        if cfg.limit
-        else read_jsonl(Path(cfg.train_path))
-    )
+    rows = dev_subset(read_jsonl(Path(cfg.train_path)), cfg.limit, cfg.seed)  # seeded sample
     examples, dropped = build_examples(rows, rend, cfg.max_length)
-    dev_items = read_jsonl(Path(cfg.dev_items_path))
-    if cfg.dev_limit:
-        dev_items = dev_items[: cfg.dev_limit]
+    dev_items = dev_subset(read_jsonl(Path(cfg.dev_items_path)), cfg.dev_limit)
+    prior = phase_spend(exclude=run_id)
+    rates, _ = price_for(cfg.base_model)
     base_lr, lr_source = resolve_lr(cfg.base_model)
     lr = base_lr * cfg.lr_mult
     steps_per_epoch = math.ceil(len(examples) / cfg.batch_size)
@@ -371,8 +398,13 @@ def train(cfg: TrainConfig, run_id: str) -> dict[str, Any]:  # pragma: no cover 
         "examples": len(examples),
         "dropped_overlong": dropped,
         "epochs": [],
+        "phase_spend_before_usd": round(prior, 6),
         "started": time.strftime("%Y-%m-%dT%H:%M:%S"),
     }
+
+    def over_budget(extra_usd: float) -> bool:
+        return prior + usage.cost() + extra_usd > cfg.phase_budget_usd
+
     meta_path = RUNS_DIR / f"{run_id}.json"
     atomic_write_json(meta_path, meta)
 
@@ -393,6 +425,10 @@ def train(cfg: TrainConfig, run_id: str) -> dict[str, Any]:  # pragma: no cover 
             batch = [examples[i] for i in order[b * cfg.batch_size : (b + 1) * cfg.batch_size]]
             if not batch:
                 continue
+            step_cost = sum(e.n_tokens for e in batch) * rates["train"] / 1e6
+            if over_budget(step_cost):
+                meta["stopped"] = "PHASE_BUDGET"
+                break
             data = [to_datum(e) for e in batch]
             mult = compute_schedule_lr_multiplier(cfg.lr_schedule, step, total_steps)
             fb = tc.forward_backward(data, loss_fn="cross_entropy")
@@ -410,6 +446,9 @@ def train(cfg: TrainConfig, run_id: str) -> dict[str, Any]:  # pragma: no cover 
             )
             step += 1
             print(f"epoch={epoch + 1} step={step}/{total_steps} nll={nlls[-1]:.4f}")
+        if meta.get("stopped"):
+            print(f"stopped: phase budget {cfg.phase_budget_usd} USD would be exceeded")
+            break
         name = f"{run_id}-e{epoch + 1}"
         state_path = tc.save_state(name).result().path
         sampler_path = tc.save_weights_for_sampler(name).result().path
@@ -437,7 +476,26 @@ def train(cfg: TrainConfig, run_id: str) -> dict[str, Any]:  # pragma: no cover 
 
             return fin
 
-        dm = run_dev_eval(dev_items, rend.prompt_tokens, submit, usage)
+        eval_cost = (
+            len(dev_items) * (600 * rates["prefill"] + cfg.eval_max_tokens * rates["sample"]) / 1e6
+        )
+        if over_budget(eval_cost):
+            meta["stopped"] = "PHASE_BUDGET_BEFORE_EVAL"
+            meta["epochs"].append(
+                {
+                    "epoch": epoch + 1,
+                    "state_path": state_path,
+                    "sampler_path": sampler_path,
+                    "dev": None,
+                }
+            )
+            break
+        dm, raws = run_dev_eval(dev_items, rend.prompt_tokens, submit, usage)
+        # synthetic dev outputs, local eval output only (never logged)
+        write_jsonl(
+            RUNS_DIR / f"{run_id}.dev_e{epoch + 1}.jsonl",
+            ({"item_id": it["item_id"], "raw": r} for it, r in zip(dev_items, raws, strict=True)),
+        )
         ep = {
             "epoch": epoch + 1,
             "state_path": state_path,
@@ -451,6 +509,8 @@ def train(cfg: TrainConfig, run_id: str) -> dict[str, Any]:  # pragma: no cover 
         meta["usage"] = usage.to_dict()
         atomic_write_json(meta_path, meta)
         print(json.dumps({k: v for k, v in ep.items() if k != "dev_reasons"}))
+    meta["usage"] = usage.to_dict()
+    meta["phase_spend_after_usd"] = round(prior + usage.cost(), 6)
     meta["finished"] = time.strftime("%Y-%m-%dT%H:%M:%S")
     atomic_write_json(meta_path, meta)
     return meta
@@ -478,7 +538,9 @@ def _mean_tokens_from(cfg: TrainConfig, rend: Any) -> tuple[int, float, str]:
 
 def main(argv: Sequence[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description="Sair-Writer LoRA SFT on Tinker (PRD §12.3)")
-    ap.add_argument("--base-model", default=os.environ.get("TINKER_BASE_MODEL", DEFAULT_BASE_MODEL))
+    ap.add_argument(
+        "--base-model", default=os.environ.get("TINKER_BASE_MODEL") or DEFAULT_BASE_MODEL
+    )
     ap.add_argument("--lr-mult", type=float, default=1.0)
     ap.add_argument("--epochs", type=int, default=MAX_EPOCHS)
     ap.add_argument("--batch-size", type=int, default=BATCH_SIZE)
@@ -488,6 +550,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ap.add_argument("--dev-items", default=str(DATA_DIR / "dev.jsonl"))
     ap.add_argument("--run-id", default=None)
     ap.add_argument("--seed", type=int, default=0)
+    ap.add_argument("--phase-budget-usd", type=float, default=2.50)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--assume-train-items", type=int, default=None, help="dry run: scale plan")
     ap.add_argument("--assume-dev-items", type=int, default=None, help="dry run: scale plan")
@@ -502,6 +565,7 @@ def main(argv: Sequence[str] | None = None) -> int:
         seed=a.seed,
         train_path=a.train,
         dev_items_path=a.dev_items,
+        phase_budget_usd=a.phase_budget_usd,
     )
     cfg.validate()
     run_id = a.run_id or f"sft-{time.strftime('%Y%m%d-%H%M%S')}-lr{a.lr_mult:g}"

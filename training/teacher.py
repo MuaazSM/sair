@@ -787,7 +787,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     ap.add_argument("--cache-dir", type=Path, default=TEACHER_CACHE)
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument(
-        "--model", default=os.environ.get("TINKER_TEACHER_MODEL", DEFAULT_TEACHER_MODEL)
+        "--model", default=os.environ.get("TINKER_TEACHER_MODEL") or DEFAULT_TEACHER_MODEL
     )
     ap.add_argument("--tokenizer", default=None, help="HF tokenizer id (default: the model)")
     ap.add_argument("--renderer", choices=["auto", "qwen3_5", "hf"], default="auto")

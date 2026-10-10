@@ -220,3 +220,16 @@ def test_teacher_hf_renderer_matches_qwen_renderer() -> None:
     hf, hf_stop = teacher_prompt_fn(tok, "Qwen/Qwen3.5-397B-A17B", "hf")
     assert ours(msgs) == hf(msgs)
     assert set(ours_stop) <= set(hf_stop)
+
+
+def test_phase_spend_sums_runs_and_dev_subset(tmp_path: Path) -> None:
+    (tmp_path / "a.json").write_text(json.dumps({"usage": {"estimated_cost_usd": 0.25}}))
+    (tmp_path / "b.json").write_text(json.dumps({"usage": {"estimated_cost_usd": 0.5}}))
+    (tmp_path / "_cost.json").write_text(json.dumps({"usage": {"estimated_cost_usd": 9}}))
+    (tmp_path / "a.dev_e1.jsonl").write_text("{}\n")
+    assert train.phase_spend(tmp_path) == pytest.approx(0.75)
+    assert train.phase_spend(tmp_path, exclude="b") == pytest.approx(0.25)
+    items = [{"item_id": str(i)} for i in range(20)]
+    sub = train.dev_subset(items, 5)
+    assert len(sub) == 5 and sub == train.dev_subset(items, 5)
+    assert train.dev_subset(items, None) == items
