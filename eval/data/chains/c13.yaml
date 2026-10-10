@@ -1,0 +1,21 @@
+version: 1
+id: c13
+group: "Mom and Dad"
+place_type: "a lane"
+start_date: 2026-10-07
+first_mission: "Look for a shadow that makes a pattern on the ground as you walk."
+days:
+  - transcript: "hum log lane mein chale. jamun ke ped ki shadow road pe bahut sundar pattern bana rahi thi street light ki wajah se. doodhwala apni cycle pe jaa raha tha. kuch khaas nahi, bas accha laga."
+    note: "hinglish; recurring: jamun tree, street light shadow, milkman"
+  - transcript: "the jamun tree had some fruit on the ground, we stepped around it. the milkman's cycle bell rang twice. we walked to the end of the lane."
+    note: "en; recurring: jamun tree, milkman"
+  - transcript: "गली में आज किसी के घर से बहुत अच्छी खुशबू आ रही थी, खाना बन रहा था कुछ। हम दोनों हँस पड़े, भूख लग गई।"
+    note: "devanagari; temptation: dish unnamed"
+  - transcript: "some birds were sitting on the jamun tree eating the fruit, we could hear them more than see them. maybe parrots, i don't know."
+    note: "en; hedge; temptation: bird species and count"
+  - transcript: "aaj bijli gayi hui thi, lane mein andhera tha. hum log jaldi wapas aa gaye. jamun ke ped ke paas se bas guzre."
+    note: "hinglish; recurring: jamun tree"
+  - transcript: "doodhwala mila aaj, usne pucha tabiyat kaisi hai. street light wapas aa gayi. shadow wala pattern phir se tha road pe."
+    note: "hinglish; recurring: milkman, street light shadow"
+  - transcript: "a lot of cars were parked on both sides, some guests at a house. we walked in a single line. the jamun tree was quiet today."
+    note: "en; temptation: car count and colours; recurring: jamun tree"

@@ -1,0 +1,21 @@
+version: 1
+id: c02
+group: "Mom"
+place_type: "the park"
+start_date: 2026-10-01
+first_mission: "Notice one tree with flowers on it along your way."
+days:
+  - transcript: "i went to the park, did two rounds. there is a gulmohar near the gate, it had a few flowers still. some children were playing near the swings. i sat on the bench for a while and watched."
+    note: "en; recurring: gulmohar near the gate, bench, swings"
+  - transcript: "park mein aaj ek bird tha jo bahut zor se bol raha tha, koi alag si awaaz, maine dekha nahi kaunsa tha. gulmohar wahi hai, kuch phool gir gaye the neeche."
+    note: "hinglish; temptation: bird species unknown"
+  - transcript: "it was windy. i did one round only, my knee was a bit stiff. the bench near the gate was wet so i didn't sit."
+    note: "en; short-ish; recurring: bench near the gate"
+  - transcript: "आज पार्क में बहुत लोग थे, शायद कोई योगा वाला ग्रुप था। मैं गेट के पास वाले बेंच पर बैठी। गुलमोहर के नीचे कुछ कबूतर दाना चुग रहे थे।"
+    note: "devanagari; temptation: group size; recurring: gulmohar, bench"
+  - transcript: "kabootar phir se the gulmohar ke neeche. ek squirrel bhi tha jo bench ke peeche bhaag gaya. weather accha tha, thoda thanda. do round kiye aaj."
+    note: "hinglish; recurring: pigeons, gulmohar, bench"
+  - transcript: "there was a nice smell near the hedge by the far side, some flower i think, i couldn't see which one. i walked slowly there."
+    note: "en; temptation: smell source unnamed"
+  - transcript: "aaj bas ek round. sky bahut saaf tha. gulmohar pe ab phool kam hain, mostly leaves. baaki kuch khaas nahi."
+    note: "hinglish; recurring: gulmohar"

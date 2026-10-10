@@ -1,0 +1,21 @@
+version: 1
+id: c05
+group: "Dad"
+place_type: "the market"
+start_date: 2026-09-25
+first_mission: "Count the shops you pass on your walk."
+days:
+  - transcript: "went through the market lane. the fruit stall at the start had bananas and some mangoes, very late for mangoes. the cobbler was sitting under the peepal tree as usual. i counted maybe twelve shops, i lost count near the end."
+    note: "en; recurring: fruit stall, cobbler under the peepal; hedge"
+  - transcript: "market mein bahut bheed thi aaj, festival aa raha hai na. lights lagi thi shops pe. main jaldi nikal gaya."
+    note: "hinglish; temptation: crowd, light colours not given"
+  - transcript: "मोची आज भी पीपल के नीचे बैठा था। फल वाले के पास केले थे। एक गाय बीच में खड़ी थी, सब उसके चारों ओर से जा रहे थे।"
+    note: "devanagari; recurring: cobbler, peepal, fruit stall"
+  - transcript: "there was a smell of something frying from one of the stalls, very good, i don't know what it was. i didn't buy anything."
+    note: "en; temptation: food unnamed"
+  - transcript: "peepal ke paas aaj kuch tote the shayad, green green, bahut shor kar rahe the. cobbler ne bola roz aate hain."
+    note: "hinglish; hedge; recurring: peepal, cobbler"
+  - transcript: "rain. i stood under the shop awning for some time and came back."
+    note: "en; short note"
+  - transcript: "market was decorated today, lots of flowers hanging at the shop fronts. the fruit stall had pomegranates. the cow was there again near the peepal."
+    note: "en; temptation: flower colour/kind; recurring: fruit stall, cow, peepal"

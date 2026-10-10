@@ -1,0 +1,21 @@
+version: 1
+id: c14
+group: "Dad"
+place_type: "the park"
+start_date: 2026-09-22
+first_mission: "Pause for a moment at one spot you usually pass quickly."
+days:
+  - transcript: "i stopped near the old well at the back of the park, i always walk past it. there is a tamarind tree next to it. the gardener was watering the hedges. i stood there for a minute, it was quiet."
+    note: "en; recurring: old well, tamarind tree, gardener"
+  - transcript: "आज इमली के पेड़ के पास फिर रुका। माली ने बताया कि यह पेड़ बहुत पुराना है। कुएँ में पानी नहीं है अब।"
+    note: "devanagari; recurring: tamarind, gardener, well"
+  - transcript: "park mein koi bird bahut ajeeb awaaz kar raha tha, jaise koi seeti baja raha ho. maine dhoondha par dikha nahi."
+    note: "hinglish; temptation: bird species"
+  - transcript: "the flowers along the main path were out, the gardener has done a good job. i walked slowly there."
+    note: "en; temptation: flower colour and kind not given; recurring: gardener"
+  - transcript: "imli ke ped pe aaj bandar the, teen chaar, maali unhe bhaga raha tha. main door se dekhta raha."
+    note: "hinglish; recurring: tamarind, gardener; hedge on count"
+  - transcript: "cold wind today. one round and home."
+    note: "en; short note"
+  - transcript: "बंदर आज नहीं थे। कुएँ के पास बैठ कर थोड़ा आराम किया। इमली के पेड़ के नीचे बहुत सारे पत्ते गिरे थे।"
+    note: "devanagari; recurring: well, tamarind"

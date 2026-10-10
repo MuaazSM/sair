@@ -1,0 +1,21 @@
+version: 1
+id: c04
+group: "Mom and Dad"
+place_type: "the society compound"
+start_date: 2026-10-03
+first_mission: "Count the trees you pass along your way."
+days:
+  - transcript: "hum log compound ke chaar chakkar lagaye. watchman ne bataya ki gate ke paas wala ashoka tree kaatne wale hain, pata nahi sach hai ya nahi. bachche cycle chala rahe the. hum ne aath trees gine, ya shayad nau."
+    note: "hinglish; recurring: ashoka tree by the gate, watchman; hedge on count"
+  - transcript: "today the compound was quiet. the ashoka near the gate is still there. we saw a cat sleeping on a parked car. the watchman was listening to the radio."
+    note: "en; recurring: ashoka, watchman, cat"
+  - transcript: "कंपाउंड में आज कोई पक्षी गा रहा था, बहुत सुंदर आवाज़ थी, पता नहीं कौन सा था। हम दोनों रुक कर सुनते रहे। अशोक के पेड़ की तरफ़ से आ रही थी शायद।"
+    note: "devanagari; temptation: bird species unknown"
+  - transcript: "billi phir se thi, same car ke upar. aaj thodi garmi thi. we did three rounds. watchman ne kaha kal paani nahi aayega."
+    note: "hinglish; recurring: cat on the car, watchman"
+  - transcript: "the flowers in the society garden were out today, the gardener must have planted new ones. we liked them. the garden smelled fresh, maybe he watered it."
+    note: "en; temptation: flower colour and kind not given"
+  - transcript: "बस दो चक्कर लगाए आज। थकान थी। गेट के पास वाला पेड़ अभी भी है।"
+    note: "devanagari; short note; recurring: tree by the gate"
+  - transcript: "aaj compound mein kaafi log the, koi meeting thi clubhouse mein. we walked on the back side where it was quiet. ek gilahri ashoka pe upar neeche bhaag rahi thi."
+    note: "hinglish; temptation: how many people; recurring: ashoka"

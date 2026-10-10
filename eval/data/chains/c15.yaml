@@ -1,0 +1,21 @@
+version: 1
+id: c15
+group: "Mom"
+place_type: "the society compound"
+start_date: 2026-10-05
+first_mission: "Look for one colour that you see again and again."
+days:
+  - transcript: "compound mein aaj sab jagah peela hi peela dikh raha tha, amaltas ke phool gire the gate ke paas, aur kuch balconies mein bhi peeli saari sukh rahi thi. main hans padi."
+    note: "hinglish; recurring: amaltas near the gate, yellow"
+  - transcript: "the amaltas near the gate still has flowers. the newspaper man was collecting money from the watchman's cabin. two dogs were sitting near the gate."
+    note: "en; recurring: amaltas, watchman's cabin, two dogs"
+  - transcript: "आज कंपाउंड में बच्चों का कोई खेल चल रहा था, बहुत शोर था। कितने बच्चे थे गिनती नहीं की। मैं पीछे की तरफ़ चली गई।"
+    note: "devanagari; temptation: child count, game kind"
+  - transcript: "kutte aaj bhi gate ke paas the. amaltas ke neeche phool bichhe hue the, carpet jaisa. maine ek photo ka socha phir yaad aaya phone ghar pe hai."
+    note: "hinglish; recurring: dogs, amaltas"
+  - transcript: "some new plants were put in the pots near the lift, i didn't see what they were. the compound smelled of fresh paint, maybe they painted something."
+    note: "en; hedge; temptation: plant kind, paint colour"
+  - transcript: "bas do round. thakaan thi."
+    note: "hinglish; short note"
+  - transcript: "अमलतास के फूल अब कम हो गए हैं। वॉचमैन के केबिन के पास दोनों कुत्ते सो रहे थे। हवा अच्छी थी।"
+    note: "devanagari; recurring: amaltas, watchman's cabin, two dogs"

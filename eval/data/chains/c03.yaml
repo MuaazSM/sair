@@ -1,0 +1,21 @@
+version: 1
+id: c03
+group: "Dad"
+place_type: "the sea-face"
+start_date: 2026-09-20
+first_mission: "Look at the colour of the sky above you."
+days:
+  - transcript: "walked along the sea-face till the second bench. the tide was high, waves coming right up to the wall. the sky was orange near the water. the chai stall was open, i didn't have any."
+    note: "en; recurring: second bench, sea wall, chai stall"
+  - transcript: "sea-face pe aaj bahut log the, weekend hai na. kuch log photo le rahe the. hawa tez thi. chai stall pe line thi."
+    note: "hinglish; temptation: crowd count"
+  - transcript: "some birds were flying low over the water, white ones i think, maybe gulls, i am not sure. the tide was out, a lot of rocks showing."
+    note: "en; hedge; temptation: bird species/count"
+  - transcript: "समुद्र किनारे आज हवा बहुत ठंडी थी। दूसरी बेंच पर बैठा, लहरें देखीं। चाय वाला आज नहीं आया था। आसमान में बादल थे।"
+    note: "devanagari; recurring: second bench, chai stall"
+  - transcript: "aaj chai pi stall pe. waves chhoti thi. ek dog tha jo wall ke paas baitha tha, shayad stall wale ka hai."
+    note: "hinglish; hedge; recurring: chai stall, wall"
+  - transcript: "short walk. it drizzled a little. came back."
+    note: "en; short note"
+  - transcript: "there were boats far out, a few of them, i couldn't count properly. the sky was very clear today. i sat on the second bench for some time, the dog was there again near the wall."
+    note: "en; temptation: boat count; recurring: second bench, dog"

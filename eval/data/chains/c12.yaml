@@ -1,0 +1,21 @@
+version: 1
+id: c12
+group: "Mom"
+place_type: "the sea-face"
+start_date: 2026-09-23
+first_mission: "Compare the sky now with the sky when you left home."
+days:
+  - transcript: "sea-face pe gayi aaj. jab ghar se nikli tab aasman neela tha, wahan pahunchi to pink sa ho gaya tha. bhutta wala tha corner pe, maine ek bhutta khaya."
+    note: "hinglish; recurring: corn seller at the corner"
+  - transcript: "the waves were big today. i stayed back from the wall. the corn seller was there. some people were flying kites near the steps."
+    note: "en; temptation: kite count and colour; recurring: corn seller"
+  - transcript: "आज समुद्र के किनारे बहुत हवा थी, बाल उड़ रहे थे। भुट्टे वाला नहीं था। कुछ पक्षी पानी के ऊपर उड़ रहे थे, कौन से थे पता नहीं।"
+    note: "devanagari; temptation: bird species and count"
+  - transcript: "it was cloudy all the way. nothing much to compare. i walked till the steps and back."
+    note: "en"
+  - transcript: "bhutta wala wapas aa gaya. aaj usne nimbu masala lagaya. ek kutta tha steps pe, roz wala hi lagta hai."
+    note: "hinglish; hedge; recurring: corn seller, dog on the steps"
+  - transcript: "there were many lights on the boats far away, looked very pretty. i sat on the steps and watched them."
+    note: "en; temptation: boat and light count, colours"
+  - transcript: "बस थोड़ी देर बैठी सीढ़ियों पर। कुत्ता फिर था।"
+    note: "devanagari; short note; recurring: steps, dog"

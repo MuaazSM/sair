@@ -1,0 +1,21 @@
+version: 1
+id: c09
+group: "Mom"
+place_type: "the society compound"
+start_date: 2026-09-30
+first_mission: "Find one leaf with a shape you like."
+days:
+  - transcript: "compound mein do round kiye. jo badam ka ped hai parking ke paas, uske patte bade bade hain, maine ek patta uthaya, accha shape tha. watchman uncle chai pi rahe the."
+    note: "hinglish; recurring: almond tree by the parking, watchman"
+  - transcript: "the almond tree leaves are turning, some are going red at the edges. a few ladies were sitting on the bench talking. i walked alone."
+    note: "en; recurring: almond tree, bench"
+  - transcript: "आज कंपाउंड में एक बिल्ली के बच्चे थे, कितने थे पता नहीं, झाड़ी में छुपे थे। उनकी आवाज़ आ रही थी बस।"
+    note: "devanagari; temptation: kitten count and colour"
+  - transcript: "some bird was making a loud noise on the water tank, i don't know which one. watchman said it comes every day."
+    note: "en; temptation: bird species"
+  - transcript: "badam ke ped ke neeche bahut patte gire the aaj. hawa tez thi. bench khaali tha, main baithi thodi der."
+    note: "hinglish; recurring: almond tree, bench"
+  - transcript: "बिल्ली के बच्चे आज बाहर आ गए थे, पार्किंग के पास खेल रहे थे। वॉचमैन ने कहा उनकी माँ पास में ही है।"
+    note: "devanagari; recurring: kittens, parking, watchman"
+  - transcript: "rain stopped just before i went down. everything smelled of wet earth. the almond leaves were shining."
+    note: "en; recurring: almond tree"

@@ -1,0 +1,21 @@
+version: 1
+id: c20
+group: "Dad"
+place_type: "the society compound"
+start_date: 2026-09-29
+first_mission: "Compare the colours of two leaves that you pass."
+days:
+  - transcript: "compound mein do patte dekhe, ek champa ka jo bilkul hara tha aur ek badam ka jo laal ho raha tha. champa ka ped clubhouse ke paas hai. watchman ne salaam kiya."
+    note: "hinglish; recurring: champa tree near the clubhouse, almond tree, watchman"
+  - transcript: "the champa near the clubhouse had a few flowers, nice smell. the watchman was sweeping the entrance. a cat ran under the cars."
+    note: "en; recurring: champa, clubhouse, watchman, cat"
+  - transcript: "a bird was hopping on the clubhouse lawn, picking at the grass, a small brown one maybe. i don't know the name."
+    note: "en; hedge; temptation: bird species"
+  - transcript: "आज कंपाउंड में पेंटिंग का काम चल रहा था, दीवारों पर नया रंग लग रहा था। कौन सा रंग था ठीक से नहीं देखा, शाम हो गई थी।"
+    note: "devanagari; temptation: paint colour"
+  - transcript: "billi aaj clubhouse ki seedhiyon pe baithi thi. champa ki khushboo bahut tez thi aaj. do round kiye."
+    note: "hinglish; recurring: cat, champa, clubhouse"
+  - transcript: "rain all day. did not go down much, just stood in the lobby and watched."
+    note: "en; short note"
+  - transcript: "watchman ne bataya ki compound mein kuch naye log shift hue hain. bahut saamaan tha truck mein. main side se nikal gaya."
+    note: "hinglish; temptation: how many people, truck colour; recurring: watchman"

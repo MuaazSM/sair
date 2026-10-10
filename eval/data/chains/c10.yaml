@@ -1,0 +1,21 @@
+version: 1
+id: c10
+group: "Mom and Dad"
+place_type: "the park"
+start_date: 2026-09-27
+first_mission: "Watch the clouds move across the sky above you."
+days:
+  - transcript: "we went to the big park, walked around the pond. there were ducks in the pond, four of them. the jogging track was crowded. the clouds were moving fast, we watched them from the bench near the pond."
+    note: "en; recurring: pond, ducks, bench near the pond"
+  - transcript: "aaj pond mein ducks nahi dikhe, shayad doosri side the. ek bagula tha kinare pe, bilkul chup chaap khada tha. hum log bench pe baithe."
+    note: "hinglish; recurring: pond, heron, bench; hedge"
+  - transcript: "पार्क में आज बहुत लोग थे, कोई दौड़ का प्रोग्राम था। हम लोग तालाब की तरफ़ चले गए, वहाँ शांति थी।"
+    note: "devanagari; temptation: crowd count, event kind"
+  - transcript: "the ducks were back, all of them. some flowers were blooming near the pond fence, we didn't go close to see what kind."
+    note: "en; temptation: flower colour and kind not given; recurring: ducks, pond"
+  - transcript: "bagula phir se tha. aaj thoda humid tha, pasina aa gaya. bas ek round."
+    note: "hinglish; recurring: heron"
+  - transcript: "we heard a bird calling from the trees across the pond, again and again, we could not spot it. maybe it was a koel, maybe not."
+    note: "en; hedge; temptation: bird species"
+  - transcript: "aaj sky bahut saaf thi, ek bhi badal nahi. ducks pond ke beech mein the. bench pe baith ke humne bas dekha."
+    note: "hinglish; recurring: ducks, pond, bench"

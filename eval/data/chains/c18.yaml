@@ -1,0 +1,21 @@
+version: 1
+id: c18
+group: "Mom"
+place_type: "a lane"
+start_date: 2026-09-26
+first_mission: "Find a spot on your path where the light looks different."
+days:
+  - transcript: "lane ke beech mein ek jagah hai jahan do buildings ke beech se roshni aati hai, wahan sab sunehra lag raha tha. wahan ek tulsi ka gamla hai kisi ke darwaze pe. phoolwali ki dukaan khuli thi."
+    note: "hinglish; recurring: gap between buildings, tulsi pot, flower shop"
+  - transcript: "the light was not there today, it was cloudy. the tulsi pot was watered, the soil was wet. a small dog followed me for a while."
+    note: "en; recurring: tulsi pot, small dog"
+  - transcript: "फूल वाली की दुकान पर आज बहुत सारे फूल थे, कुछ त्योहार आने वाला है। मैंने कुछ नहीं लिया।"
+    note: "devanagari; temptation: flower kind, colour and count"
+  - transcript: "chhota kutta aaj phir mere peeche peeche aaya. lane ke end tak. phir wapas chala gaya."
+    note: "hinglish; recurring: small dog"
+  - transcript: "a bird was singing from one of the balconies, maybe a pet bird in a cage, i couldn't see it."
+    note: "en; hedge; temptation: bird species"
+  - transcript: "आज रोशनी फिर से उसी जगह पर थी, दोनों बिल्डिंग के बीच। तुलसी के गमले के पास कुछ दीये रखे थे।"
+    note: "devanagari; temptation: lamp count; recurring: light gap, tulsi pot"
+  - transcript: "drizzle. short walk. the dog wasn't there."
+    note: "en; short note; recurring: dog"

@@ -1,0 +1,21 @@
+version: 1
+id: c17
+group: "Dad"
+place_type: "the school gate road"
+start_date: 2026-10-08
+first_mission: "Count your steps from one gate to the next."
+days:
+  - transcript: "school ke gate se agle gate tak maine kadam gine, takreeban do sau. beech mein ek bus stop hai, wahan ek neem ka ped hai. chana wala bus stop pe khada tha."
+    note: "hinglish; recurring: bus stop, neem, chana seller; hedge on count"
+  - transcript: "the chana seller gave me a small packet, roasted chana. the neem at the bus stop was full of crows. the school bus went past."
+    note: "en; recurring: chana seller, neem at the bus stop, crows"
+  - transcript: "आज सड़क पर बहुत गाड़ियाँ थीं, शायद कोई जाम था आगे। मैं फुटपाथ पर ही चला, ज़्यादा दूर नहीं गया।"
+    note: "devanagari; temptation: vehicle count and kinds"
+  - transcript: "i saw a bird with a long tail on the school wall, it flew off before i could see properly."
+    note: "en; temptation: bird species and colour"
+  - transcript: "neem ke ped ke neeche aaj chana wala nahi tha. kauve phir the. hawa thandi thi, accha laga."
+    note: "hinglish; recurring: neem, chana seller, crows"
+  - transcript: "बस स्टॉप तक गया और लौट आया। आज कुछ खास नहीं।"
+    note: "devanagari; short note; recurring: bus stop"
+  - transcript: "some kind of poster was put up on the school gate, i couldn't read it without my glasses. the chana seller was back at the bus stop."
+    note: "en; temptation: poster text and colour; recurring: chana seller, bus stop"

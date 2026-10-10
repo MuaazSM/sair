@@ -21,7 +21,7 @@ from eval.chains import (
     summarise,
 )
 from eval.prose_planner import build_prose_planner_prompt
-from hub.prompts.builders import ChatMessage, MissionText, WalkerGroup
+from hub.prompts.builders import REGEN_HEADER, ChatMessage, MissionText, WalkerGroup
 
 EXAMPLES = Path(chains.__file__).resolve().parent / "data" / "chains" / "examples"
 G = "Mom and Dad"
@@ -262,3 +262,167 @@ def test_summary_and_cli(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> 
     assert (tmp_path / "o" / "contamination.csv").is_file()
     printed = capsys.readouterr().out
     assert "crow" not in printed and "parrot" not in printed
+
+
+# --------------------------------------------------------------------------- PRD §13.4 headline
+
+CHAINS_DIR = Path(chains.__file__).resolve().parent / "data" / "chains"
+
+
+def regen_rescue_planner(messages: list[ChatMessage]) -> str:
+    """First attempt invents a parrot AND breaks a non-provenance rule (time of day), so the
+    safety regen replaces it with a clean mission: raw and served measures diverge."""
+    user = messages[-1].content
+    if REGEN_HEADER in user:
+        return json.dumps(
+            {"type": "sense", "references": [], "text": "Can you spot the crow near the gate?"}
+        )
+    return json.dumps(
+        {
+            "type": "sense",
+            "references": [],
+            "text": "Can you spot the parrot near the gate this evening?",
+        }
+    )
+
+
+def test_headline_is_raw_planner_output_when_filter_off() -> None:
+    # PRD §13.4: "Headline runs use the raw planner output with the FR-M4 provenance filter
+    # OFF in both arms" -> the regen/fallback must not hide what the planner first wrote.
+    res = run_chain(
+        SPEC,
+        "A",
+        StubWriter(invent_parrot),
+        StubPlanner(regen_rescue_planner),
+        memory="fact",
+        provenance=False,
+    )
+    d1 = res.days[0]
+    assert "time_of_day" in d1.planner_attempts[0].reasons
+    assert d1.mission_out == "Can you spot the crow near the gate?"
+    assert d1.contaminated_raw is True and d1.raw_orphans == ["parrot"]
+    assert d1.contaminated_served is False and d1.served_orphans == []
+    assert d1.contaminated is True and d1.orphans == ["parrot"]  # headline = raw
+    assert res.headline_measure == "raw_planner_output"
+    assert res.first_contaminated_day == 1 == res.first_contaminated_day_raw
+    assert res.first_contaminated_day_served is None
+    dumped = res.to_dict()
+    assert dumped["first_contaminated_day"] == 1 and dumped["first_contaminated_day_served"] is None
+    assert chains.ChainResult.from_dict(dumped).to_dict() == dumped
+
+    row = summarise([res], n_resamples=100)[0]
+    assert row["headline_measure"] == "raw_planner_output" and row["headline"] is True
+    assert row["contaminated_by_day"][1] == 1.0 == row["raw_contaminated_by_day"][1]
+    assert row["served_contaminated_by_day"][1] == 0.0
+    assert row["first_contaminated_day"] == [1] and row["served_first_contaminated_day"] == [None]
+    assert row["pct_contaminated_by_last_day"]["point"] == 1.0
+    assert row["served_pct_contaminated_by_last_day"]["point"] == 0.0
+
+
+def test_headline_is_served_mission_when_filter_on() -> None:
+    # PRD §13.4: filter-on runs are reported separately as "what production does".
+    res = run_chain(
+        SPEC,
+        "A",
+        StubWriter(invent_parrot),
+        StubPlanner(regen_rescue_planner),
+        memory="fact",
+        provenance=True,
+    )
+    d1 = res.days[0]
+    assert d1.contaminated_raw is True
+    assert d1.contaminated is d1.contaminated_served is False
+    assert res.headline_measure == "served_mission"
+    assert res.first_contaminated_day is None and res.first_contaminated_day_raw == 1
+    row = summarise([res], n_resamples=100)[0]
+    assert row["headline_measure"] == "served_mission" and row["headline"] is False
+    assert row["contaminated_by_day"][1] == 0.0 and row["raw_contaminated_by_day"][1] == 1.0
+
+
+def test_unparsed_raw_output_is_counted_not_hidden() -> None:
+    res = run_chain(
+        SPEC,
+        "A",
+        StubWriter(invent_parrot),
+        StubPlanner(["not json"]),
+        memory="fact",
+        provenance=False,
+    )
+    assert all(d.contaminated_raw is None and not d.contaminated for d in res.days)
+    assert all(d.mission_out_source == "fallback" for d in res.days)
+    row = summarise([res], n_resamples=100)[0]
+    assert row["raw_unparsed_missions"] == len(SPEC.days)
+    assert row["fallback_missions"] == len(SPEC.days)
+
+
+def test_old_checkpoint_without_split_fields_still_loads() -> None:
+    old = {
+        "chain_id": "t01",
+        "system": "A",
+        "memory": "fact",
+        "provenance": False,
+        "days": [
+            {
+                "day": 1,
+                "mission_in": "m",
+                "writer_origin": "template",
+                "writer_passed": True,
+                "writer_unsupported": 0,
+                "entry": None,
+                "verified_facts": 0,
+                "planner_attempts": [],
+                "contaminated": False,
+                "contaminated_raw": None,
+            }
+        ],
+    }
+    assert chains.ChainResult.from_dict(old).first_contaminated_day is None
+
+
+def test_stub_cli_dry_run(tmp_path: Path, capsys: pytest.CaptureFixture[str]) -> None:
+    out = tmp_path / "o"
+    code = chains.main(
+        [
+            "--chains-dir",
+            str(EXAMPLES),
+            "--systems",
+            "A",
+            "--stub",
+            "--out",
+            str(out),
+            "--resamples",
+            "100",
+        ]
+    )
+    assert code == 0
+    rows = json.loads((out / "contamination.json").read_text("utf-8"))["rows"]
+    assert {(r["memory"], r["provenance"]) for r in rows} == {
+        (m, p) for m in ("prose", "fact") for p in ("off", "on")
+    }
+    assert all(r["n_chains"] == 2 for r in rows)
+    assert all(r["raw_unparsed_missions"] == 0 for r in rows)
+    assert chains.main(["--chains-dir", str(EXAMPLES), "--systems", "D", "--stub"]) == 2
+    printed = capsys.readouterr().out
+    assert "crow" not in printed and "koel" not in printed
+
+
+# --------------------------------------------------------------------------- committed chain set
+
+_GROUPS = {"Mom and Dad", "Mom", "Dad"}
+_ALLOWED_CAPS = {"I", "Mom", "Dad", "I'm", "I've", "I'd", "I'll", "Ok", "OK"}
+
+
+def test_committed_chain_set() -> None:
+    from hub.safety import check_fallback_text
+
+    specs = chains.load_chains(CHAINS_DIR)
+    assert [s.id for s in specs] == [f"c{i:02d}" for i in range(1, 21)]
+    for s in specs:
+        assert s.version == 1 and s.group in _GROUPS and s.place_type
+        assert len(s.days) == 7
+        assert check_fallback_text(s.first_mission).passed, s.id
+        for day in s.days:
+            assert 1 <= len(day.transcript.split()) <= 90  # short notes allowed (PRD §12.1)
+            # no names: a capitalised Latin token only at a sentence start or a role word
+            for m in re.finditer(r"(?<![.!?]\s)(?<!^)\b[A-Z][a-z']+\b", day.transcript):
+                assert m.group(0) in _ALLOWED_CAPS, (s.id, "capitalised token")

@@ -28,10 +28,24 @@ Contamination (mission planned after day p): the mission's concrete details
 (``extract_details`` strict, entry-side rules) minus generic walk words (``walk_words.yaml``
 generic nouns, non-number lexicon ids) and weekday names, that are absent from ALL
 transcripts of days 1..p (``extract_details`` inclusive, alias-aware; person-name details
-by boundaried presence in the normalised transcripts). ``contaminated`` is evaluated on the
-SERVED mission; ``contaminated_raw`` on the planner's first parsed output; ``echo_only``
-marks a contaminated mission whose orphan details all appear in a mission the planner was
-shown (so they did not come from memory).
+by boundaried presence in the normalised transcripts). ``echo_only`` marks a contaminated
+mission whose orphan details all appear in a mission the planner was shown (so they did not
+come from memory).
+
+Which mission is measured (PRD §13.4). Each day is scored twice:
+
+* ``*_raw``: the planner's RAW output, i.e. its first parsed mission for that day, before
+  any safety regeneration or fallback (``None`` when no attempt parsed);
+* ``*_served``: the mission actually served (after regen/fallback), which also feeds the
+  next day's writer and the planner's "recent missions".
+
+The HEADLINE fields (``orphans``/``contaminated``/``echo_only`` per day,
+``first_contaminated_day`` per chain, and ``contaminated_by_day`` /
+``first_contaminated_day`` / ``pct_contaminated_by_last_day`` in the summary) use the RAW
+output for provenance-OFF runs ("headline runs use the raw planner output with the FR-M4
+provenance filter OFF in both arms") and the SERVED mission for provenance-ON runs ("what
+production does"). The other measure is always kept under ``raw_*`` / ``served_*`` names;
+each summary row says which one its headline uses in ``headline_measure``.
 
 Resumable: every model call is cached under ``eval/cache/chains/`` keyed by
 (backend id, prompt sha) and every finished (chain, system, memory, provenance) run is
@@ -88,6 +102,7 @@ __all__ = [
     "main",
     "run_chain",
     "run_chains",
+    "stub_plan",
     "summarise",
 ]
 
@@ -211,10 +226,18 @@ class DayRecord:
     planner_attempts: list[PlannerAttempt] = field(default_factory=list)
     mission_out: str = ""
     mission_out_source: str = "fallback"  # model | fallback
+    # headline measure: raw planner output when provenance is off, served mission when on
     orphans: list[str] = field(default_factory=list)
     contaminated: bool = False
-    contaminated_raw: bool | None = None
     echo_only: bool = False
+    # raw planner output (first parsed mission of the day; None = nothing parsed)
+    raw_orphans: list[str] | None = None
+    contaminated_raw: bool | None = None
+    raw_echo_only: bool = False
+    # served mission (after safety regen / fallback)
+    served_orphans: list[str] = field(default_factory=list)
+    contaminated_served: bool = False
+    served_echo_only: bool = False
 
 
 @dataclass
@@ -227,12 +250,29 @@ class ChainResult:
     error: str | None = None
 
     @property
+    def headline_measure(self) -> str:
+        """PRD §13.4: raw planner output with the filter off; served mission with it on."""
+        return "served_mission" if self.provenance else "raw_planner_output"
+
+    @property
     def first_contaminated_day(self) -> int | None:
+        """Headline: first day whose headline-measured mission is contaminated."""
         return next((d.day for d in self.days if d.contaminated), None)
+
+    @property
+    def first_contaminated_day_raw(self) -> int | None:
+        return next((d.day for d in self.days if d.contaminated_raw), None)
+
+    @property
+    def first_contaminated_day_served(self) -> int | None:
+        return next((d.day for d in self.days if d.contaminated_served), None)
 
     def to_dict(self) -> dict[str, Any]:
         d = asdict(self)
+        d["headline_measure"] = self.headline_measure
         d["first_contaminated_day"] = self.first_contaminated_day
+        d["first_contaminated_day_raw"] = self.first_contaminated_day_raw
+        d["first_contaminated_day_served"] = self.first_contaminated_day_served
         return d
 
     @classmethod
@@ -380,15 +420,30 @@ def run_chain(
         else:
             dr.mission_out, dr.mission_out_source = _fallback(d, recent), "fallback"
 
-        orphans, echo = contamination(
+        s_orphans, s_echo = contamination(
             dr.mission_out, transcripts, spec.group, shown_missions=recent
         )
-        dr.orphans, dr.contaminated, dr.echo_only = orphans, bool(orphans), echo
+        dr.served_orphans, dr.contaminated_served, dr.served_echo_only = (
+            s_orphans,
+            bool(s_orphans),
+            s_echo,
+        )
         if first_text is not None:
-            raw_orphans, _ = contamination(
+            r_orphans, r_echo = contamination(
                 first_text, transcripts, spec.group, shown_missions=recent
             )
-            dr.contaminated_raw = bool(raw_orphans)
+            dr.raw_orphans, dr.contaminated_raw, dr.raw_echo_only = (
+                r_orphans,
+                bool(r_orphans),
+                r_echo,
+            )
+        # PRD §13.4: headline = raw planner output (filter off) / served mission (filter on)
+        if provenance:
+            dr.orphans, dr.contaminated, dr.echo_only = list(s_orphans), bool(s_orphans), s_echo
+        else:
+            dr.orphans = list(dr.raw_orphans or [])
+            dr.contaminated = bool(dr.contaminated_raw)
+            dr.echo_only = dr.raw_echo_only
         res.days.append(dr)
         mission = dr.mission_out
         served.append(mission)
@@ -456,61 +511,116 @@ def run_chains(
     return results
 
 
+_MEASURES: dict[str, tuple[str, str]] = {
+    # measure -> (DayRecord flag, ChainResult first-day property)
+    "headline": ("contaminated", "first_contaminated_day"),
+    "raw": ("contaminated_raw", "first_contaminated_day_raw"),
+    "served": ("contaminated_served", "first_contaminated_day_served"),
+}
+
+
+def _measure(
+    rs: Sequence[ChainResult], n_days: int, measure: str, n_resamples: int
+) -> dict[str, Any]:
+    flag, first_attr = _MEASURES[measure]
+    firsts: list[int | None] = [getattr(r, first_attr) for r in rs]
+    by_day: dict[int, float] = {}
+    per_day: dict[int, float] = {}
+    for p in range(1, n_days + 1):
+        by_day[p] = sum(1 for f in firsts if f is not None and f <= p) / len(rs)
+        on_day = [d for r in rs for d in r.days if d.day == p]
+        per_day[p] = sum(1 for d in on_day if getattr(d, flag)) / len(on_day) if on_day else 0.0
+    final = [Ratio(1.0 if f is not None else 0.0, 1) for f in firsts]
+    ci = plain_bootstrap(final, n_resamples=n_resamples)
+    return {
+        "pct_contaminated_by_last_day": ci.to_dict(),
+        "contaminated_by_day": by_day,
+        "mission_contamination_rate_by_day": per_day,
+        "first_contaminated_day": firsts,
+        "contaminated_missions": sum(1 for r in rs for d in r.days if getattr(d, flag)),
+    }
+
+
 def summarise(results: Sequence[ChainResult], *, n_resamples: int = 10_000) -> list[dict[str, Any]]:
     """Per (system, memory, provenance): % chains contaminated by each planning day, day of
-    first contamination, per-day mission contamination rate; plain bootstrap over chains."""
+    first contamination, per-day mission contamination rate; plain bootstrap over chains.
+
+    PRD §13.4: the unprefixed (headline) fields measure the RAW planner output when the
+    provenance filter is off and the SERVED mission when it is on (``headline_measure``).
+    ``raw_*`` and ``served_*`` carry both measures for every row."""
     groups: dict[tuple[str, str, bool], list[ChainResult]] = {}
     for r in results:
         groups.setdefault((r.system, r.memory, r.provenance), []).append(r)
     rows: list[dict[str, Any]] = []
     for (system, memory, prov), rs in sorted(groups.items()):
         n_days = max((len(r.days) for r in rs), default=0)
-        by_day: dict[int, float] = {}
-        per_day: dict[int, float] = {}
-        for p in range(1, n_days + 1):
-            by_day[p] = sum(
-                1 for r in rs if (f := r.first_contaminated_day) is not None and f <= p
-            ) / len(rs)
-            on_day = [d for r in rs for d in r.days if d.day == p]
-            per_day[p] = sum(d.contaminated for d in on_day) / len(on_day) if on_day else 0.0
-        final = [Ratio(1.0 if r.first_contaminated_day is not None else 0.0, 1) for r in rs]
-        ci = plain_bootstrap(final, n_resamples=n_resamples)
-        firsts = [r.first_contaminated_day for r in rs]
-        rows.append(
-            {
-                "system": system,
-                "memory": memory,
-                "provenance": "on" if prov else "off",
-                "headline": not prov,
-                "n_chains": len(rs),
-                "n_days": n_days,
-                "pct_contaminated_by_last_day": ci.to_dict(),
-                "contaminated_by_day": by_day,
-                "mission_contamination_rate_by_day": per_day,
-                "first_contaminated_day": firsts,
-                "raw_contaminated_missions": sum(
-                    1 for r in rs for d in r.days if d.contaminated_raw
-                ),
-                "echo_only_missions": sum(1 for r in rs for d in r.days if d.echo_only),
-                "fallback_missions": sum(
-                    1 for r in rs for d in r.days if d.mission_out_source == "fallback"
-                ),
-                "missions": sum(len(r.days) for r in rs),
-            }
+        head = _measure(rs, n_days, "headline", n_resamples)
+        raw = _measure(rs, n_days, "raw", n_resamples)
+        served = _measure(rs, n_days, "served", n_resamples)
+        row: dict[str, Any] = {
+            "system": system,
+            "memory": memory,
+            "provenance": "on" if prov else "off",
+            "headline": not prov,
+            "headline_measure": "served_mission" if prov else "raw_planner_output",
+            "n_chains": len(rs),
+            "n_days": n_days,
+            **{k: v for k, v in head.items() if k != "contaminated_missions"},
+        }
+        for prefix, m in (("raw", raw), ("served", served)):
+            for k, v in m.items():
+                row[f"{prefix}_{k}"] = v
+        row["raw_unparsed_missions"] = sum(
+            1 for r in rs for d in r.days if d.contaminated_raw is None
         )
+        row["echo_only_missions"] = sum(1 for r in rs for d in r.days if d.echo_only)
+        row["raw_echo_only_missions"] = sum(1 for r in rs for d in r.days if d.raw_echo_only)
+        row["served_echo_only_missions"] = sum(1 for r in rs for d in r.days if d.served_echo_only)
+        row["fallback_missions"] = sum(
+            1 for r in rs for d in r.days if d.mission_out_source == "fallback"
+        )
+        row["missions"] = sum(len(r.days) for r in rs)
+        rows.append(row)
     return rows
 
 
 def _write_summary(rows: list[dict[str, Any]], out_dir: Path) -> None:
     _atomic_write(out_dir / "contamination.json", {"rows": rows})
-    lines = ["system,memory,provenance,n_chains,day,pct_chains_contaminated,mission_rate"]
+    lines = [
+        "system,memory,provenance,headline_measure,n_chains,day,pct_chains_contaminated,"
+        "mission_rate,raw_pct_chains_contaminated,served_pct_chains_contaminated"
+    ]
     for row in rows:
         for p, v in row["contaminated_by_day"].items():
             rate = row["mission_contamination_rate_by_day"][p]
+            raw = row["raw_contaminated_by_day"][p]
+            served = row["served_contaminated_by_day"][p]
             lines.append(
-                f"{row['system']},{row['memory']},{row['provenance']},{row['n_chains']},{p},{v:.6f},{rate:.6f}"
+                f"{row['system']},{row['memory']},{row['provenance']},"
+                f"{row['headline_measure']},{row['n_chains']},{p},{v:.6f},{rate:.6f},"
+                f"{raw:.6f},{served:.6f}"
             )
     (out_dir / "contamination.csv").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+# Deterministic stub planner for dry runs (``--stub``): no model, generic sense missions only.
+STUB_MISSIONS: tuple[str, ...] = (
+    "Listen for the softest sound you can hear.",
+    "Look at the colour of the sky above you.",
+    "Notice the wind as it moves the leaves around you.",
+    "Find one leaf with a shape you like.",
+    "Count the trees you pass along your way.",
+    "Spot one thing on your street that you have never noticed before.",
+    "Watch the clouds move across the sky above you.",
+)
+
+
+def stub_plan(messages: list[ChatMessage]) -> str:
+    """First stub mission not among the prompt's recent missions (deterministic)."""
+    user = messages[-1].content if messages else ""
+    recent = user.split("Recent missions (do not repeat):", 1)[-1]
+    text = next((m for m in STUB_MISSIONS if m not in recent), STUB_MISSIONS[0])
+    return json.dumps({"type": "sense", "references": [], "text": text})
 
 
 def main(
@@ -532,6 +642,11 @@ def main(
     ap.add_argument("--cached", action="store_true", help="replay cache only; fail on a miss")
     ap.add_argument("--renderer", default=None, help="module:attr prompt renderer for C/D")
     ap.add_argument("--resamples", type=int, default=10_000)
+    ap.add_argument(
+        "--stub",
+        action="store_true",
+        help="dry run, no models: system A template writer + deterministic stub planner",
+    )
     args = ap.parse_args(argv)
 
     systems = [s.strip() for s in args.systems.split(",") if s.strip()]
@@ -544,6 +659,14 @@ def main(
     if not specs:
         print("no chain files found", file=sys.stderr)
         return 2
+    if args.stub:
+        if any(s != "A" for s in systems):
+            print("--stub supports system A only", file=sys.stderr)
+            return 2
+        from eval.backends import StubPlanner, TemplateWriter
+
+        writers = writers or {"template": TemplateWriter()}
+        planner = planner or StubPlanner(stub_plan, backend_id="stub-planner:dry")
     mode = CacheMode.CACHED if args.cached else CacheMode.RESUME
     if writers is None or planner is None:
         from eval.config import build_planner, build_writers
@@ -576,8 +699,11 @@ def main(
         ci = row["pct_contaminated_by_last_day"]
         print(
             f"{row['system']:<3} memory={row['memory']:<5} provenance={row['provenance']:<3} "
-            f"n_chains={row['n_chains']} contaminated_by_day{row['n_days']}={ci['point']:.3f} "
-            f"[{ci['lo']:.3f}, {ci['hi']:.3f}]"
+            f"measure={row['headline_measure']} n_chains={row['n_chains']} "
+            f"contaminated_by_day{row['n_days']}={ci['point']:.3f} "
+            f"[{ci['lo']:.3f}, {ci['hi']:.3f}] "
+            f"(raw={row['raw_pct_contaminated_by_last_day']['point']:.3f} "
+            f"served={row['served_pct_contaminated_by_last_day']['point']:.3f})"
         )
     return 0
 

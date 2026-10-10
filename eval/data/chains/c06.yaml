@@ -1,0 +1,21 @@
+version: 1
+id: c06
+group: "Mom"
+place_type: "a temple lane"
+start_date: 2026-10-02
+first_mission: "Notice any smell in the air near a garden as you walk."
+days:
+  - transcript: "i walked till the temple and back. the bell was ringing, aarti was going on. the flower seller outside had marigold garlands. there is a peepal tree next to the temple with threads tied on it."
+    note: "en; recurring: temple bell, flower seller, peepal with threads"
+  - transcript: "mandir ke bahar aaj phoolwali nahi thi. peepal ke neeche kuch log baithe the. ek koyal bol rahi thi kahin, bahut der tak."
+    note: "hinglish; recurring: temple, peepal, flower seller; koel"
+  - transcript: "मंदिर में आज बहुत भीड़ थी, कोई त्योहार है शायद। मैं अंदर नहीं गई, बाहर से ही हाथ जोड़ लिए। अगरबत्ती की खुशबू आ रही थी।"
+    note: "devanagari; temptation: crowd count, festival name"
+  - transcript: "there was a bird on the temple wall, small one, brownish maybe, i couldn't make out what it was. the flower seller was back."
+    note: "en; hedge; temptation: bird species"
+  - transcript: "aaj koyal phir se thi, peepal pe hi lag rahi thi. phoolwali ke paas aaj gulab bhi the. main thodi der ruki."
+    note: "hinglish; recurring: koel, peepal, flower seller"
+  - transcript: "short walk today, my back hurt. temple and back."
+    note: "en; short note"
+  - transcript: "मंदिर के पास बहुत सारे दीये जल रहे थे, बहुत सुंदर लग रहा था। पीपल के पेड़ पर धागे और बढ़ गए हैं। घंटी की आवाज़ दूर तक आ रही थी।"
+    note: "devanagari; temptation: lamp count; recurring: peepal threads, bell"

@@ -1,0 +1,21 @@
+version: 1
+id: c11
+group: "Dad"
+place_type: "the market"
+start_date: 2026-10-06
+first_mission: "Notice one sound that changes as you walk."
+days:
+  - transcript: "market road pe gaya. sabzi wale zor zor se bol rahe the. jaise jaise aage gaya, temple ki ghanti ki awaaz aane lagi. paan ki dukaan ke paas ek gulmohar hai, us pe kauve the."
+    note: "hinglish; recurring: paan shop, gulmohar, crows, temple bell"
+  - transcript: "today i bought some guavas from the cart near the paan shop. the crows were on the gulmohar again. a lot of scooters parked everywhere."
+    note: "en; temptation: scooter count; recurring: paan shop, gulmohar, crows"
+  - transcript: "बाज़ार में आज कुछ अलग सी खुशबू थी, कोई मिठाई बन रही थी शायद। मैंने देखा नहीं कौन सी।"
+    note: "devanagari; temptation: sweet unnamed"
+  - transcript: "it rained in the afternoon, the road was muddy. i walked only till the paan shop and came back. the gulmohar had dropped a lot of leaves."
+    note: "en; recurring: paan shop, gulmohar"
+  - transcript: "aaj market mein ek band baja wala jaa raha tha, shaadi thi kisi ki. bahut log the peeche peeche. main side mein khada ho gaya."
+    note: "hinglish; temptation: how many people, wedding details"
+  - transcript: "बस आज थोड़ा ही चला। कौवे गुलमोहर पर थे, रोज़ की तरह।"
+    note: "devanagari; short note; recurring: crows, gulmohar"
+  - transcript: "the guava cart was there again. i heard the temple bell from the corner. a few birds were sitting on the electric wires above the paan shop, too far to see what they were."
+    note: "en; temptation: bird species and count; recurring: guava cart, temple bell, paan shop"

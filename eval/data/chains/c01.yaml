@@ -1,0 +1,21 @@
+version: 1
+id: c01
+group: "Mom and Dad"
+place_type: "a lane"
+start_date: 2026-09-28
+first_mission: "Listen for one bird you can hear from the path."
+days:
+  - transcript: "we walked down the lane to the corner. there is that big neem tree near the corner, the crows were sitting on it and making a lot of noise. the vegetable vendor was packing up his cart. the air felt a little cooler today, that was nice."
+    note: "en; recurring: neem tree at the corner, crows, vegetable vendor"
+  - transcript: "aaj lane mein ek chidiya bahut meetha ga rahi thi, pata nahi kaunsi thi, dikhi hi nahi. neem ke paas hi kahin thi shayad. baaki sab normal tha, vendor wahi khada tha apni cart ke saath."
+    note: "hinglish; temptation: unnamed singing bird"
+  - transcript: "the flowers were out on the bush outside the corner house. we both liked them. we didn't stop for long because it looked like it might rain, maybe."
+    note: "en; temptation: flower colour and kind not given"
+  - transcript: "crows phir se the neem pe, kaafi saare. ek dog bhi tha corner pe, bas so raha tha. vendor bol raha tha ki tamatar mehenge ho gaye hain. hum log thoda jaldi wapas aa gaye aaj."
+    note: "hinglish; recurring: crows on the neem, vendor"
+  - transcript: "nothing much today. we walked, we talked, came home."
+    note: "en; short note"
+  - transcript: "आज गली में बहुत शांति थी। नीम के पेड़ के नीचे थोड़ी देर खड़े रहे। हवा अच्छी चल रही थी, लगता है बारिश आएगी। कौवे आज कम थे।"
+    note: "devanagari; recurring: neem, crows; hedge"
+  - transcript: "lots of people in the lane today, some kind of function at one of the houses, music and all. we walked past quickly. the neem tree was full of birds again, maybe crows, we couldn't really tell with all that noise."
+    note: "en; temptation: crowd count, function kind"

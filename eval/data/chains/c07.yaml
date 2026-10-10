@@ -1,0 +1,21 @@
+version: 1
+id: c07
+group: "Mom and Dad"
+place_type: "the school gate road"
+start_date: 2026-09-21
+first_mission: "Spot one thing on your street that you have never noticed before."
+days:
+  - transcript: "we walked past the school gate, school was closed. the banyan tree outside the school is huge, we never noticed the roots coming down from the branches before. the ice cream cart was parked there."
+    note: "en; recurring: banyan outside the school, ice cream cart"
+  - transcript: "aaj school ke bahar bahut bachche the, koi function tha shayad. ice cream wala busy tha. hum dono side se nikal gaye."
+    note: "hinglish; temptation: how many children"
+  - transcript: "the banyan was full of birds today, a lot of chirping, we couldn't see which birds they were, too many leaves."
+    note: "en; temptation: bird species and count"
+  - transcript: "बरगद के नीचे एक कुत्ता सो रहा था। स्कूल का गेट बंद था। आज हवा में थोड़ी नमी थी, लगता है बारिश होगी।"
+    note: "devanagari; recurring: banyan, school gate; hedge"
+  - transcript: "kal raat baarish hui thi, road pe paani bhara tha. we walked carefully on the side. banyan ki jadein geeli thi. ice cream wala nahi aaya."
+    note: "hinglish; recurring: banyan roots, ice cream cart"
+  - transcript: "we saw some mynas near the school wall, two or three, they were fighting over something. the dog was there again under the banyan."
+    note: "en; recurring: dog under the banyan"
+  - transcript: "nothing new today. just walked."
+    note: "en; short note"

@@ -1,0 +1,21 @@
+version: 1
+id: c19
+group: "Mom and Dad"
+place_type: "the sea-face"
+start_date: 2026-10-04
+first_mission: "Notice the wind as it moves the leaves around you."
+days:
+  - transcript: "we walked on the sea-face promenade. the wind was strong, the coconut palms along the wall were bending. the pani puri stall near the steps was busy. we didn't eat anything, just walked."
+    note: "en; recurring: coconut palms along the wall, pani puri stall, steps"
+  - transcript: "aaj hawa kam thi. palm ke patte bas thoda thoda hil rahe the. pani puri wale ke paas bheed thi, humne bhi kha li is baar."
+    note: "hinglish; recurring: palms, pani puri stall"
+  - transcript: "समुद्र में आज कुछ जहाज़ दिख रहे थे दूर, शायद मछली पकड़ने वाली नावें थीं। गिन नहीं पाए।"
+    note: "devanagari; hedge; temptation: boat count and kind"
+  - transcript: "there were lots of crabs on the rocks when the tide went out, small ones, running around. we watched from the wall."
+    note: "en; temptation: crab count and colour"
+  - transcript: "kuch log yoga kar rahe the steps ke paas. bahut saare. hum dono ne socha kal se hum bhi stretching karenge, dekhte hain."
+    note: "hinglish; temptation: crowd count; recurring: steps"
+  - transcript: "we sat on the steps. the palms were quiet. the sea was calm."
+    note: "en; short note; recurring: steps, palms"
+  - transcript: "आज बहुत तेज़ हवा थी, नारियल के पेड़ ज़ोर से हिल रहे थे। पानी पूरी वाला बंद था। हम जल्दी लौट आए।"
+    note: "devanagari; recurring: coconut palms, pani puri stall"

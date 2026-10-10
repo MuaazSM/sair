@@ -1,0 +1,21 @@
+version: 1
+id: c08
+group: "Dad"
+place_type: "a lane"
+start_date: 2026-10-04
+first_mission: "Listen for the softest sound you can hear."
+days:
+  - transcript: "मैं गली के आख़िर तक गया। वहाँ एक पुराना आम का पेड़ है, उस पर तोते बैठे थे। प्रेस वाला अपनी दुकान बंद कर रहा था। हवा बहुत हल्की थी।"
+    note: "devanagari; recurring: mango tree at the end of the lane, parrots, ironing man"
+  - transcript: "aaj tote nahi the aam ke ped pe. press wala tha, radio pe purane gaane chal rahe the. bahut accha laga sunke."
+    note: "hinglish; recurring: mango tree, ironing man"
+  - transcript: "the softest sound i heard was the leaves of the mango tree moving. i stood there for a minute. the lane was empty."
+    note: "en; recurring: mango tree"
+  - transcript: "गली में आज कुछ फूल खिले थे, किसी के घर के बाहर बेल पर। बहुत सुंदर लग रहे थे। मैं रुक कर देखता रहा।"
+    note: "devanagari; temptation: flower colour and kind not given"
+  - transcript: "tote wapas aa gaye, aam ke ped pe kaafi shor tha. press wale ne kaha subah bhi aate hain. thodi thand thi aaj."
+    note: "hinglish; recurring: parrots, mango tree, ironing man"
+  - transcript: "some vehicle was parked in the middle of the lane, a big one, i had to go around it. it was dark so i didn't see much else."
+    note: "en; temptation: vehicle type and colour"
+  - transcript: "aaj bas jaldi aa gaya. ghutne mein dard tha."
+    note: "hinglish; short note"

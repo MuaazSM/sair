@@ -1,0 +1,21 @@
+version: 1
+id: c16
+group: "Mom and Dad"
+place_type: "a temple road"
+start_date: 2026-09-24
+first_mission: "Listen for one bird as you walk."
+days:
+  - transcript: "we walked to the temple at the end of the road. a koel was calling from the coconut tree near the temple pond. the coconut seller was there with his cart. we had one coconut each."
+    note: "en; recurring: koel, coconut tree by the temple pond, coconut seller"
+  - transcript: "koyal aaj bhi thi, wahi coconut ke ped pe lag rahi thi. mandir mein bhajan chal raha tha. nariyal wala nahi tha aaj."
+    note: "hinglish; recurring: koel, coconut tree, coconut seller"
+  - transcript: "there were a lot of flowers floating in the temple pond today, offerings maybe. we didn't go too close."
+    note: "en; hedge; temptation: flower colour and count"
+  - transcript: "मंदिर के तालाब में कुछ मछलियाँ दिख रही थीं, कितनी थीं पता नहीं। नारियल वाला वापस आ गया था।"
+    note: "devanagari; temptation: fish count and colour; recurring: temple pond, coconut seller"
+  - transcript: "aaj koi aur bird bhi tha koyal ke saath, chhota sa, bahut tez tez bol raha tha. hum dono soch rahe the kaunsa hai, samajh nahi aaya."
+    note: "hinglish; temptation: second bird species"
+  - transcript: "it was humid and sticky. we walked slowly, sat on the temple steps for a bit."
+    note: "en"
+  - transcript: "aaj mandir ke bahar bahut log the, koi pooja thi. hum log bas road pe chalke wapas aa gaye. koyal ki awaaz aayi ek baar."
+    note: "hinglish; temptation: crowd count; recurring: koel"
