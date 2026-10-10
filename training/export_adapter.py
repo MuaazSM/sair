@@ -17,19 +17,23 @@ Steps
   ``adapter_model.safetensors`` (or ``.bin``) + ``checkpoint_complete`` (tinker 0.33.1,
   ``tinker/cli/commands/checkpoint.py``). ``--from-run`` takes the epoch's ``sampler_path``
   from ``training/runs/<run>.json``: the exact weights whose dev metrics G-export compares.
-* ``merge``: transformers + peft on the CPU, bf16, ``low_cpu_mem_usage=True`` (a no-op in
-  transformers 5, which always loads lazily), ``HF_HUB_OFFLINE=1``. The adapter's keys are
-  first CONVERTED to the base model's module names (Tinker names modules as in the text-only
-  causal LM, ``model.layers.N...``; the HF snapshot is ``Qwen3_5ForConditionalGeneration``,
-  ``model.language_model.layers.N...``). Every adapter tensor must map to exactly one base
-  module with matching shapes, and every tensor must be present in the PEFT model after
-  loading, or the merge is refused. If the adapter trains ``lm_head`` while the base ties it
-  to the embeddings, ``lm_head`` is untied first (otherwise the merge would also change the
-  input embeddings). Output: ``models/sair-writer-hf/`` + the tokenizer + chat template.
+* ``merge``: a manual LoRA merge on the CPU, streaming the base safetensors shard by shard
+  (no model object, no peft), ``HF_HUB_OFFLINE=1``. Tinker names modules as in the text-only
+  causal LM (``model.layers.N...``); the HF snapshot is ``Qwen3_5ForConditionalGeneration``
+  (``model.language_model.layers.N...``). :func:`plan_merge` maps every LoRA pair onto one
+  base tensor and a row slice: Tinker's split Gated DeltaNet ``in_proj_q``/``_k``/``_v`` go
+  into the fused HF ``in_proj_qkv`` rows ``[0,kd)``/``[kd,2kd)``/``[2kd,2kd+vd)`` (layout
+  from transformers ``Qwen3_5GatedDeltaNet.forward``; see ``FUSED_PARTS``), and
+  ``unembed_tokens`` goes into ``lm_head``. Any unmapped module, shape or rank mismatch,
+  overlap, or unsupported option refuses the merge. ΔW = (alpha / r) · B @ A is added in
+  float32, then cast to bf16. If the adapter trains the unembedding while the base ties it to
+  the embeddings, ``lm_head.weight`` is written as embeddings + ΔW and
+  ``tie_word_embeddings`` is set to false (the input embeddings stay untouched). All other
+  tensors (incl. ``mtp.*`` and the vision tower) are copied unchanged, like the ``base`` path.
+  Output: ``models/sair-writer-hf/`` + the tokenizer + chat template.
 * ``convert``: ``vendor/llama.cpp/.venv/bin/python vendor/llama.cpp/convert_hf_to_gguf.py
   --outtype f16 --no-mtp`` -> ``models/sair-writer-f16.gguf``. ``--no-mtp`` on both C and D:
-  transformers drops the ``mtp.*`` head on load, so the merged dir has none, and the base
-  conversion must match it.
+  the writer serves without the ``mtp.*`` draft head, and both conversions must match.
 * ``quantize``: ``llama-quantize`` (brew) -> ``models/sair-writer-q4_k_m.gguf``.
 * ``base``: the same convert + quantize on the untouched HF snapshot ->
   ``models/qwen3.5-4b-base-q4_k_m.gguf`` (baseline C goes through the identical path).
@@ -413,51 +417,109 @@ _LORA_KEY_RE = re.compile(
     r"^(?:base_model\.model\.)?(?P<module>.+?)\.(?P<ab>lora_A|lora_B)(?:\.default)?\.weight$"
 )
 
+# Tinker trains LoRA on the text-only causal LM's modules. Three of its names do not exist in
+# the HF checkpoint: the Gated DeltaNet q/k/v projections are SPLIT in Tinker but FUSED in HF
+# (``linear_attn.in_proj_qkv``), and the unembedding is called ``unembed_tokens`` (HF:
+# ``lm_head``, tied to the embeddings in Qwen3.5-4B).
+#
+# Fused layout, from transformers ``Qwen3_5GatedDeltaNet`` (``__init__`` + ``forward``):
+#   in_proj_qkv = Linear(hidden, 2 * key_dim + value_dim)
+#   query, key, value = torch.split(mixed_qkv, [key_dim, key_dim, value_dim], dim=-1)
+#   key_dim = linear_key_head_dim * linear_num_key_heads
+#   value_dim = linear_value_head_dim * linear_num_value_heads
+# i.e. plain contiguous blocks [q | k | v] along the output rows, no per-head interleaving in
+# the HF tensor (each block is head-major: reshape(-1, head_dim)). The V-head regrouping that
+# llama.cpp needs is done later by convert_hf_to_gguf on the merged HF tensor, so the merge
+# must write HF order. ``in_proj_z``/``in_proj_a``/``in_proj_b`` are separate HF tensors.
+FUSED_PARTS = ("in_proj_q", "in_proj_k", "in_proj_v")
+FUSED_NAME = "in_proj_qkv"
+UNEMBED_NAMES = ("unembed_tokens", "lm_head")
+LM_HEAD = "lm_head.weight"
+
 
 class AdapterFormatError(ValueError):
     """Fixed-code adapter format problem (module names are structural, not content)."""
 
 
 @dataclass(frozen=True)
-class KeyMap:
-    mapping: dict[str, str]  # adapter key -> PEFT key on the base model
-    modules: list[str]  # resolved base module names (sorted)
+class Target:
+    """Where one adapter module's ΔW = scale · B @ A goes in the base checkpoint."""
+
+    module: str  # adapter module name (``model.layers.N....``)
+    a_key: str
+    b_key: str
+    tensor: str  # base tensor name it is added into (``....weight``)
+    row0: int  # first output row of the slice (0 unless fused)
+    rows: int  # rows of the slice (== out_features unless fused)
+    source: str | None = None  # base tensor to copy first (``lm_head`` from tied embeddings)
 
 
-def _resolve_module(name: str, base_modules: Sequence[str]) -> str | None:
-    """Exact match, else a unique suffix match, dropping leading components of ``name``."""
-    if name in base_modules:
-        return name
-    parts = name.split(".")
-    for k in range(len(parts)):
-        tail = ".".join(parts[k:])
-        hits = [m for m in base_modules if m == tail or m.endswith("." + tail)]
-        if len(hits) == 1:
-            return hits[0]
-        if len(hits) > 1:
-            text = [h for h in hits if ".visual." not in f".{h}." and "vision" not in h]
-            if len(text) == 1:
-                return text[0]
-            return None
-    return None
+@dataclass(frozen=True)
+class MergePlan:
+    targets: list[Target]
+    scale: float
+    untie_lm_head: bool
+
+    @property
+    def tensors(self) -> list[str]:
+        return sorted({t.tensor for t in self.targets})
 
 
-def convert_adapter_keys(
-    keys: Iterable[str],
-    base_shapes: Mapping[str, tuple[int, int]],
-    tensor_shapes: Mapping[str, Sequence[int]] | None = None,
-) -> KeyMap:
-    """Map adapter tensor names onto the base model's Linear modules.
+def fused_slices(text_cfg: Mapping[str, Any]) -> dict[str, tuple[int, int]]:
+    """Split part -> (row0, rows) inside the fused ``in_proj_qkv`` weight (HF order q|k|v)."""
+    try:
+        key_dim = int(text_cfg["linear_key_head_dim"]) * int(text_cfg["linear_num_key_heads"])
+        value_dim = int(text_cfg["linear_value_head_dim"]) * int(text_cfg["linear_num_value_heads"])
+    except (KeyError, TypeError, ValueError):
+        return {}
+    return {
+        "in_proj_q": (0, key_dim),
+        "in_proj_k": (key_dim, key_dim),
+        "in_proj_v": (2 * key_dim, value_dim),
+    }
 
-    ``base_shapes``: module name -> (out_features, in_features) of every Linear in the base.
-    Checks: every key is a ``lora_A``/``lora_B`` weight; each module has both; each module
-    resolves to exactly one base Linear; and (when ``tensor_shapes`` is given)
-    ``A`` is (r, in) and ``B`` is (out, r) for that module.
+
+def lora_scale(cfg: Mapping[str, Any]) -> float:
+    r = int(cfg["r"])
+    alpha = float(cfg.get("lora_alpha", r))
+    return alpha / (r**0.5) if cfg.get("use_rslora", False) else alpha / r
+
+
+def check_adapter_config(cfg: Mapping[str, Any]) -> None:
+    if cfg.get("peft_type", "LORA") != "LORA":
+        raise AdapterFormatError("unsupported_peft_type")
+    if cfg.get("bias", "none") != "none":
+        raise AdapterFormatError("unsupported_bias")
+    for k in ("use_dora", "modules_to_save", "alpha_pattern", "rank_pattern", "fan_in_fan_out"):
+        if cfg.get(k):
+            raise AdapterFormatError(f"unsupported_{k}")
+
+
+def _candidates(module: str) -> list[str]:
+    """Base names a Tinker text-LM module may have (text LM, or the VLM's language_model)."""
+    out = [module]
+    if module.startswith("model.") and not module.startswith("model.language_model."):
+        out.append("model.language_model." + module.removeprefix("model."))
+    return out
+
+
+def plan_merge(
+    adapter_shapes: Mapping[str, Sequence[int]],
+    base_shapes: Mapping[str, Sequence[int]],
+    adapter_cfg: Mapping[str, Any],
+    text_cfg: Mapping[str, Any],
+) -> MergePlan:
+    """Map every adapter LoRA pair onto a base tensor (row slice) and check every shape.
+
+    ``adapter_shapes``: adapter tensor name -> shape. ``base_shapes``: base checkpoint tensor
+    name -> shape. Refuses (``AdapterFormatError``, fixed codes) on unknown keys, incomplete
+    pairs, unmapped modules, duplicate or overlapping slices, rank or shape mismatches.
     """
-    base_modules = sorted(base_shapes)
+    check_adapter_config(adapter_cfg)
+    r = int(adapter_cfg["r"])
     by_module: dict[str, dict[str, str]] = {}
     bad: list[str] = []
-    for key in keys:
+    for key in adapter_shapes:
         m = _LORA_KEY_RE.match(key)
         if not m:
             bad.append(key)
@@ -467,57 +529,81 @@ def convert_adapter_keys(
         raise AdapterFormatError(f"unrecognised_adapter_keys n={len(bad)} e.g. {bad[:3]}")
     if not by_module:
         raise AdapterFormatError("empty_adapter")
-    mapping: dict[str, str] = {}
-    resolved: dict[str, str] = {}
+    slices = fused_slices(text_cfg)
+    embed = next(
+        (
+            n
+            for n in ("model.language_model.embed_tokens.weight", "model.embed_tokens.weight")
+            if n in base_shapes
+        ),
+        None,
+    )
+    targets: list[Target] = []
     unmapped: list[str] = []
+    untie = False
     for mod, ab in sorted(by_module.items()):
         if set(ab) != {"lora_A", "lora_B"}:
             raise AdapterFormatError(f"incomplete_lora_pair module={mod}")
-        target = _resolve_module(mod, base_modules)
-        if target is None:
+        parent, _, leaf = mod.rpartition(".")
+        tensor: str | None = None
+        row0, rows, source = 0, -1, None
+        if leaf in UNEMBED_NAMES and (parent in ("", "model")):
+            tensor = LM_HEAD
+            if LM_HEAD not in base_shapes:
+                if embed is None:
+                    raise AdapterFormatError("lm_head_without_embeddings")
+                source, untie = embed, True
+        else:
+            for cand in _candidates(mod):
+                if cand + ".weight" in base_shapes:
+                    tensor = cand + ".weight"
+                    break
+            if tensor is None and leaf in FUSED_PARTS and leaf in slices:
+                for cand in _candidates(parent):
+                    if f"{cand}.{FUSED_NAME}.weight" in base_shapes:
+                        tensor = f"{cand}.{FUSED_NAME}.weight"
+                        row0, rows = slices[leaf]
+                        break
+        if tensor is None:
             unmapped.append(mod)
             continue
-        if target in resolved.values():
-            raise AdapterFormatError(f"duplicate_target module={target}")
-        resolved[mod] = target
-        if tensor_shapes is not None:
-            out_f, in_f = base_shapes[target]
-            a = list(tensor_shapes[ab["lora_A"]])
-            b = list(tensor_shapes[ab["lora_B"]])
-            if len(a) != 2 or len(b) != 2 or a[1] != in_f or b[0] != out_f or a[0] != b[1]:
-                raise AdapterFormatError(
-                    f"shape_mismatch module={target} A={a} B={b} base=({out_f},{in_f})"
-                )
-        for which, key in ab.items():
-            mapping[key] = f"base_model.model.{target}.{which}.weight"
+        base_shape = list(base_shapes[source or tensor])
+        if len(base_shape) != 2:
+            raise AdapterFormatError(f"not_a_matrix tensor={tensor}")
+        out_f, in_f = base_shape
+        if rows < 0:
+            rows = out_f
+        elif row0 + rows > out_f or sum(s[1] for s in slices.values()) != out_f:
+            raise AdapterFormatError(f"fused_layout_mismatch tensor={tensor} base={base_shape}")
+        a, b = list(adapter_shapes[ab["lora_A"]]), list(adapter_shapes[ab["lora_B"]])
+        if len(a) != 2 or len(b) != 2 or a != [r, in_f] or b != [rows, r]:
+            raise AdapterFormatError(
+                f"shape_mismatch module={mod} A={a} B={b} slice=({rows},{in_f}) r={r}"
+            )
+        targets.append(Target(mod, ab["lora_A"], ab["lora_B"], tensor, row0, rows, source))
     if unmapped:
         raise AdapterFormatError(f"unmapped_modules n={len(unmapped)} e.g. {unmapped[:3]}")
-    return KeyMap(mapping=mapping, modules=sorted(resolved.values()))
+    by_tensor: dict[str, list[Target]] = {}
+    for t in targets:
+        by_tensor.setdefault(t.tensor, []).append(t)
+    for name, ts in by_tensor.items():
+        spans = sorted((t.row0, t.row0 + t.rows) for t in ts)
+        if any(s1 < e0 for (_, e0), (s1, _) in zip(spans, spans[1:], strict=False)):
+            raise AdapterFormatError(f"duplicate_target tensor={name}")
+    return MergePlan(targets=targets, scale=lora_scale(adapter_cfg), untie_lm_head=untie)
 
 
-def converted_config(
-    cfg: Mapping[str, Any], modules: Sequence[str], base_id: str
-) -> dict[str, Any]:
-    """PEFT LoRA config targeting exactly the resolved modules (merge only: no dropout)."""
-    out = {
-        "peft_type": "LORA",
-        "base_model_name_or_path": base_id,
-        "r": int(cfg["r"]),
-        "lora_alpha": cfg.get("lora_alpha", cfg["r"]),
-        "use_rslora": bool(cfg.get("use_rslora", False)),
-        "lora_dropout": 0.0,
-        "bias": "none",
-        "fan_in_fan_out": False,
-        "target_modules": list(modules),
-        "task_type": None,
-        "inference_mode": True,
-    }
-    if cfg.get("bias", "none") != "none":
-        raise AdapterFormatError("unsupported_bias")
-    for k in ("use_dora", "modules_to_save"):
-        if cfg.get(k):
-            raise AdapterFormatError(f"unsupported_{k}")
-    return out
+def lora_delta(a: Any, b: Any, scale: float) -> Any:
+    """ΔW = scale · B @ A in float32 (shape rows × in)."""
+    return (b.float() @ a.float()) * scale
+
+
+def apply_deltas(weight: Any, deltas: Iterable[tuple[int, Any]]) -> Any:
+    """Add each (row0, ΔW) into rows [row0, row0 + ΔW.rows) in float32, cast back."""
+    w = weight.float().clone()
+    for row0, d in deltas:
+        w[row0 : row0 + d.shape[0]] += d
+    return w.to(weight.dtype)
 
 
 # --------------------------------------------------------------------------- base snapshot
@@ -585,91 +671,135 @@ def merge(
     return out
 
 
-def _merge_impl(adapter: Path, snap: Path, out: Path, base_id: str) -> None:  # pragma: no cover
-    """The heavy part (needs ~9-10 GB RAM; all model servers stopped)."""
-    os.environ.update(OFFLINE_ENV)
-    import tempfile
+SHARD_BYTES = 2 << 30  # output shard size
 
+
+def _base_headers(snap: Path) -> dict[str, tuple[str, dict[str, Any]]]:
+    """Base tensor name -> (shard file name, {dtype, shape}) from the safetensors headers."""
+    files = sorted(p.name for p in snap.glob("*.safetensors"))
+    out: dict[str, tuple[str, dict[str, Any]]] = {}
+    for fn in files:
+        for k, v in _safetensors_header(snap / fn).items():
+            out[k] = (fn, v)
+    return out
+
+
+def merge_checkpoint(
+    adapter: Path, snap: Path, out: Path, *, shard_bytes: int = SHARD_BYTES
+) -> MergePlan:
+    """Stream the base checkpoint shard by shard, add every ΔW in float32, write bf16.
+
+    The base's tensors and names are kept as they are (same as the ``base`` path, so C and D
+    convert identically); only the planned tensors change, plus ``lm_head.weight`` when the
+    adapter trains the unembedding of a tied base (then ``tie_word_embeddings`` -> false).
+    """
     import torch
-    from peft import PeftModel
+    from safetensors import safe_open
     from safetensors.torch import load_file, save_file
-    from transformers import (
-        AutoConfig,
-        AutoModelForCausalLM,
-        AutoModelForImageTextToText,
-        AutoTokenizer,
-    )
 
-    cfg = AutoConfig.from_pretrained(snap, local_files_only=True)
-    arch = (getattr(cfg, "architectures", None) or [""])[0]
-    cls = AutoModelForImageTextToText if "ConditionalGeneration" in arch else AutoModelForCausalLM
-    model = cls.from_pretrained(
-        snap,
-        dtype=torch.bfloat16,
-        low_cpu_mem_usage=True,
-        device_map={"": "cpu"},
-        local_files_only=True,
-    )
-    model.eval()
-    linears = {
-        n: (m.out_features, m.in_features)
-        for n, m in model.named_modules()
-        if isinstance(m, torch.nn.Linear)
-    }
     acfg = json.loads((adapter / "adapter_config.json").read_text(encoding="utf-8"))
+    cfg = json.loads((snap / "config.json").read_text(encoding="utf-8"))
+    text_cfg = cfg.get("text_config", cfg)
     st = adapter / "adapter_model.safetensors"
-    tensors = (
+    lora = (
         load_file(str(st))
         if st.is_file()
         else torch.load(adapter / "adapter_model.bin", map_location="cpu", weights_only=True)
     )
-    km = convert_adapter_keys(
-        tensors.keys(), linears, {k: tuple(v.shape) for k, v in tensors.items()}
+    headers = _base_headers(snap)
+    plan = plan_merge(
+        {k: tuple(v.shape) for k, v in lora.items()},
+        {k: v[1]["shape"] for k, v in headers.items()},
+        acfg,
+        text_cfg,
     )
-    print(f"merge: arch={arch} lora_modules={len(km.modules)} tensors={len(km.mapping)}")
+    fused = sum(1 for t in plan.targets if t.tensor.endswith(f".{FUSED_NAME}.weight"))
+    print(
+        f"merge: lora_modules={len(plan.targets)} base_tensors={len(plan.tensors)} "
+        f"fused_slices={fused} scale={plan.scale:g} untie_lm_head={plan.untie_lm_head}"
+    )
+    by_tensor: dict[str, list[Target]] = {}
+    for t in plan.targets:
+        by_tensor.setdefault(t.tensor, []).append(t)
+    by_source = {t.source: t.tensor for t in plan.targets if t.source}
 
-    # untie lm_head if the adapter trains it while the base ties it to the embeddings
-    if any(m.split(".")[-1] == "lm_head" for m in km.modules):
-        emb = model.get_input_embeddings().weight
-        head = model.get_output_embeddings()
-        if head is not None and head.weight.data_ptr() == emb.data_ptr():
-            head.weight = torch.nn.Parameter(emb.detach().clone())
-            for c in (model.config, getattr(model.config, "text_config", None)):
-                if c is not None and hasattr(c, "tie_word_embeddings"):
-                    c.tie_word_embeddings = False
-            print("merge: lm_head untied from the embeddings (adapter trains lm_head)")
-
-    with tempfile.TemporaryDirectory() as td:
-        conv = Path(td)
-        (conv / "adapter_config.json").write_text(
-            json.dumps(converted_config(acfg, km.modules, base_id), indent=1), encoding="utf-8"
-        )
-        save_file(
-            {km.mapping[k]: v.contiguous() for k, v in tensors.items()},
-            str(conv / "adapter_model.safetensors"),
-        )
-        peft_model = PeftModel.from_pretrained(model, str(conv), is_trainable=False)
-        sd = peft_model.state_dict()
-        missing = 0
-        for k, v in tensors.items():
-            pk = km.mapping[k].removesuffix(".weight") + ".default.weight"
-            if pk not in sd or not torch.equal(sd[pk].to(v.dtype), v):
-                missing += 1
-        if missing:
-            raise Refused(f"refusing: {missing} adapter tensors did not load into the model")
-        merged = peft_model.merge_and_unload()
     out.mkdir(parents=True, exist_ok=True)
-    merged.save_pretrained(out, safe_serialization=True, max_shard_size="2GB")
-    tok = AutoTokenizer.from_pretrained(snap, local_files_only=True)
-    tok.save_pretrained(out)
-    for extra in (
-        "chat_template.jinja",
-        "generation_config.json",
-        "preprocessor_config.json",
-        "video_preprocessor_config.json",
-    ):
-        if (snap / extra).is_file() and not (out / extra).is_file():
-            shutil.copyfile(snap / extra, out / extra)
+    parts: list[tuple[Path, list[str]]] = []
+    buf: dict[str, Any] = {}
+    nbytes = 0
+    applied = 0
+
+    def flush() -> None:
+        nonlocal buf, nbytes
+        if not buf:
+            return
+        p = out / f"part-{len(parts):05d}.tmp"
+        save_file(buf, str(p), metadata={"format": "pt"})
+        parts.append((p, sorted(buf)))
+        buf, nbytes = {}, 0
+
+    def emit(name: str, t: Any) -> None:
+        nonlocal nbytes, applied
+        if name in by_tensor:
+            ts = by_tensor[name]
+            t = apply_deltas(
+                t, [(x.row0, lora_delta(lora[x.a_key], lora[x.b_key], plan.scale)) for x in ts]
+            )
+            applied += len(ts)
+        buf[name] = t.contiguous()
+        nbytes += t.numel() * t.element_size()
+        if nbytes >= shard_bytes:
+            flush()
+
+    for fn in sorted({fn for fn, _ in headers.values()}):
+        with safe_open(str(snap / fn), framework="pt") as f:
+            for name in f.keys():  # noqa: SIM118 - safe_open is not a dict
+                t = f.get_tensor(name)
+                emit(name, t)
+                if name in by_source:  # untied lm_head starts as a copy of the embeddings
+                    emit(by_source[name], t.clone())
+                del t
+    flush()
+    if applied != len(plan.targets):
+        raise Refused(f"refusing: applied {applied} of {len(plan.targets)} LoRA modules")
+
+    weight_map: dict[str, str] = {}
+    total = 0
+    for i, (p, names) in enumerate(parts):
+        final = out / f"model-{i + 1:05d}-of-{len(parts):05d}.safetensors"
+        p.rename(final)
+        total += final.stat().st_size
+        weight_map.update({n: final.name for n in names})
+    (out / "model.safetensors.index.json").write_text(
+        json.dumps({"metadata": {"total_size": total}, "weight_map": weight_map}, indent=1) + "\n",
+        encoding="utf-8",
+    )
+    if plan.untie_lm_head:
+        for c in (cfg, cfg.get("text_config")):
+            if isinstance(c, dict) and "tie_word_embeddings" in c:
+                c["tie_word_embeddings"] = False
+        cfg["tie_word_embeddings"] = False
+        print("merge: lm_head untied from the embeddings (adapter trains the unembedding)")
+    (out / "config.json").write_text(json.dumps(cfg, indent=2) + "\n", encoding="utf-8")
+    for p in snap.iterdir():
+        if (
+            p.is_file()
+            and p.suffix != ".safetensors"
+            and p.name
+            not in (
+                "config.json",
+                "model.safetensors.index.json",
+            )
+            and not p.name.startswith(".")
+        ):
+            shutil.copyfile(p, out / p.name)
+    return plan
+
+
+def _merge_impl(adapter: Path, snap: Path, out: Path, base_id: str) -> None:  # pragma: no cover
+    """The heavy part (streams shard by shard; all model servers stopped)."""
+    os.environ.update(OFFLINE_ENV)
+    merge_checkpoint(adapter, snap, out)
 
 
 # --------------------------------------------------------------------------- convert / quantize
