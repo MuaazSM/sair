@@ -43,7 +43,7 @@ def main() -> int:
             if req.get("cmd") == "quit":
                 return 0
             if model is None:
-                from kokoro import KModel  # type: ignore[import-untyped]
+                from kokoro import KModel
 
                 model = KModel(
                     repo_id="hexgrad/Kokoro-82M",
@@ -56,7 +56,7 @@ def main() -> int:
 
                 pipes[lang] = KPipeline(lang_code=lang, repo_id="hexgrad/Kokoro-82M", model=model)
             import numpy as np
-            import soundfile as sf  # type: ignore[import-untyped]
+            import soundfile as sf
 
             voice = str(model_dir / "voices" / f"{req['voice']}.pt")
             parts = [

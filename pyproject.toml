@@ -76,6 +76,10 @@ strict = true
 files = ["hub"]
 plugins = ["pydantic.mypy"]
 
+[[tool.mypy.overrides]]
+module = ["soundfile", "kokoro", "kokoro.*"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"

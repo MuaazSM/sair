@@ -14,7 +14,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
-import soundfile as sf  # type: ignore[import-untyped]
+import soundfile as sf
 
 from hub.models.errors import Permanent
 from hub.schemas import ReasonCode
