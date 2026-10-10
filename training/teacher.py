@@ -14,6 +14,17 @@ checker verified (dropped facts removed, check-7 mission coercion applied, then 
 If none passes, the gold is the code-built template (``template_output``) over the item's
 generator gold facts (which the generator already validated with the same checker).
 
+Teacher-only options (never part of the SFT row, which always holds the PLAIN production
+prompt + the chosen JSON): ``--regen-round`` re-samples items with no passing candidate
+using ``build_writer_prompt(..., regen=<codes of the best failing candidate>)`` (fixed
+instruction strings from ``hub.schemas``; previous output text is never sent back);
+``--teacher-addendum`` appends the fixed ``TEACHER_ADDENDUM`` rules to the teacher's system
+prompt; ``--teacher-glossary`` appends a code-built glossary from the frozen lexicon (English
+word for each non-English lexicon term in the transcript, e.g. "चील = kite"). Per item the
+report records which round won (``r1:cK``, ``r2:cK`` or ``template``).
+``--budget-usd`` stops launching requests when this invocation's estimated spend (published
+rates, worst case ``max_tokens`` per in-flight candidate) would exceed the cap.
+
 Raw candidates are cached per item in ``training/cache/teacher/<item_id>.json`` (resume-safe;
 a cache entry is reused only for the same model, prompt fingerprint and sampling params).
 ``_cost.json`` holds the running token usage and the estimated spend (published rate card).
@@ -23,6 +34,7 @@ Stdout carries counts, ids, codes and costs only; never transcript, span or entr
 from __future__ import annotations
 
 import argparse
+import functools
 import hashlib
 import json
 import re
@@ -37,9 +49,30 @@ from typing import Any, Protocol
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from hub.grounding import check_entry, lexicon_hash, template_output
-from hub.prompts.builders import prompt_fingerprint
-from hub.schemas import EntryOrigin, Fact, MissionResult, WriterOutput, parse_writer_output
+from hub.grounding import (
+    AMBIGUOUS_WORD_ALIASES,
+    check_entry,
+    extract_details,
+    lexicon_hash,
+    normalise,
+    template_output,
+)
+from hub.prompts.builders import (
+    MissionText,
+    Transcript,
+    WalkerGroup,
+    build_writer_prompt,
+    prompt_fingerprint,
+)
+from hub.schemas import (
+    GROUNDING_CODES,
+    EntryOrigin,
+    Fact,
+    MissionResult,
+    ReasonCode,
+    WriterOutput,
+    parse_writer_output,
+)
 from training.tinker_common import (
     DATA_DIR,
     DEFAULT_TEACHER_MODEL,
@@ -63,6 +96,7 @@ DEFAULT_MAX_TOKENS = 400  # PRD §9.1
 DEFAULT_EST_OUT_TOKENS = 220  # dry-run assumption per candidate (replace with smoke mean)
 TEMPLATE = "template"
 UNUSABLE = "unusable"
+PENDING = "pending"  # budget/request cap hit before this item's rounds finished
 
 _FENCE = re.compile(r"^\s*```(?:json)?\s*\n?(.*?)\n?\s*```\s*$", re.S)
 
@@ -185,8 +219,17 @@ class CandidateEval:
 class Selection:
     winner: int | str  # candidate index, "template" or "unusable"
     gold: WriterOutput | None
-    evals: list[CandidateEval] = field(default_factory=list)
+    evals: list[CandidateEval] = field(default_factory=list)  # round 1
     gold_codes: list[str] = field(default_factory=list)  # template/unusable diagnostics
+    round: int | None = None  # 1 or 2 when a candidate won
+    evals_r2: list[CandidateEval] = field(default_factory=list)  # teacher-only regen round
+    regen_codes: list[str] = field(default_factory=list)  # codes sent to round 2
+
+    @property
+    def label(self) -> str:
+        if isinstance(self.winner, int):
+            return f"r{self.round or 1}:c{self.winner}"
+        return str(self.winner)
 
 
 def _unfence(raw: str) -> tuple[str, bool]:
@@ -250,7 +293,7 @@ def select_gold(item: dict[str, Any], candidates: Sequence[str]) -> Selection:
         ev, cleaned = evaluate_candidate(raw, transcript, group)
         evals.append(ev)
         if cleaned is not None:
-            return Selection(i, cleaned, evals)
+            return Selection(i, cleaned, evals, round=1)
     out, codes = template_gold(item)
     if out is None:
         return Selection(UNUSABLE, None, evals, codes)
@@ -283,6 +326,73 @@ def save_cache(path: Path, key: dict[str, Any], cands: list[dict[str, Any]]) -> 
 
 # --------------------------------------------------------------------------- run
 
+# TEACHER-ONLY system addendum (behind --teacher-addendum). Fixed text, no content. The SFT
+# training row always keeps the plain production prompt (sft_row uses writer_messages).
+TEACHER_ADDENDUM = (
+    "Extra rules for this reply:\n"
+    "- Each span is copied character for character from the transcript: same words, same "
+    "script, same spelling. Do not shorten a span in the middle of what it says.\n"
+    "- Choose spans long enough to contain the subject and the place. The subject and the "
+    "place must be words that appear inside that same span; if the place is not in the span, "
+    "leave place out.\n"
+    "- In the entry, only name things (birds, trees, animals, colours, weather, places, "
+    "numbers) that appear in a fact's span, subject or place. If the transcript is in Hindi, "
+    "you may translate a fact's subject into English in the entry, but add nothing else."
+)
+
+
+@functools.cache
+def _english_words() -> dict[str, tuple[str, tuple[str, ...]]]:
+    """lexicon id -> (English word = first alias, other aliases), from data/lexicon.yaml."""
+    import yaml
+
+    from hub.grounding import DEFAULT_LEXICON
+
+    raw = yaml.safe_load(DEFAULT_LEXICON.read_text(encoding="utf-8"))
+    out: dict[str, tuple[str, tuple[str, ...]]] = {}
+    for e in raw.get("entries") or []:
+        aliases = [str(a) for a in e.get("aliases") or []]
+        if aliases and e.get("category") != "number":
+            out[str(e["id"])] = (aliases[0], tuple(aliases[1:]))
+    return out
+
+
+# Aliases that are also common Hindi function words ("बस" = "that's all"); never glossed.
+_GLOSSARY_STOP = frozenset({"बस", "bas", "do", "the"})
+
+
+def teacher_glossary(transcript: str) -> str | None:
+    """TEACHER-ONLY: code-built glossary (from the frozen lexicon) of the English word for
+    each non-English lexicon term in this transcript, e.g. "चील = kite". None if empty."""
+    found = extract_details(transcript, inclusive=True)
+    t_norm = normalise(transcript)
+    pairs: list[str] = []
+    for lid, (english, others) in sorted(_english_words().items()):
+        if lid not in found:
+            continue
+        here = [
+            a
+            for a in others
+            if (normalise(a) in t_norm)
+            if not re.search(r"[A-Za-z]", a)
+            or re.search(rf"(?<![a-z]){re.escape(normalise(a))}(?![a-z])", t_norm)
+        ]
+        here = [
+            a
+            for a in here
+            if normalise(a) != normalise(english)
+            and a not in _GLOSSARY_STOP
+            and normalise(a) not in AMBIGUOUS_WORD_ALIASES
+        ]
+        if here:
+            pairs.append(f"{' / '.join(here[:3])} = {english}")
+    if not pairs:
+        return None
+    return (
+        "Glossary for this note (English words to use in the entry for things it names; "
+        "every thing you name in the entry must also be one of your facts): " + "; ".join(pairs)
+    )
+
 
 @dataclass
 class RunConfig:
@@ -293,12 +403,49 @@ class RunConfig:
     max_tokens: int = DEFAULT_MAX_TOKENS
     concurrency: int = 8
     max_requests: int | None = None  # hard cap on API requests in this invocation
+    regen_round: bool = False  # teacher-only round 2 with fixed regen instructions
+    regen_candidates: int = 2
+    addendum: bool = False  # teacher-only system addendum (TEACHER_ADDENDUM)
+    glossary: bool = False  # teacher-only lexicon glossary (teacher_glossary)
+    budget_usd: float | None = None  # cap on estimated spend in this invocation
+    raise_on_stop: bool = True  # False (CLI): report finished items, mark the rest pending
 
 
-def _cache_key(cfg: RunConfig, item_id: str, fp: str) -> dict[str, Any]:
+def teacher_messages(
+    item: dict[str, Any],
+    regen: Sequence[ReasonCode] = (),
+    addendum: bool = False,
+    glossary: bool = False,
+) -> list[dict[str, str]]:
+    """Teacher prompt: the production builder (optionally with its fixed regen block) plus
+    the optional teacher-only addendum. Never contains previous model output."""
+    mission = item.get("mission_text")
+    msgs = as_dicts(
+        build_writer_prompt(
+            WalkerGroup(str(item["group"])),
+            MissionText(str(mission)) if mission else None,
+            Transcript(str(item["transcript"])),
+            regen=list(regen),
+        )
+    )
+    extra = [TEACHER_ADDENDUM] if addendum else []
+    if glossary and (g := teacher_glossary(str(item["transcript"]))):
+        extra.append(g)
+    if extra:
+        msgs[0] = {
+            "role": "system",
+            "content": msgs[0]["content"].rstrip() + "\n\n" + "\n\n".join(extra),
+        }
+    return msgs
+
+
+def _cache_key(cfg: RunConfig, item_id: str, fp: str, rnd: int) -> dict[str, Any]:
     return {
         "item_id": item_id,
         "model": cfg.model,
+        "round": rnd,
+        "addendum": cfg.addendum,
+        "glossary": cfg.glossary,
         "prompt_fp": fp,
         "prompt_version_fp": prompt_fingerprint("writer"),
         "temperature": cfg.temperature,
@@ -306,8 +453,124 @@ def _cache_key(cfg: RunConfig, item_id: str, fp: str) -> dict[str, Any]:
     }
 
 
+def _cache_path(cache_dir: Path, iid: str, rnd: int, cfg: RunConfig) -> Path:
+    tag = (".add" if cfg.addendum else "") + (".gl" if cfg.glossary else "")
+    return cache_dir / (iid + tag + (".r2" if rnd == 2 else "") + ".json")
+
+
 class Budget(Exception):
-    """Raised when --max-requests would be exceeded."""
+    """Raised when --max-requests or --budget-usd would be exceeded."""
+
+
+_DROP_OR_FAIL = frozenset(c.value for c in GROUNDING_CODES)
+
+
+def regen_codes(evals: Sequence[CandidateEval]) -> list[ReasonCode]:
+    """Codes of the best failing candidate (parsed first, then fewest codes), enum order."""
+    if not evals:
+        return []
+    best = min(evals, key=lambda e: (not e.parse_ok, len(e.codes)))
+    have = {c for c in best.codes if c in _DROP_OR_FAIL}
+    return [c for c in ReasonCode if c.value in have]
+
+
+def _first_pass(
+    item: dict[str, Any], texts: Sequence[str]
+) -> tuple[int | None, WriterOutput | None, list[CandidateEval]]:
+    transcript, group = str(item["transcript"]), str(item["group"])
+    evals: list[CandidateEval] = []
+    for i, raw in enumerate(texts):
+        ev, cleaned = evaluate_candidate(raw, transcript, group)
+        evals.append(ev)
+        if cleaned is not None:
+            return i, cleaned, evals
+    return None, None, evals
+
+
+class _Runner:
+    def __init__(
+        self,
+        sampler: Sampler | None,
+        cfg: RunConfig,
+        usage: Usage,
+        on_usage: Callable[[Usage], None] | None,
+    ) -> None:
+        self.sampler, self.cfg, self.usage, self.on_usage = sampler, cfg, usage, on_usage
+        self.requests = 0
+        self.stopped: str | None = None  # reason, once a cap was hit (no more launches)
+        self.start_cost = usage.cost()
+        self.rates, _ = price_for(cfg.model)
+
+    def _est(self, n_prompt: int, n: int) -> float:
+        r = self.rates
+        return (
+            n_prompt * r["prefill"]
+            + n_prompt * (n - 1) * r["prefill_cached"]
+            + n * self.cfg.max_tokens * r["sample"]
+        ) / 1e6
+
+    def fill(self, states: list[dict[str, Any]], target: int) -> None:
+        """Sample until each state has ``target`` candidates (cached ones count)."""
+        if self.stopped:
+            return
+        try:
+            self._fill(states, target)
+        except Budget as e:
+            self.stopped = str(e)
+
+    def _fill(self, states: list[dict[str, Any]], target: int) -> None:
+        cfg = self.cfg
+        pending = [st for st in states if len(st["cands"]) < target]
+        step = max(1, cfg.concurrency)
+        for start in range(0, len(pending), step):
+            if self.sampler is None:
+                raise Budget("no sampler (dry run or cache-only) but candidates are missing")
+            futs: list[tuple[dict[str, Any], int, Callable[[], SampleResult]]] = []
+            inflight = 0.0
+            for st in pending[start : start + step]:
+                if cfg.max_requests is not None and self.requests >= cfg.max_requests:
+                    raise Budget("max requests reached")
+                need = target - len(st["cands"])
+                ids = self.sampler.prompt_ids(st["msgs"])
+                est = self._est(len(ids), need)
+                spent = self.usage.cost() - self.start_cost
+                if cfg.budget_usd is not None and spent + inflight + est > cfg.budget_usd:
+                    self._drain(futs)
+                    raise Budget(f"budget cap {cfg.budget_usd:.4f} USD would be exceeded")
+                futs.append(
+                    (st, need, self.sampler.submit(ids, need, cfg.temperature, cfg.max_tokens))
+                )
+                inflight += est
+                self.requests += 1
+            self._drain(futs)
+
+    def _drain(self, futs: list[tuple[dict[str, Any], int, Callable[[], SampleResult]]]) -> None:
+        for st, need, fin in futs:
+            t0 = time.monotonic()
+            res = fin()
+            self.usage.add_sample(
+                res.prompt_tokens, res.cached_prompt_tokens, need, sum(res.out_tokens)
+            )
+            for text, n_out, stop in zip(res.texts, res.out_tokens, res.stop_reasons, strict=True):
+                st["cands"].append({"text": text, "out_tokens": n_out, "stop_reason": stop})
+            st["key"]["last_latency_s"] = round(time.monotonic() - t0, 3)
+            save_cache(st["path"], {**st["key"], "prompt_tokens": res.prompt_tokens}, st["cands"])
+            if self.on_usage is not None:
+                self.on_usage(self.usage)
+        futs.clear()
+
+
+def _state(
+    item: dict[str, Any], cfg: RunConfig, cache_dir: Path, rnd: int, regen: Sequence[ReasonCode]
+) -> dict[str, Any]:
+    iid = safe_id(str(item["item_id"]))
+    msgs = teacher_messages(item, regen, cfg.addendum, cfg.glossary)
+    key = _cache_key(cfg, iid, prompt_fp(msgs), rnd)
+    path = _cache_path(cache_dir, iid, rnd, cfg)
+    cands: list[dict[str, Any]] = []
+    if load_cache(path, key):
+        cands = json.loads(path.read_text(encoding="utf-8")).get("candidates", [])
+    return {"item": item, "msgs": msgs, "key": key, "path": path, "cands": cands}
 
 
 def run_items(
@@ -318,73 +581,62 @@ def run_items(
     usage: Usage | None = None,
     on_usage: Callable[[Usage], None] | None = None,
 ) -> dict[str, Selection]:
-    """Sample (or reuse cached) candidates and select gold for each item. Resume-safe."""
+    """Round 1 (+ optional teacher-only regen round 2), then template. Resume-safe."""
     cache_dir.mkdir(parents=True, exist_ok=True)
-    usage = usage or Usage(cfg.model)
-    requests = 0
-    results: dict[str, Selection] = {}
+    runner = _Runner(sampler, cfg, usage or Usage(cfg.model), on_usage)
+    ids = [safe_id(str(it["item_id"])) for it in items]
+    r1 = {iid: _state(it, cfg, cache_dir, 1, ()) for iid, it in zip(ids, items, strict=True)}
     stages = (
         [cfg.first_stage, cfg.candidates] if cfg.first_stage < cfg.candidates else [cfg.candidates]
     )
-    state: dict[str, dict[str, Any]] = {}
-    for item in items:
-        iid = safe_id(str(item["item_id"]))
-        msgs = as_dicts(writer_messages(item))
-        key = _cache_key(cfg, iid, prompt_fp(msgs))
-        path = cache_dir / f"{iid}.json"
-        cached = load_cache(path, key)
-        raw = json.loads(path.read_text(encoding="utf-8")).get("candidates", []) if cached else []
-        state[iid] = {"item": item, "msgs": msgs, "key": key, "path": path, "cands": raw}
-
+    won: dict[str, tuple[int, int, WriterOutput]] = {}  # iid -> (round, index, gold)
+    evals1: dict[str, list[CandidateEval]] = {}
     for target in stages:
-        pending: list[str] = []
-        for iid, st in state.items():
-            if iid in results:
+        open_ = [r1[i] for i in ids if i not in won]
+        runner.fill(open_, target)
+        for iid in ids:
+            if iid in won:
                 continue
-            texts = [c["text"] for c in st["cands"]]
-            sel = select_gold(st["item"], texts) if texts else None
-            if sel is not None and isinstance(sel.winner, int):
-                results[iid] = sel
-            elif len(texts) >= target:
-                if target == stages[-1]:
-                    results[iid] = sel if sel is not None else select_gold(st["item"], [])
-            else:
-                pending.append(iid)
-        for start in range(0, len(pending), max(1, cfg.concurrency)):
-            chunk = pending[start : start + max(1, cfg.concurrency)]
-            if sampler is None:
-                raise Budget("no sampler (dry run or cache-only) but candidates are missing")
-            futs = []
-            for iid in chunk:
-                if cfg.max_requests is not None and requests >= cfg.max_requests:
-                    raise Budget("max requests reached")
-                st = state[iid]
-                need = target - len(st["cands"])
-                ids = sampler.prompt_ids(st["msgs"])
-                futs.append((iid, need, sampler.submit(ids, need, cfg.temperature, cfg.max_tokens)))
-                requests += 1
-            for iid, need, fin in futs:
-                st = state[iid]
-                t0 = time.monotonic()
-                res = fin()
-                usage.add_sample(
-                    res.prompt_tokens, res.cached_prompt_tokens, need, sum(res.out_tokens)
-                )
-                for text, n_out, stop in zip(
-                    res.texts, res.out_tokens, res.stop_reasons, strict=True
-                ):
-                    st["cands"].append({"text": text, "out_tokens": n_out, "stop_reason": stop})
-                st["key"]["last_latency_s"] = round(time.monotonic() - t0, 3)
-                save_cache(
-                    st["path"], {**st["key"], "prompt_tokens": res.prompt_tokens}, st["cands"]
-                )
-                if on_usage is not None:
-                    on_usage(usage)
-        for iid in pending:
-            st = state[iid]
-            sel = select_gold(st["item"], [c["text"] for c in st["cands"]])
-            if isinstance(sel.winner, int) or target == stages[-1]:
-                results[iid] = sel
+            idx, gold, ev = _first_pass(r1[iid]["item"], [c["text"] for c in r1[iid]["cands"]])
+            evals1[iid] = ev
+            if idx is not None and gold is not None:
+                won[iid] = (1, idx, gold)
+    evals2: dict[str, list[CandidateEval]] = {}
+    codes2: dict[str, list[str]] = {}
+    if cfg.regen_round:
+        r2: dict[str, dict[str, Any]] = {}
+        for iid, it in zip(ids, items, strict=True):
+            if iid in won:
+                continue
+            codes = regen_codes(evals1.get(iid, []))
+            codes2[iid] = [c.value for c in codes]
+            r2[iid] = _state(it, cfg, cache_dir, 2, codes)
+        runner.fill(list(r2.values()), cfg.regen_candidates)
+        for iid, st in r2.items():
+            idx, gold, ev = _first_pass(st["item"], [c["text"] for c in st["cands"]])
+            evals2[iid] = ev
+            if idx is not None and gold is not None:
+                won[iid] = (2, idx, gold)
+    results: dict[str, Selection] = {}
+    for iid, it in zip(ids, items, strict=True):
+        ev1, ev2 = evals1.get(iid, []), evals2.get(iid, [])
+        unfinished = len(r1[iid]["cands"]) < cfg.candidates or (
+            cfg.regen_round and iid not in won and len(ev2) < cfg.regen_candidates
+        )
+        if iid not in won and unfinished:
+            results[iid] = Selection(PENDING, None, ev1, [], None, ev2, codes2.get(iid, []))
+            continue
+        if iid in won:
+            rnd, idx, gold = won[iid]
+            results[iid] = Selection(idx, gold, ev1, [], rnd, ev2, codes2.get(iid, []))
+            continue
+        out, gcodes = template_gold(it)
+        w = UNUSABLE if out is None else TEMPLATE
+        results[iid] = Selection(w, out, ev1, gcodes, None, ev2, codes2.get(iid, []))
+    if runner.stopped:
+        if cfg.raise_on_stop:
+            raise Budget(runner.stopped)
+        print(f"stopped early: {runner.stopped}")
     return results
 
 
@@ -400,7 +652,7 @@ def sft_row(item: dict[str, Any], sel: Selection) -> dict[str, Any] | None:
         "meta": {
             "item_id": item["item_id"],
             "seed_id": item.get("seed_id"),
-            "source": f"candidate:{sel.winner}" if isinstance(sel.winner, int) else str(sel.winner),
+            "source": sel.label,
             "language_mix": (item.get("meta") or {}).get("language_mix"),
         },
     }
@@ -409,44 +661,63 @@ def sft_row(item: dict[str, Any], sel: Selection) -> dict[str, Any] | None:
 def summarise(items: list[dict[str, Any]], results: dict[str, Selection]) -> dict[str, Any]:
     by_mix: dict[str, Counter[str]] = defaultdict(Counter)
     winners: Counter[str] = Counter()
-    fail_codes: Counter[str] = Counter()
-    per_cand: Counter[str] = Counter()
-    n_cand = 0
+    by_round: Counter[str] = Counter()
+    fail_codes: dict[str, Counter[str]] = {"r1": Counter(), "r2": Counter()}
+    cand: dict[str, Counter[str]] = {"r1": Counter(), "r2": Counter()}
     for item in items:
         sel = results.get(str(item["item_id"]))
         if sel is None:
             continue
+        if sel.winner == PENDING:
+            by_round[PENDING] += 1
+            continue
         mix = str((item.get("meta") or {}).get("language_mix", "?"))
-        w = f"candidate:{sel.winner}" if isinstance(sel.winner, int) else str(sel.winner)
-        winners[w] += 1
+        winners[sel.label] += 1
+        by_round[f"r{sel.round}" if sel.round else str(sel.winner)] += 1
         by_mix[mix]["items"] += 1
-        by_mix[mix]["teacher_pass"] += int(isinstance(sel.winner, int))
-        for ev in sel.evals:
-            n_cand += 1
-            per_cand["parsed"] += int(ev.parse_ok)
-            per_cand["passed"] += int(ev.passed)
-            per_cand["fenced"] += int(ev.fenced)
-            if not ev.passed:
-                fail_codes.update(ev.codes)
+        by_mix[mix]["pass_r1"] += int(sel.round == 1)
+        by_mix[mix]["pass_any"] += int(sel.round is not None)
+        for rk, evs in (("r1", sel.evals), ("r2", sel.evals_r2)):
+            for ev in evs:
+                cand[rk]["n"] += 1
+                cand[rk]["parsed"] += int(ev.parse_ok)
+                cand[rk]["passed"] += int(ev.passed)
+                cand[rk]["fenced"] += int(ev.fenced)
+                if not ev.passed:
+                    fail_codes[rk].update(ev.codes)
     total = sum(winners.values())
+
+    def r(a: int, b: int) -> float | None:
+        return round(a / b, 4) if b else None
+
     return {
         "items": total,
         "winners": dict(sorted(winners.items())),
-        "item_pass_rate": round(
-            sum(v for k, v in winners.items() if k.startswith("candidate")) / total, 4
-        )
-        if total
-        else None,
-        "template_share": round(winners[TEMPLATE] / total, 4) if total else None,
-        "candidates_evaluated": n_cand,
-        "candidate_parse_rate": round(per_cand["parsed"] / n_cand, 4) if n_cand else None,
-        "candidate_pass_rate": round(per_cand["passed"] / n_cand, 4) if n_cand else None,
-        "fenced_candidates": per_cand["fenced"],
+        "by_round": dict(sorted(by_round.items())),
+        "item_pass_rate_r1": r(by_round["r1"], total),
+        "item_pass_rate": r(by_round["r1"] + by_round["r2"], total),
+        "r2_items_attempted": sum(
+            1 for it in items if (s := results.get(str(it["item_id"]))) and s.evals_r2
+        ),
+        "template_share": r(winners[TEMPLATE], total),
+        "candidates": {
+            rk: {
+                "n": c["n"],
+                "parse_rate": r(c["parsed"], c["n"]),
+                "pass_rate": r(c["passed"], c["n"]),
+                "fenced": c["fenced"],
+            }
+            for rk, c in cand.items()
+        },
         "pass_rate_by_language_mix": {
-            m: {"items": c["items"], "pass_rate": round(c["teacher_pass"] / c["items"], 4)}
+            m: {
+                "items": c["items"],
+                "r1": r(c["pass_r1"], c["items"]),
+                "after_r2": r(c["pass_any"], c["items"]),
+            }
             for m, c in sorted(by_mix.items())
         },
-        "failing_candidate_codes": dict(fail_codes.most_common()),
+        "failing_candidate_codes": {rk: dict(c.most_common()) for rk, c in fail_codes.items()},
     }
 
 
@@ -532,6 +803,12 @@ def main(argv: Sequence[str] | None = None) -> int:
     ap.add_argument("--max-tokens", type=int, default=DEFAULT_MAX_TOKENS)
     ap.add_argument("--concurrency", type=int, default=8)
     ap.add_argument("--max-requests", type=int, default=None)
+    ap.add_argument("--budget-usd", type=float, default=None, help="stop before exceeding")
+    ap.add_argument("--regen-round", action="store_true", help="teacher-only round 2")
+    ap.add_argument("--regen-candidates", type=int, default=2)
+    ap.add_argument("--teacher-addendum", action="store_true", help="teacher-only system rules")
+    ap.add_argument("--teacher-glossary", action="store_true", help="teacher-only lexicon glossary")
+    ap.add_argument("--language-mix", default=None, help="only items with this meta.language_mix")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--est-out-tokens", type=int, default=DEFAULT_EST_OUT_TOKENS)
     ap.add_argument("--assume-items", type=int, default=None, help="dry run: scale to N items")
@@ -549,8 +826,21 @@ def main(argv: Sequence[str] | None = None) -> int:
         max_tokens=a.max_tokens,
         concurrency=a.concurrency,
         max_requests=a.max_requests,
+        regen_round=a.regen_round,
+        regen_candidates=a.regen_candidates,
+        addendum=a.teacher_addendum,
+        glossary=a.teacher_glossary,
+        budget_usd=a.budget_usd,
+        raise_on_stop=False,
     )
     splits = load_split_items(a.split, a.items)
+    if a.language_mix:
+        for k in list(splits):
+            splits[k] = [
+                it
+                for it in splits[k]
+                if (it.get("meta") or {}).get("language_mix") == a.language_mix
+            ]
     if a.limit is not None:
         left = a.limit
         for k in list(splits):
@@ -640,7 +930,9 @@ def main(argv: Sequence[str] | None = None) -> int:
         summ["sft_rows"] = n
         summ["per_item"] = {
             str(it["item_id"]): {
-                "winner": results[str(it["item_id"])].winner,
+                "winner": results[str(it["item_id"])].label,
+                "regen_codes": results[str(it["item_id"])].regen_codes,
+                "candidate_codes_r2": [ev.codes for ev in results[str(it["item_id"])].evals_r2],
                 "candidate_codes": [ev.codes for ev in results[str(it["item_id"])].evals],
                 "gold_codes": results[str(it["item_id"])].gold_codes,
             }

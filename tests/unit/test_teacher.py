@@ -172,7 +172,7 @@ def test_production_prompt_used_verbatim(tmp_path: Path) -> None:
     assert row is not None
     assert row["messages"][:2] == expected_a
     assert row["messages"][2]["role"] == "assistant"
-    assert row["meta"]["source"] == "candidate:0"
+    assert row["meta"]["source"] == "r1:c0"
 
 
 def _ordered_prompt_ids(
@@ -248,7 +248,106 @@ def test_summary_pass_rates_by_language_mix() -> None:
     res = {"a-00": teacher.select_gold(a, [GOOD]), "b-00": teacher.select_gold(b, [NOT_JSON])}
     s = teacher.summarise([a, b], res)
     assert s["pass_rate_by_language_mix"] == {
-        "english": {"items": 1, "pass_rate": 0.0},
-        "hinglish": {"items": 1, "pass_rate": 1.0},
+        "english": {"items": 1, "r1": 0.0, "after_r2": 0.0},
+        "hinglish": {"items": 1, "r1": 1.0, "after_r2": 1.0},
     }
     assert s["template_share"] == 0.5 and s["item_pass_rate"] == 0.5
+    assert s["winners"] == {"r1:c0": 1, "template": 1}
+
+
+def test_regen_round_uses_fixed_instructions_and_plain_training_prompt(tmp_path: Path) -> None:
+    from hub.schemas import ReasonCode
+
+    item = make_item("a-00")
+    fake = FakeSampler({"a-00": [BAD_DETAIL, BAD_HEDGE, BAD_HEDGE, GOOD]})
+    cfg = teacher.RunConfig(model=fake.model, candidates=2, regen_round=True, regen_candidates=2)
+    res = teacher.run_items([item], fake, cfg, cache_dir=tmp_path)
+    sel = res["a-00"]
+    assert fake.requests == [2, 2]
+    assert sel.round == 2 and sel.winner == 1 and sel.label == "r2:c1"
+    # best failing round-1 candidate: BAD_HEDGE (1 code) beats BAD_DETAIL (2 codes)
+    assert sel.regen_codes == ["hedge_missing_in_entry"]
+    r2_prompt = fake.prompts[1]
+    expected = as_dicts(
+        build_writer_prompt(
+            WalkerGroup(GROUP),
+            MissionText("Notice the gulmohar."),
+            Transcript(TRANSCRIPT),
+            regen=[ReasonCode.HEDGE_MISSING_IN_ENTRY],
+        )
+    )
+    assert r2_prompt == expected
+    assert "Your last reply had problems" in r2_prompt[1]["content"]
+    for bad in (BAD_DETAIL, BAD_HEDGE):  # never previous output text
+        assert json.loads(bad)["entry"] not in r2_prompt[1]["content"]
+    row = teacher.sft_row(item, sel)
+    assert row is not None and row["meta"]["source"] == "r2:c1"
+    assert row["messages"][:2] == fake.prompts[0]  # plain production prompt
+    assert "Your last reply" not in row["messages"][1]["content"]
+    assert (tmp_path / "a-00.r2.json").is_file()
+    # resume: both rounds cached -> no API calls
+    teacher.run_items([item], ExplodingSampler({"a-00": []}), cfg, cache_dir=tmp_path)
+
+
+def test_regen_round_falls_back_to_template(tmp_path: Path) -> None:
+    fake = FakeSampler({"a-00": [NOT_JSON, NOT_JSON, BAD_HEDGE, BAD_HEDGE]})
+    cfg = teacher.RunConfig(model=fake.model, candidates=2, regen_round=True)
+    sel = teacher.run_items([make_item("a-00")], fake, cfg, cache_dir=tmp_path)["a-00"]
+    assert sel.winner == teacher.TEMPLATE and sel.round is None
+    assert sel.regen_codes == ["invalid_json"] and len(sel.evals_r2) == 2
+
+
+def test_teacher_addendum_only_in_teacher_prompt(tmp_path: Path) -> None:
+    item = make_item("a-00")
+    fake = FakeSampler({"a-00": [GOOD, GOOD]})
+    cfg = teacher.RunConfig(model=fake.model, candidates=2, addendum=True)
+    sel = teacher.run_items([item], fake, cfg, cache_dir=tmp_path)["a-00"]
+    assert fake.prompts[0][0]["content"].endswith(teacher.TEACHER_ADDENDUM)
+    row = teacher.sft_row(item, sel)
+    assert row is not None and teacher.TEACHER_ADDENDUM not in row["messages"][0]["content"]
+    assert row["messages"][:2] == as_dicts(
+        build_writer_prompt(
+            WalkerGroup(GROUP), MissionText("Notice the gulmohar."), Transcript(TRANSCRIPT)
+        )
+    )
+    assert (tmp_path / "a-00.add.json").is_file() and not (tmp_path / "a-00.json").exists()
+
+
+def test_budget_cap_stops_before_launching(tmp_path: Path) -> None:
+    items = [make_item("a-00"), make_item("b-00")]
+    fake = FakeSampler({"a-00": [GOOD] * 2, "b-00": [GOOD] * 2}, model="Qwen/Qwen3.5-397B-A17B")
+    fake.prompt_ids = _ordered_prompt_ids(fake, ["a-00", "b-00"])  # type: ignore[method-assign]
+    # one request (10 prompt tokens, 2 x 400 max tokens) is ~0.0060 USD worst case
+    cfg = teacher.RunConfig(model=fake.model, candidates=2, budget_usd=0.0065, concurrency=1)
+    with pytest.raises(teacher.Budget, match="budget cap"):
+        teacher.run_items(items, fake, cfg, cache_dir=tmp_path)
+    assert fake.requests == [2]
+    assert (tmp_path / "a-00.json").is_file() and not (tmp_path / "b-00.json").exists()
+
+
+def test_budget_stop_reports_pending_when_not_raising(tmp_path: Path) -> None:
+    items = [make_item("a-00"), make_item("b-00")]
+    fake = FakeSampler({"a-00": [GOOD] * 2, "b-00": [GOOD] * 2}, model="Qwen/Qwen3.5-397B-A17B")
+    fake.prompt_ids = _ordered_prompt_ids(fake, ["a-00", "b-00"])  # type: ignore[method-assign]
+    cfg = teacher.RunConfig(
+        model=fake.model, candidates=2, budget_usd=0.0065, concurrency=1, raise_on_stop=False
+    )
+    res = teacher.run_items(items, fake, cfg, cache_dir=tmp_path)
+    assert res["a-00"].label == "r1:c0" and res["b-00"].winner == teacher.PENDING
+    assert teacher.sft_row(items[1], res["b-00"]) is None
+    s = teacher.summarise(items, res)
+    assert s["items"] == 1 and s["by_round"] == {"pending": 1, "r1": 1}
+
+
+def test_teacher_glossary_is_code_built_and_teacher_only(tmp_path: Path) -> None:
+    t = "बादल साफ़ हैं। चील उड़ रही है। बस, इतना ही।"
+    g = teacher.teacher_glossary(t)
+    assert g is not None and "चील = kite" in g and "बादल = cloud" in g
+    assert "bus" not in g  # function-word alias never glossed
+    assert teacher.teacher_glossary("we walked and talked") is None
+    item = {**make_item("a-00"), "transcript": t, "gold": {"facts": [], "mission_result":
+            "not_mentioned", "mission_span": None}}  # fmt: skip
+    msgs = teacher.teacher_messages(item, glossary=True)
+    assert msgs[0]["content"].endswith(g)
+    row = teacher.sft_row(item, teacher.select_gold(item, []))
+    assert row is not None and "Glossary" not in row["messages"][0]["content"]
