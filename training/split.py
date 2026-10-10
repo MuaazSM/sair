@@ -100,6 +100,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     splits = run(items, args.rng)
     for name, rows in splits.items():
         write_jsonl(args.out_dir / f"{name}.jsonl", rows)
+        if name == "train":
+            # balance.py reads this copy and rewrites train.jsonl (idempotent re-runs)
+            write_jsonl(args.out_dir / "train.unbalanced.jsonl", rows)
     write_jsonl(args.eval_out, splits["test"])
 
     total = len(items)

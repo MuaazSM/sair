@@ -57,11 +57,14 @@ from training.common import (
     OLLAMA_MODEL,
     Seed,
     load_seeds,
+    read_jsonl,
     write_jsonl,
 )
 
 LEAK_TOKENS = ("mission_span", "mission:", "item 0", "item 1", "span:", "transcript", "{", "}")
 NOT_AT_END = ("looked like", "sounded like")
+TOPUP_START = 30  # variant indices >= this are top-up variants (length-leak-balanced)
+R_SCRIPT = "script_mismatch"
 POSITIONS = ("start", "middle", "end")
 HARD_PERCENT = 20
 DETAIL_REQUESTS: dict[str, list[str]] = {
@@ -159,6 +162,7 @@ class Variant:
     number_item: int | None = None  # seed noticed-index whose segment must state a count
     hard: bool = False
     hard_kind: str = ""  # "detail" | "bait"
+    topup: str = ""  # "" | "long_few" | "short_many" (top-up variants only)
     hard_text: str = ""  # the unsaid detail requested (detail) or the lure hinted at (bait)
 
 
@@ -179,6 +183,22 @@ def make_variant(seed: Seed, idx: int) -> Variant:
     if noticed and not included:
         included = [rng.randrange(len(noticed))]
 
+    topup = idx >= TOPUP_START
+    topup_mode = ""
+    if topup:
+        # Break the length/fact-count correlation: long notes with 0-2 facts, short notes
+        # with 3+ facts (only possible when the seed has 3+ noticed items).
+        base = [t for t in base if t not in ("very_short", "long")]
+        if len(noticed) >= 3 and rng.random() < 0.5:
+            topup_mode = "short_many"
+            k = rng.randint(3, len(noticed))
+            included = sorted(rng.sample(range(len(noticed)), k))
+            base.append("very_short")
+        else:
+            topup_mode = "long_few"
+            k = rng.randint(0, min(2, len(noticed)))
+            included = sorted(rng.sample(range(len(noticed)), k))
+            base += ["long", "off_topic"]
     very_short = "very_short" in base
     style: list[str] = []
     for tag in base:
@@ -218,7 +238,9 @@ def make_variant(seed: Seed, idx: int) -> Variant:
             hard_kind, hard_text = "bait", rng.choice(lures)
         else:
             hard_kind, hard_text = "detail", rng.choice(DETAIL_REQUESTS[mix])
-    if very_short:
+    if topup_mode == "short_many":
+        words = (10, 26)
+    elif very_short:
         words = (3, 15)
     elif "long" in style:
         words = (60, 110)
@@ -236,6 +258,7 @@ def make_variant(seed: Seed, idx: int) -> Variant:
         hard=hard,
         hard_kind=hard_kind,
         hard_text=hard_text,
+        topup=topup_mode,
     )
 
 
@@ -536,6 +559,8 @@ def hedge_position(span: str, lex: Lexicon | None = None) -> str | None:
     return "middle" if frac <= 0.66 else "end"
 
 
+_DEVA_LETTER = re.compile(r"[\u0900-\u097F]")
+_LATIN_LETTER = re.compile(r"[A-Za-z]")
 _LABEL = re.compile(r"^\s*(?:Mom|Dad)\s*:\s*")
 _ROLE = re.compile(r"item_(\d+)(?:_([ab]))?")
 
@@ -654,6 +679,7 @@ def assemble(seed: Seed, v: Variant, parsed: dict[str, Any]) -> dict[str, Any] |
                 "number_fact": v.included.index(v.number_item)
                 if v.number_item is not None
                 else None,
+                "topup": v.topup,
                 "hard_kind": v.hard_kind,
                 "hard_text": v.hard_text,
             },
@@ -698,6 +724,11 @@ def validate_item(
             return R_UNSURE_NO_CUE
 
     gen = item["meta"].get("gen") or {}
+    if gen.get("topup") and item["meta"]["language_mix"] == "devanagari_heavy":
+        deva = len(_DEVA_LETTER.findall(transcript))
+        latin = len(_LATIN_LETTER.findall(transcript))
+        if deva + latin == 0 or deva / (deva + latin) < 0.5:
+            return R_SCRIPT
     unsure = [f for f in facts if f.certainty is Certainty.UNSURE]
     for f, target in zip(unsure, gen.get("hedge_targets") or [], strict=False):
         if hedge_position(f.span, lex) != target:
@@ -848,12 +879,14 @@ def process_seed(
     force: bool,
     lex: Lexicon,
     cache_root: Path = CACHE_DIR,
+    indices: Sequence[int] | None = None,
 ) -> tuple[list[dict[str, Any]], Counter[str], list[float]]:
     drops: Counter[str] = Counter()
     secs: list[float] = []
     cand: list[dict[str, Any]] = []
-    n = variant_count(seed["id"], lo, hi)
-    for idx in range(n):
+    idxs = list(indices) if indices is not None else list(range(variant_count(seed["id"], lo, hi)))
+    n = len(idxs)
+    for idx in idxs:
         v = make_variant(seed, idx)
         rec, dt = generate_one(seed, v, client, force=force, cache_root=cache_root)
         if dt:
@@ -878,6 +911,23 @@ def process_seed(
     return kept, drops, secs
 
 
+def merge_topup(items_path: Path, new_items: Sequence[dict[str, Any]]) -> int:
+    """Append top-up items to items.jsonl (backup once as items.base.jsonl); dedupe per seed."""
+    base = read_jsonl(items_path)
+    backup = items_path.with_name("items.base.jsonl")
+    if not backup.exists():
+        write_jsonl(backup, base)
+    known = {i["item_id"] for i in base}
+    by_seed: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for it in [*base, *(n for n in new_items if n["item_id"] not in known)]:
+        by_seed[it["seed_id"]].append(it)
+    out: list[dict[str, Any]] = []
+    for seed_id in dict.fromkeys(i["seed_id"] for i in [*base, *new_items]):
+        kept, _ = dedupe(by_seed[seed_id])
+        out.extend(kept)
+    return write_jsonl(items_path, out)
+
+
 def parse_range(s: str) -> tuple[int, int]:
     lo, _, hi = s.partition("-")
     return int(lo), int(hi or lo)
@@ -891,7 +941,20 @@ def main(argv: Sequence[str] | None = None) -> int:
     ap.add_argument("--variants", default="15-20")
     ap.add_argument("--force", action="store_true", help="ignore the cache")
     ap.add_argument("--out", type=Path, default=ITEMS_PATH)
+    ap.add_argument(
+        "--topup",
+        type=int,
+        default=0,
+        help=f"generate N NEW variants per seed at indices {TOPUP_START}.. (cache kept)",
+    )
+    ap.add_argument(
+        "--merge",
+        action="store_true",
+        help="with --topup: merge the new items into items.jsonl (backup: items.base.jsonl)",
+    )
     args = ap.parse_args(argv)
+    if args.topup and args.out == ITEMS_PATH:
+        args.out = ITEMS_PATH.with_name("items.topup.jsonl")
 
     seeds = load_seeds()
     if args.seeds:
@@ -909,7 +972,15 @@ def main(argv: Sequence[str] | None = None) -> int:
     all_secs: list[float] = []
     with httpx.Client(timeout=httpx.Timeout(180.0)) as client:
         for seed in seeds:
-            kept, drops, secs = process_seed(seed, lo, hi, client, force=args.force, lex=lex)
+            kept, drops, secs = process_seed(
+                seed,
+                lo,
+                hi,
+                client,
+                force=args.force,
+                lex=lex,
+                indices=range(TOPUP_START, TOPUP_START + args.topup) if args.topup else None,
+            )
             all_items.extend(kept)
             table[seed["id"]] = drops
             all_secs.extend(secs)
@@ -920,6 +991,9 @@ def main(argv: Sequence[str] | None = None) -> int:
             )
     n_written = write_jsonl(args.out, all_items)
     print(f"\nwrote {n_written} items to {args.out}")
+    if args.topup and args.merge:
+        merged = merge_topup(ITEMS_PATH, all_items)
+        print(f"merged into {ITEMS_PATH}: {merged} items total")
 
     reasons: defaultdict[str, int] = defaultdict(int)
     print("\ndrop table (per seed):")
