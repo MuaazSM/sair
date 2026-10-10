@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4445.4338750001625,
+ "output": "{\"facts\": [{\"span\": \"peepal ke paas aaj kuch tote the shayad\", \"kind\": \"sound\", \"subject\": \"tote\", \"certainty\": \"sure\", \"place\": \"peepal ke paas\"}, {\"span\": \"green green\", \"kind\": \"sight\", \"subject\": \"green\", \"certainty\": \"sure\"}, {\"span\": \"bahut shor kar rahe the\", \"kind\": \"sound\", \"subject\": \"shor\", \"certainty\": \"sure\"}, {\"span\": \"cobbler ne bola roz aate hain\", \"kind\": \"person\", \"subject\": \"cobbler\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was walking today. Near the peepal there were some tote that were making a lot of noise. The cobbler said they come daily.\"}",
+ "prompt_sha": "315eb8a699781d6d3e13938be34a13c5821a5eadc7df0b2452886ab038d61640",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 197
+}

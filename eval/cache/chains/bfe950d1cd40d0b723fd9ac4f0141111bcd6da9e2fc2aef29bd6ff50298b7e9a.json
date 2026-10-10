@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2464.65716700186,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f5_1\"], \"text\": \"You will notice the sound on the आम का पेड़. Look for the shor near the आम का पेड़.\"}",
+ "prompt_sha": "e52f6afc18dc346fedccaebb58b4ebf771acaabed20a43bd96b959ce1d7f7dbb",
+ "renderer_fingerprint": null,
+ "tokens_in": 1348,
+ "tokens_out": 49
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4033.054457999242,
+ "output": "{\"facts\":[{\"span\":\"Bhutta smell strong.\",\"kind\":\"smell\",\"subject\":\"bhutta\",\"certainty\":\"sure\"},{\"span\":\"Hen seen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas seen.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Some things looked different.\",\"entry\":\"Dad went for an evening walk and looked at the market. They noticed strong bhutta smell, a hen, and umbrellas.\"}",
+ "prompt_sha": "0f2f006360666fe0dd77695fb054661f5b619b6b83c5b40672a51e95cfef7c8b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 784,
+ "tokens_out": 111
+}

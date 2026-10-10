@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4160.991709002701,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"paanch buses dikhi\",\n\"kind\": \"sight\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"chai ki smell aayi\",\n\"kind\": \"smell\",\n\"subject\": \"chai smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"buses ko count kiya\",\n\"kind\": \"other\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"paanch buses dikhi. bahut zyada mist thi. chai ki smell aayi. buses ko count kiya.\",\n\"entry\": \"Mom walked today. She saw five buses. There was a chai smell. She counted the buses but did not remember the bus number.\"\n}\n```",
+ "prompt_sha": "d04042e6fb08ddf7fbcd2402fe226e4c66d62a0051d084215691bd885869cffc",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 217
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 805.1402079981926,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You look at the trees and count how many you see.\"}",
+ "prompt_sha": "960f40fd654e39ce770c3e6e565589e6ea7d98195907d4c55c2d822e93a0dd63",
+ "renderer_fingerprint": null,
+ "tokens_in": 892,
+ "tokens_out": 33
+}

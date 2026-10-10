@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 791.5940000020782,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the leaves near the clubhouse.\"}",
+ "prompt_sha": "766a74485f375c96d18d0a7464a8886b648198df195753635cbfa7d348eb780a",
+ "renderer_fingerprint": null,
+ "tokens_in": 594,
+ "tokens_out": 30
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2595.6737079977756,
+ "output": "{\"facts\": [{\"span\": \"some vehicle was parked in the middle of the lane, a big one\", \"kind\": \"sight\", \"subject\": \"vehicle\", \"certainty\": \"sure\", \"place\": \"the middle of the lane\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. He mentioned that some vehicle was parked in the middle of the lane, a big one. It was dark so he didn't see much else.\"}",
+ "prompt_sha": "c9f3ed1f52e60648cdd148ce41eb3fc1351434333270ba44628bdc53813a44ab",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 106
+}

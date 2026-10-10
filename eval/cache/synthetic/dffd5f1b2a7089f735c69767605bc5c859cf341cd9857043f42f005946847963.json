@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3220.8223750021716,
+ "output": "{\"facts\": [{\"span\": \"Ek butterfly dekhi.\", \"kind\": \"sight\", \"subject\": \"Ek butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel the bird maybe was flying high.\", \"kind\": \"animal\", \"subject\": \"Koel the bird\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad walked back from the park. He said there were many yoga groups. He saw a butterfly. Maybe the koel the bird was flying high. He forgot the mission, and no one was there. He asked when dinner is.\"}",
+ "prompt_sha": "1158a4c70ffd51c5e931da7e282e88084ee41d022e23267def330c70adc54ac1",
+ "renderer_fingerprint": null,
+ "tokens_in": 530,
+ "tokens_out": 141
+}

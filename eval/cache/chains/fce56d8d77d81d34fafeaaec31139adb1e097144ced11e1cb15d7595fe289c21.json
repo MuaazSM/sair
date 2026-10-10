@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1427.1399999997811,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact4\"], \"text\": \"Notice the yellow everywhere near the path.\"}",
+ "prompt_sha": "813550085b5e8a8a120e065b82c70967530e564e3de117d042af75f017520719",
+ "renderer_fingerprint": null,
+ "tokens_in": 790,
+ "tokens_out": 31
+}

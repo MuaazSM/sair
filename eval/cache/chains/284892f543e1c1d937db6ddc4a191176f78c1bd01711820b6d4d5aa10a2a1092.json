@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4831.4623330006725,
+ "output": "{\"facts\":[{\"span\":\"market was decorated today\",\"kind\":\"sight\",\"subject\":\"market\",\"certainty\":\"sure\"},{\"span\":\"lots of flowers hanging at the shop fronts\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"},{\"span\":\"the fruit stall had pomegranates\",\"kind\":\"plant\",\"subject\":\"pomegranates\",\"certainty\":\"sure\"},{\"span\":\"the cow was there again near the peepal\",\"kind\":\"animal\",\"subject\":\"cow\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked through a decorated market with flowers and pomegranates. They saw a cow near a peepal tree.\"}",
+ "prompt_sha": "e9e864726041e9ea0b1c5cd9c221f7237c6465d9d8ef23fd174e1b39c3c7b826",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 143
+}

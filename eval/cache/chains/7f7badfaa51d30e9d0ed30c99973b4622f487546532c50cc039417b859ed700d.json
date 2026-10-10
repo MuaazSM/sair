@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1911.680040997453,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f5_1\"], \"text\": \"You will notice the color of the leaf on the champa tree.\"}",
+ "prompt_sha": "c1122a24846d163391aaa1bff877a1bf868e258802ff7bee5765c72c7c0a05d3",
+ "renderer_fingerprint": null,
+ "tokens_in": 1233,
+ "tokens_out": 53
+}

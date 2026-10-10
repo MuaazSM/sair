@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4298.646749997715,
+ "output": "{\"facts\": [{\"span\": \"wind bahut tez thi\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"waves were coming\", \"kind\": \"sight\", \"subject\": \"waves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad sea face feel good\", \"kind\": \"other\", \"subject\": \"sea face\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"rain is falling now\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad mission partial complete\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad experienced very strong wind. Waves were coming and maybe the sea face felt good. Rain is falling now. Maybe the mission is partial complete.\"}",
+ "prompt_sha": "d014cc37e0ace8a2933424c5fc8db0e13cb3bdc840e7e7c3c107a10ba68085ab",
+ "renderer_fingerprint": null,
+ "tokens_in": 539,
+ "tokens_out": 219
+}

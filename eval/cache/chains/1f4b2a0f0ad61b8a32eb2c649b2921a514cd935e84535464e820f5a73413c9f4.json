@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5491.4663750023465,
+ "output": "{\"facts\":[{\"span\":\"koyal aaj bhi thi\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"sure\"},{\"span\":\"wahi coconut ke ped pe lag rahi thi\",\"kind\":\"plant\",\"subject\":\"coconut\",\"certainty\":\"sure\"},{\"span\":\"mandir mein bhajan chal raha tha\",\"kind\":\"sound\",\"subject\":\"bhajan\",\"certainty\":\"sure\"},{\"span\":\"nariyal wala nahi tha aaj\",\"kind\":\"plant\",\"subject\":\"nariyal\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"koyal aaj bhi thi\",\"entry\":\"Mom and Dad went for a walk. They noticed a koel near the temple pond. They also heard bhajan and saw coconut trees. Maybe there was no nariyal tree today.\"}",
+ "prompt_sha": "6edbcef86ff3b9447b9e2d55b455a7128f0db28454d3ed20b30eb49cd3902d6c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 745,
+ "tokens_out": 167
+}

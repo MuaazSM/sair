@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4763.826457998221,
+ "output": "{\"facts\": [{\"span\": \"compound mein do round kiye\", \"kind\": \"sight\", \"subject\": \"do round kiye\", \"certainty\": \"sure\", \"place\": \"compound\"}, {\"span\": \"jo badam ka ped hai parking ke paas, uske patte bade bade hain\", \"kind\": \"plant\", \"subject\": \"patte bade bade hain\", \"certainty\": \"sure\", \"place\": \"badam ka ped parking ke paas\"}, {\"span\": \"maine ek patta uthaya, accha shape tha\", \"kind\": \"sight\", \"subject\": \"ek patta uthaya, accha shape tha\", \"certainty\": \"sure\"}, {\"span\": \"watchman uncle chai pi rahe the\", \"kind\": \"person\", \"subject\": \"watchman uncle chai pi rahe the\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom did some rounds in the compound. She picked a leaf from the almond tree near the parking, and it had a good shape. The watchman uncle was drinking tea.\"}",
+ "prompt_sha": "8b6159ec06d0e0a75c8cb7a2df1da8ab8ab737225ee1d56687c2bd791e9b27f4",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 232
+}

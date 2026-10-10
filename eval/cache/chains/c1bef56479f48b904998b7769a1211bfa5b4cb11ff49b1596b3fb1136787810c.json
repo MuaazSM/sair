@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1760.82516599854,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f2_1\"], \"text\": \"You will notice if any leaves on the almond tree have changed shape.\"}",
+ "prompt_sha": "d2fe1b68cdafd82e9bdfefff35254b504a0e4b7c90f37a3e76471efe682cc39a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1079,
+ "tokens_out": 41
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2878.2043749997683,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f2_2\"], \"text\": \"You will notice the sea-face and count the bhutta on the corner.\"}",
+ "prompt_sha": "283a201ca1128c0b31c96a6d6933ebe6e1265d54f08e8e25ca28d6bda8b84e4f",
+ "renderer_fingerprint": null,
+ "tokens_in": 1670,
+ "tokens_out": 67
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6126.437625000108,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is here.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"it is flowering again.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"The champa is growing tall.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There are three goats.\",\"kind\":\"animal\",\"subject\":\"goats\",\"certainty\":\"sure\"},{\"span\":\"The cat is by the gate.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"looked like Dew is on the grass.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine and it is flowering again.\",\"entry\":\"Dad went for a walk and checked the jasmine. It is flowering again. He also saw champa, goats, a cat, and maybe dew.\"}",
+ "prompt_sha": "f0d9d22c80e281b9f41db2c43c5df6167c029997ee34d7ca2b26abd7bad8f86c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 772,
+ "tokens_out": 192
+}

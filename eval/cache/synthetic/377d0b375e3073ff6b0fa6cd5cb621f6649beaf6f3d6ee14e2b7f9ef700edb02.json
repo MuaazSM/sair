@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5489.214208999329,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Evening walk done.\",\n\"kind\": \"other\",\n\"subject\": \"Evening walk\",\n\"certainty\": \"certain\",\n\"place\": \"\"\n},\n{\n\"span\": \"Buses aage jaa rahi thi.\",\n\"kind\": \"other\",\n\"subject\": \"Buses\",\n\"certainty\": \"certain\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen mist dikh rahi thi.\",\n\"kind\": \"sight\",\n\"subject\": \"mist\",\n\"certainty\": \"certain\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad Sparrow ud raha tha.\",\n\"kind\": \"animal\",\n\"subject\": \"Sparrow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Count ki mission puri ho gayi.\",\n\"kind\": \"other\",\n\"subject\": \"Count ki mission\",\n\"certainty\": \"certain\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Count ki mission puri ho gayi.\",\n\"entry\": \"Mom finished the evening walk. Buses were going ahead. Three mists were visible. Maybe a Sparrow was flying. Count's mission was completed.\"\n}\n```",
+ "prompt_sha": "6ea4df490289d7223cb6c67b44edf835dfb57e03a2789a3091fda04674dd7d4d",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 294
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3991.334749996895,
+ "output": "{\"facts\":[{\"span\":\"there were a lot of flowers floating in the temple pond today\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"temple pond\"},{\"span\":\"offerings maybe\",\"kind\":\"other\",\"subject\":\"offerings\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"we didn't go too close\",\"entry\":\"Mom and Dad went to the temple pond. They saw flowers floating there and maybe offerings. They did not listen for birds because they did not go close.\"}",
+ "prompt_sha": "32e3c256be0d6b0a1133462bfa3b13d0bc525f5a177de9734a103eb6bc9fffdf",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 728,
+ "tokens_out": 110
+}

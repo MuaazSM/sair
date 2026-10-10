@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4734.232957998756,
+ "output": "{\"facts\": [{\"span\": \"Buses aage se aa rahi hain.\", \"kind\": \"sight\", \"subject\": \"Buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen mist dikh rahi thi.\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek sparrow ud raha tha\", \"kind\": \"animal\", \"subject\": \"sparrow\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Chai ki smell bahut achhi thi.\", \"kind\": \"smell\", \"subject\": \"Chai ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bus count kiya, do buses dekhi.\", \"kind\": \"other\", \"subject\": \"do buses\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom had a nice evening walk. Buses were coming from ahead. Three mists were visible, and a sparrow was flying. The smell of tea was very good. I counted the buses and saw two buses.\"}",
+ "prompt_sha": "8f4981239679883e5ce04d579d7bdb6edb8ab56c2f33ce35e90512b52c99967a",
+ "renderer_fingerprint": null,
+ "tokens_in": 548,
+ "tokens_out": 247
+}

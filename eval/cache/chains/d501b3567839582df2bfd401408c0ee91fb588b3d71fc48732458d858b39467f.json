@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2870.131957999547,
+ "output": "{\"facts\": [{\"span\": \"aam ke ped pe kaafi shor tha\", \"kind\": \"sound\", \"subject\": \"shor\", \"certainty\": \"sure\", \"place\": \"aam ke ped\"}, {\"span\": \"thodi thand thi aaj\", \"kind\": \"weather\", \"subject\": \"thand\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad returned. There was a lot of noise on the mango tree. It was a little cold today.\"}",
+ "prompt_sha": "498751e577ad32d38c214b4e2160ebc2e14e433c615c75c5d38001ccbd8efa3d",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 119
+}

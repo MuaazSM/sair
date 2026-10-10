@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3776.0812919987075,
+ "output": "{\"facts\":[{\"span\":\"we heard a bird calling from the trees across the pond\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"maybe it was a koel, maybe not\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"we could not spot it\",\"entry\":\"Mom and Dad walked and listened for birds near the pond fence. They heard a bird calling but could not spot it. Maybe it was a koel.\"}",
+ "prompt_sha": "fe16cc084c2b9b35ada372c029f2c70ff71cfb7561e293047ff8a65ec0a87f03",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 108
+}

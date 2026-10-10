@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5001.084792002075,
+ "output": "{\"facts\":[{\"span\":\"Buses aate jaate hain.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut thick thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Chai ki smell aayi.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Buses gine, maine count kiya.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Buses gine, maine count kiya.\",\"entry\":\"Mom went for an evening walk. They saw buses, thick mist, and chai smell. Mom counted the buses.\"}",
+ "prompt_sha": "d9f9f1ee68d143b98ad52762fd8be7f8b935e7f2697d5024d39bffb515e86e1d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 758,
+ "tokens_out": 150
+}

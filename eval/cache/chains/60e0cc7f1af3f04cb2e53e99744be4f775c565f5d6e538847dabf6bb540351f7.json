@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1282.7005830004055,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\", \"fact 3\"], \"text\": \"Notice the sound of the cycle bell near the path.\"}",
+ "prompt_sha": "d46af95c15bbfa251d812b2e43f321127c6aa1ac20b4e901010a86d7348e33a2",
+ "renderer_fingerprint": null,
+ "tokens_in": 714,
+ "tokens_out": 41
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5471.754541002156,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha raha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad Crow.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Mission partially complete.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Gate par dekha tha.\",\n\"kind\": \"sight\",\n\"subject\": \"Gate\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially complete.\",\n\"entry\": \"Mom and Dad had a nice walk today. They saw kids playing cricket. Dad thought maybe it was a Crow near the gate. Mom said the mission was partially complete.\"\n}\n```",
+ "prompt_sha": "4794573665f4e66c3c733dd64e7a2ea4889f336e7bbc81ae0be724b2237b6b44",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 279
+}

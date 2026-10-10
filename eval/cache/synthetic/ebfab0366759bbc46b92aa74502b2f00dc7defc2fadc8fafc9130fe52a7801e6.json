@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4309.743040998001,
+ "output": "{\"facts\":[{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas open now shayad.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Saw some differences.\",\"entry\":\"Dad went for a walk and looked at the market. They noticed strong smell, maybe open umbrellas, closed shutters, and differences.\"}",
+ "prompt_sha": "726634365d7b4f9c248bb6c1ac8a0bf3cf993880483b2c1d88a7645b28eed5c1",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 123
+}

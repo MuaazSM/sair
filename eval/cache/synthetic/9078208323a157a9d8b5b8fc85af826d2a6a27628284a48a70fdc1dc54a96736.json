@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6060.293875001662,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"I saw five jasmine plants\",\n\"kind\": \"sight\",\n\"subject\": \"five jasmine plants\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The champa looked good today\",\n\"kind\": \"sight\",\n\"subject\": \"The champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There was one goat\",\n\"kind\": \"animal\",\n\"subject\": \"one goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw one cat\",\n\"kind\": \"animal\",\n\"subject\": \"one cat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The dew is heavy probably\",\n\"kind\": \"weather\",\n\"subject\": \"The dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"I heard the garbage truck\",\n\"kind\": \"sound\",\n\"subject\": \"the garbage truck\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine flowering.\",\n\"entry\": \"Dad had an evening walk. He saw five jasmine plants and the champa looked good today. There was one goat and he saw one cat. The dew is heavy probably. He also heard the garbage truck.\"\n}\n```",
+ "prompt_sha": "012116b033f76fd6197267e616b5a4a2c02a40c300a9ef89a731f8b67d1a497c",
+ "renderer_fingerprint": null,
+ "tokens_in": 521,
+ "tokens_out": 337
+}

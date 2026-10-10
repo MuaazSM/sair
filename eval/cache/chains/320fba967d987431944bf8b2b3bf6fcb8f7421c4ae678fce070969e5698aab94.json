@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3631.434374998207,
+ "output": "{\"facts\":[{\"span\":\"मोची आज भी पीपल के नीचे बैठा था.\",\"kind\":\"animal\",\"subject\":\"mookhi\",\"certainty\":\"sure\"},{\"span\":\"एक गाय बीच में खड़ी थी.\",\"kind\":\"animal\",\"subject\":\"cow\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk and saw a mookhi under a peepal tree and a cow in the middle.\"}",
+ "prompt_sha": "0e0964d4edb410216b4447c00c4f40b340fccf4a6a74be5c76140d6931d61ce4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 102
+}

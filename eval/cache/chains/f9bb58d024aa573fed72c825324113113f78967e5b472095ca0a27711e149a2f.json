@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2048.537208000198,
+ "output": "{\"facts\": [{\"span\": \"bas do round.\", \"kind\": \"sound\", \"subject\": \"round\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was tired today. She said bas do round.\"}",
+ "prompt_sha": "2f278e1c25138e11bea2c9617ea98e7cc4e8db4752c8dfd6a527eb7473bc139c",
+ "renderer_fingerprint": null,
+ "tokens_in": 468,
+ "tokens_out": 62
+}

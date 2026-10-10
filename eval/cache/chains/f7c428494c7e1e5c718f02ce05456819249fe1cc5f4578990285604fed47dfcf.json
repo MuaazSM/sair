@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3160.9675840009004,
+ "output": "{\"facts\":[{\"span\":\"the garden smelled fresh\",\"kind\":\"smell\",\"subject\":\"garden\",\"certainty\":\"sure\"},{\"span\":\"maybe he watered it\",\"kind\":\"other\",\"subject\":\"gardener\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"the garden smelled fresh\",\"entry\":\"Mom and Dad walked near a society garden. They noticed the garden smelled fresh.\"}",
+ "prompt_sha": "677f0e62a812c77aaec7dcd078f0b879c248e8452568931a10183ec2e2bc1d8a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 82
+}

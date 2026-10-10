@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4610.8084579973365,
+ "output": "{\"facts\": [{\"span\": \"kutte aaj bhi gate ke paas the\", \"kind\": \"animal\", \"subject\": \"kutte\", \"certainty\": \"sure\", \"place\": \"gate ke paas\"}, {\"span\": \"amaltas ke neeche phool bichhe hue the, carpet jaisa\", \"kind\": \"plant\", \"subject\": \"phool\", \"certainty\": \"sure\", \"place\": \"amaltas ke neeche\"}, {\"span\": \"maine ek photo ka socha phir yaad aaya phone ghar pe hai\", \"kind\": \"person\", \"subject\": \"maine\", \"certainty\": \"sure\", \"place\": \"ghar pe\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out. She mentioned that the dogs were still near the gate. She also noted that flowers were scattered under the amaltas, like a carpet. She thought about taking a photo but remembered the phone is at home.\"}",
+ "prompt_sha": "04c914dbd22a6c9ee77d6dfc940e2fb642fcfddb5ff43baeb59bb420c6f14e1a",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 205
+}

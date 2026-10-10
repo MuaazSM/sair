@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4183.365290999063,
+ "output": "{\"facts\": [{\"span\": \"teen buses theen.\", \"kind\": \"sound\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"bahut mist thi.\", \"kind\": \"weather\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"chai ki smell bahut achhi thi.\", \"kind\": \"smell\", \"subject\": \"chai ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Counted the buses at the stop.\", \"kind\": \"other\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"the stop\"}], \"mission_result\": \"done\", \"entry\": \"Mom just came back from the evening walk. She counted the buses at the stop and saw teen buses there. It was very misty, and the smell of chai was very good.\"}",
+ "prompt_sha": "a08c926ddaeed94016ca393b411bf0ce2cc5cf7a510c93f31f3adc4fc3d3bae1",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 199
+}

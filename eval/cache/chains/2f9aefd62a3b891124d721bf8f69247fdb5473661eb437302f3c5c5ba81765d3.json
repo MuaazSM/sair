@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1730.5898329977936,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f2_2\"], \"text\": \"You, look for the guavas near the paan shop. Then, count the crows on the gulmohar.\"}",
+ "prompt_sha": "8544e65026e01e46b70e8cac913e21a34322c5dcbd7c5f398a7a67be68866c36",
+ "renderer_fingerprint": null,
+ "tokens_in": 784,
+ "tokens_out": 57
+}

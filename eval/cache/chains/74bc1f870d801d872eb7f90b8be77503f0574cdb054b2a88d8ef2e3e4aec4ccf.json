@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4994.923417001701,
+ "output": "{\"facts\":[{\"span\":\"doodhwala mila aaj\",\"kind\":\"person\",\"subject\":\"doodhwala\",\"certainty\":\"sure\"},{\"span\":\"usne pucha tabiyat kaisi hai\",\"kind\":\"sound\",\"subject\":\"question\",\"certainty\":\"sure\"},{\"span\":\"street light wapas aa gayi\",\"kind\":\"sight\",\"subject\":\"street light\",\"certainty\":\"sure\"},{\"span\":\"shadow wala pattern phir se tha road pe\",\"kind\":\"sight\",\"subject\":\"shadow\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and saw a doodhwala and street lights. They heard a question about health and saw a shadow pattern on the road.\"}",
+ "prompt_sha": "54e2342a1b136cbaf7180571257d9c906f1996fe3a80a4647cf0b9353e555f6f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 153
+}

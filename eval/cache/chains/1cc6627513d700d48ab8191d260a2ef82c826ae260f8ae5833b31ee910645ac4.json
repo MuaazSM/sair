@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1378.4525410010247,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\"], \"text\": \"You, listen for any sound near the peepal tree.\"}",
+ "prompt_sha": "421238fa097c907ef29b6a50df97e5429c89c06e4e102d2bd906bfea8f381fbc",
+ "renderer_fingerprint": null,
+ "tokens_in": 742,
+ "tokens_out": 45
+}

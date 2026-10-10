@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4558.318541003246,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids are there.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Imli ka ped dikha.\",\n\"kind\": \"sight\",\n\"subject\": \"Imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Crow is there.\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Last time you noticed kids at the school gate. Are there kids there again?\",\n\"entry\": \"Mom and Dad had a nice walk today. They noticed that kids are there. They also saw Imli ka ped and it seems like Crow is there. Dinner is soon.\"\n}\n```",
+ "prompt_sha": "030c8941f4cba4e09f4aa56ec43bb767fc41f718c67b33ab6d9e3755214be516",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 214
+}

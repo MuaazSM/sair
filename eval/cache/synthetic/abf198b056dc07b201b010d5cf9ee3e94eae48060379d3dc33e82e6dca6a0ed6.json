@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4359.69683300209,
+ "output": "{\"facts\":[{\"span\":\"kids playing cricket\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"school gate\"},{\"span\":\"crow is there ho sakta hai\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"We found out what they were doing partly\",\"kind\":\"other\",\"subject\":\"mission\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"We found out what they were doing partly\",\"entry\":\"Mom and Dad went for an evening walk. They noticed kids playing cricket and maybe a crow. They found out what the kids were doing partly.\"}",
+ "prompt_sha": "0e7d62abec5ddfb5547a5a4abce41b628c76def83bfb41beed7dff0226c42db4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 127
+}

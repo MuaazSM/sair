@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3033.650083998509,
+ "output": "{\"facts\":[{\"span\":\"buses are coming.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"five mist is here.\",\"kind\":\"sight\",\"subject\":\"mist\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I counted the buses.\",\"entry\":\"Mom finished her evening walk and counted the buses.\"}",
+ "prompt_sha": "e5334f9e933ba80ccf9c4bd148907cbda71766c25909a63846ba1c3c53725360",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 763,
+ "tokens_out": 74
+}

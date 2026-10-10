@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4534.517667001637,
+ "output": "{\"facts\":[{\"span\":\"Kids there hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"Imli ka ped dekha.\",\"kind\":\"plant\",\"subject\":\"ped\",\"certainty\":\"sure\"},{\"span\":\"I think Crow flew by.\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"},{\"span\":\"Bicycle wahan thi.\",\"kind\":\"other\",\"subject\":\"Bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids there hain.\",\"entry\":\"Mom and Dad finished their evening walk. They saw kids, an imli tree, maybe a crow, and a bicycle.\"}",
+ "prompt_sha": "81379e344356e4ac1f05dc7266a5d1f94958b7342a0db6871eb58fa45cf9394c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 776,
+ "tokens_out": 132
+}

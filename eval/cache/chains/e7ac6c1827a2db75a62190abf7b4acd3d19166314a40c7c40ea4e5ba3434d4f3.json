@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4284.130874999391,
+ "output": "{\"facts\":[{\"span\":\"aaj hawa kam thi.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"palm ke patte bas thoda thoda hil rahe the.\",\"kind\":\"plant\",\"subject\":\"patte\",\"certainty\":\"sure\"},{\"span\":\"pani puri wale ke paas bheed thi.\",\"kind\":\"person\",\"subject\":\"bheed\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked today. They saw palm leaves moving slightly and people near pani puri stalls.\"}",
+ "prompt_sha": "5417859ca8ef09d7bad5fc011fc31a3cd178af876830f61141df281cad33ec42",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 122
+}

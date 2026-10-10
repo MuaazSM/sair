@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4488.922791002551,
+ "output": "{\"facts\": [{\"span\": \"Bhutta smell\", \"kind\": \"smell\", \"subject\": \"Bhutta smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas लगता है were near\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\"}, {\"span\": \"Shop shutters\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\"}, {\"span\": \"Phoolon ka rang bhi likh dena\", \"kind\": \"sight\", \"subject\": \"Phoolon ka rang\", \"certainty\": \"unsure\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad completed the walk. They noticed the Bhutta smell and a vendor with a Hen. They felt that umbrellas were near. They saw shop shutters. Spotting difference was partial, and they should write down the colour of the flowers too.\"}",
+ "prompt_sha": "e2faaa7fb95bab7686c350fcbf86565b62d7d9e985ee4cf57a4f9d59d53770d7",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 200
+}

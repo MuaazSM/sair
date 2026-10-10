@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4916.427749998547,
+ "output": "{\"facts\":[{\"span\":\"aaj chai pi stall pe.\",\"kind\":\"smell\",\"subject\":\"tea\",\"certainty\":\"sure\"},{\"span\":\"waves chhoti thi.\",\"kind\":\"weather\",\"subject\":\"waves\",\"certainty\":\"sure\"},{\"span\":\"ek dog tha jo wall ke paas baitha tha.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"},{\"span\":\"shayad stall wale ka hai.\",\"kind\":\"person\",\"subject\":\"dog\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and drank tea at a stall. They saw small waves and a dog sitting near the wall, maybe belonging to the stall owner.\"}",
+ "prompt_sha": "4a8bfa7529d2ebf16448b5247801347100b783e0079d024e7cea3c7f42679322",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 148
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5342.101750000438,
+ "output": "{\"facts\":[{\"span\":\"आज रोशनी फिर से उसी जगह पर थी\",\"kind\":\"weather\",\"subject\":\"roshni\",\"certainty\":\"sure\",\"place\":\"usī jagah par\"},{\"span\":\"दोनों बिल्डिंग के बीच\",\"kind\":\"other\",\"subject\":\"bīlding\",\"certainty\":\"sure\",\"place\":\"bīlding ke bīch\"},{\"span\":\"तुलसी के गमले के पास कुछ दीये रखे थे\",\"kind\":\"plant\",\"subject\":\"tulsi\",\"certainty\":\"sure\",\"place\":\"tulsi ke gamle ke paas\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked where the light was again between two buildings. They saw tulsi pots with diyas.\"}",
+ "prompt_sha": "0328ad48bf181bfb0be77480602da2ddad4f068b861e609a4cbf4c502753e6fd",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 163
+}

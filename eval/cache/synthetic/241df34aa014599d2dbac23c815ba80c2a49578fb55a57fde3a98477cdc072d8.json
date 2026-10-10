@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5192.007625002589,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"sight\", \"subject\": \"The jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The champa is visible.\", \"kind\": \"sight\", \"subject\": \"The champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There is one goat.\", \"kind\": \"animal\", \"subject\": \"one goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The cat is near the wall.\", \"kind\": \"animal\", \"subject\": \"The cat\", \"certainty\": \"sure\", \"place\": \"near the wall\"}, {\"span\": \"probably Dew is present.\", \"kind\": \"weather\", \"subject\": \"Dew\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"I heard the garbage truck.\", \"kind\": \"sound\", \"subject\": \"the garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad had a walk today. The jasmine is there and the champa is visible. There is one goat and the cat is near the wall. Maybe Dew is present. I heard the garbage truck.\"}",
+ "prompt_sha": "7b3f378d76b89ba49ca8904e9c2ee9e5a920b0f0367402cd7138060a985a4a4d",
+ "renderer_fingerprint": null,
+ "tokens_in": 528,
+ "tokens_out": 270
+}

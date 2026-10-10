@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1693.7962500014692,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look for the roots coming down from the branches of the banyan tree.\"}",
+ "prompt_sha": "3dd6e5c6482fbb76f0527a02e5b1a2e52baba67ba2fcf873f86da51733898eff",
+ "renderer_fingerprint": null,
+ "tokens_in": 1076,
+ "tokens_out": 38
+}

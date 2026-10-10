@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4648.302583998884,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The yoga group is there.\",\n\"kind\": \"sight\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"the grass\"\n},\n{\n\"span\": \"One butterfly.\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": null\n},\n{\n\"span\": \"Koel singing lagta hai was near the tree.\",\n\"kind\": \"sound\",\n\"subject\": \"Koel singing\",\n\"certainty\": \"unsure\"\n,\n\"place\": \"near the tree\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Mission skip. Forgot to count yoga.\",\n\"entry\": \"Dad and I had an evening walk. The yoga group is there on the grass. There was one butterfly. I think the Koel singing was near the tree. I forgot to count the yoga.\"\n}\n```",
+ "prompt_sha": "16e8796a9189ced99531f0b60ace0556b60f170370918424b82ba09ea0dad52c",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 228
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 924.1914589983935,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_1\", \"f7_2\"], \"text\": \"You, look at the sky. Notice if the clouds are moving.\"}",
+ "prompt_sha": "164d97425fa5dfed6b80db44c5dd70afedebfdbe392fd9875023cc132abb13c1",
+ "renderer_fingerprint": null,
+ "tokens_in": 1232,
+ "tokens_out": 41
+}

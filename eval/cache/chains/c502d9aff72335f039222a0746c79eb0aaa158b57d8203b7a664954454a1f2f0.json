@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4106.886459005182,
+ "output": "{\"facts\":[{\"span\":\"there were lots of crabs on the rocks when the tide went out\",\"kind\":\"animal\",\"subject\":\"crabs\",\"certainty\":\"sure\",\"place\":\"rocks\"},{\"span\":\"small ones, running around\",\"kind\":\"animal\",\"subject\":\"crabs\",\"certainty\":\"sure\"},{\"span\":\"we watched from the wall\",\"kind\":\"sight\",\"subject\":\"crabs\",\"certainty\":\"sure\",\"place\":\"wall\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad went to look at the sky but saw crabs on rocks instead.\"}",
+ "prompt_sha": "5702014470bd0deba2a3dc5ec717a052d0c3ffc967df7a105c76fe22413fd5d5",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 731,
+ "tokens_out": 121
+}

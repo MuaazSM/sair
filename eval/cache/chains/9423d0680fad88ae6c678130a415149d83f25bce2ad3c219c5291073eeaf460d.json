@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3468.1439170017256,
+ "output": "{\"facts\":[{\"span\":\"badam ke ped ke neeche bahut patte gire the aaj.\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\"},{\"span\":\"hawa tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom sat on a bench while walking. She noticed many almond tree leaves fell today and the wind was strong.\"}",
+ "prompt_sha": "fa784905809b9c5e9d11aab315fd3f45729ae29dbc115b2e6835ea01691a7a8a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 742,
+ "tokens_out": 95
+}

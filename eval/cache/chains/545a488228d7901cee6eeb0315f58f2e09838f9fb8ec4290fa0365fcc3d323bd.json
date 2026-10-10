@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4293.328625000868,
+ "output": "{\"facts\":[{\"span\":\"the banyan tree outside the school is huge\",\"kind\":\"plant\",\"subject\":\"banyan tree\",\"certainty\":\"sure\",\"place\":\"outside the school\"},{\"span\":\"we never noticed the roots coming down from the branches before\",\"kind\":\"sight\",\"subject\":\"roots\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"we never noticed the roots coming down from the branches before\",\"entry\":\"Mom and Dad walked past the school gate. They noticed the huge banyan tree and its roots coming down from the branches.\"}",
+ "prompt_sha": "64b942f765790e2a525630c863717d369c9dc9ac59cf9c128d8b8f79e2a27718",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 117
+}

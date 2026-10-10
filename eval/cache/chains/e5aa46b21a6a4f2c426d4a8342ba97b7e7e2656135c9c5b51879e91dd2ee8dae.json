@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3172.9855419980595,
+ "output": "{\"facts\":[{\"span\":\"the ducks were back, all of them.\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\"},{\"span\":\"some flowers were blooming near the pond fence\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and saw ducks and blooming flowers near the pond fence.\"}",
+ "prompt_sha": "330171d1ba180d8aadc3817e322ab144d14946d779e388754ce52158bcf5b717",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 733,
+ "tokens_out": 85
+}

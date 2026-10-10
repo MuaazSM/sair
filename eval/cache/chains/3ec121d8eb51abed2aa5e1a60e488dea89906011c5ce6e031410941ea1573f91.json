@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3483.8412910030456,
+ "output": "{\"facts\":[{\"span\":\"नारियल के पेड़ ज़ोर से हिल रहे थे.\",\"kind\":\"plant\",\"subject\":\"palms\",\"certainty\":\"sure\"},{\"span\":\"आज बहुत तेज़ हवा थी.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked today. They saw palms moving in strong wind.\"}",
+ "prompt_sha": "0d9f4d29026a55adf781fd1a4ad7a3128bfd4eb70932ed9a44d7478a0a9bbb53",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 744,
+ "tokens_out": 89
+}

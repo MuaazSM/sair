@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2947.5072500026727,
+ "output": "{\"facts\":[{\"span\":\"it was cloudy all the way.\",\"kind\":\"weather\",\"subject\":\"cloudy\",\"certainty\":\"sure\"},{\"span\":\"nothing much to compare.\",\"kind\":\"other\",\"subject\":\"nothing\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked to the steps and back. It was cloudy all the way.\"}",
+ "prompt_sha": "c80c602902ad4fc079c43ba6cba5e61865994dc52efb806ad047f95d8760bd2a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 720,
+ "tokens_out": 77
+}

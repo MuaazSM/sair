@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3647.6220000004105,
+ "output": "{\"facts\":[{\"span\":\"teen sparrow lagta hai flying near ground\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"Buses count kar li, mujhe pata hai.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Buses count kar li, mujhe pata hai.\",\"entry\":\"Mom went for a walk and counted the buses. She noticed maybe sparrows.\"}",
+ "prompt_sha": "7791d7098b3dbe5ba976bfa19edcef874f2c5e5db829c45d32dda7b18f5e1d15",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 100
+}

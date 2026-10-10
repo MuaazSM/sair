@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3981.64820799866,
+ "output": "{\"facts\":[{\"span\":\"आज कंपाउंड में बच्चों का कोई खेल चल रहा था, बहुत शोर था.\",\"kind\":\"sound\",\"subject\":\"shor\",\"certainty\":\"sure\"},{\"span\":\"कितने बच्चे थे गिनती नहीं की.\",\"kind\":\"person\",\"subject\":\"bacche\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked in the compound where kids were playing and making a lot of noise. She did not count the children.\"}",
+ "prompt_sha": "754201fd39a475c0cc14b7bcad562dc92a858d9a23e42be8e9fe977479527055",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 110
+}

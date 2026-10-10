@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2270.236250002199,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f3_1\"], \"text\": \"You, listen for the sound of the bell ringing.\"}",
+ "prompt_sha": "c4b6492506ee748c5f5576faabf8f12ac4ed1e02fdffa4ceb864d76b47857869",
+ "renderer_fingerprint": null,
+ "tokens_in": 1260,
+ "tokens_out": 62
+}

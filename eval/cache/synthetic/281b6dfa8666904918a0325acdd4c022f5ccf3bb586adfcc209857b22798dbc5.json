@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5022.926333000214,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Champa is blooming now.\", \"kind\": \"plant\", \"subject\": \"Champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw one goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"A cat was near the gate.\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"gate\"}, {\"span\": \"Five dew drops maybe.\", \"kind\": \"sight\", \"subject\": \"dew drops\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"The garbage truck passed by.\", \"kind\": \"other\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad had an evening walk. He saw that the jasmine is there and Champa is blooming now. He also saw one goat and a cat near the gate. There were five dew drops maybe, and the garbage truck passed by.\"}",
+ "prompt_sha": "30e95ff2febc6f75ac502be9b643a48b25dd0541a4ce53bff7b61407b5a5abae",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 272
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5003.367083001649,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Walk bahut achha tha.\",\n\"kind\": \"sight\",\n\"subject\": \"Walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"imli ka ped dikh raha hai.\",\n\"kind\": \"plant\",\n\"subject\": \"imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"kauwa probably ud raha tha.\",\n\"kind\": \"animal\",\n\"subject\": \"kauwa\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"bicycle wahan hai.\",\n\"kind\": \"other\",\n\"subject\": \"bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad had a very good walk. They saw an imli ka ped and the bicycle was there. The kauwa probably was flying. They also asked what was made for dinner.\"\n}\n```",
+ "prompt_sha": "915bb476957ddeb7460259021377f1d75144c19890801c327a6c222cfcb46c9c",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 252
+}

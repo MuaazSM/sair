@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3516.124208999827,
+ "output": "{\"facts\":[{\"span\":\"the softest sound i heard was the leaves of the mango tree moving.\",\"kind\":\"sound\",\"subject\":\"leaves\",\"certainty\":\"sure\"},{\"span\":\"the lane was empty.\",\"kind\":\"weather\",\"subject\":\"lane\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and listened for the wind. He heard the leaves of the mango tree moving and saw the lane was empty.\"}",
+ "prompt_sha": "664fa28baf97b16d2982e20b8c453e77e81adca360407523b9b5bdb942f4f566",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 98
+}

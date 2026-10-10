@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1644.9149170002784,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the leaves of the mango tree. Then, count how many leaves you see on the path.\"}",
+ "prompt_sha": "2257bf38fd1a92ab3b8c00799121342bb13a6b524442b9e977b40455f5c088d1",
+ "renderer_fingerprint": null,
+ "tokens_in": 766,
+ "tokens_out": 45
+}

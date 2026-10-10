@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3186.653208002099,
+ "output": "{\"facts\": [{\"span\": \"kids playing cricket\", \"kind\": \"sight\", \"subject\": \"kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ho sakta hai crow flies high\", \"kind\": \"sound\", \"subject\": \"crow flies high\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"We found some kids near the gate\", \"kind\": \"sight\", \"subject\": \"some kids near the gate\", \"certainty\": \"sure\", \"place\": \"the gate\"}], \"mission_result\": \"done\", \"entry\": \"Evening walk was nice. Kids playing cricket. We found some kids near the gate. That's all for today.\"}",
+ "prompt_sha": "ffdcffec8784ab13c763f0b5e6f6462f3ee946ec5601c8f83ed9d1ffa378ab61",
+ "renderer_fingerprint": null,
+ "tokens_in": 502,
+ "tokens_out": 156
+}

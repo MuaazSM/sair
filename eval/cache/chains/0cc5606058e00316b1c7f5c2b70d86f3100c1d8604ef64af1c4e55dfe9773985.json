@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 842.0244170010847,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You, notice the air.\"}",
+ "prompt_sha": "2ec04dd5b368435531f3f5ca2630838aaf577c5a7c8ff8a1e0ee1d05aa40adb2",
+ "renderer_fingerprint": null,
+ "tokens_in": 638,
+ "tokens_out": 27
+}

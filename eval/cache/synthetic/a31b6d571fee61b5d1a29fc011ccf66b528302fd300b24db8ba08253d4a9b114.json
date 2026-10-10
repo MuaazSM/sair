@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4510.698499998398,
+ "output": "{\"facts\": [{\"span\": \"Yeh tamarind ka ped bahut bada hai.\", \"kind\": \"sight\", \"subject\": \"tamarind ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Woh bicycle wahan rakhi hai.\", \"kind\": \"sight\", \"subject\": \"bicycle\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"woh neighbour ki shaadi hai.\", \"kind\": \"other\", \"subject\": \"neighbour ki shaadi\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"diary mein phoolon ka rang bhi likh dena.\", \"kind\": \"other\", \"subject\": \"phoolon ka rang\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom and Dad were walking today. They noticed that the tamarind tree is very big and the bicycle is kept there. They also mentioned that it is the neighbour's wedding. Mom asked to write the colour of the flowers in the diary.\"}",
+ "prompt_sha": "4c6029b272b7433073bf5da9c1ced8761b4752ec5183a32354a6a874bcb66098",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 228
+}

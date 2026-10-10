@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4007.2730419997242,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha tha.\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"buses aate hue the.\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen sparrow lagta hai flying near ground\", \"kind\": \"animal\", \"subject\": \"sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Buses count kar li, mujhe pata hai.\", \"kind\": \"person\", \"subject\": \"mujhe\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom had a very good walk today. Buses were coming. I think there are three sparrows flying near the ground. I counted the buses, I know.\"}",
+ "prompt_sha": "7791d7098b3dbe5ba976bfa19edcef874f2c5e5db829c45d32dda7b18f5e1d15",
+ "renderer_fingerprint": null,
+ "tokens_in": 500,
+ "tokens_out": 198
+}

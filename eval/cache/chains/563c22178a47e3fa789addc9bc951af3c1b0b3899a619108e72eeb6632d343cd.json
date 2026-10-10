@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4496.382833000098,
+ "output": "{\"facts\":[{\"span\":\"बंदर आज नहीं थे.\",\"kind\":\"animal\",\"subject\":\"monkeys\",\"certainty\":\"sure\"},{\"span\":\"कुएँ के पास बैठ कर थोड़ा आराम किया.\",\"kind\":\"other\",\"subject\":\"rest\",\"certainty\":\"sure\"},{\"span\":\"इमली के पेड़ के नीचे बहुत सारे पत्ते गिरे थे.\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk and rested by the well. They saw fallen leaves under the imli tree but no monkeys.\"}",
+ "prompt_sha": "c2487fac2b73c20f6966666cb1224b66febce9b00e9eca1af7a12a01e1e4b475",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 134
+}

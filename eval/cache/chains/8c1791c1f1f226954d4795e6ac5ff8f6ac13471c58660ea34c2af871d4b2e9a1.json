@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2510.136084001715,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_3\"], \"text\": \"You will look for the birds to see which birds they are.\"}",
+ "prompt_sha": "5dbe9ecac775c66a522ad6b10039f84c6cce97fd589dde1a1510bc311afe2e81",
+ "renderer_fingerprint": null,
+ "tokens_in": 1833,
+ "tokens_out": 34
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1937.5833329977468,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f3_4\"], \"text\": \"You will notice the leaves on the banyan tree. Look for any other leaves on the path.\"}",
+ "prompt_sha": "bb15e86e8c1b484fa1c6f589f4cfb04e5eed8b3759946fea85a277a72f4e7dcc",
+ "renderer_fingerprint": null,
+ "tokens_in": 1180,
+ "tokens_out": 47
+}

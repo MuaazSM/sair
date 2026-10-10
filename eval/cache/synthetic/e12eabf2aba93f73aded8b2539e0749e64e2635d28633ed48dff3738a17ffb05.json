@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6130.471625001519,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw the champa.\",\n\"kind\": \"sight\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The cat is near the gate.\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"gate\"\n},\n{\n\"span\": \"Dew is on the grass maybe.\",\n\"kind\": \"weather\",\n\"subject\": \"dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"The garbage truck came two times.\",\n\"kind\": \"other\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I checked on the jasmine flowering.\",\n\"kind\": \"other\",\n\"subject\": \"jasmine flowering\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine flowering.\",\n\"entry\": \"Dad had an evening walk. He saw the jasmine and the champa. A cat was near the gate, and there was dew on the grass maybe. The garbage truck came two times. He checked on the jasmine flowering.\"\n}\n```",
+ "prompt_sha": "622668258efc99ea27a3a7f48c52d4e2b628af9fc4d23c9d6ed05b0a7ae54db7",
+ "renderer_fingerprint": null,
+ "tokens_in": 512,
+ "tokens_out": 345
+}

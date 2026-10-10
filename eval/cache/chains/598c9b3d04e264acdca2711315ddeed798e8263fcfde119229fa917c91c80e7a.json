@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 837.2199580007873,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\", \"f7_3\"], \"text\": \"You will notice if the almond leaves are shining.\"}",
+ "prompt_sha": "6f99aa20fabf4001bd44847cc497504c14d5ab2e69422f2ce8a3c884a107902f",
+ "renderer_fingerprint": null,
+ "tokens_in": 1084,
+ "tokens_out": 37
+}

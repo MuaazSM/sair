@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4435.421541998949,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Bahut thand hai.\",\n\"kind\": \"weather\",\n\"subject\": \"thand\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"teen yoga group.\",\n\"kind\": \"person\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"ek butterfly.\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Mission bhool gaya.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Mission bhool gaya.\",\n\"entry\": \"Dad finished the walk. It is very cold. There were three yoga groups. There were a lot of them. There was one butterfly. He forgot the mission.\"\n}\n```",
+ "prompt_sha": "9e024d88ac0d21f310720ba53c5ab8658e89cc24aed30b997fcc9da33b224e14",
+ "renderer_fingerprint": null,
+ "tokens_in": 491,
+ "tokens_out": 240
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3352.674333000323,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow bahut paas tha pata nahi.\", \"kind\": \"animal\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They noticed a crow was very near. They also talked about what would be made for dinner.\"}",
+ "prompt_sha": "0c37344a644c1dedb0e3ba4260daf34840a7265222f80046d761a1c8b9233dbd",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 137
+}

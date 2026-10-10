@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2005.009082997276,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":\"अज कुछ खास नहीं।\",\"entry\":\"Dad went to the bus stop and returned. He heard nothing special today.\"}",
+ "prompt_sha": "284c02a7e39a32411e01cdfb300a873dabb070e019863f369dd5f25b1940d9b2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 722,
+ "tokens_out": 41
+}

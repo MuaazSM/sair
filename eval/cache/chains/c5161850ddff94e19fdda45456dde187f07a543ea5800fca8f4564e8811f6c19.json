@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 684.9718749945168,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the leaf on the neem tree.\"}",
+ "prompt_sha": "e489f5b66f53fe9c9021b1122a5597e0c5490f373e05f4adb8712f097cd8a01e",
+ "renderer_fingerprint": null,
+ "tokens_in": 562,
+ "tokens_out": 29
+}

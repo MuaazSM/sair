@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1529.2232079955284,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_1\"], \"text\": \"You, listen to the palms.\"}",
+ "prompt_sha": "f05a8ae729e1bbab6b7c41d8034d0066194a008a45c30b7975d47c426851eede",
+ "renderer_fingerprint": null,
+ "tokens_in": 1152,
+ "tokens_out": 28
+}

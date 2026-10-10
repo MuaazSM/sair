@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4127.678500000911,
+ "output": "{\"facts\":[{\"span\":\"there was a bird on the temple wall\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"temple wall\"},{\"span\":\"small one, brownish maybe\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"unsure\"},{\"span\":\"the flower seller was back\",\"kind\":\"person\",\"subject\":\"flower seller\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked and saw a small brownish bird on the temple wall. The flower seller was back.\"}",
+ "prompt_sha": "c0ded47b8857a6223b25ac1dd29d7257e91e1ef35bca6876fd87b7f05d116162",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 733,
+ "tokens_out": 115
+}

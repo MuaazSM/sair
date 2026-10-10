@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5011.553083000763,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids there hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Imli ka ped dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"Imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow saw shayad flying low\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bicycle wahan thi.\",\n\"kind\": \"sight\",\n\"subject\": \"Bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Kids there hain.\",\n\"entry\": \"Mom and Dad just came back from the walk. They saw kids there. They also saw an Imli ka ped and a bicycle there. A crow saw shayad flying low. They asked when dinner will be made.\"\n}\n```",
+ "prompt_sha": "863373f1ba65c7bb5f0e22fa8366e827bfd65bb97ea9faaa2e3b7562988f37ba",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 259
+}

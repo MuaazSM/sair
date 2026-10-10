@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4578.919792002125,
+ "output": "{\"facts\":[{\"span\":\"Jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Teen champa are visible.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"maybe Dew is on the grass.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I checked on the jasmine flowers.\",\"kind\":\"sight\",\"subject\":\"jasmine\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine flowers.\",\"entry\":\"Dad went to the society compound. He saw jasmine and champa. Maybe dew was on the grass.\"}",
+ "prompt_sha": "2282d23fabe675f0b9623dacff476fe3da50f728ad4a9664a5d06c312835fd23",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 136
+}

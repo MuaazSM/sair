@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1007.2385409985145,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f2_2\"], \"text\": \"You, look for guavas near the paan shop.\"}",
+ "prompt_sha": "1b6b4df93951b19fd03958229c9b555d2f4e6c75ccda3b6b442be458a012087a",
+ "renderer_fingerprint": null,
+ "tokens_in": 801,
+ "tokens_out": 45
+}

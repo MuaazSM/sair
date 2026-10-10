@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3599.3536669993773,
+ "output": "{\"facts\":[{\"span\":\"aaj tote nahi the aam ke ped pe.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"press wala tha, radio pe purane gaane chal rahe the.\",\"kind\":\"sound\",\"subject\":\"radio\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed no wind on apple trees and heard old songs on the radio.\"}",
+ "prompt_sha": "be045ddb4cbf705dadc41651befb596dadd92535a130e0ce299f99575a68b84e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 99
+}

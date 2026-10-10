@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4000.5911250009376,
+ "output": "{\"facts\": [{\"span\": \"Teen yoga group\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek butterfly\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel ga raha lagta hai\", \"kind\": \"sound\", \"subject\": \"Koel ga raha\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya\", \"kind\": \"other\", \"subject\": \"Mission bhool gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. He saw three yoga groups. There was one butterfly. It seems the Koel is singing, maybe. He forgot the mission.\"}",
+ "prompt_sha": "c8202768be8bb86c04f8f4efeab5455e4af090e54e7f24c14f47f35301d72f32",
+ "renderer_fingerprint": null,
+ "tokens_in": 543,
+ "tokens_out": 190
+}

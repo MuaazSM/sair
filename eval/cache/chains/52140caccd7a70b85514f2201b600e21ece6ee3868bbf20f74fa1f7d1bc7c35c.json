@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3710.2778339976794,
+ "output": "{\"facts\":[{\"span\":\"गली में आज किसी के घर से बहुत अच्छी खुशबू आ रही थी\",\"kind\":\"smell\",\"subject\":\"khushbu\",\"certainty\":\"sure\"},{\"span\":\"खाना बन रहा था कुछ\",\"kind\":\"sight\",\"subject\":\"khana\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked down the lane. They noticed maybe a good smell and maybe food being made.\"}",
+ "prompt_sha": "5dccf2016ea955d8be3df5adc8b5323f3d20823ea78d641b41ad55f79d852a6f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 102
+}

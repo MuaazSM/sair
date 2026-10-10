@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4373.077041000215,
+ "output": "{\"facts\":[{\"span\":\"Bhutta smell bahut tez hai.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas open I think umbrellas closed\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters tight\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Looked around, saw some changes.\",\"entry\":\"Dad went for a walk and looked at the market. They noticed maybe umbrellas were open or closed and shop shutters were tight.\"}",
+ "prompt_sha": "1c5ea9560da150672be4cb7864f0da986c7f76cf9466e96f7b8ded971977cff6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 128
+}

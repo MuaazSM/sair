@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2245.749624999007,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_2\"], \"text\": \"You, listen for the temple bell from the corner.\"}",
+ "prompt_sha": "c7419e8c6144e831879e48c3d1943fb8da9b440e7f325410253be7bd885c2831",
+ "renderer_fingerprint": null,
+ "tokens_in": 1444,
+ "tokens_out": 32
+}

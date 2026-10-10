@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3330.180917000689,
+ "output": "{\"facts\": [{\"span\": \"lagta hai Crow flew high\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Lagta hai kuch dekha\", \"kind\": \"sight\", \"subject\": \"kuch\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Partially did the mission\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Evening walk was nice. It seems like Crow flew high. It seems like something was seen. Partially did the mission. That was all there was.\"}",
+ "prompt_sha": "662312563f1a76ba8e1f83634bb870810a79493e128367fabee658b0590a33d2",
+ "renderer_fingerprint": null,
+ "tokens_in": 531,
+ "tokens_out": 155
+}

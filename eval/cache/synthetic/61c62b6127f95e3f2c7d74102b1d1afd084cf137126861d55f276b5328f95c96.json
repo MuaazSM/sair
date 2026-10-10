@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5450.264084000082,
+ "output": "{\"facts\": [{\"span\": \"Vegetable stalls visible\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell strong\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek hen dekha\", \"kind\": \"animal\", \"subject\": \"hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed\", \"kind\": \"sight\", \"subject\": \"shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kisi ke wedding mein jaana hai\", \"kind\": \"other\", \"subject\": \"wedding\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Pata nahi uska colour kya tha\", \"kind\": \"other\", \"subject\": \"colour\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad had an evening walk. Vegetable stalls were visible and the bhutta ki smell was strong. He saw a hen and the shop shutters were closed. He mentioned that dinner will be simple. He also mentioned going to someone's wedding and was unsure about the colour.\"}",
+ "prompt_sha": "edf3a12c6290d71748ffb9a0e8c741a50a9efcc73ac0dd361085968fad0c2fa0",
+ "renderer_fingerprint": null,
+ "tokens_in": 527,
+ "tokens_out": 285
+}

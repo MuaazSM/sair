@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3824.5746250031516,
+ "output": "{\"facts\": [{\"span\": \"a bird was hopping on the clubhouse lawn, picking at the grass, a small brown one maybe.\", \"kind\": \"animal\", \"subject\": \"a bird was hopping on the clubhouse lawn, picking at the grass, a small brownone\", \"certainty\": \"sure\"}, {\"span\": \"i don't know the name.\", \"kind\": \"person\", \"subject\": \"i\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Dad was out for a walk today. He mentioned that a bird was hopping on the clubhouse lawn, picking at the grass, a small brown one maybe. He said he doesn't know the name of the bird.\"}",
+ "prompt_sha": "6fa1107b2eae9f4593fe0cc8fb577e03a7a1af26d23f9e3057572466e4ab77bd",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 153
+}

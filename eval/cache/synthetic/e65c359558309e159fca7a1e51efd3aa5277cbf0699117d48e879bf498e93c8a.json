@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5094.916624999314,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Bhutta smell\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Umbrellas लगता है were near\",\n\"kind\": \"sight\",\n\"subject\": \"Umbrellas\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters\",\n\"kind\": \"sight\",\n\"subject\": \"Shop shutters\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Phoolon ka rang bhi likh dena\",\n\"kind\": \"sight\",\n\"subject\": \"Phoolon ka rang\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Dad completed the walk. They noticed the Bhutta smell at the vegetable stalls. They also thought that umbrellas were near. They saw shop shutters and mentioned that the colour of the flowers should also be written down.\"\n}\n```",
+ "prompt_sha": "47bff547fc9299e1051a657995d2b63171dd4297cc9773caaf6e5a5c49d90c32",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 259
+}

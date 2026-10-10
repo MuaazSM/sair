@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2723.5278340012883,
+ "output": "{\"facts\":[{\"span\":\"the jamun tree was quiet today.\",\"kind\":\"plant\",\"subject\":\"jamun tree\",\"certainty\":\"sure\",\"place\":\"road\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom and Dad walked in a single line. They noticed the jamun tree was quiet today.\"}",
+ "prompt_sha": "9752187cbf1dad72b19b0e5b243712213c844dd5e71794018000117ce0f5f118",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 734,
+ "tokens_out": 67
+}

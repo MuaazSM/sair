@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2985.4965830018045,
+ "output": "{\"facts\": [{\"span\": \"there were a lot of flowers floating in the temple pond today, offerings maybe.\", \"kind\": \"sight\", \"subject\": \"a lot of flowers floating\", \"certainty\": \"sure\"}, {\"span\": \"offerings maybe.\", \"kind\": \"other\", \"subject\": \"offerings\", \"certainty\": \"unsure\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad were out today. They noticed there were a lot of flowers floating in the temple pond today. They thought they were offerings maybe. They did not go too close to the pond.\"}",
+ "prompt_sha": "fe548775c44c5e3fc660847a3cde91722bdb0207e7ed5451c7ccac6d5d8debe8",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 129
+}

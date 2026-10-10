@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4207.036499999958,
+ "output": "{\"facts\":[{\"span\":\"kids wahan hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"imli ka ped dikha.\",\"kind\":\"plant\",\"subject\":\"ped\",\"certainty\":\"sure\"},{\"span\":\"ek bicycle dekhi.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"kids wahan hain.\",\"entry\":\"Mom and Dad finished their walk. They saw kids at the school gate, an imli tree, and a bicycle.\"}",
+ "prompt_sha": "7e27f14e937534115a1c18815400ea6dbc3d59c923a1444b3916876d95c4978b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 773,
+ "tokens_out": 109
+}

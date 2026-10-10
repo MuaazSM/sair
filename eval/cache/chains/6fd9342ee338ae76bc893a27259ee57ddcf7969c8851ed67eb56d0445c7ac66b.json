@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 867.8487920005864,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the roots near the banyan tree.\"}",
+ "prompt_sha": "bc7c0bf7cf7fd20f36c54df90d012e9e9e097b00e7bd8193cd07725247b8ba58",
+ "renderer_fingerprint": null,
+ "tokens_in": 542,
+ "tokens_out": 30
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5213.915332999022,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Bhutta ki smell bahut achhi thi.\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta ki smell\",\n\"place\": \"Market\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"Ek hen dekha.\",\n\"kind\": \"animal\",\n\"subject\": \"hen\",\n\"place\": \"Market\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"Umbrellas there लगता है.\",\n\"kind\": \"sight\",\n\"subject\": \"Umbrellas\",\n\"place\": \"there\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Market mein kuch alag tha.\",\n\"kind\": \"sight\",\n\"subject\": \"kuch alag\",\n\"place\": \"Market\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Market mein kuch alag tha.\",\n\"entry\": \"Dad went for an evening walk. The market was busy and the smell of bhutta was very good. He saw a hen there. He felt that umbrellas were there, and there was something different in the market.\"\n}\n```",
+ "prompt_sha": "f61e1e02da42ed7dd2f52d254626ebae1dc2cc9333e05fec3d303dd74055976f",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 276
+}

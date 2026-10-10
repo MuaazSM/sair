@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4311.485750000429,
+ "output": "{\"facts\": [{\"span\": \"आज समुद्र के किनारे बहुत हवा थी\", \"kind\": \"weather\", \"subject\": \"हवा\", \"certainty\": \"sure\", \"place\": \"समुद्र के किनारे\"}, {\"span\": \"बाल उड़ रहे थे\", \"kind\": \"sight\", \"subject\": \"बाल\", \"certainty\": \"sure\"}, {\"span\": \"कुछ पक्षी पानी के ऊपर उड़ रहे थे\", \"kind\": \"animal\", \"subject\": \"पक्षी\", \"certainty\": \"sure\"}, {\"span\": \"कौन से थे पता नहीं\", \"kind\": \"other\", \"subject\": \"पक्षी\", \"certainty\": \"unsure\", \"place\": \"पानी के ऊपर\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was with me today. There was a lot of wind by the sea, and hair was flying. Some birds were flying over the water, but I do not know which ones they were.\"}",
+ "prompt_sha": "741595f8d97c2125aed4b84a4cf34e4fabec51ee961712355822ee3544ad71ce",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 201
+}

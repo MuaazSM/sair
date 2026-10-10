@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4513.539375002438,
+ "output": "{\"facts\":[{\"span\":\"आज इमली के पेड़ के पास फिर रुका.\",\"kind\":\"plant\",\"subject\":\"imli\",\"certainty\":\"sure\"},{\"span\":\"माली ने बताया कि यह पेड़ बहुत पुराना है.\",\"kind\":\"plant\",\"subject\":\"imli\",\"certainty\":\"sure\"},{\"span\":\"कुएँ में पानी नहीं है अब.\",\"kind\":\"weather\",\"subject\":\"water\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked and stopped near an imli tree. They heard that the tree is very old and there is no water in the well now.\"}",
+ "prompt_sha": "216c0295cd68ab0b16eac6c010bff4ce2562cded42758d70e441647db7eb6a0a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 135
+}

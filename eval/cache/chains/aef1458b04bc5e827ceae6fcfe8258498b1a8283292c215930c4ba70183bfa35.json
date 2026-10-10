@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4064.103167002031,
+ "output": "{\"facts\":[{\"span\":\"aaj mandir ke bahar bahut log the, koi pooja thi.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\",\"place\":\"mandir ke bahar\"},{\"span\":\"koyal ki awaaz aayi ek baar.\",\"kind\":\"sound\",\"subject\":\"koyal ki awaaz\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked back from the temple where many people were for pooja. They heard koyal's sound once.\"}",
+ "prompt_sha": "bc0a49aa55a2b45274718696037f5a440b1cd34d2d9d0e8a12db2ac7645b300d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 752,
+ "tokens_out": 116
+}

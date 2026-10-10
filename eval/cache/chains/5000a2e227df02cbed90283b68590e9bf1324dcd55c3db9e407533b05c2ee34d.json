@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3428.3496249991003,
+ "output": "{\"facts\": [{\"span\": \"aaj market mein ek band baja wala jaa raha tha, shaadi thi kisi ki.\", \"kind\": \"sound\", \"subject\": \"band baja wala jaa raha tha\", \"certainty\": \"sure\", \"place\": \"market\"}, {\"span\": \"bahut log the peeche peeche.\", \"kind\": \"person\", \"subject\": \"log\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. He mentioned that in the market, a band player was going, and it was someone's wedding. There were many people behind each other.\"}",
+ "prompt_sha": "58255732ed2e97c9be26355f0bc3c30632b459413eed385f119dc339e6a977e3",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 140
+}

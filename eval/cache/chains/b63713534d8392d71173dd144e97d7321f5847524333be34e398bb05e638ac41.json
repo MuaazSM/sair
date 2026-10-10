@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2747.3302919970592,
+ "output": "{\"facts\": [{\"span\": \"kuch log yoga kar rahe the steps ke paas\", \"kind\": \"person\", \"subject\": \"log yoga kar rahe the\", \"certainty\": \"sure\", \"place\": \"steps ke paas\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking today. They noticed that some people were doing yoga near the steps. They thought they would also start stretching from tomorrow.\"}",
+ "prompt_sha": "dfa1b0b56ddf660a6508a510546000852cf2192bf8ba49652840208ba599d067",
+ "renderer_fingerprint": null,
+ "tokens_in": 497,
+ "tokens_out": 97
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 790.011000004597,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You, notice the coconut palms by the sea-face promenade.\"}",
+ "prompt_sha": "362668163f3f625c6e672aaabf9a7bad53d4d7bb05873615fbf91220f2884c99",
+ "renderer_fingerprint": null,
+ "tokens_in": 541,
+ "tokens_out": 32
+}

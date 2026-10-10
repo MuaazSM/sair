@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3411.08054200231,
+ "output": "{\"facts\": [{\"span\": \"there were boats far out, a few of them, i couldn't count properly\", \"kind\": \"sight\", \"subject\": \"boats\", \"certainty\": \"sure\", \"place\": \"far out\"}, {\"span\": \"the sky was very clear today\", \"kind\": \"weather\", \"subject\": \"sky\", \"certainty\": \"sure\"}, {\"span\": \"the dog was there again near the wall\", \"kind\": \"animal\", \"subject\": \"dog\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. There were boats far out, a few of them, i couldn't count properly. The sky was very clear today. The dog was there again near the wall.\"}",
+ "prompt_sha": "1c64534167f1032e0dd26675881b1ba2c5970df0946cba4f6522da19b70b0969",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 172
+}

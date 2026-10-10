@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 855.2262920020439,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\", \"fact 3\", \"fact 4\"], \"text\": \"You will notice the colour of the sky above you.\"}",
+ "prompt_sha": "9d99d018f5ddce60742a8ae74f24af22ff331cc688b00f7f0b4e8e2277e89470",
+ "renderer_fingerprint": null,
+ "tokens_in": 723,
+ "tokens_out": 46
+}

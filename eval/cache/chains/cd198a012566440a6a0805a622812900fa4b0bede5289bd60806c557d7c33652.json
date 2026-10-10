@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1110.7697499974165,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f3_3\"], \"text\": \"You will notice the birds in the banyan. Look for the birds in the banyan.\"}",
+ "prompt_sha": "a59adede8b02601682d2d1d94f3bbf06e9ef574c1fca7cf780f8cc656212d024",
+ "renderer_fingerprint": null,
+ "tokens_in": 1364,
+ "tokens_out": 46
+}

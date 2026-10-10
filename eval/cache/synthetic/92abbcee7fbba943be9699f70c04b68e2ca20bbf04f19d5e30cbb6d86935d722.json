@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4130.657375000737,
+ "output": "{\"facts\": [{\"span\": \"Yeh walk bahut achha tha.\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Woh imli ka ped dekha.\", \"kind\": \"sight\", \"subject\": \"imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow the लगता है was sitting near\", \"kind\": \"animal\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Bicycle wahan thi.\", \"kind\": \"sight\", \"subject\": \"Bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom and Dad had a nice walk today. Dad saw a fig tree. They also saw a crow that seemed to be sitting near something. A bicycle was also there.\"}",
+ "prompt_sha": "5b17af206d3e0800b79dcf072a5e57e484f31209f338e44dc389239d35e9e6f2",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 198
+}

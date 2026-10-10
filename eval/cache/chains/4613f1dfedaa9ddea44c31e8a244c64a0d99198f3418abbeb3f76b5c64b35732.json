@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4159.660584002268,
+ "output": "{\"facts\":[{\"span\":\"गली में आज कुछ फूल खिले थे\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"alley\"},{\"span\":\"किसी के घर के बाहर बेल पर\",\"kind\":\"plant\",\"subject\":\"banyan\",\"certainty\":\"sure\",\"place\":\"outside house\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and listened for leaves. He saw flowers blooming in the alley and a banyan tree outside a house.\"}",
+ "prompt_sha": "c5b65c6f22757f902c71e06ab1944974d6f9a36f8894c473a264d5a7b2d550f7",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 113
+}

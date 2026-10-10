@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 7411.0846250005125,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"vegetable stalls\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"bhutta\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"A vendor is there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"A hen is present.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"Umbrellas are there probably.\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\",\"place\":\"market\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"other\",\"subject\":\"shop shutters\",\"certainty\":\"sure\",\"place\":\"market\"}],\"mission_result\":\"partly\",\"mission_span\":\"Only partly spotted what was different.\",\"entry\":\"Dad went for an evening walk and looked at the market. They saw vegetable stalls, a strong smell of bhutta, a vendor, a hen, probably umbrellas, and closed shop shutters. They only partly spotted what was different.\"}",
+ "prompt_sha": "bd3be1206ef3d6ebb777f93d16b7107001343e649269287e818c5b594c8906aa",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 762,
+ "tokens_out": 230
+}

@@ -1,0 +1,298 @@
+{
+ "chain_id": "c06",
+ "system": "B",
+ "memory": "prose",
+ "provenance": true,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom walked till the temple and back. The bell was ringing, aarti was going on. The flower seller outside had marigold garlands. There is a peepal tree next to the temple with threads tied on it.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice any smell near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice any smell near the flower seller's garlands.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice one tree with flowers on it along your way.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "Notice one tree with flowers on it along your way.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom was out today. Outside the mandir was not phoolwali. Some people were sitting under the peepal. A crow was talking somewhere for a long time.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You will look at the threads tied on the peepal tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for one bird you can hear from the path.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "Listen for one bird you can hear from the path.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom was at a temple today. There was a lot of crowd, maybe there is a festival. The smell of incense sticks was coming.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"Notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"You will look for the threads tied on the peepal tree near the temple.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look at the colour of the sky above you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom was out for a walk today. She mentioned there was a bird on the temple wall, small one, brownish maybe. The flower seller was back.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\"], \"text\": \"Notice the shadow near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\"], \"text\": \"Notice the shadow near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom was out for a walk today. The koyal was on the peepal tree again. Also, gulab were also at the phoolwali.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the flower seller near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\"], \"text\": \"Notice the flower seller near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Mom had a short walk today and mentioned that her back hurt, specifically her temple and back.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the threads tied on the peepal tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the flower seller near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Notice the wind as it moves the leaves around you.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Mom was with me today. Near the temple, many lamps were burning, it looked very beautiful. The strings and beads on the peepal tree have increased. The sound of the bell was coming far away.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the sound of the bell coming from far away.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the threads on the peepal tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced",
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Find one leaf with a shape you like.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "served_mission",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

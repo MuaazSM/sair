@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4865.28591699971,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Evening walk achha tha.\",\n\"kind\": \"sound\",\n\"subject\": \"Evening walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids wahan hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Woh imli ka ped dikha.\",\n\"kind\": \"sight\",\n\"subject\": \"imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad Crow ne aaya.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Kids wahan hain.\",\n\"entry\": \"Mom and Dad had an evening walk which was good. Dad mentioned that kids are there. Mom pointed out a fig tree. Dad thought maybe a crow had come.\"\n}\n```",
+ "prompt_sha": "b9cffa030ec957ce838839a421f9646453520af758f23b8397b5d9dcfb6a1f74",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 243
+}

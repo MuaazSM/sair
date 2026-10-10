@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4404.582167000626,
+ "output": "{\"facts\":[{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Kuch alag nahi.\",\"entry\":\"Dad went to the market. They saw vegetable stalls and smelled bhutta. The shop shutters were closed. Nothing was different.\"}",
+ "prompt_sha": "3deb4ea9dd4fd1e50a0a1a0c18339188006ec93768f10780fb315ba04e70916a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 119
+}

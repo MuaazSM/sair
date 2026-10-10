@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3945.9872500010533,
+ "output": "{\"facts\":[{\"span\":\"the tulsi pot was watered\",\"kind\":\"plant\",\"subject\":\"tulsi\",\"certainty\":\"sure\"},{\"span\":\"the soil was wet\",\"kind\":\"weather\",\"subject\":\"soil\",\"certainty\":\"sure\"},{\"span\":\"a small dog followed me for a while\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked and noticed the tulsi pot was watered and the soil was wet. A small dog followed her.\"}",
+ "prompt_sha": "b3de8c722852156ef96dd94520b83c56a685c88b45502ea0bdfc3826f6fca262",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 738,
+ "tokens_out": 111
+}

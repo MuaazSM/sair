@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5093.024166999385,
+ "output": "{\"facts\":[{\"span\":\"Kids wahan hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Woh tamarind dekha.\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\"},{\"span\":\"maybe Crow paas aaya.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Bicycle dikhi.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids wahan hain.\",\"entry\":\"Mom and Dad went for a walk. They saw kids at the school gate, tamarind, maybe a crow, and a bicycle.\"}",
+ "prompt_sha": "ad9185e3f1319d0186867fc11ff709036cd83b26f845252ce5f16f64857f4b4a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 145
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1270.842875001108,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the sound of the bell coming from far away.\"}",
+ "prompt_sha": "635153bd6a7ceda6a06938be782d193c396c52da6ad4d67f8a4c9420c69418f2",
+ "renderer_fingerprint": null,
+ "tokens_in": 871,
+ "tokens_out": 34
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5157.618166998873,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw the champa.\",\n\"kind\": \"sight\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There was one goat.\",\n\"kind\": \"animal\",\n\"subject\": \"goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The garbage truck passed three times.\",\n\"kind\": \"other\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Checked the jasmine flowering status.\",\n\"kind\": \"other\",\n\"subject\": \"jasmine flowering status\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Checked the jasmine flowering status.\",\n\"entry\": \"Dad was back from the walk. He saw the jasmine is there and he saw the champa. There was one goat and the garbage truck passed three times. He checked the jasmine flowering status.\"\n}\n```",
+ "prompt_sha": "52222d5d5e0ecd59463229eb63f66dba620a9ddb66de39c55040e22050dcc3d5",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 295
+}

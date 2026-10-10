@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4951.460166001198,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids wahan hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"Imli ka ped dikha.\",\n\"kind\": \"sight\",\n\"subject\": \"Imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": null\n},\n{\n\"span\": \"Crow neeche aaya लगता है.\",\n\"kind\": \"sound\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Bicycle wahi hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Bicycle\",\n\"certainty\": \"sure\",\n\"place\": null\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Evening walk done.\",\n\"entry\": \"Mom and Dad went for an evening walk. They noticed that kids are there. They also saw an Imli ka ped. A crow came down, maybe. The bicycle is still there.\"\n}\n```",
+ "prompt_sha": "ac4d6b49de1827869170a7be6a9d75068a2e3d602e533d1446bdf9a2cf3029c1",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 252
+}

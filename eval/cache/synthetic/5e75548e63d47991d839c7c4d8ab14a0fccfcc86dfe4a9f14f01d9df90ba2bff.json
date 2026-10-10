@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5269.301791002363,
+ "output": "{\"facts\": [{\"span\": \"Dew bahut zyada hai.\", \"kind\": \"weather\", \"subject\": \"Dew\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek butterfly dikhi.\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen koel probably.\", \"kind\": \"animal\", \"subject\": \"koel\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Yoga count nahi kiya.\", \"kind\": \"other\", \"subject\": \"Yoga count\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Dinner kab hoga?\", \"kind\": \"other\", \"subject\": \"Dinner\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"लिख देना कि कितने पक्षी थे।\", \"kind\": \"other\", \"subject\": \"pक्षी\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad noted that the dew is very much. He saw a butterfly and probably three koel. He did not count the yoga. He asked when dinner will be and to write down how many birds there were.\"}",
+ "prompt_sha": "43cf5b6cb0526841a996eb856f03325dad2b8f7e387b012af24c3f93805438ea",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 267
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1698.4145419992274,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the threads on the peepal tree.\"}",
+ "prompt_sha": "b1083deb1522d0ce5caf23d640c6a9a6e012d8ce8e029f51217d0321e49c040b",
+ "renderer_fingerprint": null,
+ "tokens_in": 915,
+ "tokens_out": 50
+}

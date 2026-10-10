@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4448.913707998145,
+ "output": "{\"facts\":[{\"span\":\"teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"ek butterfly.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"koel ga rahi hai maybe.\",\"kind\":\"animal\",\"subject\":\"cuckoo\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Yoga count karna bhool gaya.\",\"entry\":\"Dad finished his evening walk. He saw a yoga group, a butterfly, and maybe a cuckoo. He forgot to count the yoga people.\"}",
+ "prompt_sha": "c09c173f3cbdf81891c937887c46357ef5321e91c07a07990d92a2c97cb7229c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 123
+}

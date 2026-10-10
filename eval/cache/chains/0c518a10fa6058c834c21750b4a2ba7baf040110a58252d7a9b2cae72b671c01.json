@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1021.6445840014785,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the leaf near the badam tree.\"}",
+ "prompt_sha": "271a9dbf5d4260d8f090212bf6a76026d190346eeb7a8a7dfb7c9ab2495f6652",
+ "renderer_fingerprint": null,
+ "tokens_in": 827,
+ "tokens_out": 50
+}

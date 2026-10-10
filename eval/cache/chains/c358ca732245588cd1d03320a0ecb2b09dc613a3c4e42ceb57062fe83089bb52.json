@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4148.316332997638,
+ "output": "{\"facts\": [{\"span\": \"koyal aaj bhi thi, wahi coconut ke ped pe lag rahi thi\", \"kind\": \"animal\", \"subject\": \"koyal\", \"certainty\": \"sure\", \"place\": \"coconut ke ped\"}, {\"span\": \"mandir mein bhajan chal raha tha\", \"kind\": \"sound\", \"subject\": \"bhajan\", \"certainty\": \"sure\"}, {\"span\": \"nariyal wala nahi tha aaj\", \"kind\": \"other\", \"subject\": \"nariyal wala\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out today. They mentioned that the koel was still on the coconut tree. They also noted that a bhajan was going on in the mandir, but it was not the nariyal wala today.\"}",
+ "prompt_sha": "f781f6a1a08d7a7af465e560e1b64f213e4cb34fceadd8b14582f8b833d66cba",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 182
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3869.7687500025495,
+ "output": "{\"facts\": [{\"span\": \"doodhwala mila aaj\", \"kind\": \"person\", \"subject\": \"doodhwala\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"street light wapas aa gayi\", \"kind\": \"sight\", \"subject\": \"street light\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shadow wala pattern phir se tha road pe\", \"kind\": \"sight\", \"subject\": \"shadow wala pattern\", \"certainty\": \"sure\", \"place\": \"road pe\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad met a doodhwala today, who asked how their health was. The street light has come back. The shadow wala pattern was on the road again.\"}",
+ "prompt_sha": "54e2342a1b136cbaf7180571257d9c906f1996fe3a80a4647cf0b9353e555f6f",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 169
+}

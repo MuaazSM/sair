@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3677.051250000659,
+ "output": "{\"facts\": [{\"span\": \"lots of people in the lane today\", \"kind\": \"sight\", \"subject\": \"people\", \"certainty\": \"sure\", \"place\": \"the lane\"}, {\"span\": \"the neem tree was full of birds again\", \"kind\": \"sight\", \"subject\": \"birds\", \"certainty\": \"sure\", \"place\": \"the neem tree\"}, {\"span\": \"maybe crows\", \"kind\": \"animal\", \"subject\": \"crows\", \"certainty\": \"unsure\", \"place\": \"the neem tree\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad walked today. There were lots of people in the lane with some kind of function and music. We walked past quickly. The neem tree was full of birds again, maybe crows, but we couldn't really tell with all that noise.\"}",
+ "prompt_sha": "8157bbf3ed2c291b856c26fa7a75277d9fb4d1c3b09b3b2267b2c82e036a0859",
+ "renderer_fingerprint": null,
+ "tokens_in": 511,
+ "tokens_out": 184
+}

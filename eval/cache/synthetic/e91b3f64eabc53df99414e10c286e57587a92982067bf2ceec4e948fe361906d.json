@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5279.9200840017875,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"society compound\"},{\"span\":\"Champa is visible.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There is one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"There are three cat.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"I heard the garbage truck.\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine flowers.\",\"entry\":\"Dad went for an evening walk. He noticed jasmine, champa, a goat, three cats, and the garbage truck.\"}",
+ "prompt_sha": "56731e3b81c4a94552016ebcd8cef0a55662a2a86427cf205faf499ad9142037",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 805,
+ "tokens_out": 161
+}

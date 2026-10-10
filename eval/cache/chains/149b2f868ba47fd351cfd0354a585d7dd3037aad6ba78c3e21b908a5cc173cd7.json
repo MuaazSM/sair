@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 750.4357079997135,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_2\"], \"text\": \"You will notice the bench near the gate.\"}",
+ "prompt_sha": "8e4de9a195a1f78ac6c87cf56ff9dcece8e3be39c36ca438f906feaf5b5e7d3b",
+ "renderer_fingerprint": null,
+ "tokens_in": 922,
+ "tokens_out": 36
+}

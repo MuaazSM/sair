@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2666.8024999999034,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 2026-09-28\", \"Tuesday 2026-09-29\", \"Wednesday 2026-09-30\", \"Thursday 2026-10-01\", \"Saturday 2026-10-03\", \"Sunday 2026-10-04\"], \"text\": \"You will notice if any crows are sitting on the neem tree.\"}",
+ "prompt_sha": "5aa843a1b703f80f22365f4b0fbf126adbd7a0de9e36ce55e5d41b8b7bcdd5fd",
+ "renderer_fingerprint": null,
+ "tokens_in": 940,
+ "tokens_out": 112
+}

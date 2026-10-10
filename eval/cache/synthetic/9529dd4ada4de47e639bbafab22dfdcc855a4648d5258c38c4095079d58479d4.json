@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5852.378083000076,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"society compound\"},{\"span\":\"I checked on the jasmine.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"society compound\"},{\"span\":\"I saw three goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The cat is near the gate.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"I heard the garbage truck.\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine.\",\"entry\":\"Dad went for an evening walk in the society compound. He noticed the jasmine is there and flowering again. He also saw three goats and a cat near the gate. He heard a garbage truck.\"}",
+ "prompt_sha": "1805a23a367cd755a31cb7f0bc394911070c0b52a2bdd78bd9a221c2d2b0d1a5",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 757,
+ "tokens_out": 183
+}

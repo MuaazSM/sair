@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3806.926500001282,
+ "output": "{\"facts\":[{\"span\":\"aaj bijli gayi hui thi, lane mein andhera tha.\",\"kind\":\"weather\",\"subject\":\"darkness\",\"certainty\":\"sure\"},{\"span\":\"jamun ke ped ke paas se bas guzre.\",\"kind\":\"plant\",\"subject\":\"jamun\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked home in the dark after the power went out. They passed jamun trees but did not notice any smell.\"}",
+ "prompt_sha": "c6ff0b090cf7a778a1302d3e7724bc1a2cd1ad33faefbc7b2f6ee006e80c34da",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 107
+}

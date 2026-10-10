@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4430.767458998162,
+ "output": "{\"facts\":[{\"span\":\"aam ke ped pe kaafi shor tha.\",\"kind\":\"sound\",\"subject\":\"noise\",\"certainty\":\"sure\"},{\"span\":\"press wale ne kaha subah bhi aate hain.\",\"kind\":\"person\",\"subject\":\"press workers\",\"certainty\":\"sure\"},{\"span\":\"thodi thand thi aaj.\",\"kind\":\"weather\",\"subject\":\"cold\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad and Mom returned from the garden. They heard noise from the banyan tree and saw press workers. It was a bit cold today.\"}",
+ "prompt_sha": "498751e577ad32d38c214b4e2160ebc2e14e433c615c75c5d38001ccbd8efa3d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 129
+}

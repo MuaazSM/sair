@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4799.965957994573,
+ "output": "{\"facts\":[{\"span\":\"समुद्र में आज कुछ जहाज़ दिख रहे थे दूर\",\"kind\":\"sight\",\"subject\":\"ships\",\"certainty\":\"sure\",\"place\":\"sea\"},{\"span\":\"शायद मछली पकड़ने वाली नावें थीं\",\"kind\":\"sight\",\"subject\":\"boats\",\"certainty\":\"unsure\",\"place\":\"sea\"},{\"span\":\"गिन नहीं पाए\",\"kind\":\"sight\",\"subject\":\"ships\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"गिन नहीं पाए\",\"entry\":\"Mom and Dad went for a walk. They saw ships and maybe boats in the sea but could not count them.\"}",
+ "prompt_sha": "cc8b4e04d904d4732cd639ae7ece2698dda58bd366495d7a7a1502eb7104fcce",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 744,
+ "tokens_out": 143
+}

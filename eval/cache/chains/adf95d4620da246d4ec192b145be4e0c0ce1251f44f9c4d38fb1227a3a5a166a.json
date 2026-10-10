@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2138.9989580020483,
+ "output": "{\"facts\": [{\"span\": \"बस थोड़ी देर बैठी सीढ़ियों पर।\", \"kind\": \"sound\", \"subject\": \"बैठी सीढ़ियों पर\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was sitting on the stairs for a little while. The dog was there again.\"}",
+ "prompt_sha": "414929f04c393d64b96368ad2644bcb69da1cdb2da34ee2b1dd43c0ea89318ed",
+ "renderer_fingerprint": null,
+ "tokens_in": 480,
+ "tokens_out": 80
+}

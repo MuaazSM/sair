@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4038.2383329997538,
+ "output": "{\"facts\": [{\"span\": \"the waves were big today\", \"kind\": \"weather\", \"subject\": \"the waves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"i stayed back from the wall\", \"kind\": \"person\", \"subject\": \"i\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the corn seller was there\", \"kind\": \"person\", \"subject\": \"the corn seller\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"some people were flying kites near the steps\", \"kind\": \"person\", \"subject\": \"some people\", \"certainty\": \"sure\", \"place\": \"near the steps\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. The waves were big today. I stayed back from the wall. The corn seller was there. Some people were flying kites near the steps.\"}",
+ "prompt_sha": "d7ac17dea1847cc2d286bdd2813517b107def07a7cb7c47a70fae326fe3a0fd6",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 200
+}

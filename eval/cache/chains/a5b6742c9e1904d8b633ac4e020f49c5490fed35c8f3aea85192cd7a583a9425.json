@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3896.9530829999712,
+ "output": "{\"facts\":[{\"span\":\"champa ki khushboo bahut tez thi aaj.\",\"kind\":\"smell\",\"subject\":\"champa ki khushboo\",\"certainty\":\"sure\"},{\"span\":\"billi aaj clubhouse ki seedhiyon pe baithi thi.\",\"kind\":\"animal\",\"subject\":\"billi\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"champa ki khushboo bahut tez thi aaj.\",\"entry\":\"Dad walked around the garden and noticed the smell of champa.\"}",
+ "prompt_sha": "bbecb03c3324b4117c35fa686ddb627790bed308373310f36bf9a32ee49fb8ae",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 738,
+ "tokens_out": 108
+}

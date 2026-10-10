@@ -1,0 +1,294 @@
+{
+ "chain_id": "c19",
+ "system": "B",
+ "memory": "prose",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Notice the wind as it moves the leaves around you.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom and Dad walked on the sea-face promenade. The wind was strong, and the coconut palms along the wall were bending. They did not eat anything, just walked.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You, notice the shadow near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice the shadow near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice one tree with flowers on it along your way.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "Notice one tree with flowers on it along your way.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad had a walk today. The wind was less today. The palm leaves were just moving a little. There was a crowd near the pani puri seller, and we also ate this time.",
+   "verified_facts": 4,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice the sound of the wind near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the sound of the wind near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for one bird you can hear from the path.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "Listen for one bird you can hear from the path.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom and Dad were out today. They mentioned seeing some ships in the sea far away, maybe fishing boats. They could not count them.",
+   "verified_facts": 0,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"Look at the coconut palms along the wall and count how many leaves are moving.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group",
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"Notice the shadow of the wall along the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look at the colour of the sky above you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad were out walking today. They mentioned there were lots of crabs on the rocks when the tide went out, small ones, running around. We watched from the wall.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 3\"], \"text\": \"Notice the sound of the water near the sea-face promenade.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"1\", \"2\", \"3\", \"4\"], \"text\": \"Notice the shadow of a leaf on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice any smell in the air near a garden as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad were walking today. They noticed that some people were doing yoga near the steps. They thought they would also start stretching from tomorrow.",
+   "verified_facts": 0,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the sound of the wind near the wall. Listen for a bird you can hear from the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\"], \"text\": \"Notice the crabs on the rocks.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad sat on the steps. The palms were quiet and the sea was calm. They were sitting by the sea.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the coconut palms along the wall and compare their bending.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group",
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the coconut palms along the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad had a walk today. There was very तेज़ हवा and the नारियल के पेड़ ज़ोर से हिल रहे थे. The पानी पूरी वाला was closed. We returned quickly.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact6\"], \"text\": \"Notice the coconut palms along the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact6\"], \"text\": \"Notice the coconut palms along the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

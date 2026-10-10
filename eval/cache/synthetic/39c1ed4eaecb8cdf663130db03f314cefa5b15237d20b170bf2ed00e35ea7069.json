@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3694.8479170023347,
+ "output": "{\"facts\": [{\"span\": \"kids wahan hain\", \"kind\": \"sight\", \"subject\": \"kids\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"imli ka ped dikha\", \"kind\": \"sight\", \"subject\": \"imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"probably crow dekha\", \"kind\": \"sight\", \"subject\": \"crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"bicycle wahan hai\", \"kind\": \"sight\", \"subject\": \"bicycle\", \"certainty\": \"sure\", \"place\": \"wahan\"}], \"mission_result\": \"done\", \"entry\": \"Walk achha tha. Kids wahan hain. Imli ka ped dikha. Probably crow dekha. Bicycle wahan hai. Dinner kya banayen?\"}",
+ "prompt_sha": "7a740e54c9ac4102a85318f5dd39dd02bd0411b4bffed8fc81bfc307135aaf37",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 194
+}

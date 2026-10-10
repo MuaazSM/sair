@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3634.334250000393,
+ "output": "{\"facts\": [{\"span\": \"lagta hai Crow flew high\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Lagta hai kuch dekha\", \"kind\": \"sight\", \"subject\": \"kuch\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Partially did the mission\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Evening walk was nice. Mom and Dad felt that a Crow flew high. They felt that they saw something. They partially did the mission. That was all.\"}",
+ "prompt_sha": "43df53d8108107e6e0ac2176f58a632865d58e05ba96cb54cd0065699248d86e",
+ "renderer_fingerprint": null,
+ "tokens_in": 484,
+ "tokens_out": 157
+}

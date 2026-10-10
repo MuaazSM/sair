@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1129.5172090030974,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\"], \"text\": \"Notice the tulsi tree near the door.\"}",
+ "prompt_sha": "6af7665ef1238c584a86c911573dcd10234bbafd45a0009c8950a23cd308d356",
+ "renderer_fingerprint": null,
+ "tokens_in": 733,
+ "tokens_out": 29
+}

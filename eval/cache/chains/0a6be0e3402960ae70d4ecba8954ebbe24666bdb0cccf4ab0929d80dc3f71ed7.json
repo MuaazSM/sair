@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3023.1978340016212,
+ "output": "{\"facts\":[{\"span\":\"the palms were quiet.\",\"kind\":\"plant\",\"subject\":\"palms\",\"certainty\":\"sure\"},{\"span\":\"the sea was calm.\",\"kind\":\"weather\",\"subject\":\"sea\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad sat on the steps. They noticed quiet palms and a calm sea.\"}",
+ "prompt_sha": "ef7fa07c027a457cf9645619fa510b738993b056f3bf45dc1bf3527af23ca5bd",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 720,
+ "tokens_out": 77
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4119.788666001114,
+ "output": "{\"facts\": [{\"span\": \"Yoga group, they are there.\", \"kind\": \"person\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek butterfly near the path.\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"near the path\"}, {\"span\": \"Koel, the sound शायद was singing softly.\", \"kind\": \"sound\", \"subject\": \"sound\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission forgot, no count.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. There was a yoga group there. I saw a butterfly near the path. The sound of Koel was maybe singing softly. I forgot the mission to count them.\"}",
+ "prompt_sha": "f0ff6535b518db24531b1091365f57acc6ccf6549e9f9f46296999ded06891af",
+ "renderer_fingerprint": null,
+ "tokens_in": 542,
+ "tokens_out": 203
+}

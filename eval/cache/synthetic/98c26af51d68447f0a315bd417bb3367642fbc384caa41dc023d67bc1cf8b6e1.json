@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2318.627333999757,
+ "output": "{\"facts\": [{\"span\": \"हो सकता है मोगरा की खुशबू है।\", \"kind\": \"smell\", \"subject\": \"मोगरा की खुशबू\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom finished the walk. She thought maybe it was the smell of mogra. Dinner is ready.\"}",
+ "prompt_sha": "ffdc5c150e115ecfc8b1e4c0abc76d7cbf2bd6ff53b1e1c332b98d6da5ccfabc",
+ "renderer_fingerprint": null,
+ "tokens_in": 478,
+ "tokens_out": 84
+}

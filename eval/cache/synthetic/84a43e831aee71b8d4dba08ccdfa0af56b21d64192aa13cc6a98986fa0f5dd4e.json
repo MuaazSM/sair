@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4581.431333001092,
+ "output": "{\"facts\": [{\"span\": \"Vegetable stalls visible\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell strong\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Market dekha\", \"kind\": \"sight\", \"subject\": \"Market\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kuch alag nahi\", \"kind\": \"sight\", \"subject\": \"Kuch alag\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad was good today. We saw vegetable stalls visible and the bhutta ki smell was strong. The shop shutters were closed. We looked at the market, but nothing was different. That's all for now.\"}",
+ "prompt_sha": "3deb4ea9dd4fd1e50a0a1a0c18339188006ec93768f10780fb315ba04e70916a",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 233
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1267.4662499994156,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the marigold garlands by the path.\"}",
+ "prompt_sha": "27f119a700da39a3139091f4514c70410c0ae5d81b010785ef2d2344c22cac0a",
+ "renderer_fingerprint": null,
+ "tokens_in": 868,
+ "tokens_out": 33
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5237.779417002457,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is here.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"it is flowering again.\", \"kind\": \"sight\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The champa is growing tall.\", \"kind\": \"plant\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There are three goats.\", \"kind\": \"animal\", \"subject\": \"goats\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The cat is by the gate.\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"looked like Dew is on the grass.\", \"kind\": \"sight\", \"subject\": \"Dew\", \"certainty\": \"unsure\", \"place\": \"grass\"}], \"mission_result\": \"done\", \"entry\": \"Dad was on a walk today. He checked on the jasmine and it is flowering again. The champa is growing tall. There are three goats and the cat is by the gate. It looked like Dew was on the grass.\"}",
+ "prompt_sha": "f0d9d22c80e281b9f41db2c43c5df6167c029997ee34d7ca2b26abd7bad8f86c",
+ "renderer_fingerprint": null,
+ "tokens_in": 529,
+ "tokens_out": 273
+}

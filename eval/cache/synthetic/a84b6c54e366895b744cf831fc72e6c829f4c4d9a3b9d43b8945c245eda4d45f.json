@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4911.439583000174,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha tha.\", \"kind\": \"sight\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Wind bahut tez thi.\", \"kind\": \"weather\", \"subject\": \"Wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Waves bahut high the pata nahi.\", \"kind\": \"sight\", \"subject\": \"Waves\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"shayad Rain ho raha tha.\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially complete.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"we are tired now.\", \"kind\": \"other\", \"subject\": \"tired\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a very good walk today. The wind was very strong. The waves were very high, maybe it was raining. Mom said the mission was partially complete, and now they are tired.\"}",
+ "prompt_sha": "719f4d0eca201103517ca99939b4a6b481d44bafab831e63f01c68539f05cfcd",
+ "renderer_fingerprint": null,
+ "tokens_in": 512,
+ "tokens_out": 263
+}

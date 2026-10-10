@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4330.590916000801,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"wind bahut tez thi.\",\n\"kind\": \"weather\",\n\"subject\": \"wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"the sea-face windy tha.\",\n\"kind\": \"sight\",\n\"subject\": \"sea-face\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially done.\",\n\"entry\": \"Mom and Dad walked today. Mom said aaj hawa kaafi thandi thi. Dad confirmed that wind bahut tez thi. Mom mentioned the sea-face windy tha. Dad said Mission partially done.\"\n}\n```",
+ "prompt_sha": "011c37dcf5df47eb9394820dc6e3aab3e2b2ef46b25ac5dc7e2d5d446bbd6b8f",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 214
+}

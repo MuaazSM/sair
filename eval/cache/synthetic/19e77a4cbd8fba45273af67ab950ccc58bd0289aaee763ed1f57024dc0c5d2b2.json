@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4181.7202500024,
+ "output": "{\"facts\":[{\"span\":\"Kids wahan hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Woh tamarind dekha.\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\"},{\"span\":\"maybe Crow paas aaya.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids wahan hain.\",\"entry\":\"Mom and Dad went for a walk. They noticed kids, tamarind, and maybe a crow.\"}",
+ "prompt_sha": "77c22efd0b8cb1e10646655e0106082542b95799a0654c477c888855edeb1f4f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 776,
+ "tokens_out": 117
+}

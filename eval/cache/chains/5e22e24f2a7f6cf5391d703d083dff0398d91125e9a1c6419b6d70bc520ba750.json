@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5142.969666998397,
+ "output": "{\"facts\":[{\"span\":\"kabootar phir se the gulmohar ke neeche.\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\",\"place\":\"gulmohar ke neeche\"},{\"span\":\"ek squirrel bhi tha jo bench ke peeche bhaag gaya.\",\"kind\":\"animal\",\"subject\":\"squirrel\",\"certainty\":\"sure\",\"place\":\"bench ke peeche\"},{\"span\":\"weather accha tha, thoda thanda.\",\"kind\":\"weather\",\"subject\":\"weather\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked around the garden and saw birds under the gulmohar and a squirrel running behind the bench. The weather was good and a bit cold. They did two rounds today.\"}",
+ "prompt_sha": "b3c5e04c870a3f0fca956b57dc1d31e4605583c2e626e2479c8fe8b19e3de549",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 753,
+ "tokens_out": 161
+}

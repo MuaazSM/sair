@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3921.61912499796,
+ "output": "{\"facts\":[{\"span\":\"the waves were big today.\",\"kind\":\"weather\",\"subject\":\"waves\",\"certainty\":\"sure\"},{\"span\":\"the corn seller was there.\",\"kind\":\"person\",\"subject\":\"corn seller\",\"certainty\":\"sure\"},{\"span\":\"some people were flying kites near the steps.\",\"kind\":\"sight\",\"subject\":\"people\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a walk and saw big waves, a corn seller, and people flying kites near the steps.\"}",
+ "prompt_sha": "d7ac17dea1847cc2d286bdd2813517b107def07a7cb7c47a70fae326fe3a0fd6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 111
+}

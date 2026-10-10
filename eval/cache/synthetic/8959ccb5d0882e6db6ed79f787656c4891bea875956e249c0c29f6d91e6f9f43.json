@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3895.4576249998354,
+ "output": "{\"facts\": [{\"span\": \"Yoga group there.\", \"kind\": \"sight\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen butterfly dekhe.\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Koel ga rahi hai.\", \"kind\": \"sound\", \"subject\": \"Koel ga rahi hai\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Yoga count bhool gaya.\", \"kind\": \"other\", \"subject\": \"Yoga count bhool gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad had an evening walk. There was a yoga group there. I saw three butterflies. Maybe the Koel is singing. Dad forgot to count the yoga.\"}",
+ "prompt_sha": "4da9f886ef3fa34d3d336ba4982b41944ab6f29e571600b993b8728e5db2e0f3",
+ "renderer_fingerprint": null,
+ "tokens_in": 549,
+ "tokens_out": 197
+}

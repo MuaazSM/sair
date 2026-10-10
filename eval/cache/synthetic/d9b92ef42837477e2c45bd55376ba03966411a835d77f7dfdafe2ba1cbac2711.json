@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4427.313457999844,
+ "output": "{\"facts\":[{\"span\":\"Teen dew on the grass.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\"},{\"span\":\"One butterfly.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel singing lagta hai was near the tree.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission skip.\",\"entry\":\"Dad went for an evening walk and noticed people, a butterfly, and maybe a koel. They skipped the mission because they forgot to count the yoga group.\"}",
+ "prompt_sha": "fb32cbbf09475b32e296b342a359515b39747a42c3ce397ab5489ac52f978b61",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 122
+}

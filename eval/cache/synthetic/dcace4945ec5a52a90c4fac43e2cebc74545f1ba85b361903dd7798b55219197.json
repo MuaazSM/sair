@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3633.72716700178,
+ "output": "{\"facts\": [{\"span\": \"Bahut thand hai.\", \"kind\": \"weather\", \"subject\": \"thand\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen yoga group.\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek butterfly.\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya.\", \"kind\": \"person\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. It is very cold. There were three yoga groups. There was one butterfly. He forgot the mission.\"}",
+ "prompt_sha": "92a8b42dcf2f25cbfd0a0c45a0b3a5b7567eb84929950b54af9f6a5a21bf442e",
+ "renderer_fingerprint": null,
+ "tokens_in": 491,
+ "tokens_out": 176
+}

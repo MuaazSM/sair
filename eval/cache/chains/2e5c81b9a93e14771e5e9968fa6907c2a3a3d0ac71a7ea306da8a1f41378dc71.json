@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3656.7824999947334,
+ "output": "{\"facts\": [{\"span\": \"आज रोशनी फिर से उसी जगह पर थी, दोनों बिल्डिंग के बीच।\", \"kind\": \"sight\", \"subject\": \"रोशनी\", \"certainty\": \"sure\", \"place\": \"दोनों बिल्डिंग के बीच\"}, {\"span\": \"तुलसी के गमले के पास कुछ दीये रखे थे।\", \"kind\": \"sight\", \"subject\": \"दीये\", \"certainty\": \"sure\", \"place\": \"तुलसी के गमले के पास\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. She mentioned that रोशनी was again in the same place between the two buildings. There were some diyas kept near the tulsi plant pot.\"}",
+ "prompt_sha": "0328ad48bf181bfb0be77480602da2ddad4f068b861e609a4cbf4c502753e6fd",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 156
+}

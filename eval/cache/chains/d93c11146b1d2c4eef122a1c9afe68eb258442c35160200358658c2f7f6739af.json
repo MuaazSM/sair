@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3334.525834001397,
+ "output": "{\"facts\":[{\"span\":\"banyan ki jadein geeli thi.\",\"kind\":\"plant\",\"subject\":\"banyan\",\"certainty\":\"sure\"},{\"span\":\"ice cream wala nahi aaya.\",\"kind\":\"other\",\"subject\":\"ice cream\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked near a garden. They noticed maybe wet banyan and no ice cream.\"}",
+ "prompt_sha": "e471ab675f9d6601fd4e0b33ea40133d8099971f60dd54c0905b2302975ca654",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 751,
+ "tokens_out": 91
+}

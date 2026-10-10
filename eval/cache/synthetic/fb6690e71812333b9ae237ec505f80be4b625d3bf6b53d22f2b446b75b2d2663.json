@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4281.150749997323,
+ "output": "{\"facts\": [{\"span\": \"The yoga group is there.\", \"kind\": \"sight\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen dew on the grass.\", \"kind\": \"sight\", \"subject\": \"dew\", \"certainty\": \"sure\", \"place\": \"grass\"}, {\"span\": \"One butterfly.\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel singing lagta hai was near the tree.\", \"kind\": \"sound\", \"subject\": \"Koel singing\", \"certainty\": \"unsure\", \"place\": \"tree\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad had an evening walk. The yoga group is there. There was teen dew on the grass and one butterfly. Koel singing maybe was near the tree. The mission was skipped because he forgot to count the yoga.\"}",
+ "prompt_sha": "d3761e9f915b71f74a543903b583db5756abd7b635336c58897723287b373e6e",
+ "renderer_fingerprint": null,
+ "tokens_in": 576,
+ "tokens_out": 208
+}

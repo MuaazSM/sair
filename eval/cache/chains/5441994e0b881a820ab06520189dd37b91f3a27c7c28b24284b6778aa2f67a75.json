@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3310.4027080044034,
+ "output": "{\"facts\":[{\"span\":\"i saw a bird with a long tail on the school wall\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"You will notice the crows on the neem at the bus stop.\",\"entry\":\"Dad went for a walk. He saw a bird with a long tail on the school wall, but it flew off before he could see properly.\"}",
+ "prompt_sha": "3836ee7f2c3598bd1d3fe702bb5f3dfd605a243f898ac77bb1ff58aa72ab57da",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 728,
+ "tokens_out": 90
+}

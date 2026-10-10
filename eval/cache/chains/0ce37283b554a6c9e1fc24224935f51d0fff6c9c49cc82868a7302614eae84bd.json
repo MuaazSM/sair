@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3763.7119159990107,
+ "output": "{\"facts\": [{\"span\": \"the almond tree leaves are turning\", \"kind\": \"sight\", \"subject\": \"almond tree leaves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"some are going red at the edges\", \"kind\": \"sight\", \"subject\": \"leaves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"a few ladies were sitting on the bench talking\", \"kind\": \"person\", \"subject\": \"ladies\", \"certainty\": \"sure\", \"place\": \"bench\"}, {\"span\": \"i walked alone\", \"kind\": \"person\", \"subject\": \"i\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. The almond tree leaves are turning, some are going red at the edges. A few ladies were sitting on the bench talking. I walked alone.\"}",
+ "prompt_sha": "d10f7f31b31d1093881b65e676fd975400616ca0af866ee90efbd6a59f59d621",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 198
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3471.913458997733,
+ "output": "{\"facts\": [{\"span\": \"आज बहुत तेज़ हवा थी\", \"kind\": \"weather\", \"subject\": \"तेज़ हवा\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"नारियल के पेड़ ज़ोर से हिल रहे थे\", \"kind\": \"plant\", \"subject\": \"नारियल के पेड़\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"पानी पूरी वाला बंद था\", \"kind\": \"person\", \"subject\": \"पानी पूरी वाला\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a walk today. There was very तेज़ हवा and the coconut trees were shaking hard. The pani puri vendor was closed. We returned quickly.\"}",
+ "prompt_sha": "bf3be091460967832a9392055d63afb0b48f6d3b2c716ee02afa196329569b67",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 165
+}

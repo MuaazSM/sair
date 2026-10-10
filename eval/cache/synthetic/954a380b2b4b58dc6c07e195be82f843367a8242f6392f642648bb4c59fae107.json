@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4520.885792000627,
+ "output": "{\"facts\":[{\"span\":\"yoga group, woh the.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"unsure\"},{\"span\":\"os bahut tha.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"unsure\"},{\"span\":\"paanch butterfly dekhe.\",\"kind\":\"animal\",\"subject\":\"butterflies\",\"certainty\":\"unsure\"},{\"span\":\"Counting people was forgotten.\",\"kind\":\"mission\",\"subject\":\"counting people\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Counting people was forgotten.\",\"entry\":\"Dad finished the walk. They saw maybe a yoga group and five butterflies. Counting people was forgotten.\"}",
+ "prompt_sha": "b5698d4d9e7a8c57790d6022651b04dcd8124068bad2c69ff2887db1eaacb5ec",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 140
+}

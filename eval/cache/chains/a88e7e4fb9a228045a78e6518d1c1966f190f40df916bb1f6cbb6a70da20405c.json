@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4121.695457997703,
+ "output": "{\"facts\": [{\"span\": \"aaj tote nahi the aam ke ped pe\", \"kind\": \"sight\", \"subject\": \"tote nahi the aam ke ped pe\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"radio pe purane gaane chal rahe the\", \"kind\": \"sound\", \"subject\": \"purane gaane chal rahe the\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"bahut accha laga sunke\", \"kind\": \"sound\", \"subject\": \"bahut accha laga sunke\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. They mentioned that there were no mangoes on the tree. Old songs were playing on the radio, and they felt very good listening to them.\"}",
+ "prompt_sha": "526e74745f96b9d1485ba70c5737906037540325176fbe598d7a273aaff10bc0",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 186
+}

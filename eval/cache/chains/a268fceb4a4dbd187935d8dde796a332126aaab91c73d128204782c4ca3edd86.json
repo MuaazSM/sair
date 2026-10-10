@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1638.7715829987428,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"Notice the aasman now and compare it to the aasman when you left home.\"}",
+ "prompt_sha": "1932898011f66346a7939e0ab555b853c5bd8352327c08a23c71ed612df00496",
+ "renderer_fingerprint": null,
+ "tokens_in": 1017,
+ "tokens_out": 38
+}

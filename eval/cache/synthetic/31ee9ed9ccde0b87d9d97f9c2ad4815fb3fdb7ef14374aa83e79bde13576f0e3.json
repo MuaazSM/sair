@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4905.937042000005,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yeh walk bahut achha tha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Woh imli ka ped dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow the लगता है was sitting near\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bicycle wahan thi.\",\n\"kind\": \"sight\",\n\"subject\": \"Bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad had a nice walk. Dad saw the imli ka ped. The crow seemed to be sitting near. Mom mentioned that the bicycle was there.\"\n}\n```",
+ "prompt_sha": "07a0adcdeae42633b6748e6c95a0847f6806126759d60b4a6408f9ca4e66ca47",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 249
+}

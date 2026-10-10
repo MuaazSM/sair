@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1894.0603750015725,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_3\"], \"text\": \"You will watch the cow near the path.\"}",
+ "prompt_sha": "ce34b94f5844ad1368c81211c6306cc83e8ff2196952f3cb5a2eab07b625775f",
+ "renderer_fingerprint": null,
+ "tokens_in": 1338,
+ "tokens_out": 30
+}

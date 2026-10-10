@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 706.2252079995233,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"Notice if you hear a koel near the coconut tree.\"}",
+ "prompt_sha": "cfa4ef1cac5a3cc4ca33ff5c1038600c9cfc3bdb6406b741bbd6270202647d62",
+ "renderer_fingerprint": null,
+ "tokens_in": 886,
+ "tokens_out": 33
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5585.1785840022785,
+ "output": "{\"facts\":[{\"span\":\"Achha.\",\"kind\":\"other\",\"subject\":\"achha\",\"certainty\":\"sure\"},{\"span\":\"Teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Badi os hai.\",\"kind\":\"other\",\"subject\":\"badi os\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel ga raha lagta hai.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya.\",\"entry\":\"Dad went for a walk. They noticed achha, teen yoga group, badi os, ek butterfly, and koel ga raha lagta hai. They did not finish the mission.\"}",
+ "prompt_sha": "763aa824788a6eb6a8ad9a8c382968fae41fc260f9b1470058e2a64def01fcee",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 772,
+ "tokens_out": 168
+}

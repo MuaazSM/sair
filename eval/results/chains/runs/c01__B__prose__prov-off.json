@@ -1,0 +1,281 @@
+{
+ "chain_id": "c01",
+ "system": "B",
+ "memory": "prose",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Listen for one bird you can hear from the path.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom and Dad walked down the lane to the corner. There was a big neem tree near the corner where the crows were sitting and making a lot of noise. The vegetable vendor was packing up his cart. The air felt a little cooler today, that was nice.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will listen for a sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will listen for a sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice one tree with flowers on it along your way.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "Notice one tree with flowers on it along your way.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad were out today. A bird was singing very sweetly in the lane, but I could not see which one it was. It was maybe near the neem tree. Everything else was normal, and the vendor was standing with his cart.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You, notice one leaf on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You, notice one leaf on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look at the colour of the sky above you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Mom and Dad were out walking today. The flowers were out on the bush outside the corner house, and they both liked them. They didn't stop for long because it looked like it might rain, maybe.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will listen for a sound from the path. Then, look at the colour of the sky above you.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 3\"], \"text\": \"You will notice the shadow near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice any smell in the air near a garden as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad were out walking today. Crows were again on the neem, and there was a dog sleeping in the corner. A vendor was saying that tomatoes have become expensive. We returned a little quickly today.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Tuesday 1\", \"Wednesday 1\", \"Thursday 1\"], \"text\": \"You will listen for a sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\", \"fact 3\", \"fact 4\"], \"text\": \"You will notice the sound of the crows near the neem tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad walked and talked today. They came home. Nothing much happened.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Tuesday 1\", \"Wednesday 1\", \"Thursday 1\"], \"text\": \"You will notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 3\"], \"text\": \"You will notice the path near the corner. Look for any shadow on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "multiple_tasks"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 0,
+   "entry": "Mom and Dad were in the street. There was a lot of peace in the street. The wind was blowing well, and it seems like it will rain. The crows were fewer today.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Tuesday 1\", \"Wednesday 1\", \"Thursday 1\"], \"text\": \"You will notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\"], \"text\": \"You will notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Notice the wind as it moves the leaves around you.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom and Dad walked today. There were lots of people in the lane, some kind of function at one of the houses with music and all. The neem tree was full of birds again, maybe crows, we couldn't really tell with all that noise.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"Monday 2026-09-28\", \"Tuesday 2026-09-29\", \"Wednesday 2026-09-30\", \"Thursday 2026-10-01\", \"Saturday 2026-10-03\", \"Sunday 2026-10-04\"], \"text\": \"You will notice if any crows are sitting on the neem tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\", \"fact 3\", \"fact 4\", \"fact 5\"], \"text\": \"You will notice if you can count how many leaves are on the tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Find one leaf with a shape you like.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

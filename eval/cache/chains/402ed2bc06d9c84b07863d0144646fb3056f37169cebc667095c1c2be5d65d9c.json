@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3104.5934169997054,
+ "output": "{\"facts\":[{\"span\":\"hawa tez thi.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"chai stall pe line thi.\",\"kind\":\"person\",\"subject\":\"log\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked and saw many people and tea stall line. The wind was strong.\"}",
+ "prompt_sha": "13b4c282de6d2a84e181c576561b809f2be3d2e45d619671fac92ac87d902533",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 736,
+ "tokens_out": 78
+}

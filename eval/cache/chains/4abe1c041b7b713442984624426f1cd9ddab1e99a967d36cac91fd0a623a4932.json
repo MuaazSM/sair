@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5000.407667001127,
+ "output": "{\"facts\": [{\"span\": \"sea-face pe gayi aaj.\", \"kind\": \"sight\", \"subject\": \"sea-face\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"jab ghar se nikli tab aasman neela tha\", \"kind\": \"sight\", \"subject\": \"aasman\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"wahan pahunchi to pink sa ho gaya tha\", \"kind\": \"sight\", \"subject\": \"aasman\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"bhutta wala tha corner pe\", \"kind\": \"sight\", \"subject\": \"bhutta\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"maine ek bhutta khaya.\", \"kind\": \"other\", \"subject\": \"bhutta\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom went to the sea-face today. When I left home, the sky was blue, but when I reached there, it had turned pink. There was a bhutta on the corner, and I ate a bhutta.\"}",
+ "prompt_sha": "797718094015cb42c568ac25f25d466216b5c1f5095d920a0fb6855bc62cc9be",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 254
+}

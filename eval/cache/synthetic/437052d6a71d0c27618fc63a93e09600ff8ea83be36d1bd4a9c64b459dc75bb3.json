@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3602.3982090009667,
+ "output": "{\"facts\": [{\"span\": \"Walk achha tha.\", \"kind\": \"sight\", \"subject\": \"Walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Wind tez thi.\", \"kind\": \"weather\", \"subject\": \"Wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Rain bahut ho raha hai.\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially hua.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a walk. The walk was good. The wind was तेज़. It seems like it is raining a lot. The mission was partially done.\"}",
+ "prompt_sha": "d358ab1470089f3403e09a8fe6e3b8c8291536f51121e4be4c4a55cb9ead30cc",
+ "renderer_fingerprint": null,
+ "tokens_in": 488,
+ "tokens_out": 185
+}

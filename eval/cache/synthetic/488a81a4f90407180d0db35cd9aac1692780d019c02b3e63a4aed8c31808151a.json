@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4872.489249999489,
+ "output": "{\"facts\":[{\"span\":\"wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\",\"place\":\"sea face\"},{\"span\":\"waves were coming\",\"kind\":\"weather\",\"subject\":\"waves\",\"certainty\":\"sure\",\"place\":\"sea face\"},{\"span\":\"shayad sea face\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"unsure\",\"place\":\"sea face\"},{\"span\":\"rain is falling now\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"mission partial complete\",\"entry\":\"Mom and Dad walked at the sea face. They noticed strong wind and waves. Maybe rain is falling now.\"}",
+ "prompt_sha": "732e05d55aac1222687256566434ccbc5b2f2371b014f216d5c4d00da18d872c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 140
+}

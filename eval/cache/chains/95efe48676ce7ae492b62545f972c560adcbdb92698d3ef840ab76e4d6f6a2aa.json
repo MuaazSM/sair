@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3406.423749998794,
+ "output": "{\"facts\":[{\"span\":\"aaj market mein ek band baja wala jaa raha tha\",\"kind\":\"sound\",\"subject\":\"band baja\",\"certainty\":\"sure\"},{\"span\":\"shaadi thi kisi ki\",\"kind\":\"other\",\"subject\":\"shaadi\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked in the market where a band baja was playing and someone was getting married.\"}",
+ "prompt_sha": "58255732ed2e97c9be26355f0bc3c30632b459413eed385f119dc339e6a977e3",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 90
+}

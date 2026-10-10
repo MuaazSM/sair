@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3445.7720840000547,
+ "output": "{\"facts\": [{\"span\": \"बरगद के नीचे एक कुत्ता सो रहा था।\", \"kind\": \"animal\", \"subject\": \"एक कुत्ता सो रहा था\", \"certainty\": \"sure\", \"place\": \"बरगद के नीचे\"}, {\"span\": \"आज हवा में थोड़ी नमी थी, लगता है बारिश होगी।\", \"kind\": \"weather\", \"subject\": \"हवा में थोड़ी नमी थी\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out today. They mentioned that a dog was sleeping under the banyan tree. The air had some moisture, and it seemed like it might rain.\"}",
+ "prompt_sha": "5b46a853b5541ac4bce1e5832b3e8fc4aaabd2b95faca0c31960cccbf14edde8",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 151
+}

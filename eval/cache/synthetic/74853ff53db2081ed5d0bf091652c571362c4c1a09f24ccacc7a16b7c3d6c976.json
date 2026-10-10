@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4041.188750001311,
+ "output": "{\"facts\": [{\"span\": \"aaj hawa kaafi thandi thi.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Wind strong thi.\", \"kind\": \"weather\", \"subject\": \"Wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Waves looked rough shayad sea water moved\", \"kind\": \"sight\", \"subject\": \"Waves\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Rain was falling soon shayad\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a walk today. The wind was strong. The waves looked rough, maybe the sea water moved. Maybe rain was falling soon.\"}",
+ "prompt_sha": "9a9d922e06b4662c013ad5f3ca715c6f7a77830ce4b52fe66750633388cff1c9",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 193
+}

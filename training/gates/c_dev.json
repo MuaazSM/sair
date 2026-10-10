@@ -1,0 +1,23 @@
+{
+ "dev": {
+  "fact_recall": 0.6895,
+  "fallback_rate": 0.4186,
+  "unsupported_rate": 0.3889,
+  "valid_json_no_grammar": 0.9767
+ },
+ "dev_n": 129,
+ "few_shot_sha256": "261ea711bc2381a1322386f451a64a82becd003dfcf6a5a993fa8048b97c1fdf",
+ "reasons": {
+  "hedge_certainty_mismatch": 5,
+  "hedge_missing_in_entry": 7,
+  "mission_span_not_in_transcript": 2,
+  "new_number": 13,
+  "place_not_in_span": 6,
+  "schema_invalid": 3,
+  "span_not_in_transcript": 1,
+  "subject_not_in_span": 27,
+  "unsupported_detail": 49
+ },
+ "system": "C (base few-shot, first attempt, grammar off)",
+ "url": "http://127.0.0.1:8092"
+}

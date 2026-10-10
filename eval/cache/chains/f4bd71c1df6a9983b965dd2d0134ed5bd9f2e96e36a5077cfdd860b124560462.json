@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3720.523374999175,
+ "output": "{\"facts\":[{\"span\":\"there is a gulmohar near the gate\",\"kind\":\"plant\",\"subject\":\"gulmohar\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"it had a few flowers still\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"there is a gulmohar near the gate\",\"entry\":\"Mom went to the park and noticed a gulmohar with flowers near the gate.\"}",
+ "prompt_sha": "4afa05de78a0be4c5af6ab12fee5dfe2f59bd232778f4dcc905dd9f9e18c46f4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 102
+}

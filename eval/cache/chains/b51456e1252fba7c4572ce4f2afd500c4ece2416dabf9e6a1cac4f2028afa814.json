@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1513.6506669987284,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_1\"], \"text\": \"You will listen for the sound of the lights on the boats.\"}",
+ "prompt_sha": "ac17b46553e58af2778e5c4d1c3425ab81025b046607baa98826042417dff317",
+ "renderer_fingerprint": null,
+ "tokens_in": 1060,
+ "tokens_out": 34
+}

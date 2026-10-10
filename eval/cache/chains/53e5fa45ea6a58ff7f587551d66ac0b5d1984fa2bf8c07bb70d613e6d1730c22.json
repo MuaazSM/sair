@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1520.5915829974401,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\"], \"text\": \"You will notice the path near the big park. Count how many leaves are on the path.\"}",
+ "prompt_sha": "ef412df9ff23f0d2fa84e3a4699098305affdfc822d045b89aa117cb4ec57e5c",
+ "renderer_fingerprint": null,
+ "tokens_in": 811,
+ "tokens_out": 52
+}

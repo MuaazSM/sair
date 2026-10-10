@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4153.833791999205,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Haan, dekha.\", \"kind\": \"person\", \"subject\": \"dekha\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Humne thoda sa pata lagaya.\", \"kind\": \"person\", \"subject\": \"pata lagaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They saw kids playing cricket. They said they found a little bit of information.\"}",
+ "prompt_sha": "ee257e5e32b208758d1bf08ed2b108d02345244817226bb41989b18f3da1111e",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 203
+}

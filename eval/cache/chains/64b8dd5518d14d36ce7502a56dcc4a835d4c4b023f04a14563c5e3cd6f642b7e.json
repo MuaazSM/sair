@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 941.4847080042819,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You thought you counted eight or nine trees. Can you count the trees by the path?\"}",
+ "prompt_sha": "04c1cf93d06e931cffcc2776e49b67fc318ea80f8a91f174400adaba70f21dd7",
+ "renderer_fingerprint": null,
+ "tokens_in": 956,
+ "tokens_out": 39
+}

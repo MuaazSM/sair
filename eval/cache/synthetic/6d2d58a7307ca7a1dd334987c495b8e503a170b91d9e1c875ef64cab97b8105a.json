@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 6055.514290997962,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\",\"place\":\"stalls\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"A vendor was there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"},{\"span\":\"Saw what was different.\",\"kind\":\"sight\",\"subject\":\"different\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for an evening walk and saw vegetable stalls, a strong smell of bhutta, a vendor, a hen, and closed shop shutters.\"}",
+ "prompt_sha": "31d33f944b3902ff8e16739cbdeff67bd7565f4b352f67d9da723325907b1612",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 756,
+ "tokens_out": 186
+}

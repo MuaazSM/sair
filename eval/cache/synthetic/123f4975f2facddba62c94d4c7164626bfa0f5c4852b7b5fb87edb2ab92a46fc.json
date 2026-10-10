@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4005.607916998997,
+ "output": "{\"facts\": [{\"span\": \"Evening walk achha tha.\", \"kind\": \"sound\", \"subject\": \"Evening walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids wahan hain.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Woh imli ka ped dikha.\", \"kind\": \"sight\", \"subject\": \"imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad Crow ne aaya.\", \"kind\": \"animal\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had an evening walk which was good. Dad said kids are there. Mom pointed out the fig tree. Dad thought maybe a Crow had come.\"}",
+ "prompt_sha": "c1dc658302ff5eba49a30aa3bff2f54c04caf3ea4b6febc966a8051959952522",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 190
+}

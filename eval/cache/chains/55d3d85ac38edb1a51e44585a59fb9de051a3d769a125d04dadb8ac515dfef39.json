@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 642.5720840015856,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the sea-face.\"}",
+ "prompt_sha": "9b88d9a178e23cb95abc1768b5bd6cdd953c69e536fc39ba87ec2fea205e0be4",
+ "renderer_fingerprint": null,
+ "tokens_in": 1536,
+ "tokens_out": 35
+}

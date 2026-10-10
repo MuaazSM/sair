@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5088.2385410004645,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"kids playing cricket\",\n\"kind\": \"sight\",\n\"subject\": \"kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"crow is there ho sakta hai\",\n\"kind\": \"sound\",\n\"subject\": \"crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"We found out what they were doing partly\",\n\"kind\": \"other\",\n\"subject\": \"what they were doing\",\n\"certainty\": \"partly\",\n\"place\": \"\"\n},\n{\n\"span\": \"Aaj hawa kaafi thandi thi\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"We found out what they were doing partly\",\n\"entry\": \"Mom and Dad had an evening walk. They saw kids playing cricket. They thought the crow is there ho sakta hai. They found out what they were doing partly. The air was quite cold today.\"\n}\n```",
+ "prompt_sha": "0e7d62abec5ddfb5547a5a4abce41b628c76def83bfb41beed7dff0226c42db4",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 268
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4151.775165999425,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"kids playing cricket\",\n\"kind\": \"sight\",\n\"subject\": \"kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"ho sakta hai crow flies high\",\n\"kind\": \"sound\",\n\"subject\": \"crow flies high\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"We found some kids near the gate\",\n\"kind\": \"sight\",\n\"subject\": \"some kids near the gate\",\n\"certainty\": \"sure\",\n\"place\": \"the gate\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"We found some kids near the gate. That's all for today.\",\n\"entry\": \"Evening walk was nice. Kids playing cricket. We found some kids near the gate. That's all for today.\"\n}\n```",
+ "prompt_sha": "bbcb39d2b5deeef587839e802ed5aa7228e0eaa1df2f81a334ec4a91c0f00e88",
+ "renderer_fingerprint": null,
+ "tokens_in": 502,
+ "tokens_out": 215
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3658.8573750013893,
+ "output": "{\"facts\": [{\"span\": \"Yoga group hai.\", \"kind\": \"sight\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen dew hai.\", \"kind\": \"sight\", \"subject\": \"Teen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I think Koel gaana.\", \"kind\": \"sound\", \"subject\": \"Koel gaana\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad finished the walk. There was a yoga group and three people. He thought about the Koel song. He forgot the mission.\"}",
+ "prompt_sha": "9d440cd4da48e565fa6fc1a221a44f0e4459ac8d72b4da38c96f928c1cae31a2",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 182
+}

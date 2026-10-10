@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 5337.250542001129,
+ "output": "{\"facts\":[{\"span\":\"teen jasmine.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"champa.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"one cat.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"Dew drops I think were heavy.\",\"kind\":\"weather\",\"subject\":\"dew drops\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Checked on the jasmine flowering.\",\"entry\":\"Dad went for a walk and saw ten jasmine, champa, a goat, and a cat. He thought dew drops were heavy and checked on the jasmine flowering.\"}",
+ "prompt_sha": "96e531a01e3f4228c958fb03d955166d35211a937c922d1c443d388313aa8ec0",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 158
+}

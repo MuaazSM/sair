@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3923.8005419974797,
+ "output": "{\"facts\": [{\"span\": \"आज गली में बहुत शांति थी।\", \"kind\": \"sound\", \"subject\": \"शांति\", \"certainty\": \"sure\", \"place\": \"गली\"}, {\"span\": \"हवा अच्छी चल रही थी, लगता है बारिश आएगी।\", \"kind\": \"weather\", \"subject\": \"हवा\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"कौवे आज कम थे।\", \"kind\": \"animal\", \"subject\": \"कौवे\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were in the street. There was a lot of peace in the street. They stood under the neem tree for a while. The wind was blowing well, and it seems like it will rain. The crows were fewer today.\"}",
+ "prompt_sha": "f8a0f50a81e2e07324aebf202e330e46c03e29844d6a68f1e45022345f2a74b4",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 182
+}

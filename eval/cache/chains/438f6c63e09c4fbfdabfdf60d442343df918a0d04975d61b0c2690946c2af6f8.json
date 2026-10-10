@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 985.3866250014107,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_2\"], \"text\": \"You heard a bird calling from the trees. Can you listen for a koel near the trees?\"}",
+ "prompt_sha": "81fb2079db077208b6074489014eee5422ddf2440abf350b3fe14fd1ba542a8d",
+ "renderer_fingerprint": null,
+ "tokens_in": 1024,
+ "tokens_out": 41
+}

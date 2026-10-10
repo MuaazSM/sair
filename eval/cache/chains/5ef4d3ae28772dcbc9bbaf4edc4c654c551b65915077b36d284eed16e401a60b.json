@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4332.868416997371,
+ "output": "{\"facts\": [{\"span\": \"मैं गली के आख़िर तक गया।\", \"kind\": \"person\", \"subject\": \"मैं\", \"certainty\": \"sure\", \"place\": \"गली के आख़िर तक\"}, {\"span\": \"वहाँ एक पुराना आम का पेड़ है, उस पर तोते बैठे थे।\", \"kind\": \"plant\", \"subject\": \"आम का पेड़\", \"certainty\": \"sure\", \"place\": \"वहाँ\"}, {\"span\": \"प्रेस वाला अपनी दुकान बंद कर रहा था।\", \"kind\": \"person\", \"subject\": \"प्रेस वाला\", \"certainty\": \"sure\", \"place\": \"अपनी दुकान\"}, {\"span\": \"हवा बहुत हल्की थी।\", \"kind\": \"weather\", \"subject\": \"हवा\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad went to the end of the street. There was an old mango tree there, and parrots were sitting on it. The press man was closing his shop. The wind was very light.\"}",
+ "prompt_sha": "c34f5b97c3e0568a626afaa3f5ade35cc9ffc1176427b086e8d0473dd0a94ac6",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 225
+}

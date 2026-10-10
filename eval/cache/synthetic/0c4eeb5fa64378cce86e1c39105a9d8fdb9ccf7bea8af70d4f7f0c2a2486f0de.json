@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4100.636375002068,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Bhutta ki smell is strong\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Umbrellas are visible शायद\",\n\"kind\": \"sight\",\n\"subject\": \"Umbrellas\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters are closed\",\n\"kind\": \"sight\",\n\"subject\": \"Shop shutters\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Dad did an evening walk. Vegetable stalls were there and the bhutta ki smell is strong. A vendor is present. Umbrellas are visible maybe. Shop shutters are closed. The market check was partial.\"\n}\n```",
+ "prompt_sha": "ef957e4608a1be3dd257ae053516079d2e93ae1e3a2deba33334f7872300bdd8",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 214
+}

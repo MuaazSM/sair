@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4846.115999996982,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids wahan hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"Woh tamarind dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"tamarind\",\n\"certainty\": \"sure\",\n\"place\": \"Woh\"\n},\n{\n\"span\": \"maybe Crow paas aaya.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"maybe\",\n\"place\": \"paas\"\n},\n{\n\"span\": \"Bicycle dikhi.\",\n\"kind\": \"sight\",\n\"subject\": \"Bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"Bicycle\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Kids wahan hain.\",\n\"entry\": \"Mom and Dad had a nice walk. Dad said kids were there. Mom saw tamarind. Dad thought maybe a Crow came near. They also saw a Bicycle.\"\n}\n```",
+ "prompt_sha": "7799b7261bf7649e90e741eea6b7de5da517275b8f775873aead409468b27f41",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 255
+}

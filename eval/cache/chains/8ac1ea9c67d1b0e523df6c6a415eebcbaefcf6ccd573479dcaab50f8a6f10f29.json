@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5081.226499998593,
+ "output": "{\"facts\": [{\"span\": \"school ke gate se agle gate tak maine kadam gine, takreeban do sau.\", \"kind\": \"sound\", \"subject\": \"kadam gine\", \"certainty\": \"sure\", \"place\": \"school ke gate se agle gate tak\"}, {\"span\": \"beech mein ek bus stop hai\", \"kind\": \"sight\", \"subject\": \"ek bus stop\", \"certainty\": \"sure\", \"place\": \"beech mein\"}, {\"span\": \"wahan ek neem ka ped hai.\", \"kind\": \"plant\", \"subject\": \"ek neem ka ped\", \"certainty\": \"sure\", \"place\": \"bus stop pe\"}, {\"span\": \"chana wala bus stop pe khada tha.\", \"kind\": \"person\", \"subject\": \"chana wala\", \"certainty\": \"sure\", \"place\": \"bus stop pe\"}], \"mission_result\": \"done\", \"entry\": \"Dad counted his steps from the school gate to the next gate, about two hundred. There is a bus stop in between, and there is a neem tree there. A chana wala was standing at the bus stop.\"}",
+ "prompt_sha": "7a6e52e9c1d3f67f4e4644191ed372d2bcc90e40419fd2e276976a3aac2f34ff",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 247
+}

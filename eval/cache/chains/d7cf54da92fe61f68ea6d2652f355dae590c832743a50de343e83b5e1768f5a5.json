@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4436.432250000507,
+ "output": "{\"facts\":[{\"span\":\"the almond tree leaves are turning\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\",\"place\":\"the almond tree\"},{\"span\":\"some are going red at the edges\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\",\"place\":\"the almond tree\"},{\"span\":\"a few ladies were sitting on the bench talking\",\"kind\":\"person\",\"subject\":\"ladies\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom walked alone and noticed the almond tree leaves turning red at the edges. She also saw a few ladies sitting on the bench talking.\"}",
+ "prompt_sha": "d10f7f31b31d1093881b65e676fd975400616ca0af866ee90efbd6a59f59d621",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 131
+}

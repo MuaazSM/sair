@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2744.779500000732,
+ "output": "{\"facts\": [{\"span\": \"बस आज थोड़ा ही चला।\", \"kind\": \"sound\", \"subject\": \"chala\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. He said, \\\"बस आज थोड़ा ही चला। कौवे गुलमोहर पर थे, रोज़ की तरह।\\\" He was at the kowas on the gulmohar, as usual.\"}",
+ "prompt_sha": "00d24c76ddf9631d53d7cf61362bed8abf9e0f8ec6c194650effa152d530d0c4",
+ "renderer_fingerprint": null,
+ "tokens_in": 478,
+ "tokens_out": 99
+}

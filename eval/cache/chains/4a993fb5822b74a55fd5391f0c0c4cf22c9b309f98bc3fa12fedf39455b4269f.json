@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 875.2777080007945,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\", \"f3_2\"], \"text\": \"You, listen for the sound of the leaves near the path.\"}",
+ "prompt_sha": "293eb4079e0579861deb8a3985576ecf45aefcd2662a7a799d2c1fd45c8f41a6",
+ "renderer_fingerprint": null,
+ "tokens_in": 896,
+ "tokens_out": 40
+}

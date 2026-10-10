@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4679.152458997123,
+ "output": "{\"facts\":[{\"span\":\"the guava cart was there again.\",\"kind\":\"other\",\"subject\":\"guava cart\",\"certainty\":\"sure\"},{\"span\":\"i heard the temple bell from the corner.\",\"kind\":\"sound\",\"subject\":\"temple bell\",\"certainty\":\"sure\"},{\"span\":\"a few birds were sitting on the electric wires above the paan shop, too far to see what they were.\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"You, notice the leaves on the gulmohar.\",\"entry\":\"Dad went for a walk and heard sounds but did not notice the gulmohar leaves.\"}",
+ "prompt_sha": "87b617c57fe361e379d32101a5f7e69f907b4875224d8e376cadf0f3303a6cfc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 744,
+ "tokens_out": 138
+}

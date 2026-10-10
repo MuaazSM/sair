@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5096.892916000797,
+ "output": "{\"facts\":[{\"span\":\"sab jagah peela hi peela dikh raha tha\",\"kind\":\"sight\",\"subject\":\"yellow\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"amaltas ke phool gire the gate ke paas\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"gate\"},{\"span\":\"kuch balconies mein bhi peeli saari sukh rahi thi\",\"kind\":\"plant\",\"subject\":\"sari\",\"certainty\":\"sure\",\"place\":\"balconies\"}],\"mission_result\":\"done\",\"mission_span\":\"compound mein aaj sab jagah peela hi peela dikh raha tha\",\"entry\":\"Mom walked in the compound and saw yellow everywhere. She noticed yellow flowers and dry yellow saris.\"}",
+ "prompt_sha": "bdfcc775bbf9907d37095132c3f83ddf545c2d199da574e9af8adbef3b2fbfe1",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 158
+}

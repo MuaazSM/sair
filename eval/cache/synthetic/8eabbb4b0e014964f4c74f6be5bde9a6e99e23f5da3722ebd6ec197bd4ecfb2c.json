@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3322.747124999296,
+ "output": "{\"facts\":[{\"span\":\"Butterfly dikha.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"I think Koel gaaya.\",\"kind\":\"animal\",\"subject\":\"cuckoo\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished an evening walk and saw a butterfly. He thought he heard a cuckoo but forgot the mission.\"}",
+ "prompt_sha": "0b56c104bf93d7a1bdaf382f9d8b378a723f0518d7d1c905dda69836388c3115",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 726,
+ "tokens_out": 91
+}

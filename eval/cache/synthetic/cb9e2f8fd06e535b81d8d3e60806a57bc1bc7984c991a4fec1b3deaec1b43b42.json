@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4850.671959000465,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group wahan the\",\n\"kind\": \"person\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"Teen os the\",\n\"kind\": \"person\",\n\"subject\": \"Teen\",\n\"certainty\": \"sure\",\n\"place\": \"the\"\n},\n{\n\"span\": \"Ek butterfly dekhi\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Koel ga rahi hai\",\n\"kind\": \"sound\",\n\"subject\": \"Koel ga rahi hai\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Mission bhool gaya.\",\n\"entry\": \"Dad finished the walk. He said the yoga group was there. He saw three and one butterfly. He thinks the Koel is singing.\"\n}\n```",
+ "prompt_sha": "80286ca3e38d183086c956b7524e6ea051f285541b7f031472a0a84b46753221",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 246
+}

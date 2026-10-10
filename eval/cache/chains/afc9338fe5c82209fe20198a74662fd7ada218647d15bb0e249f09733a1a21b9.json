@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 974.2629590000433,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You thought you counted twelve shops near the end. Can you count the shops near the end again?\"}",
+ "prompt_sha": "3a7778434adb0f919b8e6125b2c5ae85c08c0ff69a0312bfd17eea86e3c1d499",
+ "renderer_fingerprint": null,
+ "tokens_in": 655,
+ "tokens_out": 41
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6463.709458999801,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Market was busy.\",\n\"kind\": \"sight\",\n\"subject\": \"Market\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Vegetable stalls hain, bilkul saaf.\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bhutta ki smell bahut tez hai.\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek vendor wahan khada tha.\",\n\"kind\": \"person\",\n\"subject\": \"vendor\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek hen dekha.\",\n\"kind\": \"animal\",\n\"subject\": \"hen\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Umbrellas there I think.\",\n\"kind\": \"sight\",\n\"subject\": \"Umbrellas\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Spotting differences was hard.\",\n\"entry\": \"Dad went for an evening walk. The market was busy with vegetable stalls that were very clean. The smell of bhutta was very strong. I saw a vendor standing there and a hen. I think there were umbrellas. Spotting differences was hard.\"\n}\n```",
+ "prompt_sha": "5ca5c99ed4570dfcdb798e6f5beb13d205f06e4f97aa9dc656bc9fbf04e05b58",
+ "renderer_fingerprint": null,
+ "tokens_in": 523,
+ "tokens_out": 363
+}

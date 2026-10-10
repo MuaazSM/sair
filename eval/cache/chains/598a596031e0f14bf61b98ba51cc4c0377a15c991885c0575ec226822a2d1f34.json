@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 7294.177457999467,
+ "output": "{\"facts\":[{\"span\":\"sabzi wale zor zor se bol rahe the.\",\"kind\":\"sound\",\"subject\":\"vegetable sellers\",\"certainty\":\"sure\"},{\"span\":\"temple ki ghanti ki awaaz aane lagi.\",\"kind\":\"sound\",\"subject\":\"bell\",\"certainty\":\"sure\"},{\"span\":\"paan ki dukaan ke paas ek gulmohar hai\",\"kind\":\"plant\",\"subject\":\"banyan tree\",\"certainty\":\"sure\"},{\"span\":\"us pe kauve the\",\"kind\":\"animal\",\"subject\":\"cows\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"temple ki ghanti ki awaaz aane lagi\",\"entry\":\"Dad walked on the market road. He heard vegetable sellers shouting loudly and then the temple bell sound started coming. There was a banyan tree near the fruit shop with cows on it.\"}",
+ "prompt_sha": "562016e1f59a228b933990332281cd0ed78b0f146d91af366c4aa80a5576dc7e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 759,
+ "tokens_out": 180
+}

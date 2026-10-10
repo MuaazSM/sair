@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4050.039249999827,
+ "output": "{\"facts\": [{\"span\": \"Vegetable stalls visible\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell strong\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kuch alag nahi\", \"kind\": \"sight\", \"subject\": \"Kuch alag\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad was good today. Vegetable stalls were visible and the bhutta ki smell was strong. I saw that the shop shutters were closed. I looked at the market, but there was nothing different.\"}",
+ "prompt_sha": "2e8d6abb44f3a1661500bfee7f720ff19cb56a788c22c0ac892f9287032ec4b6",
+ "renderer_fingerprint": null,
+ "tokens_in": 545,
+ "tokens_out": 197
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4155.145500000799,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow is near lagta hai.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Humne thoda sa pata lagaya.\", \"kind\": \"other\", \"subject\": \"pata lagaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom and Dad walked today. The wind was quite cold, which felt very good. The kids were playing cricket. It seemed like a crow was near. We managed to find a little information.\"}",
+ "prompt_sha": "5ff8644ca6dc81c5504977af3f056e5601f0f6a11feb8419a2146c8c2ee762e8",
+ "renderer_fingerprint": null,
+ "tokens_in": 511,
+ "tokens_out": 211
+}

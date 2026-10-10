@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4480.018791997281,
+ "output": "{\"facts\":[{\"span\":\"park mein aaj ek bird tha jo bahut zor se bol raha tha\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"gulmohar wahi hai\",\"kind\":\"plant\",\"subject\":\"gulmohar\",\"certainty\":\"sure\"},{\"span\":\"kuch phool gir gaye the neeche\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"gulmohar wahi hai\",\"entry\":\"Mom went to the park and heard a loud bird. She saw the gulmohar and some fallen flowers.\"}",
+ "prompt_sha": "a08544082ff8d31a4967f11a3bfa5d71b9da2434a17c97b9111359fff871cbbc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 759,
+ "tokens_out": 132
+}

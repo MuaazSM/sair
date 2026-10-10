@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4690.962000000582,
+ "output": "{\"facts\":[{\"span\":\"कंपाउंड में आज कोई पक्षी गा रहा था\",\"kind\":\"sound\",\"subject\":\"birds\",\"certainty\":\"unsure\"},{\"span\":\"अशोक के पेड़ की तरफ़ से आ रही थी शायद\",\"kind\":\"sound\",\"subject\":\"birds\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"कंपाउंड में आज कोई पक्षी गा रहा था\",\"entry\":\"Mom and Dad went for a walk in the compound. They heard birds singing a beautiful sound. They were not sure which bird it was, maybe from the Ashok tree.\"}",
+ "prompt_sha": "38e35f53cd4bde2b8facdf2c515b930c158314f99d9f37258d37cdd9d99e0767",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 766,
+ "tokens_out": 131
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4505.644500000926,
+ "output": "{\"facts\":[{\"span\":\"kids hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"imli ka ped dikha.\",\"kind\":\"plant\",\"subject\":\"tree\",\"certainty\":\"sure\"},{\"span\":\"लगता है crow dekha.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"bicycle wahan hai.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"kids hain.\",\"entry\":\"Mom and Dad finished their walk. They saw kids, a tree, maybe a crow, and a bicycle. Dinner is ready.\"}",
+ "prompt_sha": "8802cb844613a89cbe04eaf11c34cc7ba47fc0b3b19dc4080bbf903ec219570c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 131
+}

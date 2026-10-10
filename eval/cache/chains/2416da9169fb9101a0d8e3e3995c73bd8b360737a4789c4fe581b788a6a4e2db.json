@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1198.4959589972277,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the path for any fruit near the jamun tree.\"}",
+ "prompt_sha": "76e03e749bdebabadff1777a3676d2184869c100c1e9166190b457211c4306fe",
+ "renderer_fingerprint": null,
+ "tokens_in": 620,
+ "tokens_out": 35
+}

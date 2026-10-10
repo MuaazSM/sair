@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5958.095416997821,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw the champa.\",\n\"kind\": \"sight\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There is one goat.\",\n\"kind\": \"animal\",\n\"subject\": \"goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There are three cat.\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The dew is present I think.\",\n\"kind\": \"weather\",\n\"subject\": \"dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"I checked on the jasmine blooming again.\",\n\"kind\": \"other\",\n\"subject\": \"jasmine blooming again\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine blooming again.\",\n\"entry\": \"Dad had an evening walk. He saw the jasmine and the champa. There was one goat and three cats. He thought the dew was present. He checked on the jasmine blooming again.\"\n}\n```",
+ "prompt_sha": "8b3639165e2059ad5b64184f98d971bcc30fbce6a86d4c627f332c9ac4ea71a9",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 329
+}

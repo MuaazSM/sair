@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3166.7982079998183,
+ "output": "{\"facts\":[{\"span\":\"some vehicle was parked in the middle of the lane\",\"kind\":\"other\",\"subject\":\"vehicle\",\"certainty\":\"sure\"},{\"span\":\"it was dark\",\"kind\":\"weather\",\"subject\":\"darkness\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"i didn't see much else\",\"entry\":\"Dad went for a walk. They noticed a vehicle and darkness.\"}",
+ "prompt_sha": "1efe70849870466f7b7441eae10c28e6cce03130af97e27041e4a56a6845553f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 84
+}

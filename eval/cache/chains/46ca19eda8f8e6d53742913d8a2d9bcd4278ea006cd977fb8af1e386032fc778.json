@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 911.2646249996033,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice one tree with flowers on it along your way.\"}",
+ "prompt_sha": "6d9e6199160f652bab76848e5e96eb0b2ef91d85c59d21011f8ec807f9a4c333",
+ "renderer_fingerprint": null,
+ "tokens_in": 540,
+ "tokens_out": 30
+}

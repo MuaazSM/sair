@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4549.718041002052,
+ "output": "{\"facts\":[{\"span\":\"park mein koi bird bahut ajeeb awaaz kar raha tha, jaise koi seeti baja raha ho.\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"unsure\"},{\"span\":\"maine dhoondha par dikha nahi.\",\"kind\":\"sight\",\"subject\":\"bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"maine dhoondha par dikha nahi.\",\"entry\":\"Dad went to the park to look at the well. He heard a bird making a strange sound like a bee buzzing, but he couldn't see it.\"}",
+ "prompt_sha": "f680495d6832e25f85ad49092f45311ea6d20a923175b5d7923128ef70de3fc9",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 133
+}

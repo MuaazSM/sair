@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 730.9216249996098,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You notice the peela hi peela near the compound.\"}",
+ "prompt_sha": "204b92d813db7edd64f30db5b8c49ed98ae3ae061f662e3111c128a5420d77ba",
+ "renderer_fingerprint": null,
+ "tokens_in": 1138,
+ "tokens_out": 39
+}

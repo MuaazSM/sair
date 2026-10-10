@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3231.2197089995607,
+ "output": "{\"facts\": [{\"span\": \"आज कंपाउंड में बच्चों का कोई खेल चल रहा था, बहुत शोर था।\", \"kind\": \"sound\", \"subject\": \"बच्चों का कोई खेल\", \"certainty\": \"sure\", \"place\": \"कंपाउंड\"}, {\"span\": \"कितने बच्चे थे गिनती नहीं की।\", \"kind\": \"person\", \"subject\": \"बच्चे\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. There was a game of children in the compound and a lot of noise. There were many children, and she did not count them.\"}",
+ "prompt_sha": "40bbfe07933ce59f505703d9ea6b0c41f8dc4589e6c6ba8fff1b506012503c43",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 135
+}

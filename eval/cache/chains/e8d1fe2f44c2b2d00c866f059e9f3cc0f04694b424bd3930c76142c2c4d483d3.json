@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 813.194417001796,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You, notice the yellow flowers along the path.\"}",
+ "prompt_sha": "c1136d19b0584c17f34080c39d290b3116ba0a20a181e2a2d6f4a618a3718e50",
+ "renderer_fingerprint": null,
+ "tokens_in": 518,
+ "tokens_out": 29
+}

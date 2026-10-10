@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4916.3462500000605,
+ "output": "{\"facts\": [{\"span\": \"Vegetable stalls visible\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell strong\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek vendor there\", \"kind\": \"person\", \"subject\": \"vendor\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek hen dekha\", \"kind\": \"animal\", \"subject\": \"hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Mission was partial, kuch alag nahi mila\", \"kind\": \"other\", \"subject\": \"kuch alag\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad had an evening walk. Vegetable stalls were visible and the bhutta ki smell was strong. He saw a vendor and a hen. The shop shutters were closed. The mission was partial, kuch alag nahi mila.\"}",
+ "prompt_sha": "9a3048e1d7f224f1d66bd4cc88efaacfdf0d86befbe0e7178214e6ad47c61e56",
+ "renderer_fingerprint": null,
+ "tokens_in": 570,
+ "tokens_out": 274
+}

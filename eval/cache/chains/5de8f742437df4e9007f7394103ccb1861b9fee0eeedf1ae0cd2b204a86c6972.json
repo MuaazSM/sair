@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1887.5535000006494,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_2\"], \"text\": \"You will notice the flowers hanging at the shop fronts.\"}",
+ "prompt_sha": "af896df98864b759c68dcb8e353defeff75c5b6f5c73f50f8251bdf07ce45303",
+ "renderer_fingerprint": null,
+ "tokens_in": 1336,
+ "tokens_out": 32
+}

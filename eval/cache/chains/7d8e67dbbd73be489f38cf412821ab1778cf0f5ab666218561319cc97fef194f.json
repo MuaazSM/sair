@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 723.3883749977394,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the leaves on the peepal tree.\"}",
+ "prompt_sha": "92b4742fb95020cbe91a46a02718d320200dc228cd29aa4090e89272b909ac88",
+ "renderer_fingerprint": null,
+ "tokens_in": 574,
+ "tokens_out": 30
+}

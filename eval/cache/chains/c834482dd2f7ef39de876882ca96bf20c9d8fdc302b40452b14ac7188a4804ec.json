@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4031.772791997355,
+ "output": "{\"facts\": [{\"span\": \"there were boats far out, a few of them, i couldn't count properly\", \"kind\": \"sight\", \"subject\": \"boats\", \"certainty\": \"sure\", \"place\": \"far out\"}, {\"span\": \"the sky was very clear today\", \"kind\": \"weather\", \"subject\": \"sky\", \"certainty\": \"sure\"}, {\"span\": \"i sat on the second bench for some time\", \"kind\": \"person\", \"subject\": \"i\", \"certainty\": \"sure\"}, {\"span\": \"the dog was there again near the wall\", \"kind\": \"animal\", \"subject\": \"dog\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. There were boats far out, a few of them, i couldn't count properly. The sky was very clear today. I sat on the second bench for some time, and the dog was there again near the wall.\"}",
+ "prompt_sha": "b3952b06fc58d52430ecbad4a0f30e4e782a4eeb3ddbdacc9b26a13e23c5ed8a",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 216
+}

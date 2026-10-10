@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5295.404959000734,
+ "output": "{\"facts\": [{\"span\": \"market road pe gaya.\", \"kind\": \"sight\", \"subject\": \"market road\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"sabzi wale zor zor se bol rahe the.\", \"kind\": \"sound\", \"subject\": \"sabzi wale bol rahe the\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"jaise jaise aage gaya, temple ki ghanti ki awaaz aane lagi.\", \"kind\": \"sound\", \"subject\": \"temple ki ghanti ki awaaz\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek gulmohar hai, us pe kauve the.\", \"kind\": \"animal\", \"subject\": \"kauve\", \"certainty\": \"sure\", \"place\": \"paan ki dukaan ke paas\"}, {\"span\": \"jaise jaise aage gaya\", \"kind\": \"other\", \"subject\": \"aage gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad went to the market road. The vegetable sellers were speaking loudly. As we went further, the sound of the temple bell started to come. There was a gulmohar near the paan shop, and there were crows on it.\"}",
+ "prompt_sha": "562016e1f59a228b933990332281cd0ed78b0f146d91af366c4aa80a5576dc7e",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 283
+}

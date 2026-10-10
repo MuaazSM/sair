@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4158.449291000579,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ho sakta hai Crow dikha hai.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially hua.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"we saw, no wait, I mean...\", \"kind\": \"sight\", \"subject\": \"we\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. Maybe a Crow was seen. The mission was partially done.\"}",
+ "prompt_sha": "cba2d5016ffb5fe71f2ef8378f9dcb6000d17c8709095e6e488b14c5bdfdc11e",
+ "renderer_fingerprint": null,
+ "tokens_in": 514,
+ "tokens_out": 199
+}

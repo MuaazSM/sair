@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4359.649666999758,
+ "output": "{\"facts\": [{\"span\": \"Vegetable stalls are there.\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell is strong.\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas are visible शायद.\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Shop shutters are closed.\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Market check was partial.\", \"kind\": \"other\", \"subject\": \"Market check\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad did an evening walk. Vegetable stalls were there and the bhutta ki smell was strong. Umbrellas were visible maybe. Shop shutters were closed. The market check was partial for now.\"}",
+ "prompt_sha": "9112151fe8534de413b959c9419a89d47a83598b7a81988c137803ca6d6b5f71",
+ "renderer_fingerprint": null,
+ "tokens_in": 518,
+ "tokens_out": 234
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6418.108750000101,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"buses aate jaa rahe hain\",\n\"kind\": \"sound\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"mist bahut thick thi\",\n\"kind\": \"weather\",\n\"subject\": \"mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"sparrow ud raha tha\",\n\"kind\": \"animal\",\n\"subject\": \"sparrow\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"teen chai banaayi thi\",\n\"kind\": \"other\",\n\"subject\": \"chai\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"buses count kar li\",\n\"kind\": \"other\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"pata nahi bus number kya tha\",\n\"kind\": \"other\",\n\"subject\": \"bus number\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"buses count kar li\",\n\"entry\": \"Mom was out for a walk today. The mist was very thick. Some buses were coming. A sparrow was flying. They made three chai. They counted the buses, but they were unsure about the bus number.\"\n}\n```",
+ "prompt_sha": "4370608da05d27f21dddeea345cd17b8b9f0e0e3c0f9648ee52d5d499dc381c5",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 348
+}

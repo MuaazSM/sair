@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 5037.591083000734,
+ "output": "{\"facts\":[{\"span\":\"Aaj hawa kaafi thandi thi.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"bahut achha laga.\",\"kind\":\"other\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"kids playing cricket.\",\"kind\":\"other\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"Crow is near lagta hai.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Humne thoda sa pata lagaya.\",\"kind\":\"other\",\"subject\":\"pata\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and liked the cold air. They saw kids playing cricket and maybe a crow.\"}",
+ "prompt_sha": "81072d3492ef510458244709cf99369af49110672645a7921769ff074a8356c8",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 156
+}

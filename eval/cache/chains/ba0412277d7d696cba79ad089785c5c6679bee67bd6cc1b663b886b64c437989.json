@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4873.637500000768,
+ "output": "{\"facts\":[{\"span\":\"crows phir se the neem pe, kaafi saare.\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\"},{\"span\":\"ek dog bhi tha corner pe, bas so raha tha.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"},{\"span\":\"vendor bol raha tha ki tamatar mehenge ho gaye hain.\",\"kind\":\"smell\",\"subject\":\"tamatar\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"hum log thoda jaldi wapas aa gaye aaj.\",\"entry\":\"Mom and Dad walked and noticed crows, a dog, and the smell of tomatoes.\"}",
+ "prompt_sha": "8cc509f84f5d294ed04316532c95ad0e40a39f4b27f657456996085dcf87c452",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 763,
+ "tokens_out": 139
+}

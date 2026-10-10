@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1627.9745420033578,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"Notice if you hear any other bird besides the koyal.\"}",
+ "prompt_sha": "b595610edc705503092b30cd1a05dd551ac1c39025780c7f0a059e7825017b6c",
+ "renderer_fingerprint": null,
+ "tokens_in": 1184,
+ "tokens_out": 33
+}

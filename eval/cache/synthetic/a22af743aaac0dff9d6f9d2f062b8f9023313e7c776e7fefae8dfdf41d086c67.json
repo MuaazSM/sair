@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2657.147707999684,
+ "output": "{\"facts\": [{\"span\": \"paanch buses dikhi\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"chai ki smell aayi\", \"kind\": \"smell\", \"subject\": \"chai ki smell\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom walked today. She saw five buses. There was a smell of tea. She counted the buses but did not remember the bus numbers.\"}",
+ "prompt_sha": "3822df55066cfa15b945dd5d96a9476824bb946a05cbf78d5f36dc0c5181b7a4",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 113
+}

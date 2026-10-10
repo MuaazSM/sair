@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3845.2307499974268,
+ "output": "{\"facts\":[{\"span\":\"aaj hawa kaafi thandi thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"Waves bahut clear the ho sakta hai.\",\"kind\":\"weather\",\"subject\":\"waves\",\"certainty\":\"unsure\"},{\"span\":\"lagta hai Rain ho raha tha.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done.\",\"entry\":\"Mom and Dad walked together. They noticed cold wind and maybe rain.\"}",
+ "prompt_sha": "17bc0f8f0c1b2b4fd309ba7a51f0f0cf6aec37046997e842f3ab3a17c9ee18d8",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 111
+}

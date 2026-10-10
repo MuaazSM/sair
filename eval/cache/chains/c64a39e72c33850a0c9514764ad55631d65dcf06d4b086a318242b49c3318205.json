@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5138.7507090003055,
+ "output": "{\"facts\":[{\"span\":\"aaj lane mein ek chidiya bahut meetha ga rahi thi\",\"kind\":\"animal\",\"subject\":\"chidiya\",\"certainty\":\"sure\"},{\"span\":\"pata nahi kaunsi thi\",\"kind\":\"animal\",\"subject\":\"chidiya\",\"certainty\":\"unsure\"},{\"span\":\"neem ke paas hi kahin thi shayad\",\"kind\":\"plant\",\"subject\":\"neem\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"aaj lane mein ek chidiya bahut meetha ga rahi thi\",\"entry\":\"Mom and Dad walked along the lane. They heard a sweet singing bird but did not see it. Maybe a neem tree was nearby.\"}",
+ "prompt_sha": "74ea1bfc1f5eef9a9be4a22150f8778721fb027430eddf2638e79100c4feae76",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 769,
+ "tokens_out": 154
+}

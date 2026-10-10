@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 7263.396917001955,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"\"},{\"span\":\"I saw the champa.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\",\"place\":\"\"},{\"span\":\"There was one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\",\"place\":\"\"},{\"span\":\"A cat was near the gate.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"The garbage truck made five sounds.\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\",\"place\":\"\"},{\"span\":\"I checked if the jasmine was blooming again.\",\"kind\":\"sight\",\"subject\":\"jasmine\",\"certainty\":\"unsure\",\"place\":\"\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad returned from the walk. He saw jasmine, champa, a goat, and a cat near the gate. He heard the garbage truck make five sounds. He checked if the jasmine was blooming again.\"}",
+ "prompt_sha": "0ec9b8becd2928c561f2ec1c6320ed1b724ebaa8822952e8bf9ca62f9f4a54b5",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 222
+}

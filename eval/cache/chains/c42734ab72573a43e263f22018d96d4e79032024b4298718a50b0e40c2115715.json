@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5576.870583001437,
+ "output": "{\"facts\":[{\"span\":\"lots of people in the lane today\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\"},{\"span\":\"some kind of function at one of the houses\",\"kind\":\"other\",\"subject\":\"function\",\"certainty\":\"unsure\"},{\"span\":\"music and all\",\"kind\":\"sound\",\"subject\":\"music\",\"certainty\":\"sure\"},{\"span\":\"the neem tree was full of birds again\",\"kind\":\"plant\",\"subject\":\"neem tree\",\"certainty\":\"sure\"},{\"span\":\"maybe crows\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"we couldn't really tell with all that noise\",\"entry\":\"Mom and Dad walked past a function with music. They saw a neem tree full of birds, maybe crows.\"}",
+ "prompt_sha": "2152fe6988cf100ab829e04e90791c6912d8617e8a7dd925a975f76b703efc89",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 165
+}

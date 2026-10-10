@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 6846.123415998591,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"},{\"span\":\"Mission was partial, kuch alag nahi mila.\",\"kind\":\"other\",\"subject\":\"mission\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission was partial, kuch alag nahi mila.\",\"entry\":\"Dad went for an evening walk at the market. They saw vegetable stalls, a strong smell of bhutta, a vendor, a hen, and closed shop shutters. The mission was partly done as no difference was found.\"}",
+ "prompt_sha": "1d94b040c22a1fb5cb4534a86097274cb78e3423b14466b1860a8fa34ee1de0d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 753,
+ "tokens_out": 211
+}

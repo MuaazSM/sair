@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2450.1202500032377,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":\"बस स्टॉप तक गया और लौट आया। आज कुछ खास नहीं।\",\"entry\":\"Dad went to the bus stop and returned. He did not notice the neem tree.\"}",
+ "prompt_sha": "e0b7d8a48d9def61ca839f141a059261aec8addba4750120af017b496f3f1302",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 719,
+ "tokens_out": 56
+}

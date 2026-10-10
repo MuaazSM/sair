@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1360.2813749967027,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You look at the neem tree and notice any change on the path.\"}",
+ "prompt_sha": "08e0134ee94bae5544c1203a5b8bd09767ef47539d493b930fdba8939122ec4a",
+ "renderer_fingerprint": null,
+ "tokens_in": 679,
+ "tokens_out": 41
+}

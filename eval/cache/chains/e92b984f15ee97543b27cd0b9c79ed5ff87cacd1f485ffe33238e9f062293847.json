@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4953.984750001837,
+ "output": "{\"facts\":[{\"span\":\"we saw some mynas near the school wall\",\"kind\":\"sight\",\"subject\":\"mynas\",\"certainty\":\"sure\",\"place\":\"school wall\"},{\"span\":\"two or three\",\"kind\":\"sight\",\"subject\":\"mynas\",\"certainty\":\"unsure\"},{\"span\":\"they were fighting over something\",\"kind\":\"sight\",\"subject\":\"mynas\",\"certainty\":\"sure\"},{\"span\":\"the dog was there again under the banyan\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\",\"place\":\"banyan\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and saw mynas fighting near the school wall and a dog under the banyan.\"}",
+ "prompt_sha": "9ff1d8a2825290ccb64d79fb063b1a4ebd3d7e3bc3f1900c53ecff8ba9b47ad5",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 735,
+ "tokens_out": 154
+}

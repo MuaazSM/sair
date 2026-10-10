@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4164.068624999345,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group, they are there.\",\n\"kind\": \"person\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek butterfly near the path.\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"near the path\"\n},\n{\n\"span\": \"Koel, the sound शायद was singing softly.\",\n\"kind\": \"sound\",\n\"subject\": \"sound\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Mission forgot, no count.\",\n\"entry\": \"Dad finished the walk. They saw a yoga group in the park. There was a butterfly near the path. The sound of a Koel was maybe singing softly. Dad forgot the mission to count the people.\"\n}\n```",
+ "prompt_sha": "aeced28b5754c01d8e218211d9531b75fa8ee29967e72022142dfdfe8e89d333",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 219
+}

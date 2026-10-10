@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4588.404041998729,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha raha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"place\": \"\",\n\"certainty\": \"certainty\"\n},\n{\n\"span\": \"Wind bahut tez thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"place\": \"\",\n\"certainty\": \"certainty\"\n},\n{\n\"span\": \"Waves aate rahe the pata nahi.\",\n\"kind\": \"sound\",\n\"subject\": \"Waves\",\n\"place\": \"\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Mission partially complete hua.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"place\": \"\",\n\"certainty\": \"certainty\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially complete hua.\",\n\"entry\": \"Mom and Dad had a very good walk today. The wind was very strong. Waves kept coming, I don't know. The mission was partially complete.\"\n}\n```",
+ "prompt_sha": "2c331b1caaac0fccd48cfcb1edf14e09b1efbfe3d8a77bd9a68a813e1dbb4b0b",
+ "renderer_fingerprint": null,
+ "tokens_in": 497,
+ "tokens_out": 248
+}

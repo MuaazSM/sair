@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3513.5518749993935,
+ "output": "{\"facts\":[{\"span\":\"the ducks were back, all of them.\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\"},{\"span\":\"some flowers were blooming near the pond fence\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"we didn't go close to see what kind\",\"entry\":\"Mom and Dad went for a walk. They heard ducks and saw flowers near the pond fence.\"}",
+ "prompt_sha": "cb16a948f23ee11f760f34c25702ed36e8a9d5a3f156e29eaa5c749af67218e6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 733,
+ "tokens_out": 96
+}

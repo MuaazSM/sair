@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 7301.197875000071,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Champa is also visible.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There is one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"Two cats are near the gate.\",\"kind\":\"animal\",\"subject\":\"cats\",\"certainty\":\"sure\"},{\"span\":\"The dew is heavy I think.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I checked on the jasmine for flowers.\",\"kind\":\"sight\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Pata nahi uska colour kya tha.\",\"kind\":\"sight\",\"subject\":\"jasmine\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine for flowers.\",\"entry\":\"Dad went to the society compound. He saw jasmine, champa, a goat, and cats. He thought the dew was heavy and checked the flowers but was unsure of the color.\"}",
+ "prompt_sha": "4ca4dcbfafe831622e8b7dde111c4360faa7b44c3130ba1d5c009a3c4f42a7c0",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 762,
+ "tokens_out": 226
+}

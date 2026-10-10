@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2057.7860419980425,
+ "output": "{\"facts\": [{\"span\": \"aaj bas jaldi aa gaya.\", \"kind\": \"sound\", \"subject\": \"jaldi aa gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was a bit late today. He had pain in his knee.\"}",
+ "prompt_sha": "ec9838743e0c1fa6b326c97e452fec3f9c5eafb2bd7b2c15093c6e3bb4d8db8b",
+ "renderer_fingerprint": null,
+ "tokens_in": 476,
+ "tokens_out": 72
+}

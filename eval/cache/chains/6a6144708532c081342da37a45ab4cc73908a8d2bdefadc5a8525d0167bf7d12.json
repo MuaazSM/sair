@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1493.9838749996852,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_2\"], \"text\": \"You will notice the bench near the gate. Look for wetness on the bench.\"}",
+ "prompt_sha": "52b8c3e6db80bbf96607be23c3db8cdf476690117e3b5ae49177231ce3cc1bec",
+ "renderer_fingerprint": null,
+ "tokens_in": 905,
+ "tokens_out": 44
+}

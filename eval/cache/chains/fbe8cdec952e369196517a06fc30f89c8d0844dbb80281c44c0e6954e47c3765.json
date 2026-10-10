@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3210.7921660026477,
+ "output": "{\"facts\":[{\"span\":\"the flowers were out on the bush outside the corner house.\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"},{\"span\":\"it looked like it might rain, maybe.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and saw flowers. They thought maybe it might rain.\"}",
+ "prompt_sha": "751dd5df6d80fec9f0c347bbc08c2f324252c476e4332ef75cc010d10ebe6646",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 86
+}

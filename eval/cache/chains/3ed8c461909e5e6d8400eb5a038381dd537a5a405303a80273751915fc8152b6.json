@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5160.555041999032,
+ "output": "{\"facts\": [{\"span\": \"lane ke beech mein ek jagah hai jahan do buildings ke beech se roshni aati hai, wahan sab sunehra lag raha tha.\", \"kind\": \"sight\", \"subject\": \"roshni\", \"certainty\": \"sure\", \"place\": \"lane ke beech mein\"}, {\"span\": \"wahan ek tulsi ka gamla hai kisi ke darwaze pe.\", \"kind\": \"sight\", \"subject\": \"tulsi ka gamla\", \"certainty\": \"sure\", \"place\": \"kisi ke darwaze pe\"}, {\"span\": \"phoolwali ki dukaan khuli thi.\", \"kind\": \"sight\", \"subject\": \"phoolwali ki dukaan\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom walked today. She found a place in the lane between two buildings where the light came from between the two buildings, and everything looked golden there. There was a tulsi plant pot on someone's door, and the flower seller's shop was open.\"}",
+ "prompt_sha": "e7145409e17d8ea37f2ddc8dc142cb3609b9df44d79be44b6be4ab597ca50750",
+ "renderer_fingerprint": null,
+ "tokens_in": 520,
+ "tokens_out": 236
+}

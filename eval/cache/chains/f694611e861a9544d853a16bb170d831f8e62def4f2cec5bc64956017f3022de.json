@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4852.034125004138,
+ "output": "{\"facts\":[{\"span\":\"aaj koyal phir se thi, peepal pe hi lag rahi thi.\",\"kind\":\"plant\",\"subject\":\"marigold garlands\",\"certainty\":\"sure\",\"place\":\"peepal tree\"},{\"span\":\"phoolwali ke paas aaj gulab bhi the.\",\"kind\":\"plant\",\"subject\":\"gulab\",\"certainty\":\"sure\",\"place\":\"phoolwali\"}],\"mission_result\":\"done\",\"mission_span\":\"aaj koyal phir se thi, peepal pe hi lag rahi thi.\",\"entry\":\"Mom noticed marigold garlands on the peepal tree and gulab near phoolwali.\"}",
+ "prompt_sha": "586338069d15e71bab9451b4e3dc4ff191b9bbb7917638eea4183874cd9e4fab",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 137
+}

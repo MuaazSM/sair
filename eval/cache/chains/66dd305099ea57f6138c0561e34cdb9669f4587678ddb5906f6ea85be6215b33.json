@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4295.293916002265,
+ "output": "{\"facts\":[{\"span\":\"the wind was strong\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"the coconut palms along the wall were bending\",\"kind\":\"plant\",\"subject\":\"coconut palms\",\"certainty\":\"sure\"},{\"span\":\"the pani puri stall near the steps was busy\",\"kind\":\"person\",\"subject\":\"stall\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"the wind was strong\",\"entry\":\"Mom and Dad walked on the sea-face promenade. They noticed strong wind and bending coconut palms.\"}",
+ "prompt_sha": "d3da99bc02098ef3464be861abf1f93cc9c6945df83d4f2d11833482ec84fab2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 114
+}

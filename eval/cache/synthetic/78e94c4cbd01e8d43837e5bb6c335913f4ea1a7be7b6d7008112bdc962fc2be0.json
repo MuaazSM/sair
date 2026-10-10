@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3963.264333000552,
+ "output": "{\"facts\":[{\"span\":\"Buses aate jaate the.\",\"kind\":\"vehicle\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"teen mist thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Sparrow the pata nahi was flying high.\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Buses count kiya.\",\"entry\":\"Mom went for an evening walk. They saw buses and mist. Maybe a sparrow flew high.\"}",
+ "prompt_sha": "3923f7c8cda6bd4ea0b1b89bd7259744c65b0bf430b7064a6a3d13e4a793037e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 114
+}

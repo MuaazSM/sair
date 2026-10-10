@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 934.0226250023989,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You thought you saw white ones over the water. Can you look for them?\"}",
+ "prompt_sha": "b261bce9311560598f382abb656496a8eabca4cff4d0ed8f0f04233d8b53ab05",
+ "renderer_fingerprint": null,
+ "tokens_in": 1172,
+ "tokens_out": 37
+}

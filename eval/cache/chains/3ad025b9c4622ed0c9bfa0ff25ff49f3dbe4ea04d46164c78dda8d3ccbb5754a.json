@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2780.4517500007933,
+ "output": "{\"facts\": [{\"span\": \"there was a smell of something frying from one of the stalls, very good, i don't know what it was.\", \"kind\": \"smell\", \"subject\": \"smell of something frying\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad and I were out today. There was a smell of something frying from one of the stalls, which was very good, but I do not know what it was. I did not buy anything.\"}",
+ "prompt_sha": "1b296f9d209c58e998a90a233d86cbf56b2ab07948e310cf2b7c5f6ba348b1f3",
+ "renderer_fingerprint": null,
+ "tokens_in": 491,
+ "tokens_out": 117
+}

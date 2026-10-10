@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3262.798499999917,
+ "output": "{\"facts\": [{\"span\": \"it rained in the afternoon\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the road was muddy\", \"kind\": \"sight\", \"subject\": \"road\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the gulmohar had dropped a lot of leaves\", \"kind\": \"sight\", \"subject\": \"gulmohar\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad walked only till the paan shop and came back. It rained in the afternoon, and the road was muddy. The gulmohar had dropped a lot of leaves.\"}",
+ "prompt_sha": "3a19c76c4b7be0f67e9af5d69648a71d89ab6e15c59cf60e9e0dda959808d6f8",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 162
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1113.2958330053953,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact4\"], \"text\": \"Notice the light between the two buildings and compare it to the sky.\"}",
+ "prompt_sha": "c2c28fb3515ad3da6c7b375dd730470e516b0a3728784d125f845fbf13f189ec",
+ "renderer_fingerprint": null,
+ "tokens_in": 886,
+ "tokens_out": 37
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 837.2501660014677,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the clouds in the sky.\"}",
+ "prompt_sha": "af5a23b35049f54ad624f772eb6e19e43b0b61627faca2019a87acbbcf39a3b4",
+ "renderer_fingerprint": null,
+ "tokens_in": 848,
+ "tokens_out": 30
+}

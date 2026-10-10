@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2185.6303329986986,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f2_2\"], \"text\": \"Notice the sea-face and compare it to the sky.\"}",
+ "prompt_sha": "094ad086ba65d1d6d4d563dbffb8dec2543da93a4c0cba200c6731a6d9500965",
+ "renderer_fingerprint": null,
+ "tokens_in": 1162,
+ "tokens_out": 63
+}

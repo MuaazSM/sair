@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 751.00995899993,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the flowers near the gate.\"}",
+ "prompt_sha": "bbbb25efa8bdb11ba81550382ad5ba122dc418b67fc41ee3fbfcbec5a4b58812",
+ "renderer_fingerprint": null,
+ "tokens_in": 573,
+ "tokens_out": 28
+}

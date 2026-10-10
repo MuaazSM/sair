@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5311.882875001174,
+ "output": "{\"facts\": [{\"span\": \"buses aage jaa rahi thi\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"mist bahut thick thi\", \"kind\": \"weather\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek sparrow dikha ho sakta hai\", \"kind\": \"sight\", \"subject\": \"sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"teen chai pi\", \"kind\": \"person\", \"subject\": \"chai pi\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen buses dekhi\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"bus number yaad nahi raha\", \"kind\": \"person\", \"subject\": \"bus number\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom was out for a walk today. The buses were going ahead and the mist was very thick. I saw a sparrow maybe. I drank three chai and counted three buses. I do not remember the bus number.\"}",
+ "prompt_sha": "2001bb4c382b3fd1557f7f901376f2c0660b496b6a63a124351d98c645c309db",
+ "renderer_fingerprint": null,
+ "tokens_in": 562,
+ "tokens_out": 272
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 631.588832999114,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will notice the big park on your next walk.\"}",
+ "prompt_sha": "1c9e17a3b9d5ba2818a7012b3bc5dd3fb28e7a9c5bd627223b7723957ed75a98",
+ "renderer_fingerprint": null,
+ "tokens_in": 1566,
+ "tokens_out": 32
+}

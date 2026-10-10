@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3907.497249998414,
+ "output": "{\"facts\":[{\"span\":\"rain stopped just before i went down.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"},{\"span\":\"everything smelled of wet earth.\",\"kind\":\"smell\",\"subject\":\"wet earth\",\"certainty\":\"sure\"},{\"span\":\"the almond leaves were shining.\",\"kind\":\"plant\",\"subject\":\"almond leaves\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They noticed rain stopped, wet earth smell, and shining almond leaves.\"}",
+ "prompt_sha": "24c27e392fe89e07669753b77eb47dbaf0ca4692f25f84a4862c18d29c6f3760",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 727,
+ "tokens_out": 108
+}

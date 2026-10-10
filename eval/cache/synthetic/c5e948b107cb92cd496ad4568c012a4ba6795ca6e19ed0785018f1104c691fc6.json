@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3772.1619170006306,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha raha.\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Wind bahut tez thi.\", \"kind\": \"weather\", \"subject\": \"Wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Waves aate rahe the pata nahi.\", \"kind\": \"sound\", \"subject\": \"Waves\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially complete hua.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a very good walk today. The wind was very strong. Waves kept coming, maybe. The mission was partially complete.\"}",
+ "prompt_sha": "b93dba46432a3096670da4522ae8fdcab67047ab8fd35ba89b2e74c6888ee6fb",
+ "renderer_fingerprint": null,
+ "tokens_in": 535,
+ "tokens_out": 184
+}

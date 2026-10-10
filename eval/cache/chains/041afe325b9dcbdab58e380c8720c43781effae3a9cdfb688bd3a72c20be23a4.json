@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2126.054625005054,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_1\"], \"text\": \"You will look at the school wall and see if you notice the bird with a long tail.\"}",
+ "prompt_sha": "5ade6ed0c4e607c9a052661a32f004a26850f4fcb381f7a008e0ff02a9defe17",
+ "renderer_fingerprint": null,
+ "tokens_in": 1490,
+ "tokens_out": 40
+}

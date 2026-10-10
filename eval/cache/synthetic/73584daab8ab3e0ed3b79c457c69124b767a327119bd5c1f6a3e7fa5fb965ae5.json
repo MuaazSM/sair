@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4293.308290998539,
+ "output": "{\"facts\":[{\"span\":\"Teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Butterfly dekhi.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel ga raha लगता है.\",\"kind\":\"animal\",\"subject\":\"cuckoo\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished an evening walk. They saw a yoga group and a butterfly. Dad thought maybe a cuckoo was singing.\"}",
+ "prompt_sha": "eaac9b7773032520ecfa9aee9e2d4860662e40786efba4a455edc6f1c2847e3e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 727,
+ "tokens_out": 115
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4316.1530409997795,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw the champa.\", \"kind\": \"sight\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There was one goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The garbage truck passed three times.\", \"kind\": \"other\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Checked the jasmine flowering status.\", \"kind\": \"other\", \"subject\": \"jasmine flowering status\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad was back from the walk. He saw the jasmine and also saw the champa. There was one goat and the garbage truck passed three times. He checked the jasmine flowering status.\"}",
+ "prompt_sha": "9b205f2ae560d99eda3aa0ddf85781842a775c906f391ccfee173cdd78d709c9",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 227
+}

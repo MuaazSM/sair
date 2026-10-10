@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5776.343583002017,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"buses aate hain\",\n\"kind\": \"sound\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"do mist dikh rahi hai\",\n\"kind\": \"sight\",\n\"subject\": \"mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"ek sparrow ud raha hai\",\n\"kind\": \"animal\",\n\"subject\": \"sparrow\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad chai ki smell aa rahi hai\",\n\"kind\": \"smell\",\n\"subject\": \"chai ki smell\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"maine buses count kiye likh dena ki kitne pakshi the\",\n\"kind\": \"other\",\n\"subject\": \"buses count kiye\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"maine buses count kiye likh dena ki kitne pakshi the\",\n\"entry\": \"Mom noticed that buses are coming. There was mist visible and a sparrow was flying. Maybe the smell of tea was coming. She counted the buses and wrote down how many birds there were.\"\n}\n```",
+ "prompt_sha": "56105930b5c34356a193e91db62366cdc36249cbd943ed0a257e5cf9f953aeaa",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 324
+}

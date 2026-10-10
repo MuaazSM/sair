@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2957.86550000048,
+ "output": "{\"facts\": [{\"span\": \"today i bought some guavas from the cart near the paan shop\", \"kind\": \"sight\", \"subject\": \"guavas\", \"certainty\": \"sure\", \"place\": \"cart near the paan shop\"}, {\"span\": \"the crows were on the gulmohar again\", \"kind\": \"animal\", \"subject\": \"crows\", \"certainty\": \"sure\", \"place\": \"gulmohar\"}], \"mission_result\": \"done\", \"entry\": \"Dad bought some guavas from the cart near the paan shop today. The crows were on the gulmohar again. There were a lot of scooters parked everywhere.\"}",
+ "prompt_sha": "8e9569f8a0a2320ce6943e025658677a753b13cca0420f55a8dd912caa730744",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 144
+}

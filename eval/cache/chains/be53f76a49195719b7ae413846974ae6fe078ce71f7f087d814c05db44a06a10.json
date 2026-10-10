@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2576.002417001291,
+ "output": "{\"facts\": [{\"span\": \"there was a bird on the temple wall, small one, brownish maybe\", \"kind\": \"sight\", \"subject\": \"a bird\", \"certainty\": \"unsure\", \"place\": \"the temple wall\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. She mentioned there was a bird on the temple wall, small one, brownish maybe. The flower seller was back.\"}",
+ "prompt_sha": "c0ded47b8857a6223b25ac1dd29d7257e91e1ef35bca6876fd87b7f05d116162",
+ "renderer_fingerprint": null,
+ "tokens_in": 491,
+ "tokens_out": 99
+}

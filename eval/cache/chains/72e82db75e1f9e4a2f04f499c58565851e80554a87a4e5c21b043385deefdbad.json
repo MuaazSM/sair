@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3208.6112499964656,
+ "output": "{\"facts\": [{\"span\": \"some new plants were put in the pots near the lift\", \"kind\": \"sight\", \"subject\": \"new plants\", \"certainty\": \"sure\", \"place\": \"pots near the lift\"}, {\"span\": \"the compound smelled of fresh paint\", \"kind\": \"smell\", \"subject\": \"fresh paint\", \"certainty\": \"sure\", \"place\": \"the compound\"}], \"mission_result\": \"done\", \"entry\": \"Mom walked today. Some new plants were put in the pots near the lift, and I did not see what they were. The compound smelled of fresh paint, maybe they painted something.\"}",
+ "prompt_sha": "770e1c0de36b8894996b1c502d62c9da1c6e15e41c1e928b962a7a24f915c395",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 139
+}

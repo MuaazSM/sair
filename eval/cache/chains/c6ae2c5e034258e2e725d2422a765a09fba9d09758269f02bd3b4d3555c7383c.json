@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1301.8350419988565,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_3\"], \"text\": \"You will spot people near the steps.\"}",
+ "prompt_sha": "18a286a192ca4dce6e631666ded90dd1b306bc6a6cb185810dbbc2598b3da25c",
+ "renderer_fingerprint": null,
+ "tokens_in": 995,
+ "tokens_out": 29
+}

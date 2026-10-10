@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5899.477124999976,
+ "output": "{\"facts\": [{\"span\": \"aaj lane mein ek chidiya bahut meetha ga rahi thi\", \"kind\": \"sound\", \"subject\": \"chidiya bahut meetha ga rahi thi\", \"certainty\": \"sure\", \"place\": \"lane\"}, {\"span\": \"pata nahi kaunsi thi\", \"kind\": \"person\", \"subject\": \"kaunsi thi\", \"certainty\": \"unsure\", \"place\": \"lane\"}, {\"span\": \"neem ke paas hi kahin thi shayad\", \"kind\": \"plant\", \"subject\": \"neem ke paas hi kahin thi\", \"certainty\": \"unsure\", \"place\": \"lane\"}, {\"span\": \"baaki sab normal tha\", \"kind\": \"other\", \"subject\": \"baaki sab normal tha\", \"certainty\": \"sure\", \"place\": \"lane\"}, {\"span\": \"vendor wahi khada tha apni cart ke saath\", \"kind\": \"person\", \"subject\": \"vendor wahi khada tha apni cart ke saath\", \"certainty\": \"sure\", \"place\": \"lane\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad were out today. They mentioned a bird singing sweetly in the lane, but they could not see which one it was. They thought it might have been near the neem tree. Everything else was normal, and the vendor was standing with his cart.\"}",
+ "prompt_sha": "25a17cf02c370fdde488c1f5cb701f27202effa29496effbdae7c30973250d11",
+ "renderer_fingerprint": null,
+ "tokens_in": 512,
+ "tokens_out": 300
+}

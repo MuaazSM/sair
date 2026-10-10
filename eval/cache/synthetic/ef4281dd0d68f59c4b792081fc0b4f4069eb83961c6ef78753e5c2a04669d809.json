@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3838.075667001249,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"lagta hai Crow flew high\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Lagta hai kuch dekha\",\n\"kind\": \"sight\",\n\"subject\": \"kuch\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Partially did the mission\",\n\"kind\": \"mission\",\n\"subject\": \"mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Partially did the mission.\",\n\"entry\": \"Evening walk was nice. Lagta hai Crow flew high. Lagta hai kuch dekha. Partially did the mission. Bas yahi tha.\"\n}\n```",
+ "prompt_sha": "7e398455d47babe8a4d2c407246b5f0616d9e41e0d89ece45c275f54ae561708",
+ "renderer_fingerprint": null,
+ "tokens_in": 484,
+ "tokens_out": 204
+}

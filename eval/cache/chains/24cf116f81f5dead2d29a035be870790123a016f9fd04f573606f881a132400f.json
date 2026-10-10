@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1093.6061669999617,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"You, look at the market road. See if you can spot any leaves on the path.\"}",
+ "prompt_sha": "fb855bed166e22dd1ea38a8177217f1ac4ee77f09032804ac1b744cb605fb6b6",
+ "renderer_fingerprint": null,
+ "tokens_in": 790,
+ "tokens_out": 46
+}

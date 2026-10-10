@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4869.34004199793,
+ "output": "{\"facts\":[{\"span\":\"aaj pond mein ducks nahi dikhe\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"unsure\"},{\"span\":\"shayad doosri side the\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"unsure\"},{\"span\":\"ek bagula tha kinare pe\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"bilkul chup chaap khada tha\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed maybe ducks were on the other side. They saw a bird standing quietly by the pond.\"}",
+ "prompt_sha": "dcdab053f1d3d9c8f3b0130a9060c99647cf88a5660f15d43b4ff135f1381a04",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 148
+}

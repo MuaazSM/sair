@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2067.8764160002174,
+ "output": "{\"facts\": [{\"span\": \"aaj thoda humid tha\", \"kind\": \"weather\", \"subject\": \"humid\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking today. It was a bit humid. I felt sweaty after one round.\"}",
+ "prompt_sha": "9b65a73f6579df6b33d57669763dea4c16e4322bd918ab99bd4ebf6c94180251",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 74
+}

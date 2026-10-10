@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5977.361165998445,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Market was busy.\",\n\"kind\": \"sight\",\n\"subject\": \"Market\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Vegetable stalls bahut the.\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Maine ek hen dekha.\",\n\"kind\": \"animal\",\n\"subject\": \"hen\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters band the.\",\n\"kind\": \"sight\",\n\"subject\": \"shop shutters\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kuch alag dikha, par poora mission nahi hua.\",\n\"kind\": \"other\",\n\"subject\": \"Kuch alag\",\n\"certainty\": \"certainty\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"par poora mission nahi hua.\",\n\"entry\": \"Dad went for an evening walk. The market was busy and there were many vegetable stalls. I saw a hen there, and the shop shutters were closed. I saw something different, but the whole mission was not done.\"\n}\n```",
+ "prompt_sha": "0fb3d1c1072847ee495947c0a291e5cc8c1fdba3118253c3683c4191ac87175c",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 309
+}

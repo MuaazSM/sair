@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1081.3455829993472,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You, listen for the bell sound near the temple.\"}",
+ "prompt_sha": "18b19e32562e61fc0fe0a2d71fd05443117a0fe196349e11dc03b8fd43b8867f",
+ "renderer_fingerprint": null,
+ "tokens_in": 776,
+ "tokens_out": 32
+}

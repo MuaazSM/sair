@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 791.3254590021097,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You, listen for the sound of the leaves.\"}",
+ "prompt_sha": "5d85bf8743c8601ab2978f90b3276c3e36720671890c14156dc940607a7a6b9d",
+ "renderer_fingerprint": null,
+ "tokens_in": 806,
+ "tokens_out": 31
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3855.6895410001744,
+ "output": "{\"facts\":[{\"span\":\"मंदिर के पास बहुत सारे दीये जल रहे थे\",\"kind\":\"sight\",\"subject\":\"diyas\",\"certainty\":\"sure\",\"place\":\"mandir ke paas\"},{\"span\":\"घंटी की आवाज़ दूर तक आ रही थी\",\"kind\":\"sound\",\"subject\":\"ghanti ki awaaz\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked near the temple and saw many diyas and heard the bell sound.\"}",
+ "prompt_sha": "29287aab10d3c8b56b1fa50dae63f0fbfd595d662707514b9eff6c7997dfbaa4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 110
+}

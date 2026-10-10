@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4773.235874999955,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Teen yoga group\",\n\"kind\": \"person\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Thandi dew\",\n\"kind\": \"weather\",\n\"subject\": \"dew\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek butterfly\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Koel gaaya\",\n\"kind\": \"sound\",\n\"subject\": \"Koel gaaya\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Yoga count bhool gaya.\",\n\"entry\": \"Dad had an evening walk. They saw three yoga groups. There was cold dew. They also saw a butterfly and it seemed like a Koel sang. Dad forgot to count the yoga.\"\n}\n```",
+ "prompt_sha": "eecd2780e96b5e58900524b2ae2a468079c25e6a45b2cba772cd0466dd1e81d5",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 245
+}

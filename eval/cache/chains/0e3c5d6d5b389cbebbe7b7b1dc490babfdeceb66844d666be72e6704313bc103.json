@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4660.148707996996,
+ "output": "{\"facts\":[{\"span\":\"aaj bijli gayi hui thi, lane mein andhera tha.\",\"kind\":\"weather\",\"subject\":\"darkness\",\"certainty\":\"sure\"},{\"span\":\"hum log jaldi wapas aa gaye.\",\"kind\":\"person\",\"subject\":\"walkers\",\"certainty\":\"sure\"},{\"span\":\"jamun ke ped ke paas se bas guzre.\",\"kind\":\"plant\",\"subject\":\"jamun tree\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom and Dad walked home quickly because the lane was dark due to a power cut. They passed the jamun tree but did not notice any fruit on the ground.\"}",
+ "prompt_sha": "c521d7c5bb665460130e4d7e1339492322481fedc86acd6328b790afd9c8dfc8",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 141
+}

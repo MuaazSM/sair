@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5926.30624999947,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Vegetable stalls are visible.\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"A vendor is standing there.\",\n\"kind\": \"person\",\n\"subject\": \"vendor\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw a hen.\",\n\"kind\": \"animal\",\n\"subject\": \"hen\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Umbrellas are there probably.\",\n\"kind\": \"other\",\n\"subject\": \"Umbrellas\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters are closed.\",\n\"kind\": \"sight\",\n\"subject\": \"Shop shutters\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"We spotted some differences.\",\n\"kind\": \"sight\",\n\"subject\": \"differences\",\n\"certainty\": \"sure\",\n\"place\": \"the market\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"We looked at the market. We spotted some differences.\",\n\"entry\": \"Dad had an evening walk. Vegetable stalls were visible, and a vendor was standing there. I saw a hen, and umbrellas are there probably. We looked at the market and spotted some differences.\"\n}\n```",
+ "prompt_sha": "29e65d54713d0445eff6689bf6a74b18f287b6466339200695c540fd80faa8b6",
+ "renderer_fingerprint": null,
+ "tokens_in": 526,
+ "tokens_out": 344
+}

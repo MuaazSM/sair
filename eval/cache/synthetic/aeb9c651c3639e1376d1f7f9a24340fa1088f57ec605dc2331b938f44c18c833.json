@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5067.727166999248,
+ "output": "{\"facts\": [{\"span\": \"I saw five jasmine plants\", \"kind\": \"sight\", \"subject\": \"five jasmine plants\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There was one goat\", \"kind\": \"animal\", \"subject\": \"one goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw a cat\", \"kind\": \"animal\", \"subject\": \"a cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The dew probably was fading fast\", \"kind\": \"weather\", \"subject\": \"the dew\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"I heard the garbage truck\", \"kind\": \"sound\", \"subject\": \"the garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I checked on the jasmine again\", \"kind\": \"other\", \"subject\": \"the jasmine\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad went for a walk and saw five jasmine plants. He also saw one goat and a cat. He heard the garbage truck and checked on the jasmine again. The dew probably was fading fast.\"}",
+ "prompt_sha": "036b9122516f6bfb5792fb969a76c6de57b5701588e1eae16ffb0c013c9ca209",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 269
+}

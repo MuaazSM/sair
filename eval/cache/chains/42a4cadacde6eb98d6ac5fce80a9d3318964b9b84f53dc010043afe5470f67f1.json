@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 630.1658330012287,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_1\"], \"text\": \"You, look at the bird on the temple wall.\"}",
+ "prompt_sha": "ec533d6fd5cce88868ff708e0d348302494964712dd312ce9c2e01c22580d40a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1342,
+ "tokens_out": 32
+}

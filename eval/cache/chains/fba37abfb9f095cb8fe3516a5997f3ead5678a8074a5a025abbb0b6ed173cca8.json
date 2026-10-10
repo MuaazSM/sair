@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2591.9817499961937,
+ "output": "{\"facts\": [{\"span\": \"the palms were quiet\", \"kind\": \"sound\", \"subject\": \"the palms\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the sea was calm\", \"kind\": \"sight\", \"subject\": \"the sea\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad sat on the steps. The palms were quiet and the sea was calm. They were sitting by the sea.\"}",
+ "prompt_sha": "ef7fa07c027a457cf9645619fa510b738993b056f3bf45dc1bf3527af23ca5bd",
+ "renderer_fingerprint": null,
+ "tokens_in": 478,
+ "tokens_out": 112
+}

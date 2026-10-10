@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4432.22520800191,
+ "output": "{\"facts\":[{\"span\":\"आज बहुत तेज़ हवा थी\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"नारियल के पेड़ ज़ोर से हिल रहे थे\",\"kind\":\"plant\",\"subject\":\"palm trees\",\"certainty\":\"sure\"},{\"span\":\"पानी पूरी वाला बंद था\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom and Dad walked today. They saw strong wind and palm trees moving. They saw rain stopped. They returned quickly.\"}",
+ "prompt_sha": "59c07d73ac25a9d20ac3e7d002d82e3a91632b06fa7cf5418ce519e61d1f5abd",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 752,
+ "tokens_out": 124
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3248.0183749976277,
+ "output": "{\"facts\": [{\"span\": \"we heard a bird calling from the trees across the pond, again and again\", \"kind\": \"sound\", \"subject\": \"a bird calling\", \"certainty\": \"sure\", \"place\": \"the trees across the pond\"}, {\"span\": \"maybe it was a koel, maybe not\", \"kind\": \"other\", \"subject\": \"a koel\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad heard a bird calling from the trees across the pond, again and again. They could not spot it. Maybe it was a koel, maybe not.\"}",
+ "prompt_sha": "69c6520283eee9bcc6828552e9d532d15e5bc932e8221936b62f29007cd68ad5",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 143
+}

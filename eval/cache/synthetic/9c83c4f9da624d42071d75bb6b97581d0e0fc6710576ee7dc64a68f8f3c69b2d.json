@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4761.724416999641,
+ "output": "{\"facts\": [{\"span\": \"Yoga group there, sure.\", \"kind\": \"sight\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"the park\"}, {\"span\": \"Butterfly bahut sundar.\", \"kind\": \"sight\", \"subject\": \"Butterfly\", \"certainty\": \"sure\", \"place\": \"Koel\"}, {\"span\": \"maybe teen koels the.\", \"kind\": \"sight\", \"subject\": \"koels\", \"certainty\": \"unsure\", \"place\": \"Koel\"}, {\"span\": \"People counting yoga was forgot.\", \"kind\": \"other\", \"subject\": \"People counting yoga\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Write down how many butterflies.\", \"kind\": \"other\", \"subject\": \"butterflies\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. There was a yoga group there, sure. The butterfly was very beautiful. Maybe there were three koels. The people counting yoga was forgot. He asked to write down how many butterflies.\"}",
+ "prompt_sha": "4287bf587b574d41246b8baa7d0d49aa9a79b18ff6616970a7ed7b9c7aa39168",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 243
+}

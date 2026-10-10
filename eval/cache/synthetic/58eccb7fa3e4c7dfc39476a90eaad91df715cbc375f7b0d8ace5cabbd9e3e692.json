@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4597.617084000376,
+ "output": "{\"facts\": [{\"span\": \"teen yoga group\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"bahut zyada dew\", \"kind\": \"weather\", \"subject\": \"dew\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek butterfly\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"koel ga rahi hai\", \"kind\": \"sound\", \"subject\": \"koel\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Yoga count karna bhool gaya\", \"kind\": \"person\", \"subject\": \"Yoga count karna\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the evening walk. He saw a teen yoga group and said there was bahut zyada dew. He also saw an ek butterfly and a koel ga rahi hai maybe. He forgot to count the yoga.\"}",
+ "prompt_sha": "041f0314d594091933b85662e5b7d3724e4aef0c4924bd45f2323eca02a7cf56",
+ "renderer_fingerprint": null,
+ "tokens_in": 529,
+ "tokens_out": 232
+}

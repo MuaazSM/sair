@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4248.068917000637,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"yoga group, woh the.\",\n\"kind\": \"person\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"paanch butterfly dekhe.\",\n\"kind\": \"sight\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Counting people was forgotten.\",\n\"kind\": \"other\",\n\"subject\": \"Counting people\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Count the people doing yoga in the park. How many can you see?\",\n\"entry\": \"Dad finished the walk. There was a yoga group, and there were many. He saw five butterflies. Counting people was forgotten, and he was unsure how many there were.\"\n}\n```",
+ "prompt_sha": "b5698d4d9e7a8c57790d6022651b04dcd8124068bad2c69ff2887db1eaacb5ec",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 216
+}

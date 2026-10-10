@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3219.4259589959984,
+ "output": "{\"facts\": [{\"span\": \"imli ke ped pe aaj bandar the, teen chaar, maali unhe bhaga raha tha.\", \"kind\": \"animal\", \"subject\": \"bandar\", \"certainty\": \"sure\", \"place\": \"imli ke ped\"}, {\"span\": \"main door se dekhta raha.\", \"kind\": \"person\", \"subject\": \"main\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. He saw monkeys on the tamarind tree, three or four, and someone was chasing them. He kept watching from a distance.\"}",
+ "prompt_sha": "168c4cfb13c0c44f61b3a136cf8bb604a1cce745b9548938446727c11d989b9e",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 135
+}

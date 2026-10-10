@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4385.41104199976,
+ "output": "{\"facts\": [{\"span\": \"Buses aate jaate the.\", \"kind\": \"sound\", \"subject\": \"Buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen mist thi.\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Sparrow the pata nahi was flying high.\", \"kind\": \"animal\", \"subject\": \"Sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Buses count kiya.\", \"kind\": \"other\", \"subject\": \"Buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Mummy is back now.\", \"kind\": \"person\", \"subject\": \"Mummy\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom had a nice evening walk. Buses were coming and going. There were three mist. Sparrow was flying high, maybe. I counted the buses. Mummy is back now.\"}",
+ "prompt_sha": "63367b2a3092f8013146d1ca90c430b43a8e4c031169dd6627aee492c9a5a42d",
+ "renderer_fingerprint": null,
+ "tokens_in": 532,
+ "tokens_out": 229
+}

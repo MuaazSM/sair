@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1430.0549999970826,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 2026-10-05\", \"Tuesday 2026-10-06\", \"Wednesday 2026-10-07\"], \"text\": \"You will notice the yellow on the wall.\"}",
+ "prompt_sha": "cd4e3e0b15be0b0339741c1207e8bf605072643891891f7dcc17f67e7ea20564",
+ "renderer_fingerprint": null,
+ "tokens_in": 662,
+ "tokens_out": 66
+}

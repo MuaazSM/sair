@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4050.713917000394,
+ "output": "{\"facts\": [{\"span\": \"Bhutta ki smell strong\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas the sky लगता है were hanging low\", \"kind\": \"sight\", \"subject\": \"Umbrellas the sky\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\"}, {\"span\": \"Not much different\", \"kind\": \"sight\", \"subject\": \"Not much different\", \"certainty\": \"unsure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the evening walk. Vegetable stalls were visible and the Bhutta ki smell was strong. The sky maybe had umbrellas hanging low. Shop shutters were closed. He looked around and said not much different.\"}",
+ "prompt_sha": "343b42eebfd5422796cd74c84c38f7491c6226380983440fb83a128e9754dbd2",
+ "renderer_fingerprint": null,
+ "tokens_in": 564,
+ "tokens_out": 199
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6286.958374999813,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Teen jasmine are there\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Champa is growing tall\",\n\"kind\": \"plant\",\n\"subject\": \"Champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"One goat is grazing\",\n\"kind\": \"animal\",\n\"subject\": \"goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"A cat is sitting near the wall\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"near the wall\"\n},\n{\n\"span\": \"maybe Dew is on the leaves\",\n\"kind\": \"weather\",\n\"subject\": \"Dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"I heard the garbage truck\",\n\"kind\": \"sound\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine flowers today.\",\n\"entry\": \"Dad had a walk today. There were teen jasmine and Champa growing tall. One goat was grazing and a cat was sitting near the wall. Maybe dew is on the leaves. I heard the garbage truck.\"\n}\n```",
+ "prompt_sha": "f98b8107dc639bfdceade5ea9a7490f94dd7d042b62490166655071ddc36decd",
+ "renderer_fingerprint": null,
+ "tokens_in": 528,
+ "tokens_out": 342
+}

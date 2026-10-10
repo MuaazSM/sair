@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1092.5984999994398,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the palm ke patte.\"}",
+ "prompt_sha": "50f63ddcf00436da0f32281f3cfa034b7abb73dac5bd1eb9c8fefcd227c71357",
+ "renderer_fingerprint": null,
+ "tokens_in": 625,
+ "tokens_out": 30
+}

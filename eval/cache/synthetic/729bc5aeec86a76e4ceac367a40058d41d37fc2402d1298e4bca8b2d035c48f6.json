@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4457.510291002109,
+ "output": "{\"facts\":[{\"span\":\"Teen os, very cold.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly near the path.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel, the sound शायद was singing softly.\",\"kind\":\"sound\",\"subject\":\"sound\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission forgot, no count.\",\"entry\":\"Dad went for a walk and saw a yoga group, cold weather, a butterfly, and maybe a koel sound. They did not count the people.\"}",
+ "prompt_sha": "aeced28b5754c01d8e218211d9531b75fa8ee29967e72022142dfdfe8e89d333",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 753,
+ "tokens_out": 127
+}

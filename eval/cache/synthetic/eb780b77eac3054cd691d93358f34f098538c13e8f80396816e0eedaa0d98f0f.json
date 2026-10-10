@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4013.8683330005733,
+ "output": "{\"facts\": [{\"span\": \"Buses aate jaate the.\", \"kind\": \"sound\", \"subject\": \"Buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen mist thi.\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Sparrow the pata nahi was flying high.\", \"kind\": \"animal\", \"subject\": \"Sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Buses count kiya.\", \"kind\": \"other\", \"subject\": \"Buses\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom had a nice evening walk. Buses were coming and going. There were three mists. Sparrow was flying high, maybe. I counted the buses. Mummy is back now.\"}",
+ "prompt_sha": "cedcae44a2794d63f641a61d9d253d2bbff917a675f05b9b216f705834c6fdd5",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 195
+}

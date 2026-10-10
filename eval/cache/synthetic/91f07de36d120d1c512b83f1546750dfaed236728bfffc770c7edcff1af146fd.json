@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4522.636749999947,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha raha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow there lagta hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Mission partially done.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially done.\",\n\"entry\": \"Mom and Dad had a very good walk today. They saw kids playing cricket. Mom thought there was a crow there. Dad said the mission was partially done.\"\n}\n```",
+ "prompt_sha": "32f1627317a58e7015297b33353c8de53a4970fba37a3e50ce9c2b400ace8ef6",
+ "renderer_fingerprint": null,
+ "tokens_in": 512,
+ "tokens_out": 237
+}

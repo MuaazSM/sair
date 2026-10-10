@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5571.060833000956,
+ "output": "{\"facts\":[{\"span\":\"aaj hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"bahut achha laga\",\"kind\":\"other\",\"subject\":\"laga\",\"certainty\":\"sure\"},{\"span\":\"kids playing cricket\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"shayad crow flies high\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"humne thoda sa pata lagaya\",\"kind\":\"other\",\"subject\":\"pata\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"humne thoda sa pata lagaya\",\"entry\":\"Mom and Dad went for a walk. They noticed kids playing cricket and maybe a crow flying high.\"}",
+ "prompt_sha": "2426d42681474cdf7b33179222ece55de7d108e1799278a6cd052ce0939cac12",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 764,
+ "tokens_out": 162
+}

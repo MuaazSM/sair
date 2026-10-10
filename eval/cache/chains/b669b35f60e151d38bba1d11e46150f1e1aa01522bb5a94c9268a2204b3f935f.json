@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3529.359915999521,
+ "output": "{\"facts\": [{\"span\": \"the bell was ringing, aarti was going on\", \"kind\": \"sound\", \"subject\": \"bell ringing, aarti\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the flower seller outside had marigold garlands\", \"kind\": \"sight\", \"subject\": \"marigold garlands\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"there is a peepal tree next to the temple with threads tied on it\", \"kind\": \"sight\", \"subject\": \"peepal tree with threads tied on it\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom walked till the temple and back. The bell was ringing, aarti was going on. The flower seller outside had marigold garlands. There is a peepal tree next to the temple with threads tied on it.\"}",
+ "prompt_sha": "54056116b546f2e732209b3dae7f74964a2b12edd17d5aefa61dda4603d85eb8",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 193
+}

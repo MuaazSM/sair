@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4085.9976659994572,
+ "output": "{\"facts\":[{\"span\":\"Buses aate rahe.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut zyada thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Paanch gauraiya.\",\"kind\":\"animal\",\"subject\":\"cows\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for an evening walk. They saw buses and saw a lot of mist. Maybe there were five cows.\"}",
+ "prompt_sha": "931b853017e48361be322c12db62e4dc4385174e96a33de02eb198b93a005b43",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 117
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3337.0824999983597,
+ "output": "{\"facts\":[{\"span\":\"Ek butterfly dikhi.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Teen koel probably.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Yoga count nahi kiya.\",\"entry\":\"Dad went for a walk. They saw a butterfly and maybe three koels.\"}",
+ "prompt_sha": "22899e54757c5cc5faeba1a7d3a43193e7e90194424263874c9c7268049ab186",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 784,
+ "tokens_out": 86
+}

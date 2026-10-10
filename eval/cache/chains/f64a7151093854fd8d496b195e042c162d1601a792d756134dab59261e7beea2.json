@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3079.0380420003203,
+ "output": "{\"facts\":[{\"span\":\"it was humid and sticky.\",\"kind\":\"weather\",\"subject\":\"humidity\",\"certainty\":\"sure\"},{\"span\":\"we walked slowly\",\"kind\":\"sight\",\"subject\":\"walking\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk in humid weather. They sat on temple steps but did not listen for sounds.\"}",
+ "prompt_sha": "eb991d67c766d3753e8e79ad2eb3dd043b502334691f1e222962032b33e8fa5b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 723,
+ "tokens_out": 83
+}

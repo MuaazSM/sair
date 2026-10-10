@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4036.832957997831,
+ "output": "{\"facts\":[{\"span\":\"teen buses theen.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"bahut mist thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"chai ki smell bahut achhi thi.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Counted the buses at the stop.\",\"entry\":\"Mom returned from the evening walk. They saw teen buses and noticed mist and chai ki smell.\"}",
+ "prompt_sha": "a08c926ddaeed94016ca393b411bf0ce2cc5cf7a510c93f31f3adc4fc3d3bae1",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 111
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5258.495999998559,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Bhutta smell bahut tez hai.\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta smell\",\n\"place\": \"\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"Umbrellas open I think umbrellas closed\",\n\"kind\": \"sight\",\n\"subject\": \"umbrellas\",\n\"place\": \"\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Pata nahi uska colour kya tha.\",\n\"kind\": \"sight\",\n\"subject\": \"colour\",\n\"place\": \"\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Look at the market. Can you spot what is different?\",\n\"entry\": \"Dad was done with the walk. The market was busy and the bhutta smell was very strong. He saw a vendor standing there and noticed that umbrellas were open, but he thought umbrellas were closed. He looked around and saw some changes, but he was unsure about the colour of something.\"\n}\n```",
+ "prompt_sha": "b4ffb88a3169e70dc9707d2cb330cf8c44aba96b3a0fcf9578b9a80f65187e09",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 246
+}

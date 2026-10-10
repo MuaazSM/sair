@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 790.5869589994836,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the sea-face and look at the aasman.\"}",
+ "prompt_sha": "4c2559b1dd19c6e8900297a90c28a0afeaf232c482ea245fedc0f0b80c272dc5",
+ "renderer_fingerprint": null,
+ "tokens_in": 1611,
+ "tokens_out": 41
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4562.148124998203,
+ "output": "{\"facts\":[{\"span\":\"अमलतास के फूल अब कम हो गए हैं.\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"amaltas\"},{\"span\":\"वॉचमैन के केबिन के पास दोनों कुत्ते सो रहे थे.\",\"kind\":\"animal\",\"subject\":\"dogs\",\"certainty\":\"sure\",\"place\":\"watchman's cabin\"},{\"span\":\"हवा अच्छी थी.\",\"kind\":\"weather\",\"subject\":\"air\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked and saw amaltas flowers, dogs at the watchman's cabin, and good air.\"}",
+ "prompt_sha": "75fca56efc702da3aa487f6083a2da2b0c48a2d9735f10e15edc75a204abc63a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 137
+}

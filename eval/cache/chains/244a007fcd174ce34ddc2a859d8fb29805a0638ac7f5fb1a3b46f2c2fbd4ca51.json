@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5474.20370799955,
+ "output": "{\"facts\":[{\"span\":\"i stopped near the old well at the back of the park\",\"kind\":\"sight\",\"subject\":\"well\",\"certainty\":\"sure\",\"place\":\"park\"},{\"span\":\"there is a tamarind tree next to it\",\"kind\":\"plant\",\"subject\":\"tamarind tree\",\"certainty\":\"sure\",\"place\":\"park\"},{\"span\":\"the gardener was watering the hedges\",\"kind\":\"person\",\"subject\":\"gardener\",\"certainty\":\"sure\"},{\"span\":\"it was quiet\",\"kind\":\"weather\",\"subject\":\"quiet\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"i stopped near the old well at the back of the park\",\"entry\":\"Dad paused at the old well in the park. He saw a tamarind tree and the gardener watering hedges. It was quiet.\"}",
+ "prompt_sha": "d24f8fa6cc4ca2a45a71ea70812bb88a3d04a46ae61560049758fe5b0da88f43",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 169
+}

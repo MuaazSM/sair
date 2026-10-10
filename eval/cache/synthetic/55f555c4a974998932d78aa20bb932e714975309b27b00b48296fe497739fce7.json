@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4203.7679999994,
+ "output": "{\"facts\": [{\"span\": \"Kids are at the school gate.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"school gate\"}, {\"span\": \"Imli ka ped visible hai.\", \"kind\": \"sight\", \"subject\": \"Imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow the I think was near the gate.\", \"kind\": \"animal\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"near the gate\"}, {\"span\": \"We saw a bicycle.\", \"kind\": \"sight\", \"subject\": \"a bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad just came back from the walk. Kids are at the school gate. Imli ka ped visible hai. I think the crow was near the gate. We saw a bicycle. Dinner will be good tonight.\"}",
+ "prompt_sha": "fc29da5fd985d56e613074e4b923a51f3cc477369075d0dc3bb76da91b1e97a6",
+ "renderer_fingerprint": null,
+ "tokens_in": 515,
+ "tokens_out": 212
+}

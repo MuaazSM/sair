@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3128.4681249962887,
+ "output": "{\"facts\": [{\"span\": \"बिल्ली के बच्चे आज बाहर आ गए थे, पार्किंग के पास खेल रहे थे।\", \"kind\": \"animal\", \"subject\": \"बिल्ली के बच्चे\", \"certainty\": \"sure\", \"place\": \"पार्किंग के पास\"}, {\"span\": \"वॉचमैन ने कहा उनकी माँ पास में ही है।\", \"kind\": \"person\", \"subject\": \"वॉचमैन\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. The cat kittens were playing near the parking. The watchman said their mother is nearby.\"}",
+ "prompt_sha": "015fd38579575b349aceb763097c920b69877aa7ee6636631cd22241ebf3a34e",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 135
+}

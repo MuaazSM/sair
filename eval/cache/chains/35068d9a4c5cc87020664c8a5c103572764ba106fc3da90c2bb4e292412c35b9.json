@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3316.747083001246,
+ "output": "{\"facts\": [{\"span\": \"गली में आज कुछ फूल खिले थे, किसी के घर के बाहर बेल पर।\", \"kind\": \"sight\", \"subject\": \"फूल\", \"certainty\": \"sure\", \"place\": \"गली में\"}, {\"span\": \"बहुत सुंदर लग रहे थे।\", \"kind\": \"sight\", \"subject\": \"फूल\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was walking today. He mentioned that some flowers had bloomed in the street, on a vine outside someone's house. They were looking very beautiful.\"}",
+ "prompt_sha": "f274d637208f49cbf5e89c8e6dd0c623e1523d4e2f3dd8aae91bbb0a23cf6875",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 134
+}

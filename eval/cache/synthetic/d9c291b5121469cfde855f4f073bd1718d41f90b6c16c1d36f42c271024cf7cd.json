@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3872.195500000089,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Teen yoga group\",\n\"kind\": \"person\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek butterfly\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Koel ga raha lagta hai\",\n\"kind\": \"sound\",\n\"subject\": \"Koel ga raha\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission bhool gaya.\",\n\"entry\": \"Dad finished the walk. There were three yoga groups. There was one butterfly. It seems a Koel is singing.\"\n}\n```",
+ "prompt_sha": "1789f3958e71ccff504eef096ee1d677c9ba5194e6a4b3a0506d0449607daa1e",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 190
+}

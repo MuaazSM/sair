@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 733.3342499987339,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You will listen for the kabootar under the gulmohar.\"}",
+ "prompt_sha": "c9341a7973b43c6aa446fb2e22cce6fd5cb6cc485d37de0641c53e89916f83c6",
+ "renderer_fingerprint": null,
+ "tokens_in": 1253,
+ "tokens_out": 35
+}

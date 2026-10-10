@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1146.70095800102,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_3\"], \"text\": \"You notice the soil near the tulsi ka gamla. Can you count how many wet spots you see?\"}",
+ "prompt_sha": "5e622c60f0e16542f4ccf66a7123effb38f29817fd9776ef2955e626c202ccc5",
+ "renderer_fingerprint": null,
+ "tokens_in": 929,
+ "tokens_out": 49
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5113.535666998359,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids wahan hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"Imli ka ped dikha.\",\n\"kind\": \"sight\",\n\"subject\": \"Imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"Imli ka ped\"\n},\n{\n\"span\": \"Crow dekha shayad.\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Bicycle dikhi.\",\n\"kind\": \"sight\",\n\"subject\": \"Bicycle\",\n\"certainty\": \"sure\",\n\"place\": null\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Last time you noticed kids at the school gate. Are there kids there again?\",\n\"entry\": \"Mom and Dad had a nice evening walk. They saw kids there. They saw an Imli ka ped. They saw a bicycle. They saw a crow maybe.\"\n}\n```",
+ "prompt_sha": "6872c56c4cbda6028b6865ea57c4dccfb654d03046821e42ea6cfd0d8a0a8f8f",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 264
+}

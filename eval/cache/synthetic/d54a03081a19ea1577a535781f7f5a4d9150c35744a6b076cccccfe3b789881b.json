@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4915.042042001005,
+ "output": "{\"facts\": [{\"span\": \"Walk bahut sukoon dene wala tha.\", \"kind\": \"sight\", \"subject\": \"Walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"Kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ho sakta hai Crow flew over.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Humne kuch dekha hi, par poora mission nahi hua.\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Pata nahi uska colour kya tha.\", \"kind\": \"sight\", \"subject\": \"colour\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom and Dad had a very peaceful walk. The kids were playing cricket. Maybe a crow flew over. We saw something, but the whole mission was not done. I don't know what colour the food was.\"}",
+ "prompt_sha": "2b485d548e809d240daadbc21cec3a200e2199f0624209ed5aa19592a2699b80",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 249
+}

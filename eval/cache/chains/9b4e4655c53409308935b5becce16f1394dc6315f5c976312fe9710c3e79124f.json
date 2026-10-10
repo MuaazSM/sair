@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1419.596082996577,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You, look at the gulab near the phoolwali.\"}",
+ "prompt_sha": "e9807dd81fdc281d1b4ea569cd4f28f78a3d678c5a7d1d5146726f6cc3c63c6a",
+ "renderer_fingerprint": null,
+ "tokens_in": 960,
+ "tokens_out": 34
+}

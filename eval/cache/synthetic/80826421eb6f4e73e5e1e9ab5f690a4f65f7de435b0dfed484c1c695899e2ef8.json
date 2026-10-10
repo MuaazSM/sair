@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3764.3754580021778,
+ "output": "{\"facts\": [{\"span\": \"kids playing cricket\", \"kind\": \"sight\", \"subject\": \"kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"crow is there ho sakta hai\", \"kind\": \"sound\", \"subject\": \"crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"We found out what they were doing partly\", \"kind\": \"other\", \"subject\": \"what they were doing\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Aaj hawa kaafi thandi thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Evening walk was nice. Kids playing cricket. Crow is there ho sakta hai. We found out what they were doing partly. Aaj hawa kaafi thandi thi.\"}",
+ "prompt_sha": "23a5b32a64316e6c66dd6529ee2dc92e679c09c0d615a956471e6e6c4038b66a",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 200
+}

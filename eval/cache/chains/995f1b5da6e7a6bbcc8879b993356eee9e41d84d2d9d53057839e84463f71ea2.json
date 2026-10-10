@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 826.5907499990135,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the sky as you walk.\"}",
+ "prompt_sha": "caeae59fbabdad8d726b524078fe3f632066a3bd3f10d14e516e352de8740dda",
+ "renderer_fingerprint": null,
+ "tokens_in": 844,
+ "tokens_out": 30
+}

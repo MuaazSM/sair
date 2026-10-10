@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1412.4474580021342,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You will look at the आम का पेड़ and notice any new leaves.\"}",
+ "prompt_sha": "09584a2da8489e1e70ffc5f0183f7b3259a9b209213053a9697b4168d8842314",
+ "renderer_fingerprint": null,
+ "tokens_in": 766,
+ "tokens_out": 35
+}

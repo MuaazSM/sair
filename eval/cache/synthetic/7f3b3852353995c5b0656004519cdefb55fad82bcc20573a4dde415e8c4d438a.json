@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4709.45591599957,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw the champa.\", \"kind\": \"sight\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There is one goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There are three cat.\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The dew is present I think.\", \"kind\": \"weather\", \"subject\": \"dew\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"I checked on the jasmine blooming again.\", \"kind\": \"other\", \"subject\": \"jasmine blooming\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad had an evening walk. He saw the jasmine and the champa. There was one goat and three cats. He thought the dew was present. He checked on the jasmine blooming again.\"}",
+ "prompt_sha": "ec67dc3c3f9fb02a65e84339eb2b204cec7f4d6d393c395e936e60651c1e1ae5",
+ "renderer_fingerprint": null,
+ "tokens_in": 547,
+ "tokens_out": 262
+}

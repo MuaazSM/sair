@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4009.0554589987732,
+ "output": "{\"facts\": [{\"span\": \"bhutta smell bahut achhi thi\", \"kind\": \"smell\", \"subject\": \"bhutta smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"umbrellas maybe were high shop shutters band the\", \"kind\": \"sight\", \"subject\": \"umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Market mein kuch alag tha\", \"kind\": \"sight\", \"subject\": \"kuch alag\", \"certainty\": \"sure\", \"place\": \"Market\"}], \"mission_result\": \"partly\", \"entry\": \"Dad had a good evening. The bhutta smell was very good. He saw a vendor there and a hen. He thought that maybe umbrellas were high and shop shutters were closed. He said that something was different in the Market.\"}",
+ "prompt_sha": "c431222632197b4bed0ccc197ffa3bd61a45bc7aa0cee8be136d2f446bb5a17a",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 183
+}

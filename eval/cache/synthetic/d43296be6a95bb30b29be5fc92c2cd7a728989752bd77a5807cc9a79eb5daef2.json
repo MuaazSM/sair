@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5424.93750000358,
+ "output": "{\"facts\":[{\"span\":\"Buses aate jaa rahi thi.\",\"kind\":\"other\",\"subject\":\"buses\",\"certainty\":\"sure\",\"place\":\"none\"},{\"span\":\"Mist bahut thick thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\",\"place\":\"none\"},{\"span\":\"lagta hai Sparrow ud raha tha.\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\",\"place\":\"none\"},{\"span\":\"Bus count kiya, I saw four.\",\"kind\":\"other\",\"subject\":\"buses\",\"certainty\":\"sure\",\"place\":\"none\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for an evening walk. They saw buses, thick mist, and maybe a sparrow. They drank three cups of tea and counted four buses.\"}",
+ "prompt_sha": "d6c658dbd825f6cf5e9cc630074b6ab40cbe2b3d4b05323d480e16b1a2b7b30a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 797,
+ "tokens_out": 166
+}

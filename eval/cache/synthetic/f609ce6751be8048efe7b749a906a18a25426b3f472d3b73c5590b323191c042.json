@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6389.4098330019915,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Vegetable stalls visible\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bhutta ki smell strong\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"A vendor is there\",\n\"kind\": \"person\",\n\"subject\": \"A vendor\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"A hen is present\",\n\"kind\": \"animal\",\n\"subject\": \"A hen\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Umbrellas are there probably\",\n\"kind\": \"other\",\n\"subject\": \"Umbrellas\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Only partly spotted what was different\",\n\"kind\": \"sight\",\n\"subject\": \"what was different\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Only partly spotted what was different.\",\n\"entry\": \"Dad had an evening walk. Vegetable stalls were visible and the bhutta ki smell was strong. A vendor and a hen were present. Umbrellas were there probably. He looked at the market but only partly spotted what was different.\"\n}\n```",
+ "prompt_sha": "3ed87d7f81bf8d157236454587631ab9b1aaa371e263ff93e57f24fe516b9a46",
+ "renderer_fingerprint": null,
+ "tokens_in": 519,
+ "tokens_out": 348
+}

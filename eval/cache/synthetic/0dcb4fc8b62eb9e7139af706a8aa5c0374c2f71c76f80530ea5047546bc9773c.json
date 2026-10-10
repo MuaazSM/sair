@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3222.506459002034,
+ "output": "{\"facts\":[{\"span\":\"Bhutta smell strong.\",\"kind\":\"smell\",\"subject\":\"bhutta\",\"certainty\":\"sure\"},{\"span\":\"Hen seen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done.\",\"entry\":\"Dad went for a walk and looked at the market. They noticed strong bhutta smell and a hen.\"}",
+ "prompt_sha": "91b1695961bfe1bcb0a7580e2a9954bbadbf44e343987319cd3c9fafc6b45d5d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 769,
+ "tokens_out": 84
+}

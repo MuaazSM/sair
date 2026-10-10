@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5523.064084001817,
+ "output": "{\"facts\":[{\"span\":\"buses aage jaa rahi thi\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"ek sparrow dikha ho sakta hai\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"teen chai pi bus count kiya\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"teen buses dekhi\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"bus count kiya\",\"entry\":\"Mom went for a walk and counted buses. They saw buses and thick mist. Maybe a sparrow was seen.\"}",
+ "prompt_sha": "934362742a4893c9dfed54744e6face53f577580d92301bbd7917318711a61f5",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 166
+}

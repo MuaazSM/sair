@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2404.9161659968377,
+ "output": "{\"facts\":[{\"span\":\"कुत्ता फिर था.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom sat on the stairs for a while. They saw a dog again.\"}",
+ "prompt_sha": "414929f04c393d64b96368ad2644bcb69da1cdb2da34ee2b1dd43c0ea89318ed",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 727,
+ "tokens_out": 55
+}

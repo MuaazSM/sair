@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1381.2039159965934,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the flower seller's shop near the lane. Look at the leaves on the path.\"}",
+ "prompt_sha": "4be02a1cb482311aab6f968a5d566cc166210a83d5f8274c9e358e85db3bb823",
+ "renderer_fingerprint": null,
+ "tokens_in": 778,
+ "tokens_out": 42
+}

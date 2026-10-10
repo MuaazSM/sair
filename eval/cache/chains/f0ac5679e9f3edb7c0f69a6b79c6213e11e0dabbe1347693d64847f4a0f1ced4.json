@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2088.1817500048783,
+ "output": "{\"facts\": [{\"span\": \"thakaan thi\", \"kind\": \"weather\", \"subject\": \"thakaan\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was tired today. She said bas do round. It seems she was tired from the walking.\"}",
+ "prompt_sha": "69d638218fb433ac08206f40152bd83c90252f67f5559ac8f9363b9da4826d42",
+ "renderer_fingerprint": null,
+ "tokens_in": 470,
+ "tokens_out": 72
+}

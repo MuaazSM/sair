@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6810.1437500008615,
+ "output": "{\"facts\":[{\"span\":\"Bhutta ki smell bahut achhi thi.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan tha.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there लगता है.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters band the.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"},{\"span\":\"Market mein kuch alag tha.\",\"kind\":\"sight\",\"subject\":\"market\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Market mein kuch alag tha.\",\"entry\":\"Dad went for an evening walk and looked at the busy market. They noticed a good smell of bhutta, a vendor, a hen, umbrellas, and shutters. Maybe the market was different.\"}",
+ "prompt_sha": "01eecbcbd2e40af876cfa021b6f5de149d3c74513086ae0923dbfbdcf68a319b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 763,
+ "tokens_out": 207
+}

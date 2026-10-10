@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3270.8322500002396,
+ "output": "{\"facts\": [{\"span\": \"a lot of cars were parked on both sides\", \"kind\": \"sight\", \"subject\": \"cars\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"some guests at a house\", \"kind\": \"person\", \"subject\": \"guests\", \"certainty\": \"sure\", \"place\": \"a house\"}, {\"span\": \"the jamun tree was quiet today\", \"kind\": \"sound\", \"subject\": \"jamun tree\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked today. A lot of cars were parked on both sides and there were some guests at a house. The jamun tree was quiet today.\"}",
+ "prompt_sha": "e5bc8c1f536392ff0335069fbd300bf09eaa8019bff8c3d1f902e052cb5d9370",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 163
+}

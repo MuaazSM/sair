@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1488.3829999998852,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_3\"], \"text\": \"You will look for people near the steps today.\"}",
+ "prompt_sha": "ca5439addfea6c80a9ae7b313a7bed32d89a7d554d432195eb73533dcc5e0782",
+ "renderer_fingerprint": null,
+ "tokens_in": 1061,
+ "tokens_out": 31
+}

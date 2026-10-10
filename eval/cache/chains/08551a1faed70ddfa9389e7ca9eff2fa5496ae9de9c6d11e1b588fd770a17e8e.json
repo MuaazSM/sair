@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3530.8716250001453,
+ "output": "{\"facts\":[{\"span\":\"a bird was hopping on the clubhouse lawn\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"a small brown one maybe\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"a bird was hopping on the clubhouse lawn\",\"entry\":\"Dad went for a walk and listened for a bird. They heard a small brown bird hopping on the clubhouse lawn.\"}",
+ "prompt_sha": "6fa1107b2eae9f4593fe0cc8fb577e03a7a1af26d23f9e3057572466e4ab77bd",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 730,
+ "tokens_out": 95
+}

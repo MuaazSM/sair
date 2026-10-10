@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2616.5636250007083,
+ "output": "{\"facts\": [{\"span\": \"nothing much today\", \"kind\": \"sound\", \"subject\": \"nothing much\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"we walked, we talked, came home\", \"kind\": \"other\", \"subject\": \"walked, talked, came home\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked and talked today. They came home. Nothing much happened.\"}",
+ "prompt_sha": "33c13a1d6aba55291bb015756039fcba4cd654a4b8acda6838171810195e52cc",
+ "renderer_fingerprint": null,
+ "tokens_in": 475,
+ "tokens_out": 107
+}

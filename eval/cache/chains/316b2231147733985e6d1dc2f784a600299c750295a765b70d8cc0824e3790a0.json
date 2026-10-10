@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1821.9502499996452,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f1_3\", \"f3_1\"], \"text\": \"You will notice the leaves of the mango tree moving. Look for the leaves of the mango tree moving.\"}",
+ "prompt_sha": "fa931b3493a13c5052b1d18d8e1aeb9ee5efcb945d88e2c33f461a54385a6ad4",
+ "renderer_fingerprint": null,
+ "tokens_in": 1096,
+ "tokens_out": 54
+}

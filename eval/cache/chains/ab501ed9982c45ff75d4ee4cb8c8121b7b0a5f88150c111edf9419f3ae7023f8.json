@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4725.3506249981,
+ "output": "{\"facts\":[{\"span\":\"आज कंपाउंड में एक बिल्ली के बच्चे थे\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"कितने थे पता नहीं\",\"kind\":\"animal\",\"subject\":\"cats\",\"certainty\":\"unsure\"},{\"span\":\"झाड़ी में छुपे थे\",\"kind\":\"animal\",\"subject\":\"cats\",\"certainty\":\"sure\"},{\"span\":\"उनकी आवाज़ आ रही थी बस\",\"kind\":\"sound\",\"subject\":\"cat\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked in the compound and heard cats hiding in bushes.\"}",
+ "prompt_sha": "a9699ff55653c6898e591bd59b4d5ee912d876adcf61fd5ddf03ecc611a4dbca",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 138
+}

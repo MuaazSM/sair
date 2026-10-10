@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6097.046457998658,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Buses aage se aa rahi hain.\",\n\"kind\": \"sound\",\n\"subject\": \"Buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen mist dikh rahi thi.\",\n\"kind\": \"sight\",\n\"subject\": \"mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek sparrow ud raha tha ho sakta hai.\",\n\"kind\": \"animal\",\n\"subject\": \"sparrow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Chai ki smell bahut achhi thi.\",\n\"kind\": \"smell\",\n\"subject\": \"Chai ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bus count kiya, do buses dekhi.\",\n\"kind\": \"other\",\n\"subject\": \"do buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Bus count kiya, do buses dekhi.\",\n\"entry\": \"Mom had an evening walk. Buses were coming from ahead. Three mists were visible. A sparrow was flying, maybe. The smell of tea was very good. I counted the buses and saw two buses.\"\n}\n```",
+ "prompt_sha": "200956b2eb176ab7fb1e2ec2abd0f3dbdf1c386223bfbce317d5a6db082b7e2b",
+ "renderer_fingerprint": null,
+ "tokens_in": 514,
+ "tokens_out": 320
+}

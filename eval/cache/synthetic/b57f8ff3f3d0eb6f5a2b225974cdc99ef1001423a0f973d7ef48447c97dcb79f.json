@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4936.8238339993695,
+ "output": "{\"facts\":[{\"span\":\"Walk bahut achha tha.\",\"kind\":\"weather\",\"subject\":\"walk\",\"certainty\":\"sure\"},{\"span\":\"imli ka ped dikh raha hai.\",\"kind\":\"plant\",\"subject\":\"imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"kauwa probably ud raha tha.\",\"kind\":\"animal\",\"subject\":\"kauwa\",\"certainty\":\"unsure\"},{\"span\":\"bicycle wahan hai.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They saw an imli tree and a bicycle. Maybe a kauwa was flying.\"}",
+ "prompt_sha": "915bb476957ddeb7460259021377f1d75144c19890801c327a6c222cfcb46c9c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 140
+}

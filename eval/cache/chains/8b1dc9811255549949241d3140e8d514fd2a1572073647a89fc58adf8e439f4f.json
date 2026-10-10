@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4969.429749999108,
+ "output": "{\"facts\":[{\"span\":\"aaj sky bahut saaf thi\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\",\"place\":\"sky\"},{\"span\":\"ek bhi badal nahi\",\"kind\":\"weather\",\"subject\":\"clouds\",\"certainty\":\"sure\",\"place\":\"sky\"},{\"span\":\"ducks pond ke beech mein the\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\",\"place\":\"pond\"},{\"span\":\"bench pe baith ke humne bas dekha\",\"kind\":\"sight\",\"subject\":\"bench\",\"certainty\":\"sure\",\"place\":\"bench\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom and Dad walked in clear sky without clouds. They saw ducks on a bench.\"}",
+ "prompt_sha": "aba6ade2024bd9751c76a0530b84791e9202397ff28b815d513a4eef937a26c3",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 152
+}

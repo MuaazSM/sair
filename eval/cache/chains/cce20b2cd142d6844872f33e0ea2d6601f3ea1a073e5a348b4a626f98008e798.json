@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 7019.620999999461,
+ "output": "{\"facts\":[{\"span\":\"hum log compound ke chaar chakkar lagaye.\",\"kind\":\"other\",\"subject\":\"compound\",\"certainty\":\"sure\"},{\"span\":\"watchman ne bataya ki gate ke paas wala ashoka tree kaatne wale hain.\",\"kind\":\"plant\",\"subject\":\"ashoka tree\",\"certainty\":\"unsure\"},{\"span\":\"pata nahi sach hai ya nahi.\",\"kind\":\"other\",\"subject\":\"truth\",\"certainty\":\"unsure\"},{\"span\":\"bachche cycle chala rahe the.\",\"kind\":\"person\",\"subject\":\"children\",\"certainty\":\"sure\"},{\"span\":\"hum ne aath trees gine, ya shayad nau.\",\"kind\":\"other\",\"subject\":\"trees\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"hum ne aath trees gine, ya shayad nau.\",\"entry\":\"Mom and Dad walked around the compound. They heard the watchman say the ashoka tree near the gate might be cut, but they are not sure if it is true. They saw children cycling and counted eight trees, maybe nine.\"}",
+ "prompt_sha": "b15b19d078a48c7850f85b199adb0a2b88aaaf9b2e83891df25f3155008eb30c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 771,
+ "tokens_out": 226
+}

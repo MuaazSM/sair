@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4739.264874999208,
+ "output": "{\"facts\":[{\"span\":\"मंदिर में आज बहुत भीड़ थी\",\"kind\":\"person\",\"subject\":\"crowd\",\"certainty\":\"sure\",\"place\":\"temple\"},{\"span\":\"कोई त्योहार है शायद\",\"kind\":\"weather\",\"subject\":\"festival\",\"certainty\":\"unsure\",\"place\":\"temple\"},{\"span\":\"अगरबत्ती की खुशबू आ रही थी\",\"kind\":\"smell\",\"subject\":\"incense\",\"certainty\":\"sure\",\"place\":\"temple\"}],\"mission_result\":\"not_done\",\"mission_span\":\"मैं अंदर नहीं गई\",\"entry\":\"Mom went to the temple but did not enter. She heard maybe a festival and smelled incense.\"}",
+ "prompt_sha": "5cddd64085912a98bffab5707c63ec236c153e2f2a9d02a01c65fa6033a81155",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 752,
+ "tokens_out": 143
+}

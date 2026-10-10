@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4387.043624999933,
+ "output": "{\"facts\": [{\"span\": \"bhutta wala wapas aa gaya.\", \"kind\": \"person\", \"subject\": \"bhutta wala\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"aaj usne nimbu masala lagaya.\", \"kind\": \"sight\", \"subject\": \"nimbu masala\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek kutta tha steps pe\", \"kind\": \"animal\", \"subject\": \"kutta\", \"certainty\": \"sure\", \"place\": \"steps\"}, {\"span\": \"roz wala hi lagta hai.\", \"kind\": \"person\", \"subject\": \"roz wala\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was walking today. Bhutta wala was back and had put nimbu masala. There was a dog on the steps, and it seems to be the same one every day.\"}",
+ "prompt_sha": "cc41876c8ab75cb877ba147d280731104489837be94724740c510e2b8046c4c8",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 207
+}

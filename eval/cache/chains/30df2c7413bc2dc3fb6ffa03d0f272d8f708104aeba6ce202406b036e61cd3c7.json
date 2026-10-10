@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3888.952667002741,
+ "output": "{\"facts\": [{\"span\": \"sky bahut saaf tha\", \"kind\": \"weather\", \"subject\": \"sky\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"gulmohar pe ab phool kam hain, mostly leaves\", \"kind\": \"plant\", \"subject\": \"phool kam hain, mostly leaves\", \"certainty\": \"sure\", \"place\": \"gulmohar\"}, {\"span\": \"baaki kuch khaas nahi\", \"kind\": \"sight\", \"subject\": \"kuch khaas nahi\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom had a walk today. The sky was very clear. On the gulmohar, there are few flowers, mostly leaves. Other than that, nothing special was noticed.\"}",
+ "prompt_sha": "679485035c855d4934e358f00fcad7bf26b82a1867a58488b7b1ae4341656813",
+ "renderer_fingerprint": null,
+ "tokens_in": 497,
+ "tokens_out": 177
+}

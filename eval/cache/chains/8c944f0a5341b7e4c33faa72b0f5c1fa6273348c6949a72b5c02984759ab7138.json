@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2311.1092090002785,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f3_1\", \"f4_1\", \"f4_2\", \"f4_3\"], \"text\": \"You, look at the flowers near the bush outside the corner house.\"}",
+ "prompt_sha": "cc0aa9b4945b28d9f7c54511b09ec2a00e92729c00406fef2870b1bc391afa97",
+ "renderer_fingerprint": null,
+ "tokens_in": 1446,
+ "tokens_out": 65
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 5046.4085419989715,
+ "output": "{\"facts\":[{\"span\":\"Aaj hawa kaafi thandi thi, bahut achha laga.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"Dekha ek crow shayad.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Haan, woh kauwa shayad.\",\"kind\":\"animal\",\"subject\":\"kauwa\",\"certainty\":\"unsure\"},{\"span\":\"Humne thoda sa pata lagaya.\",\"kind\":\"other\",\"subject\":\"pata\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and felt the cold air. They saw maybe a crow and maybe a kauwa. They got some information.\"}",
+ "prompt_sha": "010cd844a21928580253289034d435bd3b56da673c34c9d015e2b7245ef8e8cf",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 761,
+ "tokens_out": 155
+}

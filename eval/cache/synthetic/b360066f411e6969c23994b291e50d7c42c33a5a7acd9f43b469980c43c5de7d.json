@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4994.785209000838,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"wind bahut tez thi\",\n\"kind\": \"weather\",\n\"subject\": \"wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"waves were coming\",\n\"kind\": \"sight\",\n\"subject\": \"waves\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad sea face feel good\",\n\"kind\": \"feeling\",\n\"subject\": \"sea face\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"rain is falling now\",\n\"kind\": \"weather\",\n\"subject\": \"rain\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad mission partial complete\",\n\"kind\": \"mission\",\n\"subject\": \"mission\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"shayad mission partial complete\",\n\"entry\": \"Mom and Dad experienced very strong wind. The waves were coming and the sea face felt good, maybe. Rain is falling now. Maybe the mission is partial complete.\"\n}\n```",
+ "prompt_sha": "588ace6ecd63d904391cb994272c1efbaea5632a1fa22b0b50878e68238e81b0",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 277
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4739.725082999939,
+ "output": "{\"facts\":[{\"span\":\"Yoga group visible.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Os bahut zyada thi.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Teen butterfly dekhi.\",\"kind\":\"animal\",\"subject\":\"butterflies\",\"certainty\":\"sure\"},{\"span\":\"Koel ga rahi thi शायद.\",\"kind\":\"animal\",\"subject\":\"cuckoo\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Yoga count karna bhool gaya.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed maybe a yoga group and butterflies.\"}",
+ "prompt_sha": "f93fbb6178d6ed083f4b84f7f76071273dc0a93c2abd8e05e7357954bd291232",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 759,
+ "tokens_out": 143
+}

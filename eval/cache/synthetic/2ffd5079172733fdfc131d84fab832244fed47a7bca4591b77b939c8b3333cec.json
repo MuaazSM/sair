@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 6092.9747089976445,
+ "output": "{\"facts\":[{\"span\":\"Jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"society compound\"},{\"span\":\"Champa is visible.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"The goat is near the gate.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"I saw the cat.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"maybe Dew is present.\",\"kind\":\"person\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"The garbage truck passed five times.\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Checked for jasmine flowers again.\",\"entry\":\"Dad went for an evening walk in the society compound. He saw jasmine, champa, a goat, a cat, and maybe dew. The garbage truck passed five times.\"}",
+ "prompt_sha": "9b49103b55e4073f076bde1b1a7314ed16e2e20bc917878ef68a55e88a8df863",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 760,
+ "tokens_out": 195
+}

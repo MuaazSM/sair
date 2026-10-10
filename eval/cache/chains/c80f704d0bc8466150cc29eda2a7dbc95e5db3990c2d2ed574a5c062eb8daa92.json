@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3277.4452079975163,
+ "output": "{\"facts\": [{\"span\": \"some birds were flying low over the water, white ones i think, maybe gulls, i am not sure.\", \"kind\": \"sight\", \"subject\": \"white ones\", \"certainty\": \"unsure\", \"place\": \"over the water\"}, {\"span\": \"the tide was out, a lot of rocks showing.\", \"kind\": \"sight\", \"subject\": \"a lot of rocks\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. Some birds were flying low over the water, white ones I think, maybe gulls, I am not sure. The tide was out, a lot of rocks showing.\"}",
+ "prompt_sha": "e850fa364aed113bc9a65ad432233d8e5e6356a0e4b429b16e5fca6178570009",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 159
+}

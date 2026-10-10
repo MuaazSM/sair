@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1695.9873329979018,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the flowers near the vine. See if you can count how many are there.\"}",
+ "prompt_sha": "74e7ca830b47f4fd1215b660c05082d8bcea614c2f423a9fb0979c53ac3d2ebb",
+ "renderer_fingerprint": null,
+ "tokens_in": 860,
+ "tokens_out": 40
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3384.2750420008088,
+ "output": "{\"facts\":[{\"span\":\"कोई दौड़ का प्रोग्राम था.\",\"kind\":\"other\",\"subject\":\"program\",\"certainty\":\"sure\"},{\"span\":\"तालाब की तरफ़ चले गए.\",\"kind\":\"other\",\"subject\":\"pond\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They saw a running program and went towards the pond.\"}",
+ "prompt_sha": "1fda1e6b832277fbfaf581cafd52036b0f3b234fffd2f42a1ddcc4470292c564",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 744,
+ "tokens_out": 91
+}

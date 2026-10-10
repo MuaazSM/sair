@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3711.987250000675,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen dew hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Teen\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I think Koel gaana.\",\n\"kind\": \"sound\",\n\"subject\": \"Koel gaana\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Yoga group hai. Teen dew hai.\",\n\"entry\": \"Dad finished the walk. There was a yoga group. There are three. I think Koel gaana.\"\n}\n```",
+ "prompt_sha": "1d7118d5b4336db29ae5ee2e899637aa70e1dd3d3ca3295e5f7a250462fdaf43",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 190
+}

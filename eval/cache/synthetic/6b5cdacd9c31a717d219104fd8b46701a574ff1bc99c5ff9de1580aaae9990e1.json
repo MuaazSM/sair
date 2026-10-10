@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4337.727042002371,
+ "output": "{\"facts\": [{\"span\": \"wind bahut tez thi\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"waves were crashing\", \"kind\": \"sound\", \"subject\": \"waves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"water looked rough\", \"kind\": \"sight\", \"subject\": \"water\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"rain might fall soon ho sakta hai\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"it is windy again\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a very good walk. The wind was very strong, and the waves were crashing. The water looked rough, and maybe rain might fall soon. They checked the wind and it is windy again. They felt a little tired.\"}",
+ "prompt_sha": "4a66cc00d988f179971d60b4879f5b374c72cbe6cbb174ab10e237fd1a4c5cb5",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 233
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2593.3508749985776,
+ "output": "{\"facts\": [{\"span\": \"बस दो चक्कर लगाए आज। थकान थी।\", \"kind\": \"sound\", \"subject\": \"थकान\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked today. They said, \\\"बस दो चक्कर लगाए आज। थकान थी।\\\" They mentioned they had done just two rounds and were tired.\"}",
+ "prompt_sha": "644df9e45deb461042e9908620c68fdb491c95a2fadd95be2bfdd5b637fae8a7",
+ "renderer_fingerprint": null,
+ "tokens_in": 482,
+ "tokens_out": 90
+}

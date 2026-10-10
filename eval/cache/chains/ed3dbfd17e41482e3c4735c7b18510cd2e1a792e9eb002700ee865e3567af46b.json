@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4478.912208000111,
+ "output": "{\"facts\": [{\"span\": \"aaj pond mein ducks nahi dikhe\", \"kind\": \"sight\", \"subject\": \"ducks\", \"certainty\": \"sure\", \"place\": \"pond\"}, {\"span\": \"shayad doosri side the\", \"kind\": \"sight\", \"subject\": \"ducks\", \"certainty\": \"unsure\", \"place\": \"doosri side\"}, {\"span\": \"ek bagula tha kinare pe\", \"kind\": \"sight\", \"subject\": \"bagula\", \"certainty\": \"sure\", \"place\": \"kinare pe\"}, {\"span\": \"bilkul chup chaap khada tha\", \"kind\": \"sight\", \"subject\": \"bagula\", \"certainty\": \"sure\", \"place\": \"kinare pe\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were on a walk today. They noticed that the ducks were not visible in the pond, maybe they were on the other side. There was a bagula standing quietly on the bank.\"}",
+ "prompt_sha": "504f8e55d349a8803fa17d062d95a825cf4ce49f8cece868ff6eb0e611e58c5f",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 222
+}

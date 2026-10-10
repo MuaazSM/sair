@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3381.7863750009565,
+ "output": "{\"facts\":[{\"span\":\"amaltas ke neeche phool bichhe hue the, carpet jaisa.\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"amaltas\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked and saw flowers under amaltas like a carpet. She thought about taking a photo but her phone is at home.\"}",
+ "prompt_sha": "04c914dbd22a6c9ee77d6dfc940e2fb642fcfddb5ff43baeb59bb420c6f14e1a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 753,
+ "tokens_out": 86
+}

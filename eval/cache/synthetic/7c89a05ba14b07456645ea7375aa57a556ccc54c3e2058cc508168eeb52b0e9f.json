@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3956.0792919983214,
+ "output": "{\"facts\":[{\"span\":\"Bahut thand hai.\",\"kind\":\"weather\",\"subject\":\"cold\",\"certainty\":\"sure\"},{\"span\":\"teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"ek butterfly.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya.\",\"entry\":\"Dad went for a walk in cold weather. They saw a yoga group and a butterfly but forgot the mission.\"}",
+ "prompt_sha": "92a8b42dcf2f25cbfd0a0c45a0b3a5b7567eb84929950b54af9f6a5a21bf442e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 734,
+ "tokens_out": 107
+}

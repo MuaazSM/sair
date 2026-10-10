@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3232.7957919987966,
+ "output": "{\"facts\": [{\"span\": \"we saw some mynas near the school wall, two or three\", \"kind\": \"sight\", \"subject\": \"mynas\", \"certainty\": \"sure\", \"place\": \"near the school wall\"}, {\"span\": \"they were fighting over something\", \"kind\": \"sound\", \"subject\": \"fighting\", \"certainty\": \"sure\"}, {\"span\": \"the dog was there again under the banyan\", \"kind\": \"animal\", \"subject\": \"dog\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad saw some mynas near the school wall, two or three, they were fighting over something. The dog was there again under the banyan.\"}",
+ "prompt_sha": "9ff1d8a2825290ccb64d79fb063b1a4ebd3d7e3bc3f1900c53ecff8ba9b47ad5",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 161
+}

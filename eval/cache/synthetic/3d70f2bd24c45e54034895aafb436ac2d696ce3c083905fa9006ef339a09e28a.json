@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5587.300167000649,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"buses aate rahe.\",\n\"kind\": \"sound\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"do mist dikhe.\",\n\"kind\": \"sight\",\n\"subject\": \"mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"chai ki smell aayi.\",\n\"kind\": \"smell\",\n\"subject\": \"chai\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"maine bus ginti ki.\",\n\"kind\": \"person\",\n\"subject\": \"maine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"pata nahi number kya tha.\",\n\"kind\": \"other\",\n\"subject\": \"number\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"maine bus ginti ki.\",\n\"entry\": \"Mom was out for a walk today. Buses kept coming. Some mist was visible. The smell of tea came. She counted the buses, but she was unsure what the number was.\"\n}\n```",
+ "prompt_sha": "b9dbe013f7065e8585a8dbe70f0a86a8c045b3e0514c3eb678bf97be3acc8002",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 294
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3498.4377500004484,
+ "output": "{\"facts\": [{\"span\": \"पार्क में आज बहुत लोग थे\", \"kind\": \"sight\", \"subject\": \"बहुत लोग\", \"certainty\": \"sure\", \"place\": \"पार्क\"}, {\"span\": \"हम लोग तालाब की तरफ़ चले गए\", \"kind\": \"person\", \"subject\": \"हम लोग\", \"certainty\": \"sure\", \"place\": \"तालाब\"}, {\"span\": \"वहाँ शांति थी\", \"kind\": \"sound\", \"subject\": \"शांति\", \"certainty\": \"sure\", \"place\": \"वहाँ\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were at the park today. There were many people, there was a running program. We went towards the pond, there was peace there.\"}",
+ "prompt_sha": "03412d6d5ed63a3aaa51743daf11d3801fbccc6af3547575631ffce275760b37",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 166
+}

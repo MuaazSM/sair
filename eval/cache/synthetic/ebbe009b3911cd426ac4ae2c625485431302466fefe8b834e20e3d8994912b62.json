@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4708.989624999958,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"teen yoga group\",\n\"kind\": \"person\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"bahut zyada dew\",\n\"kind\": \"weather\",\n\"subject\": \"dew\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"ek butterfly\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"koel ga rahi hai maybe\",\n\"kind\": \"sound\",\n\"subject\": \"koel ga rahi hai\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Yoga count karna bhool gaya.\",\n\"entry\": \"Dad had an evening walk. They saw a teen yoga group. There was a lot of dew. They also saw a butterfly and a koel singing maybe.\"\n}\n```",
+ "prompt_sha": "c09c173f3cbdf81891c937887c46357ef5321e91c07a07990d92a2c97cb7229c",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 247
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2396.2175420019776,
+ "output": "{\"facts\": [{\"span\": \"it was cloudy all the way\", \"kind\": \"weather\", \"subject\": \"sky\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom was out for a walk today. She said it was cloudy all the way. She walked till the steps and back. There wasn't much to compare.\"}",
+ "prompt_sha": "19e2ed28e6a8653a8772555bfc1c903d0d717bf455a509723eea26d17d402655",
+ "renderer_fingerprint": null,
+ "tokens_in": 480,
+ "tokens_out": 85
+}

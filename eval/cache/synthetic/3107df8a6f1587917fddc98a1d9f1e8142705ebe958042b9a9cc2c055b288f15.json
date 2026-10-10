@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3222.1089169979678,
+ "output": "{\"facts\": [{\"span\": \"Yoga group wahan the\", \"kind\": \"person\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"Ek butterfly dekhi\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\"}, {\"span\": \"lagta hai Koel ga rahi hai\", \"kind\": \"sound\", \"subject\": \"Koel ga rahi hai\", \"certainty\": \"unsure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. The yoga group was there. I saw one butterfly. It seems like a Koel is singing.\"}",
+ "prompt_sha": "4b7335f84bec89e2a05f56a6955380c83fd862d7de892fe32ee4acb6ffc14643",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 147
+}

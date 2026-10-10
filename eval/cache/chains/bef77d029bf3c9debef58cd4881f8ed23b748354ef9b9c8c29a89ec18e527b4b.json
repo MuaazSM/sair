@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1542.159292002907,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\"], \"text\": \"You will notice the well near the park. Look for any sign of the gardener near the hedges.\"}",
+ "prompt_sha": "a65a6ce584643f0f14d6c0f57fc4e221c0221c3e83a113a31fb60078c08061c6",
+ "renderer_fingerprint": null,
+ "tokens_in": 690,
+ "tokens_out": 53
+}

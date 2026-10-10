@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2383.1609589979053,
+ "output": "{\"facts\": [{\"span\": \"some birds were sitting on the jamun tree eating the fruit\", \"kind\": \"animal\", \"subject\": \"birds\", \"certainty\": \"sure\", \"place\": \"jamun tree\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out today. Some birds were sitting on the jamun tree eating the fruit. They could hear them more than see them. Maybe parrots, I don't know.\"}",
+ "prompt_sha": "c8e29ad01a46a793270e158106c9351050bc956ee00a997c1b2fd4206e350ecb",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 102
+}

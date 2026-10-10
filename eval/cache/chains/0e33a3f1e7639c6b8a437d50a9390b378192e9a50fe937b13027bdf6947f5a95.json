@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 705.1243339956272,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"You will notice the shadow on the road.\"}",
+ "prompt_sha": "e5f366c6e94d920e542eaac6cc82b7b9b1095f15983aa92930901e2826a3a669",
+ "renderer_fingerprint": null,
+ "tokens_in": 1249,
+ "tokens_out": 36
+}

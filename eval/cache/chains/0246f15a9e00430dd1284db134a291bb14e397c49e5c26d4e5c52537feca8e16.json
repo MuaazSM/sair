@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 571.3814159971662,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will look at the well in the park.\"}",
+ "prompt_sha": "22db517b08816b6d930b5994264ec09e60b976033983133c3bdc19ed6d16dff6",
+ "renderer_fingerprint": null,
+ "tokens_in": 962,
+ "tokens_out": 31
+}

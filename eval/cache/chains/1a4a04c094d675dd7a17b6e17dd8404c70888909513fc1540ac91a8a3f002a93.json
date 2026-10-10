@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1499.515875002544,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You will notice the flowers near the fence. Look at the flowers near the pond fence.\"}",
+ "prompt_sha": "ee3a36ca7ca1f8dbab7d879a11f9178ef041068cc4c7646ec174ba9cf1a43436",
+ "renderer_fingerprint": null,
+ "tokens_in": 776,
+ "tokens_out": 41
+}

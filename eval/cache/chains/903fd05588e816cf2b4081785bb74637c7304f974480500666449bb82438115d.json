@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3026.4271659980295,
+ "output": "{\"facts\": [{\"span\": \"champa ki khushboo bahut tez thi aaj\", \"kind\": \"smell\", \"subject\": \"champa ki khushboo\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad was walking today. He mentioned that billi was sitting on the steps of the clubhouse and the smell of champa was very strong today. He also mentioned that two rounds were done.\"}",
+ "prompt_sha": "bbecb03c3324b4117c35fa686ddb627790bed308373310f36bf9a32ee49fb8ae",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 100
+}

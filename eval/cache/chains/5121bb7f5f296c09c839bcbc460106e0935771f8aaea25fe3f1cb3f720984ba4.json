@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1063.8228750030976,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the yellow on the wall.\"}",
+ "prompt_sha": "4a3c7265acd225c78731328f3cf5d624d9323c5867e930f23406fca2f92c358a",
+ "renderer_fingerprint": null,
+ "tokens_in": 603,
+ "tokens_out": 28
+}

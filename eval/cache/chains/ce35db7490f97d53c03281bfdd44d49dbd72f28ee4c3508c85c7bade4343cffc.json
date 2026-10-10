@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2803.470708000532,
+ "output": "{\"facts\": [{\"span\": \"some kind of poster was put up on the school gate\", \"kind\": \"sight\", \"subject\": \"poster\", \"certainty\": \"sure\", \"place\": \"school gate\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. He mentioned that some kind of poster was put up on the school gate, and he could not read it without his glasses. He also noted that the chana seller was back at the bus stop.\"}",
+ "prompt_sha": "8cd351dd9df761e175220ef5c8075e45a4074077c2ad7ce95b474dc5e38e7d1f",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 107
+}

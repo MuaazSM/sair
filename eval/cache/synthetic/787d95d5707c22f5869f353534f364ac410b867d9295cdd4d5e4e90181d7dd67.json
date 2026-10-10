@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4453.3224160004465,
+ "output": "{\"facts\":[{\"span\":\"हो सकता है मोगरा की खुशबू है\",\"kind\":\"smell\",\"subject\":\"mogra\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"हो सकता है मोगरा की खुशबू है\",\"entry\":\"Mom finished the walk and smelled maybe mogra.\"}",
+ "prompt_sha": "ffdc5c150e115ecfc8b1e4c0abc76d7cbf2bd6ff53b1e1c332b98d6da5ccfabc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 724,
+ "tokens_out": 72
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 784.1354579941253,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You will notice if the मोची is still under the peepal tree.\"}",
+ "prompt_sha": "f5cd51ee1e18f26c13503d57d800baadf0241500c187abd060aa073b52f46fd7",
+ "renderer_fingerprint": null,
+ "tokens_in": 1104,
+ "tokens_out": 36
+}

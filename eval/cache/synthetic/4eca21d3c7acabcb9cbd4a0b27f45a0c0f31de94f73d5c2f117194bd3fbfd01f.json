@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 6443.418292001297,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Vendor standing there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen near the edge.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas the sky लगता है were hanging low.\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"unsure\",\"place\":\"market\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Not much different.\",\"entry\":\"Dad went for an evening walk at the market. They saw vegetable stalls, a vendor, and a hen. The sky looked cloudy and shop shutters were closed. They did not find much difference.\"}",
+ "prompt_sha": "6f3642ecb85431222bc5286085ffdfd708d1c61869ac0bdca58bdd2daab1d38b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 761,
+ "tokens_out": 205
+}

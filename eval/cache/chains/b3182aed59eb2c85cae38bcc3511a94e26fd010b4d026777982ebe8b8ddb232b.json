@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4495.2176670012705,
+ "output": "{\"facts\":[{\"span\":\"jo badam ka ped hai parking ke paas, uske patte bade bade hain\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\",\"place\":\"parking\"},{\"span\":\"maine ek patta uthaya\",\"kind\":\"plant\",\"subject\":\"leaf\",\"certainty\":\"sure\"},{\"span\":\"accha shape tha\",\"kind\":\"plant\",\"subject\":\"leaf\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"maine ek patta uthaya\",\"entry\":\"Mom went for a walk and found a leaf with a good shape near the badam tree in the parking.\"}",
+ "prompt_sha": "8b6159ec06d0e0a75c8cb7a2df1da8ab8ab737225ee1d56687c2bd791e9b27f4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 753,
+ "tokens_out": 134
+}

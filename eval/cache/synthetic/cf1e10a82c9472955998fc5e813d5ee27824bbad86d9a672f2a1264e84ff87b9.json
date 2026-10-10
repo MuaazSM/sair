@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6240.509582999948,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Vegetable stalls visible\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bhutta ki smell strong\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek vendor there\",\n\"kind\": \"person\",\n\"subject\": \"vendor\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek hen dekha\",\n\"kind\": \"animal\",\n\"subject\": \"hen\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters closed\",\n\"kind\": \"sight\",\n\"subject\": \"Shop shutters\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Mission was partial, kuch alag nahi mila\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission was partial, kuch alag nahi mila\",\n\"entry\": \"Dad had an evening walk. Vegetable stalls were visible and the bhutta ki smell was strong. He saw a vendor and a hen. The shop shutters were closed. The mission was partial, kuch alag nahi mila.\"\n}\n```",
+ "prompt_sha": "1d94b040c22a1fb5cb4534a86097274cb78e3423b14466b1860a8fa34ee1de0d",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 349
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1255.5902500025695,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"Notice if you see a koel near the temple pond.\"}",
+ "prompt_sha": "4e0935e19d553531c65b3baede672fdd0178331fc466b4dae73741378b375fcb",
+ "renderer_fingerprint": null,
+ "tokens_in": 836,
+ "tokens_out": 39
+}

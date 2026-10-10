@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3958.5044580016984,
+ "output": "{\"facts\":[{\"span\":\"Walk bahut sukoon dene wala tha.\",\"kind\":\"weather\",\"subject\":\"walk\",\"certainty\":\"sure\"},{\"span\":\"ho sakta hai Crow flew over.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Humne kuch dekha hi.\",\"kind\":\"sight\",\"subject\":\"things\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"par poora mission nahi hua\",\"entry\":\"Mom and Dad went for a walk. They noticed maybe a crow flew over.\"}",
+ "prompt_sha": "dfe4ffa6796c73dd43fd00a7a189ce0696bfcf80a449ee3f0b822e62dbbeaded",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 115
+}

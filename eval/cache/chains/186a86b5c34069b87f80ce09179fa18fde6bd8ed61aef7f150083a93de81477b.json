@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3548.381042000983,
+ "output": "{\"facts\":[{\"span\":\"aaj sky bahut saaf thi, ek bhi badal nahi.\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\"},{\"span\":\"ducks pond ke beech mein the.\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked in clear sky without clouds. They saw ducks near pond but did not find shadow pattern.\"}",
+ "prompt_sha": "a0fe489104bb9d72f80acb3dfd9c065dd186798f491c2366d03fc84d18ed6e5f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 745,
+ "tokens_out": 98
+}

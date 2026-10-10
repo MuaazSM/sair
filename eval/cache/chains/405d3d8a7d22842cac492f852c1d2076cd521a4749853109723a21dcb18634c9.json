@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3192.477708002116,
+ "output": "{\"facts\": [{\"span\": \"rain stopped just before i went down.\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"everything smelled of wet earth.\", \"kind\": \"smell\", \"subject\": \"wet earth\", \"certainty\": \"sure\"}, {\"span\": \"the almond leaves were shining.\", \"kind\": \"sight\", \"subject\": \"almond leaves\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom and I went for a walk. The rain stopped just before I went down. Everything smelled of wet earth, and the almond leaves were shining.\"}",
+ "prompt_sha": "8014361686e9889c6b17ccc08dcdfa15e2e8dd5a8575920f66b77f3aac73e58d",
+ "renderer_fingerprint": null,
+ "tokens_in": 481,
+ "tokens_out": 146
+}

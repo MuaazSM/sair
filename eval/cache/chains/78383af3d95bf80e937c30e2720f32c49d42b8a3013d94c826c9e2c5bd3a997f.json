@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3497.309333000885,
+ "output": "{\"facts\": [{\"span\": \"sea-face pe aaj bahut log the\", \"kind\": \"person\", \"subject\": \"log\", \"certainty\": \"sure\", \"place\": \"sea-face\"}, {\"span\": \"hawa tez thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\"}, {\"span\": \"chai stall pe line thi\", \"kind\": \"person\", \"subject\": \"line\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. There were many people on sea-face because it is the weekend. Some people were taking photos. The wind was तेज़. There was a line at the chai stall.\"}",
+ "prompt_sha": "98d82accca9998484d70d2ab126b5cb982567180fe830e479d3a42f1daa7872c",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 157
+}

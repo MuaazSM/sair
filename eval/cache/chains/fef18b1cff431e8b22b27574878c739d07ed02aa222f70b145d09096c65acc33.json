@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5008.697666002263,
+ "output": "{\"facts\": [{\"span\": \"hum log compound ke chaar chakkar lagaye.\", \"kind\": \"person\", \"subject\": \"hum log\", \"certainty\": \"sure\", \"place\": \"compound\"}, {\"span\": \"watchman ne bataya ki gate ke paas wala ashoka tree kaatne wale hain, pata nahi sach hai ya nahi.\", \"kind\": \"person\", \"subject\": \"watchman\", \"certainty\": \"unsure\", \"place\": \"gate ke paas wala ashoka tree\"}, {\"span\": \"bachche cycle chala rahe the.\", \"kind\": \"person\", \"subject\": \"bachche\", \"certainty\": \"sure\"}, {\"span\": \"hum ne aath trees gine, ya shayad nau.\", \"kind\": \"other\", \"subject\": \"trees\", \"certainty\": \"unsure\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad walked around the compound. The watchman told them that someone was going to cut the ashoka tree near the gate, maybe it is true or not. The children were riding cycles. We counted eight trees, or maybe nine.\"}",
+ "prompt_sha": "b15b19d078a48c7850f85b199adb0a2b88aaaf9b2e83891df25f3155008eb30c",
+ "renderer_fingerprint": null,
+ "tokens_in": 520,
+ "tokens_out": 243
+}

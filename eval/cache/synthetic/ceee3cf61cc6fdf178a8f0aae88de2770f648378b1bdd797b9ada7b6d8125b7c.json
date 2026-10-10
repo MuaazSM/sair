@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5548.231458000373,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"aaj hawa kaafi thandi thi, bahut achha laga\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"kids playing cricket\",\n\"kind\": \"sight\",\n\"subject\": \"kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad crow flies high\",\n\"kind\": \"animal\",\n\"subject\": \"crow flies high\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"diary mein phoolon ka rang bhi likh dena\",\n\"kind\": \"other\",\n\"subject\": \"phoolon ka rang\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"humne thoda sa pata lagaya\",\n\"entry\": \"Mom and Dad walked today. The air was quite cold, which felt very good. They saw kids playing cricket. Maybe a crow flies high. They also mentioned to write the colour of flowers in the diary.\"\n}\n```",
+ "prompt_sha": "8c92da8970c9e688bbf28d3d7d65d86897f5ab51092d349d6f897b0f596c1661",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 280
+}

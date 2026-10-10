@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3253.2279589977406,
+ "output": "{\"facts\":[{\"span\":\"Butterfly dikha.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"I think Koel gaaya.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished the evening walk. They saw a butterfly and maybe a koel.\"}",
+ "prompt_sha": "89f71c3ae14b4e8add47d8ea64f1f2c1ba0d1053a6c368ce2ed4faf0a8fdc26e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 760,
+ "tokens_out": 84
+}

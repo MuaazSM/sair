@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3973.7354579992825,
+ "output": "{\"facts\": [{\"span\": \"Kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"Kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad Crow.\", \"kind\": \"animal\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially complete.\", \"kind\": \"other\", \"subject\": \"Mission partially complete\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Gate par dekha tha.\", \"kind\": \"sight\", \"subject\": \"Gate\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a nice walk today. They saw kids playing cricket. Dad thought maybe it was a Crow near the gate. Mom said the mission was partially complete.\"}",
+ "prompt_sha": "e57b2b509cf7e30d6d8f3a784cf190bd8cdb612d38cb43043958a38ee997da7c",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 187
+}

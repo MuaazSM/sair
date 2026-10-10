@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2735.3582919968176,
+ "output": "{\"facts\": [{\"span\": \"the softest sound i heard was the leaves of the mango tree moving\", \"kind\": \"sound\", \"subject\": \"the leaves of the mango tree moving\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. He mentioned that the softest sound he heard was the leaves of the mango tree moving. He stood there for a minute and the lane was empty.\"}",
+ "prompt_sha": "20a60ef048d7f39a94eb8117d75abc171676c0c13bee5d810fed110cd67f4418",
+ "renderer_fingerprint": null,
+ "tokens_in": 488,
+ "tokens_out": 106
+}

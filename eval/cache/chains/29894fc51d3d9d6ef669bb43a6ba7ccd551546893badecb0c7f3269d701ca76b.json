@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2074.2491249984596,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f5_1\"], \"text\": \"Notice the color of the badam as you walk.\"}",
+ "prompt_sha": "d5474dd2fc18807d61570416d78c1b763d3debaf5394136dc7bb4ea7dcb2e02a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1304,
+ "tokens_out": 50
+}

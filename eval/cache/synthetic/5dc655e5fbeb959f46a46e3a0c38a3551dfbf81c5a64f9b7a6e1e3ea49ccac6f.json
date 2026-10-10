@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4734.938084002351,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"aaj hawa kaafi thandi thi.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Wind strong thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Waves looked rough shayad sea water moved\",\n\"kind\": \"sight\",\n\"subject\": \"Waves\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Rain was falling soon shayad\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partly done.\",\n\"entry\": \"Mom and Dad went for a walk today. The wind was strong. The waves looked rough maybe sea water moved. Rain was falling soon maybe.\"\n}\n```",
+ "prompt_sha": "9d88a001a51fcadde0f2687f950b8affb4558547c1932be99f0dc622c480a588",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 248
+}

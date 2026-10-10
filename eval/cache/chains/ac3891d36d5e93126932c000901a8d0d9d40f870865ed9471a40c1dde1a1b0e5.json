@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3956.100625000545,
+ "output": "{\"facts\": [{\"span\": \"kabootar phir se the gulmohar ke neeche\", \"kind\": \"sound\", \"subject\": \"kabootar\", \"certainty\": \"sure\", \"place\": \"gulmohar ke neeche\"}, {\"span\": \"ek squirrel bhi tha jo bench ke peeche bhaag gaya\", \"kind\": \"animal\", \"subject\": \"squirrel\", \"certainty\": \"sure\", \"place\": \"bench ke peeche\"}, {\"span\": \"weather accha tha, thoda thanda\", \"kind\": \"weather\", \"subject\": \"weather\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. Kabootar were again under the gulmohar. A squirrel also ran behind the bench. The weather was good, a little cold. They did two rounds today.\"}",
+ "prompt_sha": "ac53d96fcbf7c65cd9962888b8c973b5a1735a6b182645c9ba10472a2e2a2820",
+ "renderer_fingerprint": null,
+ "tokens_in": 502,
+ "tokens_out": 189
+}

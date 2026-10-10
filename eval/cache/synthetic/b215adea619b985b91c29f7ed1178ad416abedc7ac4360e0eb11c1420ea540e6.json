@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5371.299875001569,
+ "output": "{\"facts\":[{\"span\":\"Kids wahan hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Imli ka ped dikha.\",\"kind\":\"plant\",\"subject\":\"ped\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Ek crow chala probably.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\",\"place\":\"wahan\"},{\"span\":\"Bicycle wahan thi.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\",\"place\":\"wahan\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids wahan hain.\",\"entry\":\"Mom and Dad finished their walk and saw kids at the school gate. They also saw an imli tree, a crow, and a bicycle there.\"}",
+ "prompt_sha": "9e020881a0f19b098cd5f74edab9e6c6d6f94927edaacdf2ce482fdd64110f98",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 745,
+ "tokens_out": 159
+}

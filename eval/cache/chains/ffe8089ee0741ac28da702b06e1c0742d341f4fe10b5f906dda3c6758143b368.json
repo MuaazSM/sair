@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1307.9179999986081,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f3_1\", \"f3_2\"], \"text\": \"You, look at the leaves on the mango tree. Can you spot any new leaves?\"}",
+ "prompt_sha": "2a51995341dcd406c27580671a00ad8bb1ddba4699e1b6e1e563b59e71265c92",
+ "renderer_fingerprint": null,
+ "tokens_in": 826,
+ "tokens_out": 57
+}

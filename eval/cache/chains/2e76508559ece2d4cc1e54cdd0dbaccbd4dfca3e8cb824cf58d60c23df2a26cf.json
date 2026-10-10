@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3379.532957995252,
+ "output": "{\"facts\":[{\"span\":\"the compound smelled of fresh paint\",\"kind\":\"smell\",\"subject\":\"fresh paint\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"maybe they painted something\",\"kind\":\"other\",\"subject\":\"something\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"the compound smelled of fresh paint\",\"entry\":\"Mom walked near a garden and noticed the smell of fresh paint. She thought maybe they painted something.\"}",
+ "prompt_sha": "770e1c0de36b8894996b1c502d62c9da1c6e15e41c1e928b962a7a24f915c395",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 92
+}

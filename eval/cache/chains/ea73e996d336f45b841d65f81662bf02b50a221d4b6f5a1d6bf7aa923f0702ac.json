@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1081.056750001153,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"You look at the shops and notice if you can count how many shadows fall on the path.\"}",
+ "prompt_sha": "2ae04973ba40c8649e4219f8d6d607ab5c3a7dc44eb63489f68093c50478163c",
+ "renderer_fingerprint": null,
+ "tokens_in": 863,
+ "tokens_out": 40
+}

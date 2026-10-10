@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1442.7993750068708,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"Notice if you can see any fruit on the ground near the jamun tree.\"}",
+ "prompt_sha": "f42de6d51be8b99f02efb2a622ac14af2f2d3229e8284c76c6f77f49fde6cb7f",
+ "renderer_fingerprint": null,
+ "tokens_in": 949,
+ "tokens_out": 43
+}

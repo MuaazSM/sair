@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3565.454084000521,
+ "output": "{\"facts\":[{\"span\":\"sky bahut saaf tha.\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\"},{\"span\":\"gulmohar pe ab phool kam hain, mostly leaves.\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a round. The sky was very clear and there were mostly leaves on the Gulmohar trees.\"}",
+ "prompt_sha": "f49b678d7a8412c3502cb47b9b239b4c463a32d5a77f54c4e6a5cff9a360df2b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 95
+}

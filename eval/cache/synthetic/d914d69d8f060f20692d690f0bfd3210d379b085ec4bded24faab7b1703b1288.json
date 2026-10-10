@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5183.971875001589,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Teen buses stop par thi.\",\n\"kind\": \"sight\",\n\"subject\": \"Teen buses\",\n\"certainty\": \"sure\",\n\"place\": \"bus stop\"\n},\n{\n\"span\": \"Mist bahut thick thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek sparrow ud raha tha shayad.\",\n\"kind\": \"animal\",\n\"subject\": \"Ek sparrow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bus count kiya, 4 buses dikhi.\",\n\"kind\": \"sight\",\n\"subject\": \"4 buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Bus count kiya, 4 buses dikhi.\",\n\"entry\": \"Mom had an evening walk. There were teen buses at the bus stop. The mist was very thick. Maybe a sparrow was flying. I counted, and 4 buses were seen.\"\n}\n```",
+ "prompt_sha": "e093ece7667f730f141de801739ac94c71b3900a11eab70ba9003c3798c23f7e",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 264
+}

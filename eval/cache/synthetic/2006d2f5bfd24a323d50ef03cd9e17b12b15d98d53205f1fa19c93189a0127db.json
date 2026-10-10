@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3531.006791999971,
+ "output": "{\"facts\": [{\"span\": \"Bahut thand hai.\", \"kind\": \"weather\", \"subject\": \"thand\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen yoga group.\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek butterfly.\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya.\", \"kind\": \"person\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. It is very cold. There were three yoga groups. There was one butterfly. He forgot the mission.\"}",
+ "prompt_sha": "e74a346431200af09a440d5fe20078458c7270c404455c1397b1dae196671e0b",
+ "renderer_fingerprint": null,
+ "tokens_in": 525,
+ "tokens_out": 176
+}

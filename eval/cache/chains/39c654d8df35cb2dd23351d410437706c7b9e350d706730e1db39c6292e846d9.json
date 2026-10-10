@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2732.388374999573,
+ "output": "{\"facts\":[{\"span\":\"chhota kutta aaj phir mere peeche peeche aaya.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk and saw a small dog follow her along the lane.\"}",
+ "prompt_sha": "8bf5685b2fbd4d42b15ef9bbe98c8489548ed53a0efad20acd0e0e949a485080",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 68
+}

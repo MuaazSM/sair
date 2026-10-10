@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6973.886040999787,
+ "output": "{\"facts\":[{\"span\":\"lane ke beech mein ek jagah hai jahan do buildings ke beech se roshni aati hai\",\"kind\":\"sight\",\"subject\":\"light\",\"certainty\":\"sure\",\"place\":\"lane\"},{\"span\":\"wahan sab sunehra lag raha tha\",\"kind\":\"sight\",\"subject\":\"sunehra\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"wahan ek tulsi ka gamla hai kisi ke darwaze pe\",\"kind\":\"plant\",\"subject\":\"tulsi ka gamla\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"phoolwali ki dukaan khuli thi\",\"kind\":\"sight\",\"subject\":\"phoolwali ki dukaan\",\"certainty\":\"sure\",\"place\":\"wahan\"}],\"mission_result\":\"done\",\"mission_span\":\"lane ke beech mein ek jagah hai jahan do buildings ke beech se roshni aati hai\",\"entry\":\"Mom walked and found a spot where light shines between buildings. She saw a golden place, a tulsi tree near a door, and an open flower shop.\"}",
+ "prompt_sha": "e7145409e17d8ea37f2ddc8dc142cb3609b9df44d79be44b6be4ab597ca50750",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 764,
+ "tokens_out": 224
+}

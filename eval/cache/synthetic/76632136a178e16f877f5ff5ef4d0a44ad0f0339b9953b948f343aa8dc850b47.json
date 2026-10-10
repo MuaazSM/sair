@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3773.21954099898,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Wind strong thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Waves are big lagta hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Waves\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"lagta hai Rain is falling.\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partly hua.\",\n\"entry\": \"Walk achha tha. Wind strong thi. Waves are big lagta hai. Lagta hai Rain is falling. Mission partly hua.\"\n}\n```",
+ "prompt_sha": "5fbfbf603bb52bf1db2f48481ab357b8cc0ecf912727e4769148e082294d00c1",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 192
+}

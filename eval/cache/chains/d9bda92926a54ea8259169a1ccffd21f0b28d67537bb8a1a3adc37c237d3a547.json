@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1311.9364169979235,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the leaves near the clubhouse. Look at the leaves and compare them.\"}",
+ "prompt_sha": "1db00e48f2289083d3936a42cab0a60030d90a2ce3e82737a110de87a4a7d720",
+ "renderer_fingerprint": null,
+ "tokens_in": 810,
+ "tokens_out": 56
+}

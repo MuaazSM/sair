@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1474.3571250000969,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 3\"], \"text\": \"Notice the sound of the water near the sea-face promenade.\"}",
+ "prompt_sha": "175e0b73abc38de73eadbd2bc88e43f7f657de1addef765c6cc8b305e302ef95",
+ "renderer_fingerprint": null,
+ "tokens_in": 722,
+ "tokens_out": 38
+}

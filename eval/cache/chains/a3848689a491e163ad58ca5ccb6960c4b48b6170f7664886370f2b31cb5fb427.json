@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1798.806999999215,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f4_1\"], \"text\": \"You will look at the tamarind tree next to it and notice the flowers along the main path.\"}",
+ "prompt_sha": "82ce64192bd2916ec629d2a6b98639ff09a06adc62b0af2c16d6571a82673962",
+ "renderer_fingerprint": null,
+ "tokens_in": 1245,
+ "tokens_out": 47
+}

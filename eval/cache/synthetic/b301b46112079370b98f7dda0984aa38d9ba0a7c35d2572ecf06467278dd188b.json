@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4619.029458997829,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group there, sure.\",\n\"kind\": \"sight\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"the park\"\n},\n{\n\"span\": \"Butterfly bahut sundar.\",\n\"kind\": \"sight\",\n\"subject\": \"Butterfly\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"Koel par thi maybe teen koels the.\",\n\"kind\": \"sight\",\n\"subject\": \"koels\",\n\"certainty\": \"maybe\"\n},\n{\n\"span\": \"People counting yoga was forgot.\",\n\"kind\": \"other\",\n\"subject\": \"People counting yoga\",\n\"certainty\": \"forgot\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"People counting yoga was forgot.\",\n\"entry\": \"Dad finished the walk. There was a yoga group there, sure. The butterfly was very beautiful. Maybe there were three koels on the tree. The people counting yoga was forgot.\"\n}\n```",
+ "prompt_sha": "b05e4c2c4577f8fe476cf30a9091e98e53a378a6cf000f5d4575565a41fc1ea4",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 245
+}

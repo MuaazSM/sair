@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1367.755582999962,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f2_2\", \"f3_1\"], \"text\": \"You, look for any scooters near the path. See if any leaves are near the path.\"}",
+ "prompt_sha": "97f7aeb59750640961c16c22455a46d97aee7739a8fc669b1c247215c5ecc8df",
+ "renderer_fingerprint": null,
+ "tokens_in": 795,
+ "tokens_out": 58
+}

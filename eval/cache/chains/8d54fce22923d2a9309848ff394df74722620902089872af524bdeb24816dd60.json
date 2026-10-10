@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1688.9698749982927,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will listen for a sound from the path. Then, look at the colour of the sky above you.\"}",
+ "prompt_sha": "699f35579b61e856c1ffbc915c50601140c2f4aaff57d42c3359133ca3cbceab",
+ "renderer_fingerprint": null,
+ "tokens_in": 700,
+ "tokens_out": 45
+}

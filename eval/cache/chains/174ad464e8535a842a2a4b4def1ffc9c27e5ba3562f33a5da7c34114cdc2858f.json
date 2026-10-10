@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1126.6002080010367,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact4\"], \"text\": \"You will notice the light between the two buildings and compare it to the light near the tulsi plant pot.\"}",
+ "prompt_sha": "031a55d453130f4a453921a7e492f1520244f5b3dbd3a15ccfe1f14ac1927996",
+ "renderer_fingerprint": null,
+ "tokens_in": 865,
+ "tokens_out": 45
+}

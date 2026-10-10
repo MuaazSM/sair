@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4917.261750000762,
+ "output": "{\"facts\": [{\"span\": \"Yoga group visible\", \"kind\": \"sight\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen butterfly dekhi\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel ga rahi thi\", \"kind\": \"sound\", \"subject\": \"Koel\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Yoga count karna bhool gaya\", \"kind\": \"other\", \"subject\": \"Yoga count karna\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Pata nahi unki sankhya kya thi\", \"kind\": \"other\", \"subject\": \"unki sankhya\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. A yoga group was visible and there were many. He saw three butterflies and a Koel was singing. He forgot to count the yoga people and doesn't know how many there were.\"}",
+ "prompt_sha": "d6d3cf790e75f58b6ae9b84bea1e7bcf4b981a95a54f5b2881a2c4c966ca0f2d",
+ "renderer_fingerprint": null,
+ "tokens_in": 543,
+ "tokens_out": 241
+}

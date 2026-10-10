@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4180.239083001652,
+ "output": "{\"facts\":[{\"span\":\"वहाँ एक पुराना आम का पेड़ है\",\"kind\":\"plant\",\"subject\":\"peel\",\"certainty\":\"sure\"},{\"span\":\"उस पर तोते बैठे थे\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\"},{\"span\":\"हवा बहुत हल्की थी\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked down the lane and saw an old mango tree with birds on it. The wind was very light.\"}",
+ "prompt_sha": "c34f5b97c3e0568a626afaa3f5ade35cc9ffc1176427b086e8d0473dd0a94ac6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 758,
+ "tokens_out": 118
+}

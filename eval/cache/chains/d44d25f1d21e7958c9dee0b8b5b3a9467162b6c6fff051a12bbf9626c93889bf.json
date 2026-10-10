@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3157.63962499841,
+ "output": "{\"facts\":[{\"span\":\"कौवे गुलमोहर पर थे\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\",\"place\":\"gulmohar\"}],\"mission_result\":\"not_done\",\"mission_span\":\"बस आज थोड़ा ही चला\",\"entry\":\"Dad went for a short walk. They saw crows on gulmohar.\"}",
+ "prompt_sha": "00d24c76ddf9631d53d7cf61362bed8abf9e0f8ec6c194650effa152d530d0c4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 729,
+ "tokens_out": 79
+}

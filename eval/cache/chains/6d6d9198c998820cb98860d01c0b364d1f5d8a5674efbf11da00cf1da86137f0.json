@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1156.3955829988117,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\", \"f3_2\"], \"text\": \"You, look at the leaves on the tree. See if the lane is empty.\"}",
+ "prompt_sha": "6670f1e5895a8c54122023b71988269a2687d991ff8a5f4e2a159ae92c4601e3",
+ "renderer_fingerprint": null,
+ "tokens_in": 905,
+ "tokens_out": 44
+}

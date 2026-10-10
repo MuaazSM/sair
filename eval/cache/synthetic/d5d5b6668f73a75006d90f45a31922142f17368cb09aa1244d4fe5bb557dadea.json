@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3137.062750000041,
+ "output": "{\"facts\": [{\"span\": \"Butterfly dikha.\", \"kind\": \"sight\", \"subject\": \"Butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I think Koel gaaya.\", \"kind\": \"sound\", \"subject\": \"Koel\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad did an evening walk. He saw a butterfly and I think a Koel sang. He forgot the mission.\"}",
+ "prompt_sha": "bef1decbb97e3f0c1eac4e2381059dc3ac266c2c1f9c02ccc36bb9cc9fb23e65",
+ "renderer_fingerprint": null,
+ "tokens_in": 482,
+ "tokens_out": 144
+}

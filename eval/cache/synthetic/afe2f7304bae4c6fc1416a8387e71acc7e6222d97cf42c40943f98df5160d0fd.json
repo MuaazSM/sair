@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4319.4739999999,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Wind bahut tez hai.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Waves look big lagta hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Waves\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"ho sakta hai Rain might fall now.\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Mission partially done.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially done.\",\n\"entry\": \"Mom and Dad had a very good walk today. The wind is very strong. The waves look big. Maybe rain might fall now. The mission was partially done.\"\n}\n```",
+ "prompt_sha": "0463cd43582ccd1d372900d182569d3cabba46ff6afe8e705bc2c5ed889a4175",
+ "renderer_fingerprint": null,
+ "tokens_in": 520,
+ "tokens_out": 230
+}

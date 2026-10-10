@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5180.813417002355,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw the champa.\", \"kind\": \"sight\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There was one goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"A cat was near the gate.\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"gate\"}, {\"span\": \"The garbage truck made five sounds.\", \"kind\": \"sound\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I checked if the jasmine was blooming again.\", \"kind\": \"other\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad had a walk today. He saw the jasmine and the champa. There was one goat and a cat near the gate. The garbage truck made five sounds. He checked if the jasmine was blooming again.\"}",
+ "prompt_sha": "fb0af75c3981f4d09ec3377c95aff91e2d1868d4c4655d853f6b77354854cf65",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 271
+}

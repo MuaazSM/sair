@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2911.9713340041926,
+ "output": "{\"facts\":[{\"span\":\"drizzle.\",\"kind\":\"weather\",\"subject\":\"drizzle\",\"certainty\":\"sure\"},{\"span\":\"the dog wasn't there.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a short walk in the drizzle. The dog was not there.\"}",
+ "prompt_sha": "67f956665a64f7c7df681171d4246eaa623e983916d71f5e8bace84fe78222ad",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 719,
+ "tokens_out": 76
+}

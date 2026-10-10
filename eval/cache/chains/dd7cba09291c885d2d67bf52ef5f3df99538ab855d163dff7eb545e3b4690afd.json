@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2137.982166997972,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_3\"], \"text\": \"Notice the rocks by the water.\"}",
+ "prompt_sha": "8c208c046434e68b84047d76de3970fdc9662643297580a9cc85202472979691",
+ "renderer_fingerprint": null,
+ "tokens_in": 1335,
+ "tokens_out": 34
+}

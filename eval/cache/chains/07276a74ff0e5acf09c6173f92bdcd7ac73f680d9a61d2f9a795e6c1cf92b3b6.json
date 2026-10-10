@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1693.817791998299,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 2026-10-05\", \"Tuesday 2026-10-06\", \"Wednesday 2026-10-07\", \"Thursday 2026-10-08\"], \"text\": \"Notice one leaf along the path.\"}",
+ "prompt_sha": "f0b54f9f4db36189ce5cb906b0bbdc7047502a4ef3842d53652b824340c47216",
+ "renderer_fingerprint": null,
+ "tokens_in": 609,
+ "tokens_out": 78
+}

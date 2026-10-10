@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4907.343082999432,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"aaj hawa kaafi thandi thi.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Wind bahut tez thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Waves bahut clear the ho sakta hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Waves\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Rain ho raha tha.\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially done.\",\n\"entry\": \"Mom and Dad walked today. The wind was very strong and the air was quite cold. Mom thought the waves could be very clear. Dad thought it might have been raining. Mom said the mission was partially done.\"\n}\n```",
+ "prompt_sha": "17bc0f8f0c1b2b4fd309ba7a51f0f0cf6aec37046997e842f3ab3a17c9ee18d8",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 263
+}

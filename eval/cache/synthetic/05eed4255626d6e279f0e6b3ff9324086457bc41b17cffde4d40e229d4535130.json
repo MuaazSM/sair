@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4156.200040997646,
+ "output": "{\"facts\": [{\"span\": \"Kids there hain.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Imli ka ped dekha.\", \"kind\": \"sight\", \"subject\": \"Imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow saw shayad flying low\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Bicycle wahan thi.\", \"kind\": \"sight\", \"subject\": \"Bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad just came back from the walk. They saw kids there. They also saw an Imli ka ped. Maybe the crow saw something flying low. There was a bicycle there. They asked when dinner will be made.\"}",
+ "prompt_sha": "74054ddaeed59b8f116bb15ac83dfa51833ad1b8222f0e675e5600ab52eafffb",
+ "renderer_fingerprint": null,
+ "tokens_in": 547,
+ "tokens_out": 207
+}

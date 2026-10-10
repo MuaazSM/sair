@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3068.607500001235,
+ "output": "{\"facts\": [{\"span\": \"there was a nice smell near the hedge by the far side\", \"kind\": \"smell\", \"subject\": \"nice smell\", \"certainty\": \"sure\", \"place\": \"near the hedge by the far side\"}, {\"span\": \"some flower i think\", \"kind\": \"plant\", \"subject\": \"some flower\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom had a nice walk today. There was a nice smell near the hedge by the far side, some flower i think. I walked slowly there.\"}",
+ "prompt_sha": "68113f6c498b0bc0e625756761c0e874d111d67549cd8876f2b429c99917a647",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 134
+}

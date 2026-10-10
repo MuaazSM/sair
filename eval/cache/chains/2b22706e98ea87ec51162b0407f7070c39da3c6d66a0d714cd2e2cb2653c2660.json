@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 978.625750001811,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"Notice the shops you pass. Can you count how many shops are near the wall?\"}",
+ "prompt_sha": "63866038d24a702331a3f2607e649d41a8b2cbffca5eef2b5bfad1f4f0ce4f02",
+ "renderer_fingerprint": null,
+ "tokens_in": 876,
+ "tokens_out": 38
+}

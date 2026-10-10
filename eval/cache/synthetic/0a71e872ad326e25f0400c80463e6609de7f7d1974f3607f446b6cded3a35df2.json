@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5148.312583001825,
+ "output": "{\"facts\": [{\"span\": \"wind bahut tez thi\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"waves were coming\", \"kind\": \"sight\", \"subject\": \"waves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad sea face feel good\", \"kind\": \"sight\", \"subject\": \"sea face\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"rain is falling now\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad mission partial complete\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"kitne pakshi the\", \"kind\": \"animal\", \"subject\": \"pakshi\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad experienced very strong wind. Waves were coming and the sea face felt good. Rain is falling now. Maybe the mission is partial complete, and they mentioned how many birds there were.\"}",
+ "prompt_sha": "732e05d55aac1222687256566434ccbc5b2f2371b014f216d5c4d00da18d872c",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 263
+}

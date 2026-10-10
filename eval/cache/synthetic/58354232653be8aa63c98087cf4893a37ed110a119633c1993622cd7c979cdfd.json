@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5359.042459000193,
+ "output": "{\"facts\":[{\"span\":\"Yeh walk bahut achha tha.\",\"kind\":\"weather\",\"subject\":\"walk\",\"certainty\":\"sure\"},{\"span\":\"Kids wahan the.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"Woh imli ka ped dekha.\",\"kind\":\"plant\",\"subject\":\"imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"Crow the लगता है was sitting near\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Bicycle wahan thi.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They saw kids, an imli tree, maybe a crow, and a bicycle.\"}",
+ "prompt_sha": "5b17af206d3e0800b79dcf072a5e57e484f31209f338e44dc389239d35e9e6f2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 163
+}

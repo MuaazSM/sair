@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3985.7602919983037,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha tha.\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"Kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow flying high ho sakta hai.\", \"kind\": \"sight\", \"subject\": \"Crow flying high\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Humne thodi si cheezon ko dekha.\", \"kind\": \"sight\", \"subject\": \"thodi si cheezon\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a nice walk today. They saw kids playing cricket. They also saw a crow flying high maybe. They saw some things.\"}",
+ "prompt_sha": "5f7b92bbcb0116d14b6c53d765908691f1bd2c98bc5831b92c10289a025081e1",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 200
+}

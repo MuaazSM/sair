@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1502.469375001965,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You, notice the marigold garlands near the peepal tree.\"}",
+ "prompt_sha": "38603e93610b595a5f0dea5dddf95726dfa4fcd3bb2fae147d1265a2f69cf2eb",
+ "renderer_fingerprint": null,
+ "tokens_in": 960,
+ "tokens_out": 40
+}

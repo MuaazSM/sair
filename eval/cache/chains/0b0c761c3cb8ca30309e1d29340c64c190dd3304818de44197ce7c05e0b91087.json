@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 748.2379579996632,
+ "output": "{\"type\": \"return\", \"references\": [\"1\"], \"text\": \"You will notice one tree with flowers on it along the path.\"}",
+ "prompt_sha": "528e4d11eb14b2f165284cf39372aa46da8475a31a4250328db605c03d0eb935",
+ "renderer_fingerprint": null,
+ "tokens_in": 515,
+ "tokens_out": 31
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4360.0046660030785,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha tha, you know?\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The wind is strong.\", \"kind\": \"sound\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Rain is falling.\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"we saw, no wait, I mean...\", \"kind\": \"sight\", \"subject\": \"we\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a nice walk today. Dad said the wind is strong. Mom thought that it seems like rain is falling. They only partially did the mission about the strong wind at the sea-face.\"}",
+ "prompt_sha": "3768d1325bf276eb651202d591a410c0bf3bdd795593846fdc1f6d4053a5dc3b",
+ "renderer_fingerprint": null,
+ "tokens_in": 521,
+ "tokens_out": 205
+}

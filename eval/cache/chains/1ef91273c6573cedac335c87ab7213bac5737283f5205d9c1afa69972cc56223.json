@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3425.2277500017954,
+ "output": "{\"facts\":[{\"span\":\"there was a smell of something frying\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\",\"place\":\"stalls\"},{\"span\":\"very good\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and noticed a smell of something frying from stalls. He did not look at the sky.\"}",
+ "prompt_sha": "2f9c8be192f6f47be57750c60c3fb0261096270422fa455f4bb7751a3911de11",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 93
+}

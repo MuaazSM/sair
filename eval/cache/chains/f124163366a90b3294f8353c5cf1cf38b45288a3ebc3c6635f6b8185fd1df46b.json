@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1314.1597079993517,
+ "output": "{\"type\": \"return\", \"references\": [\"Wednesday 1\", \"Thursday 1\", \"Friday 1\", \"Saturday 1\", \"Sunday 1\", \"Monday 1\"], \"text\": \"Notice the leaf near the badam tree.\"}",
+ "prompt_sha": "e710e18dca85004253221d3a5e3198d0f68dc3de5fb864e93e4a409e1adb876c",
+ "renderer_fingerprint": null,
+ "tokens_in": 750,
+ "tokens_out": 54
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3574.9750830000266,
+ "output": "{\"facts\":[{\"span\":\"watchman ne bataya ki compound mein kuch naye log shift hue hain.\",\"kind\":\"person\",\"subject\":\"naye log\",\"certainty\":\"sure\"},{\"span\":\"bahut saamaan tha truck mein.\",\"kind\":\"other\",\"subject\":\"saamaan\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked and heard the watchman say new people moved into the compound with lots of goods in a truck.\"}",
+ "prompt_sha": "61206525a7f05384c39391397057f346572e2d6fa11357387736de40ad8f874e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 100
+}

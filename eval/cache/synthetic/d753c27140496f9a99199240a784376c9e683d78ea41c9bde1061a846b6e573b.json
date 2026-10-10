@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6010.112916002981,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"teen jasmine\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"champa\",\n\"kind\": \"plant\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"one goat\",\n\"kind\": \"animal\",\n\"subject\": \"goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"one cat\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Dew drops I think were heavy\",\n\"kind\": \"sight\",\n\"subject\": \"Dew drops\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"garbage truck\",\n\"kind\": \"other\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Checked on the jasmine flowering.\",\n\"entry\": \"Dad got back from the walk. He noticed teen jasmine and champa. There was also one goat and one cat. He thought the dew drops were heavy. He also saw a garbage truck.\"\n}\n```",
+ "prompt_sha": "96e531a01e3f4228c958fb03d955166d35211a937c922d1c443d388313aa8ec0",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 314
+}

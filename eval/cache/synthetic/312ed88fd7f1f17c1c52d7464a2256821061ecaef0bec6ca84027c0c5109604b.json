@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5741.945166999358,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Jasmine is there\",\n\"kind\": \"plant\",\n\"subject\": \"Jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Champa is visible\",\n\"kind\": \"plant\",\n\"subject\": \"Champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The goat is near the gate\",\n\"kind\": \"animal\",\n\"subject\": \"goat\",\n\"certainty\": \"sure\",\n\"place\": \"gate\"\n},\n{\n\"span\": \"I saw the cat\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"maybe Dew is present\",\n\"kind\": \"weather\",\n\"subject\": \"Dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"The garbage truck passed five times\",\n\"kind\": \"other\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Checked for jasmine flowers again.\",\n\"entry\": \"Dad had an evening walk. Jasmine is there and Champa is visible. The goat is near the gate, and I saw the cat. Maybe Dew is present. The garbage truck passed five times.\"\n}\n```",
+ "prompt_sha": "9b49103b55e4073f076bde1b1a7314ed16e2e20bc917878ef68a55e88a8df863",
+ "renderer_fingerprint": null,
+ "tokens_in": 519,
+ "tokens_out": 334
+}

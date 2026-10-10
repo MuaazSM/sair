@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1685.7792500013602,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\"], \"text\": \"Notice the leaves as you walk. See if any leaf has changed its colour.\"}",
+ "prompt_sha": "4fe1b7e599a256274fc165c0b24deac8b4c9afcf558efd28ee6b2db3e9c41411",
+ "renderer_fingerprint": null,
+ "tokens_in": 793,
+ "tokens_out": 41
+}

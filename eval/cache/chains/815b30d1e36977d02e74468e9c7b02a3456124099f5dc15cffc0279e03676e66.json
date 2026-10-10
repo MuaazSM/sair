@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1707.6331669995852,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f2_1\"], \"text\": \"You notice if the leaves on the badam ka ped are the same size and compare them to the almond tree leaves.\"}",
+ "prompt_sha": "3117ddf609f30314564ca52068fb749b55e096bee21d472a66e80ba5723ba5c0",
+ "renderer_fingerprint": null,
+ "tokens_in": 1018,
+ "tokens_out": 51
+}

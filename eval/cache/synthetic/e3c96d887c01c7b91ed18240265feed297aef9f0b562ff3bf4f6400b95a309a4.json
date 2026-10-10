@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 7381.8481669986795,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls hain, bilkul saaf.\",\"kind\":\"plant\",\"subject\":\"vegetable stalls\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"Bhutta ki smell bahut tez hai.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan khada tha.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there I think.\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters band the hue.\",\"kind\":\"other\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Spotting differences was hard.\",\"entry\":\"Dad went for an evening walk at the busy market. They saw clean vegetable stalls, a strong smell of wheat, a standing vendor, a hen, and closed shop shutters. They thought there were umbrellas there. Spotting differences was hard.\"}",
+ "prompt_sha": "aa5aa35f4ba57b8ffd9f6465bdaaf6c9cbb2a4c8dea3e2cdf292775a3c75f0ee",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 769,
+ "tokens_out": 224
+}

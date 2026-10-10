@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4063.8839160019415,
+ "output": "{\"facts\":[{\"span\":\"Dew bahut hai.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"sure\"},{\"span\":\"Butterfly dekha.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"maybe Koel teen koels.\",\"kind\":\"animal\",\"subject\":\"koels\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished the walk and saw dew and a butterfly. He maybe saw three koels.\"}",
+ "prompt_sha": "be6510e46a7ea13de5d1dd649b90509fb150aabf685d286e1d3136bf1576940d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 730,
+ "tokens_out": 108
+}

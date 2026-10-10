@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3815.2397079975344,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"buses are coming\",\n\"kind\": \"sound\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"five mist is here\",\n\"kind\": \"sight\",\n\"subject\": \"mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I counted the buses\",\n\"kind\": \"person\",\n\"subject\": \"I\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I counted the buses\",\n\"entry\": \"Mom had an evening walk and felt good. Buses were coming and there was mist. She counted the buses.\"\n}\n```",
+ "prompt_sha": "ddf82223bfe15eec3b5a74cbed64e9b35f08c80c0fb3df460afe6403b31502f5",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 188
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3137.1548750030342,
+ "output": "{\"facts\": [{\"span\": \"मंदिर के तालाब में कुछ मछलियाँ दिख रही थीं, कितनी थीं पता नहीं।\", \"kind\": \"sight\", \"subject\": \"मछलियाँ\", \"certainty\": \"sure\", \"place\": \"मंदिर के तालाब में\"}, {\"span\": \"नारियल वाला वापस आ गया था।\", \"kind\": \"person\", \"subject\": \"नारियल वाला\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out today. They saw some fish in the temple pond, and they did not know how many there were. The coconut seller had come back.\"}",
+ "prompt_sha": "0f97245b500e54b990695fb4aa10a77be870160cec9c9186bc021326cfb348c0",
+ "renderer_fingerprint": null,
+ "tokens_in": 488,
+ "tokens_out": 142
+}

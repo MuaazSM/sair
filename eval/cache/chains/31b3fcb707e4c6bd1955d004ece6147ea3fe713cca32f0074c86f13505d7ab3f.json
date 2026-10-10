@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2394.138125000609,
+ "output": "{\"facts\": [{\"span\": \"the ashoka near the gate is still there\", \"kind\": \"sight\", \"subject\": \"the ashoka\", \"certainty\": \"sure\", \"place\": \"near the gate\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking today. The compound was quiet. They saw a cat sleeping on a parked car. The watchman was listening to the radio. They did not notice one tree with flowers on it along their way.\"}",
+ "prompt_sha": "47f3a10f3a852d1c87f1c06f4298d701aa1786e3dd7e34e9db5d8a1fab7a8403",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 108
+}

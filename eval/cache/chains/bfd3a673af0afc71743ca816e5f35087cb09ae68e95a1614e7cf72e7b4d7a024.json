@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2061.3474999991013,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_2\"], \"text\": \"You will notice the gulmohar near the gate and compare it to the bench near the gate.\"}",
+ "prompt_sha": "4244afce46695302c529fa28847b58400907ad707277b35e5fdb86cd305c5630",
+ "renderer_fingerprint": null,
+ "tokens_in": 1349,
+ "tokens_out": 47
+}

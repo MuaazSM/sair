@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 1994.9880839994876,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":\"nothing much today.\",\"entry\":\"Mom and Dad went for a walk and listened for sounds. They heard nothing much today.\"}",
+ "prompt_sha": "33c13a1d6aba55291bb015756039fcba4cd654a4b8acda6838171810195e52cc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 717,
+ "tokens_out": 39
+}

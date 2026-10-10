@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4453.055250000034,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"teen yoga group\",\n\"kind\": \"other\",\n\"subject\": \"teen yoga group\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"do butterflies\",\n\"kind\": \"animal\",\n\"subject\": \"butterflies\",\n\"certainty\": \"certainty\",\n\"place\": \"\"\n},\n{\n\"span\": \"koel ga raha hai\",\n\"kind\": \"sound\",\n\"subject\": \"koel ga raha hai\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Dad finished the walk. He mentioned there are many yoga groups. He thought he forgot the mission. He also mentioned that do butterflies and koel ga raha hai.\"\n}\n```",
+ "prompt_sha": "c0ed7699e19fc8984286d3cbb2ca5a4ea46e2ef23054285c72838f7bdd4dfdb4",
+ "renderer_fingerprint": null,
+ "tokens_in": 484,
+ "tokens_out": 199
+}

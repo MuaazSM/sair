@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3676.715334000619,
+ "output": "{\"facts\": [{\"span\": \"aaj compound mein kaafi log the\", \"kind\": \"person\", \"subject\": \"kaafi log\", \"certainty\": \"sure\", \"place\": \"compound\"}, {\"span\": \"koi meeting thi clubhouse mein\", \"kind\": \"person\", \"subject\": \"meeting\", \"certainty\": \"sure\", \"place\": \"clubhouse\"}, {\"span\": \"ek gilahri ashoka pe upar neeche bhaag rahi thi\", \"kind\": \"animal\", \"subject\": \"gilahri\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking today. There were many people in the compound, and there was a meeting in the clubhouse. I saw a gilahri running up and down on the ashoka.\"}",
+ "prompt_sha": "183f561f37b85c80a23b749aef585aef97f7c37b3b877ccf68e373bdbfe543b1",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 176
+}

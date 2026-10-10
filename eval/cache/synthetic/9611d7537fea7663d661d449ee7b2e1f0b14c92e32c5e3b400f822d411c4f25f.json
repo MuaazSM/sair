@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3838.8647499996296,
+ "output": "{\"facts\": [{\"span\": \"Teen buses stop par thi.\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"bus stop\"}, {\"span\": \"Mist bahut thick thi.\", \"kind\": \"weather\", \"subject\": \"Mist\", \"certainty\": \"sure\"}, {\"span\": \"Ek sparrow ud raha tha shayad.\", \"kind\": \"animal\", \"subject\": \"sparrow\", \"certainty\": \"unsure\"}, {\"span\": \"Bus count kiya, 4 buses dikhi.\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom had an evening walk. There were teen buses at the bus stop. The mist was very thick. A sparrow was flying maybe. I counted 4 buses.\"}",
+ "prompt_sha": "4f15b5f67b4f2d8e2e39d7b355c3c7bfb3094f4a84fc3b24491f0c7f0356c84d",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 183
+}

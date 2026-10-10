@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1310.8590000010736,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the path for any new stones.\"}",
+ "prompt_sha": "15a1ad6461cd11643c85c6e52842b644cd24d20a20441d54715f000f494ad564",
+ "renderer_fingerprint": null,
+ "tokens_in": 546,
+ "tokens_out": 31
+}

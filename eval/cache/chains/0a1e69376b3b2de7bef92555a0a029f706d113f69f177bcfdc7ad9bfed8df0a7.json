@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1089.452040996548,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the flowers near the gate and compare them to the leaves on the path.\"}",
+ "prompt_sha": "34b14d86cc8ee5de1a6cea08e347bcf208c386bd385a0b222f501c6c55576b92",
+ "renderer_fingerprint": null,
+ "tokens_in": 887,
+ "tokens_out": 39
+}

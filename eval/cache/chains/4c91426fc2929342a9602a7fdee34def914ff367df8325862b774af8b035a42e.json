@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3871.5870829983032,
+ "output": "{\"facts\": [{\"span\": \"crows phir se the neem pe, kaafi saare.\", \"kind\": \"sight\", \"subject\": \"crows\", \"certainty\": \"sure\", \"place\": \"neem\"}, {\"span\": \"ek dog bhi tha corner pe, bas so raha tha.\", \"kind\": \"animal\", \"subject\": \"dog\", \"certainty\": \"sure\", \"place\": \"corner\"}, {\"span\": \"vendor bol raha tha ki tamatar mehenge ho gaye hain.\", \"kind\": \"person\", \"subject\": \"vendor\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out walking today. Crows were again on the neem, and there was a dog sleeping in the corner. A vendor was saying that tomatoes have become expensive. We returned a little quickly today.\"}",
+ "prompt_sha": "8cc509f84f5d294ed04316532c95ad0e40a39f4b27f657456996085dcf87c452",
+ "renderer_fingerprint": null,
+ "tokens_in": 515,
+ "tokens_out": 188
+}

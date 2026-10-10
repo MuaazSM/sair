@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 830.1732920008362,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the flowers on the vine.\"}",
+ "prompt_sha": "1b6fb0ce3aec2c1f172d28afe76d85e5b6f96702c3e263fb64d2099257ea6db6",
+ "renderer_fingerprint": null,
+ "tokens_in": 888,
+ "tokens_out": 30
+}

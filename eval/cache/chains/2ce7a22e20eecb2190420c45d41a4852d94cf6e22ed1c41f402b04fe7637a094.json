@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2599.365375001071,
+ "output": "{\"facts\":[{\"span\":\"it was cloudy all the way.\",\"kind\":\"weather\",\"subject\":\"cloudy\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"nothing much to compare.\",\"entry\":\"Mom walked to the steps and back. She noticed the sky was cloudy all the way.\"}",
+ "prompt_sha": "19e2ed28e6a8653a8772555bfc1c903d0d717bf455a509723eea26d17d402655",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 722,
+ "tokens_out": 63
+}

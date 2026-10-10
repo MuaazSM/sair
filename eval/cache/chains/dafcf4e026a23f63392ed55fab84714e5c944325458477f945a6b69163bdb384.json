@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3936.991875001695,
+ "output": "{\"facts\": [{\"span\": \"park mein aaj ek bird tha jo bahut zor se bol raha tha, koi alag si awaaz\", \"kind\": \"sound\", \"subject\": \"bird\", \"certainty\": \"sure\", \"place\": \"park\"}, {\"span\": \"gulmohar wahi hai\", \"kind\": \"plant\", \"subject\": \"gulmohar\", \"certainty\": \"sure\"}, {\"span\": \"kuch phool gir gaye the neeche\", \"kind\": \"sight\", \"subject\": \"phool\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom was out for a walk today. She heard a bird making a very loud sound in the park. She saw that the gulmohar was there and some flowers had fallen down.\"}",
+ "prompt_sha": "d0d5c94a68615de72699bd9a9df067f8ae9d661bf5e1ae08a38a6a0acc5919a4",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 171
+}

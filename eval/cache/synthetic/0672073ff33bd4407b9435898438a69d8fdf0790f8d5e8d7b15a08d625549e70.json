@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5251.944958999957,
+ "output": "{\"facts\":[{\"span\":\"Bhutta smell strong.\",\"kind\":\"smell\",\"subject\":\"bhutta\",\"certainty\":\"sure\"},{\"span\":\"Hen seen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there शायद.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done.\",\"entry\":\"Dad went to the market and saw a busy scene. They noticed a strong bhutta smell, a hen, and closed shop shutters. Maybe there were umbrellas. The mission was partially done.\"}",
+ "prompt_sha": "5ef9129eacb70a5a8dd6866361a0109e3b3171de30ad096cb22bc2487232ee51",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 748,
+ "tokens_out": 151
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1445.6631670036586,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"Look at the coconut palms along the wall and count how many leaves are moving.\"}",
+ "prompt_sha": "22134fb689995cf358a14636c8b7162efd8f589e47e6985d98096b21d5aaba41",
+ "renderer_fingerprint": null,
+ "tokens_in": 659,
+ "tokens_out": 43
+}

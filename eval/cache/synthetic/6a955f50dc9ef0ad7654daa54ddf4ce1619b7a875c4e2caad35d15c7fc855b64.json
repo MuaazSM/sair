@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4782.474625000759,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Dew bahut zyada hai.\",\n\"kind\": \"weather\",\n\"subject\": \"Dew\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek butterfly dikhi.\",\n\"kind\": \"sight\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen koel probably.\",\n\"kind\": \"animal\",\n\"subject\": \"koel\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Yoga count nahi kiya.\",\n\"kind\": \"other\",\n\"subject\": \"Yoga count\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Yoga count nahi kiya.\",\n\"entry\": \"Dad noted that the dew is very much. He saw a butterfly and probably three koel. He did not count the yoga. He asked to write down how many birds there were.\"\n}\n```",
+ "prompt_sha": "75af886ec2109286bcf6cf6078ee27aa8a28ea5a9b6c4fdc323898f5a1d108e9",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 248
+}

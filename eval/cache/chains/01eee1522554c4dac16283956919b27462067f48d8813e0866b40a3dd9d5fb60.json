@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2465.382458001841,
+ "output": "{\"facts\": [{\"span\": \"there were many lights on the boats far away, looked very pretty\", \"kind\": \"sight\", \"subject\": \"many lights on the boats\", \"certainty\": \"sure\", \"place\": \"far away\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. She mentioned that there were many lights on the boats far away and they looked very pretty. I sat on the steps and watched them.\"}",
+ "prompt_sha": "a70fe17cfcdeb1084b5009804213fa49eba955764f865bfed297781c0fa41afd",
+ "renderer_fingerprint": null,
+ "tokens_in": 483,
+ "tokens_out": 103
+}

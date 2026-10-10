@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5463.323999996646,
+ "output": "{\"facts\": [{\"span\": \"Market was busy.\", \"kind\": \"sight\", \"subject\": \"Market\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Vegetable stalls bahut the.\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Maine ek hen dekha.\", \"kind\": \"animal\", \"subject\": \"hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Shop shutters band the.\", \"kind\": \"sight\", \"subject\": \"shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kuch alag dikha, par poora mission nahi hua.\", \"kind\": \"sight\", \"subject\": \"Kuch alag\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"phoolon ka rang bhi likh dena.\", \"kind\": \"sight\", \"subject\": \"phoolon ka rang\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad went for an evening walk. The market was busy with many vegetable stalls. I saw a hen there, and the shop shutters were closed. I saw something different, but the whole mission was not done. I should also write down the colour of the flowers.\"}",
+ "prompt_sha": "86e301cdac4e7b2299837afee199de2fcbf451ab7f6955596fb8fece215f12d5",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 292
+}

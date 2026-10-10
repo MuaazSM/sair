@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1834.2817909979203,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_1\"], \"text\": \"You will look at the sky above you.\"}",
+ "prompt_sha": "400c7ce36106809d7f2bcfe30e5f773655ec9e292a78ab462ea75fc3c8c69f82",
+ "renderer_fingerprint": null,
+ "tokens_in": 1461,
+ "tokens_out": 30
+}

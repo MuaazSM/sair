@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2191.5450840024278,
+ "output": "{\"facts\": [{\"span\": \"rain\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. He stood under the shop awning for some time and then came back. It was raining.\"}",
+ "prompt_sha": "41bc61f522617ce6feea592a61eb43e4ffd346432cbd4d6c0503edce6a583dd1",
+ "renderer_fingerprint": null,
+ "tokens_in": 474,
+ "tokens_out": 75
+}

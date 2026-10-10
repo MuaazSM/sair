@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3535.6421659998887,
+ "output": "{\"facts\":[{\"span\":\"there were ducks in the pond, four of them.\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\"},{\"span\":\"the clouds were moving fast\",\"kind\":\"weather\",\"subject\":\"clouds\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"we watched them from the bench near the pond.\",\"entry\":\"Mom and Dad went to the big park and watched the clouds move fast from the bench near the pond.\"}",
+ "prompt_sha": "80093b06972c70c2f01cae948e51b058f1d42611a5828eb9f23353276db03b2f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 96
+}

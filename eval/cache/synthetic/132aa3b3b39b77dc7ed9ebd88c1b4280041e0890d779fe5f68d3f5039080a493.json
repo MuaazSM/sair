@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4334.061041998211,
+ "output": "{\"facts\": [{\"span\": \"wind bahut tez thi\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"waves were crashing\", \"kind\": \"sound\", \"subject\": \"waves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"water looked rough\", \"kind\": \"sight\", \"subject\": \"water\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"rain might fall soon ho sakta hai\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"it is windy again\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a very good walk today. The wind was very strong and the waves were crashing. The water looked rough, and maybe rain might fall soon. They got a little tired.\"}",
+ "prompt_sha": "a5046cb5c11f62bc26b49c5afc2422e11cfbcef6e656f159b2526c2bdad2f4b1",
+ "renderer_fingerprint": null,
+ "tokens_in": 550,
+ "tokens_out": 223
+}

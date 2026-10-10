@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2839.439041003061,
+ "output": "{\"facts\": [{\"span\": \"the flowers along the main path were out\", \"kind\": \"plant\", \"subject\": \"the flowers\", \"certainty\": \"sure\", \"place\": \"the main path\"}, {\"span\": \"the gardener has done a good job\", \"kind\": \"person\", \"subject\": \"the gardener\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad walked slowly along the main path. He mentioned that the flowers along the main path were out and that the gardener has done a good job.\"}",
+ "prompt_sha": "9e43b95387eca0ea782492381dccd14c004e549462341fdb476c56208992f31d",
+ "renderer_fingerprint": null,
+ "tokens_in": 482,
+ "tokens_out": 122
+}

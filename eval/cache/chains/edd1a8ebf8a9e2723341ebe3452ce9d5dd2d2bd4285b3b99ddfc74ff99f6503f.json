@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2458.6447090005095,
+ "output": "{\"facts\":[{\"span\":\"short walk today, my back hurt.\",\"kind\":\"weather\",\"subject\":\"walk\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a short walk today. She felt pain in her back and temple.\"}",
+ "prompt_sha": "2db43f0897a210c18a3819734d36d9bc6421554549adca500f6e1c56e7cda53f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 719,
+ "tokens_out": 59
+}

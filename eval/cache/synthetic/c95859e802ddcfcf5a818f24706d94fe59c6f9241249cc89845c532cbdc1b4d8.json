@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5551.2634580009035,
+ "output": "{\"facts\":[{\"span\":\"Buses aage se aa rahi hain.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\",\"place\":\"aage se\"},{\"span\":\"Teen mist dikh rahi thi.\",\"kind\":\"sight\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Ek sparrow ud raha tha ho sakta hai.\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"Chai ki smell bahut achhi thi.\",\"kind\":\"smell\",\"subject\":\"chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Bus count kiya, do buses dekhi.\",\"entry\":\"Mom went for an evening walk. They saw buses coming, mist, and maybe a sparrow. They smelled chai and counted two buses.\"}",
+ "prompt_sha": "c0f82bf1d8e6867e85d2b6ea3a0ff9a80032bcdd43ab488959efaf27b7593905",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 766,
+ "tokens_out": 168
+}

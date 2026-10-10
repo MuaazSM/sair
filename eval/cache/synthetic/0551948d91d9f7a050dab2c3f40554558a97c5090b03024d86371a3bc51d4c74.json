@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3447.1283749990107,
+ "output": "{\"facts\": [{\"span\": \"kids wahan hain\", \"kind\": \"sight\", \"subject\": \"kids\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"imli ka ped dikh raha hai\", \"kind\": \"sight\", \"subject\": \"imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"crows are flying\", \"kind\": \"sight\", \"subject\": \"crows\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a nice walk. Kids are there. An imli ka ped is visible. It seems crows are flying. They also found a bicycle.\"}",
+ "prompt_sha": "88df32b145d0e3ce49d8d9a57a2472cce591bb7effc54de3c5fe01d3d6146c3a",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 156
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4260.67250000051,
+ "output": "{\"facts\":[{\"span\":\"the champa near the clubhouse had a few flowers\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\",\"place\":\"near the clubhouse\"},{\"span\":\"nice smell\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"a cat ran under the cars\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"the champa near the clubhouse had a few flowers\",\"entry\":\"Dad went for a walk and noticed champa with flowers near the clubhouse.\"}",
+ "prompt_sha": "0cba3b3a2d928a61b9e7ed020e1035a27e353f48d2206929182df5f008b95847",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 118
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1834.6160000000964,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"Notice the shadow on the road and look for fruit on the jamun tree.\"}",
+ "prompt_sha": "712ac7b5eeb8e847d8794cf4def57c7509aa9f0182d14db666736d5ab190f92a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1174,
+ "tokens_out": 43
+}

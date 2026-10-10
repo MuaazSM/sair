@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4434.261875001539,
+ "output": "{\"facts\":[{\"span\":\"the guava cart was there again.\",\"kind\":\"other\",\"subject\":\"guava cart\",\"certainty\":\"sure\"},{\"span\":\"i heard the temple bell from the corner.\",\"kind\":\"sound\",\"subject\":\"temple bell\",\"certainty\":\"sure\"},{\"span\":\"a few birds were sitting on the electric wires above the paan shop, too far to see what they were.\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and heard a temple bell and saw a guava cart and birds on wires.\"}",
+ "prompt_sha": "bf13863af36fd2754f4a9a745dcd63e138e13048a08ed369f62a098fe3806f31",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 130
+}

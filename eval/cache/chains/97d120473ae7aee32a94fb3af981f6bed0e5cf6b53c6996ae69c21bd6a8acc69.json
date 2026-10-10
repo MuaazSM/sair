@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 845.5705420019513,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"Notice the shops near the end of the path.\"}",
+ "prompt_sha": "5ecc23953cf3193e278774198a88f61a85b71ada1f89b3b9d86c2e7623e7aa9a",
+ "renderer_fingerprint": null,
+ "tokens_in": 622,
+ "tokens_out": 31
+}

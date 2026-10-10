@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4414.002207999147,
+ "output": "{\"facts\": [{\"span\": \"Kids wahan hain.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Imli ka ped dikha.\", \"kind\": \"sight\", \"subject\": \"Imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow dekha shayad.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Bicycle dikhi.\", \"kind\": \"sight\", \"subject\": \"Bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a nice evening walk. They saw kids there. They also saw an Imli ka ped. Maybe they saw a crow, and they saw a bicycle. They were asked to write in the diary how many crows there were.\"}",
+ "prompt_sha": "a7b1d818ae776f2e47f7803c77e0d05f50e20ef285d23df9ded458bd4cf0c6e4",
+ "renderer_fingerprint": null,
+ "tokens_in": 587,
+ "tokens_out": 209
+}

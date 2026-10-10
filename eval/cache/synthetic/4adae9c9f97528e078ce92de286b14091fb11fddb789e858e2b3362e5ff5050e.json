@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 2904.8724160020356,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"मोगरा की महक है हो सकता है\",\n\"kind\": \"smell\",\n\"subject\": \"मोगरा की महक\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"मोगरा की महक है हो सकता है\",\n\"entry\": \"Mom has come back. There is the smell of mogra maybe. Nothing and nothing.\"\n}\n```",
+ "prompt_sha": "8deaa2860741f201592780f875c476bad72cfb11900a0e13cfbf899cfc06e81d",
+ "renderer_fingerprint": null,
+ "tokens_in": 484,
+ "tokens_out": 119
+}

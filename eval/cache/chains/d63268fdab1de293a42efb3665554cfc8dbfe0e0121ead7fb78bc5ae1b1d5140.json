@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4241.64083299911,
+ "output": "{\"facts\":[{\"span\":\"aaj school ke bahar bahut bachche the\",\"kind\":\"person\",\"subject\":\"children\",\"certainty\":\"sure\",\"place\":\"school\"},{\"span\":\"koi function tha shayad\",\"kind\":\"other\",\"subject\":\"function\",\"certainty\":\"unsure\"},{\"span\":\"ice cream wala busy tha\",\"kind\":\"person\",\"subject\":\"ice cream seller\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked outside the school. They saw many children and maybe a function. The ice cream seller was busy.\"}",
+ "prompt_sha": "6b97de2fb6ef04b5d7ef9657f76c66acec2dd52641754cf4ce6467aa4aee7ef3",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 742,
+ "tokens_out": 122
+}

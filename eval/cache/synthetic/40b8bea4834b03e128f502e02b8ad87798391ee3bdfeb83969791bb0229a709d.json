@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 6608.093832997838,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"society compound\"},{\"span\":\"I saw the champa.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"The cat is near the gate.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"Dew is on the grass maybe.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"The garbage truck came two times.\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"},{\"span\":\"I checked on the jasmine flowering.\",\"kind\":\"other\",\"subject\":\"jasmine\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine flowering.\",\"entry\":\"Dad went for an evening walk and checked the jasmine. He saw the champa and a cat near the gate. There was maybe dew on the grass and the garbage truck came twice.\"}",
+ "prompt_sha": "622668258efc99ea27a3a7f48c52d4e2b628af9fc4d23c9d6ed05b0a7ae54db7",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 204
+}

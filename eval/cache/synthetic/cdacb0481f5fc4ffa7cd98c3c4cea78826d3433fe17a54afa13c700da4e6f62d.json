@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4164.688458000455,
+ "output": "{\"facts\":[{\"span\":\"Bhutta ki smell is strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas are visible शायद.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Market check was partial.\",\"kind\":\"other\",\"subject\":\"market check\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished an evening walk. They noticed a strong smell of bhutta, maybe visible umbrellas, and a partial market check.\"}",
+ "prompt_sha": "bcae157fdb9eb459217eb07c60e457f205917324e2b432ba040502693d641164",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 765,
+ "tokens_out": 120
+}

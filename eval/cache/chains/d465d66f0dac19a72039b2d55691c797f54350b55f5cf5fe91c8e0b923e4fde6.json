@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 1857.130166998104,
+ "output": "{\"facts\": [{\"span\": \"nothing new today\", \"kind\": \"sight\", \"subject\": \"nothing new\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad just walked today. They said nothing new today.\"}",
+ "prompt_sha": "f8e9090ea795b614e0d2f4a932e251f612cf1e4b00b40e98eee805881e568983",
+ "renderer_fingerprint": null,
+ "tokens_in": 472,
+ "tokens_out": 65
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4906.048208002176,
+ "output": "{\"facts\":[{\"span\":\"a lot of cars were parked on both sides\",\"kind\":\"sight\",\"subject\":\"cars\",\"certainty\":\"sure\"},{\"span\":\"some guests at a house\",\"kind\":\"person\",\"subject\":\"guests\",\"certainty\":\"sure\"},{\"span\":\"we walked in a single line\",\"kind\":\"sight\",\"subject\":\"line\",\"certainty\":\"sure\"},{\"span\":\"the jamun tree was quiet today\",\"kind\":\"plant\",\"subject\":\"jamun tree\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked in a single line. They saw cars, guests, and a quiet jamun tree.\"}",
+ "prompt_sha": "e5bc8c1f536392ff0335069fbd300bf09eaa8019bff8c3d1f902e052cb5d9370",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 137
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3766.1951670015696,
+ "output": "{\"facts\":[{\"span\":\"peepal ke paas aaj kuch tote the shayad\",\"kind\":\"plant\",\"subject\":\"tote\",\"certainty\":\"unsure\",\"place\":\"peepal ke paas\"},{\"span\":\"bahut shor kar rahe the\",\"kind\":\"sound\",\"subject\":\"shor\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked near a peepal tree. He noticed maybe some totes and a lot of noise.\"}",
+ "prompt_sha": "315eb8a699781d6d3e13938be34a13c5821a5eadc7df0b2452886ab038d61640",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 107
+}

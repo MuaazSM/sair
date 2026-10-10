@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 973.7916669982951,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\"], \"text\": \"Notice the crabs on the rocks.\"}",
+ "prompt_sha": "cc0902ce5812942e1c7731f7eb8059722346755cb30956c2a5b983e30f2806c4",
+ "renderer_fingerprint": null,
+ "tokens_in": 809,
+ "tokens_out": 42
+}

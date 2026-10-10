@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5050.984875000722,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group visible\",\n\"kind\": \"sight\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen butterfly dekhi\",\n\"kind\": \"sight\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Koel ga rahi thi\",\n\"kind\": \"sound\",\n\"subject\": \"Koel\",\n\"certainty\": \"shayad\",\n\"place\": \"\"\n},\n{\n\"span\": \"Yoga count karna bhool gaya\",\n\"kind\": \"other\",\n\"subject\": \"Yoga count karna\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Yoga count karna bhool gaya\",\n\"entry\": \"Dad finished the walk. A yoga group was visible and there were many. I saw three butterflies and a Koel was singing maybe. I forgot to count the yoga people. I don't know what their number was.\"\n}\n```",
+ "prompt_sha": "f93fbb6178d6ed083f4b84f7f76071273dc0a93c2abd8e05e7357954bd291232",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 262
+}

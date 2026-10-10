@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3568.059125002037,
+ "output": "{\"facts\": [{\"span\": \"teen yoga group\", \"kind\": \"sight\", \"subject\": \"teen yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"do butterflies\", \"kind\": \"sight\", \"subject\": \"do butterflies\", \"certainty\": \"sure\"}, {\"span\": \"I think koel ga raha hai\", \"kind\": \"sound\", \"subject\": \"koel ga raha hai\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya\", \"kind\": \"other\", \"subject\": \"Mission bhool gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad finished the walk. There are many yoga groups. I think koel is singing. He forgot the mission.\"}",
+ "prompt_sha": "9d5ef217e84334a3fe0f21c31da74f853970b59de3c839269cc72ff9636c05cc",
+ "renderer_fingerprint": null,
+ "tokens_in": 484,
+ "tokens_out": 180
+}

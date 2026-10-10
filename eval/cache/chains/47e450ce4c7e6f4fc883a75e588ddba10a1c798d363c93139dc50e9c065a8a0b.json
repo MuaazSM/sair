@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2222.6004589974764,
+ "output": "{\"facts\":[{\"span\":\"cold wind today.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"one round and home.\",\"entry\":\"Dad went for a walk and heard cold wind.\"}",
+ "prompt_sha": "c9fc9cae299710a06f61420dd71b59aea16c56a70998f264929b537efd8a2d7f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 711,
+ "tokens_out": 52
+}

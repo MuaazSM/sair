@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4542.852874998061,
+ "output": "{\"facts\":[{\"span\":\"Yoga group teen kauve.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Os bahut hai.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly dekhi.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel the bird maybe was flying high.\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad walked back from the park and saw a yoga group and a butterfly. Maybe a bird was flying high. He forgot the mission.\"}",
+ "prompt_sha": "99996817a344b0fdbe337a02e95cbcab3a6ed96ac1f07a942f4c8fab7f900500",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 141
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3797.244708002836,
+ "output": "{\"facts\": [{\"span\": \"आज पार्क में बहुत लोग थे\", \"kind\": \"person\", \"subject\": \"बहुत लोग\", \"certainty\": \"sure\", \"place\": \"पार्क\"}, {\"span\": \"शायद कोई योगा वाला ग्रुप था\", \"kind\": \"person\", \"subject\": \"योगा वाला ग्रुप\", \"certainty\": \"unsure\", \"place\": \"पार्क\"}, {\"span\": \"कुछ कबूतर दाना चुग रहे थे\", \"kind\": \"animal\", \"subject\": \"कबूतर\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was at the park today. There were many people, maybe a yoga group. Some pigeons were pecking at food under the Gulmohar tree.\"}",
+ "prompt_sha": "6c9b25ed680a1db0360fd00e645e049bffd12174c82c988b03045ea9263191e3",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 169
+}

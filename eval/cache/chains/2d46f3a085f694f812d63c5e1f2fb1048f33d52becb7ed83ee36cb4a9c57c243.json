@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2545.315750001464,
+ "output": "{\"facts\": [{\"span\": \"there is a gulmohar near the gate, it had a few flowers still\", \"kind\": \"plant\", \"subject\": \"gulmohar\", \"certainty\": \"sure\", \"place\": \"near the gate\"}], \"mission_result\": \"done\", \"entry\": \"Mom went to the park and did two rounds. She noticed a gulmohar near the gate which had a few flowers still. Some children were playing near the swings. She sat on the bench for a while and watched.\"}",
+ "prompt_sha": "4afa05de78a0be4c5af6ab12fee5dfe2f59bd232778f4dcc905dd9f9e18c46f4",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 113
+}

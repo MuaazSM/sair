@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3894.0825419995235,
+ "output": "{\"facts\": [{\"span\": \"the light was not there today, it was cloudy\", \"kind\": \"weather\", \"subject\": \"light\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the tulsi pot was watered\", \"kind\": \"plant\", \"subject\": \"tulsi pot\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the soil was wet\", \"kind\": \"plant\", \"subject\": \"soil\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"a small dog followed me for a while\", \"kind\": \"animal\", \"subject\": \"small dog\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. The light was not there today, it was cloudy. The tulsi pot was watered, the soil was wet. A small dog followed me for a while.\"}",
+ "prompt_sha": "04a8a00ed12dca0baad08a0b33771a2704b988ceb9bd0ca61aadacc4c26ff9f8",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 203
+}

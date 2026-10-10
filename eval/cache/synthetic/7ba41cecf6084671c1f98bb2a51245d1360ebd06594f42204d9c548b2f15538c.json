@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4669.869000001199,
+ "output": "{\"facts\":[{\"span\":\"buses aate rahe.\",\"kind\":\"vehicle\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"do mist dikhe.\",\"kind\":\"sight\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"chai ki smell aayi.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"maine bus ginti ki.\",\"kind\":\"action\",\"subject\":\"bus\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"maine bus ginti ki.\",\"entry\":\"Mom went for a walk and counted the buses. They saw buses, mist, and smelled chai.\"}",
+ "prompt_sha": "b9dbe013f7065e8585a8dbe70f0a86a8c045b3e0514c3eb678bf97be3acc8002",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 132
+}

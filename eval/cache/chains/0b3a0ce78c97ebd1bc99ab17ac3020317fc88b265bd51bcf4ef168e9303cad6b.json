@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 722.9664999977103,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice the sound near the banyan tree.\"}",
+ "prompt_sha": "5c94ed29e23972b86c18bac48a84ad26cb1938323303728705049fc2fdfa40e0",
+ "renderer_fingerprint": null,
+ "tokens_in": 563,
+ "tokens_out": 28
+}

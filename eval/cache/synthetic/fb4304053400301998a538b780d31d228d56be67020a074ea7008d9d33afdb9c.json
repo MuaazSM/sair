@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3176.4219579999917,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"shayad Crow.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially complete.\",\"entry\":\"Mom and Dad went for a walk. They noticed kids playing cricket and maybe a crow.\"}",
+ "prompt_sha": "66d644811aa4e15cdd7f6004b1d514fcf102d9630ca03f91d017119ef3cc7c1c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 779,
+ "tokens_out": 79
+}

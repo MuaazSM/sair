@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4779.89024999988,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha tha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"buses aate hue the.\",\n\"kind\": \"sight\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"teen sparrow lagta hai flying near ground\",\n\"kind\": \"animal\",\n\"subject\": \"sparrow\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Buses count kar li, mujhe pata hai.\",\n\"kind\": \"other\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Buses count kar li, mujhe pata hai.\",\n\"entry\": \"Mom had a very good walk today. Buses were coming. I think there are three sparrows flying near the ground. I counted the buses, I know.\"\n}\n```",
+ "prompt_sha": "7f09623e031d1e1eb9abb6cbd8601cce3280900ca4a1de198552abfab0772aff",
+ "renderer_fingerprint": null,
+ "tokens_in": 500,
+ "tokens_out": 259
+}

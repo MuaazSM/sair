@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3438.3361250002054,
+ "output": "{\"facts\": [{\"span\": \"buses are coming\", \"kind\": \"sound\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"five mist is here\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I counted the buses\", \"kind\": \"person\", \"subject\": \"I\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom finished the evening walk and felt good. She mentioned that buses are coming. She said, \\\"I counted the buses.\\\" She also noted that \\\"five mist is here.\\\"\"}",
+ "prompt_sha": "81e27d09796e5ed0c57ae15af540c7382dab937bda2b4f3840252b6101e52f06",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 153
+}

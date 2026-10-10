@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4168.594750000921,
+ "output": "{\"facts\":[{\"span\":\"aaj koi aur bird bhi tha koyal ke saath\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"garden\"},{\"span\":\"chhota sa\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"bahut tez tez bol raha tha\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and heard a small bird talking very fast. They did not notice any smell in the air.\"}",
+ "prompt_sha": "532c53b93068047d7a81b3076e133773c5abc5dc5f9d4f1f332b63952ed55433",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 120
+}

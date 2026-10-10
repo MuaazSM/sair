@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3696.661875001155,
+ "output": "{\"facts\": [{\"span\": \"Mist bahut thick thi\", \"kind\": \"weather\", \"subject\": \"Mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen sparrows dekhe shayad\", \"kind\": \"animal\", \"subject\": \"sparrows\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Chai ki smell aayi\", \"kind\": \"smell\", \"subject\": \"Chai ki smell\", \"certainty\": \"sure\"}, {\"span\": \"Buses gine, maine count kiya\", \"kind\": \"person\", \"subject\": \"maine count kiya\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom had an evening walk. The mist was very thick. I saw maybe three sparrows. The smell of tea came. I counted the buses.\"}",
+ "prompt_sha": "30c4a775ae7565e54fe6f1249c7e25d1e6d65bc17f3f926b062903dbfb1bd8fc",
+ "renderer_fingerprint": null,
+ "tokens_in": 541,
+ "tokens_out": 187
+}

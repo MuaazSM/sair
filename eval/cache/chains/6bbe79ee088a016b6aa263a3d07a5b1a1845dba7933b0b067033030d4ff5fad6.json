@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2325.226417000522,
+ "output": "{\"facts\":[{\"span\":\"ghutne mein dard tha.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk but felt knee pain.\"}",
+ "prompt_sha": "ec9838743e0c1fa6b326c97e452fec3f9c5eafb2bd7b2c15093c6e3bb4d8db8b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 719,
+ "tokens_out": 54
+}

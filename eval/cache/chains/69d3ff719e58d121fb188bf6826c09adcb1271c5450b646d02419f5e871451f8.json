@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2047.4600000015926,
+ "output": "{\"facts\": [{\"span\": \"it was humid and sticky.\", \"kind\": \"weather\", \"subject\": \"humid and sticky\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked slowly today. It was humid and sticky. They sat on the temple steps for a bit.\"}",
+ "prompt_sha": "e8213967475599d171a1f8c99608561e959ec512236d152fec09818793b511b9",
+ "renderer_fingerprint": null,
+ "tokens_in": 485,
+ "tokens_out": 78
+}

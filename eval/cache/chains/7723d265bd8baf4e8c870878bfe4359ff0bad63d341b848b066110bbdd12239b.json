@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4807.673291001265,
+ "output": "{\"facts\": [{\"span\": \"the guava cart was there again\", \"kind\": \"sight\", \"subject\": \"guava cart\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"i heard the temple bell from the corner\", \"kind\": \"sound\", \"subject\": \"temple bell\", \"certainty\": \"sure\", \"place\": \"the corner\"}, {\"span\": \"a few birds were sitting on the electric wires above the paan shop\", \"kind\": \"animal\", \"subject\": \"birds\", \"certainty\": \"sure\", \"place\": \"the electric wires above the paan shop\"}, {\"span\": \"too far to see what they were\", \"kind\": \"sight\", \"subject\": \"what they were\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. He mentioned that the guava cart was there again. He also heard the temple bell from the corner. A few birds were sitting on the electric wires above the paan shop, but they were too far to see what they were.\"}",
+ "prompt_sha": "bf13863af36fd2754f4a9a745dcd63e138e13048a08ed369f62a098fe3806f31",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 237
+}

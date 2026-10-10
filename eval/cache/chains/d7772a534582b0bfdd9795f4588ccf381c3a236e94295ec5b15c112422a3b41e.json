@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1624.2850000016915,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f5_1\"], \"text\": \"You will notice the sound on the आम का पेड़.\"}",
+ "prompt_sha": "1629d735b32760db99942dc0161143339e96c58705468ccc74bea412ba413082",
+ "renderer_fingerprint": null,
+ "tokens_in": 1247,
+ "tokens_out": 38
+}

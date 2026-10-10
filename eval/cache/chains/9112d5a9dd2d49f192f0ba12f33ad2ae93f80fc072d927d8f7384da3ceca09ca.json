@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5729.212166999787,
+ "output": "{\"facts\":[{\"span\":\"jab ghar se nikli tab aasman neela tha\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\",\"place\":\"home\"},{\"span\":\"wahan pahunchi to pink sa ho gaya tha\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\",\"place\":\"sea-face\"},{\"span\":\"bhutta wala tha corner pe\",\"kind\":\"plant\",\"subject\":\"bottle gourd\",\"certainty\":\"sure\",\"place\":\"corner\"},{\"span\":\"maine ek bhutta khaya\",\"kind\":\"person\",\"subject\":\"mom\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went to the sea face. She noticed the sky was blue when she left home but pink when she arrived. She also ate a bottle gourd found at the corner.\"}",
+ "prompt_sha": "797718094015cb42c568ac25f25d466216b5c1f5095d920a0fb6855bc62cc9be",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 173
+}

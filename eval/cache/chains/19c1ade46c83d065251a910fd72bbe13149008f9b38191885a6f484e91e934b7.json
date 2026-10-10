@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1367.144958996505,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You notice the peela hi peela near the gate. Look for the amaltas near the gate.\"}",
+ "prompt_sha": "6377053fe43990ff664844a38f3fa4b86a40960a8807c7eba343ac43dc73dec8",
+ "renderer_fingerprint": null,
+ "tokens_in": 720,
+ "tokens_out": 49
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4753.39941600032,
+ "output": "{\"facts\": [{\"span\": \"teen yoga group\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek butterfly\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"koel ga raha hai\", \"kind\": \"sound\", \"subject\": \"koel ga raha hai\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"yoga count karna bhool gaya\", \"kind\": \"other\", \"subject\": \"yoga count karna bhool gaya\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"pata nahi uska number kya tha\", \"kind\": \"other\", \"subject\": \"uska number kya tha\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the evening walk. There was a teen yoga group and a butterfly. A koel is singing, and I forgot to count the yoga. I don't know what its number was.\"}",
+ "prompt_sha": "5f3b1acaa723eebfea74a0304b5638ff4526bbaeacf75ae553a0a589d05f8102",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 240
+}

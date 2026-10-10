@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5015.179041001829,
+ "output": "{\"facts\":[{\"span\":\"आज कंपाउंड में पेंटिंग का काम चल रहा था\",\"kind\":\"other\",\"subject\":\"painting\",\"certainty\":\"sure\"},{\"span\":\"दीवारों पर नया रंग लग रहा था\",\"kind\":\"other\",\"subject\":\"colour\",\"certainty\":\"sure\"},{\"span\":\"कौन सा रंग था ठीक से नहीं देखा\",\"kind\":\"other\",\"subject\":\"colour\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"कौन सा रंग था ठीक से नहीं देखा\",\"entry\":\"Dad went for a walk. They saw painting work in the compound. They did not see the colour of the sky.\"}",
+ "prompt_sha": "4d59d4fa272ee34e3c09b88add8d6736f8e39c9fdf81cd53cea4ad71e5fcefff",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 147
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5193.630750000011,
+ "output": "{\"facts\":[{\"span\":\"Kids are at the school gate.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"school gate\"},{\"span\":\"Imli ka ped visible hai.\",\"kind\":\"plant\",\"subject\":\"ped\",\"certainty\":\"sure\"},{\"span\":\"Crow the I think was near the gate.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\",\"place\":\"near the gate\"},{\"span\":\"We saw a bicycle.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids are at the school gate.\",\"entry\":\"Mom and Dad walked and saw kids at the school gate. They also saw an imli ped, maybe a crow, and a bicycle.\"}",
+ "prompt_sha": "fc29da5fd985d56e613074e4b923a51f3cc477369075d0dc3bb76da91b1e97a6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 758,
+ "tokens_out": 152
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4564.141167000344,
+ "output": "{\"facts\":[{\"span\":\"Teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Thandi dew.\",\"kind\":\"weather\",\"subject\":\"weather\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"लगता है Koel gaaya.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Yoga count bhool gaya.\",\"entry\":\"Dad finished the evening walk. They saw a yoga group, cold weather, a butterfly, and maybe a koel.\"}",
+ "prompt_sha": "b783d78d355385b69b8e0f106e8ad042973d047c27bae775e0c5b4e605504874",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 134
+}

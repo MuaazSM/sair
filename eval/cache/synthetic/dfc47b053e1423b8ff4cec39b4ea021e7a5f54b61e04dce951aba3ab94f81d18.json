@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3998.721874999319,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"kids wahan hain.\",\n\"kind\": \"sight\",\n\"subject\": \"kids\",\n\"certainty\": \"sure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"imli ka ped dikha.\",\n\"kind\": \"sight\",\n\"subject\": \"imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"place\"\n},\n{\n\"span\": \"ek bicycle dekhi.\",\n\"kind\": \"sight\",\n\"subject\": \"ek bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"place\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"kids wahan hain.\",\n\"entry\": \"Mom and Dad finished the walk. They noticed that kids are there. They also saw an imli ka ped and a bicycle. Dinner is ready.\"\n}\n```",
+ "prompt_sha": "6a006050f04ca0708c00e52197fc131e839a38bd0f1eed2712042dbbcd021c73",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 206
+}

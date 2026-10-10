@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3306.313290999242,
+ "output": "{\"facts\":[{\"span\":\"there were many lights on the boats far away\",\"kind\":\"sight\",\"subject\":\"lights\",\"certainty\":\"sure\",\"place\":\"boats\"},{\"span\":\"looked very pretty\",\"kind\":\"sight\",\"subject\":\"lights\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk and saw lights on boats. She sat on steps and watched them.\"}",
+ "prompt_sha": "a70fe17cfcdeb1084b5009804213fa49eba955764f865bfed297781c0fa41afd",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 725,
+ "tokens_out": 90
+}

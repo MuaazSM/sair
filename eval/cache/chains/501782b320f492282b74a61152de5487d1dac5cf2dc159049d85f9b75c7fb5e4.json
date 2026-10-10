@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1735.8965000021271,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the shape of a leaf near the almond tree and compare it to the leaves on the path.\"}",
+ "prompt_sha": "84e4ce08f7ec0ad2884a5d0d0f106dda64f745f168825f80492529478d0448b6",
+ "renderer_fingerprint": null,
+ "tokens_in": 889,
+ "tokens_out": 43
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1407.0313750016794,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f2_2\", \"f2_3\", \"f3_1\", \"f3_2\"], \"text\": \"You will notice the rocks near the water. Can you count how many rocks you see?\"}",
+ "prompt_sha": "a4364d92d8c81eae23b758540323b301986cb682f2968f642923ef971d6583f2",
+ "renderer_fingerprint": null,
+ "tokens_in": 1720,
+ "tokens_out": 69
+}

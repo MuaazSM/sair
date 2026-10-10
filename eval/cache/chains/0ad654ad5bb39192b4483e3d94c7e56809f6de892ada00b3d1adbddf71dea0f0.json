@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1594.1849160008132,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\"], \"text\": \"Notice the leaf near the badam tree. Look at the shadow on the path.\"}",
+ "prompt_sha": "c79850fccc2c1b6b8c5b51b7a254dd0ee932501d4d7f0dbba7677ce6d0387e71",
+ "renderer_fingerprint": null,
+ "tokens_in": 789,
+ "tokens_out": 52
+}

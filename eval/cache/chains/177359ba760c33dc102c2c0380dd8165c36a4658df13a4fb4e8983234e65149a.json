@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3829.9210840050364,
+ "output": "{\"facts\": [{\"span\": \"neem ke ped ke neeche aaj chana wala nahi tha.\", \"kind\": \"plant\", \"subject\": \"chana wala\", \"certainty\": \"sure\", \"place\": \"neem ke ped ke neeche\"}, {\"span\": \"kauve phir the.\", \"kind\": \"animal\", \"subject\": \"kauve\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"hawa thandi thi, accha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. He mentioned that under the neem tree, there was no chickpea today. The crows were there again. The wind was cold, and it felt good.\"}",
+ "prompt_sha": "c6c1b63ce9c0d99908282d2ca8e698dfe5315eb70b74200209065c0311c3b9f2",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 182
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1825.4680419995566,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"You notice the tulsi ka gamla near the gate. Look at the many flowers at the flower seller's shop.\"}",
+ "prompt_sha": "c4b2e0849cbae29dd27dbd706b8fe8bb98ca8734ec12bbd59e52e0d4ab29c0ff",
+ "renderer_fingerprint": null,
+ "tokens_in": 1171,
+ "tokens_out": 52
+}

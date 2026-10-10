@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3162.7905839995947,
+ "output": "{\"facts\":[{\"span\":\"it was windy.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"the bench near the gate was wet\",\"kind\":\"sight\",\"subject\":\"bench\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom went for a walk but her knee was stiff. She noticed the wind and a wet bench.\"}",
+ "prompt_sha": "681cb7326f0cd77e51f039ecb69e2ad0e13b25ff577f2d5039c9d8bb7cf0acf0",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 732,
+ "tokens_out": 82
+}

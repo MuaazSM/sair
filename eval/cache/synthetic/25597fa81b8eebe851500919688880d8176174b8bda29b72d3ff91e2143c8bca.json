@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4284.696582999459,
+ "output": "{\"facts\":[{\"span\":\"Aaj hawa kaafi thandi thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"wind bahut tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"the sea-face windy tha.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done.\",\"entry\":\"Mom and Dad went to the sea-face. They noticed the wind was cold and very strong. They said the sea-face was windy. They did the mission partially.\"}",
+ "prompt_sha": "8942c4400cc5ef98a8ecf54c4a72e464f0248e9b2f95cc8d661cc3a38d760eb4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 121
+}

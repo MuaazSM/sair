@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 915.8083340007579,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f2_1\"], \"text\": \"You look at the leaves on the badam ka ped and compare them.\"}",
+ "prompt_sha": "a1a5da4b95cdc197f7060cf3e0e1dfe935f1b60d56e0f4f50f12590cecc38520",
+ "renderer_fingerprint": null,
+ "tokens_in": 1035,
+ "tokens_out": 42
+}

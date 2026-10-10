@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1488.3867079988704,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice if you can see the green leaf near the clubhouse.\"}",
+ "prompt_sha": "8ef61e10c59db09bbef543eb6064ccd929b485cc48935d63c52ad02197456e5d",
+ "renderer_fingerprint": null,
+ "tokens_in": 789,
+ "tokens_out": 53
+}

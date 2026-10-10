@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1161.9959999989078,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice if any leaf has changed its color.\"}",
+ "prompt_sha": "30ac8bbab906cda0c61f76994ada999c6e49d88a6d6ffcf709fac2390f13e6ff",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 28
+}

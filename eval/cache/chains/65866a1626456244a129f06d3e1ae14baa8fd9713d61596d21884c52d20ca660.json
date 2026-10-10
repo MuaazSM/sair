@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1618.3199589941069,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\", \"f3_2\"], \"text\": \"You, look at the leaves on the mango tree and compare them to the path.\"}",
+ "prompt_sha": "8ce38c240ca3e2b4458c82d2ad104c6b66d5ee4ecf35ef9b9eff741e32f9f095",
+ "renderer_fingerprint": null,
+ "tokens_in": 875,
+ "tokens_out": 50
+}

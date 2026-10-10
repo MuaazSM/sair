@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2214.4245409945142,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice if any leaves are moving near the path.\"}",
+ "prompt_sha": "134781df44d5730ef1d6ad9e10997af5a656cff72f702285d83ab0c191998e20",
+ "renderer_fingerprint": null,
+ "tokens_in": 974,
+ "tokens_out": 51
+}

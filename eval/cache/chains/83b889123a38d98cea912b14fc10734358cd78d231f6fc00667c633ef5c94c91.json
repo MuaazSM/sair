@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5681.348333000642,
+ "output": "{\"facts\":[{\"span\":\"the sky was orange near the water.\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\",\"place\":\"near the water\"},{\"span\":\"the tide was high, waves coming right up to the wall.\",\"kind\":\"weather\",\"subject\":\"tide\",\"certainty\":\"sure\",\"place\":\"sea-face\"},{\"span\":\"walked along the sea-face till the second bench.\",\"kind\":\"sight\",\"subject\":\"walk\",\"certainty\":\"sure\",\"place\":\"sea-face\"},{\"span\":\"the chai stall was open, i didn't have any.\",\"kind\":\"sight\",\"subject\":\"chai stall\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Dad walked along the sea-face to the second bench. He saw the sky was orange near the water and the tide was high. He also saw the chai stall was open.\"}",
+ "prompt_sha": "e19c04b35726ac4790066e10d4460419ba1ce6fba40c321f409b3c90599692b4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 178
+}

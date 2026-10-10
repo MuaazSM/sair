@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2879.5455420040525,
+ "output": "{\"facts\": [{\"span\": \"फूल वाली की दुकान पर आज बहुत सारे फूल थे\", \"kind\": \"sight\", \"subject\": \"बहुत सारे फूल\", \"certainty\": \"sure\", \"place\": \"फूल वाली की दुकान\"}, {\"span\": \"कुछ त्योहार आने वाला है\", \"kind\": \"other\", \"subject\": \"त्योहार\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom went to the flower shop and there were many flowers today. She said that some festival is coming.\"}",
+ "prompt_sha": "4f95203140c8576a317e40274e25f4a27a91b1ec46c235eb39390aa287027454",
+ "renderer_fingerprint": null,
+ "tokens_in": 483,
+ "tokens_out": 121
+}

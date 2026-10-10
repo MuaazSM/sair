@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3137.833832999604,
+ "output": "{\"facts\": [{\"span\": \"aaj koyal phir se thi, peepal pe hi lag rahi thi.\", \"kind\": \"sight\", \"subject\": \"koyal\", \"certainty\": \"sure\", \"place\": \"peepal\"}, {\"span\": \"phoolwali ke paas aaj gulab bhi the.\", \"kind\": \"sight\", \"subject\": \"gulab\", \"certainty\": \"sure\", \"place\": \"phoolwali\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. The koyal was on the peepal tree again. Also, gulab were also at the phoolwali.\"}",
+ "prompt_sha": "a44c1d24b005cf97a68084cbbf5097cb93551611973011e29cf210412adb735b",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 144
+}

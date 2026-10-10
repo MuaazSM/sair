@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5166.796583001997,
+ "output": "{\"facts\":[{\"span\":\"आज पार्क में बहुत लोग थे\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\",\"place\":\"park\"},{\"span\":\"मैं गेट के पास वाले बेंच पर बैठी\",\"kind\":\"sight\",\"subject\":\"bench\",\"certainty\":\"sure\",\"place\":\"gate\"},{\"span\":\"गुलमोहर के नीचे कुछ कबूतर दाना चुग रहे थे\",\"kind\":\"animal\",\"subject\":\"pigeons\",\"certainty\":\"sure\",\"place\":\"gulmohar\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom went to the park and sat on the bench near the gate. She saw many people and pigeons eating seeds under the gulemohar tree.\"}",
+ "prompt_sha": "3a0381ef89f1499f5757647572f701c0ab047a7494263d950b9594ad55896e04",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 758,
+ "tokens_out": 159
+}

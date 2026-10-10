@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4532.420499999716,
+ "output": "{\"facts\": [{\"span\": \"Walk achha tha.\", \"kind\": \"sight\", \"subject\": \"Walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen mist dikh rahi thi.\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Sparrow the bird shayad was flying high\", \"kind\": \"animal\", \"subject\": \"Sparrow the bird\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Chai ki smell bahut acchi thi.\", \"kind\": \"smell\", \"subject\": \"Chai ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Maine buses gin li.\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom said the walk was good. Buses were moving ahead. I saw three mists. The sparrow the bird maybe was flying high. The smell of tea was very good. I counted the buses.\"}",
+ "prompt_sha": "55d523a17068212ee25e10c5e8bdbcb3b84fa07143d0e10e3cbb0a7d9b6bb082",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 244
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3913.8066660016193,
+ "output": "{\"facts\":[{\"span\":\"Umm, kids wahan hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Crow ne udna shayad.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Dad: Umm, kids wahan hain.\",\"entry\":\"Mom and Dad went for a walk. They noticed kids at the school gate. Dad thought maybe a crow flew.\"}",
+ "prompt_sha": "cb9ef49ab6d64805fc2f5e1efacf9825d897eddfa63b925899c3fd5c49c09495",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 809,
+ "tokens_out": 104
+}

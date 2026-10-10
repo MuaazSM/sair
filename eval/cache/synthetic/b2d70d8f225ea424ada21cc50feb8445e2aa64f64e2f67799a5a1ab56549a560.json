@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4936.555959000543,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"kids hain.\",\n\"kind\": \"sight\",\n\"subject\": \"kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"imli ka ped dikha.\",\n\"kind\": \"sight\",\n\"subject\": \"imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"लगता है crow dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"bicycle wahan hai.\",\n\"kind\": \"sight\",\n\"subject\": \"bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Last time you noticed kids at the school gate. Are there kids there again?\",\n\"entry\": \"Mom and Dad finished the walk. They saw kids and an imli ka ped. They think they saw a crow, and a bicycle is there. Dinner is ready.\"\n}\n```",
+ "prompt_sha": "b27f6f52602013bd4218fce831f7b06409109006782a1d36c14b7a172076dffd",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 252
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2986.2135000003036,
+ "output": "{\"facts\":[{\"span\":\"hawa tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"sea-face pe aaj bahut log the.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked and saw many people and the wind was strong.\"}",
+ "prompt_sha": "70a2aee5cd0d38b01d709b527470438d0a2016cf8ebe8928744dc8d2a4076195",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 734,
+ "tokens_out": 77
+}

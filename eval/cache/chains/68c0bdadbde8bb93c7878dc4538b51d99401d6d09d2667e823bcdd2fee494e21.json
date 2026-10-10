@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3626.0550830047578,
+ "output": "{\"facts\": [{\"span\": \"आज इमली के पेड़ के पास फिर रुका।\", \"kind\": \"person\", \"subject\": \"माली\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"यह पेड़ बहुत पुराना है।\", \"kind\": \"plant\", \"subject\": \"पेड़\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"कुएँ में पानी नहीं है अब।\", \"kind\": \"other\", \"subject\": \"पानी\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad stopped again near the tamarind tree. The gardener told them that this tree is very old. He also mentioned that there is no water in the well now.\"}",
+ "prompt_sha": "8503f2dc012b7f24ff3a1e9c580e1d5a5ef0ace6a6cb5e5df5aeb12416c0c1eb",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 163
+}

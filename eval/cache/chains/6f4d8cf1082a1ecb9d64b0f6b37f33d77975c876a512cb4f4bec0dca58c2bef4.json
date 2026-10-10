@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1749.6790830045938,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"Notice the leaves on the Gulmohar trees.\"}",
+ "prompt_sha": "f12af56770d4e516b8b6664d9b4decb9fd149a6cde48223c325eb019225edbc7",
+ "renderer_fingerprint": null,
+ "tokens_in": 854,
+ "tokens_out": 49
+}

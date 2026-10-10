@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3649.073959000816,
+ "output": "{\"facts\": [{\"span\": \"the fruit stall at the start had bananas and some mangoes\", \"kind\": \"plant\", \"subject\": \"fruit stall\", \"certainty\": \"sure\", \"place\": \"market lane\"}, {\"span\": \"the cobbler was sitting under the peepal tree as usual\", \"kind\": \"person\", \"subject\": \"cobbler\", \"certainty\": \"sure\"}, {\"span\": \"i counted maybe twelve shops, i lost count near the end\", \"kind\": \"other\", \"subject\": \"shops\", \"certainty\": \"unsure\", \"place\": \"near the end\"}], \"mission_result\": \"partly\", \"entry\": \"Dad went through the market lane. The fruit stall at the start had bananas and some mangoes. The cobbler was sitting under the peepal tree as usual. I counted maybe twelve shops, but I lost count near the end.\"}",
+ "prompt_sha": "d87c835cdc59620ffee68e92e2ab4da0f7672f945269d19d798c33254125273d",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 192
+}

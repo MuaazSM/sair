@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 952.4016670002311,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_2\"], \"text\": \"You, look at the road and notice if it is still muddy.\"}",
+ "prompt_sha": "5655a1f9628c98135c58a6f9e4fcc3495c0baf31273a3e73caddd1f4a663cc77",
+ "renderer_fingerprint": null,
+ "tokens_in": 1171,
+ "tokens_out": 35
+}

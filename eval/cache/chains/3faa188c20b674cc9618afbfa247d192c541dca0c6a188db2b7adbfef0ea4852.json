@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4648.244040999998,
+ "output": "{\"facts\":[{\"span\":\"there were boats far out, a few of them,\",\"kind\":\"sight\",\"subject\":\"boats\",\"certainty\":\"sure\",\"place\":\"far out\"},{\"span\":\"the sky was very clear today.\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\"},{\"span\":\"the dog was there again near the wall.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"i couldn't count properly.\",\"entry\":\"Dad went for a walk and looked for birds. They saw boats far out, a clear sky, and the dog near the wall.\"}",
+ "prompt_sha": "fafc099a9eb9e41963bf1159a2c81e0a2e56f0b883322958deeb7792961ab482",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 757,
+ "tokens_out": 130
+}

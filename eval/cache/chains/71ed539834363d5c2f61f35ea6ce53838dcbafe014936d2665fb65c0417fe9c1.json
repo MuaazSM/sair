@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 823.7570840028638,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You, notice if you see any mithai near the path.\"}",
+ "prompt_sha": "5aeb1c9da1214a047d173535793b7f0e1a2d26f0ebd5a0e954675088d64f3bd3",
+ "renderer_fingerprint": null,
+ "tokens_in": 1218,
+ "tokens_out": 34
+}

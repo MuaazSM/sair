@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3288.371124999685,
+ "output": "{\"facts\": [{\"span\": \"jamun ke ped ki shadow road pe bahut sundar pattern bana rahi thi\", \"kind\": \"sight\", \"subject\": \"shadow\", \"certainty\": \"sure\", \"place\": \"road\"}, {\"span\": \"doodhwala apni cycle pe jaa raha tha\", \"kind\": \"person\", \"subject\": \"doodhwala\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad went for a walk. The shadow of the jamun tree was making a very beautiful pattern on the road because of the street light. A milkman was going on his cycle. It was nice.\"}",
+ "prompt_sha": "673c72ddd988a651e5e8834a91359081126ed314b32474508e751c827a0fb6cf",
+ "renderer_fingerprint": null,
+ "tokens_in": 515,
+ "tokens_out": 144
+}

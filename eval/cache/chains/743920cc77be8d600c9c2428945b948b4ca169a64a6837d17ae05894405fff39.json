@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 954.6745000006922,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will listen for the sound of the wind near the tree.\"}",
+ "prompt_sha": "33fa84a5eb7458af1de42d7d838ee03964825c82a05e1fa8919f387781390ef4",
+ "renderer_fingerprint": null,
+ "tokens_in": 519,
+ "tokens_out": 32
+}

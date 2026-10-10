@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6566.717875000904,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Umm, kids wahan hain.\",\n\"kind\": \"sight\",\n\"subject\": \"kids\",\n\"certainty\": \"sure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"aur woh tamarind dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"tamarind\",\n\"certainty\": \"sure\",\n\"place\": \"aur woh\"\n},\n{\n\"span\": \"Crow ne udna shayad.\",\n\"kind\": \"sound\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Woh bicycle park ki gayi.\",\n\"kind\": \"sight\",\n\"subject\": \"bicycle\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"Dinner kab banega?\",\n\"kind\": \"other\",\n\"subject\": \"Dinner\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"woh diary mein phoolon ka rang bhi likh dena.\",\n\"kind\": \"other\",\n\"subject\": \"phoolon ka rang\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Last time you noticed kids at the school gate. Are there kids there again?\",\n\"entry\": \"Mom and Dad noticed kids at wahan. They also saw tamarind and maybe a crow flew. The bicycle was park ki gayi. Dad asked to write the colour of flowers in the diary.\"\n}\n```",
+ "prompt_sha": "b3ff393451a02ae6081d33861cfd9a7d2627f9e96df6c0d0100f51c0cb272cd5",
+ "renderer_fingerprint": null,
+ "tokens_in": 535,
+ "tokens_out": 348
+}

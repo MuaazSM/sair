@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4423.311250000552,
+ "output": "{\"facts\": [{\"span\": \"Evening walk done.\", \"kind\": \"other\", \"subject\": \"Evening walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen mist dikh rahi thi.\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad Sparrow ud raha tha.\", \"kind\": \"animal\", \"subject\": \"Sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Count ki mission puri ho gayi.\", \"kind\": \"other\", \"subject\": \"Count ki mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom finished the evening walk and is back now. She mentioned that buses were moving ahead and three mists were visible. Maybe a Sparrow was flying. Count's mission was completed.\"}",
+ "prompt_sha": "4c77d5ece102758ac11bf0c7bcdaa6fbf789a7bb03969697dc966755f536e074",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 196
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 692.0571249975183,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"Notice the aasman.\"}",
+ "prompt_sha": "7e523e8cc240e83a80cb2e7fd7af50194786b1af071ac574cde9de46f78f037e",
+ "renderer_fingerprint": null,
+ "tokens_in": 1034,
+ "tokens_out": 26
+}

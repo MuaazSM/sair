@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4623.877750000247,
+ "output": "{\"facts\": [{\"span\": \"aaj hawa kaafi thandi thi, bahut achha laga\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"kids playing cricket\", \"kind\": \"sight\", \"subject\": \"kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad crow flies high\", \"kind\": \"animal\", \"subject\": \"crow flies high\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"diary mein phoolon ka rang bhi likh dena\", \"kind\": \"other\", \"subject\": \"phoolon ka rang\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They saw kids playing cricket. They also mentioned that maybe crows fly high. They also asked to write the colour of flowers in the diary.\"}",
+ "prompt_sha": "2426d42681474cdf7b33179222ece55de7d108e1799278a6cd052ce0939cac12",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 226
+}

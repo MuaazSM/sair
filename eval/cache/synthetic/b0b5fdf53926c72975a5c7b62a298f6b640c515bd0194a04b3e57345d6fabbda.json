@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3876.119665997976,
+ "output": "{\"facts\": [{\"span\": \"kids playing cricket\", \"kind\": \"sight\", \"subject\": \"kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"crow is there ho sakta hai\", \"kind\": \"sound\", \"subject\": \"crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"We found out what they were doing partly\", \"kind\": \"other\", \"subject\": \"what they were doing\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Aaj hawa kaafi thandi thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a nice evening walk. They saw kids playing cricket. They found out what they were doing partly. The air was quite cold today.\"}",
+ "prompt_sha": "50d338b9eb067cc1a40a72efb0449959c11053d0d5833f3609bf676f597d0b12",
+ "renderer_fingerprint": null,
+ "tokens_in": 561,
+ "tokens_out": 197
+}

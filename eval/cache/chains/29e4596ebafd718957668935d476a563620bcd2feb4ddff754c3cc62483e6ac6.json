@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2960.7492919967626,
+ "output": "{\"facts\": [{\"span\": \"park mein koi bird bahut ajeeb awaaz kar raha tha, jaise koi seeti baja raha ho.\", \"kind\": \"sound\", \"subject\": \"bird\", \"certainty\": \"sure\", \"place\": \"park\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out for a walk today. He mentioned that in the park, a bird was making a very strange sound, like someone was playing a whistle. He looked for it but did not see it.\"}",
+ "prompt_sha": "d136fcd0a0edf2b28f171d7c33962aa9a5b2348f8e610b05d722daf5b801a60c",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 113
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3950.2924590015027,
+ "output": "{\"facts\":[{\"span\":\"Aaj hawa kaafi thandi thi, bahut achha laga.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Crow.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Humne thoda sa pata kiya.\",\"kind\":\"sight\",\"subject\":\"pata\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed maybe crow.\"}",
+ "prompt_sha": "6772cc827df3e32462483de4bcb3dd4b16d91ac3b0f89b272a1dc4d7dff9c866",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 754,
+ "tokens_out": 113
+}

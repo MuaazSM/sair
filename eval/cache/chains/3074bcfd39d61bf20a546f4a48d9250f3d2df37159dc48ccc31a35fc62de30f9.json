@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3771.1583749987767,
+ "output": "{\"facts\": [{\"span\": \"watchman ne bataya ki compound mein kuch naye log shift hue hain.\", \"kind\": \"person\", \"subject\": \"kuch naye log shift hue hain\", \"certainty\": \"sure\", \"place\": \"compound\"}, {\"span\": \"bahut saamaan tha truck mein.\", \"kind\": \"sight\", \"subject\": \"bahut saamaan\", \"certainty\": \"sure\", \"place\": \"truck\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad told me that the watchman said that some new people have shifted in the compound. There was a lot of सामान in the truck.\"}",
+ "prompt_sha": "61206525a7f05384c39391397057f346572e2d6fa11357387736de40ad8f874e",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 140
+}

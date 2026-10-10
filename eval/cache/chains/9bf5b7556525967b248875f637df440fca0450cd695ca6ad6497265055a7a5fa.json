@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2779.8514169990085,
+ "output": "{\"facts\":[{\"span\":\"ek gilahri ashoka pe upar neeche bhaag rahi thi.\",\"kind\":\"plant\",\"subject\":\"ashoka\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom and Dad walked in the compound. They saw an ashoka tree.\"}",
+ "prompt_sha": "183f561f37b85c80a23b749aef585aef97f7c37b3b877ccf68e373bdbfe543b1",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 755,
+ "tokens_out": 69
+}

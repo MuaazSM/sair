@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3704.8804170008225,
+ "output": "{\"facts\":[{\"span\":\"बाज़ार में आज कुछ अलग सी खुशबू थी\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"कोई मिठाई बन रही थी शायद\",\"kind\":\"sight\",\"subject\":\"mithai\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"मैंने देखा नहीं कौन सी\",\"entry\":\"Dad went to the market and smelled maybe mithai.\"}",
+ "prompt_sha": "a54bffa8ec553b0a05100834d9c9081a95ae8919322aa2c73a95dab30e7555f2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 102
+}

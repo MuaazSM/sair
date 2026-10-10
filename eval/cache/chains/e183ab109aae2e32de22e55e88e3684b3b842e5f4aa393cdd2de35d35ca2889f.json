@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4285.77870799927,
+ "output": "{\"facts\":[{\"span\":\"the flowers in the society garden were out today\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"society garden\"},{\"span\":\"the garden smelled fresh\",\"kind\":\"smell\",\"subject\":\"garden\",\"certainty\":\"sure\"},{\"span\":\"maybe he watered it\",\"kind\":\"other\",\"subject\":\"gardener\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked in the society garden. They saw flowers and smelled fresh air. Maybe the gardener watered the plants.\"}",
+ "prompt_sha": "ab5f3f7d4155770cf7b05047664f6ad9e082432d1466c9dbff9a1c7cbd040edc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 122
+}

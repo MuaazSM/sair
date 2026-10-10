@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1499.6236250008224,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You notice the peela hi peela near the compound. Look for the amaltas flowers near the gate.\"}",
+ "prompt_sha": "1858e9d27ddded4d47d46b535dabcf65a7b31c78f6f7a23eae6e712c7aa046e7",
+ "renderer_fingerprint": null,
+ "tokens_in": 878,
+ "tokens_out": 50
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5215.411542001675,
+ "output": "{\"facts\":[{\"span\":\"Teen buses stop par thi.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\",\"place\":\"stop\"},{\"span\":\"Mist bahut thick thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Ek sparrow ud raha tha shayad.\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"Bus count kiya, 4 buses dikhi.\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Bus count kiya, 4 buses dikhi.\",\"entry\":\"Mom went for an evening walk. They saw many buses and mist. Maybe a sparrow flew.\"}",
+ "prompt_sha": "4f15b5f67b4f2d8e2e39d7b355c3c7bfb3094f4a84fc3b24491f0c7f0356c84d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 151
+}

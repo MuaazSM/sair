@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3796.924249996664,
+ "output": "{\"facts\":[{\"span\":\"मंदिर के तालाब में कुछ मछलियाँ दिख रही थीं\",\"kind\":\"animal\",\"subject\":\"fish\",\"certainty\":\"sure\",\"place\":\"temple pond\"},{\"span\":\"कितनी थीं पता नहीं\",\"kind\":\"other\",\"subject\":\"fish\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked near a temple pond where they saw some fish. They did not notice the sky colour today.\"}",
+ "prompt_sha": "846212a8b1e7a73feefbc189d3f349811893e6f85124913b66fd69dcc9d8ef63",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 747,
+ "tokens_out": 109
+}

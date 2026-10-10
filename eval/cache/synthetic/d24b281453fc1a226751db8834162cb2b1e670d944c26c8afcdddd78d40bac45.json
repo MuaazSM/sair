@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5645.547915999487,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yeh tamarind ka ped bahut bada hai.\",\n\"kind\": \"sight\",\n\"subject\": \"tamarind ka ped\",\n\"place\": \"\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"Woh bicycle wahan rakhi hai.\",\n\"kind\": \"sight\",\n\"subject\": \"bicycle\",\n\"place\": \"wahan\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"woh neighbour ki shaadi hai.\",\n\"kind\": \"sight\",\n\"subject\": \"neighbour ki shaadi\",\n\"place\": \"\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"diary mein phoolon ka rang bhi likh dena.\",\n\"kind\": \"other\",\n\"subject\": \"phoolon ka rang\",\n\"place\": \"diary\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad noticed that the tamarind tree is very big. They also mentioned that the bicycle is kept there. They also said that the neighbour's wedding is happening. They asked to write the colour of the flowers in the diary.\"\n}\n```",
+ "prompt_sha": "fe7ebd11e8f81a0939c62cdc51fcf96c6b3204629a3ff7363e38bce093e6e816",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 285
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3893.47354200072,
+ "output": "{\"facts\": [{\"span\": \"Bhutta smell bahut tez hai.\", \"kind\": \"smell\", \"subject\": \"Bhutta smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas open I think umbrellas closed\", \"kind\": \"sight\", \"subject\": \"umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Pata nahi uska colour kya tha.\", \"kind\": \"sight\", \"subject\": \"colour\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out walking today. The market was busy and the Bhutta smell was very strong. I think the umbrellas were open, but maybe they were closed. I saw some changes and I don't know what the colour was.\"}",
+ "prompt_sha": "7780a0bb8657e507f5f85a5d82e50edc851d0b442608b7ca47339399b3705e24",
+ "renderer_fingerprint": null,
+ "tokens_in": 556,
+ "tokens_out": 179
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4875.052625000535,
+ "output": "{\"facts\":[{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there लगता है.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Market dekhna tha.\",\"kind\":\"sight\",\"subject\":\"market\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Kuch alag nahi mila.\",\"entry\":\"Dad went to the market. They saw maybe umbrellas and a hen. They smelled bhutta. They did not find anything different.\"}",
+ "prompt_sha": "031616fc9191c45d5fcfaa033df538c773016222d12001cdf938beb17c9afb26",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 762,
+ "tokens_out": 145
+}

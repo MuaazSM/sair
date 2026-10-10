@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4705.280375001166,
+ "output": "{\"facts\":[{\"span\":\"Umm, aaj hawa kaafi thandi thi.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"Wind strong thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"Waves looked rough shayad sea water moved\",\"kind\":\"weather\",\"subject\":\"waves\",\"certainty\":\"unsure\"},{\"span\":\"Rain was falling soon shayad\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partly done.\",\"entry\":\"Mom and Dad went for a walk. They noticed maybe rough waves and rain was falling soon.\"}",
+ "prompt_sha": "9a9d922e06b4662c013ad5f3ca715c6f7a77830ce4b52fe66750633388cff1c9",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 758,
+ "tokens_out": 139
+}

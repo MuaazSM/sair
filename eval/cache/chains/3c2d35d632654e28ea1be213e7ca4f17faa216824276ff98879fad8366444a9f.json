@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3264.155832999677,
+ "output": "{\"facts\": [{\"span\": \"aaj mandir ke bahar bahut log the\", \"kind\": \"person\", \"subject\": \"bahut log\", \"certainty\": \"sure\", \"place\": \"mandir ke bahar\"}, {\"span\": \"koyal ki awaaz aayi ek baar\", \"kind\": \"sound\", \"subject\": \"koyal ki awaaz\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were at the temple entrance today. There were many people there for a pooja. We just walked back on the road. A koyal's sound came once.\"}",
+ "prompt_sha": "bc0a49aa55a2b45274718696037f5a440b1cd34d2d9d0e8a12db2ac7645b300d",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 143
+}

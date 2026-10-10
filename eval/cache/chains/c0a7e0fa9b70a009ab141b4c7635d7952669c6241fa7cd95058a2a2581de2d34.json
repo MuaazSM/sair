@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1084.617625001556,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice any sound near the path as you walk.\"}",
+ "prompt_sha": "6b61f4a5a57aef0cfd57b4fd3ff73c78f97edc1ab4f32f4e3aba330ead6c2148",
+ "renderer_fingerprint": null,
+ "tokens_in": 693,
+ "tokens_out": 29
+}

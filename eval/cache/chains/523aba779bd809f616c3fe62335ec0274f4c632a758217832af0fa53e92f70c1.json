@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3064.2029999980878,
+ "output": "{\"facts\":[{\"span\":\"bagula phir se tha.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"aaj thoda humid tha.\",\"kind\":\"weather\",\"subject\":\"humidity\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom and Dad went for a walk. They noticed maybe smell and humidity.\"}",
+ "prompt_sha": "9b65a73f6579df6b33d57669763dea4c16e4322bd918ab99bd4ebf6c94180251",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 730,
+ "tokens_out": 80
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2508.896375002223,
+ "output": "{\"facts\": [{\"span\": \"a koel was calling from the coconut tree near the temple pond\", \"kind\": \"sound\", \"subject\": \"a koel was calling\", \"certainty\": \"sure\", \"place\": \"coconut tree near the temple pond\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad walked to the temple at the end of the road. A koel was calling from the coconut tree near the temple pond. The coconut seller was there with his cart, and they had one coconut each.\"}",
+ "prompt_sha": "2d79ba5f94d34566b0f6039399c205116d1d572c1ded7d4f07d1b689426a24ee",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 114
+}

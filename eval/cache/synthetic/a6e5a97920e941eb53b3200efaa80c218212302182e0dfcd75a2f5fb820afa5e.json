@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5224.74258299917,
+ "output": "{\"facts\": [{\"span\": \"buses aate jaa rahe hain\", \"kind\": \"sound\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"mist bahut thick thi\", \"kind\": \"weather\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"sparrow ud raha tha\", \"kind\": \"animal\", \"subject\": \"sparrow\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"teen chai banaayi thi\", \"kind\": \"other\", \"subject\": \"chai\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"buses count kar li\", \"kind\": \"other\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"pata nahi bus number kya tha\", \"kind\": \"other\", \"subject\": \"bus number\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom was out for a walk today. The mist was very thick, and a sparrow was flying. They made three chai. They counted the buses, but they were unsure about the bus number.\"}",
+ "prompt_sha": "2e419a869927308d74dbb23e84aeee4ff40dc7a6acf6634d3048c71fc15354ef",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 270
+}

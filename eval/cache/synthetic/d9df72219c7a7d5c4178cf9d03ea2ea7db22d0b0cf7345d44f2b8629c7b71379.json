@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4034.8488749987155,
+ "output": "{\"facts\":[{\"span\":\"Buses aage jaa rahi thi.\",\"kind\":\"vehicle\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"Teen mist dikh rahi thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"shayad Sparrow ud raha tha.\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Count ki mission puri ho gayi.\",\"entry\":\"Mom finished the evening walk. She saw buses going ahead and maybe a sprow flying.\"}",
+ "prompt_sha": "6ea4df490289d7223cb6c67b44edf835dfb57e03a2789a3091fda04674dd7d4d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 118
+}

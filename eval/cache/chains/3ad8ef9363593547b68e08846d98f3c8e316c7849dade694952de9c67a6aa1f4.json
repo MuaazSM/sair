@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4703.3291249972535,
+ "output": "{\"facts\": [{\"span\": \"we went to the big park\", \"kind\": \"sight\", \"subject\": \"big park\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"there were ducks in the pond, four of them\", \"kind\": \"animal\", \"subject\": \"ducks\", \"certainty\": \"sure\", \"place\": \"pond\"}, {\"span\": \"the jogging track was crowded\", \"kind\": \"sight\", \"subject\": \"jogging track\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the clouds were moving fast\", \"kind\": \"weather\", \"subject\": \"clouds\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"we watched them from the bench near the pond\", \"kind\": \"person\", \"subject\": \"we\", \"certainty\": \"sure\", \"place\": \"bench near the pond\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad went to the big park and walked around the pond. There were four ducks in the pond, and the jogging track was crowded. They watched the clouds moving fast from the bench near the pond.\"}",
+ "prompt_sha": "80093b06972c70c2f01cae948e51b058f1d42611a5828eb9f23353276db03b2f",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 249
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5367.917167000996,
+ "output": "{\"facts\":[{\"span\":\"the banyan was full of birds today\",\"kind\":\"plant\",\"subject\":\"banyan\",\"certainty\":\"sure\"},{\"span\":\"a lot of chirping\",\"kind\":\"sound\",\"subject\":\"birds\",\"certainty\":\"sure\"},{\"span\":\"we couldn't see which birds they were\",\"kind\":\"sight\",\"subject\":\"birds\",\"certainty\":\"unsure\"},{\"span\":\"too many leaves\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"we couldn't see which birds they were\",\"entry\":\"Mom and Dad went for a walk. They noticed the banyan tree was full of birds with a lot of chirping. They couldn't see which birds they were because there were too many leaves.\"}",
+ "prompt_sha": "a6b8880d726a87878f02fd59289e78680648d506f848cdb0e3d0894218fa95b2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 735,
+ "tokens_out": 161
+}

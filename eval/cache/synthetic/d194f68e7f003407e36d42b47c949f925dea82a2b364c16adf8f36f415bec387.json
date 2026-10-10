@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2695.1030420023017,
+ "output": "{\"facts\": [{\"span\": \"हो सकता है मोगरा की महक है। कुछ नहीं और बस यही।\", \"kind\": \"smell\", \"subject\": \"मोगरा की महक\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom finished the walk. She said, \\\"हो सकता है मोगरा की महक है। कुछ नहीं और बस यही।\\\" She said Mission complete.\"}",
+ "prompt_sha": "bd7b437550f1bf442240a57d465ae818732284bf9bb8286c6e3acc3fe5ade76a",
+ "renderer_fingerprint": null,
+ "tokens_in": 476,
+ "tokens_out": 102
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1541.255790998548,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_3\"], \"text\": \"You, look at the gulmohar and notice how many leaves have dropped.\"}",
+ "prompt_sha": "0c1bd7feac2c8152beb753ba1374a8e8b94095132982148ccc11a1337b7d0214",
+ "renderer_fingerprint": null,
+ "tokens_in": 990,
+ "tokens_out": 37
+}

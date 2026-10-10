@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4464.336542001547,
+ "output": "{\"facts\": [{\"span\": \"aaj lane mein ek chidiya bahut meetha ga rahi thi\", \"kind\": \"sound\", \"subject\": \"chidiya bahut meetha ga rahi thi\", \"certainty\": \"sure\", \"place\": \"lane\"}, {\"span\": \"neem ke paas hi kahin thi shayad\", \"kind\": \"plant\", \"subject\": \"neem ke paas hi kahin thi\", \"certainty\": \"unsure\", \"place\": \"neem\"}, {\"span\": \"baaki sab normal tha\", \"kind\": \"other\", \"subject\": \"baaki sab normal tha\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out today. A bird was singing very sweetly in the lane, but I could not see which one it was. It was maybe near the neem tree. Everything else was normal, and the vendor was standing with his cart.\"}",
+ "prompt_sha": "74ea1bfc1f5eef9a9be4a22150f8778721fb027430eddf2638e79100c4feae76",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 209
+}

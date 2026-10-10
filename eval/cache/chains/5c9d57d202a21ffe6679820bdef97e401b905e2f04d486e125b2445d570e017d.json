@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1133.2319579996692,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"Notice the shadow on the path.\"}",
+ "prompt_sha": "20f4d81241fcba85757255133979637979dd6577f7df1428cb838c8322d0264f",
+ "renderer_fingerprint": null,
+ "tokens_in": 652,
+ "tokens_out": 34
+}

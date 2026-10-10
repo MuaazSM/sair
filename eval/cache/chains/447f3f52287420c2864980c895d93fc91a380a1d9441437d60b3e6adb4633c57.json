@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4134.97649999772,
+ "output": "{\"facts\":[{\"span\":\"a bird was singing from one of the balconies\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"maybe a pet bird in a cage\",\"kind\":\"animal\",\"subject\":\"pet bird\",\"certainty\":\"unsure\"},{\"span\":\"i couldn't see it\",\"kind\":\"sight\",\"subject\":\"bird\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked and heard a bird singing from a balcony. She thought maybe it was a pet bird in a cage but could not see it.\"}",
+ "prompt_sha": "c869ab7fa4a776cb80c790315d2fc36342f5818be2b56c9e89da415f5035508a",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 730,
+ "tokens_out": 121
+}

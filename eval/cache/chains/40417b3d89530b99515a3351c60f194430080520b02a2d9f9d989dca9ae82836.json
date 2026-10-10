@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4524.629625000671,
+ "output": "{\"facts\":[{\"span\":\"jamun ke ped ki shadow road pe bahut sundar pattern bana rahi thi\",\"kind\":\"sight\",\"subject\":\"shadow\",\"certainty\":\"sure\",\"place\":\"road\"},{\"span\":\"doodhwala apni cycle pe jaa raha tha\",\"kind\":\"person\",\"subject\":\"doodhwala\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"kuch khaas nahi\",\"entry\":\"Mom and Dad walked in the lane. They saw a jamun tree shadow making a pattern on the road and saw doodhwala on his cycle. They did not find a special pattern.\"}",
+ "prompt_sha": "673c72ddd988a651e5e8834a91359081126ed314b32474508e751c827a0fb6cf",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 762,
+ "tokens_out": 132
+}

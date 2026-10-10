@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2956.9567920043482,
+ "output": "{\"facts\":[{\"span\":\"kuch log yoga kar rahe the steps ke paas.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\",\"place\":\"steps\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked and saw people doing yoga near the steps. They thought about stretching too.\"}",
+ "prompt_sha": "dfa1b0b56ddf660a6508a510546000852cf2192bf8ba49652840208ba599d067",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 744,
+ "tokens_out": 71
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3503.5378749998927,
+ "output": "{\"facts\": [{\"span\": \"मोची आज भी पीपल के नीचे बैठा था।\", \"kind\": \"person\", \"subject\": \"मोची\", \"certainty\": \"sure\", \"place\": \"पीपल के नीचे\"}, {\"span\": \"फल वाले के पास केले थे।\", \"kind\": \"sight\", \"subject\": \"केले\", \"certainty\": \"sure\"}, {\"span\": \"एक गाय बीच में खड़ी थी,\", \"kind\": \"animal\", \"subject\": \"एक गाय\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was sitting under the peepal. There were bananas near the fruit seller. A cow was standing in the middle, and everyone was going around it.\"}",
+ "prompt_sha": "0e0964d4edb410216b4447c00c4f40b340fccf4a6a74be5c76140d6931d61ce4",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 159
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2314.2876669990073,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_2\", \"f7_3\"], \"text\": \"You, listen for the temple bell sound. Then, look at the birds on the wires.\"}",
+ "prompt_sha": "d190a1b1247315ce7053b0584c7b7c6d9df197be335373de996cab04fdafa2d6",
+ "renderer_fingerprint": null,
+ "tokens_in": 1486,
+ "tokens_out": 46
+}

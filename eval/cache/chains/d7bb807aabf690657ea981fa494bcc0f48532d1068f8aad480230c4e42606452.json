@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1320.9482499987644,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You notice if the leaves on the badam ka ped are the same size.\"}",
+ "prompt_sha": "ad082fbb0d885bfef3dfa41b64da1581739b99a5a215b9388974868805f90624",
+ "renderer_fingerprint": null,
+ "tokens_in": 934,
+ "tokens_out": 37
+}

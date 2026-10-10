@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 751.3568340000347,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will notice the tulsi ka gamla near the wahan.\"}",
+ "prompt_sha": "e184a651e054998471b8afdb6f89cac4f1d2b0b13045a2803155b06093d8b408",
+ "renderer_fingerprint": null,
+ "tokens_in": 1028,
+ "tokens_out": 35
+}

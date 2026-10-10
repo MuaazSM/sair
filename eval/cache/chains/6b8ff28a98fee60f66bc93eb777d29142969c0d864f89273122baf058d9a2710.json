@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5320.244542002911,
+ "output": "{\"facts\":[{\"span\":\"mandir ke bahar aaj phoolwali nahi thi.\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"mandir ke bahar\"},{\"span\":\"peepal ke neeche kuch log baithe the.\",\"kind\":\"person\",\"subject\":\"log\",\"certainty\":\"sure\",\"place\":\"peepal ke neeche\"},{\"span\":\"ek koyal bol rahi thi kahin, bahut der tak.\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked outside the temple. They saw no flowers but people under a peepal tree and a crow calling for a long time.\"}",
+ "prompt_sha": "5952a2e943f769ad09cb8d77441cce0f07df0bba96cdbfb87f30d5bd90c0c006",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 152
+}

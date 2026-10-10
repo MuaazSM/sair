@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1382.1891670013429,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f4_1\"], \"text\": \"You will look at the well in the park. Notice the flowers along the main path.\"}",
+ "prompt_sha": "6c698ef3239f5bd5e6b5cea68072514438db93b91e7328796c0f2c6368f48cb6",
+ "renderer_fingerprint": null,
+ "tokens_in": 945,
+ "tokens_out": 45
+}

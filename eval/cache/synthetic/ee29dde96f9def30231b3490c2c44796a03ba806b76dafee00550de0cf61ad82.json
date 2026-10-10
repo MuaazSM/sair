@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4513.425708999421,
+ "output": "{\"facts\": [{\"span\": \"Yoga group teen kauve\", \"kind\": \"sight\", \"subject\": \"Yoga group teen kauve\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek butterfly dekhi\", \"kind\": \"sight\", \"subject\": \"Ek butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel the bird maybe was flying high\", \"kind\": \"animal\", \"subject\": \"Koel the bird\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya, koi nahi\", \"kind\": \"other\", \"subject\": \"Mission bhool gaya, koi nahi\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad walked back from the park. He mentioned the yoga group and the koel bird maybe was flying high. He saw an ek butterfly. He said Mission bhool gaya, koi nahi. He asked about dinner time.\"}",
+ "prompt_sha": "7f6c405e6209b70a3ffb1880d194afa90857dde26b5b2587f54c97753b8051c4",
+ "renderer_fingerprint": null,
+ "tokens_in": 500,
+ "tokens_out": 218
+}

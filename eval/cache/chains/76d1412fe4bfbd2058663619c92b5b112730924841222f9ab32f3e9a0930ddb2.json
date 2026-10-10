@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1994.411208001111,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_3\"], \"text\": \"You, watch the cow near the peepal.\"}",
+ "prompt_sha": "e2a71fd514addbbee05b8f8f0267f86551cc20eb4ef302b99d3e7ba95f6d09fe",
+ "renderer_fingerprint": null,
+ "tokens_in": 1550,
+ "tokens_out": 31
+}

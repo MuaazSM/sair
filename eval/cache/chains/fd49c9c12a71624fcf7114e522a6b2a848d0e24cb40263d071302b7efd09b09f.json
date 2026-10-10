@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2661.2699999968754,
+ "output": "{\"facts\": [{\"span\": \"बस स्टॉप तक गया और लौट आया। आज कुछ खास नहीं।\", \"kind\": \"sound\", \"subject\": \"कुछ खास नहीं\", \"certainty\": \"sure\", \"place\": \"बस स्टॉप\"}, {\"span\": \"बस स्टॉप तक गया और लौट आया।\", \"kind\": \"person\", \"subject\": \"बस स्टॉप तक गया और लौट आया\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad went to the bus stop and came back. Today was nothing special.\"}",
+ "prompt_sha": "7144e4728c475aa9bdbf12d23136e932efb71e4b071e891fbc6984f3b69c5424",
+ "renderer_fingerprint": null,
+ "tokens_in": 474,
+ "tokens_out": 123
+}

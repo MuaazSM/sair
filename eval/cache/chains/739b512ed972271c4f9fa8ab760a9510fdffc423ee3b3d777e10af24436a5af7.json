@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3139.22575000106,
+ "output": "{\"facts\":[{\"span\":\"banyan ki jadein geeli thi.\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\",\"place\":\"banyan\"}],\"mission_result\":\"done\",\"mission_span\":\"banyan ki jadein geeli thi.\",\"entry\":\"Mom and Dad walked carefully on the side after rain. They noticed banyan ki jadein geeli thi.\"}",
+ "prompt_sha": "2b600db1e6b8d4ddfbb6fc450d3e927b0e7c515cb1d23c4f4615943ba38bb022",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 81
+}

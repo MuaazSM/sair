@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3515.000584000518,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Mist bahut zyada thi\",\n\"kind\": \"weather\",\n\"subject\": \"Mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Paanch gauraiya\",\n\"kind\": \"person\",\n\"subject\": \"Paanch gauraiya\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom had an evening walk. Buses kept coming. The mist was very much. It seems like Paanch gauraiya. I counted the buses.\"\n}\n```",
+ "prompt_sha": "cff5ce39b8778146729acd017fa9ab1bd539f2e86a6879333205e72a560f91e1",
+ "renderer_fingerprint": null,
+ "tokens_in": 483,
+ "tokens_out": 162
+}

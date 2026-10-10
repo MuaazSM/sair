@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3235.9396660031052,
+ "output": "{\"facts\": [{\"span\": \"गली में आज किसी के घर से बहुत अच्छी खुशबू आ रही थी, खाना बन रहा था कुछ।\", \"kind\": \"smell\", \"subject\": \"खुशबू\", \"certainty\": \"sure\", \"place\": \"गली\"}, {\"span\": \"हम दोनों हँस पड़े, भूख लग गई।\", \"kind\": \"sound\", \"subject\": \"हँस पड़े\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking today. There was a very good smell coming from someone's house in the street, some food was being cooked. We both laughed, and we got hungry.\"}",
+ "prompt_sha": "5dccf2016ea955d8be3df5adc8b5323f3d20823ea78d641b41ad55f79d852a6f",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 150
+}

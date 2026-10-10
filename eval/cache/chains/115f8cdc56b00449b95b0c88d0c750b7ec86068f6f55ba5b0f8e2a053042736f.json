@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5280.765833002079,
+ "output": "{\"facts\":[{\"span\":\"aaj lane mein ek chidiya bahut meetha ga rahi thi\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"pata nahi kaunsi thi\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"unsure\"},{\"span\":\"neem ke paas hi kahin thi shayad\",\"kind\":\"plant\",\"subject\":\"neem tree\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"You will notice if you can see any crows on the neem tree near the corner.\",\"entry\":\"Mom and Dad walked along the lane. They heard a bird singing sweetly but did not see it. Maybe it was near the neem tree.\"}",
+ "prompt_sha": "2e8c7dca954c09e8060f9a6d4fae05f446f6bb8342b11c9621aaeb69e4127957",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 776,
+ "tokens_out": 153
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1787.729166997451,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You notice the leaves under the almond tree. Can you count how many leaves are there?\"}",
+ "prompt_sha": "3446791b5309dbebaedae46cc07d62a706e172cf3f064d5acb3690c903bcdced",
+ "renderer_fingerprint": null,
+ "tokens_in": 1259,
+ "tokens_out": 39
+}

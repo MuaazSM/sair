@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1703.055250000034,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You notice the peela hi peela near the compound. Look at the amaltas ke phool near the gate.\"}",
+ "prompt_sha": "23b043126b3c07909de50577140579722d602cc0ef32b14ffa518330fef8d2fb",
+ "renderer_fingerprint": null,
+ "tokens_in": 962,
+ "tokens_out": 52
+}

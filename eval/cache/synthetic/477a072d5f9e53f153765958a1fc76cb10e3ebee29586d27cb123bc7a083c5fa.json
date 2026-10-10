@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4943.493999999191,
+ "output": "{\"facts\":[{\"span\":\"Buses aage se aa rahi thi.\",\"kind\":\"vehicle\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut thick thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Sparrow the bird pata nahi was sitting still\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"Teen chai pee li.\",\"kind\":\"person\",\"subject\":\"mom\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Bus count kar diya.\",\"entry\":\"Mom finished the evening walk and counted the buses. She saw mist and a sparrow. She drank three cups of chai.\"}",
+ "prompt_sha": "1a1e31846f9a763e44325fc56cfea07b68231ed1d5ca72154be1acbe3e9b874b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 145
+}

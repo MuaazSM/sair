@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5214.0086669969605,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw five champa.\", \"kind\": \"sight\", \"subject\": \"five champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There is one goat.\", \"kind\": \"animal\", \"subject\": \"one goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The dew is heavy I think.\", \"kind\": \"weather\", \"subject\": \"dew is heavy\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"I heard the garbage truck.\", \"kind\": \"sound\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I checked the jasmine for flowers.\", \"kind\": \"other\", \"subject\": \"checked the jasmine for flowers\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad was on a walk today. He saw the jasmine and five champa. There was one goat and the dew was heavy, I think. He also heard the garbage truck and checked the jasmine for flowers.\"}",
+ "prompt_sha": "f5a8cf9e1d239548510f0e838d6065970d531c67fab7f7a079d29bb23e589644",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 274
+}

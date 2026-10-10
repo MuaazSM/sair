@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2705.917416002194,
+ "output": "{\"facts\": [{\"span\": \"समुद्र में आज कुछ जहाज़ दिख रहे थे दूर, शायद मछली पकड़ने वाली नावें थीं।\", \"kind\": \"sight\", \"subject\": \"कुछ जहाज़\", \"certainty\": \"sure\", \"place\": \"समुद्र\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad were out today. They mentioned seeing some ships in the sea far away, maybe fishing boats. They could not count them.\"}",
+ "prompt_sha": "eb6e6624eaf315c5a84969e32c5b3b29901057101e042d99745f18fc3469be2d",
+ "renderer_fingerprint": null,
+ "tokens_in": 486,
+ "tokens_out": 99
+}

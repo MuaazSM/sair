@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3511.392332999094,
+ "output": "{\"facts\": [{\"span\": \"the almond tree leaves are turning\", \"kind\": \"sight\", \"subject\": \"almond tree leaves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"some are going red at the edges\", \"kind\": \"sight\", \"subject\": \"leaves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"a few ladies were sitting on the bench talking\", \"kind\": \"person\", \"subject\": \"ladies\", \"certainty\": \"sure\", \"place\": \"bench\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. The almond tree leaves are turning, and some are going red at the edges. A few ladies were sitting on the bench talking while I walked alone.\"}",
+ "prompt_sha": "9de33589b84345db4b0290c428152181bb313fcb16f3c24a3948dd35b80fb5b6",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 171
+}

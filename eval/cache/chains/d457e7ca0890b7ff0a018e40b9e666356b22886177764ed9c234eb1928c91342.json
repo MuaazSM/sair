@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2435.7389169963426,
+ "output": "{\"facts\": [{\"span\": \"some bird was making a loud noise on the water tank\", \"kind\": \"sound\", \"subject\": \"loud noise\", \"certainty\": \"sure\", \"place\": \"water tank\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. Some bird was making a loud noise on the water tank, and the watchman said it comes every day.\"}",
+ "prompt_sha": "ac67b941a68ae1a2a494f5c7b64263e3ca7fa2b2055fc9f7d9459263215f4f1c",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 90
+}

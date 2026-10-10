@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4429.113624999445,
+ "output": "{\"facts\": [{\"span\": \"Bhutta smell bahut tez hai.\", \"kind\": \"smell\", \"subject\": \"Bhutta smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas open I think umbrellas closed\", \"kind\": \"sight\", \"subject\": \"umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Looked around, saw some changes.\", \"kind\": \"sight\", \"subject\": \"changes\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Pata nahi uska colour kya tha.\", \"kind\": \"sight\", \"subject\": \"colour\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad and I finished the walk. The market was busy and the bhutta smell was very strong. I think the umbrellas were open, but I think they were closed. I looked around and saw some changes, but I don't know what the colour was.\"}",
+ "prompt_sha": "1c5ea9560da150672be4cb7864f0da986c7f76cf9466e96f7b8ded971977cff6",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 220
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4760.042166999483,
+ "output": "{\"facts\":[{\"span\":\"मंदिर के तालाब में कुछ मछलियाँ दिख रही थीं\",\"kind\":\"animal\",\"subject\":\"fish\",\"certainty\":\"sure\",\"place\":\"temple pond\"},{\"span\":\"कितनी थीं पता नहीं\",\"kind\":\"other\",\"subject\":\"fish\",\"certainty\":\"unsure\"},{\"span\":\"नारियल वाला वापस आ गया था\",\"kind\":\"person\",\"subject\":\"coconut man\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked near the temple pond. They saw fish but did not notice flowers.\"}",
+ "prompt_sha": "5239962167ac88c39eda4c3f166b99e5cec074a2c424ed3a4ffa45e4fd79308e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 134
+}

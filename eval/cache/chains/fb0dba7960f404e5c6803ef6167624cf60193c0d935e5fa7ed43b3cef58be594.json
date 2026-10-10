@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2131.8751250000787,
+ "output": "{\"facts\": [{\"span\": \"बस दो चक्कर लगाए आज। थकान थी।\", \"kind\": \"sound\", \"subject\": \"थकान\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad took only two laps today. They were tired. The tree near the gate is still there.\"}",
+ "prompt_sha": "8526f3a4988946ed48eacc6ee0b9d09402553954445df604f2c290d0ad25649a",
+ "renderer_fingerprint": null,
+ "tokens_in": 480,
+ "tokens_out": 80
+}

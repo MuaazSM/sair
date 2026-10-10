@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4445.791124999232,
+ "output": "{\"facts\": [{\"span\": \"Teen yoga group\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Thandi dew\", \"kind\": \"weather\", \"subject\": \"dew\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek butterfly\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel gaaya\", \"kind\": \"sound\", \"subject\": \"Koel\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Yoga count bhool gaya\", \"kind\": \"person\", \"subject\": \"Yoga count\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad finished the evening walk. There were three yoga groups. It was cold dew. I saw one butterfly and it seems a Koel bird sang. I forgot to count the yoga.\"}",
+ "prompt_sha": "b783d78d355385b69b8e0f106e8ad042973d047c27bae775e0c5b4e605504874",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 222
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3604.1006250015926,
+ "output": "{\"facts\": [{\"span\": \"the chana seller gave me a small packet, roasted chana\", \"kind\": \"person\", \"subject\": \"chana seller gave me a small packet, roasted chana\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the neem at the bus stop was full of crows\", \"kind\": \"animal\", \"subject\": \"crows\", \"certainty\": \"sure\", \"place\": \"neem at the bus stop\"}, {\"span\": \"the school bus went past\", \"kind\": \"other\", \"subject\": \"school bus went past\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad gave me a small packet, roasted chana. The neem at the bus stop was full of crows. The school bus went past.\"}",
+ "prompt_sha": "d3f08114012e5a1e5aec38a37c520cf3bf99eb2b2a107094f6c5055767f605e1",
+ "renderer_fingerprint": null,
+ "tokens_in": 491,
+ "tokens_out": 183
+}

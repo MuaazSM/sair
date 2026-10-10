@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3261.116249999759,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"Crow flew high shayad.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kuch toh pata chala.\",\"entry\":\"Mom and Dad went for a walk. They saw kids playing cricket and maybe a crow flew high.\"}",
+ "prompt_sha": "a29cc515f137fb38c1f97c7793d57cda5de896bb0d0f3e65b0c0021a53383fc1",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 738,
+ "tokens_out": 87
+}

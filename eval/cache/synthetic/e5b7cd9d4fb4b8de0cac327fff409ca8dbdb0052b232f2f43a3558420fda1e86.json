@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3470.787375001237,
+ "output": "{\"facts\": [{\"span\": \"Yoga group, they are there.\", \"kind\": \"person\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek butterfly near the path.\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"path\"}, {\"span\": \"Koel, the sound शायद was singing softly.\", \"kind\": \"sound\", \"subject\": \"Koel\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. There was a yoga group there. There was a butterfly near the path. The sound of Koel was maybe singing softly. The mission was forgotten, no count was done.\"}",
+ "prompt_sha": "1a6f7604bdfbf72dedd72ad074a4f73f4b6eb7d9f04272929c9705c1ad0752b9",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 170
+}

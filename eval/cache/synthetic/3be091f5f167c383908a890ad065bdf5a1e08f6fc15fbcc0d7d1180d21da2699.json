@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6372.732250001718,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"there\"},{\"span\":\"Champa is blooming now.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"I saw one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"A cat was near the gate.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"Five dew drops maybe.\",\"kind\":\"weather\",\"subject\":\"dew drops\",\"certainty\":\"unsure\"},{\"span\":\"The garbage truck passed by.\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad returned from the evening walk. He saw blooming champa and jasmine, a goat, a cat near the gate, and maybe dew drops. A garbage truck passed by.\"}",
+ "prompt_sha": "30e95ff2febc6f75ac502be9b643a48b25dd0541a4ce53bff7b61407b5a5abae",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 200
+}

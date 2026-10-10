@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3139.411124997423,
+ "output": "{\"facts\": [{\"span\": \"Wind tez thi.\", \"kind\": \"weather\", \"subject\": \"Wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Rain bahut ho raha hai.\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially hua.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a walk. The wind was strong. It seems like it is raining a lot. The mission was partially done.\"}",
+ "prompt_sha": "cbe0dd4652d2a4c38295b15262a039a1ad391a79d181aee1230456a2f51782fc",
+ "renderer_fingerprint": null,
+ "tokens_in": 535,
+ "tokens_out": 147
+}

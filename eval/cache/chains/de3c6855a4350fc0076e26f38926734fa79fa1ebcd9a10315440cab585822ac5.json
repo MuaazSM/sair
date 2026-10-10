@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4569.151499999862,
+ "output": "{\"facts\":[{\"span\":\"aaj tote nahi the\",\"kind\":\"plant\",\"subject\":\"trees\",\"certainty\":\"sure\"},{\"span\":\"aam ke ped pe\",\"kind\":\"plant\",\"subject\":\"mango trees\",\"certainty\":\"sure\"},{\"span\":\"press wala tha\",\"kind\":\"person\",\"subject\":\"press\",\"certainty\":\"sure\"},{\"span\":\"radio pe purane gaane chal rahe the\",\"kind\":\"sound\",\"subject\":\"old songs\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"aaj tote nahi the\",\"entry\":\"Dad went for a walk. They noticed mango trees and a press listening to old songs on the radio.\"}",
+ "prompt_sha": "526e74745f96b9d1485ba70c5737906037540325176fbe598d7a273aaff10bc0",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 138
+}

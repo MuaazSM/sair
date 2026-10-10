@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 959.7115420001501,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\"], \"text\": \"You will notice the sound near the water tank.\"}",
+ "prompt_sha": "d89a7776058aa4f6f6c893115425c7ea7f4a89b0f47e797f26b8abee4f08a79d",
+ "renderer_fingerprint": null,
+ "tokens_in": 796,
+ "tokens_out": 45
+}

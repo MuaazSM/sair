@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2140.111958997295,
+ "output": "{\"facts\": [{\"span\": \"aaj bas jaldi aa gaya.\", \"kind\": \"sound\", \"subject\": \"jaldi aa gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was walking today. He said aaj bas jaldi aa gaya. He had pain in his knees.\"}",
+ "prompt_sha": "5d41a2bd04fe965f96ea464226b318a0553b84b1f844fde7230f23686fe9cc58",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 79
+}

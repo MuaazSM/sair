@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5873.273416997108,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"sight\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The champa is visible.\",\n\"kind\": \"sight\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There is one goat.\",\n\"kind\": \"animal\",\n\"subject\": \"goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The cat is near the wall.\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"wall\"\n},\n{\n\"span\": \"probably Dew is present.\",\n\"kind\": \"weather\",\n\"subject\": \"Dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"I heard the garbage truck.\",\n\"kind\": \"sound\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked the jasmine for flowers.\",\n\"entry\": \"Dad got back from the walk. The jasmine is there and the champa is visible. There is one goat and the cat is near the wall. Maybe Dew is present. I heard the garbage truck.\"\n}\n```",
+ "prompt_sha": "e0fcdbff9269fe5109f21b86e024104933098f81558995bfec0844b9d6dba89e",
+ "renderer_fingerprint": null,
+ "tokens_in": 528,
+ "tokens_out": 335
+}

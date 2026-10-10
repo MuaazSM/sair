@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 4100.514666999516,
+ "output": "{\"facts\":[{\"span\":\"Yeh tamarind ka ped bahut bada hai.\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\",\"place\":\"ped\"},{\"span\":\"Woh bicycle wahan rakhi hai.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\",\"place\":\"wahan\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked together. They saw a big tamarind tree and a bicycle there. They also talked about dinner and a neighbor's wedding.\"}",
+ "prompt_sha": "fe7ebd11e8f81a0939c62cdc51fcf96c6b3204629a3ff7363e38bce093e6e816",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 752,
+ "tokens_out": 113
+}

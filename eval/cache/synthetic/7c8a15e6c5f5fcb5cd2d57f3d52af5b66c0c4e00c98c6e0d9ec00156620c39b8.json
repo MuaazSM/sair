@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4750.521125002706,
+ "output": "{\"facts\": [{\"span\": \"Yoga group wahan the.\", \"kind\": \"person\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"Paanch butterfly dikhe.\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"maybe Koel ga rahi thi.\", \"kind\": \"sound\", \"subject\": \"Koel\", \"certainty\": \"unsure\", \"place\": \"maybe\"}, {\"span\": \"Yoga count karna bhool gaya.\", \"kind\": \"person\", \"subject\": \"Yoga\", \"certainty\": \"sure\", \"place\": \"null\"}, {\"span\": \"Pata nahi uska number kya tha.\", \"kind\": \"other\", \"subject\": \"number\", \"certainty\": \"unsure\", \"place\": \"null\"}], \"mission_result\": \"partly\", \"entry\": \"Dad finished the walk. There was a yoga group there and there were many. I saw five butterflies. Maybe a Koel was singing. I forgot to count the yoga. I don't know what its number was.\"}",
+ "prompt_sha": "57ef8587a334358a63bc4ba613f09dac12bd08f4f15f73fb6b311c3f73ec35e7",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 249
+}

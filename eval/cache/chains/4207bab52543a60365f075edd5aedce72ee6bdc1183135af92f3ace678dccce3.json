@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3354.6733329967537,
+ "output": "{\"facts\":[{\"span\":\"बिल्ली के बच्चे आज बाहर आ गए थे\",\"kind\":\"animal\",\"subject\":\"kitten\",\"certainty\":\"sure\"},{\"span\":\"पार्किंग के पास खेल रहे थे\",\"kind\":\"animal\",\"subject\":\"kitten\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They saw kittens playing near the parking lot.\"}",
+ "prompt_sha": "c4e3c6ff38f831123d66fc37334f9941c22f7160d0fb175c819f37947884dccf",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 741,
+ "tokens_out": 91
+}

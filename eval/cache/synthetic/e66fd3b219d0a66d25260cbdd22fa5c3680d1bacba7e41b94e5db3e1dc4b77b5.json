@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3846.298417000071,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow bahut paas tha pata nahi.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They noticed a crow was very near. They also talked about what would be made for dinner.\"\n}\n```",
+ "prompt_sha": "251099968f087c8c1474891521fc7e56de250aec389da90f1e036498f2db87bd",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 174
+}

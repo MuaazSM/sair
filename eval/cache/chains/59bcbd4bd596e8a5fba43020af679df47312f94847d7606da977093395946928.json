@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3473.7272919992392,
+ "output": "{\"facts\": [{\"span\": \"समुद्र किनारे आज हवा बहुत ठंडी थी।\", \"kind\": \"weather\", \"subject\": \"हवा\", \"certainty\": \"sure\", \"place\": \"समुद्र किनारे\"}, {\"span\": \"लहरें देखीं।\", \"kind\": \"sight\", \"subject\": \"लहरें\", \"certainty\": \"sure\"}, {\"span\": \"आसमान में बादल थे।\", \"kind\": \"sight\", \"subject\": \"बादल\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was walking by the sea. The wind was very cold today. They saw the waves while sitting on another bench. There were clouds in the sky.\"}",
+ "prompt_sha": "9884c25c246b8d814a5f480b9b92147cb4e7e4f40375a4dbd85c7c55c19400b5",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 158
+}

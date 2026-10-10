@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3424.6566250003525,
+ "output": "{\"facts\": [{\"span\": \"Humne tamarind dekha.\", \"kind\": \"sight\", \"subject\": \"tamarind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek crow wahan tha probably.\", \"kind\": \"animal\", \"subject\": \"crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Woh bicycle dikhi.\", \"kind\": \"sight\", \"subject\": \"bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a nice walk. Dad saw tamarind. Mom thought there was a crow there probably. Dad also saw a bicycle. Dinner is ready.\"}",
+ "prompt_sha": "e123dc52f69b2552b85f325fb5ccf2442915739af9e3f02e96c303a9ef1e738d",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 157
+}

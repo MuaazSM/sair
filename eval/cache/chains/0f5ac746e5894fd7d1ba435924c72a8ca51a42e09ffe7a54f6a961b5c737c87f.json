@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 881.6208329990332,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"You will notice the shadow near the wall.\"}",
+ "prompt_sha": "4721f5a3b025f881205eaeb2759a0ebc18a1c7d5d4f7f6a1a8dfbc8229d2defa",
+ "renderer_fingerprint": null,
+ "tokens_in": 614,
+ "tokens_out": 36
+}

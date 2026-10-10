@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1609.397500003979,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Tuesday 1\", \"Thursday 1\", \"Friday 1\"], \"text\": \"You will notice the path for any yellow leaf.\"}",
+ "prompt_sha": "90c2f1d99c2719c3940e7fb353c75340e3817a3374b58032550e182fd394237d",
+ "renderer_fingerprint": null,
+ "tokens_in": 802,
+ "tokens_out": 45
+}

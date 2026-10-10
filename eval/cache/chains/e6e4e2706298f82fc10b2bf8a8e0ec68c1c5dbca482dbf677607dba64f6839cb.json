@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5364.199499999813,
+ "output": "{\"facts\":[{\"span\":\"some birds were flying low over the water\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"unsure\"},{\"span\":\"white ones i think\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"unsure\"},{\"span\":\"maybe gulls\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"unsure\"},{\"span\":\"the tide was out\",\"kind\":\"weather\",\"subject\":\"tide\",\"certainty\":\"sure\"},{\"span\":\"a lot of rocks showing\",\"kind\":\"sight\",\"subject\":\"rocks\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"You, listen for any sound near the path.\",\"entry\":\"Dad went for a walk and listened for sounds. They heard birds flying low over the water, maybe gulls, and saw rocks showing because the tide was out.\"}",
+ "prompt_sha": "7ba7d2459016229b7c55f832376d5a05fb862b0d154ef3e890e9a9d7093f9f85",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 736,
+ "tokens_out": 169
+}

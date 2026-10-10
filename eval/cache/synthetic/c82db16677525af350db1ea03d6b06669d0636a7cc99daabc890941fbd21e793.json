@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6635.814000001119,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Hen seen there.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas visible\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"sight\",\"subject\":\"shutters\",\"certainty\":\"sure\"},{\"span\":\"Could not spot anything different.\",\"kind\":\"sight\",\"subject\":\"difference\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Could not spot anything different.\",\"entry\":\"Dad went for an evening walk and looked at the market. They saw vegetable stalls, a strong smell of bhutta, a hen, visible umbrellas, and closed shop shutters. They could not spot anything different.\"}",
+ "prompt_sha": "b72cc5ff496aa4af82e1dfc5960eb824a3a109f2ae491e2cba193da835db1439",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 758,
+ "tokens_out": 199
+}

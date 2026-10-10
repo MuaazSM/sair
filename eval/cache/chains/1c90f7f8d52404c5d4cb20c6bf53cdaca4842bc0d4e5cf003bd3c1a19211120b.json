@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1506.4679580027587,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the yellow everywhere near the path. Look at the yellow flowers.\"}",
+ "prompt_sha": "15bf72bc863448240f60d1c77a0f752514107e1d106e1060e793809406f9440e",
+ "renderer_fingerprint": null,
+ "tokens_in": 821,
+ "tokens_out": 55
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4197.2955410019495,
+ "output": "{\"facts\":[{\"span\":\"Humne tamarind dekha.\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\"},{\"span\":\"Ek crow wahan tha probably.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Woh bicycle dikhi.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They saw tamarind and maybe a crow. Dad saw a bicycle. Mom said dinner is ready.\"}",
+ "prompt_sha": "e123dc52f69b2552b85f325fb5ccf2442915739af9e3f02e96c303a9ef1e738d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 765,
+ "tokens_out": 118
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5172.906290998071,
+ "output": "{\"facts\": [{\"span\": \"Market was busy.\", \"kind\": \"sight\", \"subject\": \"Market\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Vegetable stalls hain, bilkul saaf.\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell bahut tez hai.\", \"kind\": \"smell\", \"subject\": \"Bhutta\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek hen dekha.\", \"kind\": \"animal\", \"subject\": \"hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas there I think.\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Shop shutters band the hue.\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad went for an evening walk. The market was busy with vegetable stalls that were clean. The smell of bhutta was very strong. I saw a hen and shop shutters were closed. Spotting differences was hard.\"}",
+ "prompt_sha": "7354e0e81894d9712a7a62c3a5d5eb303b8ea0415e640ac705e4879f7a4a7230",
+ "renderer_fingerprint": null,
+ "tokens_in": 557,
+ "tokens_out": 276
+}

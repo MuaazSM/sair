@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 642.6462500021444,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You notice the leaves under the almond tree.\"}",
+ "prompt_sha": "d911656dc34cba4ce45758db85ee43ae9569bcffa5883ebfb469c254ac4ad2f3",
+ "renderer_fingerprint": null,
+ "tokens_in": 1276,
+ "tokens_out": 30
+}

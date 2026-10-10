@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 965.9030000002531,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\", \"f3_1\", \"f3_2\", \"f6_1\"], \"text\": \"You, listen for the sound of the radio.\"}",
+ "prompt_sha": "33f330f3c036b6051002d3bc21cff86fd9f48f5d22a32d216416d54a9ebbc55a",
+ "renderer_fingerprint": null,
+ "tokens_in": 901,
+ "tokens_out": 55
+}

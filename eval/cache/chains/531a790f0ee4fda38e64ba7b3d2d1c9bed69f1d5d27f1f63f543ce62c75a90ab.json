@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1234.6629159983422,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f1_5\", \"f2_1\"], \"text\": \"You will notice the jogging track on your next walk.\"}",
+ "prompt_sha": "f9241a97ecfeaae83f80c865e3d88cf5ba2d0226e4b52dae0761493338d660ce",
+ "renderer_fingerprint": null,
+ "tokens_in": 1424,
+ "tokens_out": 62
+}

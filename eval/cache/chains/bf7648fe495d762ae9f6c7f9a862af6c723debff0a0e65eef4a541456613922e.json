@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3878.465834000963,
+ "output": "{\"facts\":[{\"span\":\"there was a nice smell near the hedge by the far side\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\",\"place\":\"hedge by the far side\"},{\"span\":\"some flower i think\",\"kind\":\"plant\",\"subject\":\"flower\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"i couldn't see which one\",\"entry\":\"Mom went for a walk and looked for a shadow pattern. They noticed maybe a flower and a nice smell near the hedge.\"}",
+ "prompt_sha": "68113f6c498b0bc0e625756761c0e874d111d67549cd8876f2b429c99917a647",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 109
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4355.288333001226,
+ "output": "{\"facts\": [{\"span\": \"kids hain.\", \"kind\": \"sight\", \"subject\": \"kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"imli ka ped dikha.\", \"kind\": \"sight\", \"subject\": \"imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"लगता है crow dekha.\", \"kind\": \"sight\", \"subject\": \"crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"bicycle wahan hai.\", \"kind\": \"sight\", \"subject\": \"bicycle\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Dinner ready hai.\", \"kind\": \"other\", \"subject\": \"Dinner\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad finished the walk. They saw kids and an imli ka ped. Maybe they saw a crow. The bicycle is there. Dinner is ready.\"}",
+ "prompt_sha": "316a92487e16caec3163826187d3cb0b6b6f030b11298b17ba5b3cbc0a8125ab",
+ "renderer_fingerprint": null,
+ "tokens_in": 539,
+ "tokens_out": 219
+}

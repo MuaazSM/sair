@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4887.476042000344,
+ "output": "{\"facts\": [{\"span\": \"Umm, aaj hawa kaafi thandi thi.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Wind bahut tez thi.\", \"kind\": \"weather\", \"subject\": \"Wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Waves bahut clear the ho sakta hai.\", \"kind\": \"sight\", \"subject\": \"Waves\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"lagta hai Rain ho raha tha.\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially done.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad walked today. Umm, aaj hawa kaafi thandi thi. Dad said Wind bahut tez thi. Mom thought Waves bahut clear the ho sakta hai. Dad felt lagta hai Rain ho raha tha. Mom said Mission partially done.\"}",
+ "prompt_sha": "35b5ca85f9e08f94a0e76b6f813128e5d19c0b9c7cd50169549b1261d322316a",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 248
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2786.648666995461,
+ "output": "{\"facts\":[{\"span\":\"bas do round.\",\"kind\":\"other\",\"subject\":\"rounds\",\"certainty\":\"sure\"},{\"span\":\"thakaan thi.\",\"kind\":\"other\",\"subject\":\"tiredness\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a walk and felt tired after two rounds.\"}",
+ "prompt_sha": "2f278e1c25138e11bea2c9617ea98e7cc4e8db4752c8dfd6a527eb7473bc139c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 710,
+ "tokens_out": 72
+}

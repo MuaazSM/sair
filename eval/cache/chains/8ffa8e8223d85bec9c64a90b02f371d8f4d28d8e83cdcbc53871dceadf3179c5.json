@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2135.5342919996474,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":\"aaj bas jaldi aa gaya. ghutne mein dard tha.\",\"entry\":\"Dad went for a walk but had knee pain and left quickly.\"}",
+ "prompt_sha": "a55b11f644746899217fbd64c9ff04e0eaa1d9e45f039082913f57e3c3f5612f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 719,
+ "tokens_out": 47
+}

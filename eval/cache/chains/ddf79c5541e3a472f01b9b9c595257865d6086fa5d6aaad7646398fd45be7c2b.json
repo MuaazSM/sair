@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 785.7246250023309,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f4_1\"], \"text\": \"You will notice if you can see any crows on the neem tree near the corner.\"}",
+ "prompt_sha": "af50562a496a8d4612ec18e3e006c77929378247e2e72483980ea4ef886f208b",
+ "renderer_fingerprint": null,
+ "tokens_in": 1189,
+ "tokens_out": 44
+}

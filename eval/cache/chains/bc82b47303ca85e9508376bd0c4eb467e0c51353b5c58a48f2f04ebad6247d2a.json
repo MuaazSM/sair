@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4206.387333997554,
+ "output": "{\"facts\": [{\"span\": \"मंदिर में आज बहुत भीड़ थी\", \"kind\": \"sight\", \"subject\": \"भीड़\", \"certainty\": \"sure\", \"place\": \"मंदिर\"}, {\"span\": \"कोई त्योहार है शायद\", \"kind\": \"sight\", \"subject\": \"त्योहार\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"अगरबत्ती की खुशबू आ रही थी\", \"kind\": \"smell\", \"subject\": \"अगरबत्ती की खुशबू\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was at the temple today. There was a lot of crowd, maybe it is a festival. She did not go inside but folded her hands from outside. The smell of incense sticks was coming.\"}",
+ "prompt_sha": "044abbe6ebe45ade3f91c772251da869ee7511d5459ea283fa0e2e2febf88584",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 172
+}

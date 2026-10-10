@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 988.5680410006898,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You, notice if the bell sound changes as you walk.\"}",
+ "prompt_sha": "25a0746a8cccc56fb69742acc1129318941c2b6ccefcadf0b1252c4cf23cc32a",
+ "renderer_fingerprint": null,
+ "tokens_in": 547,
+ "tokens_out": 33
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6595.24600000077,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Jasmine is there.\",\n\"kind\": \"sight\",\n\"subject\": \"Jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen champa are visible.\",\n\"kind\": \"sight\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"the cat is sleeping.\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"maybe Dew is on the grass.\",\n\"kind\": \"sight\",\n\"subject\": \"Dew\",\n\"certainty\": \"unsure\",\n\"place\": \"grass\"\n},\n{\n\"span\": \"I heard the garbage truck.\",\n\"kind\": \"sound\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Pata nahi uska colour kya tha.\",\n\"kind\": \"sight\",\n\"subject\": \"colour\",\n\"certainty\": \"unsure\",\n\"place\": \"jasmine flowers\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine flowers.\",\n\"entry\": \"Dad noticed that jasmine is there and teen champa are visible. The cat is sleeping, and maybe dew is on the grass. He heard the garbage truck and checked on the jasmine flowers. He was unsure about the colour of the jasmine flowers.\"\n}\n```",
+ "prompt_sha": "bc5f8c668ad7ac2d95bb37c6e446c79806fa9d0dae8d6f9a20c7ea13d38db542",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 356
+}

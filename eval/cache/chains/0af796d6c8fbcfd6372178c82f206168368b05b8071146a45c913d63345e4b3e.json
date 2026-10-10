@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 949.9702080065617,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will notice the sound near the school gate.\"}",
+ "prompt_sha": "acba7ad53c1e2549eeb4cc962abb0b101f49211ee1e6845c9af5b59ce894c1f4",
+ "renderer_fingerprint": null,
+ "tokens_in": 710,
+ "tokens_out": 31
+}

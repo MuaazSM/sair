@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3322.8321249989676,
+ "output": "{\"facts\": [{\"span\": \"aaj school ke bahar bahut bachche the\", \"kind\": \"sight\", \"subject\": \"bahut bachche\", \"certainty\": \"sure\", \"place\": \"school ke bahar\"}, {\"span\": \"koi function tha shayad\", \"kind\": \"sight\", \"subject\": \"function\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out today. There were many children outside the school, maybe there was a function. The ice cream seller was busy, and we both left from different sides.\"}",
+ "prompt_sha": "c5ad5c8e99a978370e7f74bead7170dc978af75a24bb5ec2016e554231f67f13",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 136
+}

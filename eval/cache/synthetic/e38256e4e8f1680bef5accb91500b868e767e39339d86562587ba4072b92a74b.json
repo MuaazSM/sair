@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3440.6945000009728,
+ "output": "{\"facts\":[{\"span\":\"Wind bahut tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"Waves aate rahe the pata nahi.\",\"kind\":\"sight\",\"subject\":\"waves\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially complete hua.\",\"entry\":\"Mom and Dad went for a walk. They noticed maybe waves and wind.\"}",
+ "prompt_sha": "0dd34d1bc92ce71963992493e086a8d4fc7770226318b0f1cd7ae06b19309e52",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 88
+}

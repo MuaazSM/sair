@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3015.4950830001326,
+ "output": "{\"facts\": [{\"span\": \"Kids playing cricket\", \"kind\": \"sight\", \"subject\": \"Kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow flew high\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"sure\"}, {\"span\": \"shayad\", \"kind\": \"other\", \"subject\": \"Kuch toh pata chala\", \"certainty\": \"unsure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking. They saw kids playing cricket. A crow flew high, maybe something was found.\"}",
+ "prompt_sha": "a29cc515f137fb38c1f97c7793d57cda5de896bb0d0f3e65b0c0021a53383fc1",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 134
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3981.9205419989885,
+ "output": "{\"facts\": [{\"span\": \"बंदर आज नहीं थे।\", \"kind\": \"animal\", \"subject\": \"बंदर\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"कुएँ के पास बैठ कर थोड़ा आराम किया।\", \"kind\": \"person\", \"subject\": \"थोड़ा आराम किया\", \"certainty\": \"sure\", \"place\": \"कुएँ के पास\"}, {\"span\": \"इमली के पेड़ के नीचे बहुत सारे पत्ते गिरे थे।\", \"kind\": \"plant\", \"subject\": \"पत्ते\", \"certainty\": \"sure\", \"place\": \"इमली के पेड़ के नीचे\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was not looking for a shadow today. He sat near the well and rested a little. There were many leaves fallen under the tamarind tree.\"}",
+ "prompt_sha": "c2487fac2b73c20f6966666cb1224b66febce9b00e9eca1af7a12a01e1e4b475",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 183
+}

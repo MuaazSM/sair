@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4209.478875000059,
+ "output": "{\"facts\": [{\"span\": \"mandir ke bahar aaj phoolwali nahi thi.\", \"kind\": \"sight\", \"subject\": \"phoolwali\", \"certainty\": \"sure\", \"place\": \"mandir ke bahar\"}, {\"span\": \"peepal ke neeche kuch log baithe the.\", \"kind\": \"person\", \"subject\": \"kuch log\", \"certainty\": \"sure\", \"place\": \"peepal ke neeche\"}, {\"span\": \"ek koyal bol rahi thi kahin, bahut der tak.\", \"kind\": \"sound\", \"subject\": \"koyal bol rahi thi\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out today. Outside the mandir was not phoolwali. Some people were sitting under the peepal tree. A crow was talking for a long time.\"}",
+ "prompt_sha": "3e9d193d126285a7538768810ce01c8c0210392117d697973183f8b7d43ddec9",
+ "renderer_fingerprint": null,
+ "tokens_in": 500,
+ "tokens_out": 194
+}

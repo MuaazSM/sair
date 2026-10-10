@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1405.2664169976197,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You, look for birds flying low over the water.\"}",
+ "prompt_sha": "9601506b696a9982a0af7e57fb5af193985f1c84da31a2109654a388445e8197",
+ "renderer_fingerprint": null,
+ "tokens_in": 1058,
+ "tokens_out": 32
+}

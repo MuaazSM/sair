@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4992.080542000622,
+ "output": "{\"facts\":[{\"span\":\"Achha.\",\"kind\":\"weather\",\"subject\":\"good\",\"certainty\":\"sure\"},{\"span\":\"Teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Badi os hai.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel ga raha lagta hai.\",\"kind\":\"animal\",\"subject\":\"cuckoo\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed maybe a cuckoo.\"}",
+ "prompt_sha": "c131981c76f389e4ef114ce0f1b6b39da7f14d0fb5ee58fb59599f33b7af4ab7",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 738,
+ "tokens_out": 148
+}

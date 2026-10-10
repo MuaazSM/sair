@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5267.347667002468,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"Kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow flying high lagta hai.\", \"kind\": \"sight\", \"subject\": \"Crow flying high\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Humne thoda sa pata lagaya.\", \"kind\": \"other\", \"subject\": \"pata lagaya\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Pata nahi uska colour kya tha.\", \"kind\": \"sight\", \"subject\": \"colour\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They saw kids playing cricket and a crow flying high. They managed to find some information, but they were unsure about the colour.\"}",
+ "prompt_sha": "dd46b47f90718204b3a9b89ad1d173c6404c908a00da665b1e743a63c1cdf23e",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 256
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 1999.960708002618,
+ "output": "{\"facts\": [{\"span\": \"drizzle\", \"kind\": \"weather\", \"subject\": \"drizzle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom had a short walk today. There was drizzle, and the dog wasn't there.\"}",
+ "prompt_sha": "67f956665a64f7c7df681171d4246eaa623e983916d71f5e8bace84fe78222ad",
+ "renderer_fingerprint": null,
+ "tokens_in": 478,
+ "tokens_out": 70
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3632.425834002788,
+ "output": "{\"facts\":[{\"span\":\"the flowers along the main path were out\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"main path\"},{\"span\":\"the gardener has done a good job\",\"kind\":\"person\",\"subject\":\"gardener\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked slowly and saw flowers along the main path. He noted the gardener did a good job.\"}",
+ "prompt_sha": "9e43b95387eca0ea782492381dccd14c004e549462341fdb476c56208992f31d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 725,
+ "tokens_out": 95
+}

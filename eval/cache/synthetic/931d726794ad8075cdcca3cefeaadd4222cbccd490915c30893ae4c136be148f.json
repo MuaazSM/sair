@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4857.530999997834,
+ "output": "{\"facts\":[{\"span\":\"Dew bahut zyada hai.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly dikhi.\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"},{\"span\":\"Teen koel probably.\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"unsure\"},{\"span\":\"Yoga count nahi kiya.\",\"kind\":\"other\",\"subject\":\"yoga\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Yoga count nahi kiya.\",\"entry\":\"Dad went for a walk. They saw dew, a butterfly, and maybe three crows. They did not count the yoga people.\"}",
+ "prompt_sha": "43cf5b6cb0526841a996eb856f03325dad2b8f7e387b012af24c3f93805438ea",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 145
+}

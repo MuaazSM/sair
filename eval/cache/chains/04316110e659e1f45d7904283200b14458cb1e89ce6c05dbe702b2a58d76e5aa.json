@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4338.621333001356,
+ "output": "{\"facts\":[{\"span\":\"the banyan was full of birds today\",\"kind\":\"plant\",\"subject\":\"banyan\",\"certainty\":\"sure\"},{\"span\":\"a lot of chirping\",\"kind\":\"sound\",\"subject\":\"chirping\",\"certainty\":\"sure\"},{\"span\":\"we couldn't see which birds they were\",\"kind\":\"person\",\"subject\":\"birds\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"we couldn't see which birds they were\",\"entry\":\"Mom and Dad went for a walk. They heard a lot of chirping from the banyan tree but couldn't identify the birds.\"}",
+ "prompt_sha": "cdd6847338658eb6233f9f2ff22b95df65abc285080675eed089b43c6c53faf9",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 734,
+ "tokens_out": 129
+}

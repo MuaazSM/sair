@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3846.5071249956964,
+ "output": "{\"facts\":[{\"span\":\"i saw a bird with a long tail on the school wall\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"school wall\"},{\"span\":\"it flew off before i could see properly\",\"kind\":\"sight\",\"subject\":\"bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and saw a bird with a long tail on the school wall. He noticed maybe the bird flew away before he could see it properly.\"}",
+ "prompt_sha": "7e80435248eff51453c1b0edea741fa62a57ee88bf77d62192a62a42155ec47c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 724,
+ "tokens_out": 111
+}

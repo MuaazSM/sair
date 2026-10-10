@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2500.1246249994438,
+ "output": "{\"facts\": [{\"span\": \"the flowers were out on the bush outside the corner house\", \"kind\": \"plant\", \"subject\": \"the flowers\", \"certainty\": \"sure\", \"place\": \"the bush outside the corner house\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out walking today. The flowers were out on the bush outside the corner house, and they both liked them. They didn't stop for long because it looked like it might rain, maybe.\"}",
+ "prompt_sha": "751dd5df6d80fec9f0c347bbc08c2f324252c476e4332ef75cc010d10ebe6646",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 110
+}

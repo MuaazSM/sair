@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3057.797916997515,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha tha, you know?\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The wind is strong.\", \"kind\": \"sound\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Rain is falling.\", \"kind\": \"weather\", \"subject\": \"Rain\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a nice walk today. Dad said the wind is strong. Mom thought that Rain is falling.\"}",
+ "prompt_sha": "70d162a4611ca822bd0f155128cb9ad79889863b604b07acd2367ee17036597a",
+ "renderer_fingerprint": null,
+ "tokens_in": 557,
+ "tokens_out": 148
+}

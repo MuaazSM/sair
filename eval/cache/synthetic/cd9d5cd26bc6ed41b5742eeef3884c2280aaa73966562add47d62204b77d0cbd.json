@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4792.60179099947,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Buses aate jaate the.\",\n\"kind\": \"sound\",\n\"subject\": \"Buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"teen mist thi.\",\n\"kind\": \"sight\",\n\"subject\": \"mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Sparrow the pata nahi was flying high.\",\n\"kind\": \"animal\",\n\"subject\": \"Sparrow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Buses count kiya.\",\n\"kind\": \"other\",\n\"subject\": \"Buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Buses count kiya.\",\n\"entry\": \"Mom had an evening walk, which was nice. Buses were coming and going. There was mist, and a sparrow was flying high, maybe. I counted the buses.\"\n}\n```",
+ "prompt_sha": "3923f7c8cda6bd4ea0b1b89bd7259744c65b0bf430b7064a6a3d13e4a793037e",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 250
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1705.5564580005012,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\", \"f5_1\"], \"text\": \"Notice if the champa near the clubhouse still has flowers.\"}",
+ "prompt_sha": "14899492be520b705802ebc3c2b1023d27132750b34889400b86f645cb397531",
+ "renderer_fingerprint": null,
+ "tokens_in": 1006,
+ "tokens_out": 39
+}

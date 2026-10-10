@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3526.072999997268,
+ "output": "{\"facts\":[{\"span\":\"some bird was making a loud noise on the water tank\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"unsure\"},{\"span\":\"watchman said it comes every day\",\"kind\":\"person\",\"subject\":\"watchman\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a walk and heard a loud noise from a bird on the water tank. The watchman said it comes every day.\"}",
+ "prompt_sha": "93da387fdc81cd14861ea908248a58d5f6e4df3c34e79bedb8adec43c66f35b6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 729,
+ "tokens_out": 98
+}

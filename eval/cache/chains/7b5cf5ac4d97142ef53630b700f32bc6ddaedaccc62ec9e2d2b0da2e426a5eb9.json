@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 1755.801249997603,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a short walk but her back and temple hurt.\"}",
+ "prompt_sha": "a797aced164850c8981c30fa10f06cc0eaedf3aa0b94142591a67b49daac4e25",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 715,
+ "tokens_out": 32
+}

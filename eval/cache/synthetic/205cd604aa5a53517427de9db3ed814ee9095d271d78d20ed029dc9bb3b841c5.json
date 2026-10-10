@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4955.067417002283,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Mist bahut thick thi\",\n\"kind\": \"weather\",\n\"subject\": \"Mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Teen sparrows dekhe shayad\",\n\"kind\": \"animal\",\n\"subject\": \"sparrows\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Chai ki smell aayi\",\n\"kind\": \"smell\",\n\"subject\": \"Chai ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Buses gine, maine count kiya\",\n\"kind\": \"person\",\n\"subject\": \"maine count kiya\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Buses gine, maine count kiya.\",\n\"entry\": \"Mom had an evening walk. The mist was very thick. I saw maybe three sparrows. The smell of tea came. I counted the buses.\"\n}\n```",
+ "prompt_sha": "61aa44ca3d06834e5242dcfea368376b15c8a667140e8a5882561c6194e0b956",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 257
+}

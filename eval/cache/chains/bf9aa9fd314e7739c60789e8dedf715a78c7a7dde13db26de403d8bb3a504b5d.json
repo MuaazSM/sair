@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1474.098167000193,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"Notice the leaves on the mango tree and listen for a sound from the path.\"}",
+ "prompt_sha": "618f37d87796d4c7d324a1ec4f527e63cc8e71f7a7404cd613eab3dd12c6ce23",
+ "renderer_fingerprint": null,
+ "tokens_in": 773,
+ "tokens_out": 39
+}

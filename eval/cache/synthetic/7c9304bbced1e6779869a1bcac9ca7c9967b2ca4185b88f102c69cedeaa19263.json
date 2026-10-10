@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3873.4263330006797,
+ "output": "{\"facts\":[{\"span\":\"teen yoga group.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"do butterflies.\",\"kind\":\"animal\",\"subject\":\"butterflies\",\"certainty\":\"sure\"},{\"span\":\"I think koel ga raha hai.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished the walk. They saw a yoga group and butterflies. Maybe a koel was singing.\"}",
+ "prompt_sha": "9d5ef217e84334a3fe0f21c31da74f853970b59de3c839269cc72ff9636c05cc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 729,
+ "tokens_out": 107
+}

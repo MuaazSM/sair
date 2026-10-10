@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 742.3864170013985,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice any smell near the path.\"}",
+ "prompt_sha": "38c28b13e0cf351f9a9c831c87c4de32af2b359360d848d9f9afbe1f14aef26b",
+ "renderer_fingerprint": null,
+ "tokens_in": 544,
+ "tokens_out": 26
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2827.963625000848,
+ "output": "{\"facts\": [{\"span\": \"the wind was strong\", \"kind\": \"weather\", \"subject\": \"the wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the coconut palms along the wall were bending\", \"kind\": \"plant\", \"subject\": \"the coconut palms\", \"certainty\": \"sure\", \"place\": \"along the wall\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad walked on the sea-face promenade. The wind was strong, and the coconut palms along the wall were bending. They did not eat anything, just walked.\"}",
+ "prompt_sha": "d3da99bc02098ef3464be861abf1f93cc9c6945df83d4f2d11833482ec84fab2",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 129
+}

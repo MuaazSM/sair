@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4917.5224999999045,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Buses aage se aa rahi thi.\",\n\"kind\": \"sight\",\n\"subject\": \"Buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Mist bahut thick thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Sparrow the bird pata nahi was sitting still\",\n\"kind\": \"animal\",\n\"subject\": \"Sparrow the bird\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bus count kar diya.\",\n\"kind\": \"other\",\n\"subject\": \"Bus count\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Bus count kar diya.\",\n\"entry\": \"Mom finished the evening walk. Buses were coming from ahead. The mist was very thick. Sparrow the bird was sitting still, maybe. She drank three chai. She counted the buses.\"\n}\n```",
+ "prompt_sha": "1a1e31846f9a763e44325fc56cfea07b68231ed1d5ca72154be1acbe3e9b874b",
+ "renderer_fingerprint": null,
+ "tokens_in": 500,
+ "tokens_out": 258
+}

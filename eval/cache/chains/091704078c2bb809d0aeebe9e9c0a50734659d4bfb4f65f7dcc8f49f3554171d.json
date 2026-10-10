@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4120.325125000818,
+ "output": "{\"facts\":[{\"span\":\"aaj koyal phir se thi\",\"kind\":\"animal\",\"subject\":\"swallows\",\"certainty\":\"sure\"},{\"span\":\"peepal pe hi lag rahi thi\",\"kind\":\"plant\",\"subject\":\"peepal\",\"certainty\":\"sure\"},{\"span\":\"phoolwali ke paas aaj gulab bhi the\",\"kind\":\"plant\",\"subject\":\"gulab\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked and saw swallows on peepal and gulab near phoolwali.\"}",
+ "prompt_sha": "a44c1d24b005cf97a68084cbbf5097cb93551611973011e29cf210412adb735b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 742,
+ "tokens_out": 120
+}

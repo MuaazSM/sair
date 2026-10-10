@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3963.6908329994185,
+ "output": "{\"facts\":[{\"span\":\"Yoga group, they are there.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Os bahut hai.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"unsure\"},{\"span\":\"Paanch butterfly.\",\"kind\":\"animal\",\"subject\":\"butterflies\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya.\",\"entry\":\"Dad went for an evening walk. They saw a yoga group and maybe many people. They also saw five butterflies.\"}",
+ "prompt_sha": "5c73f19d5b7a36ba25932cf4e7e1e54c0218d8f09a19117acb62243e3e6bfc2b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 113
+}

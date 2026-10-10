@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3719.8562500052503,
+ "output": "{\"facts\": [{\"span\": \"the champa near the clubhouse had a few flowers\", \"kind\": \"plant\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"the clubhouse\"}, {\"span\": \"nice smell\", \"kind\": \"smell\", \"subject\": \"smell\", \"certainty\": \"sure\"}, {\"span\": \"the watchman was sweeping the entrance\", \"kind\": \"person\", \"subject\": \"watchman\", \"certainty\": \"sure\"}, {\"span\": \"a cat ran under the cars\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Dad noticed the champa near the clubhouse had a few flowers and there was a nice smell. The watchman was sweeping the entrance, and a cat ran under the cars.\"}",
+ "prompt_sha": "0cba3b3a2d928a61b9e7ed020e1035a27e353f48d2206929182df5f008b95847",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 185
+}

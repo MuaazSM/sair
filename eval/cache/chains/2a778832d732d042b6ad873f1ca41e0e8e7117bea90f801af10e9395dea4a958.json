@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1027.9593749983178,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You thought you heard some birds flying low over the water. Can you see if you can spot any birds?\"}",
+ "prompt_sha": "8abbb3c097f455283b79bf15f3379911ced28442db508d9fb839e3950a8ea07c",
+ "renderer_fingerprint": null,
+ "tokens_in": 1081,
+ "tokens_out": 43
+}

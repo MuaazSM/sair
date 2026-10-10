@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5375.622667001153,
+ "output": "{\"facts\": [{\"span\": \"Vegetable stalls visible\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell strong\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Hen near the edge\", \"kind\": \"animal\", \"subject\": \"Hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas the sky लगता है were hanging low\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Not much different\", \"kind\": \"sight\", \"subject\": \"Not much different\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the evening walk. Vegetable stalls were visible and the bhutta ki smell was strong. A vendor was standing there and a hen was near the edge. The sky umbrellas were hanging low, and shop shutters were closed. He looked around and said not much different.\"}",
+ "prompt_sha": "1a89b1e04f44f897f9d1790442754d27134b0600c2b96fa5bcb95e8e082070d3",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 286
+}

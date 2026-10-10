@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3077.124082999944,
+ "output": "{\"facts\": [{\"span\": \"the jamun tree had some fruit on the ground\", \"kind\": \"sight\", \"subject\": \"jamun tree\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the milkman's cycle bell rang twice\", \"kind\": \"sound\", \"subject\": \"cycle bell\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked today. They noticed that the jamun tree had some fruit on the ground, and they stepped around it. The milkman's cycle bell rang twice as they walked to the end of the lane.\"}",
+ "prompt_sha": "e82935be0e64d0044d3fca1cc0bc8c607c5299cbe267e207cc6d6b8e6c795a18",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 140
+}

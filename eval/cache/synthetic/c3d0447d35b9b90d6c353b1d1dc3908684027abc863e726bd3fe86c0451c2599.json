@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3909.8070000000007,
+ "output": "{\"facts\": [{\"span\": \"yoga group, woh the.\", \"kind\": \"person\", \"subject\": \"yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"paanch butterfly dekhe.\", \"kind\": \"sight\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Counting people was forgotten.\", \"kind\": \"other\", \"subject\": \"Counting people\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"pata nahi kitne the.\", \"kind\": \"other\", \"subject\": \"kitne the\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. There was a yoga group, and there were many. I saw five butterflies. Counting people was forgotten, and I don't know how many there were.\"}",
+ "prompt_sha": "821483501808f5a379cda8b16dc5034528d663655260a64854e473e54866f8c1",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 197
+}

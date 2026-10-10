@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6714.801624999382,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow flying high lagta hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Crow flying high\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Humne thoda sa pata lagaya.\",\n\"kind\": \"other\",\n\"subject\": \"pata lagaya\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Pata nahi uska colour kya tha.\",\n\"kind\": \"other\",\n\"subject\": \"colour\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Last time you noticed kids near the school gate. Can you find out what they were doing?\",\n\"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They saw kids playing cricket. They also thought a crow was flying high. They managed to find some information, but they were unsure about the colour.\"\n}\n```",
+ "prompt_sha": "28d1ba8b385a4847b8bdaa70b897bccf301f3e993810b9ecf7cdf72c17744a34",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 338
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3709.4896669987065,
+ "output": "{\"facts\":[{\"span\":\"lagta hai Crow flew high.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Lagta hai kuch dekha.\",\"kind\":\"sight\",\"subject\":\"something\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Partially did the mission.\",\"entry\":\"Mom and Dad went for an evening walk. They thought maybe a crow flew high and maybe they saw something. They partially did the mission.\"}",
+ "prompt_sha": "7e398455d47babe8a4d2c407246b5f0616d9e41e0d89ece45c275f54ae561708",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 728,
+ "tokens_out": 99
+}

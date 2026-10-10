@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3202.5693750038045,
+ "output": "{\"facts\": [{\"span\": \"there were lots of crabs on the rocks when the tide went out, small ones, running around.\", \"kind\": \"animal\", \"subject\": \"lots of crabs\", \"certainty\": \"sure\", \"place\": \"the rocks\"}, {\"span\": \"we watched from the wall.\", \"kind\": \"sight\", \"subject\": \"watched from the wall\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were out walking today. They mentioned there were lots of crabs on the rocks when the tide went out, small ones, running around. We watched from the wall.\"}",
+ "prompt_sha": "5702014470bd0deba2a3dc5ec717a052d0c3ffc967df7a105c76fe22413fd5d5",
+ "renderer_fingerprint": null,
+ "tokens_in": 488,
+ "tokens_out": 140
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3302.315583001473,
+ "output": "{\"facts\": [{\"span\": \"Mist bahut thick thi\", \"kind\": \"weather\", \"subject\": \"Mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Sparrow ud raha tha\", \"kind\": \"sight\", \"subject\": \"Sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Aaj hawa kaafi thandi thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom had an evening walk. The mist was very thick. It seems like a Sparrow was flying. The wind was quite cold today.\"}",
+ "prompt_sha": "4eae7fd2611c0334175410d03fb4c5566e276bb7bafa5c5e2976f324cbd96a23",
+ "renderer_fingerprint": null,
+ "tokens_in": 553,
+ "tokens_out": 151
+}

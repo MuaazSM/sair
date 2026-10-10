@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2169.8547919986595,
+ "output": "{\"facts\": [{\"span\": \"मोगरा की महक है हो सकता है।\", \"kind\": \"smell\", \"subject\": \"मोगरा की महक\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom has returned. There is the smell of mogra maybe. Nothing and nothing.\"}",
+ "prompt_sha": "739a20266d36f6a888a8044a79ef55d37c806a68a5face515caa09294e5a7d8c",
+ "renderer_fingerprint": null,
+ "tokens_in": 484,
+ "tokens_out": 81
+}

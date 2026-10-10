@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3364.130625002872,
+ "output": "{\"facts\":[{\"span\":\"Aaj hawa kaafi thandi thi, bahut achha laga.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"kids playing cricket.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Humne thoda sa pata lagaya.\",\"entry\":\"Mom and Dad went for a walk. They noticed kids playing cricket.\"}",
+ "prompt_sha": "2f1aec51457c94d830411a3146587551faec71e5864b9f62874482d770ea130d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 752,
+ "tokens_out": 91
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5267.482916999143,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Crow.\",\n\"kind\": \"person\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Humne thoda sa pata kiya.\",\n\"kind\": \"other\",\n\"subject\": \"pata kiya\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad walked today. The air was quite cold, and it felt very good. They mentioned that the kids were playing cricket. Mom thought maybe it was a Crow, and Dad said they had found a little bit of information.\"\n}\n```",
+ "prompt_sha": "085f10b877ad0b5d81ac4565af3d33c771c76a065a4f4e098fe38fbbc3e736a9",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 263
+}

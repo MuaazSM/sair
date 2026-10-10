@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 1811.1374170002819,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":\"nothing new today.\",\"entry\":\"Mom and Dad went for a walk but found nothing new today.\"}",
+ "prompt_sha": "a13bde2ac8b68e1627503202801ab6837c52bc1d867e89ca32c75497b5534bb6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 716,
+ "tokens_out": 34
+}

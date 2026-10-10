@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5879.0962919993035,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Walk bahut sukoon dene wala tha.\",\n\"kind\": \"sight\",\n\"subject\": \"Walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow flew over.\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Humne kuch dekha hi, par poora mission nahi hua.\",\n\"kind\": \"other\",\n\"subject\": \"mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Pata nahi uska colour kya tha.\",\n\"kind\": \"sight\",\n\"subject\": \"colour\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad had a very peaceful walk. The kids were playing cricket. Maybe a crow flew over. We saw something, but the whole mission was not done. I don't know what colour the dinner was.\"\n}\n```",
+ "prompt_sha": "dfe4ffa6796c73dd43fd00a7a189ce0696bfcf80a449ee3f0b822e62dbbeaded",
+ "renderer_fingerprint": null,
+ "tokens_in": 504,
+ "tokens_out": 306
+}

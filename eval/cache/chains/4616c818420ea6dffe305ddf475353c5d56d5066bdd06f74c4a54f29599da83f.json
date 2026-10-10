@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 843.427084000723,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"You, look at the cobbler under the peepal tree.\"}",
+ "prompt_sha": "38d5b55718088f6bbb1a8d813a9f30c010e594bedda70c65b2ce262842d30cd6",
+ "renderer_fingerprint": null,
+ "tokens_in": 1357,
+ "tokens_out": 40
+}

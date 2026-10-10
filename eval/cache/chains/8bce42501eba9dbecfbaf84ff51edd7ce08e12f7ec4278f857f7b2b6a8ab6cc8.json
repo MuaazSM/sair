@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3627.3527089979325,
+ "output": "{\"facts\": [{\"span\": \"market mein bahut bheed thi aaj\", \"kind\": \"sight\", \"subject\": \"bheed\", \"certainty\": \"sure\", \"place\": \"market\"}, {\"span\": \"festival aa raha hai na\", \"kind\": \"sight\", \"subject\": \"festival\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lights lagi thi shops pe\", \"kind\": \"sight\", \"subject\": \"lights\", \"certainty\": \"sure\", \"place\": \"shops\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was at the market today. There was a lot of crowd because a festival was coming. The lights were on on the shops. He left quickly.\"}",
+ "prompt_sha": "f4cd1505c818e6b54ffea219efe10c9684ee8e864252895ed6a457a04f6e62c7",
+ "renderer_fingerprint": null,
+ "tokens_in": 497,
+ "tokens_out": 158
+}

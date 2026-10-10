@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3002.930083999672,
+ "output": "{\"facts\": [{\"span\": \"Butterfly dekhi.\", \"kind\": \"sight\", \"subject\": \"Butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel ga raha लगता है.\", \"kind\": \"sound\", \"subject\": \"Koel ga raha\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission bhool gaya.\", \"kind\": \"other\", \"subject\": \"Mission bhool gaya\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad finished the evening walk. They saw a butterfly. It seems the Koel is singing. Dad forgot the mission.\"}",
+ "prompt_sha": "f76d9502c611b9b648faa83d87ee94aea676d6b5e5e7d0d59a5a747d0271d029",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 150
+}

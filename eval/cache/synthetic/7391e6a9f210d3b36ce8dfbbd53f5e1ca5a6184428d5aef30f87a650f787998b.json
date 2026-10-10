@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4286.877833001199,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids playing cricket\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow flew high\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"shayad\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kuch toh pata chala\",\n\"kind\": \"other\",\n\"subject\": \"Kuch\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Last time you noticed kids near the school gate. Can you find out what they were doing?\",\n\"entry\": \"Mom and Dad were walking. They saw kids playing cricket. A crow flew high, maybe. They said that something was found out.\"\n}\n```",
+ "prompt_sha": "89a5b45629d6cf6876d8cc38a6117cb7b76a2b24cc231809d5fb85ed41e64ca0",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 210
+}

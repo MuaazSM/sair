@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1192.4379160009266,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You, listen for the sound of the leaves moving on the mango tree.\"}",
+ "prompt_sha": "1c10edd5c16da6c171c97ac781f895cc79368ce15f158d0cbdbf9515f44cfcaa",
+ "renderer_fingerprint": null,
+ "tokens_in": 775,
+ "tokens_out": 36
+}

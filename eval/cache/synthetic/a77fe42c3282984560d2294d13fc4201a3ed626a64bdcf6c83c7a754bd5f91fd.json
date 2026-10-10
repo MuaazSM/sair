@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3436.104542000976,
+ "output": "{\"facts\":[{\"span\":\"wind bahut tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"it is windy again.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"it is windy again.\",\"entry\":\"Mom and Dad went for a walk. They noticed the wind was very strong and it is windy again.\"}",
+ "prompt_sha": "ee66c5a3ede0557069d1f6c473ae1598b34db9bdd42b950a31ee38b020087e64",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 785,
+ "tokens_out": 83
+}

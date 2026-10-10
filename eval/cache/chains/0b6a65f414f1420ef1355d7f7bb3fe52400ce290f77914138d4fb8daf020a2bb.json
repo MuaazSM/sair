@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4194.864541001152,
+ "output": "{\"facts\":[{\"span\":\"aaj koyal phir se thi\",\"kind\":\"plant\",\"subject\":\"marigold\",\"certainty\":\"sure\"},{\"span\":\"peepal pe hi lag rahi thi\",\"kind\":\"plant\",\"subject\":\"marigold\",\"certainty\":\"sure\"},{\"span\":\"phoolwali ke paas aaj gulab bhi the\",\"kind\":\"plant\",\"subject\":\"rose\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom walked and saw marigold and rose. She stopped for a while.\"}",
+ "prompt_sha": "df4b3d4519ddac7519a3a79af7c17169bc47f24768900641818624f8071bac73",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 745,
+ "tokens_out": 117
+}

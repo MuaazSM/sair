@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5212.479207999422,
+ "output": "{\"facts\":[{\"span\":\"Aaj hawa kaafi thandi thi, bahut achha laga.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"Kids playing cricket.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"Crow flying high lagta hai.\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Humne thoda sa pata lagaya.\",\"kind\":\"sight\",\"subject\":\"pata\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Humne thoda sa pata lagaya.\",\"entry\":\"Mom and Dad went for a walk. They noticed kids playing cricket and maybe a crow flying high. They found out something but didn't know the color.\"}",
+ "prompt_sha": "dd46b47f90718204b3a9b89ad1d173c6404c908a00da665b1e743a63c1cdf23e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 761,
+ "tokens_out": 158
+}

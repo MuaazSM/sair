@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3965.417458995944,
+ "output": "{\"facts\": [{\"span\": \"अमलतास के फूल अब कम हो गए हैं।\", \"kind\": \"plant\", \"subject\": \"अमलतास के फूल\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"वॉचमैन के केबिन के पास दोनों कुत्ते सो रहे थे।\", \"kind\": \"animal\", \"subject\": \"दोनों कुत्ते\", \"certainty\": \"sure\", \"place\": \"वॉचमैन के केबिन के पास\"}, {\"span\": \"हवा अच्छी थी।\", \"kind\": \"weather\", \"subject\": \"हवा\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom was out for a walk today. She mentioned that the amaltas flowers have reduced. Both dogs were sleeping near the watchman's cabin. The air was good.\"}",
+ "prompt_sha": "5586c4dd14ad54c66752cac4054795b50e1d76fb441745a6f16dfe2f48c0e7c6",
+ "renderer_fingerprint": null,
+ "tokens_in": 489,
+ "tokens_out": 182
+}

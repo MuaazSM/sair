@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4746.250667001732,
+ "output": "{\"facts\": [{\"span\": \"Market was busy.\", \"kind\": \"sight\", \"subject\": \"Market\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Vegetable stalls visible.\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta smell strong.\", \"kind\": \"smell\", \"subject\": \"Bhutta\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Hen seen.\", \"kind\": \"animal\", \"subject\": \"Hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas there शायद.\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Shop shutters closed.\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad walked today. The market was busy with vegetable stalls visible. The bhutta smell was strong, and a hen was seen. Maybe there were umbrellas. Shop shutters were closed. Mission partially done.\"}",
+ "prompt_sha": "e6d87d48e56b0718dce41b4350345208c9ed4c63fc27b37e41a03114737119a8",
+ "renderer_fingerprint": null,
+ "tokens_in": 538,
+ "tokens_out": 259
+}

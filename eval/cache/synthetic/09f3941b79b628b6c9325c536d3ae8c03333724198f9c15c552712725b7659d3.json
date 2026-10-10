@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4833.478415999707,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Vegetable stalls visible\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bhutta ki smell strong\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters closed\",\n\"kind\": \"sight\",\n\"subject\": \"Shop shutters\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kuch alag nahi\",\n\"kind\": \"sight\",\n\"subject\": \"Kuch alag\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Market dekha. Kuch alag nahi.\",\n\"entry\": \"Dad was good today. Vegetable stalls were visible and the bhutta ki smell was strong. I saw the market, but nothing was different. That's all for now.\"\n}\n```",
+ "prompt_sha": "356ed707ee435a23b30047d0b6e5fe54583b2387be820ccf5f3c253a72e6f502",
+ "renderer_fingerprint": null,
+ "tokens_in": 496,
+ "tokens_out": 249
+}

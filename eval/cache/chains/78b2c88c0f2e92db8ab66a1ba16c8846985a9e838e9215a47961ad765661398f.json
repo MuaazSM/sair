@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 896.6015000005427,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the sky.\"}",
+ "prompt_sha": "0c3cc47ec609a584705dc454caf543fb35e64970e4322c90c8c5a6b00f90dd30",
+ "renderer_fingerprint": null,
+ "tokens_in": 533,
+ "tokens_out": 25
+}

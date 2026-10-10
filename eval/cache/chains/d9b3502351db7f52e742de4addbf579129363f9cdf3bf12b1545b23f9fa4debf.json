@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 757.6339170009305,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice any smell near the flower seller's garlands.\"}",
+ "prompt_sha": "a2d3cc984da53c8fd9af80f7e7bb77d71ae0ba4ef95dba089360b91a15d97189",
+ "renderer_fingerprint": null,
+ "tokens_in": 575,
+ "tokens_out": 30
+}

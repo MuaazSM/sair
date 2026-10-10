@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5298.11937499835,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls bahut the.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan tha.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Maine ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters band the.\",\"kind\":\"other\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Kuch alag dikha, par poora mission nahi hua.\",\"entry\":\"Dad went for a walk and looked at the market. They saw vegetable stalls, a vendor, a hen, and shutters. They noticed something different but did not finish the mission.\"}",
+ "prompt_sha": "e70287f1770920d6eb9bcc69b6c057334bfbadf01b3876c23bb30db005253784",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 801,
+ "tokens_out": 160
+}

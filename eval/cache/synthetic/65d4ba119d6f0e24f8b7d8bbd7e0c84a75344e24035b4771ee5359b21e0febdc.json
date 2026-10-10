@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4499.770124999486,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids there hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Imli ka ped dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"Imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow ne udna shuru kiya shayad Crow ne aasmaan mein\",\n\"kind\": \"sound\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Kids there hain.\",\n\"entry\": \"Mom and Dad finished the walk and felt very good. They saw kids there. They also saw an Imli ka ped. Maybe the crow started flying in the sky.\"\n}\n```",
+ "prompt_sha": "31756bfa0787a20185a7602ca86675daa963fd5a05933aad4546d77d6c640c6e",
+ "renderer_fingerprint": null,
+ "tokens_in": 520,
+ "tokens_out": 210
+}

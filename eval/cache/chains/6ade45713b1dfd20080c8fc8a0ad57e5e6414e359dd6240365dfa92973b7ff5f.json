@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 970.9777089992713,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_2\"], \"text\": \"You, look at the road and see if there are any wet spots.\"}",
+ "prompt_sha": "512dfb5d425e82f9ad029023102c2b51a5545b02d4a1922e5905f0169f775d35",
+ "renderer_fingerprint": null,
+ "tokens_in": 1172,
+ "tokens_out": 36
+}

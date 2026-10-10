@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4202.187457998662,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha tha, you know?\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"place\": \"\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"The wind is strong.\",\n\"kind\": \"weather\",\n\"subject\": \"wind\",\n\"place\": \"\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"lagta hai Rain is falling.\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"place\": \"\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"We only partially did the mission.\",\n\"entry\": \"Mom and Dad had a very good walk today. Dad said the wind is strong. Mom thought that it seems like rain is falling. They only partially did the mission.\"\n}\n```",
+ "prompt_sha": "8b48db2ea21db1cbddb98f58c31407d46fa79de52e5085d0de56a5ac4eeb79e2",
+ "renderer_fingerprint": null,
+ "tokens_in": 521,
+ "tokens_out": 210
+}

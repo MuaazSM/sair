@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5120.793916001276,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow is near lagta hai.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Humne thoda sa pata lagaya.\",\n\"kind\": \"other\",\n\"subject\": \"pata lagaya\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad had a walk today. The wind was quite cold, which felt very good. The kids were playing cricket. It seemed like a crow was near. We managed to find a little information.\"\n}\n```",
+ "prompt_sha": "81072d3492ef510458244709cf99369af49110672645a7921769ff074a8356c8",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 266
+}

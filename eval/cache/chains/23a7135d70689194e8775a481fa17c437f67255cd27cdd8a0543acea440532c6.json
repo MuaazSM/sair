@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2021.9826249958714,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_1\"], \"text\": \"You, look at the threads on the peepal tree.\"}",
+ "prompt_sha": "894f2f0e3f2d4575c077c5d87d6a5c520efa3c13e9f8debd0e4cae9a39134466",
+ "renderer_fingerprint": null,
+ "tokens_in": 1491,
+ "tokens_out": 33
+}

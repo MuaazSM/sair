@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1313.4304170016549,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact5\"], \"text\": \"Notice the flowers floating in the temple pond.\"}",
+ "prompt_sha": "144d08bdef5779410cb68f37d8ea9854e794b4daf3486fe862a46b2822b2b861",
+ "renderer_fingerprint": null,
+ "tokens_in": 832,
+ "tokens_out": 32
+}

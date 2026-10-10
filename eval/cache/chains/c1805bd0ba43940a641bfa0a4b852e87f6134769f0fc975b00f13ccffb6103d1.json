@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2564.27433299541,
+ "output": "{\"facts\": [{\"span\": \"आज कंपाउंड में एक बिल्ली के बच्चे थे\", \"kind\": \"animal\", \"subject\": \"बिल्ली के बच्चे\", \"certainty\": \"sure\", \"place\": \"कंपाउंड\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. She mentioned that there were some kittens in the compound, hidden in the bush. Their sounds were audible.\"}",
+ "prompt_sha": "ec66c834e564daa314ebbc9988483357a1307815117512f933be62d04b59b124",
+ "renderer_fingerprint": null,
+ "tokens_in": 495,
+ "tokens_out": 93
+}

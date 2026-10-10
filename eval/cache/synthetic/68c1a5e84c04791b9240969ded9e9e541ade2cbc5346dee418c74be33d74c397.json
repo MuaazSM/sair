@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3330.985958000383,
+ "output": "{\"facts\": [{\"span\": \"Teen mist dikh rahi thi\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"shayad Sparrow ud raha tha\", \"kind\": \"animal\", \"subject\": \"Sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Count ki mission puri ho gayi\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom finished the evening walk. Buses were going ahead. Three mists were visible. Maybe Sparrow was flying. Count's mission was completed.\"}",
+ "prompt_sha": "fc6c0d1437bf80e32391979f1842c539a9e767415f836e0538c0ee8f4ed2047c",
+ "renderer_fingerprint": null,
+ "tokens_in": 525,
+ "tokens_out": 153
+}

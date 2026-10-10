@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6684.325875001377,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"vegetable stalls\",\"certainty\":\"sure\",\"place\":\"visible\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Vendor standing there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen near the edge.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas the sky लगता है were hanging low.\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\",\"place\":\"sky\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"other\",\"subject\":\"shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Not much different.\",\"entry\":\"Dad went for an evening walk. They saw vegetable stalls, smelled bhutta, saw a vendor and a hen. Umbrellas were hanging low. Shop shutters were closed. They looked around but found not much different.\"}",
+ "prompt_sha": "bda8c82a35253ebab261b46dcf89dd69e1199222a4261a127951e33435fae0ac",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 799,
+ "tokens_out": 213
+}

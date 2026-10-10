@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1095.1029579991882,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You, notice the market road.\"}",
+ "prompt_sha": "3865563ec589e7091ac7bc7b32c0ae79ef021929e8bf87b0bcca701a0acb0723",
+ "renderer_fingerprint": null,
+ "tokens_in": 612,
+ "tokens_out": 34
+}

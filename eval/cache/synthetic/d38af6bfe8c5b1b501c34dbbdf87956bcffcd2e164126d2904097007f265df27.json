@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5562.771749999229,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"I saw five jasmine plants\",\n\"kind\": \"sight\",\n\"subject\": \"five jasmine plants\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There was one goat\",\n\"kind\": \"animal\",\n\"subject\": \"one goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw a cat\",\n\"kind\": \"animal\",\n\"subject\": \"a cat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The dew probably was fading fast\",\n\"kind\": \"weather\",\n\"subject\": \"the dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"I heard the garbage truck\",\n\"kind\": \"sound\",\n\"subject\": \"the garbage truck\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine again.\",\n\"entry\": \"Dad had a walk today. He saw five jasmine plants and there was one goat. He also saw a cat. He heard the garbage truck and mentioned that the dew probably was fading fast. He checked on the jasmine again.\"\n}\n```",
+ "prompt_sha": "0e398a519c0a43dcd9cad97a8ea34f254f4447f381130d0da2e94e5bd1a30fc8",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 296
+}

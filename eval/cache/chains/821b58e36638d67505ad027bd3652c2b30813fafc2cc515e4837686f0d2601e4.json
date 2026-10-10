@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 674.6749999983876,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\"], \"text\": \"You, listen for a koyal near the path.\"}",
+ "prompt_sha": "855e3ddc01e76c6050222d90dfa1c1d96dc00d55bc44bc64ead36fdfac7b9744",
+ "renderer_fingerprint": null,
+ "tokens_in": 977,
+ "tokens_out": 32
+}

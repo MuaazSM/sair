@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3281.217750001815,
+ "output": "{\"facts\":[{\"span\":\"बस थोड़ी देर बैठी सीढ़ियों पर.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\"},{\"span\":\"कुत्ता फिर था.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"null\",\"entry\":\"Mom sat on the steps for a while. They saw a dog but did not find people.\"}",
+ "prompt_sha": "4151db22224cdb1b8417b2848294be20d616d9d9d35aa4a60403c011b74ed25b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 722,
+ "tokens_out": 88
+}

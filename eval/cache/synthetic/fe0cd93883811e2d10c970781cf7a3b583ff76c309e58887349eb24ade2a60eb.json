@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5223.481000000902,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The champa is also present.\",\n\"kind\": \"plant\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw three goat.\",\n\"kind\": \"animal\",\n\"subject\": \"three goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The cat is near the gate.\",\n\"kind\": \"animal\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"gate\"\n},\n{\n\"span\": \"I heard the garbage truck.\",\n\"kind\": \"sound\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine.\",\n\"entry\": \"Dad had an evening walk. The jasmine is there and the champa is also present. He saw three goat and the cat is near the gate. He heard the garbage truck.\"\n}\n```",
+ "prompt_sha": "7f5bea125cbe8c466c19c3fab4dfc0d9d8679b33419140213c07d2337b508d7a",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 294
+}

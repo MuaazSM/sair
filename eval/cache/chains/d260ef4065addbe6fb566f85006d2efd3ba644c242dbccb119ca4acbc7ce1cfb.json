@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2217.3594579981,
+ "output": "{\"facts\": [{\"span\": \"short walk today, my back hurt\", \"kind\": \"sound\", \"subject\": \"back hurt\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom had a short walk today and mentioned that her back hurt, specifically her temple and back.\"}",
+ "prompt_sha": "2db43f0897a210c18a3819734d36d9bc6421554549adca500f6e1c56e7cda53f",
+ "renderer_fingerprint": null,
+ "tokens_in": 477,
+ "tokens_out": 75
+}

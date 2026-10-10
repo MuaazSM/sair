@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3773.5209170023154,
+ "output": "{\"facts\": [{\"span\": \"it was windy\", \"kind\": \"weather\", \"subject\": \"windy\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"my knee was a bit stiff\", \"kind\": \"person\", \"subject\": \"knee\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the bench near the gate was wet\", \"kind\": \"sight\", \"subject\": \"bench\", \"certainty\": \"sure\", \"place\": \"near the gate\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. It was windy, and she did one round. Her knee was a bit stiff, so she did not sit on the bench near the gate because it was wet.\"}",
+ "prompt_sha": "681cb7326f0cd77e51f039ecb69e2ad0e13b25ff577f2d5039c9d8bb7cf0acf0",
+ "renderer_fingerprint": null,
+ "tokens_in": 491,
+ "tokens_out": 168
+}

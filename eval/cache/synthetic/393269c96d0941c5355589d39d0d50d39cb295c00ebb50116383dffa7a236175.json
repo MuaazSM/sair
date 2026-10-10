@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3808.3119579969207,
+ "output": "{\"facts\": [{\"span\": \"Kids wahan hain.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"Woh tamarind dekha.\", \"kind\": \"sight\", \"subject\": \"tamarind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"maybe Crow paas aaya.\", \"kind\": \"animal\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Bicycle dikhi.\", \"kind\": \"sight\", \"subject\": \"Bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a nice walk. Dad said kids were there. Mom saw tamarind. Dad said maybe Crow came near. They also saw a bicycle.\"}",
+ "prompt_sha": "c9257680cb88606857e24783177ac7cb7cde6d8a2c0dc2241f6525060f7303b3",
+ "renderer_fingerprint": null,
+ "tokens_in": 542,
+ "tokens_out": 191
+}

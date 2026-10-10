@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2315.0866249998217,
+ "output": "{\"facts\": [{\"span\": \"chhota kutta aaj phir mere peeche peeche aaya.\", \"kind\": \"animal\", \"subject\": \"chhota kutta\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom walked today. A small dog came behind her again to the end of the lane and then went back.\"}",
+ "prompt_sha": "8bf5685b2fbd4d42b15ef9bbe98c8489548ed53a0efad20acd0e0e949a485080",
+ "renderer_fingerprint": null,
+ "tokens_in": 485,
+ "tokens_out": 85
+}

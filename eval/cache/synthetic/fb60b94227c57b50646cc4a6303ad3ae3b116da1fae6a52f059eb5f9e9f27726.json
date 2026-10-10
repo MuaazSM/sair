@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 6343.359084003168,
+ "output": "{\"facts\":[{\"span\":\"buses aage jaa rahi thi\",\"kind\":\"vehicle\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"ek sparrow dikha ho sakta hai\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"teen chai pi bus count kiya\",\"kind\":\"action\",\"subject\":\"bus count\",\"certainty\":\"sure\"},{\"span\":\"teen buses dekhi\",\"kind\":\"vehicle\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"bus number yaad nahi raha\",\"kind\":\"action\",\"subject\":\"bus number\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"teen chai pi bus count kiya\",\"entry\":\"Mom went for a walk and counted buses. They saw buses going forward and thick mist. Maybe a sparrow was seen. Mom counted three buses but does not remember the bus number.\"}",
+ "prompt_sha": "42793accc4439663c5c1a2c5f995d6712cba5ea12c143c6bdb9080bc8d8aabe9",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 205
+}

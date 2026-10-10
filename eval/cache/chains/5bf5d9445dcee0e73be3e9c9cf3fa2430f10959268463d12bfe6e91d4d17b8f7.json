@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1343.1951659986225,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You will notice the shadow of a leaf near the path.\"}",
+ "prompt_sha": "c7438ca70e48ebc4e96a9f17ce789cc05b949086cf386f05ea733d540b95e379",
+ "renderer_fingerprint": null,
+ "tokens_in": 747,
+ "tokens_out": 35
+}

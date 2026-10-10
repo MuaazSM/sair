@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3812.8055420020246,
+ "output": "{\"facts\":[{\"span\":\"the jamun tree had some fruit on the ground\",\"kind\":\"plant\",\"subject\":\"jamun tree\",\"certainty\":\"sure\",\"place\":\"ground\"},{\"span\":\"the milkman's cycle bell rang twice\",\"kind\":\"sound\",\"subject\":\"cycle bell\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked to the end of the lane. They saw a jamun tree with fruit on the ground and heard the milkman's cycle bell ring twice.\"}",
+ "prompt_sha": "e82935be0e64d0044d3fca1cc0bc8c607c5299cbe267e207cc6d6b8e6c795a18",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 109
+}

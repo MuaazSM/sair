@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6727.757541997562,
+ "output": "{\"facts\":[{\"span\":\"I saw five jasmine plants.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"society compound\"},{\"span\":\"The champa looked good today.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There was one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"I saw one cat.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"The dew is heavy probably.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I heard the garbage truck.\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine flowering.\",\"entry\":\"Dad went for an evening walk and checked on the jasmine. He saw five jasmine plants and the champa looked good. He also saw a goat and a cat. The dew was probably heavy and he heard the garbage truck.\"}",
+ "prompt_sha": "67a04148f33a8fe835673587363f14e8d4bdbd0728dbd3be4a4398ea6c641979",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 763,
+ "tokens_out": 207
+}

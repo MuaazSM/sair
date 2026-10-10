@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2492.1227089944296,
+ "output": "{\"facts\": [{\"span\": \"the amaltas near the gate still has flowers.\", \"kind\": \"plant\", \"subject\": \"amaltas\", \"certainty\": \"sure\", \"place\": \"near the gate\"}], \"mission_result\": \"done\", \"entry\": \"Mom was out today. She mentioned that the amaltas near the gate still has flowers. The newspaper man was collecting money from the watchman's cabin, and two dogs were sitting near the gate.\"}",
+ "prompt_sha": "07fc629ca842a914459ce4d94aacb62f9a5f6ed5eb4329419e276ca0e8971a5b",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 104
+}

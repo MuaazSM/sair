@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4319.9431670000195,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Mist bahut thick thi\",\n\"kind\": \"weather\",\n\"subject\": \"Mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Sparrow ud raha tha\",\n\"kind\": \"sight\",\n\"subject\": \"Sparrow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Aaj hawa kaafi thandi thi\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Mom had an evening walk. The mist was very thick. It seems like a Sparrow was flying. We drank three chai. I saw four buses. Today the wind was quite cold.\"\n}\n```",
+ "prompt_sha": "b228382b5fa77f1f432480354285285dbd8335eeb6ed161c41ca6f024af4b357",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 210
+}

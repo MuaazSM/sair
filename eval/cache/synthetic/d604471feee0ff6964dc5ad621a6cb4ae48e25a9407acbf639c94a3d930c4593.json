@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3659.12579200085,
+ "output": "{\"facts\": [{\"span\": \"wind bahut tez thi shayad waves bahut bade the\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"rain shuru hui shayad baarish tez ho gayi\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"mission thoda pura hua\", \"kind\": \"other\", \"subject\": \"mission\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a walk today. The wind was very strong, maybe the waves were very big. The rain started, maybe the rain became heavy. The mission was a little done, and they decided to make dinner.\"}",
+ "prompt_sha": "feeb6ea426699daf1f8c83430694105c3263acea0d2641f804e62651a43a810c",
+ "renderer_fingerprint": null,
+ "tokens_in": 539,
+ "tokens_out": 175
+}

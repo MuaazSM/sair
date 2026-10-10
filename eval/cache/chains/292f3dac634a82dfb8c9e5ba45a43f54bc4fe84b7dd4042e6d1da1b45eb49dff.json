@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3974.8222080015694,
+ "output": "{\"facts\":[{\"span\":\"it rained in the afternoon\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"},{\"span\":\"the road was muddy\",\"kind\":\"weather\",\"subject\":\"mud\",\"certainty\":\"sure\"},{\"span\":\"the gulmohar had dropped a lot of leaves\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked to the paan shop and back. He saw rain, mud, and fallen gulmohar leaves.\"}",
+ "prompt_sha": "b6ca52d8ee3e4521a095e1afd317456bede7dd2ab426bb7abff3c1b84363f720",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 738,
+ "tokens_out": 115
+}

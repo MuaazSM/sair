@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4121.259291998285,
+ "output": "{\"facts\":[{\"span\":\"neem ke ped ke neeche aaj chana wala nahi tha.\",\"kind\":\"plant\",\"subject\":\"neem\",\"certainty\":\"sure\"},{\"span\":\"kauve phir the.\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\"},{\"span\":\"hawa thandi thi.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked and noticed neem trees, crows, and cold air. He did not notice any smell.\"}",
+ "prompt_sha": "cf763bc4280d7298ef5130fd7a3ab8d19fafa9199bc7e32068ee8ce78f5eb573",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 119
+}

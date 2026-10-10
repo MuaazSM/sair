@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5973.640166997939,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha tha.\",\n\"kind\": \"sight\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Wind bahut tez thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Waves bahut high the pata nahi.\",\n\"kind\": \"sight\",\n\"subject\": \"Waves\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"shayad Rain ho raha tha.\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Mission partially complete.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"we are tired now.\",\n\"kind\": \"other\",\n\"subject\": \"tired\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Mission partially complete.\",\n\"entry\": \"Mom and Dad had a very good walk today. The wind was very strong. The waves were very high, maybe. Dad thought maybe it was raining. Mom said the mission was partially complete, and they were tired now.\"\n}\n```",
+ "prompt_sha": "b0d8d5f32014da4d8c0c6df454c02f671f6dc1d941c84f3edd166227158213dd",
+ "renderer_fingerprint": null,
+ "tokens_in": 512,
+ "tokens_out": 339
+}

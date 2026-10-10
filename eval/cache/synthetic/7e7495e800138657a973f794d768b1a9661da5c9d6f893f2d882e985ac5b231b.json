@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4217.445332997158,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"ho sakta hai Crow dikha hai.\",\n\"kind\": \"sight\",\n\"subject\": \"Crow\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Mission partially hua.\",\n\"kind\": \"other\",\n\"subject\": \"Mission\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially hua.\",\n\"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. Maybe a Crow was seen. The mission was partially done.\"\n}\n```",
+ "prompt_sha": "a552985e1630bb0429c58cc0499b01221b592906c55279ed6f5ccb836032dfe6",
+ "renderer_fingerprint": null,
+ "tokens_in": 514,
+ "tokens_out": 209
+}

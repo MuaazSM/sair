@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3637.9994159979105,
+ "output": "```json\n{\n  \"facts\": [\n    {\n      \"span\": \"हो सकता है मोगरा की महक है।\",\n      \"kind\": \"smell\",\n      \"subject\": \"मोगरा की महक\",\n      \"certainty\": \"unsure\",\n      \"place\": \"\"\n    },\n    {\n      \"span\": \"Mission complete.\",\n      \"kind\": \"other\",\n      \"subject\": \"Mission complete\",\n      \"certainty\": \"sure\",\n      \"place\": \"\"\n    }\n  ],\n  \"mission_result\": \"done\",\n  \"mission_span\": \"Mission complete.\",\n  \"entry\": \"Mom finished the walk. She thought maybe it was the smell of mogra. That was all. Mission complete.\"\n}\n```",
+ "prompt_sha": "c4527ae0c2a5545cdf048a287b07610a2afe167e2b5000606d10353992338811",
+ "renderer_fingerprint": null,
+ "tokens_in": 476,
+ "tokens_out": 177
+}

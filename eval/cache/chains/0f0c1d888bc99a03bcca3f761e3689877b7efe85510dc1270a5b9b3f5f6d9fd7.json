@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 771.5127500014205,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, notice the clouds moving across the sky.\"}",
+ "prompt_sha": "1943344c8079f1c40f2d6fe3873108fb48e482556f9e7440396771fe00ab18ef",
+ "renderer_fingerprint": null,
+ "tokens_in": 633,
+ "tokens_out": 31
+}

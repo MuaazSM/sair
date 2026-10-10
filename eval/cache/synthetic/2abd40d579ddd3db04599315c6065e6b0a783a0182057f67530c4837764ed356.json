@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6208.0280000009225,
+ "output": "{\"facts\":[{\"span\":\"Jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Teen champa are visible.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"The cat is sleeping.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"maybe Dew is on the grass.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I heard the garbage truck.\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"},{\"span\":\"I checked on the jasmine flowers.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went to the society compound. He saw jasmine and champa. He noticed a sleeping cat and maybe dew. He heard a garbage truck and checked the jasmine flowers.\"}",
+ "prompt_sha": "8374b7c806880b7ce1d1583178fa8907e9b7f60b406eb64d110b004cdfd23d57",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 788,
+ "tokens_out": 188
+}

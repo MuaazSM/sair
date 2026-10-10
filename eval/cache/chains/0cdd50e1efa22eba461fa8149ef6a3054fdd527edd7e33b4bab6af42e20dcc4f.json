@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4633.795834000921,
+ "output": "{\"facts\": [{\"span\": \"aaj hawa kam thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"palm ke patte bas thoda thoda hil rahe the\", \"kind\": \"plant\", \"subject\": \"palm ke patte\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"pani puri wale ke paas bheed thi\", \"kind\": \"person\", \"subject\": \"bheed\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"humne bhi kha li is baar\", \"kind\": \"person\", \"subject\": \"humne\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a walk today. The wind was less today. The palm leaves were just moving a little. There was a crowd near the pani puri seller, and we also ate this time.\"}",
+ "prompt_sha": "977b1d39df697727d37c9a2cca48e12d08c7d500353dd3c19747c21e31131312",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 215
+}

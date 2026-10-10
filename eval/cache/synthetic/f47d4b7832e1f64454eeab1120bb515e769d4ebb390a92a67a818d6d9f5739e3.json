@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4256.897792001837,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Humne tamarind dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"tamarind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek crow wahan tha probably.\",\n\"kind\": \"animal\",\n\"subject\": \"crow\",\n\"certainty\": \"unsure\",\n\"place\": \"wahan\"\n},\n{\n\"span\": \"Woh bicycle dikhi.\",\n\"kind\": \"sight\",\n\"subject\": \"bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Last time you noticed kids at the school gate. Are there kids there again?\",\n\"entry\": \"Mom and Dad had a nice walk. They saw tamarind and they saw a bicycle. Mom thought there was a crow there probably.\"\n}\n```",
+ "prompt_sha": "e49820d5b1cd0483464e7d02915d6a2e1003a1c2d397ced2a85d440450e6a777",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 215
+}

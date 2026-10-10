@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4339.618083002279,
+ "output": "{\"facts\": [{\"span\": \"i stopped near the old well at the back of the park\", \"kind\": \"person\", \"subject\": \"i stopped near the old well at the back of the park\", \"certainty\": \"sure\", \"place\": \"the old well at the back of the park\"}, {\"span\": \"there is a tamarind tree next to it\", \"kind\": \"plant\", \"subject\": \"a tamarind tree\", \"certainty\": \"sure\", \"place\": \"next to it\"}, {\"span\": \"the gardener was watering the hedges\", \"kind\": \"person\", \"subject\": \"the gardener was watering the hedges\", \"certainty\": \"sure\", \"place\": \"the hedges\"}, {\"span\": \"it was quiet\", \"kind\": \"sound\", \"subject\": \"it was quiet\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Dad stopped near the old well at the back of the park. There was a tamarind tree next to it, and the gardener was watering the hedges. It was quiet while he stood there for a minute.\"}",
+ "prompt_sha": "d24f8fa6cc4ca2a45a71ea70812bb88a3d04a46ae61560049758fe5b0da88f43",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 236
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5156.7234590002045,
+ "output": "{\"facts\": [{\"span\": \"Market was busy.\", \"kind\": \"sight\", \"subject\": \"Market\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Vegetable stalls visible.\", \"kind\": \"sight\", \"subject\": \"Vegetable stalls\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bhutta ki smell strong.\", \"kind\": \"smell\", \"subject\": \"Bhutta ki smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Hen seen.\", \"kind\": \"animal\", \"subject\": \"Hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas open now shayad.\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Saw some differences.\", \"kind\": \"sight\", \"subject\": \"differences\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Dad was out today. The market was busy with vegetable stalls visible. The bhutta ki smell was strong, and a hen was seen. Umbrellas were open now maybe. I saw some differences.\"}",
+ "prompt_sha": "726634365d7b4f9c248bb6c1ac8a0bf3cf993880483b2c1d88a7645b28eed5c1",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 264
+}

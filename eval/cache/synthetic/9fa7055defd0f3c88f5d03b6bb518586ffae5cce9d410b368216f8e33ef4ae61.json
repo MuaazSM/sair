@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6979.419249997591,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"there\"},{\"span\":\"I saw the champa.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There were three goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The cat was near the gate.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"sounded like Dew settled on the grass.\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"unsure\",\"place\":\"on the grass\"},{\"span\":\"The garbage truck passed by.\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad returned from the evening walk. He saw jasmine, champa, three goats, and a cat near the gate. He heard dew settling on the grass and a garbage truck passing by. He checked the jasmine bloom.\"}",
+ "prompt_sha": "5281a89f60c8b85e3b0463fc78bf406d33136c874268a985e97714f8010c0c34",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 753,
+ "tokens_out": 216
+}

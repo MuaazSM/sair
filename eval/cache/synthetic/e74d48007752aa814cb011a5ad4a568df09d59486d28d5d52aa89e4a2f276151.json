@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4465.373541999725,
+ "output": "{\"facts\": [{\"span\": \"Teen jasmine are there\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Champa is growing tall\", \"kind\": \"plant\", \"subject\": \"Champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"One goat is grazing\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"A cat is sitting near the wall\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"maybe Dew is on the leaves\", \"kind\": \"weather\", \"subject\": \"Dew\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad had a walk today. Teen jasmine are there and Champa is growing tall. One goat is grazing and a cat is sitting near the wall. Maybe Dew is on the leaves. He checked on the jasmine flowers today.\"}",
+ "prompt_sha": "4155fe5a278943dede38ae545dc534503f5cceaddc9054351bc5fcd8c2fd2827",
+ "renderer_fingerprint": null,
+ "tokens_in": 562,
+ "tokens_out": 235
+}

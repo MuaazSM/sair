@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 809.7874579980271,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You will notice if the neem tree has any leaves near the path.\"}",
+ "prompt_sha": "416947f5a8291b20f804b8fc22222ce242605c083745ac33a168dcdd27b3d1ef",
+ "renderer_fingerprint": null,
+ "tokens_in": 1186,
+ "tokens_out": 35
+}

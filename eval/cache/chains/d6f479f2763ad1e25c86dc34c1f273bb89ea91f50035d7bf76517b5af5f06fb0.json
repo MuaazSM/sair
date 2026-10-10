@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4193.627832999482,
+ "output": "{\"facts\": [{\"span\": \"aaj chai pi stall pe\", \"kind\": \"sight\", \"subject\": \"chai pi stall\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"waves chhoti thi\", \"kind\": \"sight\", \"subject\": \"waves\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ek dog tha jo wall ke paas baitha tha\", \"kind\": \"animal\", \"subject\": \"dog\", \"certainty\": \"sure\", \"place\": \"wall ke paas\"}, {\"span\": \"shayad stall wale ka hai\", \"kind\": \"person\", \"subject\": \"stall wale\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad went to the chai pi stall today. The waves were small. There was a dog sitting near the wall, maybe it belongs to the stall owner.\"}",
+ "prompt_sha": "4a8bfa7529d2ebf16448b5247801347100b783e0079d024e7cea3c7f42679322",
+ "renderer_fingerprint": null,
+ "tokens_in": 490,
+ "tokens_out": 200
+}

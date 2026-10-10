@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3295.0056250010675,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Haan, wind bahut tez thi.\", \"kind\": \"weather\", \"subject\": \"wind\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Achha, the sea-face windy tha.\", \"kind\": \"sight\", \"subject\": \"the sea-face\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad noted that the air was quite cold today. Dad confirmed that the wind was very strong. Mom mentioned that the sea-face was windy.\"}",
+ "prompt_sha": "26d66338fa5fd1b45adeae1b6946e4dbe5e37673638abec82887962d11e94b0c",
+ "renderer_fingerprint": null,
+ "tokens_in": 555,
+ "tokens_out": 163
+}

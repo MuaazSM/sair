@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3899.8959160016966,
+ "output": "{\"facts\": [{\"span\": \"Yoga group there, sure.\", \"kind\": \"sight\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Butterfly bahut sundar.\", \"kind\": \"sight\", \"subject\": \"Butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Koel par thi maybe teen koels the.\", \"kind\": \"sight\", \"subject\": \"koels\", \"certainty\": \"sure\"}, {\"span\": \"People counting yoga was forgot.\", \"kind\": \"sight\", \"subject\": \"People counting yoga\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. There was a yoga group there, sure. The butterfly was very beautiful. Maybe there were three koels on the Koel. People counting yoga was forgot.\"}",
+ "prompt_sha": "f56fb149ba1bd1bac767611dbed52934039afbbf75c5f0b14941ee4785b428e8",
+ "renderer_fingerprint": null,
+ "tokens_in": 557,
+ "tokens_out": 191
+}

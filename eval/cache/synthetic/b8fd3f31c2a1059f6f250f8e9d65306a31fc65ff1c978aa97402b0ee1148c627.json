@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 5268.957500000397,
+ "output": "{\"facts\":[{\"span\":\"Aaj walk bahut achha tha.\",\"kind\":\"weather\",\"subject\":\"walk\",\"certainty\":\"sure\"},{\"span\":\"Wind bahut tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"Waves bahut high the pata nahi.\",\"kind\":\"weather\",\"subject\":\"waves\",\"certainty\":\"unsure\"},{\"span\":\"shayad Rain ho raha tha.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"},{\"span\":\"Mission partially complete.\",\"kind\":\"other\",\"subject\":\"mission\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially complete.\",\"entry\":\"Mom and Dad went for a walk. They noticed maybe rain and tiredness.\"}",
+ "prompt_sha": "b0d8d5f32014da4d8c0c6df454c02f671f6dc1d941c84f3edd166227158213dd",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 765,
+ "tokens_out": 152
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1017.6474159998179,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f1_3\"], \"text\": \"You will notice the आम का पेड़ and compare its leaves to the path.\"}",
+ "prompt_sha": "7f076910c5b00959a3f297da620db3b3e7132962b4e158f439c4d5eab53b17d8",
+ "renderer_fingerprint": null,
+ "tokens_in": 1423,
+ "tokens_out": 42
+}

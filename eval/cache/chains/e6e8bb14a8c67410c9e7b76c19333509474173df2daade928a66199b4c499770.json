@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1261.3284580002073,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the soil near the tulsi pot.\"}",
+ "prompt_sha": "902ad8add23b44c53e9eb9a2589de2a75004b0a308d0dac619886cea2689048e",
+ "renderer_fingerprint": null,
+ "tokens_in": 766,
+ "tokens_out": 32
+}

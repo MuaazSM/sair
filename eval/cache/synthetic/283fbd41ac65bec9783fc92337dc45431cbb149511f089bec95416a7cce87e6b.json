@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5066.252583001187,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\",\n\"kind\": \"weather\",\n\"subject\": \"hawa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Haan, dekha.\",\n\"kind\": \"person\",\n\"subject\": \"dekha\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Humne thoda sa pata lagaya.\",\n\"kind\": \"person\",\n\"subject\": \"pata lagaya\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Humne thoda sa pata lagaya.\",\n\"entry\": \"Mom and Dad had a walk today. The air was quite cold, which felt very good. They saw kids playing cricket. They said they found a little bit of information.\"\n}\n```",
+ "prompt_sha": "2f1aec51457c94d830411a3146587551faec71e5864b9f62874482d770ea130d",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 264
+}

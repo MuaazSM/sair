@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1379.5404580014292,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_1\"], \"text\": \"You will notice the flowers near the temple pond.\"}",
+ "prompt_sha": "56f43ccd7355a34f956f0a642fb472aec07c80fca16fdd6b04e5d04bca00adb8",
+ "renderer_fingerprint": null,
+ "tokens_in": 1080,
+ "tokens_out": 31
+}

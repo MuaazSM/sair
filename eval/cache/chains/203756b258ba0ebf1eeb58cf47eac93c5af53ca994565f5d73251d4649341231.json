@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1316.0077080028714,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"You will notice the soil near the tulsi pot. Can you count how many leaves are on that tree?\"}",
+ "prompt_sha": "43775772785abd07f8c16ffd0a54ed7169e91557c5ea9c831e8a4d58ceeaf91c",
+ "renderer_fingerprint": null,
+ "tokens_in": 696,
+ "tokens_out": 49
+}

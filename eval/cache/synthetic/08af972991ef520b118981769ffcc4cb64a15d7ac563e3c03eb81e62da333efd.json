@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 7135.411125000246,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"sight\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Champa is also visible.\",\n\"kind\": \"sight\",\n\"subject\": \"Champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There is one goat.\",\n\"kind\": \"animal\",\n\"subject\": \"one goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Two cats are near the gate.\",\n\"kind\": \"animal\",\n\"subject\": \"Two cats\",\n\"certainty\": \"sure\",\n\"place\": \"gate\"\n},\n{\n\"span\": \"The dew is heavy I think.\",\n\"kind\": \"weather\",\n\"subject\": \"dew\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"I heard the garbage truck.\",\n\"kind\": \"sound\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Pata nahi uska colour kya tha.\",\n\"kind\": \"sight\",\n\"subject\": \"colour\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"I checked on the jasmine for flowers.\",\n\"entry\": \"Dad noticed the jasmine and Champa were visible. There was one goat and two cats near the gate. The dew is heavy I think. He heard the garbage truck. He checked on the jasmine for flowers, but he was unsure of its colour.\"\n}\n```",
+ "prompt_sha": "4ca4dcbfafe831622e8b7dde111c4360faa7b44c3130ba1d5c009a3c4f42a7c0",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 389
+}

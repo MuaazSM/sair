@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4143.896625002526,
+ "output": "{\"facts\":[{\"span\":\"bhutta smell bahut achhi thi.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"umbrellas maybe were high\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Market mein kuch alag tha.\",\"kind\":\"sight\",\"subject\":\"difference\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Market mein kuch alag tha.\",\"entry\":\"Dad went for a walk and saw maybe high umbrellas. He noticed the market was different.\"}",
+ "prompt_sha": "830590b2c4db3e825054350499cd11fa8a76bd8726c220f1f01c288e4f8b7957",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 803,
+ "tokens_out": 117
+}

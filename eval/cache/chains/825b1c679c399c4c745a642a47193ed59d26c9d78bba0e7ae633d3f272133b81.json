@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1880.7535829982953,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"Notice the flowers near the flower seller's shop.\"}",
+ "prompt_sha": "a05af344474c7f76598c373d2a6e3ba2525b4ddd33823ff8c3af0da77e06b248",
+ "renderer_fingerprint": null,
+ "tokens_in": 1246,
+ "tokens_out": 38
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1240.7756250031525,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice the shadow that makes a pattern on the ground as you walk.\"}",
+ "prompt_sha": "89c4698de14329e15d4cfc11964f9fec911c6748332761d77d7c969316064f0f",
+ "renderer_fingerprint": null,
+ "tokens_in": 827,
+ "tokens_out": 33
+}

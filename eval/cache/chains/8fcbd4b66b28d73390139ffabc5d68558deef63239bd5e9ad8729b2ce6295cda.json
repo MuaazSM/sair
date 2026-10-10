@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4345.18887500235,
+ "output": "{\"facts\": [{\"span\": \"we walked past the school gate\", \"kind\": \"sight\", \"subject\": \"school gate\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"the banyan tree outside the school is huge\", \"kind\": \"sight\", \"subject\": \"banyan tree\", \"certainty\": \"sure\", \"place\": \"outside the school\"}, {\"span\": \"we never noticed the roots coming down from the branches before\", \"kind\": \"sight\", \"subject\": \"roots coming down from the branches\", \"certainty\": \"sure\", \"place\": \"banyan tree\"}, {\"span\": \"the ice cream cart was parked there\", \"kind\": \"sight\", \"subject\": \"ice cream cart\", \"certainty\": \"sure\", \"place\": \"there\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked past the school gate. The banyan tree outside the school is huge, and we never noticed the roots coming down from the branches before. An ice cream cart was parked there.\"}",
+ "prompt_sha": "64b942f765790e2a525630c863717d369c9dc9ac59cf9c128d8b8f79e2a27718",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 226
+}

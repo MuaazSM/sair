@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5314.352958001109,
+ "output": "{\"facts\":[{\"span\":\"Achha, haan.\",\"kind\":\"other\",\"subject\":\"count\",\"certainty\":\"sure\"},{\"span\":\"Teen buses theen.\",\"kind\":\"other\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut thick thi.\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Chai ki smell aayi.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Count kiya, do buses dekhi.\",\"kind\":\"other\",\"subject\":\"buses\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Count kiya, do buses dekhi.\",\"entry\":\"Mom finished the walk and counted buses. She saw three buses but only counted two.\"}",
+ "prompt_sha": "aaca174890ff5171e9af21c13d1ef6f11b9cdf7bd54ee1682c8b35cdef33c2ed",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 156
+}

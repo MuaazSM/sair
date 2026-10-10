@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3368.343375001132,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group, they are there.\",\n\"kind\": \"person\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Paanch butterfly.\",\n\"kind\": \"sight\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Mission bhool gaya.\",\n\"entry\": \"Dad and I had an evening walk. There was a yoga group there. There were five butterflies. I forgot the mission.\"\n}\n```",
+ "prompt_sha": "5c73f19d5b7a36ba25932cf4e7e1e54c0218d8f09a19117acb62243e3e6bfc2b",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 153
+}

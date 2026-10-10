@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1059.858250002435,
+ "output": "{\"type\": \"return\", \"references\": [\"1\", \"2\"], \"text\": \"You will notice the palm leaves near the path. Look at them to see if they are moving.\"}",
+ "prompt_sha": "5f74d2eacd6e282de24031e80eb51f72b3c1fb687e9b4e92b9b8aa1a703668fe",
+ "renderer_fingerprint": null,
+ "tokens_in": 699,
+ "tokens_out": 41
+}

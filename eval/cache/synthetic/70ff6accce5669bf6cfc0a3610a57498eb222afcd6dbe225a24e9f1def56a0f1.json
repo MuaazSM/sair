@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4633.811165997031,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Dew bahut hai.\",\n\"kind\": \"weather\",\n\"subject\": \"Dew\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Butterfly dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"Butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"maybe Koel teen koels.\",\n\"kind\": \"animal\",\n\"subject\": \"Koel\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Yoga count miss kiya.\",\n\"kind\": \"other\",\n\"subject\": \"Yoga count\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Dad and I finished the walk. There was a yoga group present. The dew is a lot. I saw a butterfly. Maybe there were three koels. I missed the yoga count.\"\n}\n```",
+ "prompt_sha": "24c757d02d1d6c23883545ce7edbb8ed1170239d19beb7575803dd09d5f086cb",
+ "renderer_fingerprint": null,
+ "tokens_in": 485,
+ "tokens_out": 245
+}

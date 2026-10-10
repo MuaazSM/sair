@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6098.148665994813,
+ "output": "{\"facts\":[{\"span\":\"मंदिर के पास बहुत सारे दीये जल रहे थे\",\"kind\":\"sight\",\"subject\":\"diyas\",\"certainty\":\"sure\",\"place\":\"mandir ke paas\"},{\"span\":\"बहुत सुंदर लग रहा था\",\"kind\":\"sight\",\"subject\":\"diyas\",\"certainty\":\"sure\"},{\"span\":\"पीपल के पेड़ पर धागे और बढ़ गए हैं\",\"kind\":\"plant\",\"subject\":\"peepal ke ped\",\"certainty\":\"sure\"},{\"span\":\"घंटी की आवाज़ दूर तक आ रही थी\",\"kind\":\"sound\",\"subject\":\"ghanti ki awaaz\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked near the temple and saw many diyas and peepal trees with ropes. She heard the bell sound far away.\"}",
+ "prompt_sha": "59e3f16002bfe84bb2f28f56864e31f706ffee70365b9df9fcec83d8d5dd21db",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 759,
+ "tokens_out": 181
+}

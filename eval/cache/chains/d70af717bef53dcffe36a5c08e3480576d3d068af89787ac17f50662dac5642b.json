@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1060.3835419969982,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f4_1\", \"f5_2\"], \"text\": \"You notice the fresh paint near the compound.\"}",
+ "prompt_sha": "d2414a4568cf9170829ceb77a9264276a586a108df78ecd99fe9cdb80a352ec7",
+ "renderer_fingerprint": null,
+ "tokens_in": 1417,
+ "tokens_out": 54
+}

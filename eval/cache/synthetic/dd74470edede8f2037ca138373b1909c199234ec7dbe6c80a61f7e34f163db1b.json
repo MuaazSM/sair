@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3697.9514170016046,
+ "output": "{\"facts\": [{\"span\": \"Teen buses theen.\", \"kind\": \"sight\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Mist bahut thick thi.\", \"kind\": \"weather\", \"subject\": \"Mist\", \"certainty\": \"sure\"}, {\"span\": \"Chai ki smell aayi.\", \"kind\": \"smell\", \"subject\": \"Chai ki smell\", \"certainty\": \"sure\"}, {\"span\": \"Count kiya, do buses dekhi.\", \"kind\": \"sight\", \"subject\": \"do buses\", \"certainty\": \"sure\"}], \"mission_result\": \"partly\", \"entry\": \"Mom finished the walk. There were three buses. The mist was very thick. The smell of tea came. I counted, I saw two buses.\"}",
+ "prompt_sha": "aaca174890ff5171e9af21c13d1ef6f11b9cdf7bd54ee1682c8b35cdef33c2ed",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 177
+}

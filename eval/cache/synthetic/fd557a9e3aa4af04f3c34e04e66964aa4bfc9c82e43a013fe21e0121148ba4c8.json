@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4066.080625001632,
+ "output": "{\"facts\": [{\"span\": \"Kids there hain.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Imli ka ped dikha.\", \"kind\": \"sight\", \"subject\": \"Imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Crow dekha.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Bicycle wahan hai.\", \"kind\": \"sight\", \"subject\": \"Bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad finished the evening walk. They saw kids there. They also saw the Imli ka ped. It seems like a Crow was seen, and the bicycle is there. Dinner planning is happening now.\"}",
+ "prompt_sha": "01df0108d2cf48a9ef451f80489bfa291f88dc1375c9233269a0bda9d8cced35",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 201
+}

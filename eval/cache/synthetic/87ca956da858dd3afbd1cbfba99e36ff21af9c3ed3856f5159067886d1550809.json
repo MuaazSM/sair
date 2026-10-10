@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5661.984500002291,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"bhutta smell bahut achhi thi\",\n\"kind\": \"smell\",\n\"subject\": \"bhutta smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"vendor wahan tha\",\n\"kind\": \"person\",\n\"subject\": \"vendor\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"hen dekha\",\n\"kind\": \"animal\",\n\"subject\": \"hen\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"umbrellas maybe were high shop shutters band the\",\n\"kind\": \"sight\",\n\"subject\": \"umbrellas\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Market mein kuch alag tha\",\n\"kind\": \"sight\",\n\"subject\": \"kuch alag\",\n\"certainty\": \"sure\",\n\"place\": \"Market\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Market mein kuch alag tha\",\n\"entry\": \"Dad had a good evening. The bhutta smell was very good. A vendor was there, and I saw a hen. Maybe umbrellas were high shop shutters. There was something different in the Market.\"\n}\n```",
+ "prompt_sha": "1ffaaf55482fbd24d28a44d31d5102b9492c12e01dd312e37f29e0d9a607f770",
+ "renderer_fingerprint": null,
+ "tokens_in": 508,
+ "tokens_out": 308
+}

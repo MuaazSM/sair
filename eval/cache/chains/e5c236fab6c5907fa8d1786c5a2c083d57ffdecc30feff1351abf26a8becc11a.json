@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1408.3154999971157,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You will notice the leaves under the imli tree.\"}",
+ "prompt_sha": "5c447daa8b33ba832d37545bf115c39909cfd66b7bf99d9559ee7a9500abd974",
+ "renderer_fingerprint": null,
+ "tokens_in": 791,
+ "tokens_out": 34
+}

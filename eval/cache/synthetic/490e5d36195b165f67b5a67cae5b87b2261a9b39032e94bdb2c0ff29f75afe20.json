@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5039.346124998701,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Kids there hain.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Imli ka ped dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"Imli ka ped\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow flew by.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow\",\n\"certainty\": \"think\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bicycle wahan thi.\",\n\"kind\": \"sight\",\n\"subject\": \"Bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Kids there hain.\",\n\"entry\": \"Mom and Dad had an evening walk. They saw kids there. They also saw Imli ka ped and thought a Crow flew by. There was a bicycle there too. They asked when dinner is.\"\n}\n```",
+ "prompt_sha": "841355354073a3c904dbd5413997999ccab24af91f5197a3394ed9932cceeb4d",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 251
+}

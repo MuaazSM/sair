@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5281.707375001133,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I saw the champa.\", \"kind\": \"sight\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There were three goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The cat was near the gate.\", \"kind\": \"person\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"gate\"}, {\"span\": \"sounded like Dew settled on the grass.\", \"kind\": \"sound\", \"subject\": \"Dew\", \"certainty\": \"sure\", \"place\": \"grass\"}, {\"span\": \"The garbage truck passed by.\", \"kind\": \"other\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad had an evening walk. He saw the jasmine and the champa. There were three goats and a cat near the gate. He also heard something like Dew settling on the grass. The garbage truck passed by.\"}",
+ "prompt_sha": "5281a89f60c8b85e3b0463fc78bf406d33136c874268a985e97714f8010c0c34",
+ "renderer_fingerprint": null,
+ "tokens_in": 511,
+ "tokens_out": 272
+}

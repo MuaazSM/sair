@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2533.6397499995655,
+ "output": "{\"facts\": [{\"span\": \"rain all day\", \"kind\": \"weather\", \"subject\": \"rain\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. He said rain all day and did not go down much. He just stood in the lobby and watched.\"}",
+ "prompt_sha": "f077790cabf2e8ff2cfe4762d2088d032a9a78df64fd38e707d628bd3ac435a5",
+ "renderer_fingerprint": null,
+ "tokens_in": 478,
+ "tokens_out": 77
+}

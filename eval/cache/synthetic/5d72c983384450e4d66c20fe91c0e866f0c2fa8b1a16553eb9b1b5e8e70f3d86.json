@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5602.949000000081,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"wind bahut tez thi\",\n\"kind\": \"weather\",\n\"subject\": \"wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"waves were crashing\",\n\"kind\": \"sound\",\n\"subject\": \"waves\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"water looked rough\",\n\"kind\": \"sight\",\n\"subject\": \"water\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"rain might fall soon ho sakta hai\",\n\"kind\": \"weather\",\n\"subject\": \"rain\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"it is windy again\",\n\"kind\": \"weather\",\n\"subject\": \"wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"wind check kiya, it is windy again.\",\n\"entry\": \"Mom and Dad had a very good walk. The wind was very strong and the waves were crashing. The water looked rough, and rain might fall soon. They checked the wind and it is windy again. They felt a little tired.\"\n}\n```",
+ "prompt_sha": "490af3453c5c0f622296b3508b1b514ff471e85e865390926a31436182364fa7",
+ "renderer_fingerprint": null,
+ "tokens_in": 516,
+ "tokens_out": 295
+}

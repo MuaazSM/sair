@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 740.9736670015263,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_2\"], \"text\": \"You, watch the नारियल के पेड़.\"}",
+ "prompt_sha": "68c28a614e6a1e75cfc8abc617f3e34b11beaf8de7dbfa4f37e6b9e658957610",
+ "renderer_fingerprint": null,
+ "tokens_in": 1367,
+ "tokens_out": 29
+}

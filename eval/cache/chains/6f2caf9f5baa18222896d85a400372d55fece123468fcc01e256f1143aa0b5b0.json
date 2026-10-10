@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4907.960500000627,
+ "output": "{\"facts\":[{\"span\":\"some birds were flying low over the water\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\"},{\"span\":\"white ones i think, maybe gulls, i am not sure\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"unsure\"},{\"span\":\"the tide was out, a lot of rocks showing\",\"kind\":\"weather\",\"subject\":\"tide\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"some birds were flying low over the water, white ones i think, maybe gulls, i am not sure\",\"entry\":\"Dad walked and heard birds flying low over the water. He thought they were maybe gulls but was not sure. The tide was out with rocks showing.\"}",
+ "prompt_sha": "e850fa364aed113bc9a65ad432233d8e5e6356a0e4b429b16e5fca6178570009",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 737,
+ "tokens_out": 152
+}

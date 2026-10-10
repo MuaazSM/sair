@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3658.8804999992135,
+ "output": "{\"facts\": [{\"span\": \"aaj sky bahut saaf thi, ek bhi badal nahi\", \"kind\": \"weather\", \"subject\": \"sky\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"ducks pond ke beech mein the\", \"kind\": \"animal\", \"subject\": \"ducks\", \"certainty\": \"sure\", \"place\": \"pond\"}, {\"span\": \"bench pe baith ke humne bas dekha\", \"kind\": \"person\", \"subject\": \"humne\", \"certainty\": \"sure\", \"place\": \"bench\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad had a walk today. The sky was very clear, not a single cloud. Ducks were in the middle of the pond. We sat on the bench and just looked.\"}",
+ "prompt_sha": "a0fe489104bb9d72f80acb3dfd9c065dd186798f491c2366d03fc84d18ed6e5f",
+ "renderer_fingerprint": null,
+ "tokens_in": 499,
+ "tokens_out": 178
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2309.8124589960207,
+ "output": "{\"facts\": [{\"span\": \"a bird was singing from one of the balconies\", \"kind\": \"sound\", \"subject\": \"a bird was singing\", \"certainty\": \"sure\", \"place\": \"one of the balconies\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. A bird was singing from one of the balconies, maybe a pet bird in a cage, I couldn't see it.\"}",
+ "prompt_sha": "c869ab7fa4a776cb80c790315d2fc36342f5818be2b56c9e89da415f5035508a",
+ "renderer_fingerprint": null,
+ "tokens_in": 488,
+ "tokens_out": 98
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4573.612624997622,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Wah, walk bahut achha tha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids wahan hain.\",\n\"kind\": \"person\",\n\"subject\": \"Kids\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek crow dekha maybe.\",\n\"kind\": \"animal\",\n\"subject\": \"crow\",\n\"certainty\": \"maybe\",\n\"place\": \"\"\n},\n{\n\"span\": \"Ek bicycle dikhi.\",\n\"kind\": \"sight\",\n\"subject\": \"bicycle\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"done\",\n\"mission_span\": \"Kids wahan hain.\",\n\"entry\": \"Mom and Dad had a very nice walk. Dad said kids are there. Mom saw a crow maybe. Dad saw a bicycle.\"\n}\n```",
+ "prompt_sha": "d36f7814b1e6fe9b83cb06205e76a618cd79ecaaa9282ccac2a3a82fe43ff52c",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 236
+}

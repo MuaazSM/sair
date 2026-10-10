@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4263.323290997505,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Yoga group there.\",\n\"kind\": \"sight\",\n\"subject\": \"Yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"the park\"\n},\n{\n\"span\": \"Teen butterfly dekhe.\",\n\"kind\": \"sight\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": null\n},\n{\n\"span\": \"lagta hai Koel ga rahi hai.\",\n\"kind\": \"sound\",\n\"subject\": \"Koel ga rahi hai\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Yoga count bhool gaya.\",\n\"entry\": \"Dad and I had an evening walk. There was a yoga group there. I saw three butterflies. It seems like a Koel is singing, but I forgot to count the yoga people.\"\n}\n```",
+ "prompt_sha": "c099173ca3431ff4e2cffdad8220970e329523faa06ec021bb659c6ccb988ffc",
+ "renderer_fingerprint": null,
+ "tokens_in": 502,
+ "tokens_out": 213
+}

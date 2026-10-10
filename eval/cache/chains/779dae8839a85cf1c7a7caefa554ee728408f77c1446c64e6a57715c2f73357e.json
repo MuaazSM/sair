@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1046.9700419998844,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You will notice if you see a coconut seller near the path.\"}",
+ "prompt_sha": "960da745ea311bb8414b50a393933559dd4fee7e7c4b0b70257951940e273a9f",
+ "renderer_fingerprint": null,
+ "tokens_in": 855,
+ "tokens_out": 58
+}

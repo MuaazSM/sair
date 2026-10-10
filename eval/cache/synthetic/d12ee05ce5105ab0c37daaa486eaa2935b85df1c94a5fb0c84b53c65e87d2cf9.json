@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5234.920917002455,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"sight\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Champa is also visible.\", \"kind\": \"sight\", \"subject\": \"Champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There is one goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Two cats are near the gate.\", \"kind\": \"animal\", \"subject\": \"cats\", \"certainty\": \"sure\", \"place\": \"gate\"}, {\"span\": \"The dew is heavy I think.\", \"kind\": \"weather\", \"subject\": \"dew\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"I heard the garbage truck.\", \"kind\": \"sound\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad noticed the jasmine and Champa in the society compound. There was one goat and two cats near the gate. The dew is heavy I think, and he heard the garbage truck. He checked on the jasmine for flowers but was unsure of its colour.\"}",
+ "prompt_sha": "281648ad412138ad84801fe0f4c240d1d229a3b30380cb1a951922ca7144a1b2",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 276
+}

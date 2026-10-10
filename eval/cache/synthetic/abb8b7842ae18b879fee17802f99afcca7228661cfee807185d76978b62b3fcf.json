@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5658.542915996804,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Hen seen there.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas visible\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed.\",\"kind\":\"other\",\"subject\":\"shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Could not spot anything different.\",\"entry\":\"Dad went for a walk and looked at the market. They saw vegetable stalls, smelled bhutta, saw a hen, and saw umbrellas and closed shutters. They could not spot anything different.\"}",
+ "prompt_sha": "4c96e95c287da8ae06f7b58bf32ca7364e08b1b3f02c35348d797bf0be5e8718",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 792,
+ "tokens_out": 171
+}

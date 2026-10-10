@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3957.2991669992916,
+ "output": "{\"facts\": [{\"span\": \"Buses aage se aa rahi thi.\", \"kind\": \"sight\", \"subject\": \"Buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Mist bahut thick thi.\", \"kind\": \"weather\", \"subject\": \"Mist\", \"certainty\": \"sure\"}, {\"span\": \"Sparrow the bird pata nahi was sitting still\", \"kind\": \"animal\", \"subject\": \"Sparrow the bird\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Bus count kar diya.\", \"kind\": \"other\", \"subject\": \"Bus count\", \"certainty\": \"sure\"}], \"mission_result\": \"done\", \"entry\": \"Mom finished the evening walk. Buses were coming from ahead. The mist was very thick. I counted the buses. Sparrow the bird was sitting still.\"}",
+ "prompt_sha": "9cc1172bb9e0958eb11f81b7d8eaee0027414d1fb7115a4630df5f949c61426d",
+ "renderer_fingerprint": null,
+ "tokens_in": 545,
+ "tokens_out": 185
+}

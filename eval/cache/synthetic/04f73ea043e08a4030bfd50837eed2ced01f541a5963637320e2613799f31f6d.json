@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5058.489832998021,
+ "output": "{\"facts\": [{\"span\": \"Jasmine is there.\", \"kind\": \"sight\", \"subject\": \"Jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Teen champa are visible.\", \"kind\": \"sight\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The cat is sleeping.\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"maybe Dew is on the grass.\", \"kind\": \"sight\", \"subject\": \"Dew\", \"certainty\": \"unsure\", \"place\": \"grass\"}, {\"span\": \"I heard the garbage truck.\", \"kind\": \"sound\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Pata nahi uska colour kya tha.\", \"kind\": \"sight\", \"subject\": \"colour\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad noticed that jasmine is there and teen champa are visible. The cat is sleeping, and maybe dew is on the grass. He heard the garbage truck and checked on the jasmine flowers, but he was unsure about the colour.\"}",
+ "prompt_sha": "2282d23fabe675f0b9623dacff476fe3da50f728ad4a9664a5d06c312835fd23",
+ "renderer_fingerprint": null,
+ "tokens_in": 509,
+ "tokens_out": 274
+}

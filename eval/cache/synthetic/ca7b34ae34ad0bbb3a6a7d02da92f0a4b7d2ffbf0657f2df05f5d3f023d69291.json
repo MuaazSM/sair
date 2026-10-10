@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6667.653957996663,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Vegetable stalls visible\",\n\"kind\": \"sight\",\n\"subject\": \"Vegetable stalls\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Bhutta ki smell strong\",\n\"kind\": \"smell\",\n\"subject\": \"Bhutta ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Hen near the edge\",\n\"kind\": \"animal\",\n\"subject\": \"Hen\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Umbrellas the sky लगता है were hanging low\",\n\"kind\": \"sight\",\n\"subject\": \"Umbrellas\",\n\"certainty\": \"unsure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Shop shutters closed\",\n\"kind\": \"sight\",\n\"subject\": \"Shop shutters\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Not much different\",\n\"kind\": \"other\",\n\"subject\": \"much different\",\n\"certainty\": \"sure\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"Look at the market. Can you spot what is different?\",\n\"entry\": \"Dad finished the evening walk. Vegetable stalls were visible and the bhutta ki smell was strong. A vendor was standing there and a hen was near the edge. The sky umbrellas were hanging low, and shop shutters were closed. He looked around and said not much different.\"\n}\n```",
+ "prompt_sha": "6f3642ecb85431222bc5286085ffdfd708d1c61869ac0bdca58bdd2daab1d38b",
+ "renderer_fingerprint": null,
+ "tokens_in": 517,
+ "tokens_out": 360
+}

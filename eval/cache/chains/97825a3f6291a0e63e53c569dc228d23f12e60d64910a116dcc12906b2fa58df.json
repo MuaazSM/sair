@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1198.3939169986115,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You will notice the shadow of the banyan tree on the path.\"}",
+ "prompt_sha": "ca9fc596b06e509b11c71d46c86250d8f05482335c0164b9eb12ddec86582808",
+ "renderer_fingerprint": null,
+ "tokens_in": 906,
+ "tokens_out": 35
+}

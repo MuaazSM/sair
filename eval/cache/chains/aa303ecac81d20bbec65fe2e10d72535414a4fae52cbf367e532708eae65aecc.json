@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2227.335874998971,
+ "output": "{\"type\": \"return\", \"references\": [\"Wednesday 2026-09-23\", \"Thursday 2026-09-24\", \"Friday 2026-09-25\", \"Saturday 2026-09-26\", \"Sunday 2026-09-27\", \"Monday 2026-09-28\"], \"text\": \"You will notice the shadow near the wall.\"}",
+ "prompt_sha": "a866ba51eb78b3a5c1e3a6da21ab0a53343001cfbff4f8e14e328b0eb707a6d5",
+ "renderer_fingerprint": null,
+ "tokens_in": 847,
+ "tokens_out": 108
+}

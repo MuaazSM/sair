@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1463.6065000013332,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You notice the crows near the path. Look for a shadow on the path.\"}",
+ "prompt_sha": "7098e1598b385c7fd4097b3ea2e050029e45010dc03e6c142f60482159b9c75e",
+ "renderer_fingerprint": null,
+ "tokens_in": 847,
+ "tokens_out": 39
+}

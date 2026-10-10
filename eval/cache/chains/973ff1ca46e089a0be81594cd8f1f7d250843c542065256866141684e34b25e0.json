@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 747.8426250017947,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You thought you heard a koel near the school. Can you find out?\"}",
+ "prompt_sha": "753e99189bb8144751747ad1aca0282733bdc9cd8d30b83f9c097c7b882dc345",
+ "renderer_fingerprint": null,
+ "tokens_in": 643,
+ "tokens_out": 37
+}

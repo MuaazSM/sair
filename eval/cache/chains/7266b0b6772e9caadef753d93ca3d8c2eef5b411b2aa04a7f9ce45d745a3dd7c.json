@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5669.487291001133,
+ "output": "{\"facts\":[{\"span\":\"ek champa ka jo bilkul hara tha\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"ek badam ka jo laal ho raha tha\",\"kind\":\"plant\",\"subject\":\"leaves\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"champa ka ped clubhouse ke paas hai\",\"kind\":\"plant\",\"subject\":\"tree\",\"certainty\":\"sure\",\"place\":\"compound\"}],\"mission_result\":\"done\",\"mission_span\":\"ek champa ka jo bilkul hara tha aur ek badam ka jo laal ho raha tha\",\"entry\":\"Dad walked in the compound and saw two leaves, one green and one red. He noted the green leaf was near the clubhouse.\"}",
+ "prompt_sha": "2fe63a70c7c83e9d550835869193b2fd8f67958748f099cc2834083994aa3f4b",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 750,
+ "tokens_out": 156
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 7028.451499998482,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls are visible.\",\"kind\":\"plant\",\"subject\":\"stalls\",\"certainty\":\"sure\"},{\"span\":\"A vendor is standing there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"I saw a hen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas are there probably.\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters are closed.\",\"kind\":\"other\",\"subject\":\"shutters\",\"certainty\":\"sure\"},{\"span\":\"We looked at the market.\",\"kind\":\"sight\",\"subject\":\"market\",\"certainty\":\"sure\"},{\"span\":\"We spotted some differences.\",\"kind\":\"sight\",\"subject\":\"differences\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"We spotted some differences.\",\"entry\":\"Dad went for a walk and looked at the market. They saw vegetable stalls, a vendor, a hen, closed shutters, and probably umbrellas. They noticed some differences.\"}",
+ "prompt_sha": "29e65d54713d0445eff6689bf6a74b18f287b6466339200695c540fd80faa8b6",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 771,
+ "tokens_out": 212
+}

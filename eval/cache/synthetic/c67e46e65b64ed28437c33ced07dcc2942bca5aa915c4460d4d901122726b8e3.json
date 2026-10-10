@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 6040.532667000662,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"The jasmine is there.\",\n\"kind\": \"plant\",\n\"subject\": \"jasmine\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"I saw the champa.\",\n\"kind\": \"sight\",\n\"subject\": \"champa\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"There were three goat.\",\n\"kind\": \"animal\",\n\"subject\": \"three goat\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"The cat was near the gate.\",\n\"kind\": \"person\",\n\"subject\": \"cat\",\n\"certainty\": \"sure\",\n\"place\": \"gate\"\n},\n{\n\"span\": \"sounded like Dew settled on the grass.\",\n\"kind\": \"sound\",\n\"subject\": \"Dew\",\n\"certainty\": \"sure\"\n},\n{\n\"span\": \"The garbage truck passed by.\",\n\"kind\": \"other\",\n\"subject\": \"garbage truck\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_mentioned\",\n\"mission_span\": null,\n\"entry\": \"Dad had an evening walk. He saw the jasmine and the champa. There were three goat and the cat was near the gate. He checked on the jasmine bloom. Dinner will be ready soon.\"\n}\n```",
+ "prompt_sha": "62e0cb2129aab09f29f4124335178bf835157890c83bf7cdd8d2745e1371204f",
+ "renderer_fingerprint": null,
+ "tokens_in": 511,
+ "tokens_out": 334
+}

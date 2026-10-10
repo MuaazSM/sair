@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3567.442999999912,
+ "output": "{\"facts\": [{\"span\": \"market was decorated today, lots of flowers hanging at the shop fronts\", \"kind\": \"sight\", \"subject\": \"flowers hanging at the shop fronts\", \"certainty\": \"sure\", \"place\": \"market\"}, {\"span\": \"the fruit stall had pomegranates\", \"kind\": \"sight\", \"subject\": \"pomegranates\", \"certainty\": \"sure\", \"place\": \"fruit stall\"}, {\"span\": \"the cow was there again near the peepal\", \"kind\": \"animal\", \"subject\": \"cow\", \"certainty\": \"sure\", \"place\": \"near the peepal\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad was out today. The market was decorated with lots of flowers hanging at the shop fronts. The fruit stall had pomegranates. The cow was there again near the peepal.\"}",
+ "prompt_sha": "e9e864726041e9ea0b1c5cd9c221f7237c6465d9d8ef23fd174e1b39c3c7b826",
+ "renderer_fingerprint": null,
+ "tokens_in": 497,
+ "tokens_out": 187
+}

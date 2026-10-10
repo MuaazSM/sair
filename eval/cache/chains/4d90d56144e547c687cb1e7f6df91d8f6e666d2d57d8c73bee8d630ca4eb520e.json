@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3830.521291001787,
+ "output": "{\"facts\": [{\"span\": \"aaj bijli gayi hui thi\", \"kind\": \"weather\", \"subject\": \"bijli gayi hui thi\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lane mein andhera tha\", \"kind\": \"sight\", \"subject\": \"andhera\", \"certainty\": \"sure\", \"place\": \"lane\"}, {\"span\": \"jamun ke ped ke paas se bas guzre\", \"kind\": \"person\", \"subject\": \"bas guzre\", \"certainty\": \"sure\", \"place\": \"jamun ke ped\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad walked today. It was that the electricity had gone out and it was dark in the lane. They passed near the jamun tree.\"}",
+ "prompt_sha": "c6ff0b090cf7a778a1302d3e7724bc1a2cd1ad33faefbc7b2f6ee006e80c34da",
+ "renderer_fingerprint": null,
+ "tokens_in": 500,
+ "tokens_out": 172
+}

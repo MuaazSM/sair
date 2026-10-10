@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4852.607374999934,
+ "output": "{\"facts\": [{\"span\": \"teen jasmine\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"champa\", \"kind\": \"plant\", \"subject\": \"champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"one goat\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"one cat\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Dew drops I think were heavy\", \"kind\": \"weather\", \"subject\": \"Dew drops\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"garbage truck\", \"kind\": \"other\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad had a walk today. He noticed teen jasmine and champa. There was also one goat and one cat. He thought the dew drops were heavy. He also saw a garbage truck.\"}",
+ "prompt_sha": "4ab5b6329d8da6d84c252be510b1e82300f41d2e1119109a3be2cdd03733cdf6",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 249
+}

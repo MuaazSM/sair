@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1594.575499999337,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You will notice the number of trees along the path.\"}",
+ "prompt_sha": "156b6be7daeb38e668400ac18bc1e6dc3182dd9aca9588c963195210c962331f",
+ "renderer_fingerprint": null,
+ "tokens_in": 1233,
+ "tokens_out": 32
+}

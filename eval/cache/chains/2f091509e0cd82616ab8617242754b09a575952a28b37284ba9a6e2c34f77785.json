@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 643.0849169992143,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\"], \"text\": \"You will notice the amaltas near the gate.\"}",
+ "prompt_sha": "818397dea1b7464fdceb701aef12aaf4cfbad684f36aed1bf1a0339de1088b98",
+ "renderer_fingerprint": null,
+ "tokens_in": 900,
+ "tokens_out": 32
+}

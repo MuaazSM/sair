@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4545.3406250017,
+ "output": "{\"facts\": [{\"span\": \"buses aate rahe\", \"kind\": \"sound\", \"subject\": \"buses\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"do mist dikhe\", \"kind\": \"sight\", \"subject\": \"mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"chai ki smell aayi\", \"kind\": \"smell\", \"subject\": \"chai\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"maine bus ginti ki\", \"kind\": \"person\", \"subject\": \"maine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"pata nahi number kya tha\", \"kind\": \"other\", \"subject\": \"number\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom was out for a walk today. Buses kept coming. Some mist was visible. The smell of tea came. She counted the buses, but she was unsure what the number was.\"}",
+ "prompt_sha": "c9da94ff99405a4beb793a7c95b7bf6d6d757d59515628dd663c8e3634a23d9a",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 228
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3105.115749996912,
+ "output": "{\"facts\": [{\"span\": \"badam ke ped ke neeche bahut patte gire the aaj\", \"kind\": \"sight\", \"subject\": \"patte\", \"certainty\": \"sure\", \"place\": \"badam ke ped ke neeche\"}, {\"span\": \"hawa tez thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom was out for a walk today. There were many leaves fallen under the almond tree. The wind was strong. I sat on an empty bench for a while.\"}",
+ "prompt_sha": "fa784905809b9c5e9d11aab315fd3f45729ae29dbc115b2e6835ea01691a7a8a",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 132
+}

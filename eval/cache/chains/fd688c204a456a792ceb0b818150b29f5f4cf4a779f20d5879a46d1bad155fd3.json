@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1025.3594579990022,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_1\"], \"text\": \"You, look at the wall and see if you can spot any bird.\"}",
+ "prompt_sha": "af0a40aa0157e03edb5ee2f02b484504b63c93d60c98d48d78179c957e215996",
+ "renderer_fingerprint": null,
+ "tokens_in": 979,
+ "tokens_out": 36
+}

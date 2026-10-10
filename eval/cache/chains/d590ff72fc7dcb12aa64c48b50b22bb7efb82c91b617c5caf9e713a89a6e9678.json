@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4622.607791003247,
+ "output": "{\"facts\": [{\"span\": \"कंपाउंड में आज कोई पक्षी गा रहा था, बहुत सुंदर आवाज़ थी\", \"kind\": \"sound\", \"subject\": \"कोई पक्षी गा रहा था, बहुत सुंदर आवाज़ थी\", \"certainty\": \"sure\", \"place\": \"कंपाउंड\"}, {\"span\": \"पता नहीं कौन सा था\", \"kind\": \"other\", \"subject\": \"कौन सा था\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"अशोक के पेड़ की तरफ़ से आ रही थी शायद\", \"kind\": \"other\", \"subject\": \"कोई पक्षी\", \"certainty\": \"unsure\", \"place\": \"अशोक के पेड़\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad were walking today. In the compound, a bird was singing, it had a very beautiful sound. They stopped and kept listening. Maybe it was coming from the direction of Ashok's tree.\"}",
+ "prompt_sha": "38e35f53cd4bde2b8facdf2c515b930c158314f99d9f37258d37cdd9d99e0767",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 207
+}

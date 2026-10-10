@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5073.385124997003,
+ "output": "{\"facts\":[{\"span\":\"aaj pond mein ducks nahi dikhe\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"unsure\"},{\"span\":\"shayad doosri side the\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"unsure\"},{\"span\":\"ek bagula tha kinare pe\",\"kind\":\"plant\",\"subject\":\"tree\",\"certainty\":\"sure\"},{\"span\":\"bilkul chup chaap khada tha\",\"kind\":\"plant\",\"subject\":\"tree\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Notice one tree with flowers on it along your way.\",\"entry\":\"Mom and Dad went for a walk. They saw maybe ducks but not today. They noticed a tree near the pond.\"}",
+ "prompt_sha": "b2623c7a713e4d8c186a22963ab8fc7c491ada66fb80cb4b00581e8df4109318",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 749,
+ "tokens_out": 153
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 5976.313125000161,
+ "output": "{\"facts\":[{\"span\":\"Bhutta smell.\",\"kind\":\"smell\",\"subject\":\"bhutta\",\"certainty\":\"sure\"},{\"span\":\"Vendor.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas लगता है were near.\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters.\",\"kind\":\"other\",\"subject\":\"shutters\",\"certainty\":\"sure\"},{\"span\":\"Phoolon ka rang bhi likh dena.\",\"kind\":\"other\",\"subject\":\"phoolon\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished the walk and noticed smells, people, animals, and objects. He noted that umbrellas were maybe near and wrote about flower colors.\"}",
+ "prompt_sha": "47bff547fc9299e1051a657995d2b63171dd4297cc9773caaf6e5a5c49d90c32",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 181
+}

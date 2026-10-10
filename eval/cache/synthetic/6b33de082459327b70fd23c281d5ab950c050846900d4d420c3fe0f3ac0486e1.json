@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 5170.159917001001,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"teen yoga group\",\n\"kind\": \"person\",\n\"subject\": \"yoga group\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"ek butterfly\",\n\"kind\": \"animal\",\n\"subject\": \"butterfly\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"koel ga raha hai\",\n\"kind\": \"sound\",\n\"subject\": \"koel ga raha hai\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"yoga count karna bhool gaya\",\n\"kind\": \"person\",\n\"subject\": \"yoga count karna bhool gaya\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": \"yoga count karna bhool gaya\",\n\"entry\": \"Dad finished the evening walk. There was a teen yoga group, and it seemed like there were too many. He mentioned a butterfly and a koel singing. He forgot to count the yoga. He was unsure of the number.\"\n}\n```",
+ "prompt_sha": "cdfac613ca385401ff5cc872c354e78082460a87e7d80141ada26224cbd9cc86",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 266
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4558.360250000987,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Teen buses theen.\",\n\"kind\": \"count\",\n\"subject\": \"buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Mist bahut thick thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Mist\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Chai ki smell aayi.\",\n\"kind\": \"smell\",\n\"subject\": \"Chai ki smell\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Count kiya, do buses dekhi.\",\n\"kind\": \"count\",\n\"subject\": \"do buses\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Count kiya, do buses dekhi.\",\n\"entry\": \"Mom finished the walk. She said there were three buses. The mist was very thick. The smell of tea came. She counted and saw two buses.\"\n}\n```",
+ "prompt_sha": "371ecf8d09a47210c4e54d5ce75bfa44b1edb5d749058de3bc73c7c6cf884b5f",
+ "renderer_fingerprint": null,
+ "tokens_in": 498,
+ "tokens_out": 252
+}

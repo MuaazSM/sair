@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3464.263084002596,
+ "output": "{\"facts\":[{\"span\":\"आज सड़क पर बहुत गाड़ियाँ थीं\",\"kind\":\"sight\",\"subject\":\"cars\",\"certainty\":\"sure\"},{\"span\":\"शायद कोई जाम था आगे\",\"kind\":\"weather\",\"subject\":\"traffic\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked today and saw many cars on the road. He thought maybe there was traffic ahead.\"}",
+ "prompt_sha": "b583163b3e49d7626f84f8291227d9ecf19c6d4c1dede8249b8c3a54f00c8c8f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 746,
+ "tokens_out": 95
+}

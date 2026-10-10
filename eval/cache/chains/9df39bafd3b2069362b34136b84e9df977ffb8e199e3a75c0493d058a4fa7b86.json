@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 930.0264999983483,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f2_1\"], \"text\": \"You look at the ashoka near the gate. Can you see if it is still there?\"}",
+ "prompt_sha": "6405a633e1d158fd7b7bd0233083b607481f6d3343c879baacd53106ad687b08",
+ "renderer_fingerprint": null,
+ "tokens_in": 1066,
+ "tokens_out": 46
+}

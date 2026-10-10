@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4278.336707997369,
+ "output": "{\"facts\": [{\"span\": \"compound mein aaj sab jagah peela hi peela dikh raha tha\", \"kind\": \"sight\", \"subject\": \"peela hi peela\", \"certainty\": \"sure\", \"place\": \"compound\"}, {\"span\": \"amaltas ke phool gire the gate ke paas\", \"kind\": \"plant\", \"subject\": \"amaltas ke phool\", \"certainty\": \"sure\", \"place\": \"gate\"}, {\"span\": \"kuch balconies mein bhi peeli saari sukh rahi thi\", \"kind\": \"sight\", \"subject\": \"peeli saari\", \"certainty\": \"sure\", \"place\": \"balconies\"}], \"mission_result\": \"done\", \"entry\": \"Mom was walking today. She noticed that everywhere in the compound, everything was yellow. Amaltas flowers had fallen near the gate, and some balconies were also drying yellow.\"}",
+ "prompt_sha": "bdfcc775bbf9907d37095132c3f83ddf545c2d199da574e9af8adbef3b2fbfe1",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 196
+}

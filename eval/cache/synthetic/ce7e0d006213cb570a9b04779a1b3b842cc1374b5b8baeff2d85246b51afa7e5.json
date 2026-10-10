@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 4647.171291999257,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Aaj walk bahut achha tha.\",\n\"kind\": \"sound\",\n\"subject\": \"walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Kids playing cricket.\",\n\"kind\": \"sight\",\n\"subject\": \"Kids playing cricket\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Crow flying high ho sakta hai.\",\n\"kind\": \"animal\",\n\"subject\": \"Crow flying high\",\n\"certainty\": \"unsure\"\n},\n{\n\"span\": \"Humne thodi si cheezon ko dekha.\",\n\"kind\": \"sight\",\n\"subject\": \"thodi si cheezon\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n}\n],\n\"mission_result\": \"not_done\",\n\"mission_span\": null,\n\"entry\": \"Mom and Dad had a very good walk today. They saw kids playing cricket. They also saw some things. Maybe a crow was flying high.\"\n}\n```",
+ "prompt_sha": "20beae4c01439396ba625333da3e34c02f7a87c3c8da7edb68fedcd0271865be",
+ "renderer_fingerprint": null,
+ "tokens_in": 510,
+ "tokens_out": 248
+}

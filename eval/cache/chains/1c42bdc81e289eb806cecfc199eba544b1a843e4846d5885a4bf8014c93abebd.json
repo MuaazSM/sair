@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3568.151540999679,
+ "output": "{\"facts\":[{\"span\":\"the ashoka near the gate is still there.\",\"kind\":\"plant\",\"subject\":\"ashoka\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"we saw a cat sleeping on a parked car.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked in the quiet compound. They noticed the ashoka tree and a cat sleeping on a car.\"}",
+ "prompt_sha": "47f3a10f3a852d1c87f1c06f4298d701aa1786e3dd7e34e9db5d8a1fab7a8403",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 740,
+ "tokens_out": 99
+}

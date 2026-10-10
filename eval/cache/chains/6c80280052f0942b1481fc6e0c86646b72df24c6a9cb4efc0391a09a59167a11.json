@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4360.404749997542,
+ "output": "{\"facts\": [{\"span\": \"ek champa ka jo bilkul hara tha aur ek badam ka jo laal ho raha tha\", \"kind\": \"sight\", \"subject\": \"champa ka jo bilkul hara tha aur ek badam ka jo laal ho raha tha\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"champa ka ped clubhouse ke paas hai\", \"kind\": \"plant\", \"subject\": \"champa ka ped\", \"certainty\": \"sure\", \"place\": \"clubhouse ke paas\"}, {\"span\": \"watchman ne salaam kiya\", \"kind\": \"person\", \"subject\": \"watchman\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad saw two leaves, one of a champa that was completely green and another of a almond that was turning red. The champa tree is near the clubhouse. The watchman also said salaam.\"}",
+ "prompt_sha": "2fe63a70c7c83e9d550835869193b2fd8f67958748f099cc2834083994aa3f4b",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 209
+}

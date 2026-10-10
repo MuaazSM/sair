@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 5343.07491599975,
+ "output": "{\"facts\": [{\"span\": \"Bhutta smell\", \"kind\": \"smell\", \"subject\": \"Bhutta smell\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Hen\", \"kind\": \"animal\", \"subject\": \"Hen\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umbrellas लगता है were near\", \"kind\": \"sight\", \"subject\": \"Umbrellas\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Shop shutters\", \"kind\": \"sight\", \"subject\": \"Shop shutters\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Spotting difference was partial\", \"kind\": \"sight\", \"subject\": \"difference\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Phoolon ka rang bhi likh dena\", \"kind\": \"sight\", \"subject\": \"Phoolon ka rang\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad completed the walk. They smelled Bhutta. They saw a Hen and maybe umbrellas were near. They noticed shop shutters and spotting difference was partial. They also mentioned Phoolon ka rang.\"}",
+ "prompt_sha": "9d671088c852ef20b133ee6b62fcc70bb6d5909535e8c06a7a312f6e7288aafb",
+ "renderer_fingerprint": null,
+ "tokens_in": 536,
+ "tokens_out": 268
+}

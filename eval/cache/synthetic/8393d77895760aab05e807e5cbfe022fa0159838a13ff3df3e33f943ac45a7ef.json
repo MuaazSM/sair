@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4009.9588750017574,
+ "output": "{\"facts\": [{\"span\": \"Walk bahut achha tha.\", \"kind\": \"sight\", \"subject\": \"Walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"imli ka ped dikh raha hai.\", \"kind\": \"sight\", \"subject\": \"imli ka ped\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"kauwa probably ud raha tha.\", \"kind\": \"animal\", \"subject\": \"kauwa\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"bicycle wahan hai.\", \"kind\": \"sight\", \"subject\": \"bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom and Dad had a very good walk today. I saw an imli ka ped. Maybe a kauwa was flying, and the bicycle was there. I wonder what they made for dinner.\"}",
+ "prompt_sha": "8ed782d6bcb14ad54d8a3254d05ab074d4e83065a6dc8220da197b3eedd1bd11",
+ "renderer_fingerprint": null,
+ "tokens_in": 494,
+ "tokens_out": 200
+}

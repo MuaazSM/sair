@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2206.588875000307,
+ "output": "{\"facts\": [{\"span\": \"the crows were on the gulmohar again\", \"kind\": \"animal\", \"subject\": \"crows\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad bought some guavas from the cart near the paan shop. The crows were on the gulmohar again. There were a lot of scooters parked everywhere.\"}",
+ "prompt_sha": "95042350d10d45b1ef8b68ddef788034157180de77053eac5e9c392155a71c42",
+ "renderer_fingerprint": null,
+ "tokens_in": 493,
+ "tokens_out": 91
+}

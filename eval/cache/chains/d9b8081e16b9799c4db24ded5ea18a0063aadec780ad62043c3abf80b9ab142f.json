@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1298.682833003113,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\"], \"text\": \"You will notice the neem at the bus stop. Look at the leaves of the neem tree.\"}",
+ "prompt_sha": "1088868869c79e320e0db0ea26a4ee1d46d3e0da55cceec644f02c7067b26b50",
+ "renderer_fingerprint": null,
+ "tokens_in": 850,
+ "tokens_out": 40
+}

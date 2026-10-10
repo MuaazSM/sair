@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1981.7504999955418,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_1\"], \"text\": \"You, look at the palms. See if any palm leaves have changed.\"}",
+ "prompt_sha": "c1ced1df3cd75b032be0348ce1e9b10c9f406b7f037e96af428f84f71c4ffc0e",
+ "renderer_fingerprint": null,
+ "tokens_in": 1067,
+ "tokens_out": 36
+}

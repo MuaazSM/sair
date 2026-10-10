@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4354.781459005608,
+ "output": "{\"facts\":[{\"span\":\"a bird was hopping on the clubhouse lawn\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"clubhouse lawn\"},{\"span\":\"picking at the grass\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"a small brown one maybe\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and noticed a bird hopping on the clubhouse lawn. It was small and brown, maybe a champa, but he did not know the name.\"}",
+ "prompt_sha": "322366972d969ab1e806f2591a64934af03745f8c5b3eba6c1311e7725ef0592",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 729,
+ "tokens_out": 127
+}

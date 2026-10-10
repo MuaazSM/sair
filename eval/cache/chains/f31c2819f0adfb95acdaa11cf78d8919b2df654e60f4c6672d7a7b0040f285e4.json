@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3852.038500001072,
+ "output": "{\"facts\": [{\"span\": \"the banyan was full of birds today\", \"kind\": \"sound\", \"subject\": \"birds\", \"certainty\": \"sure\", \"place\": \"the banyan\"}, {\"span\": \"a lot of chirping\", \"kind\": \"sound\", \"subject\": \"chirping\", \"certainty\": \"sure\"}, {\"span\": \"we couldn't see which birds they were\", \"kind\": \"sight\", \"subject\": \"birds\", \"certainty\": \"sure\", \"place\": \"the banyan\"}, {\"span\": \"too many leaves\", \"kind\": \"sight\", \"subject\": \"leaves\", \"certainty\": \"sure\", \"place\": \"the banyan\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad were walking today. The banyan was full of birds today, a lot of chirping. We couldn't see which birds they were because there were too many leaves.\"}",
+ "prompt_sha": "cdd6847338658eb6233f9f2ff22b95df65abc285080675eed089b43c6c53faf9",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 203
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3843.6790830019163,
+ "output": "{\"facts\": [{\"span\": \"the banyan was full of birds today\", \"kind\": \"animal\", \"subject\": \"birds\", \"certainty\": \"sure\", \"place\": \"the banyan\"}, {\"span\": \"a lot of chirping\", \"kind\": \"sound\", \"subject\": \"chirping\", \"certainty\": \"sure\"}, {\"span\": \"we couldn't see which birds they were\", \"kind\": \"sight\", \"subject\": \"birds\", \"certainty\": \"sure\"}, {\"span\": \"too many leaves\", \"kind\": \"sight\", \"subject\": \"leaves\", \"certainty\": \"sure\"}], \"mission_result\": \"not_done\", \"entry\": \"Mom and Dad were walking today. The banyan was full of birds, and there was a lot of chirping. We could not see which birds they were because there were too many leaves.\"}",
+ "prompt_sha": "cf82ba05e7bd9e5e9694d447691fdb7547c557c27b035bbe62c37a31a991419f",
+ "renderer_fingerprint": null,
+ "tokens_in": 492,
+ "tokens_out": 189
+}

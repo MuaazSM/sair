@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5034.546792001493,
+ "output": "{\"facts\":[{\"span\":\"आज समुद्र के किनारे बहुत हवा थी, बाल उड़ रहे थे.\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"कुछ पक्षी पानी के ऊपर उड़ रहे थे, कौन से थे पता नहीं.\",\"kind\":\"animal\",\"subject\":\"pakhish\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"कुछ पक्षी पानी के ऊपर उड़ रहे थे, कौन से थे पता नहीं.\",\"entry\":\"Mom walked by the sea where there was much wind and hair was flying. They saw some birds flying above water but did not know which ones they were.\"}",
+ "prompt_sha": "4268f0421c6cb2c05e1c7512a692fbec0fa688e84525b4c05d37cf40b3e9707e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 756,
+ "tokens_out": 151
+}

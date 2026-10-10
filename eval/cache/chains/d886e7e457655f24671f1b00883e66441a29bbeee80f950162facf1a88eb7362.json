@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1684.6639580035117,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f4_1\"], \"text\": \"Notice the flowers along the main path and compare them to the leaves on the path.\"}",
+ "prompt_sha": "9635a0c23974de98b2d955d424d3f11698c4ea083a1ce134631de74d95043162",
+ "renderer_fingerprint": null,
+ "tokens_in": 1070,
+ "tokens_out": 44
+}

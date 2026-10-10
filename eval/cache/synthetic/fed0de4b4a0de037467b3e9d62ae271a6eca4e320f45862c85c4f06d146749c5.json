@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3933.6221250014205,
+ "output": "{\"facts\": [{\"span\": \"Yoga group wahan the\", \"kind\": \"person\", \"subject\": \"Yoga group\", \"certainty\": \"sure\", \"place\": \"wahan\"}, {\"span\": \"Teen os the\", \"kind\": \"person\", \"subject\": \"Teen\", \"certainty\": \"sure\", \"place\": \"the\"}, {\"span\": \"Ek butterfly dekhi\", \"kind\": \"animal\", \"subject\": \"butterfly\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Koel ga rahi hai\", \"kind\": \"sound\", \"subject\": \"Koel ga rahi hai\", \"certainty\": \"unsure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad finished the walk. He said the yoga group was there. He saw three and one butterfly. He thinks the Koel is singing.\"}",
+ "prompt_sha": "cbc300337a157ceaecfb8f6fa29fd12fe48f3c6be7e7985b2c93a1ce511b4b97",
+ "renderer_fingerprint": null,
+ "tokens_in": 549,
+ "tokens_out": 192
+}

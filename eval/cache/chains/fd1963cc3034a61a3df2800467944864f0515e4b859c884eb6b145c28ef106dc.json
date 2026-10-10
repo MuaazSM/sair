@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 1766.6717920001247,
+ "output": "{\"facts\":[],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom went for a short walk but her back hurt.\"}",
+ "prompt_sha": "66a3502f31bbaf354a81ca3f9dc9207c9fdcd642c78de4bdd53620501363199f",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 717,
+ "tokens_out": 30
+}

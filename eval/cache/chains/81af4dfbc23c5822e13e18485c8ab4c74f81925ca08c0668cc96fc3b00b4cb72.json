@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 5370.693041000777,
+ "output": "{\"facts\":[{\"span\":\"नीम के पेड़ के नीचे थोड़ी देर खड़े रहे.\",\"kind\":\"plant\",\"subject\":\"neem\",\"certainty\":\"sure\"},{\"span\":\"हवा अच्छी चल रही थी\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"लगता है बारिश आएगी\",\"kind\":\"weather\",\"subject\":\"barish\",\"certainty\":\"unsure\"},{\"span\":\"कौवे आज कम थे\",\"kind\":\"animal\",\"subject\":\"kav\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Mom and Dad walked in the quiet lane and stood under neem trees. They felt good air and thought maybe rain will come. They saw few kaws.\"}",
+ "prompt_sha": "635851d2068d8a2a9e4f6f838c36c69714bb203a1f538c4c43146dcb0eeb1b14",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 760,
+ "tokens_out": 155
+}

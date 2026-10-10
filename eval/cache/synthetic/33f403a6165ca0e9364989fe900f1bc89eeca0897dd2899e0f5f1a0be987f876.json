@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3320.6242920023215,
+ "output": "{\"facts\":[{\"span\":\"Wind tez thi.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Rain bahut ho raha hai.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially hua.\",\"entry\":\"Mom and Dad went for a walk. They noticed the wind was strong and maybe it is raining a lot.\"}",
+ "prompt_sha": "d22777ad33f7997fe9eaaa3d4c8ef29ca74b44b9000c35bd71a6f0056251b66d",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 733,
+ "tokens_out": 89
+}

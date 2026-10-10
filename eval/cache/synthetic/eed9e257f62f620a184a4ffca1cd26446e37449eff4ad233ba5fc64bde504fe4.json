@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3750.695958002325,
+ "output": "{\"facts\":[{\"span\":\"Yoga group hai.\",\"kind\":\"person\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"Teen dew hai.\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\"},{\"span\":\"I think Koel gaana.\",\"kind\":\"person\",\"subject\":\"Koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya.\",\"entry\":\"Dad went for a walk. They saw a yoga group and maybe Koel.\"}",
+ "prompt_sha": "9d440cd4da48e565fa6fc1a221a44f0e4459ac8d72b4da38c96f928c1cae31a2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 736,
+ "tokens_out": 104
+}

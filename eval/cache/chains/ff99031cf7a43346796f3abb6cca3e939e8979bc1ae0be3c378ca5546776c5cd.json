@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3194.9773330015887,
+ "output": "{\"facts\": [{\"span\": \"the flowers in the society garden were out today\", \"kind\": \"plant\", \"subject\": \"the flowers\", \"certainty\": \"sure\", \"place\": \"the society garden\"}, {\"span\": \"the garden smelled fresh\", \"kind\": \"smell\", \"subject\": \"the garden\", \"certainty\": \"sure\"}, {\"span\": \"maybe he watered it\", \"kind\": \"other\", \"subject\": \"he watered it\", \"certainty\": \"unsure\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad walked today. The flowers in the society garden were out today, and they liked them. The garden smelled fresh, maybe he watered it.\"}",
+ "prompt_sha": "677f0e62a812c77aaec7dcd078f0b879c248e8452568931a10183ec2e2bc1d8a",
+ "renderer_fingerprint": null,
+ "tokens_in": 497,
+ "tokens_out": 152
+}

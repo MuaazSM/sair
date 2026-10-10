@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2438.5144999978365,
+ "output": "{\"facts\": [{\"span\": \"i saw a bird with a long tail on the school wall\", \"kind\": \"sight\", \"subject\": \"a bird with a long tail\", \"certainty\": \"sure\", \"place\": \"the school wall\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad saw a bird with a long tail on the school wall. It flew off before he could see properly. He was on a walk today.\"}",
+ "prompt_sha": "7e80435248eff51453c1b0edea741fa62a57ee88bf77d62192a62a42155ec47c",
+ "renderer_fingerprint": null,
+ "tokens_in": 482,
+ "tokens_out": 98
+}

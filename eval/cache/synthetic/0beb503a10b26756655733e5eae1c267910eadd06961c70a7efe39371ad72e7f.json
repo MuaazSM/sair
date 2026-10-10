@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4211.627749999025,
+ "output": "{\"facts\": [{\"span\": \"Aaj walk bahut achha raha.\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Crow there lagta hai.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Mission partially done.\", \"kind\": \"other\", \"subject\": \"Mission\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Bas itna hi tha.\", \"kind\": \"other\", \"subject\": \"thing\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"partly\", \"entry\": \"Mom and Dad had a nice walk today. They saw kids playing cricket. Mom thought there was a crow there. Dad said the mission was partially done.\"}",
+ "prompt_sha": "88f7a2ba68f401e25a7e4d53c1b8ab220728d326aa19b0b19ab5bfb0a1552380",
+ "renderer_fingerprint": null,
+ "tokens_in": 512,
+ "tokens_out": 217
+}

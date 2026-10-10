@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3922.6178330027324,
+ "output": "{\"facts\":[{\"span\":\"Bhutta ki smell strong.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Hen seen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas open now shayad.\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Saw some differences.\",\"entry\":\"Dad went for a walk and looked at the market. They noticed maybe umbrellas and a hen.\"}",
+ "prompt_sha": "3e6d27d4676adb9dd4ace29e4c6946bc86cd7200df917fe6dcce5d651e2fc4d4",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 775,
+ "tokens_out": 111
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3460.2009579975856,
+ "output": "{\"facts\":[{\"span\":\"kids playing cricket\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"ho sakta hai crow flies high\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"We found some kids near the gate.\",\"entry\":\"Mom and Dad went for an evening walk. They found kids playing cricket near the gate. Maybe a crow flew high.\"}",
+ "prompt_sha": "3f194e9c76ba8951ee2b64f3b93c4fe2113551a86a441da647ce67347ec6b6bc",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 766,
+ "tokens_out": 91
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1135.2445000011357,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"Notice the leaves on the almond tree and compare their colour.\"}",
+ "prompt_sha": "c04d1bb819af2937fd79201a739d3f328fd7a27c9a074ae0669cdfdfb7e8eb73",
+ "renderer_fingerprint": null,
+ "tokens_in": 834,
+ "tokens_out": 35
+}

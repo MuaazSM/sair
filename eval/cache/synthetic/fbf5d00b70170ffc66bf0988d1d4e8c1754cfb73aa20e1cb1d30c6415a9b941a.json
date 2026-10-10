@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4944.694541998615,
+ "output": "{\"facts\": [{\"span\": \"Teen jasmine are there\", \"kind\": \"plant\", \"subject\": \"Teen jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Champa is growing\", \"kind\": \"plant\", \"subject\": \"Champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"One goat is near the wall\", \"kind\": \"animal\", \"subject\": \"One goat\", \"certainty\": \"sure\", \"place\": \"near the wall\"}, {\"span\": \"A cat is sleeping\", \"kind\": \"animal\", \"subject\": \"A cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The dew is heavy probably\", \"kind\": \"weather\", \"subject\": \"The dew\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"I heard the garbage truck\", \"kind\": \"sound\", \"subject\": \"the garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Dad had a walk today. Teen jasmine are there and Champa is growing. One goat is near the wall and a cat is sleeping. The dew is heavy probably. I heard the garbage truck.\"}",
+ "prompt_sha": "32eeb1cc522b4bd7bce1bb19bcf43089893f1df9ca31d5df2e6676c05e12b1ba",
+ "renderer_fingerprint": null,
+ "tokens_in": 507,
+ "tokens_out": 272
+}

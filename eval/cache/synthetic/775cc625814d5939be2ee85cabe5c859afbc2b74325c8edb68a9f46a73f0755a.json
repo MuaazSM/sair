@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3816.742625000188,
+ "output": "{\"facts\": [{\"span\": \"Wah, walk bahut achha tha.\", \"kind\": \"sound\", \"subject\": \"walk\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids wahan hain.\", \"kind\": \"sight\", \"subject\": \"Kids\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Ek crow dekha maybe.\", \"kind\": \"sight\", \"subject\": \"crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Ek bicycle dikhi.\", \"kind\": \"sight\", \"subject\": \"bicycle\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Mom and Dad had a nice walk. Dad said kids are there. Mom saw a crow maybe, and Dad saw a bicycle.\"}",
+ "prompt_sha": "e58b02df3fce91a05c9363c5b794e06d74def3567e7dc69db81c74d6ac2be718",
+ "renderer_fingerprint": null,
+ "tokens_in": 503,
+ "tokens_out": 180
+}

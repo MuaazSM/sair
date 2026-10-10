@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1793.6339170009887,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f4_2\"], \"text\": \"You, notice if the mud on the road changes as you walk.\"}",
+ "prompt_sha": "5a597c26ca18fe4d9ee6df97d5a4c2a66414060483d49d64107bb4124145b60e",
+ "renderer_fingerprint": null,
+ "tokens_in": 1199,
+ "tokens_out": 41
+}

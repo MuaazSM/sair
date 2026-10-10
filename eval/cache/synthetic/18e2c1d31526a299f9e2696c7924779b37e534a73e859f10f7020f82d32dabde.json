@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6275.854083000013,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Champa is also visible.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There is one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"Two cats are near the gate.\",\"kind\":\"animal\",\"subject\":\"cats\",\"certainty\":\"sure\"},{\"span\":\"The dew is heavy I think.\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I checked on the jasmine for flowers.\",\"kind\":\"sight\",\"subject\":\"jasmine\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine for flowers.\",\"entry\":\"Dad went to the society compound. He saw jasmine, champa, a goat, and cats. He thought the dew was heavy and checked for flowers.\"}",
+ "prompt_sha": "281648ad412138ad84801fe0f4c240d1d229a3b30380cb1a951922ca7144a1b2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 762,
+ "tokens_out": 191
+}

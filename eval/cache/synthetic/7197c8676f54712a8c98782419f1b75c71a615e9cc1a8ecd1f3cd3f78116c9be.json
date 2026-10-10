@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4777.051083998231,
+ "output": "{\"facts\": [{\"span\": \"Jasmine is there\", \"kind\": \"plant\", \"subject\": \"Jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Champa is visible\", \"kind\": \"plant\", \"subject\": \"Champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"The goat is near the gate\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"gate\"}, {\"span\": \"I saw the cat\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"maybe Dew is present\", \"kind\": \"weather\", \"subject\": \"Dew\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"The garbage truck passed five times\", \"kind\": \"other\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad had an evening walk. Jasmine is there and Champa is visible. The goat is near the gate, and I saw the cat. Maybe Dew is present. The garbage truck passed five times.\"}",
+ "prompt_sha": "51bd43df058dc7427ca943323c063ec2cac3fdc24ea17a9d35ec2e7cde3dc32a",
+ "renderer_fingerprint": null,
+ "tokens_in": 553,
+ "tokens_out": 264
+}

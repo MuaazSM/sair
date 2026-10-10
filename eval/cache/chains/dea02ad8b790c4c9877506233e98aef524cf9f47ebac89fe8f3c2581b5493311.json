@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2035.2814589969057,
+ "output": "{\"facts\": [{\"span\": \"it drizzled a little\", \"kind\": \"weather\", \"subject\": \"drizzled a little\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad went for a short walk. It drizzled a little. He came back.\"}",
+ "prompt_sha": "e11be959296b92c4684fdfce7f17255c72cab17c73be6667efe20dd25c5bfaa9",
+ "renderer_fingerprint": null,
+ "tokens_in": 472,
+ "tokens_out": 74
+}

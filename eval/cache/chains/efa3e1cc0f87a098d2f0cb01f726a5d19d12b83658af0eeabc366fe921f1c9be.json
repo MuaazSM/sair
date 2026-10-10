@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1509.727415999805,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f4_1\"], \"text\": \"You will look at the flowers along the main path. Notice the flowers.\"}",
+ "prompt_sha": "d6b32c139294bbd14acfa0df65e176cc2aae4450fd93621d16aa32c17b8a71a3",
+ "renderer_fingerprint": null,
+ "tokens_in": 930,
+ "tokens_out": 42
+}

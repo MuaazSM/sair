@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1368.680083000072,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You will look at the sky now and compare it to the sky when you left home.\"}",
+ "prompt_sha": "93fe491456274e3416da35dabd049c5f976612cf3961296a5a1410060d8ee030",
+ "renderer_fingerprint": null,
+ "tokens_in": 744,
+ "tokens_out": 39
+}

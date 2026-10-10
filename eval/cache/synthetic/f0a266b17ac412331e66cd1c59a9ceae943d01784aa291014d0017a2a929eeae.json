@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4798.886041997321,
+ "output": "{\"facts\": [{\"span\": \"The jasmine is there.\", \"kind\": \"plant\", \"subject\": \"jasmine\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Champa is visible.\", \"kind\": \"plant\", \"subject\": \"Champa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There is one goat.\", \"kind\": \"animal\", \"subject\": \"goat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"There are three cat.\", \"kind\": \"animal\", \"subject\": \"cat\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I heard the garbage truck.\", \"kind\": \"sound\", \"subject\": \"garbage truck\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"I checked on the jasmine flowers.\", \"kind\": \"other\", \"subject\": \"jasmine flowers\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"done\", \"entry\": \"Dad went for an evening walk. He noticed the jasmine is there and Champa is visible. There was one goat and three cats. He also heard the garbage truck and checked on the jasmine flowers.\"}",
+ "prompt_sha": "038e6bb471faa98d999f286dd2dccb6f2f3d3ad51c4f6b7e3d69a384c5cc9c0c",
+ "renderer_fingerprint": null,
+ "tokens_in": 513,
+ "tokens_out": 261
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1642.5081250017683,
+ "output": "{\"type\": \"return\", \"references\": [\"Wednesday 2026-10-07\", \"Thursday 2026-10-08\", \"Saturday 2026-10-10\"], \"text\": \"You look at the fruit on the ground near the jamun tree. Can you count how many pieces of fruit you see?\"}",
+ "prompt_sha": "c2a63db0a7d492a543e695373e6ead0a592db8feb97967c1dfeb41c7868e3b42",
+ "renderer_fingerprint": null,
+ "tokens_in": 886,
+ "tokens_out": 82
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": false,
+ "latency_ms": 3951.2154169970017,
+ "output": "```json\n{\n\"facts\": [\n{\n\"span\": \"Walk achha tha.\",\n\"kind\": \"sight\",\n\"subject\": \"Walk\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"Wind tez thi.\",\n\"kind\": \"weather\",\n\"subject\": \"Wind\",\n\"certainty\": \"sure\",\n\"place\": \"\"\n},\n{\n\"span\": \"lagta hai Rain bahut ho raha hai.\",\n\"kind\": \"weather\",\n\"subject\": \"Rain\",\n\"certainty\": \"unsure\"\n}\n],\n\"mission_result\": \"partly\",\n\"mission_span\": \"Mission partially hua.\",\n\"entry\": \"Mom and Dad had a walk. The walk was good. The wind was strong. It seems like it is raining a lot. The mission was partially done.\"\n}\n```",
+ "prompt_sha": "d22777ad33f7997fe9eaaa3d4c8ef29ca74b44b9000c35bd71a6f0056251b66d",
+ "renderer_fingerprint": null,
+ "tokens_in": 488,
+ "tokens_out": 196
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 4302.611875005823,
+ "output": "{\"facts\":[{\"span\":\"a koel was calling from the coconut tree near the temple pond.\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"sure\",\"place\":\"temple pond\"},{\"span\":\"the coconut seller was there with his cart.\",\"kind\":\"person\",\"subject\":\"coconut seller\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"a koel was calling\",\"entry\":\"Mom and Dad walked to the temple. They heard a koel calling from the coconut tree near the temple pond. They saw the coconut seller with his cart and had one coconut each.\"}",
+ "prompt_sha": "2d79ba5f94d34566b0f6039399c205116d1d572c1ded7d4f07d1b689426a24ee",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 743,
+ "tokens_out": 121
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1272.3336670023855,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You, look at the rose near the flower seller.\"}",
+ "prompt_sha": "5804ac4e90db4213aa838ec46f7dabacdff4878b174ff850be9b341195c8a487",
+ "renderer_fingerprint": null,
+ "tokens_in": 959,
+ "tokens_out": 32
+}

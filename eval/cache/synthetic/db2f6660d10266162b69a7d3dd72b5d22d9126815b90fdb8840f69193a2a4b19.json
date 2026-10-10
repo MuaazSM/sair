@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 2595.5118749989197,
+ "output": "{\"facts\":[{\"span\":\"five mist is here.\",\"kind\":\"other\",\"subject\":\"buses\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"I counted the buses.\",\"entry\":\"Mom finished her evening walk and counted the buses. She noticed maybe five mist.\"}",
+ "prompt_sha": "81e27d09796e5ed0c57ae15af540c7382dab937bda2b4f3840252b6101e52f06",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 729,
+ "tokens_out": 59
+}

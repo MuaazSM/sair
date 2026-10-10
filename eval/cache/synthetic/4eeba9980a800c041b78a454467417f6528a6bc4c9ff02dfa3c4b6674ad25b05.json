@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": false,
+ "latency_ms": 3313.846832999843,
+ "output": "{\"facts\":[{\"span\":\"The wind is strong.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Rain is falling.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"We only partially did the mission.\",\"entry\":\"Mom and Dad went for a walk. Dad noticed strong wind and Mom thought maybe rain is falling.\"}",
+ "prompt_sha": "8b48db2ea21db1cbddb98f58c31407d46fa79de52e5085d0de56a5ac4eeb79e2",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 767,
+ "tokens_out": 87
+}

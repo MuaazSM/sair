@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 810.2052920003189,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"Notice if you see any shops near the wall.\"}",
+ "prompt_sha": "95a44cdce3d4d6b5e723039b9af65749a879a448cd5c16069969ee67b843cc01",
+ "renderer_fingerprint": null,
+ "tokens_in": 1037,
+ "tokens_out": 31
+}

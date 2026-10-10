@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3680.368166002154,
+ "output": "{\"facts\":[{\"span\":\"the neem at the bus stop was full of crows.\",\"kind\":\"plant\",\"subject\":\"neem\",\"certainty\":\"sure\",\"place\":\"bus stop\"},{\"span\":\"the chana seller gave me a small packet, roasted chana.\",\"kind\":\"person\",\"subject\":\"chana seller\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad went for a walk and saw a chana seller and a neem tree with crows.\"}",
+ "prompt_sha": "efdf7d63ecac987faba628ff23071b0d0e957c724f3edfcc4a6ece4157d6ac45",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 735,
+ "tokens_out": 103
+}

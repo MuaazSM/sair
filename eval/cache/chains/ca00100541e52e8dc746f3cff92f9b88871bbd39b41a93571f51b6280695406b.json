@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3514.6377910023148,
+ "output": "{\"facts\":[{\"span\":\"the crows were on the gulmohar again.\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\"},{\"span\":\"a lot of scooters parked everywhere.\",\"kind\":\"other\",\"subject\":\"scooters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk and noticed crows on the gulmohar and many scooters parked.\"}",
+ "prompt_sha": "b66b4a016e942e8b78757fd6f6f31fef59a8ad38c38b9387a49434eec981547c",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 739,
+ "tokens_out": 95
+}

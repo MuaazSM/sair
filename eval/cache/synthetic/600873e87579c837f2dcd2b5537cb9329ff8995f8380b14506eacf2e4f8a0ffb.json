@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 6275.177999999869,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls hain, bilkul saaf.\",\"kind\":\"plant\",\"subject\":\"vegetable stalls\",\"certainty\":\"sure\",\"place\":\"stalls\"},{\"span\":\"Bhutta ki smell bahut tez hai.\",\"kind\":\"smell\",\"subject\":\"smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan khada tha.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there I think.\",\"kind\":\"other\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Spotting differences was hard.\",\"entry\":\"Dad went for an evening walk. They saw vegetable stalls, a vendor, and a hen. They smelled bhutta and thought there were umbrellas.\"}",
+ "prompt_sha": "8d9e43be795d22f9de1a041d1e220a91f97348c51f4e1d3ea0d48d1494701fc3",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 807,
+ "tokens_out": 182
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 4981.069834000664,
+ "output": "{\"facts\": [{\"span\": \"Aaj hawa kaafi thandi thi, bahut achha laga.\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Kids playing cricket.\", \"kind\": \"sight\", \"subject\": \"Kids playing cricket\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Crow.\", \"kind\": \"sight\", \"subject\": \"Crow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Humne thoda sa pata kiya.\", \"kind\": \"other\", \"subject\": \"pata kiya\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"Umm, achha.\", \"kind\": \"sound\", \"subject\": \"achha\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Mom and Dad walked today. The wind was quite cold, which felt very good. The kids were playing cricket. Mom thought it was a Crow, and Dad said they had found a little bit of information.\"}",
+ "prompt_sha": "6772cc827df3e32462483de4bcb3dd4b16d91ac3b0f89b272a1dc4d7dff9c866",
+ "renderer_fingerprint": null,
+ "tokens_in": 505,
+ "tokens_out": 245
+}

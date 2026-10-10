@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2288.4663330005424,
+ "output": "{\"facts\": [{\"span\": \"the sky was orange near the water\", \"kind\": \"sight\", \"subject\": \"the sky\", \"certainty\": \"sure\", \"place\": \"near the water\"}], \"mission_result\": \"done\", \"entry\": \"Dad walked along the sea-face till the second bench. The tide was high, waves coming right up to the wall. The sky was orange near the water. The chai stall was open, I didn't have any.\"}",
+ "prompt_sha": "e19c04b35726ac4790066e10d4460419ba1ce6fba40c321f409b3c90599692b4",
+ "renderer_fingerprint": null,
+ "tokens_in": 506,
+ "tokens_out": 104
+}

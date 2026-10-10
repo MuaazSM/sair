@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:qwen3.5-4b-base-q4_k_m",
+ "grammar": true,
+ "latency_ms": 3210.280250001233,
+ "output": "{\"facts\":[{\"span\":\"imli ke ped pe aaj bandar the\",\"kind\":\"animal\",\"subject\":\"monkeys\",\"certainty\":\"sure\",\"place\":\"garden\"},{\"span\":\"main door se dekhta raha\",\"kind\":\"sight\",\"subject\":\"monkeys\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":null,\"entry\":\"Dad walked near a garden and saw monkeys on imli trees.\"}",
+ "prompt_sha": "168c4cfb13c0c44f61b3a136cf8bb604a1cce745b9548938446727c11d989b9e",
+ "renderer_fingerprint": "db5764942bee1ad1b48aafc609b57876fb2970e864717196919ea5b9b86a2962",
+ "tokens_in": 734,
+ "tokens_out": 87
+}

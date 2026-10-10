@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2635.7466250010475,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f3_1\", \"f3_2\"], \"text\": \"You will listen for the chirping sound near the banyan.\"}",
+ "prompt_sha": "e9e701ceab268edcb1d0be6f8c91b82f22f3f7d2fb8818270f9e9318196f3602",
+ "renderer_fingerprint": null,
+ "tokens_in": 1773,
+ "tokens_out": 46
+}

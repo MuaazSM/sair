@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 3705.560582999169,
+ "output": "{\"facts\": [{\"span\": \"Mist bahut thick thi\", \"kind\": \"weather\", \"subject\": \"Mist\", \"certainty\": \"sure\", \"place\": \"\"}, {\"span\": \"lagta hai Sparrow ud raha tha\", \"kind\": \"sight\", \"subject\": \"Sparrow\", \"certainty\": \"unsure\", \"place\": \"\"}, {\"span\": \"Aaj hawa kaafi thandi thi\", \"kind\": \"weather\", \"subject\": \"hawa\", \"certainty\": \"sure\", \"place\": \"\"}], \"mission_result\": \"not_mentioned\", \"entry\": \"Evening walk was good. The mist was very thick. It seems a sparrow was flying. We drank three tea. I counted the bus, I saw four. Today the wind was quite cold.\"}",
+ "prompt_sha": "68adbca621866ff11da73f58273c38073c8bbcc2ab7d0990cbdf1f1bf237e157",
+ "renderer_fingerprint": null,
+ "tokens_in": 501,
+ "tokens_out": 167
+}

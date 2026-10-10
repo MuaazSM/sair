@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama:gemma4:e2b",
+ "grammar": true,
+ "latency_ms": 2760.2476669999305,
+ "output": "{\"facts\": [{\"span\": \"बाज़ार में आज कुछ अलग सी खुशबू थी\", \"kind\": \"smell\", \"subject\": \"खुशबू\", \"certainty\": \"sure\", \"place\": \"बाज़ार\"}, {\"span\": \"कोई मिठाई बन रही थी शायद\", \"kind\": \"other\", \"subject\": \"मिठाई\", \"certainty\": \"unsure\", \"place\": \"बाज़ार\"}], \"mission_result\": \"not_done\", \"entry\": \"Dad noticed a different smell in the market today. He thought maybe some sweets were being made.\"}",
+ "prompt_sha": "a7a895f42de6e892c4985530caeae1f9840e92c9763fc4bc61201c7ce4bbf3ba",
+ "renderer_fingerprint": null,
+ "tokens_in": 485,
+ "tokens_out": 123
+}
