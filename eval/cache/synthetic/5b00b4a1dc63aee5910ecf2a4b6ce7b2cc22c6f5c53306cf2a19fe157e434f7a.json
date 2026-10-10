@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4666.7940839979565,
+ "output": "{\"facts\":[{\"span\":\"hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"ho sakta hai Crow dikha hai\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially hua\",\"entry\":\"Mom and Dad felt the cold air and thought they maybe saw a crow. They admitted their mission was only partially done.\"}",
+ "prompt_sha": "a552985e1630bb0429c58cc0499b01221b592906c55279ed6f5ccb836032dfe6",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 519,
+ "tokens_out": 95
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4300.246749997314,
+ "output": "{\"facts\":[{\"span\":\"my back hurt\",\"kind\":\"other\",\"subject\":\"back\",\"certainty\":\"sure\"},{\"span\":\"temple and back\",\"kind\":\"other\",\"subject\":\"temple\",\"certainty\":\"sure\",\"place\":\"temple\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went on a short walk where her back hurt. She mentioned a temple and her back again.\"}",
+ "prompt_sha": "53bb315eeed87bbb1d91b562fe1e643e9fb56c5725f1b8a4921fb8c574273c8f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 472,
+ "tokens_out": 85
+}

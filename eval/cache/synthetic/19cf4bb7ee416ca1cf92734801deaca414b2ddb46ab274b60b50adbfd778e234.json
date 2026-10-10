@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7160.069083998678,
+ "output": "{\"facts\":[{\"span\":\"kids wahan hain\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"imli ka ped dikh raha hai\",\"kind\":\"plant\",\"subject\":\"imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"kauwa probably ud raha tha\",\"kind\":\"animal\",\"subject\":\"kauwa\",\"certainty\":\"unsure\"},{\"span\":\"bicycle wahan hai\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\",\"place\":\"wahan\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad had a very good walk where kids were present. They saw an imli ka ped and maybe a kauwa was flying. A bicycle was also there.\"}",
+ "prompt_sha": "8ed782d6bcb14ad54d8a3254d05ab074d4e83065a6dc8220da197b3eedd1bd11",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 158
+}

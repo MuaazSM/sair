@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4924.238500003412,
+ "output": "{\"facts\":[{\"span\":\"aaj tote nahi the aam ke ped pe\",\"kind\":\"plant\",\"subject\":\"tote\",\"certainty\":\"sure\",\"place\":\"aam ke ped pe\"},{\"span\":\"press wala tha\",\"kind\":\"sound\",\"subject\":\"press wala\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"aaj tote nahi the aam ke ped pe\",\"entry\":\"Dad went for a walk. They noticed tote, maybe.\"}",
+ "prompt_sha": "526e74745f96b9d1485ba70c5737906037540325176fbe598d7a273aaff10bc0",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 100
+}

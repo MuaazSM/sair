@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7694.756124998094,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"A vendor was there\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad enjoyed a good evening walk where he saw vegetable stalls and a vendor. He noticed a strong smell of bhutta and spotted a hen. He also observed that shop shutters were closed.\"}",
+ "prompt_sha": "31d33f944b3902ff8e16739cbdeff67bd7565f4b352f67d9da723325907b1612",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 514,
+ "tokens_out": 174
+}

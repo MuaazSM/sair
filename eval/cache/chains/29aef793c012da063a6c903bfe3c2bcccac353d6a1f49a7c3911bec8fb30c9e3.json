@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6041.570000001229,
+ "output": "{\"facts\":[{\"span\":\"lots of crabs on the rocks\",\"kind\":\"animal\",\"subject\":\"crabs\",\"certainty\":\"sure\",\"place\":\"rocks\"},{\"span\":\"small ones, running around\",\"kind\":\"animal\",\"subject\":\"small ones\",\"certainty\":\"sure\"},{\"span\":\"watched from the wall\",\"kind\":\"sight\",\"subject\":\"wall\",\"certainty\":\"sure\",\"place\":\"wall\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed crabs, small ones, running around on the rocks. They watched from the wall.\"}",
+ "prompt_sha": "5702014470bd0deba2a3dc5ec717a052d0c3ffc967df7a105c76fe22413fd5d5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 489,
+ "tokens_out": 125
+}

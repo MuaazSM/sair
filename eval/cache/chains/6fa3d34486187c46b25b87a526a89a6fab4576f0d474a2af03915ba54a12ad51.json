@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7914.481874999183,
+ "output": "{\"facts\":[{\"span\":\"बरगद के नीचे एक कुत्ता सो रहा था\",\"kind\":\"animal\",\"subject\":\"कुत्ता\",\"certainty\":\"sure\",\"place\":\"बरगद के नीचे\"},{\"span\":\"स्कूल का गेट बंद था\",\"kind\":\"other\",\"subject\":\"गेट\",\"certainty\":\"sure\",\"place\":\"स्कूल\"},{\"span\":\"हवा में थोड़ी नमी थी\",\"kind\":\"weather\",\"subject\":\"नमी\",\"certainty\":\"sure\"},{\"span\":\"लगता है बारिश होगी\",\"kind\":\"weather\",\"subject\":\"बारिश\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed a dog sleeping under a banyan and saw a school gate that was closed. They felt some moisture in the air and thought rain might come.\"}",
+ "prompt_sha": "40358031f1cf8b90b61741cb140e2927dc28d0cc4ec356e0f0c883f906ea36e2",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 175
+}

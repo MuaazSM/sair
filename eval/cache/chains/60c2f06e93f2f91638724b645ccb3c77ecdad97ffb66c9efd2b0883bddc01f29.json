@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7972.9163340016385,
+ "output": "{\"facts\":[{\"span\":\"समुद्र के किनारे\",\"kind\":\"other\",\"subject\":\"समुद्र के किनारे\",\"certainty\":\"sure\",\"place\":\"समुद्र के किनारे\"},{\"span\":\"बाल उड़ रहे थे\",\"kind\":\"other\",\"subject\":\"बाल\",\"certainty\":\"sure\"},{\"span\":\"भुट्टे वाला नहीं था\",\"kind\":\"other\",\"subject\":\"भुट्टे वाला\",\"certainty\":\"sure\"},{\"span\":\"कुछ पक्षी पानी के ऊपर उड़ रहे थे\",\"kind\":\"animal\",\"subject\":\"पक्षी\",\"certainty\":\"sure\",\"place\":\"पानी के ऊपर\"}],\"mission_result\":\"not_done\",\"mission_span\":\"भुट्टे वाला नहीं था\",\"entry\":\"Mom went for a walk. They noticed बाल and पक्षी, maybe पक्षी.\"}",
+ "prompt_sha": "c4027a488f6b9a24436f0d96e93427666a19cb1852ceda560179e32bfe786106",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 517,
+ "tokens_out": 180
+}

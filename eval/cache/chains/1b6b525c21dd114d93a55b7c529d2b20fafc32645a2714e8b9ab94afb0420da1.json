@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7286.176291003358,
+ "output": "{\"facts\":[{\"span\":\"मोची आज भी पीपल के नीचे बैठा था\",\"kind\":\"person\",\"subject\":\"मोची\",\"certainty\":\"sure\",\"place\":\"पीपल के नीचे\"},{\"span\":\"फल वाले के पास केले थे\",\"kind\":\"plant\",\"subject\":\"केले\",\"certainty\":\"sure\",\"place\":\"फल वाले के पास\"},{\"span\":\"एक गाय बीच में खड़ी थी\",\"kind\":\"animal\",\"subject\":\"गाय\",\"certainty\":\"sure\",\"place\":\"बीच में\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad noticed that the parrot was still sitting under the peepal tree. He saw bananas near the fruit vendor and a cow standing in the middle while people went around it.\"}",
+ "prompt_sha": "b8bf92f5dd0e1c2eca8faf51b44b619127409a6ff0e5048bdc4286097c369a6e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 161
+}

@@ -1,0 +1,225 @@
+{
+ "chain_id": "c11",
+ "system": "D",
+ "memory": "fact",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Notice one sound that changes as you walk.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Dad went to the market road where vegetable sellers were shouting loudly. As he walked further, he heard the sound of a temple bell. Near the paan shop, there was a gulmohar with pigeons on it.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\"], \"text\": \"You, notice the sound of the sabzi wale near the path.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, notice the sound of the sabzi wale near the path.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "You, notice the sound of the sabzi wale near the path.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed guavas, crows and scooters.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, listen for the temple ki ghanti ki awaaz.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, listen for the temple ki ghanti ki awaaz.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "You, listen for the temple ki ghanti ki awaaz.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Dad noticed a different smell in the market, maybe from sweets being made.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, listen for the temple ki ghanti ki awaaz.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You, look for a gulmohar near the path.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, look for a gulmohar near the path.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "You, look for a gulmohar near the path.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed rain, road and gulmohar.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You, look for a gulmohar near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f4_3\"], \"text\": \"You, notice the leaves on the gulmohar.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, notice the leaves on the gulmohar.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "You, notice the leaves on the gulmohar.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Dad went to the market where a band baja was playing. He noticed a wedding and saw many people behind him. He stood aside.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You, listen for the sound of the band baja wala.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, listen for the sound of the band baja wala.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "You, listen for the sound of the band baja wala.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed कौवे at गुलमोहर.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You, look for the guavas near the paan shop.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, look for the guavas near the paan shop.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "You, look for the guavas near the paan shop.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad saw the guava cart again and heard a temple bell from the corner. He noticed birds sitting on the electric wires above the paan shop, though he could not see what they were.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You, listen for the sound of the temple bell from the corner.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, listen for the sound of the temple bell from the corner.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9030.644875005237,
+ "output": "{\"facts\":[{\"span\":\"compound mein do round kiye\",\"kind\":\"other\",\"subject\":\"do round\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"jo badam ka ped hai parking ke paas\",\"kind\":\"plant\",\"subject\":\"badam ka ped\",\"certainty\":\"sure\",\"place\":\"parking ke paas\"},{\"span\":\"uske patte bade bade hain\",\"kind\":\"plant\",\"subject\":\"patte\",\"certainty\":\"sure\"},{\"span\":\"maine ek patta uthaya\",\"kind\":\"plant\",\"subject\":\"ek patta\",\"certainty\":\"sure\"},{\"span\":\"watchman uncle chai pi rahe the\",\"kind\":\"person\",\"subject\":\"watchman uncle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"maine ek patta uthaya, accha shape tha\",\"entry\":\"Mom went for a walk and did today's mission. They noticed do round, badam ka ped, patte, ek patta and watchman uncle.\"}",
+ "prompt_sha": "8b6159ec06d0e0a75c8cb7a2df1da8ab8ab737225ee1d56687c2bd791e9b27f4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 511,
+ "tokens_out": 205
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4584.574375003285,
+ "output": "{\"facts\":[{\"span\":\"some bird was making a loud noise on the water tank\",\"kind\":\"sound\",\"subject\":\"some bird\",\"certainty\":\"unsure\",\"place\":\"on the water tank\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom heard some bird making a loud noise on the water tank. She was unsure which bird it was. The watchman said it comes every day.\"}",
+ "prompt_sha": "48449444d02c217a60e15b31c7b77f32d001d10e0cff0383a64c570a53c3f221",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 500,
+ "tokens_out": 86
+}

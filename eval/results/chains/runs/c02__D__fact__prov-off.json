@@ -1,0 +1,260 @@
+{
+ "chain_id": "c02",
+ "system": "D",
+ "memory": "fact",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Notice one tree with flowers on it along your way.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 3,
+   "entry": "Mom went to the park and did two rounds. She noticed a gulmohar near the gate that had a few flowers still. She also saw some children playing near the swings.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the gulmohar near the gate.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice the gulmohar near the gate.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "You will notice the gulmohar near the gate.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went for a walk and did today's mission. They noticed gulmohar, maybe bird.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"You will notice the gulmohar near the gate. Listen for any bird sounds near the park.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice the gulmohar near the gate. Listen for any bird sounds near the park.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "You will notice the gulmohar near the gate. Listen for any bird sounds near the park.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went for a walk. They noticed windy.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"You will notice the gulmohar near the gate. Look for any sign of the wind on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"You will notice the gulmohar near the gate. Look for any sign of wind on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look at the colour of the sky above you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom sat on a bench near the gate in the park where there were many people. She thought maybe there was a yoga group. Under a gulmohar tree, some pigeons were eating seeds.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"You will notice the gulmohar near the gate. Listen for any sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks",
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_2\"], \"text\": \"Notice if the bench near the gate is still wet.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice any smell in the air near a garden as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom noticed kabootar under gulmohar and a squirrel running behind a bench. She felt the weather was good and a bit cold.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"You will notice the gulmohar near the gate. Look for the kabootar under the gulmohar.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"Notice the kabootar under the gulmohar.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom walked slowly and noticed a nice smell near the hedge by the far side. She thought she saw some flower, but she was unsure which one it was.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"You will notice the gulmohar near the gate. Look for any squirrel near the bench.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"You will notice the gulmohar near the gate.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went for a round. She noticed the sky was very clear. She saw that there are fewer flowers on the gulmohar, mostly leaves.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"You will notice the gulmohar near the gate. Look for the kabootar under the gulmohar.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"Notice the gulmohar near the gate and see if you can spot the kabootar under it.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

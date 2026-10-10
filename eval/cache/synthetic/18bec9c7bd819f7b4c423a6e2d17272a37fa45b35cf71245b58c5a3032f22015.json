@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 8329.756290993828,
+ "output": "{\"facts\":[{\"span\":\"Yeh walk bahut achha tha\",\"kind\":\"other\",\"subject\":\"walk\",\"certainty\":\"sure\"},{\"span\":\"Kids wahan the\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Woh imli ka ped dekha\",\"kind\":\"plant\",\"subject\":\"imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"Crow the लगता है was sitting near\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\",\"place\":\"near\"},{\"span\":\"Bicycle wahan thi\",\"kind\":\"other\",\"subject\":\"Bicycle\",\"certainty\":\"sure\",\"place\":\"wahan\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad felt their walk was very good. They saw kids and an imli ka ped. They think a crow was sitting near them and noticed a bicycle there.\"}",
+ "prompt_sha": "07a0adcdeae42633b6748e6c95a0847f6806126759d60b4a6408f9ca4e66ca47",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 186
+}

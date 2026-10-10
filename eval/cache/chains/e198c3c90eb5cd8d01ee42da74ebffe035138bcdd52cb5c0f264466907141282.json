@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8355.65670899814,
+ "output": "{\"facts\":[{\"span\":\"sabzi wale zor zor se bol rahe the\",\"kind\":\"sound\",\"subject\":\"sabzi wale\",\"certainty\":\"sure\"},{\"span\":\"temple ki ghanti ki awaaz aane lagi\",\"kind\":\"sound\",\"subject\":\"temple ki ghanti ki awaaz\",\"certainty\":\"sure\"},{\"span\":\"paan ki dukaan ke paas ek gulmohar hai, us pe kauve the\",\"kind\":\"animal\",\"subject\":\"kauve\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"temple ki ghanti ki awaaz aane lagi\",\"entry\":\"Dad went to the market road where vegetable sellers were shouting loudly. As he walked further, he heard the sound of a temple bell. Near the paan shop, there was a gulmohar with pigeons on it.\"}",
+ "prompt_sha": "562016e1f59a228b933990332281cd0ed78b0f146d91af366c4aa80a5576dc7e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 517,
+ "tokens_out": 179
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7676.816625003994,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls are visible.\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"A vendor is standing there.\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"I saw a hen.\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas are there probably.\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters are closed.\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"We looked at the market. We spotted some differences.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed vegetable stalls, vendor, hen and shop shutters, maybe umbrellas.\"}",
+ "prompt_sha": "29e65d54713d0445eff6689bf6a74b18f287b6466339200695c540fd80faa8b6",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 529,
+ "tokens_out": 173
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6243.678208003985,
+ "output": "{\"facts\":[{\"span\":\"bhutta wala wapas aa gaya\",\"kind\":\"other\",\"subject\":\"bhutta wala\",\"certainty\":\"sure\"},{\"span\":\"nimbu masala lagaya\",\"kind\":\"other\",\"subject\":\"nimbu masala\",\"certainty\":\"sure\"},{\"span\":\"ek kutta tha steps pe\",\"kind\":\"animal\",\"subject\":\"kutta\",\"certainty\":\"sure\",\"place\":\"steps pe\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed that the bhutta wala returned and applied nimbu masala. She saw a kutta on the steps, which she thinks is the same one from before.\"}",
+ "prompt_sha": "cc41876c8ab75cb877ba147d280731104489837be94724740c510e2b8046c4c8",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 135
+}

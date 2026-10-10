@@ -1,0 +1,245 @@
+{
+ "chain_id": "c18",
+ "system": "D",
+ "memory": "fact",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Find a spot on your path where the light looks different.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Mom found a spot in the lane where light shines between two buildings, making everything look golden. She noticed a tulsi plant near a door and saw a flower shop that was open.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\"], \"text\": \"You will notice if the light near the buildings changes.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice if the light near the buildings changes.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "You will notice if the light near the buildings changes.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went for a walk. They noticed cloudy weather, a wet soil, and a small dog.",
+   "verified_facts": 5,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice if the light near the buildings changes. Look for the roshni in the lane ke beech mein ek jagah.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the roshni near the lane.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice the roshni near the lane.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "You will notice the roshni near the lane.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went to the flower shop and saw many flowers. She thought some festival might be coming. She did not take anything.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You will notice if the roshni near the lane changes.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice if the roshni near the lane changes.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "You will notice if the roshni near the lane changes.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom noticed a small dog that came behind her again. She saw it go to the end of the lane and then return.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_2\", \"f2_4\"], \"text\": \"You will notice if the soil near the lane is wet.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice if the soil near the lane is wet.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "You will notice if the soil near the lane is wet.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom heard a bird singing from one of the balconies. She thought it might be a pet bird in a cage, but she could not see it.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice if the roshni near the lane changes.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice if the roshni near the lane changes.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 2,
+   "entry": "Mom noticed the light was there again between the two buildings. She saw some lamps kept near the tulsi pot.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f6_1\", \"f6_2\"], \"text\": \"You will notice if the light near the buildings changes.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f6_1\", \"f6_2\"], \"text\": \"You will watch if the roshni near the both building changes.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will watch if the roshni near the both building changes.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "You will watch if the roshni near the both building changes.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went for a short walk. She noticed drizzle. The dog wasn't there.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f6_1\", \"f6_2\"], \"text\": \"You will watch if the roshni near the both building changes.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f6_1\", \"f6_2\"], \"text\": \"You will watch if the roshni near the both building changes.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

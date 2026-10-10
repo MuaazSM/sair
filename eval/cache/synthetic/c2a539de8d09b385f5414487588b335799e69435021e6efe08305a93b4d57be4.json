@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6287.153249999392,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"I saw the champa\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There was one goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The garbage truck passed three times\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Checked the jasmine flowering status\",\"entry\":\"Dad went for a walk and did today's mission. They noticed jasmine, champa and goat.\"}",
+ "prompt_sha": "9b205f2ae560d99eda3aa0ddf85781842a775c906f391ccfee173cdd78d709c9",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 506,
+ "tokens_out": 131
+}

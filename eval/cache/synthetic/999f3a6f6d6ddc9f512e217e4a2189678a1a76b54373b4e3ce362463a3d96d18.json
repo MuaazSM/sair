@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6041.522459003318,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters closed\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Market dekha. Kuch alag nahi.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed Vegetable stalls, Bhutta ki smell and Shop shutters.\"}",
+ "prompt_sha": "3deb4ea9dd4fd1e50a0a1a0c18339188006ec93768f10780fb315ba04e70916a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 128
+}

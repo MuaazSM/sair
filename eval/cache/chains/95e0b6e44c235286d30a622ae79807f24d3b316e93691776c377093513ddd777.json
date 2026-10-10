@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6344.341374999203,
+ "output": "{\"facts\":[{\"span\":\"गली में आज कुछ फूल खिले थे\",\"kind\":\"plant\",\"subject\":\"फूल\",\"certainty\":\"sure\",\"place\":\"गली\"},{\"span\":\"किसी के घर के बाहर बेल पर\",\"kind\":\"plant\",\"subject\":\"बेल\",\"certainty\":\"sure\",\"place\":\"किसी के घर के बाहर\"},{\"span\":\"बहुत सुंदर लग रहे थे\",\"kind\":\"sight\",\"subject\":\"फूल\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed फूल and बेल.\"}",
+ "prompt_sha": "ee4768b0b19a50f50c8dfb519d75dabb7ef569446bd71bd4114a2a542952f206",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 135
+}

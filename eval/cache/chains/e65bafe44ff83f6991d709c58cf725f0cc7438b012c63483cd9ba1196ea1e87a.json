@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6404.988957998285,
+ "output": "{\"facts\":[{\"span\":\"koyal phir se thi\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\"},{\"span\":\"peepal pe hi lag rahi thi\",\"kind\":\"plant\",\"subject\":\"peepal\",\"certainty\":\"sure\",\"place\":\"peepal\"},{\"span\":\"phoolwali ke paas aaj gulab bhi the\",\"kind\":\"plant\",\"subject\":\"gulab\",\"certainty\":\"sure\",\"place\":\"phoolwali ke paas\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed a koyal again on the peepal. She also saw gulab near phoolwali.\"}",
+ "prompt_sha": "a44c1d24b005cf97a68084cbbf5097cb93551611973011e29cf210412adb735b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 500,
+ "tokens_out": 137
+}

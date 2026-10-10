@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1067.3261670017382,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the gulmohar near the gate.\"}",
+ "prompt_sha": "59200db93f5616aefb443c2c479005ace686873d0d5f684092f63f61b91cd6fe",
+ "renderer_fingerprint": null,
+ "tokens_in": 617,
+ "tokens_out": 38
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 10491.903624999395,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Bhutta ki smell bahut achhi thi\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan tha\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Ek hen dekha\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there लगता है\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\",\"place\":\"there\"},{\"span\":\"Shop shutters band the\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Market mein kuch alag tha. Bas thoda hi pata chala.\",\"entry\":\"Dad finished his evening walk and found the market busy. He noticed the smell of bhutta and saw a vendor and a hen. He thought there might be umbrellas and saw that shop shutters were closed. He felt the market was different but only knew a little about it.\"}",
+ "prompt_sha": "f61e1e02da42ed7dd2f52d254626ebae1dc2cc9333e05fec3d303dd74055976f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 521,
+ "tokens_out": 245
+}

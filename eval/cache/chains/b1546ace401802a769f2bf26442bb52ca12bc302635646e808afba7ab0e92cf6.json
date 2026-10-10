@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1372.9352080044919,
+ "output": "{\"type\": \"return\", \"references\": [\"Wednesday 1\", \"Thursday 1\", \"Friday 1\", \"Saturday 1\"], \"text\": \"You will notice the sound of the water tank.\"}",
+ "prompt_sha": "51cfd1fea15912c5eae9e8287f9563c4022ca481c53d06c18b5f15892a889045",
+ "renderer_fingerprint": null,
+ "tokens_in": 680,
+ "tokens_out": 45
+}

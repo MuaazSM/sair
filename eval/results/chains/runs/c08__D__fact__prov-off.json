@@ -1,0 +1,258 @@
+{
+ "chain_id": "c08",
+ "system": "D",
+ "memory": "fact",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went to the end of the lane and saw an old mango tree with parrots sitting on it. He noticed a press man closing his shop. The wind felt very light.",
+   "verified_facts": 5,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You look at the old आम का पेड़ and notice any new leaves.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You look at the पुराना आम का पेड़.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "verb_not_allowed",
+      "multiple_tasks"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice one tree with flowers on it along your way.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "Notice one tree with flowers on it along your way.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed tote, maybe.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, notice the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, notice the old mango tree.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "You, notice the old mango tree.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad heard the softest sound from the leaves of the mango tree moving. He stood there for a minute and noticed the lane was empty.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, look at the old mango tree.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "You, look at the old mango tree.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed फूल and बेल.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f3_1\"], \"text\": \"You, look at the leaves of the mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You, look at the leaves of the mango tree.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "You, look at the leaves of the mango tree.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed shor, maybe.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed vehicle.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Notice the wind as it moves the leaves around you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. He felt pain in his knees.",
+   "verified_facts": 0,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Find one leaf with a shape you like.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

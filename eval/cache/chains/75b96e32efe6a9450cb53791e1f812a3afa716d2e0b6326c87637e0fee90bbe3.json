@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9491.076624995912,
+ "output": "{\"facts\":[{\"span\":\"do patte dekhe\",\"kind\":\"plant\",\"subject\":\"patte\",\"certainty\":\"sure\"},{\"span\":\"ek champa ka jo bilkul hara tha\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"ek badam ka jo laal ho raha tha\",\"kind\":\"plant\",\"subject\":\"badam\",\"certainty\":\"sure\"},{\"span\":\"champa ka ped clubhouse ke paas hai\",\"kind\":\"plant\",\"subject\":\"champa ka ped\",\"certainty\":\"sure\",\"place\":\"clubhouse ke paas\"},{\"span\":\"watchman ne salaam kiya\",\"kind\":\"person\",\"subject\":\"watchman\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"ek champa ka jo bilkul hara tha aur ek badam ka jo laal ho raha tha\",\"entry\":\"Dad saw two leaves, one champa that was completely green and one badam that was turning red. He noted that the champa tree is near the clubhouse. A watchman also said salaam.\"}",
+ "prompt_sha": "2fe63a70c7c83e9d550835869193b2fd8f67958748f099cc2834083994aa3f4b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 216
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4777.501707998454,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\"},{\"span\":\"ho sakta hai Crow flew over\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad felt the walk was very peaceful. They saw kids playing cricket and maybe a crow flew over. They did not know what was made for dinner or its colour.\"}",
+ "prompt_sha": "dfe4ffa6796c73dd43fd00a7a189ce0696bfcf80a449ee3f0b822e62dbbeaded",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 98
+}

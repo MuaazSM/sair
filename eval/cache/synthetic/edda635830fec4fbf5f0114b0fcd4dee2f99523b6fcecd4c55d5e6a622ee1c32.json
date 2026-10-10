@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6707.478374999482,
+ "output": "{\"facts\":[{\"span\":\"Teen dew on the grass\",\"kind\":\"plant\",\"subject\":\"Teen dew\",\"certainty\":\"sure\",\"place\":\"on the grass\"},{\"span\":\"One butterfly\",\"kind\":\"animal\",\"subject\":\"One butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel singing lagta hai was near the tree\",\"kind\":\"sound\",\"subject\":\"Koel singing\",\"certainty\":\"unsure\",\"place\":\"near the tree\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission skip. Forgot to count yoga.\",\"entry\":\"Dad finished his evening walk but skipped the mission to count the yoga group. He saw three dew on the grass and one butterfly. He thought he heard a Koel singing near the tree.\"}",
+ "prompt_sha": "16e8796a9189ced99531f0b60ace0556b60f170370918424b82ba09ea0dad52c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 146
+}

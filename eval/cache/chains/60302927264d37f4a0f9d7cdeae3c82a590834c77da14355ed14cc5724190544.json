@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6021.318209001038,
+ "output": "{\"facts\":[{\"span\":\"बाज़ार में आज कुछ अलग सी खुशबू थी\",\"kind\":\"smell\",\"subject\":\"खुशबू\",\"certainty\":\"sure\",\"place\":\"बाज़ार\"},{\"span\":\"कोई मिठाई बन रही थी शायद\",\"kind\":\"other\",\"subject\":\"मिठाई\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad noticed a different smell in the market, maybe from sweets being made. He did not see which specific sweet it was.\"}",
+ "prompt_sha": "a7a895f42de6e892c4985530caeae1f9840e92c9763fc4bc61201c7ce4bbf3ba",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 118
+}

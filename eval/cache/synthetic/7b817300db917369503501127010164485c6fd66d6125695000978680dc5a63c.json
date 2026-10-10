@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4217.986167001072,
+ "output": "{\"facts\":[{\"span\":\"teen sparrow lagta hai flying near ground\",\"kind\":\"animal\",\"subject\":\"teen sparrow\",\"certainty\":\"unsure\",\"place\":\"near ground\"}],\"mission_result\":\"done\",\"mission_span\":\"Buses count kar li, mujhe pata hai.\",\"entry\":\"Mom went for a walk and did today's mission. They noticed teen sparrow, maybe near ground.\"}",
+ "prompt_sha": "7f09623e031d1e1eb9abb6cbd8601cce3280900ca4a1de198552abfab0772aff",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 505,
+ "tokens_out": 82
+}

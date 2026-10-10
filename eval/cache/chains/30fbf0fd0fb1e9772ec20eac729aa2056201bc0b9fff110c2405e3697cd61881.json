@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6176.4499159980915,
+ "output": "{\"facts\":[{\"span\":\"समुद्र में आज कुछ जहाज़ दिख रहे थे दूर\",\"kind\":\"sight\",\"subject\":\"जहाज़\",\"certainty\":\"sure\",\"place\":\"समुद्र\"},{\"span\":\"शायद मछली पकड़ने वाली नावें थीं\",\"kind\":\"sight\",\"subject\":\"मछली पकड़ने वाली नावें\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed जहाज़, maybe मछली पकड़ने वाली नावें.\"}",
+ "prompt_sha": "eb6e6624eaf315c5a84969e32c5b3b29901057101e042d99745f18fc3469be2d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 501,
+ "tokens_out": 131
+}

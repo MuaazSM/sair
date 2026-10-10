@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8899.918542003434,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Vegetable stalls bahut the\",\"kind\":\"plant\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan tha\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Maine ek hen dekha\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Shop shutters band the\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Kuch alag dikha, par poora mission nahi hua\",\"entry\":\"Dad finished his evening walk and found the market busy with many vegetable stalls. He saw a vendor and a hen, and noticed that some shop shutters were closed. He felt he saw something different but did not complete the full mission.\"}",
+ "prompt_sha": "86e301cdac4e7b2299837afee199de2fcbf451ab7f6955596fb8fece215f12d5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 525,
+ "tokens_out": 202
+}

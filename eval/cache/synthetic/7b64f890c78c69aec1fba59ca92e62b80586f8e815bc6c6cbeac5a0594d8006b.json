@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5887.359584005026,
+ "output": "{\"facts\":[{\"span\":\"hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"kids playing cricket\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"shayad crow flies high\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"humne thoda sa pata lagaya\",\"entry\":\"Mom and Dad felt the cold air and saw kids playing cricket. They thought maybe a crow flew high. They only partly found out what the kids were doing.\"}",
+ "prompt_sha": "8c92da8970c9e688bbf28d3d7d65d86897f5ab51092d349d6f897b0f596c1661",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 522,
+ "tokens_out": 125
+}

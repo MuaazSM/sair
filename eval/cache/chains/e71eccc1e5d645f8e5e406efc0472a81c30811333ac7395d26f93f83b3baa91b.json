@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6421.026375006477,
+ "output": "{\"facts\":[{\"span\":\"the chana seller gave me a small packet, roasted chana\",\"kind\":\"other\",\"subject\":\"chana seller\",\"certainty\":\"sure\"},{\"span\":\"the neem at the bus stop was full of crows\",\"kind\":\"plant\",\"subject\":\"neem\",\"certainty\":\"sure\",\"place\":\"bus stop\"},{\"span\":\"the school bus went past\",\"kind\":\"other\",\"subject\":\"school bus\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad received roasted chana from a seller. He saw a neem tree full of crows at the bus stop. A school bus went past him.\"}",
+ "prompt_sha": "89a80eb54459e9f5ebc531c450b1ef28c54ddcb79057a202d647dbc39a359925",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 493,
+ "tokens_out": 137
+}

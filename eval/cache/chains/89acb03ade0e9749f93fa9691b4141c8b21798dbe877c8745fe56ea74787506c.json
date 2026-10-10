@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 692.4511670003994,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"You will notice the leaf on the neem ka ped.\"}",
+ "prompt_sha": "0729a6b20ce78bd9a4bf24331355c21aa4257275a8dc85630f73956f25569087",
+ "renderer_fingerprint": null,
+ "tokens_in": 1787,
+ "tokens_out": 32
+}

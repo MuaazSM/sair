@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5036.886209003569,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\"},{\"span\":\"shayad Crow\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"},{\"span\":\"Gate par dekha tha\",\"kind\":\"sight\",\"subject\":\"Gate\",\"certainty\":\"sure\",\"place\":\"Gate\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially complete\",\"entry\":\"Mom and Dad went for a walk. They noticed Kids, maybe Crow.\"}",
+ "prompt_sha": "4794573665f4e66c3c733dd64e7a2ea4889f336e7bbc81ae0be724b2237b6b44",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 102
+}

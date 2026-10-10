@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 749.4116249945364,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f1_3\"], \"text\": \"You saw the pond. Please look for any ducks near the pond.\"}",
+ "prompt_sha": "06dc4057c6c0dfeb316602c3d862c805b5575b659aa346dd633e4e152ce06f71",
+ "renderer_fingerprint": null,
+ "tokens_in": 1621,
+ "tokens_out": 41
+}

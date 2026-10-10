@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 849.9156660036533,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice if the roshni near the lane changes.\"}",
+ "prompt_sha": "69fa1c3d769a807cd2f975c24fd393a08aab2182bb7ab573fe820da2c7b3e1dc",
+ "renderer_fingerprint": null,
+ "tokens_in": 1594,
+ "tokens_out": 40
+}

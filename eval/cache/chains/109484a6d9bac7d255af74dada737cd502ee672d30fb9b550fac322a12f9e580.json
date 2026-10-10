@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6491.873917002522,
+ "output": "{\"facts\":[{\"span\":\"some new plants were put in the pots near the lift\",\"kind\":\"plant\",\"subject\":\"new plants\",\"certainty\":\"sure\",\"place\":\"near the lift\"},{\"span\":\"the compound smelled of fresh paint\",\"kind\":\"smell\",\"subject\":\"fresh paint\",\"certainty\":\"sure\",\"place\":\"the compound\"},{\"span\":\"maybe they painted something\",\"kind\":\"other\",\"subject\":\"something\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"the compound smelled of fresh paint, maybe they painted something.\",\"entry\":\"Mom noticed new plants in pots near the lift. She smelled fresh paint in the compound and thought maybe they painted something.\"}",
+ "prompt_sha": "770e1c0de36b8894996b1c502d62c9da1c6e15e41c1e928b962a7a24f915c395",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 495,
+ "tokens_out": 136
+}

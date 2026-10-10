@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5983.540000001085,
+ "output": "{\"facts\":[{\"span\":\"Teen yoga group\",\"kind\":\"sight\",\"subject\":\"Teen yoga group\",\"certainty\":\"sure\"},{\"span\":\"Butterfly dekhi\",\"kind\":\"animal\",\"subject\":\"Butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel ga raha लगता है\",\"kind\":\"sound\",\"subject\":\"Koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished his evening walk and saw a group of three people doing yoga. He spotted a butterfly and thought he heard a Koel bird.\"}",
+ "prompt_sha": "0074f47039cd102ae4bf28f2bcd5c321b227c95b42e269f789836124c39b6c27",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 485,
+ "tokens_out": 119
+}

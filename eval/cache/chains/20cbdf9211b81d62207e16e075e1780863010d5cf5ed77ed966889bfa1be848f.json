@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 672.6401249979972,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will notice the mangoes at the fruit stall at the start.\"}",
+ "prompt_sha": "2c5a64fa62bdc152bb33c630ecd869eb7af59fd053eab87892ed08a180c1c4f2",
+ "renderer_fingerprint": null,
+ "tokens_in": 1077,
+ "tokens_out": 35
+}

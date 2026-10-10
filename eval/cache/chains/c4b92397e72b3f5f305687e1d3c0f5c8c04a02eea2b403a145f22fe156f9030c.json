@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 2094.1265000001295,
+ "output": "{\"facts\":[],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for their evening walk.\"}",
+ "prompt_sha": "f8e9090ea795b614e0d2f4a932e251f612cf1e4b00b40e98eee805881e568983",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 473,
+ "tokens_out": 29
+}

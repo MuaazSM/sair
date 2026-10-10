@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 2335.616917000152,
+ "output": "{\"facts\":[],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a short walk. It drizzled a little.\"}",
+ "prompt_sha": "a4b8720eedb81b3e0a7da3ff770691ca278c7b2054da713cbaa7c451ceaf54ae",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 478,
+ "tokens_out": 35
+}

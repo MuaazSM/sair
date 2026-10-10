@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7901.630249994923,
+ "output": "{\"facts\":[{\"span\":\"compound mein aaj sab jagah peela hi peela dikh raha tha\",\"kind\":\"sight\",\"subject\":\"peela\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"amaltas ke phool gire the gate ke paas\",\"kind\":\"plant\",\"subject\":\"amaltas ke phool\",\"certainty\":\"sure\",\"place\":\"gate ke paas\"},{\"span\":\"kuch balconies mein bhi peeli saari sukh rahi thi\",\"kind\":\"sight\",\"subject\":\"peeli saari\",\"certainty\":\"sure\",\"place\":\"balconies\"}],\"mission_result\":\"done\",\"mission_span\":\"main hans padi\",\"entry\":\"Mom went for a walk and did today's mission. They noticed peela, amaltas ke phool and peeli saari.\"}",
+ "prompt_sha": "bdfcc775bbf9907d37095132c3f83ddf545c2d199da574e9af8adbef3b2fbfe1",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 169
+}

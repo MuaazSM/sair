@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6068.443584001216,
+ "output": "{\"facts\":[{\"span\":\"kids wahan hain.\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"imli ka ped dikha.\",\"kind\":\"plant\",\"subject\":\"imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"ek bicycle dekhi.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"kids wahan hain.\",\"entry\":\"Mom and Dad finished their walk and saw kids there again. They noticed an imli ka ped and a bicycle. Dinner is ready.\"}",
+ "prompt_sha": "b13173a05de32e289a1aac311d3cca406d1c96ebca0ab5cf37024e1f0aa8c893",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 119
+}

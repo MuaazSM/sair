@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7312.343249999685,
+ "output": "{\"facts\":[{\"span\":\"billi phir se thi\",\"kind\":\"animal\",\"subject\":\"billi\",\"certainty\":\"sure\"},{\"span\":\"same car ke upar\",\"kind\":\"other\",\"subject\":\"car\",\"certainty\":\"sure\",\"place\":\"same car ke upar\"},{\"span\":\"aaj thodi garmi thi\",\"kind\":\"weather\",\"subject\":\"garmi\",\"certainty\":\"sure\"},{\"span\":\"watchman ne kaha kal paani nahi aayega\",\"kind\":\"other\",\"subject\":\"paani\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed a cat again on the same car. They felt some heat today and went for three rounds. A watchman mentioned that water will not come tomorrow.\"}",
+ "prompt_sha": "82e0b6f94da7041c3e7d984938561b142a00e2580d6ca65a91aaffa09bb81cff",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 160
+}

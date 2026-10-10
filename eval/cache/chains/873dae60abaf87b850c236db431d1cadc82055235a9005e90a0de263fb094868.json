@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6968.499624999822,
+ "output": "{\"facts\":[{\"span\":\"compound ke chaar chakkar lagaye\",\"kind\":\"other\",\"subject\":\"compound ke chaar chakkar\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"gate ke paas wala ashoka tree\",\"kind\":\"plant\",\"subject\":\"ashoka tree\",\"certainty\":\"unsure\",\"place\":\"gate ke paas\"},{\"span\":\"bachche cycle chala rahe the\",\"kind\":\"person\",\"subject\":\"bachche\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"hum ne aath trees gine, ya shayad nau\",\"entry\":\"Mom and Dad went for a walk and did today's mission partly. They noticed bachche, maybe ashoka tree.\"}",
+ "prompt_sha": "b15b19d078a48c7850f85b199adb0a2b88aaaf9b2e83891df25f3155008eb30c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 529,
+ "tokens_out": 150
+}

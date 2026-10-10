@@ -1,0 +1,1615 @@
+{
+ "bootstrap": "cluster-by-seed",
+ "definitions": {
+  "cer": "code-point edit distance / reference code points (same normalisation)",
+  "checker_recall_details": "human-listed unsupported details the checker also found",
+  "checker_recall_items": "items human-flagged unsupported that the checker also flagged",
+  "details_per_entry": "distinct checker unsupported details per final entry",
+  "fact_precision": "matched verified facts / verified facts (span token Jaccard>=0.5 + alias subject)",
+  "fact_recall": "matched verified facts / gold facts",
+  "hedge_preservation": "mentioned gold-unsure facts kept unsure AND hedged in every mentioning sentence",
+  "invalid_rate": "items with no final entry (unparseable plain output or backend error)",
+  "mission_accuracy": "final (check-7 coerced) mission_result == gold",
+  "template_fallback_rate": "items whose final entry is the code-built template",
+  "unsupported_rate": "entries with >=1 checker unsupported detail / items with a final entry",
+  "valid_json_no_grammar": "first-attempt outputs that parse to the 9.1 schema, grammar off",
+  "wer": "word edit distance / reference words (NFC, casefold, no punctuation)"
+ },
+ "latency": {
+  "A": {
+   "e2e": {
+    "n": 130,
+    "p50_ms": 0.08662499749334529,
+    "p95_ms": 0.13778939719486513
+   },
+   "template": {
+    "n": 130,
+    "p50_ms": 0.08662499749334529,
+    "p95_ms": 0.13778939719486513
+   }
+  },
+  "B": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.4140625023865141,
+    "p95_ms": 0.5798876485641813
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 4278.46691600098,
+    "p95_ms": 5334.000389650646
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 4278.069374498955,
+    "p95_ms": 5333.453970899245
+   }
+  },
+  "B+": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.38670849971822463,
+    "p95_ms": 0.5404338491644012
+   },
+   "check_regen": {
+    "n": 90,
+    "p50_ms": 0.3987085001426749,
+    "p95_ms": 0.550689550800598
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 7659.220062503664,
+    "p95_ms": 10548.16512119778
+   },
+   "template": {
+    "n": 72,
+    "p50_ms": 0.2736670030571986,
+    "p95_ms": 0.3937899506126996
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 4278.069374498955,
+    "p95_ms": 5333.453970899245
+   },
+   "writer_regen": {
+    "n": 90,
+    "p50_ms": 4164.706645498882,
+    "p95_ms": 5317.3053024500405
+   }
+  },
+  "B-nogrammar": {
+   "check": {
+    "n": 130,
+    "p50_ms": 4.1996827349066734e-05,
+    "p95_ms": 8.300412446260452e-05
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 4999.076187499668,
+    "p95_ms": 6653.012331543869
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 4999.076146001244,
+    "p95_ms": 6653.012289547041
+   }
+  },
+  "C": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.3022915007022675,
+    "p95_ms": 0.4641792012989754
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 4710.347250498671,
+    "p95_ms": 6657.216945402433
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 4710.012771001857,
+    "p95_ms": 6656.772597551208
+   }
+  },
+  "C+": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.29289550002431497,
+    "p95_ms": 0.45417909932439215
+   },
+   "check_regen": {
+    "n": 59,
+    "p50_ms": 0.26237499696435407,
+    "p95_ms": 0.43915359783568403
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 5714.869666502636,
+    "p95_ms": 12240.470542995718
+   },
+   "template": {
+    "n": 32,
+    "p50_ms": 0.21922950327279978,
+    "p95_ms": 0.3298980973340804
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 4710.012771001857,
+    "p95_ms": 6656.772597551208
+   },
+   "writer_regen": {
+    "n": 59,
+    "p50_ms": 4207.036499999958,
+    "p95_ms": 6316.092787500017
+   }
+  },
+  "C-nogrammar": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.27081249936600216,
+    "p95_ms": 0.4659795045881765
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 4650.185187500028,
+    "p95_ms": 6868.65849969945
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 4649.918687500758,
+    "p95_ms": 6868.175964101101
+   }
+  },
+  "D": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.32931249734247103,
+    "p95_ms": 0.4873772977589396
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 6686.100686998543,
+    "p95_ms": 9129.954256547353
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 6685.717145501258,
+    "p95_ms": 9129.525637648476
+   }
+  },
+  "D+": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.3263749968027696,
+    "p95_ms": 0.48749840207165107
+   },
+   "check_regen": {
+    "n": 11,
+    "p50_ms": 0.3484169938019477,
+    "p95_ms": 0.4708960004791152
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 6973.4270205008215,
+    "p95_ms": 12575.63345064663
+   },
+   "template": {
+    "n": 8,
+    "p50_ms": 0.2823960021487437,
+    "p95_ms": 0.3380107482371386
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 6685.717145501258,
+    "p95_ms": 9129.525637648476
+   },
+   "writer_regen": {
+    "n": 11,
+    "p50_ms": 6534.653624999919,
+    "p95_ms": 9058.21685400224
+   }
+  },
+  "D-nogrammar": {
+   "check": {
+    "n": 130,
+    "p50_ms": 0.31929149918141775,
+    "p95_ms": 0.4864753002038924
+   },
+   "e2e": {
+    "n": 130,
+    "p50_ms": 6514.587833997211,
+    "p95_ms": 9667.181928644639
+   },
+   "writer": {
+    "n": 130,
+    "p50_ms": 6514.206187999662,
+    "p95_ms": 9666.831247397566
+   }
+  }
+ },
+ "n_clusters": 8,
+ "n_items": 130,
+ "paired": {
+  "C+ - B+": {
+   "details_per_entry": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "fact_precision": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.16279069767441867,
+    "lo": 0.021463928990274855,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.08412130542410545,
+    "resamples": 10000
+   },
+   "fact_recall": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.07284467188440696,
+    "lo": -0.17063492063492058,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": -0.12970711297071136,
+    "resamples": 10000
+   },
+   "hedge_preservation": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.16506806930693071,
+    "lo": 0.034180278281911614,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.09960445882775981,
+    "resamples": 10000
+   },
+   "invalid_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "mission_accuracy": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.5866788990825687,
+    "lo": -0.22051618547681537,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.24615384615384617,
+    "resamples": 10000
+   },
+   "template_fallback_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.17431192660550454,
+    "lo": -0.42105263157894735,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": -0.3076923076923077,
+    "resamples": 10000
+   },
+   "unsupported_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   }
+  },
+  "D - C": {
+   "details_per_entry": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.3629468599033819,
+    "lo": -0.9545454545454545,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": -0.6538461538461539,
+    "resamples": 10000
+   },
+   "fact_precision": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.1534851167195026,
+    "lo": 0.04496687454571055,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.09627329192546585,
+    "resamples": 10000
+   },
+   "fact_recall": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.2770137524557956,
+    "lo": 0.13389830508474576,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.19665271966527198,
+    "resamples": 10000
+   },
+   "hedge_preservation": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.20453296703296708,
+    "lo": 0.03312959588729101,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.10009593859929644,
+    "resamples": 10000
+   },
+   "invalid_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "mission_accuracy": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.16923076923076918,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.06923076923076932,
+    "resamples": 10000
+   },
+   "template_fallback_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "unsupported_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.22916666666666669,
+    "lo": -0.4931845551708565,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": -0.36153846153846153,
+    "resamples": 10000
+   }
+  },
+  "D+ - B+": {
+   "details_per_entry": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "fact_precision": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.25139034590461706,
+    "lo": 0.11147396906890572,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.1762613121742891,
+    "resamples": 10000
+   },
+   "fact_recall": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.13673512994941564,
+    "lo": 0.021907618852272194,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.07531380753138073,
+    "resamples": 10000
+   },
+   "hedge_preservation": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.1992430486180487,
+    "lo": 0.058925945378151275,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.12272441933458877,
+    "resamples": 10000
+   },
+   "invalid_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "mission_accuracy": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.6557403661911859,
+    "lo": -0.14960629921259838,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.3384615384615385,
+    "resamples": 10000
+   },
+   "template_fallback_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.36734693877551017,
+    "lo": -0.6187212810396844,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": -0.49230769230769234,
+    "resamples": 10000
+   },
+   "unsupported_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   }
+  },
+  "D+ - C+": {
+   "details_per_entry": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "fact_precision": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.13894845360824737,
+    "lo": 0.04968747373478942,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.09214000675018363,
+    "resamples": 10000
+   },
+   "fact_recall": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.29321663019693656,
+    "lo": 0.13649025069637877,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.20502092050209209,
+    "resamples": 10000
+   },
+   "hedge_preservation": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.06286236165268426,
+    "lo": -0.010857142857142787,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.023119960506828963,
+    "resamples": 10000
+   },
+   "invalid_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   },
+   "mission_accuracy": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.19298245614035092,
+    "lo": 0.007751937984496138,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.09230769230769231,
+    "resamples": 10000
+   },
+   "template_fallback_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.072992700729927,
+    "lo": -0.3185185185185185,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": -0.18461538461538463,
+    "resamples": 10000
+   },
+   "unsupported_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 130,
+    "point": 0.0,
+    "resamples": 10000
+   }
+  }
+ },
+ "resamples": 10000,
+ "rng_seed": 20261010,
+ "set": "synthetic",
+ "systems": {
+  "A": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.63,
+     "lo": 0.21621621621621623,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.36923076923076925,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 1.0,
+     "lo": 1.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 1.0,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "B": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.40540540540540543,
+     "lo": 0.16793893129770993,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.2923076923076923,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 550.0,
+     "dropped": 0,
+     "hi": 0.8493150684931506,
+     "lo": 0.6236559139784946,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7509090909090909,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.9504999316499696,
+     "lo": 0.777319587628866,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8640167364016736,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 117.0,
+     "dropped": 0,
+     "hi": 0.7659574468085106,
+     "lo": 0.5416544117647059,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.6410256410256411,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.63,
+     "lo": 0.21621621621621623,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.36923076923076925,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.28225806451612906,
+     "lo": 0.11940298507462686,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.2,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "B+": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 547.0,
+     "dropped": 0,
+     "hi": 0.8488765093427472,
+     "lo": 0.6257928118393234,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.753199268738574,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.9410480349344978,
+     "lo": 0.7812466469957081,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8619246861924686,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 108.0,
+     "dropped": 0,
+     "hi": 0.9313759065269943,
+     "lo": 0.7741865357643759,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8518518518518519,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.63,
+     "lo": 0.21621621621621623,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.36923076923076925,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.7007890840568005,
+     "lo": 0.4187984496124031,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.5538461538461539,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "B-nogrammar": {
+   "metrics": {
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 1.0,
+     "lo": 1.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 1.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "valid_json_no_grammar": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "C": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 1.0333333333333334,
+     "lo": 0.42854793233082705,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7230769230769231,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 426.0,
+     "dropped": 0,
+     "hi": 0.9104830464937066,
+     "lo": 0.7371580841169082,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8333333333333334,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.8308984568366227,
+     "lo": 0.6542329627374964,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7426778242677824,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 106.0,
+     "dropped": 0,
+     "hi": 0.9130434782608695,
+     "lo": 0.7586206896551724,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8490566037735849,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.8492063492063492,
+     "lo": 0.4012502149982801,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.6384615384615384,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.5637583892617449,
+     "lo": 0.30434782608695654,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.4230769230769231,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "C+": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 418.0,
+     "dropped": 0,
+     "hi": 0.901595744680851,
+     "lo": 0.7557077625570776,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8373205741626795,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.8136986301369863,
+     "lo": 0.6483931947069943,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7322175732217573,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 103.0,
+     "dropped": 0,
+     "hi": 0.9886363636363636,
+     "lo": 0.9021739130434783,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9514563106796117,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.831081081081081,
+     "lo": 0.3787878787878788,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.6153846153846154,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.39785692951015517,
+     "lo": 0.13157894736842105,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.24615384615384617,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "C-nogrammar": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 105.0,
+     "dropped": 0,
+     "hi": 1.0549603174603173,
+     "lo": 0.3888774104683196,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7142857142857143,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 336.0,
+     "dropped": 0,
+     "hi": 0.92936856182071,
+     "lo": 0.7214848055424342,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8392857142857143,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.7197467614388134,
+     "lo": 0.4123989218328841,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.5899581589958159,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 89.0,
+     "dropped": 0,
+     "hi": 0.9204590548340548,
+     "lo": 0.7808219178082192,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8651685393258427,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.4146341463414634,
+     "lo": 0.05784380759854927,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.19230769230769232,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.7246589940323953,
+     "lo": 0.27450980392156865,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.5,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 105.0,
+     "dropped": 0,
+     "hi": 0.6120689655172413,
+     "lo": 0.29357798165137616,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.4380952380952381,
+     "resamples": 10000
+    },
+    "valid_json_no_grammar": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.9421561924014507,
+     "lo": 0.5853658536585366,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8076923076923077,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "D": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.11864406779661017,
+     "lo": 0.025860678531701892,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.06923076923076923,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 483.0,
+     "dropped": 0,
+     "hi": 0.9709902981179577,
+     "lo": 0.8648520760508143,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9296066252587992,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.9782608695652174,
+     "lo": 0.8884104546022751,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9393305439330544,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 118.0,
+     "dropped": 0,
+     "hi": 0.9859154929577465,
+     "lo": 0.9056603773584906,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9491525423728814,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.8934426229508197,
+     "lo": 0.46923076923076923,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7076923076923077,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.11206896551724138,
+     "lo": 0.02127284986514834,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.06153846153846154,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "D+": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 482.0,
+     "dropped": 0,
+     "hi": 0.970897790886655,
+     "lo": 0.8645275520193937,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9294605809128631,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.977593224789916,
+     "lo": 0.8864628820960698,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9372384937238494,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 118.0,
+     "dropped": 0,
+     "hi": 1.0,
+     "lo": 0.9399962406015037,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9745762711864406,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.8934426229508197,
+     "lo": 0.46923076923076923,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.7076923076923077,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.112,
+     "lo": 0.02158273381294964,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.06153846153846154,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  },
+  "D-nogrammar": {
+   "metrics": {
+    "details_per_entry": {
+     "degenerate": false,
+     "den": 125.0,
+     "dropped": 0,
+     "hi": 0.12612612612612611,
+     "lo": 0.026490066225165563,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.072,
+     "resamples": 10000
+    },
+    "fact_precision": {
+     "degenerate": false,
+     "den": 454.0,
+     "dropped": 0,
+     "hi": 0.9734361275571438,
+     "lo": 0.8662790697674418,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.933920704845815,
+     "resamples": 10000
+    },
+    "fact_recall": {
+     "degenerate": false,
+     "den": 478.0,
+     "dropped": 0,
+     "hi": 0.9612189778958675,
+     "lo": 0.8166023166023166,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.8870292887029289,
+     "resamples": 10000
+    },
+    "hedge_preservation": {
+     "degenerate": false,
+     "den": 113.0,
+     "dropped": 0,
+     "hi": 0.9852941176470589,
+     "lo": 0.9026548672566371,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9469026548672567,
+     "resamples": 10000
+    },
+    "invalid_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.1044776119402985,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.038461538461538464,
+     "resamples": 10000
+    },
+    "mission_accuracy": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.8782608695652174,
+     "lo": 0.45555555555555555,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.6923076923076923,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.0,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 125.0,
+     "dropped": 0,
+     "hi": 0.1188118811881188,
+     "lo": 0.021889933308827398,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.064,
+     "resamples": 10000
+    },
+    "valid_json_no_grammar": {
+     "degenerate": false,
+     "den": 130.0,
+     "dropped": 0,
+     "hi": 1.0,
+     "lo": 0.8955223880597015,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 130,
+     "point": 0.9615384615384616,
+     "resamples": 10000
+    }
+   },
+   "n_clusters": 8,
+   "n_items": 130
+  }
+ }
+}

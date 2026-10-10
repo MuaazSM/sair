@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7094.645958997717,
+ "output": "{\"facts\":[{\"span\":\"some birds were flying low over the water\",\"kind\":\"animal\",\"subject\":\"some birds\",\"certainty\":\"unsure\"},{\"span\":\"white ones i think, maybe gulls\",\"kind\":\"animal\",\"subject\":\"white ones, maybe gulls\",\"certainty\":\"unsure\"},{\"span\":\"the tide was out, a lot of rocks showing\",\"kind\":\"sight\",\"subject\":\"a lot of rocks\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"some birds were flying low over the water, white ones i think, maybe gulls, i am not sure.\",\"entry\":\"Dad went for a walk and did today's mission partly. They noticed maybe gulls, unsure, and a lot of rocks.\"}",
+ "prompt_sha": "e850fa364aed113bc9a65ad432233d8e5e6356a0e4b429b16e5fca6178570009",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 495,
+ "tokens_out": 153
+}

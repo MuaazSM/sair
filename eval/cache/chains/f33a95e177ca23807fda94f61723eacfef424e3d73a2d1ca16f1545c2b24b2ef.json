@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 896.9364169970504,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You will notice the sound of the temple bell near the corner.\"}",
+ "prompt_sha": "ccc830f25e9e4c4b174bda4eef3d46c29212c5dde30aca75a9644427857a3f51",
+ "renderer_fingerprint": null,
+ "tokens_in": 830,
+ "tokens_out": 36
+}

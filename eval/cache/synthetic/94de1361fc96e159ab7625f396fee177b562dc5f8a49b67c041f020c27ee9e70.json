@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4377.033666998614,
+ "output": "{\"facts\":[{\"span\":\"मोगरा की महक है हो सकता है\",\"kind\":\"smell\",\"subject\":\"मोगरा की महक\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"मोगरा की महक है हो सकता है\",\"entry\":\"Mom returned from her walk and noticed what might be the scent of mogra. She felt there was nothing else to report.\"}",
+ "prompt_sha": "1222bc943f4feb7a86b8ed8138ba23235187a2c0f6776648ffe26fc7486613fb",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 509,
+ "tokens_out": 86
+}

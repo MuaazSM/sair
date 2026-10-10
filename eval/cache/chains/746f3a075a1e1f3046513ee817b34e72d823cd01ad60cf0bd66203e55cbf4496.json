@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5470.882082998287,
+ "output": "{\"facts\":[{\"span\":\"it rained in the afternoon\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"},{\"span\":\"the road was muddy\",\"kind\":\"other\",\"subject\":\"road\",\"certainty\":\"sure\"},{\"span\":\"the gulmohar had dropped a lot of leaves\",\"kind\":\"plant\",\"subject\":\"gulmohar\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed rain, road and gulmohar.\"}",
+ "prompt_sha": "b6ca52d8ee3e4521a095e1afd317456bede7dd2ab426bb7abff3c1b84363f720",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 496,
+ "tokens_out": 110
+}

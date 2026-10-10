@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1100.216167003964,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\"], \"text\": \"You will notice the path for any small crabs.\"}",
+ "prompt_sha": "0ea37fe5e681ab31231b1706f2255bab1add91751e30bf923c51989599d16b5c",
+ "renderer_fingerprint": null,
+ "tokens_in": 737,
+ "tokens_out": 41
+}

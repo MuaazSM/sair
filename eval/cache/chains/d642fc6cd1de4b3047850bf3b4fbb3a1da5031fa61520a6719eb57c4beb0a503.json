@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7686.078124999767,
+ "output": "{\"facts\":[{\"span\":\"near the old well at the back of the park\",\"kind\":\"other\",\"subject\":\"old well\",\"certainty\":\"sure\",\"place\":\"back of the park\"},{\"span\":\"a tamarind tree next to it\",\"kind\":\"plant\",\"subject\":\"tamarind tree\",\"certainty\":\"sure\",\"place\":\"next to it\"},{\"span\":\"the gardener was watering the hedges\",\"kind\":\"person\",\"subject\":\"gardener\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"i stood there for a minute\",\"entry\":\"Dad stopped near the old well at the back of the park, a place he usually walks past quickly. He noticed a tamarind tree next to the well and saw a gardener watering the hedges. He stood there for a minute and felt it was quiet.\"}",
+ "prompt_sha": "d24f8fa6cc4ca2a45a71ea70812bb88a3d04a46ae61560049758fe5b0da88f43",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 170
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5573.701084002096,
+ "output": "{\"facts\":[{\"span\":\"Wind bahut tez hai\",\"kind\":\"weather\",\"subject\":\"Wind\",\"certainty\":\"sure\"},{\"span\":\"Waves look big lagta hai\",\"kind\":\"sight\",\"subject\":\"Waves\",\"certainty\":\"unsure\"},{\"span\":\"ho sakta hai Rain might fall now\",\"kind\":\"weather\",\"subject\":\"Rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done\",\"entry\":\"Mom and Dad went for a walk. They noticed Wind, maybe Waves, maybe Rain.\"}",
+ "prompt_sha": "0463cd43582ccd1d372900d182569d3cabba46ff6afe8e705bc2c5ed889a4175",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 526,
+ "tokens_out": 111
+}

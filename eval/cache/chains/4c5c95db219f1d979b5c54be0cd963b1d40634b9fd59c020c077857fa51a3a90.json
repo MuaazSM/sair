@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 611.9024169965996,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_3\"], \"text\": \"Notice the dog near the wall.\"}",
+ "prompt_sha": "debd4617a7f702f303926bdd9bf4ecd020d879a1571faf893cf574b76a287ab6",
+ "renderer_fingerprint": null,
+ "tokens_in": 1909,
+ "tokens_out": 28
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1623.256582999602,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, listen for the temple ki ghanti ki awaaz.\"}",
+ "prompt_sha": "3638d60a1a826feb7fad9cdba8d209d087428c2457fb1ae4f3fbefed6e2f6c65",
+ "renderer_fingerprint": null,
+ "tokens_in": 932,
+ "tokens_out": 34
+}

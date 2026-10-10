@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 10046.645416005049,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta smell\",\"certainty\":\"sure\"},{\"span\":\"Vendor present\",\"kind\":\"person\",\"subject\":\"Vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen seen\",\"kind\":\"animal\",\"subject\":\"Hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas seen I think\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"shop shutters closed\",\"kind\":\"sight\",\"subject\":\"shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Looked at the market. Some things looked different.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed Market, Vegetable stalls, Bhutta smell, Vendor, Hen and shop shutters, maybe Umbrellas.\"}",
+ "prompt_sha": "e30e816c56c8d9bacfbd2caf76a23f24f1dbc995430509aa1a6decf4a0c67661",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 521,
+ "tokens_out": 220
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5909.428791994287,
+ "output": "{\"facts\":[{\"span\":\"hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"sea-face windy tha\",\"kind\":\"weather\",\"subject\":\"sea-face\",\"certainty\":\"sure\",\"place\":\"sea-face\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done\",\"entry\":\"Mom and Dad noticed that the wind was very strong and the sea-face was windy. They felt the air was quite cold. Dad declared the mission partially done.\"}",
+ "prompt_sha": "8942c4400cc5ef98a8ecf54c4a72e464f0248e9b2f95cc8d661cc3a38d760eb4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 124
+}

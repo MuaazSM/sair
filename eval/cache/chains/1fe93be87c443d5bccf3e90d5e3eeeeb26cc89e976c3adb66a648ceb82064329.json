@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 621.564249995572,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+ "prompt_sha": "79fc30d5417aa56922f5d24f264570608c5ecfafc42ecfbd14ccd612d773529c",
+ "renderer_fingerprint": null,
+ "tokens_in": 980,
+ "tokens_out": 30
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6715.2393750002375,
+ "output": "{\"facts\":[{\"span\":\"sea-face pe aaj bahut log the\",\"kind\":\"sight\",\"subject\":\"bahut log\",\"certainty\":\"sure\",\"place\":\"sea-face\"},{\"span\":\"kuch log photo le rahe the\",\"kind\":\"person\",\"subject\":\"kuch log\",\"certainty\":\"sure\"},{\"span\":\"hawa tez thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"chai stall pe line thi\",\"kind\":\"sight\",\"subject\":\"line\",\"certainty\":\"sure\",\"place\":\"chai stall\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed bahut log, kuch log and line.\"}",
+ "prompt_sha": "13b4c282de6d2a84e181c576561b809f2be3d2e45d619671fac92ac87d902533",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 494,
+ "tokens_out": 145
+}

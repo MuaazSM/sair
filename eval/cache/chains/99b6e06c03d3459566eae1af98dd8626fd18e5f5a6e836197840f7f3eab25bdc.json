@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6488.233042000502,
+ "output": "{\"facts\":[{\"span\":\"ek band baja wala jaa raha tha\",\"kind\":\"sound\",\"subject\":\"band baja wala\",\"certainty\":\"sure\"},{\"span\":\"shaadi thi kisi ki\",\"kind\":\"other\",\"subject\":\"shaadi\",\"certainty\":\"sure\"},{\"span\":\"bahut log the peeche peeche\",\"kind\":\"person\",\"subject\":\"bahut log\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed band baja wala, shaadi and bahut log.\"}",
+ "prompt_sha": "58255732ed2e97c9be26355f0bc3c30632b459413eed385f119dc339e6a977e3",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 501,
+ "tokens_out": 118
+}

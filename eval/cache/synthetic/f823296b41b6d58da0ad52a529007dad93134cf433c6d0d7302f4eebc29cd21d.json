@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7111.278832999233,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"I saw five champa\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There is one goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The dew is heavy I think\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I heard the garbage truck\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked the jasmine for flowers\",\"entry\":\"Dad went for a walk and did today's mission. They noticed jasmine, champa and goat, maybe dew.\"}",
+ "prompt_sha": "9544baf5854813e2514892b8f26f8b69e36c012c5870fa3e72340554bce3acf1",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 517,
+ "tokens_out": 158
+}

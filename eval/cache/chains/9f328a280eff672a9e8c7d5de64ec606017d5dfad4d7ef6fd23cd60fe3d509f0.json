@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2567.0590000008815,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You, listen for the sound of the band baja wala.\"}",
+ "prompt_sha": "1f91136d50087cea83d1475c2d62446ae7d099d669167ba1168f48b427f35455",
+ "renderer_fingerprint": null,
+ "tokens_in": 1432,
+ "tokens_out": 63
+}

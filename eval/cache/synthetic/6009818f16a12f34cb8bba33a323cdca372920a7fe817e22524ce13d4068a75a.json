@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5810.105917000328,
+ "output": "{\"facts\":[{\"span\":\"teen yoga group\",\"kind\":\"sight\",\"subject\":\"teen yoga group\",\"certainty\":\"sure\"},{\"span\":\"ek butterfly\",\"kind\":\"animal\",\"subject\":\"ek butterfly\",\"certainty\":\"sure\"},{\"span\":\"koel ga raha hai lagta hai\",\"kind\":\"sound\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"yoga count karna bhool gaya\",\"entry\":\"Dad finished his evening walk but forgot to count the yoga groups. He saw three yoga groups and a butterfly. He thought he heard a koel.\"}",
+ "prompt_sha": "cdfac613ca385401ff5cc872c354e78082460a87e7d80141ada26224cbd9cc86",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 514,
+ "tokens_out": 124
+}

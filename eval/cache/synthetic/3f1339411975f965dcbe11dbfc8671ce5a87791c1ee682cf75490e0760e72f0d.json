@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4166.887250001309,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket.\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\"},{\"span\":\"Crow there lagta hai.\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially done.\",\"entry\":\"Mom and Dad went for a walk. They noticed Kids, maybe Crow.\"}",
+ "prompt_sha": "88f7a2ba68f401e25a7e4d53c1b8ab220728d326aa19b0b19ab5bfb0a1552380",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 77
+}

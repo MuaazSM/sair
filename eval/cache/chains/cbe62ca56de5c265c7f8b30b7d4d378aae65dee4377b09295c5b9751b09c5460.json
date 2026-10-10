@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6082.045000002836,
+ "output": "{\"facts\":[{\"span\":\"a bird calling from the trees across the pond\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"trees across the pond\"},{\"span\":\"maybe it was a koel, maybe not\",\"kind\":\"animal\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"we heard a bird calling from the trees across the pond, again and again, we could not spot it\",\"entry\":\"Mom and Dad heard a bird calling from the trees across the pond. They could not spot the bird, so they are unsure if it was a koel.\"}",
+ "prompt_sha": "69c6520283eee9bcc6828552e9d532d15e5bc932e8221936b62f29007cd68ad5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 494,
+ "tokens_out": 130
+}

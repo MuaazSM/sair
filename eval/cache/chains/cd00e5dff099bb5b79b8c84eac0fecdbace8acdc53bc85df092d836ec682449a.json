@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4875.847707997309,
+ "output": "{\"facts\":[{\"span\":\"chhota kutta aaj phir mere peeche peeche aaya\",\"kind\":\"animal\",\"subject\":\"chhota kutta\",\"certainty\":\"sure\"},{\"span\":\"lane ke end tak\",\"kind\":\"other\",\"subject\":\"lane ke end\",\"certainty\":\"sure\",\"place\":\"lane ke end\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They noticed chhota kutta.\"}",
+ "prompt_sha": "8bf5685b2fbd4d42b15ef9bbe98c8489548ed53a0efad20acd0e0e949a485080",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 98
+}

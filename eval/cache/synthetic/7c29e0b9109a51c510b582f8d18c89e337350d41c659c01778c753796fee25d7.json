@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5776.399500005937,
+ "output": "{\"facts\":[{\"span\":\"Teen buses theen\",\"kind\":\"sight\",\"subject\":\"Teen buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"Mist\",\"certainty\":\"sure\"},{\"span\":\"Chai ki smell aayi\",\"kind\":\"smell\",\"subject\":\"Chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Count kiya, do buses dekhi\",\"entry\":\"Mom finished her walk in thick mist. She smelled chai and thought there were three buses. She only counted and saw two buses.\"}",
+ "prompt_sha": "aaca174890ff5171e9af21c13d1ef6f11b9cdf7bd54ee1682c8b35cdef33c2ed",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 501,
+ "tokens_out": 123
+}

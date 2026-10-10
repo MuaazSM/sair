@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 3015.8349169942085,
+ "output": "{\"facts\":[{\"span\":\"cold wind today\",\"kind\":\"weather\",\"subject\":\"cold wind\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed cold wind.\"}",
+ "prompt_sha": "c9fc9cae299710a06f61420dd71b59aea16c56a70998f264929b537efd8a2d7f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 469,
+ "tokens_out": 52
+}

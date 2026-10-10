@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1244.050958994194,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f5_2\"], \"text\": \"Notice the smell of champa near the clubhouse.\"}",
+ "prompt_sha": "35b973ab150ec752d89d8d90210b2c5de56b9331f65fc5de9e6566221301c2c6",
+ "renderer_fingerprint": null,
+ "tokens_in": 1539,
+ "tokens_out": 61
+}

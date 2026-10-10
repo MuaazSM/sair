@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2358.0120830010856,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_3\"], \"text\": \"You will notice the गाय near the fruit stall at the start.\"}",
+ "prompt_sha": "4ad139340053d6557ac31596b171147642d365789e5c43333d20e9cd4af2eeea",
+ "renderer_fingerprint": null,
+ "tokens_in": 1542,
+ "tokens_out": 40
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7435.731666999345,
+ "output": "{\"facts\":[{\"span\":\"इमली के पेड़ के पास\",\"kind\":\"plant\",\"subject\":\"इमली के पेड़\",\"certainty\":\"sure\",\"place\":\"इमली के पेड़ के पास\"},{\"span\":\"यह पेड़ बहुत पुराना है\",\"kind\":\"plant\",\"subject\":\"पेड़\",\"certainty\":\"sure\"},{\"span\":\"कुएँ में पानी नहीं है अब\",\"kind\":\"other\",\"subject\":\"कुएँ\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"कुएँ में पानी नहीं है अब\",\"entry\":\"Dad stopped near the imli tree and heard the gardener say it is very old. He noticed that there is no water in the well now.\"}",
+ "prompt_sha": "58b645733b067bae7415cf377b33477149510c87b502319e6bce9d737f77b943",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 503,
+ "tokens_out": 153
+}

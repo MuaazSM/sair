@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1298.886999997194,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"Notice the path for peela.\"}",
+ "prompt_sha": "eed89a6cfcf01c077627bf18622126e6e2a3c03acf71bc47c883380a4110b926",
+ "renderer_fingerprint": null,
+ "tokens_in": 633,
+ "tokens_out": 34
+}

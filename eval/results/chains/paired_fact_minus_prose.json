@@ -79,6 +79,38 @@
    "degenerate": false,
    "dropped": 0,
    "den": 0.0
+  },
+  {
+   "system": "D",
+   "provenance": "off",
+   "diff": "fact - prose",
+   "n_chains": 20,
+   "point": 0.05,
+   "lo": 0.0,
+   "hi": 0.15,
+   "n_items": 20,
+   "n_clusters": 20,
+   "resamples": 10000,
+   "method": "paired-plain",
+   "degenerate": false,
+   "dropped": 0,
+   "den": 0.0
+  },
+  {
+   "system": "D",
+   "provenance": "on",
+   "diff": "fact - prose",
+   "n_chains": 10,
+   "point": 0.0,
+   "lo": 0.0,
+   "hi": 0.0,
+   "n_items": 10,
+   "n_clusters": 10,
+   "resamples": 10000,
+   "method": "paired-plain",
+   "degenerate": false,
+   "dropped": 0,
+   "den": 0.0
   }
  ]
 }

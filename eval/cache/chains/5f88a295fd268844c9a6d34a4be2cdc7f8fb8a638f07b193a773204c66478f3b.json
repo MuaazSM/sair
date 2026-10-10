@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7220.7122090039775,
+ "output": "{\"facts\":[{\"span\":\"aasman neela tha\",\"kind\":\"weather\",\"subject\":\"aasman\",\"certainty\":\"sure\"},{\"span\":\"pink sa ho gaya tha\",\"kind\":\"weather\",\"subject\":\"aasman\",\"certainty\":\"sure\"},{\"span\":\"bhutta wala tha corner pe\",\"kind\":\"sight\",\"subject\":\"bhutta\",\"certainty\":\"sure\",\"place\":\"corner pe\"}],\"mission_result\":\"done\",\"mission_span\":\"jab ghar se nikli tab aasman neela tha, wahan pahunchi to pink sa ho gaya tha.\",\"entry\":\"Mom went to sea-face. She noticed the sky was blue when she left home but pink when she arrived. She also saw a corn on the corner and ate one.\"}",
+ "prompt_sha": "797718094015cb42c568ac25f25d466216b5c1f5095d920a0fb6855bc62cc9be",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 153
+}

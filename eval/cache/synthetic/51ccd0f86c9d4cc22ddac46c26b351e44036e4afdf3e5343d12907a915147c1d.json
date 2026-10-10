@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6468.435958995542,
+ "output": "{\"facts\":[{\"span\":\"wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"shayad waves bahut bade the\",\"kind\":\"sight\",\"subject\":\"waves\",\"certainty\":\"unsure\"},{\"span\":\"rain shuru hui shayad\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"mission thoda pura hua\",\"entry\":\"Mom and Dad noticed that the wind was very strong. They thought the waves might be very big and that rain might have started. They felt their mission was partly done.\"}",
+ "prompt_sha": "7bd82c12df7053c71bc3c8b26153cf282de917fa8da556008b80b9befdd8f663",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 131
+}

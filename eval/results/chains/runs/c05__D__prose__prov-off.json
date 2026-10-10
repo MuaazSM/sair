@@ -1,0 +1,280 @@
+{
+ "chain_id": "c05",
+ "system": "D",
+ "memory": "prose",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Count the shops you pass on your walk.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 3,
+   "entry": "Dad went through the market lane and saw a fruit stall with bananas and mangoes. He noticed a cobbler sitting under a peepal tree. He thought he counted maybe twelve shops but lost count near the end.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"Notice the leaves on the tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown",
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the leaves on the tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice one tree with flowers on it along your way.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "Notice one tree with flowers on it along your way.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went to the market where there was a lot of crowd. He thought a festival was coming. He saw lights on the shops and left quickly.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\"], \"text\": \"You will notice the leaves on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\"], \"text\": \"You, notice the path near the peepal tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for one bird you can hear from the path.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "Listen for one bird you can hear from the path.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Dad saw a parrot sitting under a peepal tree and noticed bananas near a fruit seller. He also saw a cow standing in the middle while people went around it.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the leaves on the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the shadow near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look at the colour of the sky above you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad noticed a smell of something frying from one of the stalls. He mentioned that the smell was very good but he did not know what it was. He also stated that he did not buy anything.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the sound near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice any smell in the air near a garden as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed peepal, maybe tote, green.",
+   "verified_facts": 4,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will listen for a sound from the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the sound of the path near the gate.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Dad heard rain. He stood under the shop awning for some time and came back.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the colour of the sky above you.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the colour of the sky above you.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed flowers, pomegranates and cow.",
+   "verified_facts": 4,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 3\"], \"text\": \"You will notice the leaves on the tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact3\"], \"text\": \"You will notice the flowers near the path.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "reference_unknown"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

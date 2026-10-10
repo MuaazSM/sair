@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7463.215042000229,
+ "output": "{\"facts\":[{\"span\":\"Buses aate jaate hain\",\"kind\":\"sight\",\"subject\":\"Buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"Mist\",\"certainty\":\"sure\"},{\"span\":\"Teen sparrows dekhe shayad\",\"kind\":\"animal\",\"subject\":\"sparrows\",\"certainty\":\"unsure\"},{\"span\":\"Chai ki smell aayi\",\"kind\":\"smell\",\"subject\":\"Chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Buses gine, maine count kiya\",\"entry\":\"Mom enjoyed a nice evening walk where buses came and went. She noticed thick mist and maybe saw three sparrows. The smell of chai also came to her. She successfully counted the buses.\"}",
+ "prompt_sha": "61aa44ca3d06834e5242dcfea368376b15c8a667140e8a5882561c6194e0b956",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 166
+}

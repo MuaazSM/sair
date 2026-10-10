@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5590.565375001461,
+ "output": "{\"facts\":[{\"span\":\"peepal ke neeche kuch log baithe the\",\"kind\":\"person\",\"subject\":\"peepal\",\"certainty\":\"sure\",\"place\":\"peepal ke neeche\"},{\"span\":\"ek koyal bol rahi thi kahin\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"peepal ke neeche kuch log baithe the\",\"entry\":\"Mom went for a walk and did today's mission. They noticed peepal and koyal.\"}",
+ "prompt_sha": "533822c8c2e8164710fe3a0e8761c11fddc473e5b9ca7ec53fc3ad314edefe0e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 506,
+ "tokens_out": 115
+}

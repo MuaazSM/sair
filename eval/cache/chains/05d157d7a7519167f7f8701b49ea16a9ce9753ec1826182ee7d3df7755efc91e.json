@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 861.8657499973779,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You look at the big park and notice any fallen leaves on the path.\"}",
+ "prompt_sha": "cb5e485c711ed9e242b98d44ca64f71df991312b38c5db5654593d0a41371588",
+ "renderer_fingerprint": null,
+ "tokens_in": 810,
+ "tokens_out": 36
+}

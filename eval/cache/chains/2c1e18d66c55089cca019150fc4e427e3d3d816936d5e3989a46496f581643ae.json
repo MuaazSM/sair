@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6627.160791998904,
+ "output": "{\"facts\":[{\"span\":\"peepal ke paas\",\"kind\":\"sight\",\"subject\":\"peepal\",\"certainty\":\"sure\",\"place\":\"peepal ke paas\"},{\"span\":\"aaj kuch tote the shayad\",\"kind\":\"animal\",\"subject\":\"tote\",\"certainty\":\"unsure\"},{\"span\":\"green green\",\"kind\":\"sight\",\"subject\":\"green\",\"certainty\":\"sure\"},{\"span\":\"bahut shor kar rahe the\",\"kind\":\"sound\",\"subject\":\"shor\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed peepal, maybe tote, green and shor.\"}",
+ "prompt_sha": "60b095cc35c057a0da4472b7c4d5423915bbddc416a5f236d8d671869f959200",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 145
+}

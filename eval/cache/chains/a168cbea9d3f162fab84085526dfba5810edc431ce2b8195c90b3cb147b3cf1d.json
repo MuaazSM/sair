@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5343.69400000287,
+ "output": "{\"facts\":[{\"span\":\"bhutta wala wapas aa gaya\",\"kind\":\"other\",\"subject\":\"bhutta wala\",\"certainty\":\"sure\"},{\"span\":\"ek kutta tha steps pe\",\"kind\":\"animal\",\"subject\":\"kutta\",\"certainty\":\"sure\",\"place\":\"steps pe\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed that the bhutta wala returned and had applied nimbu masala. She also saw a dog on the steps, which she thinks is the same one she sees every day.\"}",
+ "prompt_sha": "05dffcebb947099b202b78cf2e42e1c0baebe2d655f1f9bfdba62b90d939995d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 113
+}

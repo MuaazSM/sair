@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2352.537790997303,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_4\"], \"text\": \"You, notice the shadow wala pattern on the road.\"}",
+ "prompt_sha": "9028c55f6aa3f4fc94054103dc8fd54164a106c68a234cd353d1f2df7aefcea5",
+ "renderer_fingerprint": null,
+ "tokens_in": 1663,
+ "tokens_out": 32
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1016.7905830021482,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_1\", \"f6_2\"], \"text\": \"You will watch if the roshni near the both building changes.\"}",
+ "prompt_sha": "7fc455e4756f991c63b79a476c6c37cca426dfbd6b2014ca3f4b62c71659ef63",
+ "renderer_fingerprint": null,
+ "tokens_in": 1730,
+ "tokens_out": 41
+}

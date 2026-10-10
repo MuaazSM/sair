@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6411.08829100267,
+ "output": "{\"facts\":[{\"span\":\"आज बहुत तेज़ हवा थी\",\"kind\":\"weather\",\"subject\":\"तेज़ हवा\",\"certainty\":\"sure\"},{\"span\":\"नारियल के पेड़ ज़ोर से हिल रहे थे\",\"kind\":\"plant\",\"subject\":\"नारियल के पेड़\",\"certainty\":\"sure\"},{\"span\":\"पानी पूरी वाला बंद था\",\"kind\":\"other\",\"subject\":\"पानी पूरी\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed very strong wind today. They saw coconut trees swaying hard. They also noted that the water bottle was closed.\"}",
+ "prompt_sha": "59c07d73ac25a9d20ac3e7d002d82e3a91632b06fa7cf5418ce519e61d1f5abd",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 137
+}

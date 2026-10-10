@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5893.895916000474,
+ "output": "{\"facts\":[{\"span\":\"market mein bahut bheed thi aaj\",\"kind\":\"other\",\"subject\":\"bahut bheed\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"festival aa raha hai na\",\"kind\":\"other\",\"subject\":\"festival\",\"certainty\":\"unsure\"},{\"span\":\"lights lagi thi shops pe\",\"kind\":\"sight\",\"subject\":\"lights\",\"certainty\":\"sure\",\"place\":\"shops\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed bahut bheed in market, maybe festival, and lights in shops.\"}",
+ "prompt_sha": "5c2d98eb3d1141481ee9c0b6e9d62d21fd13dae522a5ed1445093a83e1ef7e77",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 489,
+ "tokens_out": 124
+}

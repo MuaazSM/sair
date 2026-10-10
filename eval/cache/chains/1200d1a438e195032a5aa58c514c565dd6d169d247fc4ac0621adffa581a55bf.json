@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1256.9305410070228,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Tuesday 1\", \"Thursday 1\"], \"text\": \"Notice the flowers under the amaltas.\"}",
+ "prompt_sha": "ec3ae217b580500a995b1fdca6dcc82d66e12ff48d95d859c579f108913ca909",
+ "renderer_fingerprint": null,
+ "tokens_in": 747,
+ "tokens_out": 39
+}

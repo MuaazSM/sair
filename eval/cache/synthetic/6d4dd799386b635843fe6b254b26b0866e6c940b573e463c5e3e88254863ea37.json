@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4392.554583006131,
+ "output": "{\"facts\":[{\"span\":\"मोगरा की खुशबू\",\"kind\":\"smell\",\"subject\":\"मोगरा की खुशबू\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"हो सकता है मोगरा की खुशबू है\",\"entry\":\"Mom finished her walk and noted that it might be the smell of mogra. She also mentioned that dinner is ready.\"}",
+ "prompt_sha": "40ce31e28827b5a86cfd7acf6dcb3e1d1f735d86f8306646b68dd88b49f5ada5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 482,
+ "tokens_out": 88
+}

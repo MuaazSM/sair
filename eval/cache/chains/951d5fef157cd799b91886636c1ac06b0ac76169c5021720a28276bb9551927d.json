@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1686.0917500016512,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\"], \"text\": \"You will notice the leaves under the almond tree. Look at the path for any fallen leaves.\"}",
+ "prompt_sha": "f7f74f8749c6f4fff7c1523ffa6fb469e09ca4f09751f0dd21b9a1025cc64745",
+ "renderer_fingerprint": null,
+ "tokens_in": 774,
+ "tokens_out": 50
+}

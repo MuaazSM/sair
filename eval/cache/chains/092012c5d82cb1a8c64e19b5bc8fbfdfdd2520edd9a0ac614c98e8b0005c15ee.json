@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1082.2951250011101,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the flower seller near the path.\"}",
+ "prompt_sha": "f1ecc4d0dec8715e5739d1f882632843805653c4691b685cb97fc2efe9c4c5da",
+ "renderer_fingerprint": null,
+ "tokens_in": 830,
+ "tokens_out": 49
+}

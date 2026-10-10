@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5177.550708001945,
+ "output": "{\"facts\":[{\"span\":\"mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"ho sakta hai sparrow ud raha tha\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"teen chai banaayi thi\",\"kind\":\"other\",\"subject\":\"chai\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"buses count kar li\",\"entry\":\"Mom went for a walk. They noticed mist, maybe sparrow, chai.\"}",
+ "prompt_sha": "2e419a869927308d74dbb23e84aeee4ff40dc7a6acf6634d3048c71fc15354ef",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 107
+}

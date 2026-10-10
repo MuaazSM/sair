@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1800.5174170029932,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You, look for a gulmohar near the path.\"}",
+ "prompt_sha": "947f0874ad93d54651c6bdc5c40b9184e4ba15db22704bc9f21ed631ab963a32",
+ "renderer_fingerprint": null,
+ "tokens_in": 1223,
+ "tokens_out": 33
+}

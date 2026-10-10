@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 858.3777500025462,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 4\"], \"text\": \"You will notice any smell in the air near a garden as you walk.\"}",
+ "prompt_sha": "a300b9d8083d3de57ced61106e10b1102b914a1b5620f8e589330f4d1877ae4c",
+ "renderer_fingerprint": null,
+ "tokens_in": 801,
+ "tokens_out": 40
+}

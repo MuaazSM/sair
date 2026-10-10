@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1268.6494170047808,
+ "output": "{\"type\": \"return\", \"references\": [\"fact 1\", \"fact 2\", \"fact 3\", \"fact 4\", \"fact 5\", \"fact 6\"], \"text\": \"You will notice the sky near the water. Look for a shadow that makes a pattern on the ground as you walk.\"}",
+ "prompt_sha": "c3128746f6adf3c630d4a66eee1c5f4970613bca98ff36d3ce82f3d77f3278ee",
+ "renderer_fingerprint": null,
+ "tokens_in": 821,
+ "tokens_out": 69
+}

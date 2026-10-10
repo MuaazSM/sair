@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6566.700292001769,
+ "output": "{\"facts\":[{\"span\":\"Yeh tamarind ka ped bahut bada hai\",\"kind\":\"plant\",\"subject\":\"tamarind ka ped\",\"certainty\":\"sure\"},{\"span\":\"Woh bicycle wahan rakhi hai\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"woh neighbour ki shaadi hai\",\"kind\":\"other\",\"subject\":\"neighbour ki shaadi\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed a very big tamarind tree and a bicycle parked nearby. They also mentioned a neighbour's wedding.\"}",
+ "prompt_sha": "fe7ebd11e8f81a0939c62cdc51fcf96c6b3204629a3ff7363e38bce093e6e816",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 133
+}

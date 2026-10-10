@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7057.118958997307,
+ "output": "{\"facts\":[{\"span\":\"कंपाउंड में आज कोई पक्षी गा रहा था\",\"kind\":\"sound\",\"subject\":\"पक्षी\",\"certainty\":\"unsure\",\"place\":\"कंपाउंड\"},{\"span\":\"अशोक के पेड़ की तरफ़ से आ रही थी शायद\",\"kind\":\"sound\",\"subject\":\"पक्षी\",\"certainty\":\"unsure\",\"place\":\"अशोक के पेड़\"}],\"mission_result\":\"partly\",\"mission_span\":\"हम दोनों रुक कर सुनते रहे\",\"entry\":\"Mom and Dad went for a walk and did today's mission partly. They noticed maybe पक्षी in कंपाउंड and maybe पक्षी in अशोक के पेड़.\"}",
+ "prompt_sha": "38e35f53cd4bde2b8facdf2c515b930c158314f99d9f37258d37cdd9d99e0767",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 524,
+ "tokens_out": 152
+}

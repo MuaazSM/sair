@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5523.561417001474,
+ "output": "{\"facts\":[{\"span\":\"the ducks were back, all of them.\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\"},{\"span\":\"some flowers were blooming near the pond fence\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"near the pond fence\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed that the ducks were back, all of them. They saw some flowers blooming near the pond fence but did not go close to see what kind they were.\"}",
+ "prompt_sha": "330171d1ba180d8aadc3817e322ab144d14946d779e388754ce52158bcf5b717",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 491,
+ "tokens_out": 113
+}

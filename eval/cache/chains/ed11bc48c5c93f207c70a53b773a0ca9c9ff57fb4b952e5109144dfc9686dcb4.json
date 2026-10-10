@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5071.024083001248,
+ "output": "{\"facts\":[{\"span\":\"peepal ke neeche\",\"kind\":\"plant\",\"subject\":\"peepal\",\"certainty\":\"sure\",\"place\":\"peepal ke neeche\"},{\"span\":\"ek koyal bol rahi thi\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"mandir ke bahar aaj phoolwali nahi thi.\",\"entry\":\"Mom went for a walk. They noticed peepal and koyal.\"}",
+ "prompt_sha": "d9cff540b1afc0dfe12d0ffaf8a8fdc3e8670b38f770a87f2df462e0c2aefddc",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 503,
+ "tokens_out": 105
+}

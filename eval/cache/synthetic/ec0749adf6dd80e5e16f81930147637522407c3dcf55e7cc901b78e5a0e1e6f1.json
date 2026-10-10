@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5358.220125002845,
+ "output": "{\"facts\":[{\"span\":\"Wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"Wind\",\"certainty\":\"sure\"},{\"span\":\"Waves aate rahe the pata nahi\",\"kind\":\"sight\",\"subject\":\"Waves\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially complete hua\",\"entry\":\"Mom and Dad had a very good walk today. They noticed that the wind was very strong. They thought waves were coming but were unsure. Their mission was only partially completed.\"}",
+ "prompt_sha": "2c331b1caaac0fccd48cfcb1edf14e09b1efbfe3d8a77bd9a68a813e1dbb4b0b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 109
+}

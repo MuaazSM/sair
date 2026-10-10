@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7299.006583998562,
+ "output": "{\"facts\":[{\"span\":\"the light was not there today\",\"kind\":\"sight\",\"subject\":\"light\",\"certainty\":\"sure\"},{\"span\":\"it was cloudy\",\"kind\":\"weather\",\"subject\":\"cloudy\",\"certainty\":\"sure\"},{\"span\":\"the tulsi pot was watered\",\"kind\":\"other\",\"subject\":\"tulsi pot\",\"certainty\":\"sure\"},{\"span\":\"the soil was wet\",\"kind\":\"other\",\"subject\":\"soil\",\"certainty\":\"sure\"},{\"span\":\"a small dog followed me for a while\",\"kind\":\"animal\",\"subject\":\"small dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"the light was not there today\",\"entry\":\"Mom went for a walk. They noticed cloudy weather, a wet soil, and a small dog.\"}",
+ "prompt_sha": "c01da2e5bcc114f7a7817cdd2c7cef1c8ad24901cb39f6effb52fd5c94ed1c70",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 494,
+ "tokens_out": 158
+}

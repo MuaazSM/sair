@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 687.9460419950192,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You look at the ashoka tree near the gate.\"}",
+ "prompt_sha": "907e3ad1b6650a5e4b615f1c3a8f3079efd388189eb7cab159a5d33945c0dd50",
+ "renderer_fingerprint": null,
+ "tokens_in": 948,
+ "tokens_out": 32
+}

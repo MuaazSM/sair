@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8294.43720800191,
+ "output": "{\"facts\":[{\"span\":\"Buses aate jaa rahi thi\",\"kind\":\"sight\",\"subject\":\"Buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"Mist\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Sparrow ud raha tha\",\"kind\":\"animal\",\"subject\":\"Sparrow\",\"certainty\":\"unsure\"},{\"span\":\"Bus count kiya, I saw four\",\"kind\":\"sight\",\"subject\":\"Bus\",\"certainty\":\"sure\"},{\"span\":\"Aaj hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom enjoyed a good evening walk where buses were coming and going. She noticed thick mist and maybe saw a sparrow flying. She counted four buses and felt the air was quite cold.\"}",
+ "prompt_sha": "68adbca621866ff11da73f58273c38073c8bbcc2ab7d0990cbdf1f1bf237e157",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 185
+}

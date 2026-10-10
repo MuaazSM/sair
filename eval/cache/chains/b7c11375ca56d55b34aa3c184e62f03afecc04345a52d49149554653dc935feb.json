@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6061.942499996803,
+ "output": "{\"facts\":[{\"span\":\"imli ke ped pe aaj bandar the\",\"kind\":\"animal\",\"subject\":\"bandar\",\"certainty\":\"sure\",\"place\":\"imli ke ped pe\"},{\"span\":\"teen chaar\",\"kind\":\"animal\",\"subject\":\"teen chaar\",\"certainty\":\"sure\"},{\"span\":\"maali unhe bhaga raha tha\",\"kind\":\"person\",\"subject\":\"maali\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad saw monkeys on the imli tree and thought they were three or four. A man ran away from them while Dad watched from the door.\"}",
+ "prompt_sha": "168c4cfb13c0c44f61b3a136cf8bb604a1cce745b9548938446727c11d989b9e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 492,
+ "tokens_out": 128
+}

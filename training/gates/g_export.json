@@ -1,46 +1,48 @@
 {
- "dev_n": 129,
- "epoch": 2,
- "gate": "G-export",
- "gguf": {
-  "reasons": {
-   "hedge_certainty_mismatch": 2,
-   "hedge_missing_in_entry": 7,
-   "new_number": 8,
-   "unsupported_detail": 21
+  "dev_n": 129,
+  "epoch": 2,
+  "gate": "G-export",
+  "gguf": {
+    "reasons": {
+      "hedge_certainty_mismatch": 2,
+      "hedge_missing_in_entry": 2,
+      "new_number": 6,
+      "unsupported_detail": 20
+    },
+    "sha256": "0fb977b8db51b9688f4bdcbc051cfedda4643c47561eddacd98533ff6c9f760e",
+    "url": "http://127.0.0.1:8091",
+    "path": "models/sair-writer-q8_0.gguf",
+    "note": "sha corrected: the gate recorded the Q4_K_M stamp while the Q8_0 file was served (pgrep evidence); Q4_K_M f32-merge failed this gate on fallback_rate (+2.33 pp)"
   },
-  "sha256": "d70876cce726e6e06abf96a71ef66229afe221d73aabaf4269504b3aa7fd839d",
-  "url": "http://127.0.0.1:8091"
- },
- "metrics": {
-  "fact_recall": {
-   "delta_pp": 1.05,
-   "gguf": 0.9579,
-   "pass": true,
-   "tinker": 0.9474
+  "metrics": {
+    "fact_recall": {
+      "delta_pp": 0.0,
+      "gguf": 0.9474,
+      "pass": true,
+      "tinker": 0.9474
+    },
+    "fallback_rate": {
+      "delta_pp": 0.0,
+      "gguf": 0.1705,
+      "pass": true,
+      "tinker": 0.1705
+    },
+    "unsupported_rate": {
+      "delta_pp": 0.0,
+      "gguf": 0.155,
+      "pass": true,
+      "tinker": 0.155
+    },
+    "valid_json_no_grammar": {
+      "delta_pp": 0.0,
+      "gguf": 1.0,
+      "pass": true,
+      "tinker": 1.0
+    }
   },
-  "fallback_rate": {
-   "delta_pp": 3.88,
-   "gguf": 0.2093,
-   "pass": false,
-   "tinker": 0.1705
-  },
-  "unsupported_rate": {
-   "delta_pp": 0.78,
-   "gguf": 0.1628,
-   "pass": true,
-   "tinker": 0.155
-  },
-  "valid_json_no_grammar": {
-   "delta_pp": 0.0,
-   "gguf": 1.0,
-   "pass": true,
-   "tinker": 1.0
-  }
- },
- "pass": false,
- "rule": "PASS iff |gguf - tinker| <= 0.02 (2 pp, inclusive) for every one of unsupported_rate, fact_recall, fallback_rate, valid_json_no_grammar; same dev items, first attempt, grammar off, temperature 0, train.score_dev; None on one side fails, None on both is n/a",
- "run_id": "full-1114x3-lr1",
- "sampler_path": "tinker://52d977d5-5e21-5fbc-9332-98acea2d7b47:train:0/sampler_weights/full-1114x3-lr1-e2",
- "tolerance_pp": 2.0
+  "pass": true,
+  "rule": "PASS iff |gguf - tinker| <= 0.02 (2 pp, inclusive) for every one of unsupported_rate, fact_recall, fallback_rate, valid_json_no_grammar; same dev items, first attempt, grammar off, temperature 0, train.score_dev; None on one side fails, None on both is n/a",
+  "run_id": "full-1114x3-lr1",
+  "sampler_path": "tinker://52d977d5-5e21-5fbc-9332-98acea2d7b47:train:0/sampler_weights/full-1114x3-lr1-e2",
+  "tolerance_pp": 2.0
 }

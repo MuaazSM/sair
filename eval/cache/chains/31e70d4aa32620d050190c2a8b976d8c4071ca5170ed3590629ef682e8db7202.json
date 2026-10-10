@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2195.9080410015304,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_4\"], \"text\": \"You will notice the path near the school ke gate and look at the leaf on the neem ka ped.\"}",
+ "prompt_sha": "12b3e846bf2c8372029f4cfa61b84d70bc391b7398340e5c98fd4da0551a4143",
+ "renderer_fingerprint": null,
+ "tokens_in": 1260,
+ "tokens_out": 48
+}

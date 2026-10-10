@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 981.4043750011479,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will listen for the sound of the bell and the aarti.\"}",
+ "prompt_sha": "03730d1f356115bbdbd718cf14b52dff01a2919e8c4114a78a18b05d4cf01d2a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1559,
+ "tokens_out": 41
+}

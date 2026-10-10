@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5893.183874999522,
+ "output": "{\"facts\":[{\"span\":\"the softest sound i heard was the leaves of the mango tree moving\",\"kind\":\"sound\",\"subject\":\"leaves of the mango tree\",\"certainty\":\"sure\"},{\"span\":\"the lane was empty\",\"kind\":\"sight\",\"subject\":\"lane\",\"certainty\":\"sure\",\"place\":\"lane\"}],\"mission_result\":\"not_done\",\"mission_span\":\"the softest sound i heard was the leaves of the mango tree moving\",\"entry\":\"Dad heard the leaves of the mango tree moving, which he thought was the softest sound. He stood there for a minute and noticed the lane was empty.\"}",
+ "prompt_sha": "20a60ef048d7f39a94eb8117d75abc171676c0c13bee5d810fed110cd67f4418",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 488,
+ "tokens_out": 125
+}

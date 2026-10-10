@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7285.6174999978975,
+ "output": "{\"facts\":[{\"span\":\"kabootar phir se the gulmohar ke neeche\",\"kind\":\"animal\",\"subject\":\"kabootar\",\"certainty\":\"sure\",\"place\":\"gulmohar ke neeche\"},{\"span\":\"ek squirrel bhi tha jo bench ke peeche bhaag gaya\",\"kind\":\"animal\",\"subject\":\"squirrel\",\"certainty\":\"sure\",\"place\":\"bench ke peeche\"},{\"span\":\"weather accha tha, thoda thanda\",\"kind\":\"weather\",\"subject\":\"weather\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed kabootar under gulmohar and a squirrel running behind a bench. She felt the weather was good and a bit cold.\"}",
+ "prompt_sha": "b3c5e04c870a3f0fca956b57dc1d31e4605583c2e626e2479c8fe8b19e3de549",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 511,
+ "tokens_out": 156
+}

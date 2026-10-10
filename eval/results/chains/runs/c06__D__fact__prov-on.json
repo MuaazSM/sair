@@ -1,0 +1,257 @@
+{
+ "chain_id": "c06",
+ "system": "D",
+ "memory": "fact",
+ "provenance": true,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom walked to the temple and back, hearing a bell ring and an aarti go on. She saw a flower seller outside with marigold garlands and a peepal tree next to the temple with threads tied on it.",
+   "verified_facts": 4,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"You will look at the peepal tree next to the temple.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will look at the peepal tree next to the temple.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "You will look at the peepal tree next to the temple.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Mom went for a walk and did today's mission. They noticed peepal and koyal.",
+   "verified_facts": 1,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"You will look at the peepal tree next to the temple.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\"], \"text\": \"You will listen for the sound of the bell. Then, count how many leaves are on the peepal tree.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for one bird you can hear from the path.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "Listen for one bird you can hear from the path.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went to the temple where there was a lot of crowd. She thought maybe there is a festival. She did not go inside but joined hands from outside. She smelled incense.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will look at the marigold garlands on the flower seller.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will look at the marigold garlands on the flower seller outside.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look at the colour of the sky above you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom noticed a bird on the temple wall. She thought it was small and maybe brownish. She also saw that the flower seller was back.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will look at the marigold garlands near the flower seller.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will look at the marigold garlands near the flower seller.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "noun_not_provenanced"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 1,
+   "entry": "Mom noticed a koyal again on the peepal. She also saw gulab near phoolwali.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f3_1\"], \"text\": \"You will listen for the sound of the bell.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will listen for the sound of the bell.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "You will listen for the sound of the bell.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom went on a short walk where her back hurt. She mentioned a temple and her back again.",
+   "verified_facts": 2,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will listen for the sound of the bell and notice the sound of the aarti.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will listen for the sound of the bell and the aarti.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will listen for the sound of the bell and the aarti.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "You will listen for the sound of the bell and the aarti.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Mom saw many lit diyas near the temple and noticed that ropes on the peepal trees have grown. She heard the sound of the bell clearly from a distance.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f7_3\"], \"text\": \"You will listen for the sound of the bell.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f7_3\"], \"text\": \"You will listen for the sound of the bell.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "served_mission",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

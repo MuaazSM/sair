@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4352.181333000772,
+ "output": "{\"facts\":[{\"span\":\"The wind is strong.\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Rain is falling.\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"We only partially did the mission.\",\"entry\":\"Mom and Dad went for a walk. They noticed wind, maybe rain.\"}",
+ "prompt_sha": "3768d1325bf276eb651202d591a410c0bf3bdd795593846fdc1f6d4053a5dc3b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 525,
+ "tokens_out": 82
+}

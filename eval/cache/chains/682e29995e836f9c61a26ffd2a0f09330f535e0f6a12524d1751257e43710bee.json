@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6684.27695799619,
+ "output": "{\"facts\":[{\"span\":\"jamun ke ped ki shadow road pe bahut sundar pattern bana rahi thi\",\"kind\":\"sight\",\"subject\":\"jamun ke ped ki shadow\",\"certainty\":\"sure\",\"place\":\"road pe\"},{\"span\":\"doodhwala apni cycle pe jaa raha tha\",\"kind\":\"person\",\"subject\":\"doodhwala\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"jamun ke ped ki shadow road pe bahut sundar pattern bana rahi thi\",\"entry\":\"Mom and Dad walked in the lane and saw a beautiful pattern made by the shadow of a jamun tree on the road. They felt it was nice, though nothing special happened.\"}",
+ "prompt_sha": "673c72ddd988a651e5e8834a91359081126ed314b32474508e751c827a0fb6cf",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 520,
+ "tokens_out": 145
+}

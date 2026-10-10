@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9673.27691600076,
+ "output": "{\"facts\":[{\"span\":\"lane ke beech mein ek jagah hai jahan do buildings ke beech se roshni aati hai\",\"kind\":\"sight\",\"subject\":\"roshni\",\"certainty\":\"sure\",\"place\":\"lane ke beech mein ek jagah\"},{\"span\":\"wahan ek tulsi ka gamla hai kisi ke darwaze pe\",\"kind\":\"plant\",\"subject\":\"tulsi ka gamla\",\"certainty\":\"sure\",\"place\":\"kisi ke darwaze pe\"},{\"span\":\"phoolwali ki dukaan khuli thi\",\"kind\":\"sight\",\"subject\":\"phoolwali ki dukaan\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"lane ke beech mein ek jagah hai jahan do buildings ke beech se roshni aati hai, wahan sab sunehra lag raha tha\",\"entry\":\"Mom found a spot in the lane where light shines between two buildings, making everything look golden. She noticed a tulsi plant near a door and saw a flower shop that was open.\"}",
+ "prompt_sha": "e7145409e17d8ea37f2ddc8dc142cb3609b9df44d79be44b6be4ab597ca50750",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 522,
+ "tokens_out": 215
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 738.0229170012171,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f3_1\"], \"text\": \"You, look at the leaves of the mango tree.\"}",
+ "prompt_sha": "ce65a0aeb6428a1931890f793e15e18c6c02a11c7f4b3f87165a3e52c9700cec",
+ "renderer_fingerprint": null,
+ "tokens_in": 1207,
+ "tokens_out": 38
+}

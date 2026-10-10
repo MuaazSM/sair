@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6414.245166997716,
+ "output": "{\"facts\":[{\"span\":\"the flowers in the society garden were out today\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"society garden\"},{\"span\":\"the garden smelled fresh\",\"kind\":\"smell\",\"subject\":\"garden\",\"certainty\":\"sure\",\"place\":\"garden\"},{\"span\":\"maybe he watered it\",\"kind\":\"other\",\"subject\":\"he\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"the garden smelled fresh, maybe he watered it.\",\"entry\":\"Mom and Dad noticed flowers in the society garden that were out today. They liked the fresh smell of the garden, thinking maybe the gardener watered it.\"}",
+ "prompt_sha": "677f0e62a812c77aaec7dcd078f0b879c248e8452568931a10183ec2e2bc1d8a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 499,
+ "tokens_out": 139
+}

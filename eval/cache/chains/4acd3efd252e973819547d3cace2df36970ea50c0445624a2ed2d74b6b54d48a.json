@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1506.9064999988768,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\"], \"text\": \"You, notice the sound of the sabzi wale near the path.\"}",
+ "prompt_sha": "39907f5712ce77962ea8ed521bf177d420e89faba7c3875240105a1c911c7de3",
+ "renderer_fingerprint": null,
+ "tokens_in": 700,
+ "tokens_out": 47
+}

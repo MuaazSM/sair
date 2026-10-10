@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9100.597791999462,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is here\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\",\"place\":\"here\"},{\"span\":\"it is flowering again\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"The champa is growing tall\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There are three goats\",\"kind\":\"animal\",\"subject\":\"goats\",\"certainty\":\"sure\"},{\"span\":\"The cat is by the gate\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"by the gate\"},{\"span\":\"looked like Dew is on the grass\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"unsure\",\"place\":\"on the grass\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine and it is flowering again.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed jasmine, champa, goats, cat and maybe Dew.\"}",
+ "prompt_sha": "f0d9d22c80e281b9f41db2c43c5df6167c029997ee34d7ca2b26abd7bad8f86c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 530,
+ "tokens_out": 203
+}

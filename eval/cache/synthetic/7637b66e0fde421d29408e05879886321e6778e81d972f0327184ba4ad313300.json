@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 9293.94350000075,
+ "output": "{\"facts\":[{\"span\":\"Teen jasmine are there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Champa is growing\",\"kind\":\"plant\",\"subject\":\"Champa\",\"certainty\":\"sure\"},{\"span\":\"One goat is near the wall\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\",\"place\":\"near the wall\"},{\"span\":\"A cat is sleeping\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"The dew is heavy probably\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I heard the garbage truck\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad returned from the walk and saw three jasmine plants and a growing Champa. He noticed a goat near the wall and a cat sleeping. He thought the dew was probably heavy and heard a garbage truck.\"}",
+ "prompt_sha": "eecb87765b0207b319f49d39a7deb46e4afe9409d62e86a238723fd4719cd0db",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 199
+}

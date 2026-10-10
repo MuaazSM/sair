@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 788.964583996858,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the old well near the back of the park.\"}",
+ "prompt_sha": "1bf03884bb471d359cce1a80217fcff8f306b97e0ff3c404d34aaf5d49a999cd",
+ "renderer_fingerprint": null,
+ "tokens_in": 1446,
+ "tokens_out": 40
+}

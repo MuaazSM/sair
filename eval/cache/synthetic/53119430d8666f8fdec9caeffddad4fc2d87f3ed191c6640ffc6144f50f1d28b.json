@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4254.965750005795,
+ "output": "{\"facts\":[{\"span\":\"मोगरा की महक\",\"kind\":\"smell\",\"subject\":\"मोगरा की महक\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom finished her walk. She thought there might be the smell of mogra. That was all.\"}",
+ "prompt_sha": "bd7b437550f1bf442240a57d465ae818732284bf9bb8286c6e3acc3fe5ade76a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 478,
+ "tokens_out": 69
+}

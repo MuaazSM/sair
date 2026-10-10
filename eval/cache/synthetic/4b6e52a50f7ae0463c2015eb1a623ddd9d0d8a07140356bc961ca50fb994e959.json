@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7228.590332997555,
+ "output": "{\"facts\":[{\"span\":\"Kids there hain\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\",\"place\":\"there\"},{\"span\":\"Imli ka ped dikha\",\"kind\":\"plant\",\"subject\":\"Imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Crow dekha\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"},{\"span\":\"Bicycle wahan hai\",\"kind\":\"other\",\"subject\":\"Bicycle\",\"certainty\":\"sure\",\"place\":\"wahan\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids there hain\",\"entry\":\"Mom and Dad finished their evening walk and confirmed kids are there again. They saw an Imli ka ped and maybe a Crow. A Bicycle was also spotted nearby.\"}",
+ "prompt_sha": "5d3fa8eb47632b3afe2f2e271b28d3ec406d977813898d3aa22d79ecdc535485",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 153
+}

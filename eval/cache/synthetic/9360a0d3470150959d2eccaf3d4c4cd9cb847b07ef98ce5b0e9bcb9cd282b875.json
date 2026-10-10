@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9041.589417000068,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Bhutta smell bahut tez hai\",\"kind\":\"smell\",\"subject\":\"Bhutta smell\",\"certainty\":\"sure\"},{\"span\":\"Vendor standing there\",\"kind\":\"person\",\"subject\":\"Vendor\",\"certainty\":\"sure\",\"place\":\"there\"},{\"span\":\"Umbrellas open I think umbrellas closed\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters tight\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Looked around, saw some changes\",\"entry\":\"Dad finished the walk and noted the market was busy. He smelled strong bhutta and saw a vendor standing there. He thought the umbrellas might be closed and noticed shop shutters were tight. He looked around and saw some changes, though he was unsure about one colour.\"}",
+ "prompt_sha": "1c5ea9560da150672be4cb7864f0da986c7f76cf9466e96f7b8ded971977cff6",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 206
+}

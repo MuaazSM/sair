@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 10087.229332995776,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Vegetable stalls hain, bilkul saaf\",\"kind\":\"plant\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell bahut tez hai\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor wahan khada tha\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Ek hen dekha\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there I think\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\",\"place\":\"there\"}],\"mission_result\":\"partly\",\"mission_span\":\"Spotting differences was hard\",\"entry\":\"Dad finished his evening walk and found the market busy with clean vegetable stalls. He noticed a strong smell of bhutta, a vendor standing there, and a hen. He thought he saw umbrellas but found spotting differences hard.\"}",
+ "prompt_sha": "aa5aa35f4ba57b8ffd9f6465bdaaf6c9cbb2a4c8dea3e2cdf292775a3c75f0ee",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 527,
+ "tokens_out": 230
+}

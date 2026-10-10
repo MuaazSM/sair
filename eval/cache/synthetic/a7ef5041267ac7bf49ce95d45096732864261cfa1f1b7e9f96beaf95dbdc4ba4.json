@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5917.886709001323,
+ "output": "{\"facts\":[{\"span\":\"Buses aate rahe\",\"kind\":\"sight\",\"subject\":\"Buses\",\"certainty\":\"sure\"},{\"span\":\"Mist bahut zyada thi\",\"kind\":\"weather\",\"subject\":\"Mist\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Paanch gauraiya\",\"kind\":\"sight\",\"subject\":\"Paanch gauraiya\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom enjoyed a nice evening walk where buses kept coming. She noticed a lot of mist and thought there might be five gauraiya.\"}",
+ "prompt_sha": "cff5ce39b8778146729acd017fa9ab1bd539f2e86a6879333205e72a560f91e1",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 128
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7213.953334001417,
+ "output": "{\"facts\":[{\"span\":\"buses aate hain do\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"mist dikh rahi hai\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"ek sparrow ud raha hai\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"sure\"},{\"span\":\"shayad chai ki smell aa rahi hai\",\"kind\":\"smell\",\"subject\":\"chai ki smell\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"maine buses count kiye\",\"entry\":\"Mom went for a walk and did today's mission. They noticed buses, mist and sparrow, maybe chai ki smell.\"}",
+ "prompt_sha": "56105930b5c34356a193e91db62366cdc36249cbd943ed0a257e5cf9f953aeaa",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 148
+}

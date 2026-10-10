@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1767.1546249985113,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will look at the marigold garlands on the flower seller outside.\"}",
+ "prompt_sha": "c2e030e84313ef6769bff719f6ebcecd912d02859e950ac5b4ac60869e16fcc4",
+ "renderer_fingerprint": null,
+ "tokens_in": 1078,
+ "tokens_out": 35
+}

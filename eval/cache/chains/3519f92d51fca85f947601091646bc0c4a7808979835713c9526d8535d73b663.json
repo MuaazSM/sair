@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4638.473209000949,
+ "output": "{\"facts\":[{\"span\":\"rain all day\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"},{\"span\":\"did not go down much\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"},{\"span\":\"stood in the lobby\",\"kind\":\"other\",\"subject\":\"stood\",\"certainty\":\"sure\",\"place\":\"lobby\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed rain.\"}",
+ "prompt_sha": "f077790cabf2e8ff2cfe4762d2088d032a9a78df64fd38e707d628bd3ac435a5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 478,
+ "tokens_out": 95
+}

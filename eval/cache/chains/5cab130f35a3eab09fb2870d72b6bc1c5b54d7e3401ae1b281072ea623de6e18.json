@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1649.119542002154,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\"], \"text\": \"You will notice the sound of the waves near the wall.\"}",
+ "prompt_sha": "7e476aeacb434f17862a8132e8cbb23f82dd3be41c2ff7edadc85eb594e69395",
+ "renderer_fingerprint": null,
+ "tokens_in": 782,
+ "tokens_out": 47
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2620.302666000498,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f2_3\", \"f3_1\", \"f3_2\"], \"text\": \"You will notice the lights on the shops.\"}",
+ "prompt_sha": "3f472ebbf13bb7f88b5a80517c6069da7f44cfe071d3aeeca585bc7fb930296e",
+ "renderer_fingerprint": null,
+ "tokens_in": 1420,
+ "tokens_out": 60
+}

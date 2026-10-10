@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7489.146749998326,
+ "output": "{\"facts\":[{\"span\":\"Kids are at the school gate.\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\",\"place\":\"school gate\"},{\"span\":\"Imli ka ped visible hai.\",\"kind\":\"plant\",\"subject\":\"Imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"Crow the I think was near the gate.\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\",\"place\":\"near the gate\"},{\"span\":\"We saw a bicycle.\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids are at the school gate.\",\"entry\":\"Mom and Dad noticed kids at the school gate again. They saw an Imli ka ped and maybe a crow near the gate. They also spotted a bicycle.\"}",
+ "prompt_sha": "1dd76b746650039ae825aa53f621959219ea470a8bc301dbd84ba184214651dd",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 159
+}

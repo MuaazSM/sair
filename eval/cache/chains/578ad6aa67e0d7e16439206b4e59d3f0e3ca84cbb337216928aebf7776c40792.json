@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2132.9102079980657,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_3\", \"f2_1\"], \"text\": \"You notice the bade bade patte on the badam ka ped. Look at the almond tree leaves.\"}",
+ "prompt_sha": "fe624a85d98a317cac56622f4425ae142e0f9773fe6b3cb1f4d52966a06e7428",
+ "renderer_fingerprint": null,
+ "tokens_in": 1128,
+ "tokens_out": 48
+}

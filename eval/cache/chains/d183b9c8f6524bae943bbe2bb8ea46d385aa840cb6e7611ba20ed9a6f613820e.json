@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7959.371541001019,
+ "output": "{\"facts\":[{\"span\":\"the amaltas near the gate still has flowers\",\"kind\":\"plant\",\"subject\":\"amaltas\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"the newspaper man was collecting money from the watchman's cabin\",\"kind\":\"person\",\"subject\":\"newspaper man\",\"certainty\":\"sure\",\"place\":\"watchman's cabin\"},{\"span\":\"two dogs were sitting near the gate\",\"kind\":\"animal\",\"subject\":\"dogs\",\"certainty\":\"sure\",\"place\":\"near the gate\"}],\"mission_result\":\"done\",\"mission_span\":\"the amaltas near the gate still has flowers\",\"entry\":\"Mom noticed the amaltas near the gate still has flowers. She saw a newspaper man collecting money from the watchman's cabin and two dogs sitting near the gate.\"}",
+ "prompt_sha": "07fc629ca842a914459ce4d94aacb62f9a5f6ed5eb4329419e276ca0e8971a5b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 493,
+ "tokens_out": 162
+}

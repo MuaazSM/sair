@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7550.061333000485,
+ "output": "{\"facts\":[{\"span\":\"kids wahan hain\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"woh tamarind dekha\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\"},{\"span\":\"Crow ne udna shayad\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"},{\"span\":\"Woh bicycle park ki gayi\",\"kind\":\"sight\",\"subject\":\"bicycle park\",\"certainty\":\"sure\",\"place\":\"bicycle park\"}],\"mission_result\":\"done\",\"mission_span\":\"kids wahan hain\",\"entry\":\"Mom and Dad noticed kids at the school gate again. They also saw a tamarind and maybe a crow flying. Mom went to the bicycle park.\"}",
+ "prompt_sha": "cb9ef49ab6d64805fc2f5e1efacf9825d897eddfa63b925899c3fd5c49c09495",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 567,
+ "tokens_out": 160
+}

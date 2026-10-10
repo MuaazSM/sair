@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4242.990500002634,
+ "output": "{\"facts\":[{\"span\":\"it was windy\",\"kind\":\"weather\",\"subject\":\"windy\",\"certainty\":\"sure\"},{\"span\":\"the bench near the gate was wet\",\"kind\":\"sight\",\"subject\":\"bench\",\"certainty\":\"sure\",\"place\":\"near the gate\"}],\"mission_result\":\"not_done\",\"mission_span\":\"i did one round only\",\"entry\":\"Mom went for a walk. They noticed windy.\"}",
+ "prompt_sha": "5692a94d8cc83511e3c6b890beeb60bd237b4e3caa2a6ae7af67b239d3f51f7e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 501,
+ "tokens_out": 83
+}

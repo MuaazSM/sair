@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 3685.0478750056936,
+ "output": "{\"facts\":[{\"span\":\"kids playing cricket\",\"kind\":\"other\",\"subject\":\"kids\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Humne thoda sa pata lagaya\",\"entry\":\"Mom and Dad felt the cold air and saw kids playing cricket. They only partially figured out what the kids were doing.\"}",
+ "prompt_sha": "2f1aec51457c94d830411a3146587551faec71e5864b9f62874482d770ea130d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 70
+}

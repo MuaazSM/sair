@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5439.294584000891,
+ "output": "{\"facts\":[{\"span\":\"road pe paani bhara tha\",\"kind\":\"sight\",\"subject\":\"paani bhara road\",\"certainty\":\"sure\",\"place\":\"road\"},{\"span\":\"banyan ki jadein geeli thi\",\"kind\":\"plant\",\"subject\":\"banyan ki jadein\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked carefully on the side of the road where there was puddled water. They noticed that the banyan leaves were wet.\"}",
+ "prompt_sha": "e471ab675f9d6601fd4e0b33ea40133d8099971f60dd54c0905b2302975ca654",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 509,
+ "tokens_out": 111
+}

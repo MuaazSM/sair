@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 823.2939170047757,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_1\"], \"text\": \"You, look at the rocks and count the crabs.\"}",
+ "prompt_sha": "e3d4d24cd8e723bc5df9d837e715fee5e839e1a0bce32d31ec2131a84fb3d388",
+ "renderer_fingerprint": null,
+ "tokens_in": 1220,
+ "tokens_out": 32
+}

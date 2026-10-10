@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 3635.55133400223,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f1_3\", \"f7_3\"], \"text\": \"You saw the ducks in the pond. Please count how many ducks are in the pond now.\"}",
+ "prompt_sha": "ae67fdc5b0d617b4f6b6b710b9830acef5bf87398035956fb476bd10f576dc46",
+ "renderer_fingerprint": null,
+ "tokens_in": 2007,
+ "tokens_out": 52
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5108.835040999111,
+ "output": "{\"facts\":[{\"span\":\"the leaves of the mango tree moving\",\"kind\":\"plant\",\"subject\":\"leaves of the mango tree\",\"certainty\":\"sure\"},{\"span\":\"the lane was empty\",\"kind\":\"other\",\"subject\":\"lane\",\"certainty\":\"sure\",\"place\":\"lane\"}],\"mission_result\":\"done\",\"mission_span\":\"the leaves of the mango tree moving\",\"entry\":\"Dad heard the softest sound from the leaves of the mango tree moving. He stood there for a minute and noticed the lane was empty.\"}",
+ "prompt_sha": "0b8b5a9d9d59853befa60d9384fccc1f3836cf4183bd11c32c89db6b75fae2aa",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 485,
+ "tokens_out": 105
+}

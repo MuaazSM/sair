@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 788.852166995639,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"You will notice the paani bhara road.\"}",
+ "prompt_sha": "e170cbf33d0453f55bdf64c1c6fc03e177ff75c339fc13d25eddaf8b2645d3fc",
+ "renderer_fingerprint": null,
+ "tokens_in": 1587,
+ "tokens_out": 37
+}

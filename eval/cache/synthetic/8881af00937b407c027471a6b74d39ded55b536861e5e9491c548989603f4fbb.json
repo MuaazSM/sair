@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7489.192000000912,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"I saw the champa\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There is one goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"There are three cat\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"The dew is present I think\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine blooming again\",\"entry\":\"Dad went for a walk and confirmed the jasmine is there. He saw the champa, one goat, and three cats. He thinks the dew is present.\"}",
+ "prompt_sha": "8b3639165e2059ad5b64184f98d971bcc30fbce6a86d4c627f332c9ac4ea71a9",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 514,
+ "tokens_out": 166
+}

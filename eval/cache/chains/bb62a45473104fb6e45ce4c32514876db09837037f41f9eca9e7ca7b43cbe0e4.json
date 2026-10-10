@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 3381.8452919949777,
+ "output": "{\"facts\":[{\"span\":\"it was cloudy all the way\",\"kind\":\"weather\",\"subject\":\"cloudy\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked till the steps and back. She noted that it was cloudy all the way.\"}",
+ "prompt_sha": "19e2ed28e6a8653a8772555bfc1c903d0d717bf455a509723eea26d17d402655",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 480,
+ "tokens_out": 61
+}

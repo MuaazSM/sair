@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1879.4100000013714,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the old mango tree.\"}",
+ "prompt_sha": "740a9a0ec03512ed4cbdcc0122b73f09a9a1edae857a6a5149ccef0d6c0953e0",
+ "renderer_fingerprint": null,
+ "tokens_in": 1420,
+ "tokens_out": 30
+}

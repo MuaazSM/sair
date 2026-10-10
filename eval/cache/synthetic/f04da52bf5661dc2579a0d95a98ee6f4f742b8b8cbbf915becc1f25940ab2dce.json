@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8196.871624997584,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Hen seen there\",\"kind\":\"animal\",\"subject\":\"Hen\",\"certainty\":\"sure\",\"place\":\"there\"},{\"span\":\"Umbrellas visible शायद shayed umbrellas\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters closed\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Could not spot anything different\",\"entry\":\"Dad went for a walk and did today's mission. They noticed Vegetable stalls, Bhutta ki smell and Hen, maybe Umbrellas and Shop shutters.\"}",
+ "prompt_sha": "b72cc5ff496aa4af82e1dfc5960eb824a3a109f2ae491e2cba193da835db1439",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 184
+}

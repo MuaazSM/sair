@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7551.773291997961,
+ "output": "{\"facts\":[{\"span\":\"hawa kam thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"palm ke patte bas thoda thoda hil rahe the\",\"kind\":\"plant\",\"subject\":\"palm ke patte\",\"certainty\":\"sure\"},{\"span\":\"pani puri wale ke paas bheed thi\",\"kind\":\"sight\",\"subject\":\"bheed\",\"certainty\":\"sure\",\"place\":\"pani puri wale ke paas\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed that the wind was light and the palm leaves were only moving a little. They saw a crowd near the pani puri sellers and mentioned that they had eaten pani puri this time.\"}",
+ "prompt_sha": "5417859ca8ef09d7bad5fc011fc31a3cd178af876830f61141df281cad33ec42",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 158
+}

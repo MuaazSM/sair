@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 747.4099999963073,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_2\"], \"text\": \"You saw some flowers near the pond fence. Look at the flowers.\"}",
+ "prompt_sha": "189f6ce22553662a2d199a831dad77fce6dbbf96281964ac9b788fdac1e1e73b",
+ "renderer_fingerprint": null,
+ "tokens_in": 1762,
+ "tokens_out": 35
+}

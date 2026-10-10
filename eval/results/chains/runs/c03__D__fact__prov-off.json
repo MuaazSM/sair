@@ -1,0 +1,269 @@
+{
+ "chain_id": "c03",
+ "system": "D",
+ "memory": "fact",
+ "provenance": false,
+ "days": [
+  {
+   "day": 1,
+   "mission_in": "Look at the colour of the sky above you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad walked along the sea-face and noticed the tide was high with waves reaching the wall. He saw the sky was orange near the water and spotted an open chai stall.",
+   "verified_facts": 4,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [],
+     "passed": true
+    }
+   ],
+   "mission_out": "You will notice the sky near the water.",
+   "mission_out_source": "model",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 2,
+   "mission_in": "You will notice the sky near the water.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed bahut log, kuch log and line.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for one bird you can hear from the path.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 3,
+   "mission_in": "Listen for one bird you can hear from the path.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk and did today's mission partly. They noticed maybe gulls, unsure, and a lot of rocks.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice any smell in the air near a garden as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 4,
+   "mission_in": "Notice any smell in the air near a garden as you walk.",
+   "writer_origin": "model",
+   "writer_passed": false,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed हवा, लहरें, चाय वाला and बादल.",
+   "verified_facts": 4,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Listen for the softest sound you can hear.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 5,
+   "mission_in": "Listen for the softest sound you can hear.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went to a stall to drink chai. He saw small waves and a dog sitting near a wall. He thought the dog might belong to the stall owner.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"Notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 6,
+   "mission_in": "Look for a shadow that makes a pattern on the ground as you walk.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a short walk. It drizzled a little.",
+   "verified_facts": 0,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"Notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\"], \"text\": \"You will notice the sky near the water.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "mission_repeated"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Notice the wind as it moves the leaves around you.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  },
+  {
+   "day": 7,
+   "mission_in": "Notice the wind as it moves the leaves around you.",
+   "writer_origin": "model",
+   "writer_passed": true,
+   "writer_unsupported": 0,
+   "entry": "Dad went for a walk. They noticed boats, sky and dog.",
+   "verified_facts": 3,
+   "planner_attempts": [
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f1_3\", \"f4_4\"], \"text\": \"You, notice the sky near the water and watch for clouds in the sky.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "multiple_tasks"
+     ],
+     "passed": false
+    },
+    {
+     "raw": "{\"type\": \"return\", \"references\": [\"f7_3\"], \"text\": \"Notice the dog near the wall.\"}",
+     "parse_ok": true,
+     "reasons": [
+      "not_addressed_to_group"
+     ],
+     "passed": false
+    }
+   ],
+   "mission_out": "Find one leaf with a shape you like.",
+   "mission_out_source": "fallback",
+   "orphans": [],
+   "contaminated": false,
+   "echo_only": false,
+   "raw_orphans": [],
+   "contaminated_raw": false,
+   "raw_echo_only": false,
+   "served_orphans": [],
+   "contaminated_served": false,
+   "served_echo_only": false
+  }
+ ],
+ "error": null,
+ "headline_measure": "raw_planner_output",
+ "first_contaminated_day": null,
+ "first_contaminated_day_raw": null,
+ "first_contaminated_day_served": null
+}

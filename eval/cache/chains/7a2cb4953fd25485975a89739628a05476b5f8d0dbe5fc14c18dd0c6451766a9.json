@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 823.7169170024572,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_2\"], \"text\": \"You will see the pomegranates at the fruit stall.\"}",
+ "prompt_sha": "4e34d59848cfd47a3e627de1af35b82c1443560922c26b4999dbdd6b19fd47c0",
+ "renderer_fingerprint": null,
+ "tokens_in": 1772,
+ "tokens_out": 33
+}

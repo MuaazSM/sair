@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6650.517458001559,
+ "output": "{\"facts\":[{\"span\":\"some birds were sitting on the jamun tree eating the fruit\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\",\"place\":\"jamun tree\"},{\"span\":\"we could hear them more than see them\",\"kind\":\"sound\",\"subject\":\"them\",\"certainty\":\"sure\"},{\"span\":\"maybe parrots, i don't know\",\"kind\":\"animal\",\"subject\":\"parrots\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed birds sitting on a jamun tree, eating fruit. They heard the birds more than they saw them. They thought they might be parrots, but they were unsure.\"}",
+ "prompt_sha": "c8e29ad01a46a793270e158106c9351050bc956ee00a997c1b2fd4206e350ecb",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 493,
+ "tokens_out": 142
+}

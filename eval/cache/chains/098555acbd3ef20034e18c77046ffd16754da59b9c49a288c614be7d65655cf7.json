@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5730.298167000001,
+ "output": "{\"facts\":[{\"span\":\"koyal aaj bhi thi, wahi coconut ke ped pe lag rahi thi.\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\",\"place\":\"coconut ke ped pe\"},{\"span\":\"mandir mein bhajan chal raha tha.\",\"kind\":\"sound\",\"subject\":\"bhajan\",\"certainty\":\"sure\",\"place\":\"mandir\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed a koyal on a coconut tree and heard a bhajan in a mandir.\"}",
+ "prompt_sha": "89341727804201dc372e624918d5a8cb6ffb959cefb96d9c822488e5bb426fab",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 114
+}

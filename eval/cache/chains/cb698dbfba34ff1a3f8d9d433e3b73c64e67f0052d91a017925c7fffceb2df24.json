@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1361.1221249957453,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You notice the leaf on the path. Can you see if it is wet?\"}",
+ "prompt_sha": "c62ccb501db42a17a92b0f60d781c9d3b6ea46643fb1fa055f055f2dee9298b1",
+ "renderer_fingerprint": null,
+ "tokens_in": 841,
+ "tokens_out": 55
+}

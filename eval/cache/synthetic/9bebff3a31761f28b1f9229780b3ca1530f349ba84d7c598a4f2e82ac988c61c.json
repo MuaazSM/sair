@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6351.644457994553,
+ "output": "{\"facts\":[{\"span\":\"Teen mist dikh rahi thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Ek sparrow ud raha tha ho sakta hai\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"Chai ki smell bahut achhi thi\",\"kind\":\"smell\",\"subject\":\"Chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Bus count kiya, do buses dekhi\",\"entry\":\"Mom enjoyed a nice evening walk where she saw three mists and maybe a sparrow. She noticed the smell of chai and successfully counted two buses.\"}",
+ "prompt_sha": "cbf03248723a0fe004e5bf61c49842d8695800be6f1eadfb2a26c825e9ff9800",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 545,
+ "tokens_out": 136
+}

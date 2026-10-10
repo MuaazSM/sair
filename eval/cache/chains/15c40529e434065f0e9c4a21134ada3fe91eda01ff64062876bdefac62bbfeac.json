@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1147.265999999945,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"You, notice the sound of the bell near the paan shop.\"}",
+ "prompt_sha": "41b283c6d16d04ac12bd70c2839b47c5a1082e0e3202e86cded663e2ed34902e",
+ "renderer_fingerprint": null,
+ "tokens_in": 657,
+ "tokens_out": 41
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1139.9473330020555,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\"], \"text\": \"Notice the leaves on the path. Count how many you see.\"}",
+ "prompt_sha": "c5ea309fb6d0788e292491cb7fe10faf891d4509f1c03f05a326abbf6cbe86d3",
+ "renderer_fingerprint": null,
+ "tokens_in": 728,
+ "tokens_out": 44
+}

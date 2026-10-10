@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1429.980249995424,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\"], \"text\": \"You will listen for the sound of the bell. Then, count how many leaves are on the peepal tree.\"}",
+ "prompt_sha": "711f139d15a13129535d210b85aba9aba103d90db90426201a89c72d7121259e",
+ "renderer_fingerprint": null,
+ "tokens_in": 857,
+ "tokens_out": 68
+}

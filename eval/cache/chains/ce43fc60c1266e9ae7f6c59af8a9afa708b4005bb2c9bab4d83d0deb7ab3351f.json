@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 948.7386659966432,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_1\", \"f4_2\"], \"text\": \"You, look at the crabs on the rocks. Count how many small ones you see.\"}",
+ "prompt_sha": "abcbdeed26536d11b199237013dc84e1134debc2bdd7a0dac07aeaa6fbcb145b",
+ "renderer_fingerprint": null,
+ "tokens_in": 1235,
+ "tokens_out": 45
+}

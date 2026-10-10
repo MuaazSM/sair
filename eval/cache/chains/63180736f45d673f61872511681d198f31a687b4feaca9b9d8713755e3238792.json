@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4157.027166998887,
+ "output": "{\"facts\":[{\"span\":\"drizzle\",\"kind\":\"weather\",\"subject\":\"drizzle\",\"certainty\":\"sure\"},{\"span\":\"the dog wasn't there\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a short walk in the drizzle. She noted that the dog wasn't there.\"}",
+ "prompt_sha": "67f956665a64f7c7df681171d4246eaa623e983916d71f5e8bace84fe78222ad",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 477,
+ "tokens_out": 80
+}

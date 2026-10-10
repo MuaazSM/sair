@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 684.7922080050921,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\", \"f1_3\"], \"text\": \"You notice the leaves on the badam ka ped.\"}",
+ "prompt_sha": "e72526f2f0a056a77a5c8cc315ef537c24c8e2536bb6d0bb35b4bd5f0a75410a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1546,
+ "tokens_out": 38
+}

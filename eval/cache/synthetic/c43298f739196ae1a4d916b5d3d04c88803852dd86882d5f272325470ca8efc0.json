@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5741.200374999607,
+ "output": "{\"facts\":[{\"span\":\"Kids wahan hain\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Ek crow dekha maybe\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"Ek bicycle dikhi\",\"kind\":\"other\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids wahan hain\",\"entry\":\"Mom and Dad noticed kids there again. Mom thought she maybe saw a crow, and Dad saw a bicycle.\"}",
+ "prompt_sha": "d36f7814b1e6fe9b83cb06205e76a618cd79ecaaa9282ccac2a3a82fe43ff52c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 113
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2362.981625003158,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f5_1\"], \"text\": \"You will notice the gulmohar near the gate. Look for any squirrel near the bench.\"}",
+ "prompt_sha": "6d9f58bc3a4db7fb70ee3dff989890d60b470753bb8f4c5a2aea811d4231f9b4",
+ "renderer_fingerprint": null,
+ "tokens_in": 1514,
+ "tokens_out": 46
+}

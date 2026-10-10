@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1330.7672919981997,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will notice the path near the school ke gate.\"}",
+ "prompt_sha": "e3232a65822b5b61c474d2e8ae5b62ebfe6bc8d863c39eb032208f3aba07f14d",
+ "renderer_fingerprint": null,
+ "tokens_in": 817,
+ "tokens_out": 32
+}

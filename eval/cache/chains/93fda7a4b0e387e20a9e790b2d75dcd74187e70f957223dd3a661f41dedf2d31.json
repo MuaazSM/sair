@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5902.830624996568,
+ "output": "{\"facts\":[{\"span\":\"aaj pond mein ducks nahi dikhe, shayad doosri side the.\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"unsure\",\"place\":\"pond\"},{\"span\":\"ek bagula tha kinare pe, bilkul chup chaap khada tha.\",\"kind\":\"animal\",\"subject\":\"bagula\",\"certainty\":\"sure\",\"place\":\"kinare pe\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed maybe ducks, bagula.\"}",
+ "prompt_sha": "b2623c7a713e4d8c186a22963ab8fc7c491ada66fb80cb4b00581e8df4109318",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 116
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2714.8311249984545,
+ "output": "{\"type\": \"return\", \"references\": [\"f7_2\"], \"text\": \"You notice the smell of wet earth near the path.\"}",
+ "prompt_sha": "a8ec4f2354a12728c733734d5c3f5a4cba0f8f334edeb760327db35beea17d78",
+ "renderer_fingerprint": null,
+ "tokens_in": 1719,
+ "tokens_out": 32
+}

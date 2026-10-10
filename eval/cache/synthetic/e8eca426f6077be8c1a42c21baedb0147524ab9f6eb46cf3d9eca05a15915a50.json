@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5613.019500000519,
+ "output": "{\"facts\":[{\"span\":\"paanch buses dikhi\",\"kind\":\"sight\",\"subject\":\"paanch buses\",\"certainty\":\"sure\"},{\"span\":\"bahut zyada mist thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"chai ki smell aayi\",\"kind\":\"smell\",\"subject\":\"chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"buses ko count kiya\",\"entry\":\"Mom saw five buses and noticed a lot of mist. She smelled chai and managed to count the buses, though she forgot their numbers.\"}",
+ "prompt_sha": "d04042e6fb08ddf7fbcd2402fe226e4c66d62a0051d084215691bd885869cffc",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 120
+}

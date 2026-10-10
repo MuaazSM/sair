@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6940.783874997578,
+ "output": "{\"facts\":[{\"span\":\"the champa near the clubhouse had a few flowers, nice smell.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\",\"place\":\"near the clubhouse\"},{\"span\":\"the watchman was sweeping the entrance.\",\"kind\":\"person\",\"subject\":\"watchman\",\"certainty\":\"sure\",\"place\":\"the entrance\"},{\"span\":\"a cat ran under the cars.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"under the cars\"}],\"mission_result\":\"not_done\",\"mission_span\":\"the champa near the clubhouse had a few flowers, nice smell.\",\"entry\":\"Dad noticed a champa near the clubhouse with a nice smell. He saw a watchman sweeping the entrance and a cat running under the cars.\"}",
+ "prompt_sha": "062a28a2ee65cc9416779f1b7e18909da0be4ec120d3df25d1390b05b65b67ea",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 496,
+ "tokens_out": 154
+}

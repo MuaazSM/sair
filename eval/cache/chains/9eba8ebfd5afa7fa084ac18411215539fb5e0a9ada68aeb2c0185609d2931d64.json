@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4134.337415998743,
+ "output": "{\"facts\":[{\"span\":\"the flowers were out on the bush outside the corner house\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"bush outside the corner house\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad saw flowers on a bush outside a corner house. They liked them but did not stop long because it might rain.\"}",
+ "prompt_sha": "751dd5df6d80fec9f0c347bbc08c2f324252c476e4332ef75cc010d10ebe6646",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 495,
+ "tokens_out": 82
+}

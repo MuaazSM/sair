@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5700.735040998552,
+ "output": "{\"facts\":[{\"span\":\"kids playing cricket\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"ho sakta hai crow flies high\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"some kids near the gate\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\",\"place\":\"near the gate\"}],\"mission_result\":\"done\",\"mission_span\":\"We found some kids near the gate.\",\"entry\":\"Mom and Dad enjoyed their evening walk. They saw kids playing cricket and maybe a crow flying high. They successfully found some kids near the gate.\"}",
+ "prompt_sha": "bbcb39d2b5deeef587839e802ed5aa7228e0eaa1df2f81a334ec4a91c0f00e88",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 503,
+ "tokens_out": 123
+}

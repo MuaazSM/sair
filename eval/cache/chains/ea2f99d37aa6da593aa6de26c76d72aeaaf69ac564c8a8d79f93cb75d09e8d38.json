@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5697.677958996792,
+ "output": "{\"facts\":[{\"span\":\"market was decorated today, lots of flowers hanging at the shop fronts.\",\"kind\":\"sight\",\"subject\":\"market\",\"certainty\":\"sure\"},{\"span\":\"the fruit stall had pomegranates.\",\"kind\":\"sight\",\"subject\":\"fruit stall\",\"certainty\":\"sure\"},{\"span\":\"the cow was there again near the peepal.\",\"kind\":\"animal\",\"subject\":\"cow\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed market, fruit stall and cow.\"}",
+ "prompt_sha": "7843203f88222f7d211a422f51e5cc137d2d95aad75ff1c904ade1ba62d43c4d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 118
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 10102.813292003702,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Vendor standing there\",\"kind\":\"person\",\"subject\":\"Vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen near the edge\",\"kind\":\"animal\",\"subject\":\"Hen\",\"certainty\":\"sure\",\"place\":\"near the edge\"},{\"span\":\"Umbrellas the sky लगता है were hanging low\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters closed\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Not much different\",\"entry\":\"Dad finished his evening walk and saw vegetable stalls with a strong smell of bhutta. He noticed a vendor standing there and a hen near the edge. He thought umbrellas were hanging low and saw shop shutters closed. He looked around but felt not much was different.\"}",
+ "prompt_sha": "1a89b1e04f44f897f9d1790442754d27134b0600c2b96fa5bcb95e8e082070d3",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 519,
+ "tokens_out": 227
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7757.27249999909,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"The champa is also present\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"I saw three goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The cat is near the gate\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"I heard the garbage truck\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine\",\"entry\":\"Dad went for a walk and confirmed the jasmine is flowering again. He also noticed champa, three goats, a cat near the gate, and heard a garbage truck.\"}",
+ "prompt_sha": "1805a23a367cd755a31cb7f0bc394911070c0b52a2bdd78bd9a221c2d2b0d1a5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 515,
+ "tokens_out": 173
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7341.830500001379,
+ "output": "{\"facts\":[{\"span\":\"the guava cart was there again\",\"kind\":\"other\",\"subject\":\"guava cart\",\"certainty\":\"sure\"},{\"span\":\"i heard the temple bell from the corner\",\"kind\":\"sound\",\"subject\":\"temple bell\",\"certainty\":\"sure\",\"place\":\"corner\"},{\"span\":\"a few birds were sitting on the electric wires above the paan shop\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\",\"place\":\"electric wires above the paan shop\"}],\"mission_result\":\"done\",\"mission_span\":\"the guava cart was there again\",\"entry\":\"Dad saw the guava cart again and heard a temple bell from the corner. He noticed birds sitting on the electric wires above the paan shop, though he could not see what they were.\"}",
+ "prompt_sha": "8fbe31a39334c1eb4a8ec683a5da7a35cfa75f3a841c282268430ad28a8e30c3",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 503,
+ "tokens_out": 159
+}

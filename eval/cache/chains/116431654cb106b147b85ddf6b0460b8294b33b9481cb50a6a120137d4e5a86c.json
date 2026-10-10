@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8813.309624994872,
+ "output": "{\"facts\":[{\"span\":\"koyal aaj bhi thi\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\"},{\"span\":\"wahi coconut ke ped pe lag rahi thi\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\",\"place\":\"coconut ke ped pe\"},{\"span\":\"mandir mein bhajan chal raha tha\",\"kind\":\"sound\",\"subject\":\"bhajan\",\"certainty\":\"sure\",\"place\":\"mandir\"},{\"span\":\"nariyal wala nahi tha aaj\",\"kind\":\"animal\",\"subject\":\"nariyal wala\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"koyal aaj bhi thi, wahi coconut ke ped pe lag rahi thi\",\"entry\":\"Mom and Dad heard a koel near the coconut tree today. They also noticed a bhajan playing in the mandir. They confirmed that the nariyal wala was not there.\"}",
+ "prompt_sha": "389772b3fbd10c5ce44cac846194d7149fb5ce0e5e444d7127be1290ac564cc2",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 503,
+ "tokens_out": 192
+}

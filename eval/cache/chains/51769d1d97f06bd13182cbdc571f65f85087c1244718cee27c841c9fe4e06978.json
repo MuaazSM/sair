@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5267.410874999769,
+ "output": "{\"facts\":[{\"span\":\"the jamun tree had some fruit on the ground\",\"kind\":\"plant\",\"subject\":\"jamun tree\",\"certainty\":\"sure\"},{\"span\":\"the milkman's cycle bell rang twice\",\"kind\":\"sound\",\"subject\":\"milkman's cycle bell\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed a jamun tree with fruit on the ground and heard a milkman's cycle bell ring twice. They walked to the end of the lane.\"}",
+ "prompt_sha": "04d89d8c0e77de5a15dee725e6002bb03220ad79c76c93294178215f81b21953",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 500,
+ "tokens_out": 110
+}

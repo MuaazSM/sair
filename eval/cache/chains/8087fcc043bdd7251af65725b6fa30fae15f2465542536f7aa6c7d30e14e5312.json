@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1173.885500000324,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"You will notice the sound of the birds near the neem tree.\"}",
+ "prompt_sha": "16725f08613d7cb6b908cebd6cd42f93fa26efa224cc0cf9e66ba0a638a9e5cc",
+ "renderer_fingerprint": null,
+ "tokens_in": 888,
+ "tokens_out": 52
+}

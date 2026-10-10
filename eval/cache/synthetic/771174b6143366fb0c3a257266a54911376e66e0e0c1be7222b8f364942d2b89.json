@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7504.570042001433,
+ "output": "{\"facts\":[{\"span\":\"Teen jasmine are there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Champa is growing tall\",\"kind\":\"plant\",\"subject\":\"Champa\",\"certainty\":\"sure\"},{\"span\":\"One goat is grazing\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"A cat is sitting near the wall\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the wall\"},{\"span\":\"maybe Dew is on the leaves\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine flowers today\",\"entry\":\"Dad went for a walk and did today's mission. They noticed jasmine, Champa, goat and cat, maybe Dew.\"}",
+ "prompt_sha": "a594798bf4c80ea0a89b54e5ad3f1e706bd142b3403b32c8cd66100e44074069",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 527,
+ "tokens_out": 167
+}

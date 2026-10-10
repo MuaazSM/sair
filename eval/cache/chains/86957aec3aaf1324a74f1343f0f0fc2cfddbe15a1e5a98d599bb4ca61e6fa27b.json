@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4885.656958998879,
+ "output": "{\"facts\":[{\"span\":\"aam ke ped pe kaafi shor tha\",\"kind\":\"sound\",\"subject\":\"aam ke ped\",\"certainty\":\"sure\",\"place\":\"aam ke ped\"},{\"span\":\"thodi thand thi aaj\",\"kind\":\"weather\",\"subject\":\"thand\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed aam ke ped and thand.\"}",
+ "prompt_sha": "498751e577ad32d38c214b4e2160ebc2e14e433c615c75c5d38001ccbd8efa3d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 505,
+ "tokens_out": 97
+}

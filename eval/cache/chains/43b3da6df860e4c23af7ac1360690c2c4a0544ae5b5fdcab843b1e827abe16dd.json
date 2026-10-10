@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4196.682207999402,
+ "output": "{\"facts\":[{\"span\":\"rain\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"},{\"span\":\"shop awning\",\"kind\":\"sight\",\"subject\":\"shop awning\",\"certainty\":\"sure\",\"place\":\"shop\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad noticed rain and stood under a shop awning for some time before coming back.\"}",
+ "prompt_sha": "7cb1479bfa8a1641e38aafb2774777a851421fa064df374f4f766e35bfa7ef67",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 475,
+ "tokens_out": 81
+}

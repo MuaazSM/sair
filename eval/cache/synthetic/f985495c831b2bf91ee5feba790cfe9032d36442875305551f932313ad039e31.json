@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6180.105833998823,
+ "output": "{\"facts\":[{\"span\":\"Wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"Wind\",\"certainty\":\"sure\"},{\"span\":\"Waves bahut high the pata nahi\",\"kind\":\"sight\",\"subject\":\"Waves\",\"certainty\":\"unsure\"},{\"span\":\"shayad Rain ho raha tha\",\"kind\":\"weather\",\"subject\":\"Rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially complete\",\"entry\":\"Mom and Dad felt the wind was very strong. They thought the waves were high and maybe it was raining. They considered their mission partially complete before feeling tired.\"}",
+ "prompt_sha": "719f4d0eca201103517ca99939b4a6b481d44bafab831e63f01c68539f05cfcd",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 523,
+ "tokens_out": 127
+}

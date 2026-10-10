@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 788.3359999977984,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the roshni near the lane.\"}",
+ "prompt_sha": "0bbc2e9cf0a9f22329345a0c363ed0f26503d32c93e54b421ab527906592117a",
+ "renderer_fingerprint": null,
+ "tokens_in": 1075,
+ "tokens_out": 38
+}

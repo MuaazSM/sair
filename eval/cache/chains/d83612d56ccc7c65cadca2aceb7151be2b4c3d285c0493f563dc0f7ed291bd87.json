@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1775.2403749982477,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Tuesday 1\", \"Wednesday 1\", \"Thursday 1\"], \"text\": \"You will notice the leaves on the tree.\"}",
+ "prompt_sha": "4b84d0a4e124f357d3b6e022a22daaffcf2b2035b11cc78ca5769d98a491e01d",
+ "renderer_fingerprint": null,
+ "tokens_in": 750,
+ "tokens_out": 44
+}

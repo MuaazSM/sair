@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5036.619917002099,
+ "output": "{\"facts\":[{\"span\":\"Bahut thand hai\",\"kind\":\"weather\",\"subject\":\"thand\",\"certainty\":\"sure\"},{\"span\":\"teen yoga group\",\"kind\":\"sight\",\"subject\":\"yoga group\",\"certainty\":\"sure\"},{\"span\":\"ek butterfly\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya\",\"entry\":\"Dad went for a walk. They noticed thand, yoga group and butterfly.\"}",
+ "prompt_sha": "92a8b42dcf2f25cbfd0a0c45a0b3a5b7567eb84929950b54af9f6a5a21bf442e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 492,
+ "tokens_out": 103
+}

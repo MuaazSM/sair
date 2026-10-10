@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4373.637500000768,
+ "output": "{\"facts\":[{\"span\":\"ek gilahri ashoka pe upar neeche bhaag rahi thi\",\"kind\":\"animal\",\"subject\":\"gilhari ashoka\",\"certainty\":\"sure\",\"place\":\"ek gilahri ashoka pe\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed gilahri ashoka.\"}",
+ "prompt_sha": "183f561f37b85c80a23b749aef585aef97f7c37b3b877ccf68e373bdbfe543b1",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 83
+}

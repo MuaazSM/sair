@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 9249.529375003476,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"Champa is blooming now\",\"kind\":\"plant\",\"subject\":\"Champa\",\"certainty\":\"sure\"},{\"span\":\"I saw one goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"A cat was near the gate\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"Five dew drops maybe\",\"kind\":\"sight\",\"subject\":\"dew drops\",\"certainty\":\"unsure\"},{\"span\":\"The garbage truck passed by\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad returned from his evening walk and noted that the jasmine is there and Champa is blooming. He saw one goat and a cat near the gate. He thought there might be five dew drops and saw a garbage truck pass by.\"}",
+ "prompt_sha": "7bb86f3431b587497e4b65cc2abc0085e7c2747545d2437771d03f619aab0de5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 208
+}

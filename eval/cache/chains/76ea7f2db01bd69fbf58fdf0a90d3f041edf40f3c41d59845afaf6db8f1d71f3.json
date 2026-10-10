@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6996.620417005033,
+ "output": "{\"facts\":[{\"span\":\"crows phir se the neem pe, kaafi saare.\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\",\"place\":\"neem pe\"},{\"span\":\"ek dog bhi tha corner pe, bas so raha tha.\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\",\"place\":\"corner pe\"},{\"span\":\"vendor bol raha tha ki tamatar mehenge ho gaye hain.\",\"kind\":\"other\",\"subject\":\"vendor\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed crows on the neem tree and a dog sleeping in the corner. They also heard a vendor say that tomatoes have become expensive.\"}",
+ "prompt_sha": "8cc509f84f5d294ed04316532c95ad0e40a39f4b27f657456996085dcf87c452",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 521,
+ "tokens_out": 149
+}

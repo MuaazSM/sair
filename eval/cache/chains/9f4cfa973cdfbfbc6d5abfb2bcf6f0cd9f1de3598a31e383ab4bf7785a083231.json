@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6483.046541994554,
+ "output": "{\"facts\":[{\"span\":\"फूल वाली की दुकान\",\"kind\":\"other\",\"subject\":\"फूल वाली की दुकान\",\"certainty\":\"sure\",\"place\":\"फूल वाली की दुकान\"},{\"span\":\"बहुत सारे फूल थे\",\"kind\":\"plant\",\"subject\":\"फूल\",\"certainty\":\"sure\"},{\"span\":\"कुछ त्योहार आने वाला है\",\"kind\":\"other\",\"subject\":\"त्योहार\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went to the flower shop and saw many flowers. She thought some festivals might be coming. She did not take anything.\"}",
+ "prompt_sha": "4f95203140c8576a317e40274e25f4a27a91b1ec46c235eb39390aa287027454",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 493,
+ "tokens_out": 138
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4691.435625005397,
+ "output": "{\"facts\":[{\"span\":\"the almond tree leaves are turning, some are going red at the edges.\",\"kind\":\"plant\",\"subject\":\"almond tree leaves\",\"certainty\":\"sure\"},{\"span\":\"a few ladies were sitting on the bench talking.\",\"kind\":\"person\",\"subject\":\"ladies\",\"certainty\":\"sure\",\"place\":\"bench\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They noticed almond tree leaves and ladies.\"}",
+ "prompt_sha": "d10f7f31b31d1093881b65e676fd975400616ca0af866ee90efbd6a59f59d621",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 97
+}

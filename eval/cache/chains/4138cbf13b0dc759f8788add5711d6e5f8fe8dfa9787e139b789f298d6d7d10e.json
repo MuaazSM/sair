@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5779.6275000000605,
+ "output": "{\"facts\":[{\"span\":\"ek band baja wala\",\"kind\":\"sound\",\"subject\":\"band baja wala\",\"certainty\":\"sure\"},{\"span\":\"shaadi thi kisi ki\",\"kind\":\"other\",\"subject\":\"shaadi\",\"certainty\":\"sure\"},{\"span\":\"bahut log the peeche peeche\",\"kind\":\"person\",\"subject\":\"bahut log\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went to the market where a band baja was playing. He noticed a wedding and saw many people behind him. He stood aside.\"}",
+ "prompt_sha": "ed2bfd9d9108b0f91c28a09a25606a3f464be8d1f4bcdd25cfb50ee0abafda24",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 500,
+ "tokens_out": 121
+}

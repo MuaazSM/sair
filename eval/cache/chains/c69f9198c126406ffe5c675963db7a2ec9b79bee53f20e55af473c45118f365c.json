@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7380.937499998254,
+ "output": "{\"facts\":[{\"span\":\"sky bahut saaf thi\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\"},{\"span\":\"ek bhi badal nahi\",\"kind\":\"weather\",\"subject\":\"badal\",\"certainty\":\"sure\"},{\"span\":\"ducks pond ke beech mein the\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\",\"place\":\"pond ke beech mein\"},{\"span\":\"bench pe baith ke\",\"kind\":\"other\",\"subject\":\"bench\",\"certainty\":\"sure\",\"place\":\"bench pe\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed sky, badal, ducks and bench.\"}",
+ "prompt_sha": "327a962829f1955becaa82e8d0de95c07eeb33abbfa4c478ec3b38cea79a0704",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 144
+}

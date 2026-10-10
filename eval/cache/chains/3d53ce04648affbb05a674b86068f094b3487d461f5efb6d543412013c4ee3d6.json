@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4930.850541997643,
+ "output": "{\"facts\":[{\"span\":\"the banyan was full of birds today\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"sure\",\"place\":\"banyan\"},{\"span\":\"a lot of chirping\",\"kind\":\"sound\",\"subject\":\"chirping\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"we couldn't see which birds they were\",\"entry\":\"Mom and Dad went for a walk and did today's mission partly. They noticed birds and chirping.\"}",
+ "prompt_sha": "cdd6847338658eb6233f9f2ff22b95df65abc285080675eed089b43c6c53faf9",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 492,
+ "tokens_out": 101
+}

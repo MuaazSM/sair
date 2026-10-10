@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5279.548750004324,
+ "output": "{\"facts\":[{\"span\":\"Yoga group, they are there\",\"kind\":\"sight\",\"subject\":\"Yoga group\",\"certainty\":\"sure\"},{\"span\":\"Paanch butterfly\",\"kind\":\"animal\",\"subject\":\"butterfly\",\"certainty\":\"sure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya\",\"entry\":\"Dad finished his evening walk and saw a yoga group. He also noticed five butterflies. He admitted he forgot his mission to count the people doing yoga.\"}",
+ "prompt_sha": "5c73f19d5b7a36ba25932cf4e7e1e54c0218d8f09a19117acb62243e3e6bfc2b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 100
+}

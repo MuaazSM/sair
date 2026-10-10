@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6084.43791600439,
+ "output": "{\"facts\":[{\"span\":\"tamarind dekha\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\"},{\"span\":\"Ek crow wahan tha probably\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\",\"place\":\"wahan\"},{\"span\":\"Woh bicycle dikhi\",\"kind\":\"sight\",\"subject\":\"bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad enjoyed their walk. They saw a tamarind and a bicycle. Mom thought there was probably a crow nearby.\"}",
+ "prompt_sha": "e123dc52f69b2552b85f325fb5ccf2442915739af9e3f02e96c303a9ef1e738d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 523,
+ "tokens_out": 120
+}

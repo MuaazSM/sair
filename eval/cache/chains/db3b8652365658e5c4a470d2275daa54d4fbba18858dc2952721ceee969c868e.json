@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7224.625250004465,
+ "output": "{\"facts\":[{\"span\":\"aaj koi aur bird bhi tha\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\"},{\"span\":\"koyal ke saath\",\"kind\":\"animal\",\"subject\":\"koyal\",\"certainty\":\"sure\"},{\"span\":\"chhota sa\",\"kind\":\"animal\",\"subject\":\"chhota sa\",\"certainty\":\"sure\"},{\"span\":\"bahut tez tez bol raha tha\",\"kind\":\"sound\",\"subject\":\"bol raha tha\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed another bird today, a small one that was talking very fast. They were unsure about what kind of bird it was.\"}",
+ "prompt_sha": "532c53b93068047d7a81b3076e133773c5abc5dc5f9d4f1f332b63952ed55433",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 143
+}

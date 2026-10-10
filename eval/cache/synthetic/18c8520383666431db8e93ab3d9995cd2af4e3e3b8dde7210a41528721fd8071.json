@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6475.2399580029305,
+ "output": "{\"facts\":[{\"span\":\"Buses aate jaate the\",\"kind\":\"sight\",\"subject\":\"Buses\",\"certainty\":\"sure\"},{\"span\":\"teen mist thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Sparrow the pata nahi was flying high\",\"kind\":\"animal\",\"subject\":\"Sparrow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Buses count kiya\",\"entry\":\"Mom enjoyed a nice evening walk where buses came and went. She noticed three mists and maybe saw a sparrow flying high. Mom confirmed that she counted the buses.\"}",
+ "prompt_sha": "3923f7c8cda6bd4ea0b1b89bd7259744c65b0bf430b7064a6a3d13e4a793037e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 506,
+ "tokens_out": 130
+}

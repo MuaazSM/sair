@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4872.833290995914,
+ "output": "{\"facts\":[{\"span\":\"there was a smell of something frying from one of the stalls\",\"kind\":\"smell\",\"subject\":\"something frying\",\"certainty\":\"sure\",\"place\":\"one of the stalls\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad noticed a smell of something frying from one of the stalls. He mentioned that the smell was very good but he did not know what it was. He also stated that he did not buy anything.\"}",
+ "prompt_sha": "2f9c8be192f6f47be57750c60c3fb0261096270422fa455f4bb7751a3911de11",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 98
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 738.6302909944789,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the sky and the bhutta on the corner.\"}",
+ "prompt_sha": "2e38e13669a69c4008b399cc64ecca3c7d2362bf590e7d620dcc02f4d7abac02",
+ "renderer_fingerprint": null,
+ "tokens_in": 1050,
+ "tokens_out": 40
+}

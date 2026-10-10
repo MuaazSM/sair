@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7014.373250000062,
+ "output": "{\"facts\":[{\"span\":\"Kids wahan hain\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Woh tamarind dekha\",\"kind\":\"plant\",\"subject\":\"tamarind\",\"certainty\":\"sure\"},{\"span\":\"maybe Crow paas aaya\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\",\"place\":\"paas\"},{\"span\":\"Bicycle dikhi\",\"kind\":\"sight\",\"subject\":\"Bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids wahan hain\",\"entry\":\"Mom and Dad noticed kids there again. Mom saw a tamarind and Dad thought maybe a crow came nearby. They also saw a bicycle.\"}",
+ "prompt_sha": "7799b7261bf7649e90e741eea6b7de5da517275b8f775873aead409468b27f41",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 152
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6692.531625005358,
+ "output": "{\"facts\":[{\"span\":\"समुद्र में आज कुछ जहाज़ दिख रहे थे दूर\",\"kind\":\"sight\",\"subject\":\"जहाज़\",\"certainty\":\"sure\",\"place\":\"समुद्र\"},{\"span\":\"शायद मछली पकड़ने वाली नावें थीं\",\"kind\":\"sight\",\"subject\":\"मछली पकड़ने वाली नावें\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad saw some ships far away in the sea. They thought they might be fishing boats, but they could not count them.\"}",
+ "prompt_sha": "cc8b4e04d904d4732cd639ae7ece2698dda58bd366495d7a7a1502eb7104fcce",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 131
+}

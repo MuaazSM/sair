@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8597.096125005919,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"Ek vendor there\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Ek hen dekha\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas there लगता है\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Kuch alag nahi mila\",\"entry\":\"Dad went for a walk and did today's mission. They noticed vegetable stalls, vendor and hen, maybe Umbrellas.\"}",
+ "prompt_sha": "031616fc9191c45d5fcfaa033df538c773016222d12001cdf938beb17c9afb26",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 520,
+ "tokens_out": 191
+}

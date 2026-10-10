@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 703.6094169961871,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You will notice the bananas at the fruit stall at the start.\"}",
+ "prompt_sha": "2d3e7fbf1a9fa9ee66f69ebef80e3a4b3bbe283422192ee4749a22c8ae6a2840",
+ "renderer_fingerprint": null,
+ "tokens_in": 1165,
+ "tokens_out": 34
+}

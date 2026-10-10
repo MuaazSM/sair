@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6906.848250000621,
+ "output": "{\"facts\":[{\"span\":\"Buses aage jaa rahi thi\",\"kind\":\"sight\",\"subject\":\"Buses\",\"certainty\":\"sure\"},{\"span\":\"Teen mist dikh rahi thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"Sparrow the bird shayad was flying high\",\"kind\":\"animal\",\"subject\":\"Sparrow the bird\",\"certainty\":\"unsure\"},{\"span\":\"Chai ki smell bahut acchi thi\",\"kind\":\"smell\",\"subject\":\"Chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They noticed buses, mist and chai ki smell, maybe Sparrow the bird.\"}",
+ "prompt_sha": "5327ee9a392d7b85faf8e122e928f6589ef3771db96a8b99ed57d4ea9c31bc17",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 514,
+ "tokens_out": 153
+}

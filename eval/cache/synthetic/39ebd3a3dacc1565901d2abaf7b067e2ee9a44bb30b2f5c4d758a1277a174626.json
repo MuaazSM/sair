@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6590.601667005103,
+ "output": "{\"facts\":[{\"span\":\"Yoga group present\",\"kind\":\"person\",\"subject\":\"Yoga group\",\"certainty\":\"sure\"},{\"span\":\"Dew bahut hai\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"sure\"},{\"span\":\"Butterfly dekha\",\"kind\":\"animal\",\"subject\":\"Butterfly\",\"certainty\":\"sure\"},{\"span\":\"maybe Koel teen koels\",\"kind\":\"animal\",\"subject\":\"Koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished his walk and noted a yoga group was present. He saw a butterfly and maybe three Koels. He also mentioned there was a lot of dew.\"}",
+ "prompt_sha": "be6510e46a7ea13de5d1dd649b90509fb150aabf685d286e1d3136bf1576940d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 488,
+ "tokens_out": 144
+}

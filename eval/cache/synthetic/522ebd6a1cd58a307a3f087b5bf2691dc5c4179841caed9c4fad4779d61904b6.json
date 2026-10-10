@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 5809.263041999657,
+ "output": "{\"facts\":[{\"span\":\"Buses aage jaa rahi thi\",\"kind\":\"sight\",\"subject\":\"Buses\",\"certainty\":\"sure\"},{\"span\":\"Teen mist dikh rahi thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"shayad Sparrow ud raha tha\",\"kind\":\"animal\",\"subject\":\"Sparrow\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom finished her evening walk and returned. She saw buses moving ahead and noticed three mists. She thought maybe a sparrow was flying.\"}",
+ "prompt_sha": "6ea4df490289d7223cb6c67b44edf835dfb57e03a2789a3091fda04674dd7d4d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 125
+}

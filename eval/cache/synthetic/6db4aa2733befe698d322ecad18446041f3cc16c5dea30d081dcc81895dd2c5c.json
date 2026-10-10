@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9153.193874997669,
+ "output": "{\"facts\":[{\"span\":\"bhutta smell bahut achhi thi\",\"kind\":\"smell\",\"subject\":\"bhutta smell\",\"certainty\":\"sure\"},{\"span\":\"vendor wahan tha\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"hen dekha\",\"kind\":\"animal\",\"subject\":\"hen\",\"certainty\":\"sure\"},{\"span\":\"umbrellas maybe were high\",\"kind\":\"sight\",\"subject\":\"umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"shop shutters band the\",\"kind\":\"sight\",\"subject\":\"shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Market mein kuch alag tha. Bas thoda hi pata chala.\",\"entry\":\"Dad enjoyed the evening walk and noticed a strong bhutta smell. He saw a vendor and a hen, and thought the shop shutters were band. He was unsure if the umbrellas were high. He felt the market was different but only knew a little about it.\"}",
+ "prompt_sha": "c431222632197b4bed0ccc197ffa3bd61a45bc7aa0cee8be136d2f446bb5a17a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 207
+}

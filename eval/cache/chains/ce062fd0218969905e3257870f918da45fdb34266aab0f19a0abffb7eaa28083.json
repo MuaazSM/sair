@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1002.8191659948789,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_2\"], \"text\": \"Notice if the bench near the gate is still wet.\"}",
+ "prompt_sha": "8c927f735fd9cd27960fe2f59e00eddde2189a80ab968120acc62b5248e974d1",
+ "renderer_fingerprint": null,
+ "tokens_in": 1167,
+ "tokens_out": 38
+}

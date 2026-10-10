@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4685.839749996376,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\"},{\"span\":\"Crow flying high lagta hai\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Humne thoda sa pata lagaya\",\"entry\":\"Mom and Dad felt the cold air and saw kids playing cricket. They think a crow was flying high but are unsure about its color.\"}",
+ "prompt_sha": "28d1ba8b385a4847b8bdaa70b897bccf301f3e993810b9ecf7cdf72c17744a34",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 519,
+ "tokens_out": 96
+}

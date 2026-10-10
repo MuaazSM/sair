@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1845.0000829980127,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice the tamarind tree next to the old well.\"}",
+ "prompt_sha": "d57facf9e48a1d4c97b29ede4a15bd91b074ae5d5eaf0e4be66bf2548850bbe1",
+ "renderer_fingerprint": null,
+ "tokens_in": 1214,
+ "tokens_out": 40
+}

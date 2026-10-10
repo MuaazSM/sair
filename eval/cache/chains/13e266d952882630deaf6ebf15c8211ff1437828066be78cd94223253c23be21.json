@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2806.6045829982613,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f3_1\"], \"text\": \"You will notice if the bell is ringing.\"}",
+ "prompt_sha": "1c79cb9d68c9b9b5ad56e187ed00a09e1508fab7c7b2fea2aeafbc7ac2a4fb61",
+ "renderer_fingerprint": null,
+ "tokens_in": 1544,
+ "tokens_out": 60
+}

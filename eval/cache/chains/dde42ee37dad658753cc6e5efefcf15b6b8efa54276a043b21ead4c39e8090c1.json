@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 2319.71212499775,
+ "output": "{\"facts\":[],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. He felt pain in his knees.\"}",
+ "prompt_sha": "ec9838743e0c1fa6b326c97e452fec3f9c5eafb2bd7b2c15093c6e3bb4d8db8b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 477,
+ "tokens_out": 34
+}

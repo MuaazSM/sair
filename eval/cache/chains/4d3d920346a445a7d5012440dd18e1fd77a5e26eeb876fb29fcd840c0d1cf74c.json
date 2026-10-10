@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 2890.3557500016177,
+ "output": "{\"facts\":[{\"span\":\"rain all day\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed rain.\"}",
+ "prompt_sha": "b2e40deb424a4f6c76fe6dfb575404cb3e7f8e8ffccabeabb0d4ad1f368b6632",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 482,
+ "tokens_out": 50
+}

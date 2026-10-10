@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8404.03870800219,
+ "output": "{\"facts\":[{\"span\":\"समुद्र किनारे आज हवा बहुत ठंडी थी\",\"kind\":\"weather\",\"subject\":\"हवा\",\"certainty\":\"sure\",\"place\":\"समुद्र किनारे\"},{\"span\":\"दूसरी बेंच पर बैठा, लहरें देखीं\",\"kind\":\"sight\",\"subject\":\"लहरें\",\"certainty\":\"sure\",\"place\":\"दूसरी बेंच\"},{\"span\":\"चाय वाला आज नहीं आया था\",\"kind\":\"other\",\"subject\":\"चाय वाला\",\"certainty\":\"sure\"},{\"span\":\"आसमान में बादल थे\",\"kind\":\"weather\",\"subject\":\"बादल\",\"certainty\":\"sure\",\"place\":\"आसमान\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed हवा, लहरें, चाय वाला and बादल.\"}",
+ "prompt_sha": "9884c25c246b8d814a5f480b9b92147cb4e7e4f40375a4dbd85c7c55c19400b5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 187
+}

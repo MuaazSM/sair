@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6935.850791996927,
+ "output": "{\"facts\":[{\"span\":\"teen yoga group\",\"kind\":\"sight\",\"subject\":\"teen yoga group\",\"certainty\":\"sure\"},{\"span\":\"bahut zyada dew\",\"kind\":\"weather\",\"subject\":\"bahut zyada dew\",\"certainty\":\"sure\"},{\"span\":\"ek butterfly\",\"kind\":\"animal\",\"subject\":\"ek butterfly\",\"certainty\":\"sure\"},{\"span\":\"koel ga rahi hai maybe\",\"kind\":\"sound\",\"subject\":\"koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Yoga count karna bhool gaya\",\"entry\":\"Dad finished his evening walk but forgot to count the yoga groups. He saw three yoga groups, a lot of dew, and a butterfly. He thought maybe a koel was singing.\"}",
+ "prompt_sha": "c09c173f3cbdf81891c937887c46357ef5321e91c07a07990d92a2c97cb7229c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 499,
+ "tokens_out": 155
+}

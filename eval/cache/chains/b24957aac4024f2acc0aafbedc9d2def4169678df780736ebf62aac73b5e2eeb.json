@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5897.309833999316,
+ "output": "{\"facts\":[{\"span\":\"नारियल के पेड़ ज़ोर से हिल रहे थे\",\"kind\":\"plant\",\"subject\":\"नारियल के पेड़\",\"certainty\":\"sure\"},{\"span\":\"पानी पूरी वाला बंद था\",\"kind\":\"other\",\"subject\":\"पानी पूरी वाला\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed that the wind was very strong today, causing the coconut trees to sway vigorously. They also observed that the watermelon shop was closed. The pair returned home quickly.\"}",
+ "prompt_sha": "0d9f4d29026a55adf781fd1a4ad7a3128bfd4eb70932ed9a44d7478a0a9bbb53",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 122
+}

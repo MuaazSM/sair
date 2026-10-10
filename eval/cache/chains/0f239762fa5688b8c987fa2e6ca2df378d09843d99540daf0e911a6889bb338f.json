@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 843.9992920029908,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_1\"], \"text\": \"You will notice the banyan tree outside the school. Look at the birds in the banyan.\"}",
+ "prompt_sha": "bade95d64ceaecda45e7b4839bb807a3e395e5d192d9db5ad8494c1474e7153c",
+ "renderer_fingerprint": null,
+ "tokens_in": 1348,
+ "tokens_out": 47
+}

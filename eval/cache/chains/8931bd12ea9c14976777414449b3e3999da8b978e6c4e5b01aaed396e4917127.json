@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5780.832791002467,
+ "output": "{\"facts\":[{\"span\":\"some kind of poster was put up on the school gate\",\"kind\":\"sight\",\"subject\":\"some kind of poster\",\"certainty\":\"unsure\",\"place\":\"school gate\"},{\"span\":\"the chana seller was back at the bus stop\",\"kind\":\"person\",\"subject\":\"chana seller\",\"certainty\":\"sure\",\"place\":\"bus stop\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad noticed a poster on the school gate that he could not read without his glasses. He also saw the chana seller back at the bus stop.\"}",
+ "prompt_sha": "f0e24120783d6797f3d40d966205ed0d55981723a611d3f215e257e93c608599",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 121
+}

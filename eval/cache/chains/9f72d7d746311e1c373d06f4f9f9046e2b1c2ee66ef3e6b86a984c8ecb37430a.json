@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5506.923624998308,
+ "output": "{\"facts\":[{\"span\":\"bagula phir se tha\",\"kind\":\"other\",\"subject\":\"bagula\",\"certainty\":\"sure\"},{\"span\":\"aaj thoda humid tha\",\"kind\":\"weather\",\"subject\":\"humid\",\"certainty\":\"sure\"},{\"span\":\"pasina aa gaya\",\"kind\":\"other\",\"subject\":\"pasina\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed a bagula again. They felt the air was a bit humid and sweat came on. They just went for a round.\"}",
+ "prompt_sha": "9b65a73f6579df6b33d57669763dea4c16e4322bd918ab99bd4ebf6c94180251",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 488,
+ "tokens_out": 116
+}

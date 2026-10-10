@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5674.080625001807,
+ "output": "{\"facts\":[{\"span\":\"ek chidiya bahut meetha ga rahi thi\",\"kind\":\"sound\",\"subject\":\"chidiya\",\"certainty\":\"sure\"},{\"span\":\"neem ke paas hi kahin thi shayad\",\"kind\":\"plant\",\"subject\":\"neem\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad heard a sweet bird singing in the lane. They thought maybe the bird was near a neem tree. Everything else seemed normal.\"}",
+ "prompt_sha": "74ea1bfc1f5eef9a9be4a22150f8778721fb027430eddf2638e79100c4feae76",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 527,
+ "tokens_out": 109
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7215.2566659933655,
+ "output": "{\"facts\":[{\"span\":\"मंदिर में आज बहुत भीड़ थी\",\"kind\":\"sight\",\"subject\":\"भीड़\",\"certainty\":\"sure\",\"place\":\"मंदिर\"},{\"span\":\"कोई त्योहार है शायद\",\"kind\":\"other\",\"subject\":\"त्योहार\",\"certainty\":\"unsure\"},{\"span\":\"अगरबत्ती की खुशबू आ रही थी\",\"kind\":\"smell\",\"subject\":\"अगरबत्ती की खुशबू\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went to the temple where there was a lot of crowd. She thought maybe there is a festival. She did not go inside but joined hands from outside. She smelled incense.\"}",
+ "prompt_sha": "5cddd64085912a98bffab5707c63ec236c153e2f2a9d02a01c65fa6033a81155",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 157
+}

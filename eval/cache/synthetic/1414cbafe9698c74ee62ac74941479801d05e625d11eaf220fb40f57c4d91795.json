@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9060.310665998259,
+ "output": "{\"facts\":[{\"span\":\"Market was busy\",\"kind\":\"other\",\"subject\":\"Market\",\"certainty\":\"sure\",\"place\":\"Market\"},{\"span\":\"Vegetable stalls visible\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"One vendor there\",\"kind\":\"person\",\"subject\":\"One vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen seen\",\"kind\":\"animal\",\"subject\":\"Hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas open now shayad\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Saw some differences\",\"entry\":\"Dad finished the walk and noted the market was busy with visible vegetable stalls. He smelled strong bhutta and saw one vendor and a hen. He thought umbrellas were maybe open and saw some differences.\"}",
+ "prompt_sha": "726634365d7b4f9c248bb6c1ac8a0bf3cf993880483b2c1d88a7645b28eed5c1",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 203
+}

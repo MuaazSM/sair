@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5914.092792001611,
+ "output": "{\"facts\":[{\"span\":\"school ke bahar bahut bachche the\",\"kind\":\"sight\",\"subject\":\"bachche\",\"certainty\":\"sure\",\"place\":\"school ke bahar\"},{\"span\":\"koi function tha shayad\",\"kind\":\"other\",\"subject\":\"function\",\"certainty\":\"unsure\"},{\"span\":\"ice cream wala busy tha\",\"kind\":\"person\",\"subject\":\"ice cream wala\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed bachche, maybe function, ice cream wala.\"}",
+ "prompt_sha": "dc4909483921a250ade1b5179c8b7ed53db4cd59055f7d738a66a59d7720386c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 500,
+ "tokens_out": 124
+}

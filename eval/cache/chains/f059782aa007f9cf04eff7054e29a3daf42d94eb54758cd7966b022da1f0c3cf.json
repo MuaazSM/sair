@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6545.859416000894,
+ "output": "{\"facts\":[{\"span\":\"mandir ke bahar bahut log the\",\"kind\":\"sight\",\"subject\":\"bahut log\",\"certainty\":\"sure\",\"place\":\"mandir ke bahar\"},{\"span\":\"koi pooja thi\",\"kind\":\"other\",\"subject\":\"pooja\",\"certainty\":\"sure\"},{\"span\":\"koyal ki awaaz aayi ek baar\",\"kind\":\"sound\",\"subject\":\"koyal ki awaaz\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed bahut log, pooja and koyal ki awaaz.\"}",
+ "prompt_sha": "bc0a49aa55a2b45274718696037f5a440b1cd34d2d9d0e8a12db2ac7645b300d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 135
+}

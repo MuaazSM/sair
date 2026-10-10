@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8306.477500002075,
+ "output": "{\"facts\":[{\"span\":\"the bell was ringing\",\"kind\":\"sound\",\"subject\":\"bell\",\"certainty\":\"sure\"},{\"span\":\"aarti was going on\",\"kind\":\"sound\",\"subject\":\"aarti\",\"certainty\":\"sure\"},{\"span\":\"the flower seller outside had marigold garlands\",\"kind\":\"sight\",\"subject\":\"flower seller\",\"certainty\":\"sure\",\"place\":\"outside\"},{\"span\":\"there is a peepal tree next to the temple with threads tied on it\",\"kind\":\"plant\",\"subject\":\"peepal tree\",\"certainty\":\"sure\",\"place\":\"next to the temple\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked to the temple and back, hearing a bell ring and an aarti go on. She saw a flower seller outside with marigold garlands and a peepal tree next to the temple with threads tied on it.\"}",
+ "prompt_sha": "54056116b546f2e732209b3dae7f74964a2b12edd17d5aefa61dda4603d85eb8",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 510,
+ "tokens_out": 183
+}

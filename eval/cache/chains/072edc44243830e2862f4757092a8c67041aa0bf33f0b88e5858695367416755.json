@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1304.6570000005886,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You notice the colour of the peela near the gate.\"}",
+ "prompt_sha": "b1805b5e6edaa21f4900c15076350885e4a1f350c279a43a34582df6a20f7600",
+ "renderer_fingerprint": null,
+ "tokens_in": 633,
+ "tokens_out": 39
+}

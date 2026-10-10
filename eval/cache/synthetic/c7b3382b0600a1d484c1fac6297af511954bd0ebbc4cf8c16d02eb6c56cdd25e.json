@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4558.637000001909,
+ "output": "{\"facts\":[{\"span\":\"Wind tez thi\",\"kind\":\"weather\",\"subject\":\"Wind\",\"certainty\":\"sure\"},{\"span\":\"lagta hai Rain bahut ho raha hai\",\"kind\":\"weather\",\"subject\":\"Rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partially hua\",\"entry\":\"Mom and Dad had a good walk with strong wind. They think there is a lot of rain. Their mission was only partially done.\"}",
+ "prompt_sha": "d22777ad33f7997fe9eaaa3d4c8ef29ca74b44b9000c35bd71a6f0056251b66d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 491,
+ "tokens_out": 94
+}

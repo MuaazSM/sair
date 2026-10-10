@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5774.257915996714,
+ "output": "{\"facts\":[{\"span\":\"it was humid and sticky\",\"kind\":\"weather\",\"subject\":\"humid and sticky\",\"certainty\":\"sure\"},{\"span\":\"we walked slowly\",\"kind\":\"other\",\"subject\":\"walked slowly\",\"certainty\":\"sure\"},{\"span\":\"sat on the temple steps\",\"kind\":\"sight\",\"subject\":\"temple steps\",\"certainty\":\"sure\",\"place\":\"temple steps\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad felt the air was humid and sticky. They walked slowly and sat on the temple steps for a bit.\"}",
+ "prompt_sha": "3993e8443d42b168eb58a299f1f22ada54bb87d3df93c8fcd2cbb2ef115631f8",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 482,
+ "tokens_out": 119
+}

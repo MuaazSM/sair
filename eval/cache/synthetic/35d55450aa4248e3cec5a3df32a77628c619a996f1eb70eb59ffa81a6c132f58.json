@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4846.113084000535,
+ "output": "{\"facts\":[{\"span\":\"kids playing cricket\",\"kind\":\"other\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"crow is there ho sakta hai\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"We found out what they were doing partly\",\"entry\":\"Mom and Dad enjoyed their evening walk. They saw kids playing cricket and maybe a crow. They only partly found out what the kids were doing.\"}",
+ "prompt_sha": "0e7d62abec5ddfb5547a5a4abce41b628c76def83bfb41beed7dff0226c42db4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 98
+}

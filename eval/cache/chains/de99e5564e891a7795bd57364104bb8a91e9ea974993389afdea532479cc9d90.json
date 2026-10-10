@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8549.380291005946,
+ "output": "{\"facts\":[{\"span\":\"the big park\",\"kind\":\"other\",\"subject\":\"big park\",\"certainty\":\"sure\",\"place\":\"big park\"},{\"span\":\"the pond\",\"kind\":\"sight\",\"subject\":\"pond\",\"certainty\":\"sure\",\"place\":\"pond\"},{\"span\":\"ducks in the pond\",\"kind\":\"animal\",\"subject\":\"ducks\",\"certainty\":\"sure\",\"place\":\"pond\"},{\"span\":\"the jogging track\",\"kind\":\"sight\",\"subject\":\"jogging track\",\"certainty\":\"sure\"},{\"span\":\"the clouds\",\"kind\":\"weather\",\"subject\":\"clouds\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"the clouds were moving fast, we watched them from the bench near the pond.\",\"entry\":\"Mom and Dad went to the big park and walked around the pond where they saw four ducks. They noticed the jogging track was crowded. They watched the clouds moving fast from the bench near the pond.\"}",
+ "prompt_sha": "80093b06972c70c2f01cae948e51b058f1d42611a5828eb9f23353276db03b2f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 188
+}

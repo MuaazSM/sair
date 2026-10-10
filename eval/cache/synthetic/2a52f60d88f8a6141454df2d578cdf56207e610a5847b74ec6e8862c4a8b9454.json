@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5854.67208299815,
+ "output": "{\"facts\":[{\"span\":\"hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"kids playing cricket\",\"kind\":\"person\",\"subject\":\"kids\",\"certainty\":\"sure\"},{\"span\":\"Crow is near lagta hai\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\",\"place\":\"near\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad felt the cold air and saw kids playing cricket. They thought a crow was nearby.\"}",
+ "prompt_sha": "fb9711df4c7dcb57a3d6cc0d89008fb8a33694e23476b6ab906fc2db66321029",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 495,
+ "tokens_out": 110
+}

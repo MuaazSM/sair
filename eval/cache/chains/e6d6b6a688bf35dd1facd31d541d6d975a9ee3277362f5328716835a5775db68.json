@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6587.032417002774,
+ "output": "{\"facts\":[{\"span\":\"एक बिल्ली के बच्चे थे\",\"kind\":\"animal\",\"subject\":\"बिल्ली के बच्चे\",\"certainty\":\"sure\"},{\"span\":\"झाड़ी में छुपे थे\",\"kind\":\"animal\",\"subject\":\"बिल्ली के बच्चे\",\"certainty\":\"sure\",\"place\":\"झाड़ी\"},{\"span\":\"आपकी आवाज़ आ रही थी बस\",\"kind\":\"sound\",\"subject\":\"आवाज़\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed some kittens hiding in a bush. She heard their sound, but she did not know how many there were.\"}",
+ "prompt_sha": "a9699ff55653c6898e591bd59b4d5ee912d876adcf61fd5ddf03ecc611a4dbca",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 505,
+ "tokens_out": 142
+}

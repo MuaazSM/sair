@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4415.881458000513,
+ "output": "{\"facts\":[{\"span\":\"the palms were quiet\",\"kind\":\"plant\",\"subject\":\"palms\",\"certainty\":\"sure\"},{\"span\":\"the sea was calm\",\"kind\":\"sight\",\"subject\":\"sea\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"the palms were quiet. the sea was calm.\",\"entry\":\"Mom and Dad sat on the steps and noticed that the palms were quiet and the sea was calm.\"}",
+ "prompt_sha": "ef7fa07c027a457cf9645619fa510b738993b056f3bf45dc1bf3527af23ca5bd",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 478,
+ "tokens_out": 88
+}

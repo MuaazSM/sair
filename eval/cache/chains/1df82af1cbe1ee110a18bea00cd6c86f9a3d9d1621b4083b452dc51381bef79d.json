@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2183.9919999983977,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f2_2\", \"f2_3\", \"f3_1\"], \"text\": \"You will notice the sound of the waves near the sea.\"}",
+ "prompt_sha": "cd55f72430be67cfa6f7891dce642588f114df7c946c2e0d3ed90ad6086b2c11",
+ "renderer_fingerprint": null,
+ "tokens_in": 1108,
+ "tokens_out": 63
+}

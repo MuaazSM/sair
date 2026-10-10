@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5991.722624996328,
+ "output": "{\"facts\":[{\"span\":\"गली में आज कुछ फूल खिले थे\",\"kind\":\"plant\",\"subject\":\"फूल\",\"certainty\":\"sure\",\"place\":\"गली\"},{\"span\":\"किसी के घर के बाहर बेल पर\",\"kind\":\"plant\",\"subject\":\"बेल\",\"certainty\":\"sure\",\"place\":\"किसी के घर के बाहर\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad noticed some flowers blooming in the lane and saw a banyan tree outside someone's house. He stopped to look at them because they seemed very beautiful.\"}",
+ "prompt_sha": "d10ed2b34b12bc1c0a2b16ee7ed3dba7a419081dcd3b0c06e82d13ed0d80c5ff",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 126
+}

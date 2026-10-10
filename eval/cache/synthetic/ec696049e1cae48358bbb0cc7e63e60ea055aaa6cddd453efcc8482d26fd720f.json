@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6497.4494999987655,
+ "output": "{\"facts\":[{\"span\":\"wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"waves were crashing\",\"kind\":\"sound\",\"subject\":\"waves\",\"certainty\":\"sure\"},{\"span\":\"water looked rough\",\"kind\":\"sight\",\"subject\":\"water\",\"certainty\":\"sure\"},{\"span\":\"rain might fall soon ho sakta hai\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"it is windy again\",\"entry\":\"Mom and Dad had a very good walk where the wind was very strong. They saw waves crashing and the water looked rough. They think rain might fall soon.\"}",
+ "prompt_sha": "490af3453c5c0f622296b3508b1b514ff471e85e865390926a31436182364fa7",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 522,
+ "tokens_out": 138
+}

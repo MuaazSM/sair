@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5871.120875002816,
+ "output": "{\"facts\":[{\"span\":\"there was a bird on the temple wall\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"temple wall\"},{\"span\":\"small one, brownish maybe\",\"kind\":\"animal\",\"subject\":\"small one\",\"certainty\":\"unsure\"},{\"span\":\"the flower seller was back\",\"kind\":\"person\",\"subject\":\"flower seller\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed a bird on the temple wall. She thought it was small and maybe brownish. She also saw the flower seller was back.\"}",
+ "prompt_sha": "eab57ead79f3330f8d9a924e813ef3fc88a80d17b435403ef1ead0e94ff365ea",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 496,
+ "tokens_out": 124
+}

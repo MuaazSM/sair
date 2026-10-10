@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7539.6788340003695,
+ "output": "{\"facts\":[{\"span\":\"chai pi stall pe\",\"kind\":\"other\",\"subject\":\"chai\",\"certainty\":\"sure\",\"place\":\"stall pe\"},{\"span\":\"waves chhoti thi\",\"kind\":\"sight\",\"subject\":\"waves\",\"certainty\":\"sure\"},{\"span\":\"ek dog tha jo wall ke paas baitha tha\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\",\"place\":\"wall ke paas\"},{\"span\":\"shayad stall wale ka hai\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"unsure\",\"place\":\"stall\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went to a stall to drink chai. He saw small waves and a dog sitting near a wall. He thought the dog might belong to the stall owner.\"}",
+ "prompt_sha": "4a8bfa7529d2ebf16448b5247801347100b783e0079d024e7cea3c7f42679322",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 495,
+ "tokens_out": 166
+}

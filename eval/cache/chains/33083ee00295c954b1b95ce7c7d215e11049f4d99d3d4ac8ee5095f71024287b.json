@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2537.747207999928,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\", \"f5_2\"], \"text\": \"Notice the champa near the clubhouse and the smell of champa ki khushboo.\"}",
+ "prompt_sha": "77992097a218c264cba91172350dbd354b924b376d1afec01ad4dc3bbb5d521f",
+ "renderer_fingerprint": null,
+ "tokens_in": 1585,
+ "tokens_out": 45
+}

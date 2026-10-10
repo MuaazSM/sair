@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 973.0817919989931,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"You will notice the peela flowers near the path.\"}",
+ "prompt_sha": "27fa948c583c51cc4180809605079fb6902242a4a0c5c3d323e29dbf3a597c09",
+ "renderer_fingerprint": null,
+ "tokens_in": 664,
+ "tokens_out": 38
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4398.635249999643,
+ "output": "{\"facts\":[{\"span\":\"many lights on the boats far away\",\"kind\":\"sight\",\"subject\":\"lights on the boats\",\"certainty\":\"sure\",\"place\":\"far away\"},{\"span\":\"sat on the steps\",\"kind\":\"other\",\"subject\":\"steps\",\"certainty\":\"sure\",\"place\":\"steps\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They noticed lights on the boats.\"}",
+ "prompt_sha": "d3a632c1e0af5f403f8a3b1e7ec05c5ab465788e15084e06cda9d068318ccd61",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 485,
+ "tokens_out": 89
+}

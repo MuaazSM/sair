@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6733.329290997062,
+ "output": "{\"facts\":[{\"span\":\"some guavas from the cart near the paan shop\",\"kind\":\"other\",\"subject\":\"guavas\",\"certainty\":\"sure\",\"place\":\"near the paan shop\"},{\"span\":\"the crows were on the gulmohar again\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\",\"place\":\"on the gulmohar\"},{\"span\":\"a lot of scooters parked everywhere\",\"kind\":\"other\",\"subject\":\"scooters\",\"certainty\":\"sure\",\"place\":\"everywhere\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed guavas, crows and scooters.\"}",
+ "prompt_sha": "6d52637880e87525d381931490ba2d1647a7b9b3329f65e7a698089671f31858",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 500,
+ "tokens_out": 141
+}

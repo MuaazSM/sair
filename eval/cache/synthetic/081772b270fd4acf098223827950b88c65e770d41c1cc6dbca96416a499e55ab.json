@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6524.01029199973,
+ "output": "{\"facts\":[{\"span\":\"Teen os\",\"kind\":\"person\",\"subject\":\"Teen os\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly near the path\",\"kind\":\"animal\",\"subject\":\"Ek butterfly\",\"certainty\":\"sure\",\"place\":\"near the path\"},{\"span\":\"Koel, the sound शायद was singing softly\",\"kind\":\"sound\",\"subject\":\"Koel\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission forgot, no count.\",\"entry\":\"Dad finished the walk and saw a yoga group, though he did not count them as planned. He noticed three people and a butterfly near the path. He also heard what might be a Koel singing softly.\"}",
+ "prompt_sha": "aeced28b5754c01d8e218211d9531b75fa8ee29967e72022142dfdfe8e89d333",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 511,
+ "tokens_out": 142
+}

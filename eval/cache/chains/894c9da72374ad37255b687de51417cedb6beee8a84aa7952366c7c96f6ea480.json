@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4022.6701670035254,
+ "output": "{\"facts\":[{\"span\":\"कौवे गुलमोहर पर थे\",\"kind\":\"animal\",\"subject\":\"कौवे\",\"certainty\":\"sure\",\"place\":\"गुलमोहर\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed कौवे at गुलमोहर.\"}",
+ "prompt_sha": "e2fe32db0277fef60988a76e6e3f9f2df7d972dc6e3c3d776f8c6c075b5529e8",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 76
+}

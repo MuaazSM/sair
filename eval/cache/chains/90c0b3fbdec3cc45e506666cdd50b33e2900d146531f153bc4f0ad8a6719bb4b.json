@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2345.79933299392,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_1\"], \"text\": \"You, look at the palms.\"}",
+ "prompt_sha": "4948ab82c8be2e88a1f593360590b68812e492ac8de1a70ff81a77e772341f60",
+ "renderer_fingerprint": null,
+ "tokens_in": 1474,
+ "tokens_out": 28
+}

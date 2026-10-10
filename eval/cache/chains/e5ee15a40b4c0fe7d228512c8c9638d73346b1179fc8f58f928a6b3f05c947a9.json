@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5119.127917001606,
+ "output": "{\"facts\":[{\"span\":\"a bird was hopping on the clubhouse lawn\",\"kind\":\"animal\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"clubhouse lawn\"},{\"span\":\"a small brown one maybe\",\"kind\":\"animal\",\"subject\":\"small brown one\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"a bird was hopping on the clubhouse lawn\",\"entry\":\"Dad heard a bird hopping on the clubhouse lawn. He thought it was a small brown one, though he was unsure of the name.\"}",
+ "prompt_sha": "6fa1107b2eae9f4593fe0cc8fb577e03a7a1af26d23f9e3057572466e4ab77bd",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 488,
+ "tokens_out": 107
+}

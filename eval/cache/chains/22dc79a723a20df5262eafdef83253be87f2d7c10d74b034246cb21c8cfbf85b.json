@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6372.9254999998375,
+ "output": "{\"facts\":[{\"span\":\"neem ke ped ke neeche\",\"kind\":\"plant\",\"subject\":\"neem ke ped\",\"certainty\":\"sure\",\"place\":\"neem ke ped ke neeche\"},{\"span\":\"kauve phir the\",\"kind\":\"animal\",\"subject\":\"kauve\",\"certainty\":\"sure\"},{\"span\":\"hawa thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad walked under a neem tree where the chickpea vendor was not present. He saw pigeons again and felt the air was cold, which he liked.\"}",
+ "prompt_sha": "cf763bc4280d7298ef5130fd7a3ab8d19fafa9199bc7e32068ee8ce78f5eb573",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 135
+}

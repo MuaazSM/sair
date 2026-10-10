@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5736.748041999817,
+ "output": "{\"facts\":[{\"span\":\"the waves were big today\",\"kind\":\"sight\",\"subject\":\"waves\",\"certainty\":\"sure\"},{\"span\":\"the corn seller was there\",\"kind\":\"person\",\"subject\":\"corn seller\",\"certainty\":\"sure\"},{\"span\":\"some people were flying kites near the steps\",\"kind\":\"sight\",\"subject\":\"people flying kites\",\"certainty\":\"sure\",\"place\":\"near the steps\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed big waves and saw a corn seller. She also saw some people flying kites near the steps.\"}",
+ "prompt_sha": "8d4a70a7269569938a97ff05ca751bda8c31af38c07dd00a32cb317412e9a443",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 488,
+ "tokens_out": 121
+}

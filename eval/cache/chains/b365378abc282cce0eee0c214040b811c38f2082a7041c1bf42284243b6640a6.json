@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1705.1201250069425,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_2\"], \"text\": \"You, look at the coconut palms along the wall.\"}",
+ "prompt_sha": "03437eeb293aa41814c756bd1e158ae80385d1b1f6409c96ecdcbc4eca791713",
+ "renderer_fingerprint": null,
+ "tokens_in": 1216,
+ "tokens_out": 32
+}

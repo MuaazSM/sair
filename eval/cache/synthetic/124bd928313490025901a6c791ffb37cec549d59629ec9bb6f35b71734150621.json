@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 8733.771291997982,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there.\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"The champa is visible.\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There is one goat.\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The cat is near the wall.\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the wall\"},{\"span\":\"probably Dew is present.\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"unsure\"},{\"span\":\"I heard the garbage truck.\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked the jasmine for flowers.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed jasmine, champa, goat, cat and garbage truck, maybe Dew.\"}",
+ "prompt_sha": "e0fcdbff9269fe5109f21b86e024104933098f81558995bfec0844b9d6dba89e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 527,
+ "tokens_out": 189
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5684.351457995945,
+ "output": "{\"facts\":[{\"span\":\"कंपाउंड में पेंटिंग का काम चल रहा था\",\"kind\":\"other\",\"subject\":\"पेंटिंग का काम\",\"certainty\":\"sure\",\"place\":\"कंपाउंड\"},{\"span\":\"दीवारों पर नया रंग लग रहा था\",\"kind\":\"sight\",\"subject\":\"नया रंग\",\"certainty\":\"sure\",\"place\":\"दीवारों पर\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed पेंटिंग का काम and नया रंग.\"}",
+ "prompt_sha": "4d59d4fa272ee34e3c09b88add8d6736f8e39c9fdf81cd53cea4ad71e5fcefff",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 120
+}

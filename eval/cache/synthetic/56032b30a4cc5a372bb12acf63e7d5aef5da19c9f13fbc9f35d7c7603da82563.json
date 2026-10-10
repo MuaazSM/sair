@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4682.944957996369,
+ "output": "{\"facts\":[{\"span\":\"Kids playing cricket\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\"},{\"span\":\"Crow flying high ho sakta hai\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Humne thodi si cheezon ko dekha\",\"entry\":\"Mom and Dad had a very good walk today. They saw kids playing cricket. They maybe saw a crow flying high.\"}",
+ "prompt_sha": "20beae4c01439396ba625333da3e34c02f7a87c3c8da7edb68fedcd0271865be",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 96
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6730.429250004818,
+ "output": "{\"facts\":[{\"span\":\"kutte aaj bhi gate ke paas the\",\"kind\":\"animal\",\"subject\":\"kutte\",\"certainty\":\"sure\",\"place\":\"gate ke paas\"},{\"span\":\"amaltas ke neeche phool bichhe hue the, carpet jaisa\",\"kind\":\"plant\",\"subject\":\"phool\",\"certainty\":\"sure\",\"place\":\"amaltas ke neeche\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed dogs near the gate and flowers scattered under the amaltas, resembling a carpet. She thought about taking a photo but remembered her phone is at home.\"}",
+ "prompt_sha": "04c914dbd22a6c9ee77d6dfc940e2fb642fcfddb5ff43baeb59bb420c6f14e1a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 511,
+ "tokens_out": 134
+}

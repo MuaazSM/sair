@@ -1,0 +1,134 @@
+{
+ "borderline": true,
+ "c_label": "C+",
+ "d_label": "D+",
+ "g_export_passed": true,
+ "gate": "G-ship",
+ "metrics": {
+  "n_clusters": 8,
+  "n_items": 129,
+  "paired": {
+   "fact_recall": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 3,
+    "hi": 0.3300388918352404,
+    "lo": 0.0357142857142857,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 129,
+    "point": 0.21052631578947367,
+    "resamples": 10000
+   },
+   "template_fallback_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": -0.008615256447406624,
+    "lo": -0.32478632478632474,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 129,
+    "point": -0.14728682170542634,
+    "resamples": 10000
+   },
+   "unsupported_rate": {
+    "degenerate": false,
+    "den": 0.0,
+    "dropped": 0,
+    "hi": 0.0,
+    "lo": 0.0,
+    "method": "paired-cluster",
+    "n_clusters": 8,
+    "n_items": 129,
+    "point": 0.0,
+    "resamples": 10000
+   }
+  },
+  "systems": {
+   "C+": {
+    "fact_recall": {
+     "degenerate": false,
+     "den": 190.0,
+     "dropped": 3,
+     "hi": 0.9642857142857143,
+     "lo": 0.5714285714285714,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 129,
+     "point": 0.7368421052631579,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 129.0,
+     "dropped": 0,
+     "hi": 0.43243892931392924,
+     "lo": 0.07337781484570477,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 129,
+     "point": 0.24806201550387597,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 129.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 129,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   },
+   "D+": {
+    "fact_recall": {
+     "degenerate": false,
+     "den": 190.0,
+     "dropped": 3,
+     "hi": 1.0,
+     "lo": 0.900497512437811,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 129,
+     "point": 0.9473684210526315,
+     "resamples": 10000
+    },
+    "template_fallback_rate": {
+     "degenerate": false,
+     "den": 129.0,
+     "dropped": 0,
+     "hi": 0.16541488613620378,
+     "lo": 0.03333333333333333,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 129,
+     "point": 0.10077519379844961,
+     "resamples": 10000
+    },
+    "unsupported_rate": {
+     "degenerate": false,
+     "den": 129.0,
+     "dropped": 0,
+     "hi": 0.0,
+     "lo": 0.0,
+     "method": "cluster",
+     "n_clusters": 8,
+     "n_items": 129,
+     "point": 0.0,
+     "resamples": 10000
+    }
+   }
+  }
+ },
+ "note": "recommendation only; the owner sets WRITER_BACKEND",
+ "reasons": [
+  "unsupported_not_lower"
+ ],
+ "recommendation": "gemma",
+ "rule": "llama iff g_export passed AND unsupported_rate(D+) < unsupported_rate(C+) AND fact_recall(D+) >= fact_recall(C+) AND template_fallback_rate(D+) <= template_fallback_rate(C+) on dev; else gemma. borderline iff the 95% cluster-bootstrap CI of unsupported_rate(D+) - unsupported_rate(C+) includes 0",
+ "set": "dev"
+}

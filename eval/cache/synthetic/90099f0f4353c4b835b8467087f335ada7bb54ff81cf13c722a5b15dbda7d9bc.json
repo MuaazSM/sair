@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4525.06466700288,
+ "output": "{\"facts\":[{\"span\":\"buses are coming\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"five mist is here\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I counted the buses\",\"entry\":\"Mom finished her evening walk and felt good. She saw buses coming and noted that five mist is here. She confirmed that she counted the buses.\"}",
+ "prompt_sha": "ddf82223bfe15eec3b5a74cbed64e9b35f08c80c0fb3df460afe6403b31502f5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 487,
+ "tokens_out": 92
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6786.086666994379,
+ "output": "{\"facts\":[{\"span\":\"the champa near the clubhouse had a few flowers\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\",\"place\":\"near the clubhouse\"},{\"span\":\"the watchman was sweeping the entrance\",\"kind\":\"person\",\"subject\":\"watchman\",\"certainty\":\"sure\",\"place\":\"the entrance\"},{\"span\":\"a cat ran under the cars\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"under the cars\"}],\"mission_result\":\"done\",\"mission_span\":\"the champa near the clubhouse had a few flowers\",\"entry\":\"Dad noticed a champa with a few flowers near the clubhouse. He also saw a watchman sweeping the entrance and a cat running under the cars.\"}",
+ "prompt_sha": "0cba3b3a2d928a61b9e7ed020e1035a27e353f48d2206929182df5f008b95847",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 148
+}

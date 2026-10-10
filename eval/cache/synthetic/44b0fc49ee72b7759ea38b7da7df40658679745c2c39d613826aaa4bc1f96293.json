@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 8266.019791000872,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls are there\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta ki smell is strong\",\"kind\":\"smell\",\"subject\":\"Bhutta ki smell\",\"certainty\":\"sure\"},{\"span\":\"A vendor is present\",\"kind\":\"person\",\"subject\":\"vendor\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas are visible शायद\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\"},{\"span\":\"Shop shutters are closed\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished his evening walk and noticed vegetable stalls, a strong smell of bhutta, and a vendor. He saw umbrellas, though he was unsure, and observed that shop shutters were closed.\"}",
+ "prompt_sha": "ef957e4608a1be3dd257ae053516079d2e93ae1e3a2deba33334f7872300bdd8",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 187
+}

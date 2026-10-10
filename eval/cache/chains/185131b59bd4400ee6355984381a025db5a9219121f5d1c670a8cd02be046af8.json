@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 3130.8565420040395,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You will notice the leaves under the tamarind tree.\"}",
+ "prompt_sha": "97e0ba9159144346e596499bea2ca8a99355accfafdb2d02d0c7dc6984ac3b91",
+ "renderer_fingerprint": null,
+ "tokens_in": 1704,
+ "tokens_out": 62
+}

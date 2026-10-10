@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2569.2543749973993,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_3\"], \"text\": \"You notice the peela near the gate. Look at the two dogs near the gate.\"}",
+ "prompt_sha": "f8b5244ca9d3d088cbab70828a2bdc3ee70203fd6d98d5cf4801c8e1b3132a2b",
+ "renderer_fingerprint": null,
+ "tokens_in": 1256,
+ "tokens_out": 45
+}

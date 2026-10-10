@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 888.5167499975068,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\"], \"text\": \"You will notice the pigeons near the gulmohar.\"}",
+ "prompt_sha": "6a183e90f1266bfd4802e58bea71b2387a50ef052c9a741a82e90ffa8ddde864",
+ "renderer_fingerprint": null,
+ "tokens_in": 724,
+ "tokens_out": 42
+}

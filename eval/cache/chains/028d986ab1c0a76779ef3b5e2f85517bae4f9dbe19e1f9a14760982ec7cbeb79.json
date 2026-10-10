@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5329.290291003417,
+ "output": "{\"facts\":[{\"span\":\"sky bahut saaf tha\",\"kind\":\"weather\",\"subject\":\"sky\",\"certainty\":\"sure\"},{\"span\":\"gulmohar pe ab phool kam hain, mostly leaves\",\"kind\":\"plant\",\"subject\":\"phool\",\"certainty\":\"sure\",\"place\":\"gulmohar\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a round. She noticed the sky was very clear. She saw that there are fewer flowers on the gulmohar, mostly leaves.\"}",
+ "prompt_sha": "f49b678d7a8412c3502cb47b9b239b4c463a32d5a77f54c4e6a5cff9a360df2b",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 111
+}

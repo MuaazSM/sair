@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8005.8020830038,
+ "output": "{\"facts\":[{\"span\":\"आज रोशनी फिर से उसी जगह पर थी\",\"kind\":\"sight\",\"subject\":\"रोशनी\",\"certainty\":\"sure\",\"place\":\"उसी जगह पर\"},{\"span\":\"दोनों बिल्डिंग के बीच\",\"kind\":\"sight\",\"subject\":\"दोनों बिल्डिंग\",\"certainty\":\"sure\",\"place\":\"दोनों बिल्डिंग के बीच\"},{\"span\":\"तुलसी के गमले के पास कुछ दीये रखे थे\",\"kind\":\"sight\",\"subject\":\"कुछ दीये\",\"certainty\":\"sure\",\"place\":\"तुलसी के गमले के पास\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed the light was there again between the two buildings. She saw some lamps kept near the tulsi pot.\"}",
+ "prompt_sha": "0328ad48bf181bfb0be77480602da2ddad4f068b861e609a4cbf4c502753e6fd",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 499,
+ "tokens_out": 178
+}

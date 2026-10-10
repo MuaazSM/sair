@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1205.1493330000085,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_4\"], \"text\": \"You will look at the peepal tree next to the temple.\"}",
+ "prompt_sha": "778e8c98c78915810054c65b5885dfe532781bddc98fff28aa7c16a977043ce2",
+ "renderer_fingerprint": null,
+ "tokens_in": 838,
+ "tokens_out": 34
+}

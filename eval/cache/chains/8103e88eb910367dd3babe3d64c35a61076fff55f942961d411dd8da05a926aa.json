@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8283.318458001304,
+ "output": "{\"facts\":[{\"span\":\"lots of people in the lane today\",\"kind\":\"person\",\"subject\":\"people\",\"certainty\":\"sure\",\"place\":\"lane\"},{\"span\":\"some kind of function at one of the houses\",\"kind\":\"other\",\"subject\":\"function\",\"certainty\":\"unsure\",\"place\":\"one of the houses\"},{\"span\":\"the neem tree was full of birds again, maybe crows\",\"kind\":\"animal\",\"subject\":\"birds\",\"certainty\":\"unsure\",\"place\":\"neem tree\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad noticed lots of people in the lane and maybe a function at one of the houses. They heard music and walked past quickly. They saw a neem tree full of birds, maybe crows, but could not tell with the noise.\"}",
+ "prompt_sha": "2152fe6988cf100ab829e04e90791c6912d8617e8a7dd925a975f76b703efc89",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 164
+}

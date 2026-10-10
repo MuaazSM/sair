@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7177.580957999453,
+ "output": "{\"facts\":[{\"span\":\"market was decorated today\",\"kind\":\"other\",\"subject\":\"market\",\"certainty\":\"sure\",\"place\":\"market\"},{\"span\":\"lots of flowers hanging at the shop fronts\",\"kind\":\"plant\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"shop fronts\"},{\"span\":\"the fruit stall had pomegranates\",\"kind\":\"plant\",\"subject\":\"pomegranates\",\"certainty\":\"sure\",\"place\":\"fruit stall\"},{\"span\":\"the cow was there again near the peepal\",\"kind\":\"animal\",\"subject\":\"cow\",\"certainty\":\"sure\",\"place\":\"near the peepal\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed flowers, pomegranates and cow.\"}",
+ "prompt_sha": "e9e864726041e9ea0b1c5cd9c221f7237c6465d9d8ef23fd174e1b39c3c7b826",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 499,
+ "tokens_out": 157
+}

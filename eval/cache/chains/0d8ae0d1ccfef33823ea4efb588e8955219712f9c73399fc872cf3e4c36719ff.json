@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1917.1398329999647,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f2_2\", \"f2_3\"], \"text\": \"You will notice the sound of the waves. Listen for any sound near the path.\"}",
+ "prompt_sha": "4b6ac8e196901ed3d5e6716da923b4f08ea471f3cd67a053681af401033643af",
+ "renderer_fingerprint": null,
+ "tokens_in": 820,
+ "tokens_out": 62
+}

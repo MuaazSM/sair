@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7188.231792002625,
+ "output": "{\"facts\":[{\"span\":\"आज सड़क पर बहुत गाड़ियाँ थीं\",\"kind\":\"sight\",\"subject\":\"गाड़ियाँ\",\"certainty\":\"sure\",\"place\":\"सड़क\"},{\"span\":\"शायद कोई जाम था आगे\",\"kind\":\"other\",\"subject\":\"जाम\",\"certainty\":\"unsure\",\"place\":\"आगे\"},{\"span\":\"मैं फुटपाथ पर ही चला\",\"kind\":\"other\",\"subject\":\"फुटपाथ\",\"certainty\":\"sure\",\"place\":\"फुटपाथ\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed गाड़ियाँ, maybe जाम, and went to फुटपाथ.\"}",
+ "prompt_sha": "260d42fb3fcc7d7dae9d994cc95d0405b8a90402e6872cd43a3b6d5c72ffb5f4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 505,
+ "tokens_out": 157
+}

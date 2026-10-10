@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7708.966665995831,
+ "output": "{\"facts\":[{\"span\":\"wind bahut tez thi\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"waves were coming\",\"kind\":\"sight\",\"subject\":\"waves\",\"certainty\":\"sure\"},{\"span\":\"shayad sea face\",\"kind\":\"sight\",\"subject\":\"sea face\",\"certainty\":\"unsure\"},{\"span\":\"feel good\",\"kind\":\"other\",\"subject\":\"feel good\",\"certainty\":\"sure\"},{\"span\":\"rain is falling now shayad\",\"kind\":\"weather\",\"subject\":\"rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"mission partial complete\",\"entry\":\"Mom and Dad noticed very strong wind and waves. They maybe felt the sea face and thought it was good. Rain is maybe falling now. Their mission is partly complete.\"}",
+ "prompt_sha": "732e05d55aac1222687256566434ccbc5b2f2371b014f216d5c4d00da18d872c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 163
+}

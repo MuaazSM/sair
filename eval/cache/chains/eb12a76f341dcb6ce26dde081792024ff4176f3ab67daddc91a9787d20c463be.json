@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7147.7960830015945,
+ "output": "{\"facts\":[{\"span\":\"बिल्ली के बच्चे आज बाहर आ गए थे\",\"kind\":\"animal\",\"subject\":\"बिल्ली के बच्चे\",\"certainty\":\"sure\"},{\"span\":\"पार्किंग के पास खेल रहे थे\",\"kind\":\"animal\",\"subject\":\"बिल्ली के बच्चे\",\"certainty\":\"sure\",\"place\":\"पार्किंग के पास\"},{\"span\":\"वॉचमैन ने कहा उनकी माँ पास में ही है\",\"kind\":\"person\",\"subject\":\"माँ\",\"certainty\":\"sure\",\"place\":\"पास में\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed that the kitten babies went outside and were playing near the parking. A watchman mentioned that their mother is nearby.\"}",
+ "prompt_sha": "71021708c4ac0a2f072c5b1a71701ad10e1566ee83ad269091153e38c9230b54",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 501,
+ "tokens_out": 157
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1401.8806250023772,
+ "output": "{\"type\": \"return\", \"references\": [\"Monday 1\", \"Thursday 1\", \"Friday 1\"], \"text\": \"You will notice the path for any wet leaves.\"}",
+ "prompt_sha": "b2419f9339de47322ca867f2a95dbe49721574e1a5b412ca68bbd3b05faa43b1",
+ "renderer_fingerprint": null,
+ "tokens_in": 758,
+ "tokens_out": 40
+}

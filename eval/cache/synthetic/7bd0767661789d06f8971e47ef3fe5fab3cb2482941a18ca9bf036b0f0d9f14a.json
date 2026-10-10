@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8699.009500000102,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"I saw the champa\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"The cat is near the gate\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"Dew is on the grass maybe\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"unsure\",\"place\":\"on the grass\"},{\"span\":\"The garbage truck came two times\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine flowering\",\"entry\":\"Dad returned from his evening walk and confirmed the jasmine is there. He saw the champa and a cat near the gate. He noted that dew is on the grass maybe and the garbage truck came two times. He checked on the jasmine flowering.\"}",
+ "prompt_sha": "cda13586e832afde0d8677af57ae24c24491c6d332d43db7fd4ce17d02809444",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 199
+}

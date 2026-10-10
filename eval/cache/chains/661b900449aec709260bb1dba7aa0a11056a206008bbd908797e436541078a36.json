@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2623.1056669930695,
+ "output": "{\"type\": \"return\", \"references\": [\"f6_1\", \"f6_2\"], \"text\": \"You will notice if the light near the buildings changes.\"}",
+ "prompt_sha": "aab580e3365866e9e4f6058ff7c15251262aad509a586d9ce63c111a9aa6ac4f",
+ "renderer_fingerprint": null,
+ "tokens_in": 1711,
+ "tokens_out": 38
+}

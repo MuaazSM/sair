@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8165.607124996313,
+ "output": "{\"facts\":[{\"span\":\"पार्क में आज बहुत लोग थे\",\"kind\":\"sight\",\"subject\":\"लोग\",\"certainty\":\"sure\",\"place\":\"पार्क\"},{\"span\":\"कोई दौड़ का प्रोग्राम था\",\"kind\":\"other\",\"subject\":\"दौड़ का प्रोग्राम\",\"certainty\":\"sure\"},{\"span\":\"तालाब की तरफ़ चले गए\",\"kind\":\"sight\",\"subject\":\"तालाब\",\"certainty\":\"sure\",\"place\":\"तालाब\"},{\"span\":\"वहाँ शांति थी\",\"kind\":\"sound\",\"subject\":\"शांति\",\"certainty\":\"sure\",\"place\":\"वहाँ\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad went for a walk. They noticed people, दौड़ का प्रोग्राम, तालाब and शांति.\"}",
+ "prompt_sha": "03412d6d5ed63a3aaa51743daf11d3801fbccc6af3547575631ffce275760b37",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 180
+}

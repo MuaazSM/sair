@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5740.79625000013,
+ "output": "{\"facts\":[{\"span\":\"watchman ne bataya ki compound mein kuch naye log shift hue hain\",\"kind\":\"other\",\"subject\":\"naye log\",\"certainty\":\"sure\",\"place\":\"compound\"},{\"span\":\"bahut saamaan tha truck mein\",\"kind\":\"other\",\"subject\":\"saamaan\",\"certainty\":\"sure\",\"place\":\"truck\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad heard from a watchman that some new people have shifted into the compound. He saw a lot of luggage in a truck and went out from the side.\"}",
+ "prompt_sha": "61206525a7f05384c39391397057f346572e2d6fa11357387736de40ad8f874e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 119
+}

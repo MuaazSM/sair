@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6277.988666995952,
+ "output": "{\"facts\":[{\"span\":\"the ashoka near the gate is still there\",\"kind\":\"plant\",\"subject\":\"ashoka\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"we saw a cat sleeping on a parked car\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"on a parked car\"},{\"span\":\"the watchman was listening to the radio\",\"kind\":\"person\",\"subject\":\"watchman\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"the ashoka near the gate is still there\",\"entry\":\"Mom and Dad went for a walk. They noticed ashoka, cat and watchman.\"}",
+ "prompt_sha": "927dacd796d9afe87c76d33c61851e6e5545917b2f0b3eaad38f73eb7e211411",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 511,
+ "tokens_out": 133
+}

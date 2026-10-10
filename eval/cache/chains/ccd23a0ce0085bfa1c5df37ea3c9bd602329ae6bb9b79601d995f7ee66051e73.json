@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5963.815625000279,
+ "output": "{\"facts\":[{\"span\":\"गली में आज किसी के घर से बहुत अच्छी खुशबू आ रही थी\",\"kind\":\"smell\",\"subject\":\"खुशबू\",\"certainty\":\"sure\",\"place\":\"गली में\"},{\"span\":\"हम दोनों हँस पड़े\",\"kind\":\"sound\",\"subject\":\"हँस पड़े\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked down the lane and smelled a nice cooking aroma from a neighbor's house. They both laughed, and then they felt hungry.\"}",
+ "prompt_sha": "5dccf2016ea955d8be3df5adc8b5323f3d20823ea78d641b41ad55f79d852a6f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 122
+}

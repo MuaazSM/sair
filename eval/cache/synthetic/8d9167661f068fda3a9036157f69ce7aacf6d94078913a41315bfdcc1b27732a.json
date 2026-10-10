@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6213.029041995469,
+ "output": "{\"facts\":[{\"span\":\"Yoga group hai\",\"kind\":\"sight\",\"subject\":\"Yoga group\",\"certainty\":\"sure\"},{\"span\":\"Teen dew hai\",\"kind\":\"sight\",\"subject\":\"Teen dew\",\"certainty\":\"sure\"},{\"span\":\"I think Koel gaana\",\"kind\":\"sound\",\"subject\":\"Koel gaana\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_done\",\"mission_span\":\"Mission bhool gaya\",\"entry\":\"Dad finished the walk and saw a yoga group with three people. He thought he heard a Koel song but admitted he forgot the mission to count the people.\"}",
+ "prompt_sha": "1d7118d5b4336db29ae5ee2e899637aa70e1dd3d3ca3295e5f7a250462fdaf43",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 494,
+ "tokens_out": 125
+}

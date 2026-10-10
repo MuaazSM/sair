@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5935.878666998178,
+ "output": "{\"facts\":[{\"span\":\"कंपाउंड में बच्चों का कोई खेल चल रहा था\",\"kind\":\"sound\",\"subject\":\"बच्चों का खेल\",\"certainty\":\"sure\",\"place\":\"कंपाउंड\"},{\"span\":\"कितने बच्चे थे गिनती नहीं की\",\"kind\":\"person\",\"subject\":\"बच्चे\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom went for a walk. They noticed बच्चों का खेल, maybe बच्चे.\"}",
+ "prompt_sha": "f3e33de1c1aa3e44e16d32c8a454c008507ca712e8d5d0038d2898efd0799ffb",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 113
+}

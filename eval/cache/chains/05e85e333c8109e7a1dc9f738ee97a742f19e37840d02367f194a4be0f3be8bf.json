@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 760.2766670024721,
+ "output": "{\"type\": \"return\", \"references\": [\"f3_3\"], \"text\": \"You will notice the गाय near the path.\"}",
+ "prompt_sha": "4a2838e182c5d60bf83a54dbca57faa8bc5d3d7a04bd39db1eccec5ed40127dd",
+ "renderer_fingerprint": null,
+ "tokens_in": 1163,
+ "tokens_out": 30
+}

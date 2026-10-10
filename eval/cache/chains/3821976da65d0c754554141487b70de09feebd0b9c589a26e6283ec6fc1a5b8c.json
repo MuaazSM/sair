@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 952.3763749966747,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\"], \"text\": \"You will notice the path near the clubhouse.\"}",
+ "prompt_sha": "a728a631740a4bdf9e275eeffe19ace61ca8b140c3a91ce262e546a9a9035b1c",
+ "renderer_fingerprint": null,
+ "tokens_in": 672,
+ "tokens_out": 36
+}

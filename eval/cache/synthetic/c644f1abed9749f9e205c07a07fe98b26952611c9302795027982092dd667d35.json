@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7779.6512080021785,
+ "output": "{\"facts\":[{\"span\":\"Jasmine is there\",\"kind\":\"plant\",\"subject\":\"Jasmine\",\"certainty\":\"sure\"},{\"span\":\"Champa is visible\",\"kind\":\"plant\",\"subject\":\"Champa\",\"certainty\":\"sure\"},{\"span\":\"The goat is near the gate\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"I saw the cat\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"maybe Dew is present\",\"kind\":\"weather\",\"subject\":\"Dew\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Checked for jasmine flowers again\",\"entry\":\"Dad returned from his evening walk and confirmed that the jasmine is there. He also saw a goat near the gate and a cat. He thought maybe dew is present.\"}",
+ "prompt_sha": "0c6df2f91a64368de1192d0171a16f60c2b654de4dc73eef4d5538d5e9cd10f2",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 518,
+ "tokens_out": 169
+}

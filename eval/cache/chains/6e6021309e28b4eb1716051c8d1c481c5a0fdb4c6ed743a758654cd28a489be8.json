@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1069.1621660007513,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\"], \"text\": \"You will notice the champa near the clubhouse.\"}",
+ "prompt_sha": "391aa45375dc1bdb766c1936654b11c5184a33ed21f3e6c119779ab26b666883",
+ "renderer_fingerprint": null,
+ "tokens_in": 1305,
+ "tokens_out": 55
+}

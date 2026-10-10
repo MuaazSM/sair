@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1623.2145829999354,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\"], \"text\": \"You will notice the patte, champa, and badam on the path.\"}",
+ "prompt_sha": "16f2989a5e3520264f613cf34d49fd0950e2493cad74d8fcd3b8ccd2571708fe",
+ "renderer_fingerprint": null,
+ "tokens_in": 820,
+ "tokens_out": 50
+}

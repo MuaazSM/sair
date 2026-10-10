@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2494.0963750050287,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_3\"], \"text\": \"You will notice the fruit stall at the start and count the leaves on the path.\"}",
+ "prompt_sha": "e8c192035158f29c15b6aa98a8ffa5a9197a76bfce964cabddd6b6af98602ec7",
+ "renderer_fingerprint": null,
+ "tokens_in": 1541,
+ "tokens_out": 44
+}

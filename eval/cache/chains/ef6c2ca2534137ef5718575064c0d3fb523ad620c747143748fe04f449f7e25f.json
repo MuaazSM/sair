@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5397.849916997075,
+ "output": "{\"facts\":[{\"span\":\"chhota kutta aaj phir mere peeche peeche aaya\",\"kind\":\"animal\",\"subject\":\"chhota kutta\",\"certainty\":\"sure\"},{\"span\":\"lane ke end tak\",\"kind\":\"other\",\"subject\":\"lane ke end\",\"certainty\":\"sure\",\"place\":\"lane ke end\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed a small dog that came behind her again. She saw it go to the end of the lane and then return.\"}",
+ "prompt_sha": "a01acd809de839f6b7b20fd344423fb0f44ef34a93d6ecd69134e5a6a15e7f4d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 493,
+ "tokens_out": 109
+}

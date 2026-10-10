@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7092.2599579935195,
+ "output": "{\"facts\":[{\"span\":\"mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"ek sparrow dikha ho sakta hai\",\"kind\":\"animal\",\"subject\":\"sparrow\",\"certainty\":\"unsure\"},{\"span\":\"teen chai pi\",\"kind\":\"other\",\"subject\":\"chai\",\"certainty\":\"sure\"},{\"span\":\"teen buses dekhi\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"bus count kiya, teen buses dekhi\",\"entry\":\"Mom walked through very thick mist and maybe saw a sparrow. She drank three chai and counted the buses, seeing three of them, though she forgot their numbers.\"}",
+ "prompt_sha": "934362742a4893c9dfed54744e6face53f577580d92301bbd7917318711a61f5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 148
+}

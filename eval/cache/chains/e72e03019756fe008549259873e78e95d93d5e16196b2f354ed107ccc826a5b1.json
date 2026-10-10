@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9328.701833001105,
+ "output": "{\"facts\":[{\"span\":\"गली के आख़िर तक गया\",\"kind\":\"other\",\"subject\":\"गली के आख़िर\",\"certainty\":\"sure\",\"place\":\"गली के आख़िर\"},{\"span\":\"एक पुराना आम का पेड़ है\",\"kind\":\"plant\",\"subject\":\"पुराना आम का पेड़\",\"certainty\":\"sure\"},{\"span\":\"तोते बैठे थे\",\"kind\":\"animal\",\"subject\":\"तोते\",\"certainty\":\"sure\"},{\"span\":\"प्रेस वाला अपनी दुकान बंद कर रहा था\",\"kind\":\"person\",\"subject\":\"प्रेस वाला\",\"certainty\":\"sure\"},{\"span\":\"हवा बहुत हल्की थी\",\"kind\":\"weather\",\"subject\":\"हवा\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went to the end of the lane and saw an old mango tree with parrots sitting on it. He noticed a press man closing his shop. The wind felt very light.\"}",
+ "prompt_sha": "c34f5b97c3e0568a626afaa3f5ade35cc9ffc1176427b086e8d0473dd0a94ac6",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 209
+}

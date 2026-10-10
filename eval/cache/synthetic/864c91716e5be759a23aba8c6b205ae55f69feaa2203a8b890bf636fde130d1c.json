@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8534.099791999324,
+ "output": "{\"facts\":[{\"span\":\"Vegetable stalls\",\"kind\":\"sight\",\"subject\":\"Vegetable stalls\",\"certainty\":\"sure\"},{\"span\":\"Bhutta smell\",\"kind\":\"smell\",\"subject\":\"Bhutta smell\",\"certainty\":\"sure\"},{\"span\":\"Vendor\",\"kind\":\"person\",\"subject\":\"Vendor\",\"certainty\":\"sure\"},{\"span\":\"Hen\",\"kind\":\"animal\",\"subject\":\"Hen\",\"certainty\":\"sure\"},{\"span\":\"Umbrellas लगता है were near\",\"kind\":\"sight\",\"subject\":\"Umbrellas\",\"certainty\":\"unsure\",\"place\":\"near\"},{\"span\":\"Shop shutters\",\"kind\":\"sight\",\"subject\":\"Shop shutters\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad finished the walk and noticed vegetable stalls, a vendor, and a hen. He smelled bhutta and saw shop shutters. He thought umbrellas were nearby.\"}",
+ "prompt_sha": "e2faaa7fb95bab7686c350fcbf86565b62d7d9e985ee4cf57a4f9d59d53770d7",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 497,
+ "tokens_out": 190
+}

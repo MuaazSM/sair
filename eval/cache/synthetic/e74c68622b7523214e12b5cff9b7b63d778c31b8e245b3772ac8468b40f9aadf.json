@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 7201.294874997984,
+ "output": "{\"facts\":[{\"span\":\"five jasmine plants\",\"kind\":\"plant\",\"subject\":\"jasmine plants\",\"certainty\":\"sure\"},{\"span\":\"one goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"a cat\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"The dew probably was fading fast\",\"kind\":\"weather\",\"subject\":\"dew\",\"certainty\":\"unsure\"},{\"span\":\"I heard the garbage truck\",\"kind\":\"sound\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"I checked on the jasmine again.\",\"entry\":\"Dad went for a walk and did today's mission. They noticed jasmine plants, goat, cat and garbage truck, maybe dew.\"}",
+ "prompt_sha": "0e398a519c0a43dcd9cad97a8ea34f254f4447f381130d0da2e94e5bd1a30fc8",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 155
+}

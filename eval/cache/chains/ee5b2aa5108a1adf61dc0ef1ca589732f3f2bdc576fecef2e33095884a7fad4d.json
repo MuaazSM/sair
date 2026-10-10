@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7554.194625001401,
+ "output": "{\"facts\":[{\"span\":\"मंदिर के पास बहुत सारे दीये जल रहे थे\",\"kind\":\"sight\",\"subject\":\"दीये\",\"certainty\":\"sure\",\"place\":\"मंदिर के पास\"},{\"span\":\"पीपल के पेड़ पर धागे और बढ़ गए हैं\",\"kind\":\"plant\",\"subject\":\"पीपल के पेड़\",\"certainty\":\"sure\"},{\"span\":\"घंटी की आवाज़ दूर तक आ रही थी\",\"kind\":\"sound\",\"subject\":\"घंटी की आवाज़\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom noticed many lit diyas near the temple and saw that the ropes on the peepal tree had grown. She also heard the sound of a bell ringing far away.\"}",
+ "prompt_sha": "29287aab10d3c8b56b1fa50dae63f0fbfd595d662707514b9eff6c7997dfbaa4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 513,
+ "tokens_out": 165
+}

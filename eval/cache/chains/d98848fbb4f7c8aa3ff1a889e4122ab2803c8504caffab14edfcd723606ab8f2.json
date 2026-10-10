@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2079.605457998696,
+ "output": "{\"type\": \"return\", \"references\": [\"f4_1\"], \"text\": \"You will notice the crows on the neem tree.\"}",
+ "prompt_sha": "fc16b76bc3d3ca8515f24b7a48e490d914bfee17030b429dfce20e279eba411b",
+ "renderer_fingerprint": null,
+ "tokens_in": 1527,
+ "tokens_out": 31
+}

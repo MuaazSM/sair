@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2883.2472909998614,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f5_2\"], \"text\": \"You will notice the champa ki khushboo near the clubhouse.\"}",
+ "prompt_sha": "e28dc808b6996030b978f9ec247eaa73e2cb456d2ca73659a3d64f202d0b71cc",
+ "renderer_fingerprint": null,
+ "tokens_in": 1455,
+ "tokens_out": 65
+}

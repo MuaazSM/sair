@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7626.055750006344,
+ "output": "{\"facts\":[{\"span\":\"बंदर आज नहीं थे\",\"kind\":\"animal\",\"subject\":\"बंदर\",\"certainty\":\"sure\"},{\"span\":\"कुएँ के पास बैठ कर थोड़ा आराम किया\",\"kind\":\"other\",\"subject\":\"आराम\",\"certainty\":\"sure\",\"place\":\"कुएँ के पास\"},{\"span\":\"इमली के पेड़ के नीचे बहुत सारे पत्ते गिरे थे\",\"kind\":\"plant\",\"subject\":\"पत्ते\",\"certainty\":\"sure\",\"place\":\"इमली के पेड़ के नीचे\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad sat for a rest near the well. He noticed many fallen leaves under the imli tree. He mentioned that the monkeys were not there today.\"}",
+ "prompt_sha": "c2487fac2b73c20f6966666cb1224b66febce9b00e9eca1af7a12a01e1e4b475",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 164
+}

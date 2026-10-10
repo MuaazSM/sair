@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7349.211041997478,
+ "output": "{\"facts\":[{\"span\":\"the banyan tree outside the school is huge\",\"kind\":\"plant\",\"subject\":\"banyan tree\",\"certainty\":\"sure\",\"place\":\"outside the school\"},{\"span\":\"we never noticed the roots coming down from the branches before\",\"kind\":\"plant\",\"subject\":\"roots\",\"certainty\":\"sure\"},{\"span\":\"the ice cream cart was parked there\",\"kind\":\"other\",\"subject\":\"ice cream cart\",\"certainty\":\"sure\",\"place\":\"there\"}],\"mission_result\":\"done\",\"mission_span\":\"we never noticed the roots coming down from the branches before\",\"entry\":\"Mom and Dad walked past the school gate and saw a huge banyan tree. They noticed roots coming down from the branches, which they had never seen before. An ice cream cart was parked nearby.\"}",
+ "prompt_sha": "64b942f765790e2a525630c863717d369c9dc9ac59cf9c128d8b8f79e2a27718",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 507,
+ "tokens_out": 160
+}

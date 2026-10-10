@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1689.511999997194,
+ "output": "{\"type\": \"return\", \"references\": [\"f2_1\"], \"text\": \"You notice the almond tree leaves. Look for any leaves that are turning red at the edges.\"}",
+ "prompt_sha": "fba2caaa6402bf0d4d62fb4a848f9482d049b23e96c173e571f95bb49aed8439",
+ "renderer_fingerprint": null,
+ "tokens_in": 978,
+ "tokens_out": 40
+}

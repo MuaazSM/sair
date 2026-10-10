@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1630.804625005112,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f2_1\"], \"text\": \"You, notice the shadow of the jamun tree on the road and compare it to the jamun tree.\"}",
+ "prompt_sha": "5a7e3591f88750e93a578afabf914ce28e544131ebbe459e2e8f9bf00d692bfa",
+ "renderer_fingerprint": null,
+ "tokens_in": 955,
+ "tokens_out": 49
+}

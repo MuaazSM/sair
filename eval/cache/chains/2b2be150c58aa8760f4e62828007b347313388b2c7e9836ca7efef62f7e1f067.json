@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2396.914666998782,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f2_1\", \"f2_2\", \"f2_3\", \"f3_1\"], \"text\": \"You will notice the people flying kites near the steps.\"}",
+ "prompt_sha": "f7ae9034bf13e84d96b1c03fb6d760a7396b6f56fb6c2040962ac913686f0d73",
+ "renderer_fingerprint": null,
+ "tokens_in": 1256,
+ "tokens_out": 62
+}

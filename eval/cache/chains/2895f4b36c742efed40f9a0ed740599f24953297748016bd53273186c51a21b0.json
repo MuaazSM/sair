@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6339.403999998467,
+ "output": "{\"facts\":[{\"span\":\"a gulmohar near the gate\",\"kind\":\"plant\",\"subject\":\"gulmohar\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"some children were playing near the swings\",\"kind\":\"person\",\"subject\":\"children\",\"certainty\":\"sure\",\"place\":\"near the swings\"}],\"mission_result\":\"done\",\"mission_span\":\"there is a gulmohar near the gate, it had a few flowers still.\",\"entry\":\"Mom went to the park and did two rounds. She noticed a gulmohar near the gate that had a few flowers still. She also saw some children playing near the swings.\"}",
+ "prompt_sha": "4afa05de78a0be4c5af6ab12fee5dfe2f59bd232778f4dcc905dd9f9e18c46f4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 133
+}

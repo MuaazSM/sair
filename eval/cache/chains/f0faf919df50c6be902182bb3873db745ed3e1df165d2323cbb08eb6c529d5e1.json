@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7108.575083002506,
+ "output": "{\"facts\":[{\"span\":\"the fruit stall at the start had bananas and some mangoes\",\"kind\":\"sight\",\"subject\":\"fruit stall\",\"certainty\":\"sure\",\"place\":\"at the start\"},{\"span\":\"the cobbler was sitting under the peepal tree as usual\",\"kind\":\"person\",\"subject\":\"cobbler\",\"certainty\":\"sure\",\"place\":\"under the peepal tree\"}],\"mission_result\":\"partly\",\"mission_span\":\"i counted maybe twelve shops, i lost count near the end\",\"entry\":\"Dad went through the market lane and saw a fruit stall with bananas and mangoes. He noticed a cobbler sitting under a peepal tree. He thought he counted maybe twelve shops but lost count near the end.\"}",
+ "prompt_sha": "d87c835cdc59620ffee68e92e2ab4da0f7672f945269d19d798c33254125273d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 512,
+ "tokens_out": 153
+}

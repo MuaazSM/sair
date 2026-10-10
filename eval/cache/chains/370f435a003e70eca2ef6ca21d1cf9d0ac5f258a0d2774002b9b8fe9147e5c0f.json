@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6957.085583002481,
+ "output": "{\"facts\":[{\"span\":\"that big neem tree near the corner\",\"kind\":\"plant\",\"subject\":\"neem tree\",\"certainty\":\"sure\",\"place\":\"near the corner\"},{\"span\":\"the crows were sitting on it\",\"kind\":\"animal\",\"subject\":\"crows\",\"certainty\":\"sure\",\"place\":\"on it\"},{\"span\":\"the vegetable vendor was packing up his cart\",\"kind\":\"person\",\"subject\":\"vegetable vendor\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked down the lane to the corner where a big neem tree stood. Crows were sitting on the tree and making noise. They saw a vegetable vendor packing up his cart. The air felt a little cooler today.\"}",
+ "prompt_sha": "c4d33f623d970472ce4ca710cd15e119e5bd17e850be8c42a3e961925c3b73df",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 517,
+ "tokens_out": 152
+}

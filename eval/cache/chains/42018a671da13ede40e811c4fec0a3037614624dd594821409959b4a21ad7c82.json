@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1393.8483329984592,
+ "output": "{\"type\": \"return\", \"references\": [\"fact1\", \"fact2\", \"fact3\", \"fact4\", \"fact5\", \"fact6\"], \"text\": \"Notice the leaves on the gulmohar. Look at the path for any fallen leaves.\"}",
+ "prompt_sha": "9d8d0b7e5123105baa64d592d89e26c0f8606162d51ea3399e2a29b635c8e343",
+ "renderer_fingerprint": null,
+ "tokens_in": 869,
+ "tokens_out": 57
+}

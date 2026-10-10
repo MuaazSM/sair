@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 8042.309791999287,
+ "output": "{\"facts\":[{\"span\":\"पार्क में बहुत लोग थे\",\"kind\":\"person\",\"subject\":\"लोग\",\"certainty\":\"sure\",\"place\":\"पार्क\"},{\"span\":\"शायद कोई योगा वाला ग्रुप था\",\"kind\":\"person\",\"subject\":\"योगा वाला ग्रुप\",\"certainty\":\"unsure\"},{\"span\":\"गुलमोहर के नीचे कुछ कबूतर दाना चुग रहे थे\",\"kind\":\"animal\",\"subject\":\"कबूतर\",\"certainty\":\"sure\",\"place\":\"गुलमोहर के नीचे\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom sat on a bench near the gate in the park where there were many people. She thought maybe there was a yoga group. Under the gulmohar, some pigeons were eating seeds.\"}",
+ "prompt_sha": "309fa643b08d21ca8fee3b657b1df828efae603ccae1eb3d0fd1e049f9819c29",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 520,
+ "tokens_out": 177
+}

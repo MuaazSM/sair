@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6955.365709000034,
+ "output": "{\"facts\":[{\"span\":\"hawa kaafi thandi thi\",\"kind\":\"weather\",\"subject\":\"hawa\",\"certainty\":\"sure\"},{\"span\":\"Wind strong thi\",\"kind\":\"weather\",\"subject\":\"Wind\",\"certainty\":\"sure\"},{\"span\":\"Waves looked rough shayad sea water moved\",\"kind\":\"sight\",\"subject\":\"Waves\",\"certainty\":\"unsure\"},{\"span\":\"Rain was falling soon shayad\",\"kind\":\"weather\",\"subject\":\"Rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partly done.\",\"entry\":\"Mom and Dad felt the cold wind and strong wind during their walk. They thought the waves looked rough and maybe the sea water moved. They also believed rain was falling soon.\"}",
+ "prompt_sha": "9d88a001a51fcadde0f2687f950b8affb4558547c1932be99f0dc622c480a588",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 516,
+ "tokens_out": 152
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1468.4518330032006,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\"], \"text\": \"You notice the big park. Look for a shadow near the path.\"}",
+ "prompt_sha": "8480dc471a2fdc5040ac8c5057217215dc0eff81bf77f2699fbe6140b05626c3",
+ "renderer_fingerprint": null,
+ "tokens_in": 793,
+ "tokens_out": 35
+}

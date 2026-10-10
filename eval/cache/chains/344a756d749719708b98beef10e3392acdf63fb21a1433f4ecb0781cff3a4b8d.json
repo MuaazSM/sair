@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 923.566709003353,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You notice the peela near the compound. Look for the peela near the gate.\"}",
+ "prompt_sha": "3867d7ace16c9b544a15d40437aee7aaeb3a15d48a373d9ba6a473149eff043f",
+ "renderer_fingerprint": null,
+ "tokens_in": 883,
+ "tokens_out": 45
+}

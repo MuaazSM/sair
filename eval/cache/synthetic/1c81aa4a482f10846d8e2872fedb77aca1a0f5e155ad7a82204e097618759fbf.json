@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 6247.9512080026325,
+ "output": "{\"facts\":[{\"span\":\"Kids wahan hain.\",\"kind\":\"person\",\"subject\":\"Kids\",\"certainty\":\"sure\",\"place\":\"wahan\"},{\"span\":\"Imli ka ped dikha.\",\"kind\":\"plant\",\"subject\":\"Imli ka ped\",\"certainty\":\"sure\"},{\"span\":\"Crow dekha shayad.\",\"kind\":\"animal\",\"subject\":\"Crow\",\"certainty\":\"unsure\"},{\"span\":\"Bicycle dikhi.\",\"kind\":\"other\",\"subject\":\"Bicycle\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Kids wahan hain.\",\"entry\":\"Mom and Dad went for a walk. They noticed Kids, maybe Crow, Bicycle.\"}",
+ "prompt_sha": "6872c56c4cbda6028b6865ea57c4dccfb654d03046821e42ea6cfd0d8a0a8f8f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 520,
+ "tokens_out": 134
+}

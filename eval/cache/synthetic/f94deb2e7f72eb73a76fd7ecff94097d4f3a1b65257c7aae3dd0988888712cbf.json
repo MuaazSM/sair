@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 4786.141082993709,
+ "output": "{\"facts\":[{\"span\":\"ek crow shayad\",\"kind\":\"animal\",\"subject\":\"crow\",\"certainty\":\"unsure\"},{\"span\":\"woh kauwa shayad\",\"kind\":\"animal\",\"subject\":\"kauwa\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad felt the cold air and thought they saw a crow and maybe a kauwa. They noted that they only got a little bit of information.\"}",
+ "prompt_sha": "010cd844a21928580253289034d435bd3b56da673c34c9d015e2b7245ef8e8cf",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 519,
+ "tokens_out": 98
+}

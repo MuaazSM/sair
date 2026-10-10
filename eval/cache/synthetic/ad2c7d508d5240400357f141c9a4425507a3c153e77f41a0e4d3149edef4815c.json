@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7048.2662089998485,
+ "output": "{\"facts\":[{\"span\":\"Teen buses stop par thi\",\"kind\":\"sight\",\"subject\":\"Teen buses\",\"certainty\":\"sure\",\"place\":\"stop par\"},{\"span\":\"Mist bahut thick thi\",\"kind\":\"weather\",\"subject\":\"Mist\",\"certainty\":\"sure\"},{\"span\":\"Ek sparrow ud raha tha shayad\",\"kind\":\"animal\",\"subject\":\"Ek sparrow\",\"certainty\":\"unsure\"}],\"mission_result\":\"done\",\"mission_span\":\"Bus count kiya, 4 buses dikhi\",\"entry\":\"Mom went on an evening walk where the mist was very thick. She noticed three buses at the stop and maybe saw a sparrow flying. She completed her mission by counting and seeing four buses.\"}",
+ "prompt_sha": "4f15b5f67b4f2d8e2e39d7b355c3c7bfb3094f4a84fc3b24491f0c7f0356c84d",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 145
+}

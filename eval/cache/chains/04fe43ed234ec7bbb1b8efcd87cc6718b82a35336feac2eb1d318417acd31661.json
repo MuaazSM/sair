@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5421.443833001831,
+ "output": "{\"facts\":[{\"span\":\"a nice smell near the hedge by the far side\",\"kind\":\"smell\",\"subject\":\"nice smell\",\"certainty\":\"sure\",\"place\":\"near the hedge by the far side\"},{\"span\":\"some flower i think\",\"kind\":\"plant\",\"subject\":\"flower\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom walked slowly and noticed a nice smell near the hedge by the far side. She thought she saw some flower, but she was unsure which one it was.\"}",
+ "prompt_sha": "1c053b3c27f48c1c4df57629a856a57d2d8e93f8455aa70c0e97c9221ec7b87e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 490,
+ "tokens_out": 111
+}

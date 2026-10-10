@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5150.620667001931,
+ "output": "{\"facts\":[{\"span\":\"buses aate rahe\",\"kind\":\"sight\",\"subject\":\"buses\",\"certainty\":\"sure\"},{\"span\":\"do mist dikhe\",\"kind\":\"sight\",\"subject\":\"mist\",\"certainty\":\"sure\"},{\"span\":\"chai ki smell aayi\",\"kind\":\"smell\",\"subject\":\"chai ki smell\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"maine bus ginti ki\",\"entry\":\"Mom went for a walk. They noticed buses, mist and chai ki smell.\"}",
+ "prompt_sha": "c9da94ff99405a4beb793a7c95b7bf6d6d757d59515628dd663c8e3634a23d9a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 499,
+ "tokens_out": 108
+}

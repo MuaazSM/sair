@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2179.056375003711,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\"], \"text\": \"You will notice if the light near the buildings changes. Look for the roshni in the lane ke beech mein ek jagah.\"}",
+ "prompt_sha": "f3bb33a0772f9393500dea1c4b25be5504682b2cf670b612cf659775a3e1ad33",
+ "renderer_fingerprint": null,
+ "tokens_in": 1058,
+ "tokens_out": 54
+}

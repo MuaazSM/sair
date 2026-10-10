@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2834.9645839989535,
+ "output": "{\"type\": \"return\", \"references\": [\"f5_1\"], \"text\": \"You notice the patte under the badam ke ped.\"}",
+ "prompt_sha": "1dfdd1a0d0c9592ae63ceb621b8bc79f2da2cf7a0bc43ff4b7af24fbb3f56d11",
+ "renderer_fingerprint": null,
+ "tokens_in": 1383,
+ "tokens_out": 33
+}

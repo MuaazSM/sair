@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": false,
+ "latency_ms": 8016.205916996114,
+ "output": "{\"facts\":[{\"span\":\"teen jasmine\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"champa\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"one goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"one cat\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\"},{\"span\":\"Dew drops I think were heavy\",\"kind\":\"weather\",\"subject\":\"Dew drops\",\"certainty\":\"unsure\"},{\"span\":\"garbage truck\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"Checked on the jasmine flowering\",\"entry\":\"Dad went for a walk and noticed teen jasmine, champa, one goat, one cat, maybe heavy dew drops, and a garbage truck. He checked on the jasmine flowering.\"}",
+ "prompt_sha": "96e531a01e3f4228c958fb03d955166d35211a937c922d1c443d388313aa8ec0",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 506,
+ "tokens_out": 181
+}

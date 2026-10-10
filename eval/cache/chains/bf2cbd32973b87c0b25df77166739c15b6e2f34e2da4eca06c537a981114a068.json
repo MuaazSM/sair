@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5294.303249997029,
+ "output": "{\"facts\":[{\"span\":\"a lot of flowers floating in the temple pond\",\"kind\":\"sight\",\"subject\":\"flowers\",\"certainty\":\"sure\",\"place\":\"temple pond\"},{\"span\":\"offerings maybe\",\"kind\":\"other\",\"subject\":\"offerings\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad saw a lot of flowers floating in the temple pond. They thought they might be offerings, but they did not go too close to look.\"}",
+ "prompt_sha": "529d9fd9ae74645c8c07c73624bbc016b6e93dba352ce63614f0afbb31d7de4e",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 485,
+ "tokens_out": 104
+}

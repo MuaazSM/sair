@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6521.0549580006045,
+ "output": "{\"facts\":[{\"span\":\"some mynas near the school wall\",\"kind\":\"animal\",\"subject\":\"mynas\",\"certainty\":\"sure\",\"place\":\"near the school wall\"},{\"span\":\"two or three\",\"kind\":\"animal\",\"subject\":\"mynas\",\"certainty\":\"unsure\"},{\"span\":\"the dog was there again under the banyan\",\"kind\":\"animal\",\"subject\":\"dog\",\"certainty\":\"sure\",\"place\":\"under the banyan\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad saw some mynas near the school wall. They thought there were two or three of them fighting. They also noticed a dog under the banyan.\"}",
+ "prompt_sha": "9ff1d8a2825290ccb64d79fb063b1a4ebd3d7e3bc3f1900c53ecff8ba9b47ad5",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 493,
+ "tokens_out": 142
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5850.023500002862,
+ "output": "{\"facts\":[{\"span\":\"Wind strong thi\",\"kind\":\"weather\",\"subject\":\"Wind\",\"certainty\":\"sure\"},{\"span\":\"Waves are big lagta hai\",\"kind\":\"sight\",\"subject\":\"Waves\",\"certainty\":\"unsure\"},{\"span\":\"lagta hai Rain is falling\",\"kind\":\"weather\",\"subject\":\"Rain\",\"certainty\":\"unsure\"}],\"mission_result\":\"partly\",\"mission_span\":\"Mission partly hua\",\"entry\":\"Mom and Dad had a good walk and noticed strong wind. They think the waves are big and maybe rain is falling. Their mission was partly done.\"}",
+ "prompt_sha": "44fb1b20c1a991c822e8ac0393a549459cb412d192acd2714ade0cc1a044fd6c",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 502,
+ "tokens_out": 120
+}

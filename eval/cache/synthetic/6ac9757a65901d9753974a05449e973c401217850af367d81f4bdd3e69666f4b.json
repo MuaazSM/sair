@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5335.413709006389,
+ "output": "{\"facts\":[{\"span\":\"teen kauve\",\"kind\":\"animal\",\"subject\":\"teen kauve\",\"certainty\":\"sure\"},{\"span\":\"Ek butterfly dekhi\",\"kind\":\"animal\",\"subject\":\"Ek butterfly\",\"certainty\":\"sure\"},{\"span\":\"Koel the bird maybe was flying high\",\"kind\":\"animal\",\"subject\":\"Koel the bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad went for a walk. They noticed teen kauve, Ek butterfly and maybe Koel the bird.\"}",
+ "prompt_sha": "7f6c405e6209b70a3ffb1880d194afa90857dde26b5b2587f54c97753b8051c4",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 504,
+ "tokens_out": 112
+}

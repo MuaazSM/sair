@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 2518.7195830003475,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f1_2\", \"f1_3\", \"f1_4\", \"f2_1\", \"f3_1\"], \"text\": \"You will notice the champa near the clubhouse and compare it to the patte.\"}",
+ "prompt_sha": "f3311d391d3f52958e18ca61d8974a0b072aa48f6170f121932946bbe71fd7af",
+ "renderer_fingerprint": null,
+ "tokens_in": 1200,
+ "tokens_out": 68
+}

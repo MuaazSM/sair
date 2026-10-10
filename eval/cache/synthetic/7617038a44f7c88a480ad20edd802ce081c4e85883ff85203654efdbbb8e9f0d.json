@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 9314.210791002552,
+ "output": "{\"facts\":[{\"span\":\"The jasmine is there\",\"kind\":\"plant\",\"subject\":\"jasmine\",\"certainty\":\"sure\"},{\"span\":\"I saw the champa\",\"kind\":\"plant\",\"subject\":\"champa\",\"certainty\":\"sure\"},{\"span\":\"There were three goat\",\"kind\":\"animal\",\"subject\":\"goat\",\"certainty\":\"sure\"},{\"span\":\"The cat was near the gate\",\"kind\":\"animal\",\"subject\":\"cat\",\"certainty\":\"sure\",\"place\":\"near the gate\"},{\"span\":\"sounded like Dew settled on the grass\",\"kind\":\"sound\",\"subject\":\"Dew\",\"certainty\":\"unsure\",\"place\":\"on the grass\"},{\"span\":\"The garbage truck passed by\",\"kind\":\"other\",\"subject\":\"garbage truck\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Dad returned from his evening walk and noted the presence of jasmine and champa. He saw three goats and a cat near the gate. He heard what sounded like dew settling on the grass and saw a garbage truck pass by.\"}",
+ "prompt_sha": "5281a89f60c8b85e3b0463fc78bf406d33136c874268a985e97714f8010c0c34",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 511,
+ "tokens_out": 213
+}

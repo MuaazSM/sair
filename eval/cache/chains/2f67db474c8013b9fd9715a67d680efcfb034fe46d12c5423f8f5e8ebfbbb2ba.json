@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7120.898542001669,
+ "output": "{\"facts\":[{\"span\":\"kabootar phir se the gulmohar ke neeche\",\"kind\":\"animal\",\"subject\":\"kabootar\",\"certainty\":\"sure\",\"place\":\"gulmohar ke neeche\"},{\"span\":\"ek squirrel bhi tha jo bench ke peeche bhaag gaya\",\"kind\":\"animal\",\"subject\":\"squirrel\",\"certainty\":\"sure\",\"place\":\"bench ke peeche\"},{\"span\":\"weather accha tha, thoda thanda\",\"kind\":\"weather\",\"subject\":\"weather\",\"certainty\":\"sure\"}],\"mission_result\":\"done\",\"mission_span\":\"do round kiye aaj\",\"entry\":\"Mom went for a walk and did today's mission. They noticed kabootar, squirrel and weather.\"}",
+ "prompt_sha": "ac53d96fcbf7c65cd9962888b8c973b5a1735a6b182645c9ba10472a2e2a2820",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 508,
+ "tokens_out": 151
+}

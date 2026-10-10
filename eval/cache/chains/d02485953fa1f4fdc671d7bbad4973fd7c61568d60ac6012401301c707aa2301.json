@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 7786.674000002677,
+ "output": "{\"facts\":[{\"span\":\"the wind was strong\",\"kind\":\"weather\",\"subject\":\"wind\",\"certainty\":\"sure\"},{\"span\":\"the coconut palms along the wall were bending\",\"kind\":\"plant\",\"subject\":\"coconut palms\",\"certainty\":\"sure\",\"place\":\"along the wall\"},{\"span\":\"the pani puri stall near the steps was busy\",\"kind\":\"other\",\"subject\":\"pani puri stall\",\"certainty\":\"sure\",\"place\":\"near the steps\"}],\"mission_result\":\"done\",\"mission_span\":\"the wind was strong, the coconut palms along the wall were bending\",\"entry\":\"Mom and Dad walked on the sea-face promenade where the wind was strong. They saw coconut palms along the wall bending in the breeze. They noticed a busy pani puri stall near the steps but did not eat anything.\"}",
+ "prompt_sha": "d3da99bc02098ef3464be861abf1f93cc9c6945df83d4f2d11833482ec84fab2",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 506,
+ "tokens_out": 163
+}

@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 4086.9761670037406,
+ "output": "{\"facts\":[{\"span\":\"some vehicle was parked in the middle of the lane, a big one\",\"kind\":\"other\",\"subject\":\"vehicle\",\"certainty\":\"sure\",\"place\":\"middle of the lane\"}],\"mission_result\":\"not_done\",\"mission_span\":\"it was dark so i didn't see much else\",\"entry\":\"Dad went for a walk. They noticed vehicle.\"}",
+ "prompt_sha": "1efe70849870466f7b7441eae10c28e6cce03130af97e27041e4a56a6845553f",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 76
+}

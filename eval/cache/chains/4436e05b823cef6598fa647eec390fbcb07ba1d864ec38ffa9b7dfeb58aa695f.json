@@ -1,0 +1,10 @@
+{
+ "backend_id": "ollama-planner:gemma4:e2b",
+ "grammar": null,
+ "latency_ms": 1061.622166998859,
+ "output": "{\"type\": \"return\", \"references\": [\"f1_1\", \"f3_3\"], \"text\": \"You will notice the fruit stall at the start and compare it to the गाय near the path.\"}",
+ "prompt_sha": "40ca43cba3bd10e919a5eb16f9cc3f09d229676449a08092db05e2f9073ac2c2",
+ "renderer_fingerprint": null,
+ "tokens_in": 1558,
+ "tokens_out": 46
+}

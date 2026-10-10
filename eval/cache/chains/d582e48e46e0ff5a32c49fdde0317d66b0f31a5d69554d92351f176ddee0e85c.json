@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 6342.354167005396,
+ "output": "{\"facts\":[{\"span\":\"a lot of cars were parked on both sides\",\"kind\":\"sight\",\"subject\":\"cars\",\"certainty\":\"sure\",\"place\":\"on both sides\"},{\"span\":\"some guests at a house\",\"kind\":\"person\",\"subject\":\"guests\",\"certainty\":\"sure\",\"place\":\"at a house\"},{\"span\":\"the jamun tree was quiet today\",\"kind\":\"plant\",\"subject\":\"jamun tree\",\"certainty\":\"sure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom and Dad walked in a single line past cars parked on both sides and guests at a house. They noticed that the jamun tree was quiet today.\"}",
+ "prompt_sha": "e5bc8c1f536392ff0335069fbd300bf09eaa8019bff8c3d1f902e052cb5d9370",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 498,
+ "tokens_out": 136
+}

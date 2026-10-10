@@ -1,0 +1,10 @@
+{
+ "backend_id": "llama:sair-writer-q8_0-0fb977b8",
+ "grammar": true,
+ "latency_ms": 5427.84112499794,
+ "output": "{\"facts\":[{\"span\":\"a bird was singing from one of the balconies\",\"kind\":\"sound\",\"subject\":\"bird\",\"certainty\":\"sure\",\"place\":\"one of the balconies\"},{\"span\":\"maybe a pet bird in a cage\",\"kind\":\"animal\",\"subject\":\"pet bird\",\"certainty\":\"unsure\"}],\"mission_result\":\"not_mentioned\",\"mission_span\":null,\"entry\":\"Mom heard a bird singing from one of the balconies. She thought it might be a pet bird in a cage, but she could not see it.\"}",
+ "prompt_sha": "6a920754926fb25cb239f050fb7d8933b8488cd378ca16807190e302db3fd41a",
+ "renderer_fingerprint": "4c54d056aa563f81760a680f47747b2f2b7fe080a54514e46364415ff5bec7c9",
+ "tokens_in": 487,
+ "tokens_out": 110
+}
