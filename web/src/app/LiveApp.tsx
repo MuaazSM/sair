@@ -256,13 +256,28 @@ export function LiveApp() {
     busy.current = true;
     try {
       let m = await getMission();
-      for (let i = 0; !m.audio_path && i < 6; i++) {
-        await sleep(1500); // TTS renders in the background (FR-M7); the text never waits on it
-        m = await getMission();
-      }
       setMissionText(m.text);
+      // NFR-L1: the mission text is on screen at once; audio starts as soon as the hub has rendered it (FR-M7).
+      player.current?.stop();
+      player.current = null;
+      setPlay({ label: '', progress: 0, revealed: m.text.split(' ').length, paused: false });
+      go({ k: 'playing' });
+      for (let i = 0; !m.audio_path && i < 15; i++) {
+        await sleep(1000);
+        if (viewRef.current.k !== 'playing') return;
+        try {
+          m = await getMission();
+        } catch {
+          /* keep waiting */
+        }
+      }
+      if (viewRef.current.k !== 'playing') return;
+      if (!m.audio_path) {
+        // NOT IN DESIGN: no audio after 15 s. The text stayed on screen; move on to "Leave the phone" ("Hear it once more" retries).
+        return go({ k: 'leave', dimmed: false });
+      }
       if (audioUrl.current) URL.revokeObjectURL(audioUrl.current);
-      audioUrl.current = m.audio_path ? await getAudioBlobUrl(m.audio_path) : null;
+      audioUrl.current = await getAudioBlobUrl(m.audio_path);
       await runPlayer(m.text, audioUrl.current);
     } catch {
       go({ k: 'unreachable' });

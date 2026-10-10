@@ -38,6 +38,22 @@ test.describe('J1: hear the mission', () => {
   });
 });
 
+test('NFR-L1: text on screen at once; audio plays twice when it arrives', async ({ page }) => {
+  const hub = newHub();
+  hub.missionAudioPath = null;
+  await installBrowserFakes(page);
+  await installHub(page, hub);
+  await page.goto('/');
+  setTimeout(() => (hub.missionAudioPath = '/audio/m1'), 3000);
+  await page.getByRole('button', { name: "Hear today's walk" }).click();
+  await expect(page.locator('main')).toContainText(/Lookatthegulmoharonyourlane\./, { timeout: 500 });
+  expect(await page.evaluate(() => (window as any).__log.length)).toBe(0); // nothing plays before audio exists
+  await expect(page.getByRole('heading', { name: 'Enjoy your walk.' })).toBeVisible({ timeout: 20_000 });
+  const log: { e: string; t: number }[] = await page.evaluate(() => (window as any).__log);
+  expect(log.map((l) => l.e)).toEqual(['play', 'ended', 'play', 'ended']);
+  expect(log[2]!.t - log[1]!.t).toBeGreaterThanOrEqual(2000);
+});
+
 test.describe('J3: tell Sair', () => {
   test('record, upload with the header, Writing (only after the 202), then Saved', async ({ page }) => {
     const hub = newHub();

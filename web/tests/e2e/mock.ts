@@ -50,11 +50,11 @@ export async function installBrowserFakes(page: Page, opts: { token?: string | n
         setTimeout(() => {
           w.__log.push({ e: 'ended', t: performance.now() });
           this.dispatchEvent(new Event('ended'));
-        }, 300);
+        }, 1500);
         return Promise.resolve();
       };
       proto.pause = function () {};
-      Object.defineProperty(proto, 'duration', { get: () => 0.3 });
+      Object.defineProperty(proto, 'duration', { get: () => 1.5 });
       class FakeMediaRecorder {
         state = 'inactive';
         mimeType = 'audio/webm;codecs=opus';
