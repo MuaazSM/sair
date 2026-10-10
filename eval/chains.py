@@ -50,7 +50,9 @@ each summary row says which one its headline uses in ``headline_measure``.
 Resumable: every model call is cached under ``eval/cache/chains/`` keyed by
 (backend id, prompt sha) and every finished (chain, system, memory, provenance) run is
 checkpointed as ``<out>/runs/<key>.json``; ``--resume`` skips finished runs and replays
-cached calls, so a killed run restarts cheaply.
+cached calls, so a killed run restarts cheaply. The summary (``contamination.json``/``.csv``,
+``paired_fact_minus_prose.json``) always covers EVERY run checkpointed in ``<out>/runs/``, so
+invocations over different chains, systems or provenance arms accumulate into one summary.
 """
 
 from __future__ import annotations
@@ -75,7 +77,7 @@ import yaml
 from pydantic import BaseModel, ConfigDict, Field
 
 from eval.backends import CacheMiss, CacheMode, PlannerBackend, WriterBackend
-from eval.bootstrap import plain_bootstrap
+from eval.bootstrap import paired_bootstrap, plain_bootstrap
 from eval.items import EvalItem
 from eval.metrics import Ratio
 from eval.prose_planner import build_prose_planner_prompt
@@ -99,6 +101,8 @@ __all__ = [
     "contamination",
     "load_chain",
     "load_chains",
+    "load_checkpointed",
+    "paired_fact_minus_prose",
     "main",
     "run_chain",
     "run_chains",
@@ -584,6 +588,61 @@ def summarise(results: Sequence[ChainResult], *, n_resamples: int = 10_000) -> l
     return rows
 
 
+def load_checkpointed(out_dir: Path) -> list[ChainResult]:
+    """Every finished run checkpointed under ``<out>/runs/`` (all invocations, sorted by key)."""
+    runs = out_dir / "runs"
+    if not runs.is_dir():
+        return []
+    return [
+        ChainResult.from_dict(json.loads(p.read_text("utf-8"))) for p in sorted(runs.glob("*.json"))
+    ]
+
+
+def paired_fact_minus_prose(
+    results: Sequence[ChainResult], *, n_resamples: int = 10_000
+) -> list[dict[str, Any]]:
+    """Per (system, provenance): headline % chains contaminated by the last day, fact - prose,
+    paired by chain (plain bootstrap over chains present in both arms)."""
+    by = {(r.chain_id, r.system, r.memory, r.provenance): r for r in results}
+    rows: list[dict[str, Any]] = []
+    for system in sorted({r.system for r in results}):
+        for prov in (False, True):
+            ids = sorted(
+                {
+                    c
+                    for (c, s, _m, p) in by
+                    if s == system
+                    and p == prov
+                    and (c, s, "fact", p) in by
+                    and (c, s, "prose", p) in by
+                }
+            )
+            if not ids:
+                continue
+
+            def flag(c: str, memory: str, system: str = system, prov: bool = prov) -> Ratio:
+                hit = by[(c, system, memory, prov)].first_contaminated_day is not None
+                return Ratio(1.0 if hit else 0.0, 1)
+
+            ci = paired_bootstrap(
+                [flag(c, "fact") for c in ids],
+                [flag(c, "prose") for c in ids],
+                ids,
+                n_resamples=n_resamples,
+                plain=True,
+            )
+            rows.append(
+                {
+                    "system": system,
+                    "provenance": "on" if prov else "off",
+                    "diff": "fact - prose",
+                    "n_chains": len(ids),
+                    **ci.to_dict(),
+                }
+            )
+    return rows
+
+
 def _write_summary(rows: list[dict[str, Any]], out_dir: Path) -> None:
     _atomic_write(out_dir / "contamination.json", {"rows": rows})
     lines = [
@@ -699,8 +758,14 @@ def main(
     except CacheMiss as miss:
         print(f"{miss}; run without --cached to fill the cache", file=sys.stderr)
         return 4
-    rows = summarise(results, n_resamples=args.resamples)
+    # summarise every run checkpointed in --out (earlier invocations too), not only this one's
+    everything = load_checkpointed(args.out) or results
+    rows = summarise(everything, n_resamples=args.resamples)
     _write_summary(rows, args.out)
+    _atomic_write(
+        args.out / "paired_fact_minus_prose.json",
+        {"rows": paired_fact_minus_prose(everything, n_resamples=args.resamples)},
+    )
     for row in rows:
         ci = row["pct_contaminated_by_last_day"]
         print(

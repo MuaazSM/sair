@@ -426,3 +426,36 @@ def test_committed_chain_set() -> None:
             # no names: a capitalised Latin token only at a sentence start or a role word
             for m in re.finditer(r"(?<![.!?]\s)(?<!^)\b[A-Z][a-z']+\b", day.transcript):
                 assert m.group(0) in _ALLOWED_CAPS, (s.id, "capitalised token")
+
+
+def test_summary_covers_all_checkpointed_runs(tmp_path: Path) -> None:
+    """Two invocations into one --out: the summary covers both, not only the latest."""
+    import json as _json
+
+    cdir = tmp_path / "chains"
+    cdir.mkdir()
+    (cdir / "t01.yaml").write_text((EXAMPLES / "ex01.yaml").read_text("utf-8"), encoding="utf-8")
+    out = tmp_path / "o"
+    common = ["--chains-dir", str(cdir), "--systems", "D", "--out", str(out), "--resamples", "100"]
+    kw = {
+        "writers": {"sair_writer": StubWriter(invent_parrot)},
+        "planner": StubPlanner(parrot_planner),
+    }
+    assert chains.main([*common, "--memory", "prose,fact", "--provenance", "off"], **kw) == 0
+    assert chains.main([*common, "--memory", "prose,fact", "--provenance", "on"], **kw) == 0
+    rows = _json.loads((out / "contamination.json").read_text("utf-8"))["rows"]
+    assert {(r["memory"], r["provenance"]) for r in rows} == {
+        ("prose", "off"),
+        ("fact", "off"),
+        ("prose", "on"),
+        ("fact", "on"),
+    }
+    assert len(list((out / "runs").glob("*.json"))) == 4
+    paired = _json.loads((out / "paired_fact_minus_prose.json").read_text("utf-8"))["rows"]
+    assert {(p["system"], p["provenance"]) for p in paired} == {("D", "off"), ("D", "on")}
+    by = {p["provenance"]: p for p in paired}
+    # parrot stub: prose contaminated on day 1, fact never -> fact - prose = -1 for one chain
+    assert by["off"]["point"] == -1.0 and by["off"]["n_chains"] == 1
+    # rebuilding from checkpoints alone gives the same rows
+    rebuilt = chains.summarise(chains.load_checkpointed(out), n_resamples=100)
+    assert _json.loads(_json.dumps(rebuilt)) == rows
