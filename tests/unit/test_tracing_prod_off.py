@@ -19,6 +19,8 @@ from hub.settings import Settings
 ROOT = Path(__file__).resolve().parents[2]
 # Loopback discard port: even if the fake transport were bypassed nothing leaves the machine.
 FAKE_DSN = "http://publickey@127.0.0.1:9/0"
+# NFR-P7: Sentry settings refuse the prod data dir (~/.sair); never created here.
+SYNTHETIC = "/nonexistent/sair-synthetic"
 
 
 class CapturingTransport:
@@ -88,6 +90,7 @@ def test_eval_dsn_host_outside_allowlist_is_refused() -> None:
         _env_file=None,
         sair_env="eval",
         sentry_dsn=SecretStr("https://k@o1.ingest.example.org/1"),
+        sair_data_dir=SYNTHETIC,
     )
     assert tracing.init_tracing(s, transport=CapturingTransport.make()) is False
     assert _client_active() is False
@@ -95,7 +98,9 @@ def test_eval_dsn_host_outside_allowlist_is_refused() -> None:
 
 def test_eval_with_dsn_enables_with_fake_transport() -> None:
     cap = CapturingTransport.make()
-    s = Settings(_env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN))  # type: ignore[call-arg]
+    s = Settings(  # type: ignore[call-arg]
+        _env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN), sair_data_dir=SYNTHETIC
+    )
     assert tracing.init_tracing(s, transport=cap) is True
     assert tracing.is_enabled() and _client_active()
     with tracing.graph_transaction("mission"), tracing.node_span("mission_recall"):
@@ -112,6 +117,7 @@ def test_wildcard_allowlist_matches_regional_ingest_host() -> None:
         sair_env="dev",
         sentry_dsn=SecretStr("https://k@o123.ingest.us.sentry.io/1"),
         allowed_outbound_hosts="127.0.0.1,localhost,*.sentry.io",
+        sair_data_dir=SYNTHETIC,
     )
     assert tracing.init_tracing(s, transport=CapturingTransport.make()) is True
 

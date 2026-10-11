@@ -279,3 +279,34 @@ def test_real_llama_complete() -> None:
     )
     assert json.loads(text)["ok"] in (True, False)
     assert st.completion_tokens
+
+
+# ------------------------------------------------- NFR-P1/P3: proxy env vars are ignored
+
+_PROXY_VARS = ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "http_proxy", "https_proxy", "all_proxy")
+
+
+@pytest.fixture
+def proxy_env(monkeypatch: pytest.MonkeyPatch) -> None:
+    for var in _PROXY_VARS:
+        monkeypatch.setenv(var, "http://proxy.invalid:3128")
+    monkeypatch.delenv("NO_PROXY", raising=False)
+    monkeypatch.delenv("no_proxy", raising=False)
+
+
+def _assert_no_proxy(client: httpx.Client, url: str) -> None:
+    assert client.trust_env is False
+    assert client._mounts == {}  # no env-derived proxy mounts
+    assert client._transport_for_url(httpx.URL(url)) is client._transport
+
+
+@pytest.mark.usefixtures("proxy_env")
+def test_ollama_client_ignores_proxy_env() -> None:
+    c = OllamaClient(settings())
+    _assert_no_proxy(c._client, f"{OLLAMA}/api/chat")
+
+
+@pytest.mark.usefixtures("proxy_env")
+def test_llama_server_client_ignores_proxy_env() -> None:
+    c = LlamaServerClient(settings())
+    _assert_no_proxy(c._client, f"{LLAMA}/completion")

@@ -104,7 +104,7 @@ class NtfyNotifier:
         self._enabled = bool(settings.ntfy_topic)
         self._groups: frozenset[str] = frozenset(settings.device_groups.values())
         self._upstream = settings.ntfy_ios_upstream
-        self._client = client or httpx.Client(timeout=_TIMEOUT_S)
+        self._client = client or httpx.Client(timeout=_TIMEOUT_S, trust_env=False)  # NFR-P1/P3
 
     @property
     def upstream_enabled(self) -> bool:

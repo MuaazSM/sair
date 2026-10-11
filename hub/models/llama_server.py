@@ -58,7 +58,7 @@ class LlamaServerClient:
         renderer: Renderer | None = None,
     ) -> None:
         self._s = settings or get_settings()
-        self._client = client or httpx.Client()
+        self._client = client or httpx.Client(trust_env=False)  # NFR-P1/P3: ignore proxy env
         self.renderer: Renderer = renderer if renderer is not None else render_qwen_chat
 
     def complete(

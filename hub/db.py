@@ -790,7 +790,8 @@ def raw_audio_on_disk(tmp_dir: Path) -> int:
 
 def forget(settings: Settings) -> list[str]:
     """FR-O5: delete the DB (+ -wal/-shm), temp audio, audio cache, mission audio, model-server
-    logs and any checkpoint dir. Files are only deleted, never opened. Returns removed paths.
+    logs, any checkpoint dir and the self-hosted ntfy cache (stop ntfy first). Files are only
+    deleted, never opened. Returns removed paths.
     """
     db = settings.db_path
     removed: list[str] = []
@@ -808,6 +809,7 @@ def forget(settings: Settings) -> list[str]:
         settings.audio_dir,
         settings.audio_cache_dir,
         settings.checkpoint_dir,
+        settings.ntfy_cache_dir,
     ):
         if d.exists() and not _unsafe(d):
             shutil.rmtree(d, ignore_errors=True)

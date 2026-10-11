@@ -45,3 +45,18 @@ def test_forget_removes_everything(tmp_path: Path) -> None:
 def test_forget_on_empty_state_is_noop(tmp_path: Path) -> None:
     s = Settings(_env_file=None, sair_data_dir=tmp_path / "none", sair_log_dir=tmp_path / "nologs")  # type: ignore[call-arg]
     assert db.forget(s) == []
+
+
+def test_forget_removes_self_hosted_ntfy_cache(tmp_path: Path) -> None:
+    """FR-O5: the ntfy LaunchAgent caches messages at <data_dir>/ntfy/cache.db; forget wipes it."""
+    s = Settings(_env_file=None, sair_data_dir=tmp_path / "sair", sair_log_dir=tmp_path / "logs")  # type: ignore[call-arg]
+    cache = s.data_dir / "ntfy" / "cache.db"
+    cache.parent.mkdir(parents=True)
+    cache.write_bytes(b"\x00")
+    (s.data_dir / "ntfy" / "cache.db-wal").write_bytes(b"\x00")
+    assert s.ntfy_cache_dir == s.data_dir / "ntfy"
+
+    removed = db.forget(s)
+
+    assert str(s.ntfy_cache_dir) in removed
+    assert not s.ntfy_cache_dir.exists()

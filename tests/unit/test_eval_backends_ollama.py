@@ -23,8 +23,11 @@ class _Resp:
 def test_writer_sends_think_false(monkeypatch: pytest.MonkeyPatch, grammar: bool) -> None:
     seen: dict[str, Any] = {}
 
-    def fake_post(url: str, *, json: dict[str, Any], timeout: float) -> _Resp:
+    def fake_post(
+        url: str, *, json: dict[str, Any], timeout: float, trust_env: bool = True
+    ) -> _Resp:
         seen.update(json)
+        seen["_trust_env"] = trust_env
         return _Resp()
 
     monkeypatch.setattr(httpx, "post", fake_post)
@@ -32,13 +35,17 @@ def test_writer_sends_think_false(monkeypatch: pytest.MonkeyPatch, grammar: bool
     assert w.generate([ChatMessage(role="user", content="x")], grammar=grammar) == "{}"
     assert seen["think"] is False
     assert seen["options"]["temperature"] == 0
+    assert seen["_trust_env"] is False  # NFR-P1/P3: proxy env vars ignored
 
 
 def test_planner_sends_think_false(monkeypatch: pytest.MonkeyPatch) -> None:
     seen: dict[str, Any] = {}
 
-    def fake_post(url: str, *, json: dict[str, Any], timeout: float) -> _Resp:
+    def fake_post(
+        url: str, *, json: dict[str, Any], timeout: float, trust_env: bool = True
+    ) -> _Resp:
         seen.update(json)
+        seen["_trust_env"] = trust_env
         return _Resp()
 
     monkeypatch.setattr(httpx, "post", fake_post)
@@ -47,3 +54,4 @@ def test_planner_sends_think_false(monkeypatch: pytest.MonkeyPatch) -> None:
     )
     assert seen["think"] is False
     assert "format" in seen
+    assert seen["_trust_env"] is False

@@ -62,8 +62,9 @@ def test_prod_with_sentry_dsn_refused() -> None:
 
 def test_sentry_enabled_only_dev_eval_with_dsn() -> None:
     dsn = "https://key@o1.ingest.sentry.io/1"
-    assert make(sair_env="eval", sentry_dsn=dsn).sentry_enabled
-    assert make(sair_env="dev", sentry_dsn=dsn).sentry_enabled
+    synthetic = "~/.sair-eval"  # NFR-P7: Sentry never runs against the prod data dir
+    assert make(sair_env="eval", sentry_dsn=dsn, sair_data_dir=synthetic).sentry_enabled
+    assert make(sair_env="dev", sentry_dsn=dsn, sair_data_dir=synthetic).sentry_enabled
     assert not make(sair_env="eval").sentry_enabled
     assert not make(sair_env="test", sentry_dsn=dsn).sentry_enabled
     assert not make(sair_env="prod").sentry_enabled
@@ -157,10 +158,85 @@ def test_eval_layers_env_eval(tmp_path: object, monkeypatch: pytest.MonkeyPatch)
 
     d = Path(str(tmp_path))
     (d / ".env").write_text("SAIR_PORT=9001\n")
-    (d / ".env.eval").write_text("SAIR_PORT=9002\nSENTRY_DSN=https://k@x.ingest.sentry.io/1\n")
+    (d / ".env.eval").write_text(
+        f"SAIR_PORT=9002\nSENTRY_DSN=https://k@x.ingest.sentry.io/1\nSAIR_DATA_DIR={d / 'eval'}\n"
+    )
     monkeypatch.chdir(d)
     monkeypatch.setenv("SAIR_ENV", "eval")
     assert settings_mod.load_settings().sair_port == 9002
     assert settings_mod.load_settings().sentry_enabled
     monkeypatch.setenv("SAIR_ENV", "prod")
     assert settings_mod.load_settings().sair_port == 9001
+
+
+# ---------------------------------------- NFR-P7: Sentry only on synthetic or fixture data
+
+DSN = "https://key@o1.ingest.sentry.io/1"
+
+
+@pytest.fixture
+def home(tmp_path: object, monkeypatch: pytest.MonkeyPatch) -> object:
+    monkeypatch.setenv("HOME", str(tmp_path))
+    return tmp_path
+
+
+@pytest.mark.usefixtures("home")
+@pytest.mark.parametrize("env", ["dev", "eval"])
+def test_sentry_refused_on_prod_default_data_dir(env: str) -> None:
+    with pytest.raises(ValidationError) as ei:
+        make(sair_env=env, sentry_dsn=DSN)  # data dir defaults to ~/.sair
+    msg = str(ei.value)
+    assert settings_mod.MSG_SENTRY_DATA in msg
+    assert "key@" not in msg and ".sair" not in msg.replace(settings_mod.MSG_SENTRY_DATA, "")
+
+
+@pytest.mark.usefixtures("home")
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("sair_db_path", "~/.sair/eval.db"),
+        ("sair_tmp_dir", "~/.sair/tmp"),
+        ("sair_audio_dir", "~/.sair/audio"),
+        ("sair_data_dir", "~/.sair/sub"),
+    ],
+)
+def test_sentry_refused_when_any_store_is_under_prod_data_dir(field: str, value: str) -> None:
+    kw: dict[str, object] = {"sair_data_dir": "~/.sair-eval", field: value}
+    with pytest.raises(ValidationError) as ei:
+        make(sair_env="eval", sentry_dsn=DSN, **kw)
+    assert settings_mod.MSG_SENTRY_DATA in str(ei.value)
+
+
+@pytest.mark.usefixtures("home")
+def test_sentry_allowed_on_sair_eval_dir() -> None:
+    s = make(
+        sair_env="eval",
+        sentry_dsn=DSN,
+        sair_data_dir="~/.sair-eval",
+        sair_db_path="~/.sair-eval/eval.db",
+        sair_tmp_dir="~/.sair-eval/tmp",
+    )
+    assert s.sentry_enabled
+
+
+@pytest.mark.usefixtures("home")
+def test_prod_data_dir_fine_when_sentry_off() -> None:
+    assert not make(sair_env="eval").sentry_enabled  # no DSN: no rule
+    assert make(sair_env="prod").data_dir.name == ".sair"
+    assert not make(sair_env="test", sentry_dsn=DSN).sentry_enabled
+
+
+def test_eval_example_points_away_from_prod_data_dir() -> None:
+    from pathlib import Path
+
+    text = (Path(__file__).resolve().parents[2] / ".env.eval.example").read_text()
+    lines = dict(
+        ln.split("#", 1)[0].strip().split("=", 1)
+        for ln in text.splitlines()
+        if "=" in ln.split("#", 1)[0]
+    )
+    for key in ("SAIR_DATA_DIR", "SAIR_DB_PATH", "SAIR_TMP_DIR"):
+        value = lines[key].strip()
+        assert value == "~/.sair-eval" or value.startswith("~/.sair-eval/")
+    for key in ("SAIR_TOKEN_MOM", "SAIR_TOKEN_DAD"):
+        assert lines.get(key, "").strip() == ""

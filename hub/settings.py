@@ -7,6 +7,10 @@ Privacy and network rules enforced here at startup (a violation raises a pydanti
 * NFR-P1/P3: in prod every model/notification URL and every allowed outbound host is loopback,
   and the HuggingFace offline flags stay on.
 * NFR-P7: in prod ``SENTRY_DSN`` must be empty; Sentry is enabled only in dev/eval.
+* NFR-P7 (synthetic or fixture data only): when Sentry is enabled, the data dir, DB, temp audio,
+  mission audio, audio cache and checkpoint paths must not resolve inside the prod default data
+  dir ``~/.sair`` (``~/.sair-eval`` is a different dir and is fine). The family's real tokens and
+  walks only live there, so this one path rule also keeps Sentry away from them.
 
 Env files: ``.env`` for prod; ``.env.eval`` is layered on top in dev/eval. ``SAIR_ENV=test``
 loads no env file at all. Tests can also build ``Settings(_env_file=None, ...)``.
@@ -42,6 +46,7 @@ MSG_HOST = "SAIR_HOST must be a loopback address (127.0.0.1, ::1 or localhost)"
 MSG_URL = "model and notification URLs must be loopback in prod"
 MSG_SENTRY = "SENTRY_DSN must be empty in prod"
 MSG_OUTBOUND = "ALLOWED_OUTBOUND_HOSTS may contain only loopback names in prod"
+MSG_SENTRY_DATA = "Sentry needs synthetic data: keep every SAIR_* data path out of ~/.sair"
 MSG_OFFLINE = "HF_HUB_OFFLINE and TRANSFORMERS_OFFLINE must be on in prod"
 MSG_TZ = "SAIR_TZ is not a known time zone"
 MSG_GROUPS = "SAIR_DEVICE_GROUPS must look like device:Group Name,device:Group Name"
@@ -258,6 +263,18 @@ class Settings(BaseSettings):
                 raise ValueError(MSG_OUTBOUND)
             if not (self.hf_hub_offline and self.transformers_offline):
                 raise ValueError(MSG_OFFLINE)
+        if self.sentry_enabled:
+            prod = Path("~/.sair").expanduser().resolve()
+            for p in (
+                self.data_dir,
+                self.db_path,
+                self.tmp_dir,
+                self.audio_dir,
+                self.audio_cache_dir,
+                self.checkpoint_dir,
+            ):
+                if p.resolve().is_relative_to(prod):
+                    raise ValueError(MSG_SENTRY_DATA)
         return self
 
     # ------------------------------------------------- derived paths and values
@@ -291,6 +308,11 @@ class Settings(BaseSettings):
     @property
     def checkpoint_dir(self) -> Path:
         return self.sair_checkpoint_dir or self.sair_data_dir / "checkpoints"
+
+    @property
+    def ntfy_cache_dir(self) -> Path:
+        """Self-hosted ntfy message cache (``--cache-file __DATA__/ntfy/cache.db``), FR-O5."""
+        return self.sair_data_dir / "ntfy"
 
     @property
     def tz(self) -> ZoneInfo:

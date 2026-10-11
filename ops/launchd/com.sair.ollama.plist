@@ -25,6 +25,8 @@
 		<string>30m</string>
 		<key>HF_HUB_OFFLINE</key>
 		<string>1</string>
+		<key>HF_HUB_DISABLE_TELEMETRY</key>
+		<string>1</string>
 	</dict>
 	<key>StandardOutPath</key>
 	<string>__REPO__/logs/ollama.out.log</string>

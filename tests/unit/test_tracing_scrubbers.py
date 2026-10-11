@@ -20,6 +20,9 @@ from hub.schemas import ReasonCode, WalkStatus, WriterBackend
 from hub.settings import Settings
 from tests.unit.test_tracing_prod_off import FAKE_DSN, CapturingTransport
 
+# NFR-P7: Sentry settings refuse the prod data dir (~/.sair); never created here.
+SYNTHETIC = "/nonexistent/sair-synthetic"
+
 MARKER = "zebra-ultramarine-4471"
 WALK_ID = "0123456789abcdef0123456789abcdef"
 
@@ -206,7 +209,13 @@ def test_clean_attrs_drops_text_values() -> None:
 
 def _enable(**kw: Any) -> Any:
     cap = CapturingTransport.make()
-    s = Settings(_env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN), **kw)  # type: ignore[call-arg]
+    s = Settings(  # type: ignore[call-arg]
+        _env_file=None,
+        sair_env="eval",
+        sentry_dsn=SecretStr(FAKE_DSN),
+        sair_data_dir=SYNTHETIC,
+        **kw,
+    )
     assert tracing.init_tracing(s, transport=cap) is True
     return cap
 
@@ -299,7 +308,9 @@ def test_init_uses_hardened_options(monkeypatch: pytest.MonkeyPatch) -> None:
 
     seen: dict[str, Any] = {}
     monkeypatch.setattr(sentry_sdk, "init", lambda **kw: seen.update(kw))
-    s = Settings(_env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN))  # type: ignore[call-arg]
+    s = Settings(  # type: ignore[call-arg]
+        _env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN), sair_data_dir=SYNTHETIC
+    )
     assert tracing.init_tracing(s) is True
     expected = {
         "default_integrations": False, "auto_enabling_integrations": False, "integrations": [],

@@ -970,7 +970,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     all_items: list[dict[str, Any]] = []
     table: dict[str, Counter[str]] = {}
     all_secs: list[float] = []
-    with httpx.Client(timeout=httpx.Timeout(180.0)) as client:
+    with httpx.Client(timeout=httpx.Timeout(180.0), trust_env=False) as client:
         for seed in seeds:
             kept, drops, secs = process_seed(
                 seed,

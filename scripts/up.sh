@@ -25,7 +25,7 @@ else
 fi
 
 if command -v llama-server >/dev/null && [ -f "$WRITER_MODEL" ]; then
-  start llama-server llama-server -m "$WRITER_MODEL" --host 127.0.0.1 --port 8091 -c 4096 -ngl 99 -np 1
+  start llama-server llama-server -m "$WRITER_MODEL" --host 127.0.0.1 --port 8091 -c 4096 -ngl 99 -np 1 --log-disable
 else
   echo "llama-server: skipped (binary or model file missing)"
 fi

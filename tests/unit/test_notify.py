@@ -143,3 +143,15 @@ def test_health_keywords_cover_three_scripts() -> None:
     data = yaml.safe_load((ROOT / "data" / "health_keywords.yaml").read_text(encoding="utf-8"))
     for script in ("en", "hinglish", "devanagari"):
         assert data["keywords"][script], script
+
+
+def test_ntfy_client_ignores_proxy_env(monkeypatch: pytest.MonkeyPatch) -> None:
+    """NFR-P1/P3: HTTP(S)_PROXY / ALL_PROXY can never route a notification off the loopback."""
+    for var in ("HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "http_proxy", "https_proxy", "all_proxy"):
+        monkeypatch.setenv(var, "http://proxy.invalid:3128")
+    monkeypatch.delenv("NO_PROXY", raising=False)
+    monkeypatch.delenv("no_proxy", raising=False)
+    client = NtfyNotifier(_settings())._client
+    assert client.trust_env is False
+    assert client._mounts == {}
+    assert client._transport_for_url(httpx.URL(URL)) is client._transport

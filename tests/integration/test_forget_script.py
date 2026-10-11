@@ -46,6 +46,7 @@ def _layout(tmp: Path) -> tuple[dict[str, str], list[Path]]:
         data / "audio" / ("b" * 32 + ".mp3"),
         data / "cache" / "x.bin",
         data / "checkpoints" / "ck.json",
+        data / "ntfy" / "cache.db",  # self-hosted ntfy message cache (com.sair.ntfy plist)
         tmp / "logs" / "llama-server.log",
         tmp / "logs" / "sub" / "ollama.log",
     ]
@@ -83,6 +84,8 @@ def test_yes_removes_everything_incl_mission_audio(tmp_path: Path) -> None:
     left = [f for f in files if f.exists()]
     assert left == []
     assert not (tmp_path / "data" / "audio").exists()
+    assert not (tmp_path / "data" / "ntfy").exists()
+    assert "ntfy" in r.stdout  # listed as a target before asking
     assert "removed" in r.stdout and "paths" in r.stdout
     assert "synthetic" not in r.stdout + r.stderr  # never file contents
 
@@ -118,6 +121,25 @@ def test_stops_the_hub_from_its_pid_file_first(tmp_path: Path) -> None:
             time.sleep(0.05)
         assert fake.poll() is not None, "hub was stopped before wiping"
         assert "hub: stopped" in r.stdout
+    finally:
+        if fake.poll() is None:
+            fake.kill()
+        fake.wait()
+
+
+def test_stops_ntfy_from_its_pid_file_first(tmp_path: Path) -> None:
+    env, _ = _layout(tmp_path)
+    fake = subprocess.Popen([sys.executable, "-c", "import time; time.sleep(60)", "ntfy"])
+    try:
+        (tmp_path / "logs" / "ntfy.pid").write_text(str(fake.pid))
+        r = _run(env, "y\n")
+        assert r.returncode == 0, r.stderr
+        deadline = time.monotonic() + 5
+        while fake.poll() is None and time.monotonic() < deadline:
+            time.sleep(0.05)
+        assert fake.poll() is not None, "ntfy was stopped before wiping its cache"
+        assert "ntfy: stopped" in r.stdout
+        assert not (tmp_path / "data" / "ntfy").exists()
     finally:
         if fake.poll() is None:
             fake.kill()

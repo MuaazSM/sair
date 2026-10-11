@@ -19,6 +19,9 @@ from tests.integration.conftest import Env
 from tests.unit._graphfix import EN_20S
 from tests.unit.test_tracing_prod_off import FAKE_DSN, CapturingTransport
 
+# NFR-P7: Sentry settings refuse the prod data dir (~/.sair); never created here.
+SYNTHETIC = "/nonexistent/sair-synthetic"
+
 pytestmark = pytest.mark.integration
 
 GROUP = "Mom and Dad"
@@ -27,7 +30,9 @@ GROUP = "Mom and Dad"
 @pytest.fixture
 def cap() -> Iterator[Any]:
     transport = CapturingTransport.make()
-    s = Settings(_env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN))  # type: ignore[call-arg]
+    s = Settings(  # type: ignore[call-arg]
+        _env_file=None, sair_env="eval", sentry_dsn=SecretStr(FAKE_DSN), sair_data_dir=SYNTHETIC
+    )
     assert tracing.init_tracing(s, transport=transport) is True
     yield transport
     tracing.shutdown_tracing()

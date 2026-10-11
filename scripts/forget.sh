@@ -2,7 +2,7 @@
 # FR-O5: wipe all local Sair state. Run by the owner only.
 #
 # Lists the targets (resolved by hub.settings, the same source the hub uses), asks y/N, stops
-# the hub (its PID file, or its LaunchAgent), then calls hub.db.forget and prints only how many
+# the hub and the self-hosted ntfy (their PID files, or their LaunchAgents), then calls hub.db.forget and prints only how many
 # paths were removed. Files are deleted, never opened or printed.
 #
 # SAIR_FORGET_ROOT (optional): refuse to run unless every target resolves inside this dir.
@@ -24,7 +24,7 @@ s = get_settings()
 db = s.db_path
 targets = [
     db, db.with_name(db.name + "-wal"), db.with_name(db.name + "-shm"),
-    s.tmp_dir, s.audio_dir, s.audio_cache_dir, s.checkpoint_dir, s.log_dir,
+    s.tmp_dir, s.audio_dir, s.audio_cache_dir, s.checkpoint_dir, s.ntfy_cache_dir, s.log_dir,
 ]
 root = os.environ.get("SAIR_FORGET_ROOT")
 if root:
@@ -37,7 +37,8 @@ if root:
 print("This will permanently delete:")
 for t in targets:
     print(f"  [{'exists' if t.exists() else 'absent'}]  {t}")
-print("  (mission audio is the audio dir; model-server logs are the files under the log dir;")
+print("  (mission audio is the audio dir; the ntfy dir is the self-hosted ntfy message cache;")
+print("   model-server logs are the files under the log dir;")
 print("   Ollama's own logs live outside this repo)")
 PYEOF
 
@@ -69,6 +70,30 @@ if [ "$(cd "$LOG_DIR" 2>/dev/null && pwd -P)" = "$(cd "$REPO/logs" 2>/dev/null &
     && launchctl print "gui/$(id -u)/com.sair.hub" >/dev/null 2>&1; then
   launchctl bootout "gui/$(id -u)/com.sair.hub" 2>/dev/null || true
   echo "hub: LaunchAgent stopped (run 'make install-agents' to start it again)"
+fi
+
+# 2b. Stop the self-hosted ntfy (only ntfy) so its message cache is closed before the wipe.
+pidfile="$LOG_DIR/ntfy.pid"
+if [ -f "$pidfile" ]; then
+  pid="$(cat "$pidfile")"
+  if [[ "$pid" =~ ^[0-9]+$ ]] && kill -0 "$pid" 2>/dev/null \
+      && ps -p "$pid" -o command= | grep -q "ntfy"; then
+    kill "$pid"
+    for _ in $(seq 1 100); do kill -0 "$pid" 2>/dev/null || break; sleep 0.1; done
+    echo "ntfy: stopped (pid $pid)"
+  else
+    echo "ntfy: not running"
+  fi
+  rm -f "$pidfile"
+fi
+# The ntfy LaunchAgent: only boot it out when its installed plist caches into this data dir.
+NTFY_DIR="$("${PY[@]}" -c 'from hub.settings import get_settings; print(get_settings().ntfy_cache_dir)')"
+ntfy_plist="$HOME/Library/LaunchAgents/com.sair.ntfy.plist"
+if [ -f "$ntfy_plist" ] && grep -qF "<string>$NTFY_DIR/cache.db</string>" "$ntfy_plist" \
+    && command -v launchctl >/dev/null \
+    && launchctl print "gui/$(id -u)/com.sair.ntfy" >/dev/null 2>&1; then
+  launchctl bootout "gui/$(id -u)/com.sair.ntfy" 2>/dev/null || true
+  echo "ntfy: LaunchAgent stopped (run 'make install-agents' to start it again)"
 fi
 
 # 3. Wipe through the tested code path (hub.db.forget). Prints a count only.

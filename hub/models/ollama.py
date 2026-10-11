@@ -82,7 +82,7 @@ class OllamaClient:
         self, settings: Settings | None = None, client: httpx.Client | None = None
     ) -> None:
         self._s = settings or get_settings()
-        self._client = client or httpx.Client()
+        self._client = client or httpx.Client(trust_env=False)  # NFR-P1/P3: ignore proxy env
         self.last_stats: CallStats | None = None
 
     # ------------------------------------------------------------------ internals

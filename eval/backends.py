@@ -163,7 +163,9 @@ class OllamaWriter:
         if grammar:
             body["format"] = _read_json_file(self.schema_path)
         t0 = time.perf_counter()
-        resp = httpx.post(f"{self.base_url}/api/chat", json=body, timeout=self.timeout_s)
+        resp = httpx.post(
+            f"{self.base_url}/api/chat", json=body, timeout=self.timeout_s, trust_env=False
+        )
         resp.raise_for_status()
         data = resp.json()
         self.last_call = CallStats(
@@ -236,7 +238,9 @@ class LlamaServerWriter:
         if grammar:
             body["grammar"] = self.grammar_path.read_text(encoding="utf-8")
         t0 = time.perf_counter()
-        resp = httpx.post(f"{self.base_url}/completion", json=body, timeout=self.timeout_s)
+        resp = httpx.post(
+            f"{self.base_url}/completion", json=body, timeout=self.timeout_s, trust_env=False
+        )
         resp.raise_for_status()
         data = resp.json()
         self.last_call = CallStats(
