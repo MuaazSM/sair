@@ -40,3 +40,6 @@ eval/results/real/
 
 # intermediate generation outputs (merged into items.jsonl)
 training/data/items.*.jsonl
+
+# local family photos for the post (never committed)
+/photos/
