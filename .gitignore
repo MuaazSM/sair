@@ -43,3 +43,6 @@ training/data/items.*.jsonl
 
 # local family photos for the post (never committed)
 /photos/
+
+# local eval replay output (the committed results live in eval/results/synthetic/)
+/eval/results/latest/
